@@ -1,0 +1,129 @@
+schema_version: 1
+units: mm
+status: measured_geometry_contract_not_thread_or_fabrication_approval
+
+sources:
+  assembly_step:
+    path: references/arm-r3/arm_XL430_R3.step
+    sha256: 3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb
+  p05_step:
+    path: references/arm-r3/P05_wrist_XL430.step
+    sha256: 7bbbb927b75b656a0c0662b1617eff3731d8892f235e9c85c832996af4615d42
+  joints:
+    path: references/arm-r3/joints.json
+    sha256: 988890dd93df387ce22f027c10f9e7f3e4f7ac1841e010f18fd7aec47eebf7a7
+  donor_comparison:
+    path: outputs/review-lateral-20260922-r3/wrist-pattern-comparison.json
+    sha256: e2e547babbda477474bce255d2f5d491cdb8bc897f11eea514771e6f1581aa51
+
+interpretation_rules:
+  - concave_cylinder_is_recorded_as_bore_geometry_not_thread_identity
+  - axial_range_is_trimmed_face_extent_not_usable_thread_depth
+  - planar_seat_candidate_requires_mating_part_contact_validation
+  - output_and_idler_interfaces_are_distinct_parts
+
+p05_link:
+  part: P05_wrist_XL430
+  bbox: {xmin: -23.2, xmax: 22.8, ymin: 91.4, ymax: 174.9, zmin: 151.1, zmax: 196.6}
+  central_bridge_width_x: 46.0
+  end_interfaces:
+    - centre: [0.0, 104.9, 164.6]
+      axis: [1.0, 0.0, 0.0]
+      four_bore_centres:
+        - [0.0, 112.9, 164.6]
+        - [0.0, 104.9, 156.6]
+        - [0.0, 104.9, 172.6]
+        - [0.0, 96.9, 164.6]
+      bore_diameter: 2.4
+      pitch_circle_diameter: 16.0
+      central_bore_diameter: 11.0
+      outer_boss_diameter: 27.0
+    - centre: [0.0, 164.9, 180.6]
+      axis: [1.0, 0.0, 0.0]
+      rectangular_bore_pattern_centres:
+        - [0.0, 158.9, 168.6]
+        - [0.0, 158.9, 192.6]
+        - [0.0, 170.9, 168.6]
+        - [0.0, 170.9, 192.6]
+      bore_diameter: 2.4
+
+servo_interfaces:
+  J5:
+    cad_motor_unit: M05
+    axis_centre: [-0.2, 164.9, 164.6]
+    axis_direction: [0.0, 1.0, 0.0]
+    motor_body_occurrence: M05_ref00
+    motor_body_bbox: [-14.45, 147.9, 153.35, 14.05, 185.8, 199.85]
+    output_side:
+      occurrence: M05_ref00
+      four_bore_radial_vectors:
+        - [0.0, 0.0, -8.0]
+        - [-8.0, 0.0, 0.0]
+        - [0.0, 0.0, 8.0]
+        - [8.0, 0.0, 0.0]
+      bore_diameter: 2.0
+      pitch_circle_diameter: 16.0
+      bore_axial_range: [180.4, 183.7]
+      seat_candidate:
+        axial_position: 183.9
+        normal: [0.0, 1.0, 0.0]
+        status: planar_face_candidate_not_mating_proof
+    idler_side:
+      occurrence: M05_ref07
+      four_bore_radial_vectors:
+        - [0.0, 0.0, 8.0]
+        - [8.0, 0.0, 0.0]
+        - [0.0, 0.0, -8.0]
+        - [-8.0, 0.0, 0.0]
+      bore_diameter: 2.0
+      pitch_circle_diameter: 16.0
+      bore_axial_range: [146.1, 149.4]
+      seat_candidate:
+        axial_position: 145.9
+        normal: [0.0, 1.0, 0.0]
+        status: planar_face_candidate_not_mating_proof
+  J6:
+    cad_motor_unit: M06
+    axis_centre: [-0.2, 234.9, 164.6]
+    axis_direction: [1.0, 0.0, 0.0]
+    motor_body_occurrence: M06_ref00
+    motor_body_bbox: [-17.2, 199.65, 150.35, 20.7, 246.15, 178.85]
+    output_side:
+      occurrence: M06_ref00
+      four_bore_radial_vectors:
+        - [0.0, 8.0, 0.0]
+        - [0.0, 0.0, 8.0]
+        - [0.0, -8.0, 0.0]
+        - [0.0, 0.0, -8.0]
+      bore_diameter: 2.0
+      pitch_circle_diameter: 16.0
+      bore_axial_range: [15.3, 18.6]
+      seat_candidate:
+        axial_position: 18.8
+        normal: [1.0, 0.0, 0.0]
+        status: planar_face_candidate_not_mating_proof
+    idler_side:
+      occurrence: M06_ref07
+      four_bore_radial_vectors:
+        - [0.0, -8.0, 0.0]
+        - [0.0, 0.0, -8.0]
+        - [0.0, 8.0, 0.0]
+        - [0.0, 0.0, 8.0]
+      bore_diameter: 2.0
+      pitch_circle_diameter: 16.0
+      bore_axial_range: [-19.0, -15.7]
+      seat_candidate:
+        axial_position: -19.2
+        normal: [1.0, 0.0, 0.0]
+        status: planar_face_candidate_not_mating_proof
+
+negative_control:
+  donor_interface:
+    source_role: rejected_mixed_servo_lateral_delivery
+    pitch_circle_diameter: 12.0
+    bore_diameter: 2.3
+  all_xl430_reference:
+    pitch_circle_diameter: 16.0
+    bore_diameter: 2.0
+  best_possible_coaxial_radial_mismatch: 2.0
+  assembly_compatible: false

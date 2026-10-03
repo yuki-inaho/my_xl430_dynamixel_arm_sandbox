@@ -1,0 +1,37 @@
+{
+  "revision": "ID5-CAM-R5-D405-P65",
+  "motor": "XL430-W250-T",
+  "parent": "fixed_case_external_top_holes",
+  "extra_motor_count": 0,
+  "camera": "Intel RealSense D405 (nominal datasheet envelope)",
+  "pitch_deg": 65.0,
+  "glass_center": [
+    -0.2,
+    197.0,
+    257.0
+  ],
+  "plate_thickness": 4.0,
+  "plate_half_width": 31.5,
+  "plate_v_range": [
+    -29.0,
+    25.0
+  ],
+  "cheek_inner_x": 22.5,
+  "cheek_thickness": 8.0,
+  "cheek_attach_v": [
+    -27.0,
+    -11.0
+  ],
+  "tie_bolt_local": [
+    26.5,
+    -19.0
+  ],
+  "d405_screw_length": 6.0,
+  "d405_counterbore_depth": 1.0,
+  "d405_slot_half_travel": 1.0,
+  "base_seat_thickness": 2.0,
+  "base_screw_length": 5.0,
+  "hole_depth": 4.0,
+  "usb_plug_side": -1,
+  "structural_mass_rating_kg": null
+}

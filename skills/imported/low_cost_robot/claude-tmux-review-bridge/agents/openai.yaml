@@ -1,0 +1,4 @@
+interface:
+  display_name: "Claude Tmux Review Bridge"
+  short_description: "Tmux Claude review loops."
+  default_prompt: "Use $claude-tmux-review-bridge to run a tmux Claude review loop and capture the result reliably."

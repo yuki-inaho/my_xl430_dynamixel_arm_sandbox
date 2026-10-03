@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-10-03T11:50:46.824739+00:00",
+  "status": "PASS",
+  "markdown_files": [
+    "diary/2026-10-03_current-arm-findings.md",
+    "README.md",
+    "temp/workdoc_Oct03-2026_current_arm_findings.md",
+    "temp/workdoc_Oct03-2026_current_arm_findings.review.md"
+  ],
+  "broken_local_links": [],
+  "workdoc_steps": 6,
+  "source_sha_verified": 36,
+  "existing_readme_preserved": true,
+  "offline_pytest_output_verified": true,
+  "browser_live_frames_verified": true,
+  "git_diff_check_exit": 0,
+  "new_hardware_access": false,
+  "lint_ty_cargo_for_document_only_change": "NOT_APPLICABLE",
+  "physical_calibration_and_collision_limits": "UNKNOWN"
+}

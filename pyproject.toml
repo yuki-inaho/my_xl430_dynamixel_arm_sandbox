@@ -1,0 +1,46 @@
+[project]
+name = "my-dynamixel-arm-sandbox"
+version = "0.1.0"
+description = "Read-only diagnostics for a five-motor DYNAMIXEL arm"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dynamixel-sdk>=4.0.5,<5",
+    "pyserial>=3.5,<4",
+    "beartype>=0.22,<0.24",
+    "jaxtyping>=0.3,<0.4",
+    "numpy>=2,<3",
+]
+
+[project.scripts]
+arm-status = "arm_observer.cli:main"
+arm-live = "arm_observer.live_http:main"
+arm-id3-open = "arm_observer.id3_motion:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.12,<1", "ty>=0.0.1,<1", "radon>=6,<7", "jsonschema>=4,<5"]
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "arm_observer"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# jaxtyping axis strings are shape specifications, not forward type names.
+"src/arm_observer/numerics.py" = ["F821"]
+
+[tool.ty.src]
+include = ["src", "scripts"]
+exclude = ["upstream", "skills/imported"]

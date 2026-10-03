@@ -1,0 +1,109 @@
+part: follower_elbow_to_wrist_extension
+intent: >-
+  the "connector" extension link used in the longer-arm build (adds joint6 reach). A
+  long beam (Y -73.046..17.054 = 90.1) that bridges two servo/horn interfaces along X.
+  Frame - X[-17.5,17.5] Y[-73.046,17.054] Z[0,23]. Upstream end (Y~2..15) - a 4x phi1.8
+  tap diamond for servo/horn fastening plus two clipped phi8 partial-relief arcs copied
+  from the original STEP; downstream end (Y~-69) - 2x M2 clearance (axis X). The
+  XL330->XL430 swap does not currently have an approved local geometry change for this
+  organic/asymmetric part. The original STEP is the source of truth; preserve it until a
+  bounded change mask is defined. MEASURED via cadre.cli inspect + face-bbox audit.
+swap_applicable: true
+features:
+  - name: original_shape_preservation
+    type: preservation_gate
+    preserves: [outer_profile, forked_ear_shape, asymmetry, partial_reliefs, link_length]
+    constraints:
+      source_step: hardware/follower/step/elbow_to_wrist_extension.step
+      active_local_edit: false
+      change_mask_status: "not defined; do not add circular collar or other global support"
+      proposed_local_edit_mask:
+        status: proposal_only_not_active
+        purpose: "future local rounding/reinforcement around the four phi1.8 servo fastening holes"
+        allowed_scope: >-
+          Only the upstream +X fastening-hole neighbourhood may be considered, and only
+          after user approval. This proposal does not authorize replacing the organic
+          fork/ear outline, changing link length, adding a global circular collar, or
+          reinterpreting the clipped phi8 relief arcs as complete bores.
+        candidate_bbox_mm:
+          x: [14.5, 17.5]        # +X-side face band where the original blind tap/relief faces appear
+          y: [0.0, 17.054]       # upstream hole/relief neighbourhood, not the long beam
+          z: [0.0, 17.0]
+        target_features:
+          - upstream_horn_mount.phi1.8_blind_tap_axes4
+        preserve_features:
+          - upstream_partial_relief.clipped_phi8_faces
+          - link_beam.link_length_y_mm
+          - downstream_mount.phi2.2_through_axes2
+          - outer_profile_outside_candidate_bbox
+      bbox_mm: {x: [-17.5, 17.5], y: [-73.046, 17.054], z: [0.0, 23.0]}
+      rationale: >-
+        A previous circular-collar reconstruction locally improved apparent edge distance
+        but destroyed the original organic end profile. Until a local mask is accepted,
+        this part is a measured geometric no-op across XL330/XL430.
+  - name: upstream_horn_mount   # 4x phi1.8 tap diamond (axis X) at the upstream end
+    type: servo_mount
+    servo: XL330-M288-T          # swap to XL430-W250-T
+    preserves: [output_axis, screw_pattern]
+    constraints:
+      screw: M2-tap
+      hole_function: tap         # dia 1.80 -> M2-tap (self-tap into horn)
+      hole_diameter_mm: 1.8
+      through: false             # 8 faces / 4 axes -> 2 faces per line = blind tap (X)
+      blind_depth_mm: 6.0
+      through_evidence: "8 faces / 4 axes -> 2 faces per line = blind tap from the +X face"
+      horn_axis_dir: [1.0, 0.0, 0.0]
+      diamond_centers_yz_mm: [[8.6, 2.5], [14.6, 8.5], [8.6, 14.5], [2.6, 8.5]]
+      face_x_mm: 17.5
+  - name: upstream_partial_relief # clipped phi8 relief arcs; NOT complete blind bores
+    type: clearance_relief
+    preserves: [observed_partial_cylinder_faces, fastening_hole_integrity]
+    constraints:
+      diameter_mm: 8.0
+      axis_dir: [1.0, 0.0, 0.0]
+      centers_yz_mm: [[11.252, 12.388], [13.054, 9.097]]
+      through: false
+      blind_depth_mm: null
+      evidence: >-
+        Original STEP has phi8 cylindrical faces but their face bboxes are clipped
+        partial arcs, not full round blind seats. Reconstructing them as complete
+        phi8 bores creates a false merged center pocket and can compromise the
+        four fastening holes.
+      arcs:
+        - center_yz_mm: [11.252, 12.388]
+          y_range_mm: [12.422, 14.760]
+          z_range_mm: [14.309, 16.213]
+          source_face_bbox: "x[-17.5,-14.5]/[14.5,17.5], y[12.422,14.760], z[14.309,16.213]"
+        - center_yz_mm: [13.054, 9.097]
+          y_range_mm: [15.970, 17.054]
+          z_range_mm: [6.359, 11.018]
+          source_face_bbox: "x[-17.5,-14.5]/[14.5,17.5], y[15.970,17.054], z[6.359,11.018]"
+      seat_role: partial_clearance_relief
+  - name: downstream_mount      # 2x M2 clearance through (axis X) at the far end
+    type: servo_mount
+    servo: XL330-M288-T
+    preserves: [screw_pattern]
+    constraints:
+      screw: M2
+      hole_function: clearance   # dia 2.20 -> M2 clearance (through-bolt)
+      hole_diameter_mm: 2.2
+      through: true              # 4 faces / 2 axes -> 2 coaxial faces per line = through (X)
+      through_evidence: "4 faces / 2 axes -> 2 coaxial faces per line = through along X"
+      mount_axis_dir: [1.0, 0.0, 0.0]
+      mount_centers_mm: [[0.0, -69.3, 3.2], [0.0, -69.3, 19.2]]
+  - name: link_beam
+    type: structural_beam
+    preserves: [joint_distance, link_length]
+    constraints:
+      min_wall_mm: 2.5
+      link_length_y_mm: 90.1     # Y extent (preserved on swap)
+      upstream_face_x_mm: 17.5
+measured_families:
+  - {diameter_mm: 1.8, screw: null, axes: 4, faces: 8, dir: [1,0,0]}
+  - {diameter_mm: 8.0, screw: null, axes: 2, faces: 4, dir: [1,0,0], role: partial_relief}
+  - {diameter_mm: 2.2, screw: M2,   axes: 2, faces: 4, dir: [1,0,0]}
+tests:
+  - hole_pattern_match
+  - envelope_clearance
+  - min_wall_thickness
+  - original_shape_preservation

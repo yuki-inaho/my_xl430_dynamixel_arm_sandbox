@@ -1,0 +1,284 @@
+{
+  "input": "SYNTHETIC ONLY; no motors",
+  "captured_at": "2026-10-03T12:34:30.395Z",
+  "refusal": "現物の対応・基準・方向と適用を確認してください",
+  "calibrated": {
+    "angles": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "theta": 90,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 135,
+    "elevation": -25,
+    "distance": 0.64,
+    "focus": "arm",
+    "source": "telemetry",
+    "frame_seq": 2532,
+    "render_fps": 19.9,
+    "frame_time": 1791030870.0874343,
+    "error": null,
+    "telemetry": {
+      "configured": true,
+      "status": "READ live・校正済み",
+      "motors": [
+        {
+          "motor_id": 1,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": true,
+      "can_render": true,
+      "session_id": "synthetic-session",
+      "state": "running",
+      "port_closed": false,
+      "summary": null,
+      "calibration_invalid": false,
+      "simulated": true,
+      "sequence": 1127,
+      "age_seconds": 0.031245946884155273,
+      "angles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "theta": 90
+    },
+    "live_available": true,
+    "calibration": {
+      "verified": true,
+      "status": "現物確認済み",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/calibration-test/calibration_20261003T213430100680.json"
+    },
+    "gap_mm": 15.99,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 2532
+  },
+  "moved": {
+    "angles": [
+      11.25,
+      5.625,
+      0,
+      0
+    ],
+    "theta": 101.25,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 135,
+    "elevation": -25,
+    "distance": 0.64,
+    "focus": "arm",
+    "source": "telemetry",
+    "frame_seq": 2534,
+    "render_fps": 19.9,
+    "frame_time": 1791030870.186986,
+    "error": null,
+    "telemetry": {
+      "configured": true,
+      "status": "READ live・校正済み",
+      "motors": [
+        {
+          "motor_id": 1,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "position_counts": 936,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": true,
+      "can_render": true,
+      "session_id": "synthetic-session",
+      "state": "running",
+      "port_closed": false,
+      "summary": null,
+      "calibration_invalid": false,
+      "simulated": true,
+      "sequence": 1129,
+      "age_seconds": 0.02549266815185547,
+      "angles": [
+        11.25,
+        5.625,
+        0,
+        0
+      ],
+      "theta": 101.25
+    },
+    "live_available": true,
+    "calibration": {
+      "verified": true,
+      "status": "現物確認済み",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/calibration-test/calibration_20261003T213430100680.json"
+    },
+    "gap_mm": 10.91,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 2534
+  },
+  "held": {
+    "angles": [
+      11.25,
+      5.625,
+      0,
+      0
+    ],
+    "theta": 101.25,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 135,
+    "elevation": -25,
+    "distance": 0.64,
+    "focus": "arm",
+    "source": "telemetry",
+    "frame_seq": 2537,
+    "render_fps": 19.9,
+    "frame_time": 1791030870.3357766,
+    "error": "実機データが欠測・未校正です。描画は最後の姿勢を保持しています。",
+    "telemetry": {
+      "configured": true,
+      "status": "READ期限超過（最後の姿勢を保持）",
+      "motors": [
+        {
+          "motor_id": 1,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "position_counts": 936,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": false,
+      "can_render": false,
+      "session_id": "synthetic-session",
+      "state": "running",
+      "port_closed": false,
+      "summary": null,
+      "calibration_invalid": false,
+      "simulated": true
+    },
+    "live_available": true,
+    "calibration": {
+      "verified": false,
+      "status": "READ期限超過（最後の姿勢を保持）",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/calibration-test/calibration_20261003T213430100680.json"
+    },
+    "gap_mm": 10.91,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 2537
+  }
+}

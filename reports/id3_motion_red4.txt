@@ -1,0 +1,342 @@
+.................................................................F.FF... [ 64%]
+.............................FFFFFFFFFF                                  [100%]
+=================================== FAILURES ===================================
+____________________ test_stall_against_a_stop_aborts_early ____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_stall_against_a_stop_abor0')
+
+    def test_stall_against_a_stop_aborts_early(tmp_path):
+        arm = FakeArm(step=0)  # e.g. pushing into the fold stop: no progress at all
+        outcome, events = run(tmp_path, arm)
+        assert outcome.status == "aborted"
+>       assert "no progress" in outcome.reason
+E       AssertionError: assert 'no progress' in 'MotionAbort: ID3 following timeout at 1153 (target 1267)'
+E        +  where 'MotionAbort: ID3 following timeout at 1153 (target 1267)' = Outcome(status='aborted', reason='MotionAbort: ID3 following timeout at 1153 (target 1267)', target=None, final_error_...e, start_counts=None, torque_on_counts=None, sign=1, torque_off_confirmed=True, release_problems=(), interrupted=False).reason
+
+tests/test_id3_motion.py:430: AssertionError
+__________ test_gravity_shortfall_settles_off_target_without_dropping __________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_gravity_shortfall_settles0')
+
+    def test_gravity_shortfall_settles_off_target_without_dropping(tmp_path):
+        arm = FakeArm()
+        arm.open_shortfall = -12
+        outcome, _ = run(tmp_path, arm)
+>       assert outcome.status == "settled_off_target"
+E       AssertionError: assert 'aborted' == 'settled_off_target'
+E         
+E         - settled_off_target
+E         + aborted
+
+tests/test_id3_motion.py:449: AssertionError
+_____________________ test_settling_far_from_target_aborts _____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_settling_far_from_target_0')
+
+    def test_settling_far_from_target_aborts(tmp_path):
+        arm = FakeArm()
+        arm.open_shortfall = -40
+        outcome, _ = run(tmp_path, arm)
+        assert outcome.status == "aborted"
+>       assert "far" in outcome.reason
+E       AssertionError: assert 'far' in 'MotionAbort: ID3 following timeout at 1227 (target 1267)'
+E        +  where 'MotionAbort: ID3 following timeout at 1227 (target 1267)' = Outcome(status='aborted', reason='MotionAbort: ID3 following timeout at 1227 (target 1267)', target=None, final_error_...e, start_counts=None, torque_on_counts=None, sign=1, torque_off_confirmed=True, release_problems=(), interrupted=False).reason
+
+tests/test_id3_motion.py:461: AssertionError
+___________________ test_cad_derivation_evidence_is_accepted ___________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_cad_derivation_evidence_i0')
+
+    def test_cad_derivation_evidence_is_accepted(tmp_path):
+>       evidence = motion.load_evidence(write_evidence(tmp_path, cad_record()))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_id3_motion.py:759: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_cad_derivation_evidence_i0/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes0] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej0')
+changes = {'motor_id': 2}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej0/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes1] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej1')
+changes = {'opening_count_sign': 0}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej1/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes2] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej2')
+changes = {'opening_count_sign': True}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej2/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes3] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej3')
+changes = {'folded_count': 1153.0}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej3/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes4] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej4')
+changes = {'sources': {}}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej4/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes5] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej5')
+changes = {'derivation': {'opening_count_sign': -1}}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej5/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes6] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej6')
+changes = {'folded_read': {'frames': 0, 'folded_count': 1153}}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej6/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes7] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej7')
+changes = {'folded_read': {'frames': 200, 'folded_count': 1100}}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej7/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+________________ test_bad_cad_derivation_is_rejected[changes8] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej8')
+changes = {'kind': 'guess'}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, cad_record(**changes)))
+
+tests/test_id3_motion.py:774: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-55/test_bad_cad_derivation_is_rej8/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+>       sign, delta = record["opening_count_sign"], record["delta_counts"]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'delta_counts'
+
+src/arm_observer/id3_motion.py:168: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_id3_motion.py::test_stall_against_a_stop_aborts_early - Ass...
+FAILED tests/test_id3_motion.py::test_gravity_shortfall_settles_off_target_without_dropping
+FAILED tests/test_id3_motion.py::test_settling_far_from_target_aborts - Asser...
+FAILED tests/test_id3_motion.py::test_cad_derivation_evidence_is_accepted - K...
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes0]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes1]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes2]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes3]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes4]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes5]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes6]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes7]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes8]
+13 failed, 98 passed in 1.92s

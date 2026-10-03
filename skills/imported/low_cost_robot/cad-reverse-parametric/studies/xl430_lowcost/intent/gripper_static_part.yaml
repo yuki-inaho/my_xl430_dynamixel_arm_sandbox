@@ -1,0 +1,64 @@
+part: follower_gripper_static_part
+intent: >-
+  the "static side" of the gripper - holds the joint5 gripper servo (XL330 -> XL430
+  swap target) and forms the fixed jaw. Frame - X[-19.5,18.25] Y[-20,48.868]
+  Z[0,29.5]. Two interfaces - a HORN diamond (4x M2, axis Y) that mounts to the servo
+  horn, and BASE M2 holes (axis Z) that fix the jaw structure. All hole-family numbers
+  MEASURED from hardware/follower/step/gripper_static_part.step via cadre.cli inspect.
+swap_applicable: true
+features:
+  - name: servo_cradle
+    type: servo_mount
+    servo: XL330-M288-T          # joint5 gripper servo; swap to XL430-W250-T
+    preserves: [output_axis, screw_pattern, body_clearance]
+    constraints:
+      clearance_mm: 0.5
+      wall_mm: 4.0
+      screw: M2
+  - name: horn_mount            # 4x M2 diamond on the +Y face (servo horn side)
+    type: servo_mount
+    servo: XL330-M288-T
+    preserves: [output_axis, screw_pattern]
+    constraints:
+      screw: M2
+      hole_function: clearance     # inspect "M2", dia 2.30 -> M2 clearance
+      hole_diameter_mm: 2.3
+      through: false               # 4 faces / 4 axes -> 1 face per line; blind into the
+                                   # +Y horn wall (a through hole would breach the cradle)
+      blind_depth_mm: 5.0
+      through_evidence: "4 faces / 4 axes -> 1 face per line = blind into the Y horn wall"
+      horn_axis_dir: [0.0, 1.0, 0.0]
+      diamond_centers_xz_mm: [[0.8, 8.8], [6.8, 14.8], [-5.2, 14.8], [0.8, 20.8]]
+      face_y_mm: 0.0               # the +Y diamond face sits at Y=0 (entry from -Y? see note)
+  - name: base_mount            # M2 holes through the base (axis Z). TWO families in
+                                # the real part: 2x phi2.30 + 1x phi2.34 (kept distinct
+                                # so C-A2 sees both, not a merged phi2.3 x3).
+    type: servo_mount
+    servo: XL330-M288-T
+    preserves: [screw_pattern]
+    constraints:
+      screw: M2
+      hole_function: clearance     # inspect "M2", dia 2.30/2.34 -> M2 clearance
+      through: true                # axis-Z holes through the base plate
+      through_evidence: "axis Z, 1-2 faces per line through the base plate"
+      base_axis_dir: [0.0, 0.0, 1.0]
+      # family A: phi2.30 x2
+      base_a_diameter_mm: 2.3
+      base_a_centers_mm: [[-14.3, 1.1, 0.0], [-14.3, -14.8, 0.0]]
+      # family B: phi2.34 x1
+      base_b_diameter_mm: 2.34
+      base_b_centers_mm: [[15.8, -15.0, 0.0]]
+  - name: jaw_body
+    type: structural_beam
+    preserves: [jaw_offset]
+    constraints:
+      min_wall_mm: 2.5
+      horn_to_jaw_z_mm: 29.5       # jaw rises in Z (preserved)
+measured_families:
+  - {diameter_mm: 2.3,  screw: M2, axes: 4, faces: 4, dir: [0,1,0]}
+  - {diameter_mm: 2.3,  screw: M2, axes: 2, faces: 4, dir: [0,0,1]}
+  - {diameter_mm: 2.34, screw: M2, axes: 1, faces: 2, dir: [0,0,1]}
+tests:
+  - hole_pattern_match
+  - envelope_clearance
+  - min_wall_thickness

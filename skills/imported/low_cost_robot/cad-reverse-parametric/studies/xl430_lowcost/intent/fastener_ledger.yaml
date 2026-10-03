@@ -1,0 +1,123 @@
+schema_version: 1
+status: source_survey_draft_not_purchase_or_assembly_approval
+units: mm
+coverage_complete: false
+engineering_approved: false
+role_ids_are_physical_motor_ids: false
+printed_link_material: PLA
+
+# Paths are relative to the repository root. A changed source needs re-survey.
+sources:
+  interfaces:
+    path: skills/cad-reverse-parametric/studies/xl430_lowcost/intent/assembly_fit.yaml
+    sha256: 82a05c0f1dff682bc3dc8c5b33886a39ff9586a792ff90607e15642307fb8cbc
+    assembly_sha256: 4b0ecfd89411f11285ce7611f0b914bb7bc07515da7daff3f4460cfca9d7dee3
+  external_support:
+    path: skills/cad-reverse-parametric/studies/xl430_lowcost/intent/assembly_sequence.yaml
+    sha256: 3af908fe5dc73dc70d38421d97f0b11c6cad24d611b99aea24273394c52165e8
+    assembly_sha256: 67f4015c467c8732a84788a66d0e82b404d552adcc579e58593a2453218193f7
+    applicability: Earlier static source; not yet qualified on a final all-XL430 assembly.
+  official_assembly:
+    url: https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#custom-frame-assembly
+    checked_on: 2026-09-22
+    facts: Select screw length using mounting depth; front frame examples use spacer rings.
+  specification_catalog:
+    source: interfaces
+    yaml_keys: [sources, fastener_families]
+    facts: Contains manufacturer drawing/image URLs and hashes; maximum depth is not minimum engagement.
+
+interpretation:
+  groups: Each group is a surveyed interface, not a completed per-bolt ledger.
+  case_sites: Read interfaces.<role>.case_faces matching side; source_xy_mm lists existing axes.
+  horn_sites: Four source mounting sites; exact axes and seat records must be bound to the final mating report.
+  site_count_meaning: Source positions to investigate, not screw quantities to order or proof of accessibility.
+  geometry_policy: Preserve original outlines; only necessary, authorized link holes may change diameter.
+  diameter_gate: Identify actual screw and usable receiver depth before selecting link clearance diameter.
+  motor_policy: Never drill or re-tap the servo case or infer threads from smooth CAD cylinders.
+  same_size_not_same_screw: Machine screws and plastic tapping screws are not interchangeable.
+
+unselected_for_every_group:
+  selected_screw_part_number: null
+  selected_head_and_drive: null
+  selected_length_mm: null
+  selected_link_clearance_diameter_mm: null
+  actual_washer_and_spacer_stack: null
+  usable_receiver_thread_depth_mm: null
+  minimum_effective_engagement_mm: null
+  tightening_torque_Nm: null
+  print_dimensional_allowance_mm: null
+  tool_part_number_and_swept_volume: null
+  reaction_fixture_and_hand_access: null
+  pla_bearing_stress_and_creep_evidence: null
+  full_assembly_sequence_stage: null
+  boltability_approved: false
+
+# family resolves to sources.interfaces -> fastener_families.<family>.
+# This preserves front/back specification differences without copying lengths.
+groups:
+  - {id: base_case_back, role: base, kind: case, side: back, sites: 4, family: case_back_cover_replacement}
+  - {id: shoulder_case_front, role: shoulder, kind: case, side: front, sites: 2, family: case_front_cover_replacement}
+  - {id: shoulder_case_back, role: shoulder, kind: case, side: back, sites: 2, family: case_back_cover_replacement}
+  - {id: elbow_case_front, role: elbow, kind: case, side: front, sites: 2, family: case_front_cover_replacement}
+  - {id: elbow_case_back, role: elbow, kind: case, side: back, sites: 2, family: case_back_cover_replacement}
+  - {id: extension_case_front, role: extension, kind: case, side: front, sites: 2, family: case_front_cover_replacement}
+  - {id: extension_case_back, role: extension, kind: case, side: back, sites: 2, family: case_back_cover_replacement}
+  - {id: wrist_case_back, role: wrist, kind: case, side: back, sites: 4, family: case_back_cover_replacement}
+  - {id: gripper_case_front, role: gripper, kind: case, side: front, sites: 3, family: case_front_cover_replacement}
+  - {id: gripper_case_back, role: gripper, kind: case, side: back, sites: 3, family: case_back_cover_replacement}
+  - {id: base_output, role: base, kind: output, sites: 4, family: horn_m2}
+  - {id: shoulder_output, role: shoulder, kind: output, sites: 4, family: horn_m2}
+  - {id: elbow_output, role: elbow, kind: output, sites: 4, family: horn_m2}
+  - {id: extension_output, role: extension, kind: output, sites: 4, family: horn_m2}
+  - {id: wrist_output, role: wrist, kind: output, sites: 4, family: horn_m2}
+  - {id: gripper_output, role: gripper, kind: output, sites: 4, family: horn_m2}
+  - {id: shoulder_idler, role: shoulder, kind: idler, sites: 4, family: horn_m2, variant: standard_shoulder_idler_only}
+  - {id: elbow_idler, role: elbow, kind: idler, sites: 4, family: horn_m2}
+  - {id: extension_idler, role: extension, kind: idler, sites: 4, family: horn_m2}
+  - {id: gripper_idler, role: gripper, kind: idler, sites: 4, family: horn_m2}
+
+survey_totals:
+  groups: 20
+  case_positions: 26
+  output_positions: 24
+  idler_positions: 16
+  total_source_positions: 66
+  is_purchase_bom: false
+
+shoulder_support_variants:
+  selected: null
+  mutually_exclusive: [standard_idler, external_tube_guide]
+  standard_idler:
+    interface_group: shoulder_idler
+    kit: HN11-I101
+    availability: not_available_reported_by_user
+    center_fastener: unresolved_include_separately_from_four_link_screws
+  external_tube_guide:
+    source: external_support
+    replaces_interface_group: shoulder_idler
+    components: [metal_tube, PLA_guide, metal_washer, center_bolt]
+    center_bolt:
+      nominal_visual_reference: M3x12
+      source_key: candidate.bolt
+      purchased: false
+      selected_for_installation: false
+      real_thread_and_depth_verified: false
+    load_path_requirement: Washer must clamp the metal tube without clamping the rotating link.
+    not_the_old_variant: Do not use the superseded internal printed thrust-flange stack or its bolt-overlap numbers.
+    assembly_approved: false
+
+unexpanded_scope:
+  - Standard idler-to-motor center fastening and cap retention, separate from link-to-idler mounting sites.
+  - Workbench/base anchoring, reaction load path and access below the base.
+  - Every group's independent bolt axis, seat, stack, driver entry and tightening stage in the final assembly.
+  - Emergency support stock tube, actual thread, washer, tool and preload/remaining-play validation.
+  - Cable retention, E148 mounting and strain relief after the harness components are chosen.
+  - Survey any additional non-motor link fastenings; absence is not established by this partial catalog.
+excluded:
+  - Factory internal motor screws, except explicit manufacturer-approved frame-mount replacements.
+  - Output horn factory retention when supplied assembled; do not infer permission to dismantle it.
+release_gates:
+  - Complete and independently check the per-bolt inventory and variant choice.
+  - Resolve every unselected field with source or actual-part evidence.
+  - Validate each final CAD axis, contact, hole clearance, screw depth, tool and insertion path.
+  - Verify PLA stack compliance, clamp load, retained play, payload and motion requirements physically.

@@ -1,0 +1,214 @@
+schema: validation-rule-catalog/v0
+catalog_id: xl430_lowcost_elbow_to_wrist_extension
+catalog_version: "2026-06-13.1"
+description: >-
+  Reviewable validation rules for the elbow_to_wrist_extension XL430 study.
+  The YAML file is the human-reviewed source of truth; validate_rule_catalog.py
+  can sync it into a lightweight DuckDB database and store validation run history.
+paper_inspiration:
+  title: "Liaison-Based Enriched CAD Model Representation for Assembly Tasks"
+  doi: "https://doi.org/10.14733/cadaps.2024.1045-1062"
+profiles:
+  - profile_id: candidate_preservation
+    description: >-
+      Blocking rules for the current accepted design principle: preserve the
+      original STEP geometry and candidate-side fastening interfaces until an
+      explicit local edit mask is approved.
+    enabled_group_ids:
+      - shape_preservation
+      - hole_family_preservation
+      - liaison_candidate_preservation
+  - profile_id: assembly_characterization
+    description: >-
+      Non-blocking characterization rules for the existing arm.step occurrence.
+      These record actual mating/contact/fastener-access findings without
+      treating the current historical assembly mismatch as a release blocker.
+    enabled_group_ids:
+      - actual_mating_alignment
+      - contact_face_validity
+      - fastener_depth
+      - tool_access
+groups:
+  - group_id: shape_preservation
+    default_severity: blocker
+    default_blocking: true
+    review_status: active
+    source_requirement: >-
+      Do not rebuild this organic/asymmetric part from scratch; preserve the
+      original STEP outside an approved local edit mask.
+  - group_id: hole_family_preservation
+    default_severity: blocker
+    default_blocking: true
+    review_status: active
+    source_requirement: >-
+      Functional holes must retain original diameters, axes, counts, and center
+      patterns so the same fastening interfaces remain possible.
+  - group_id: liaison_candidate_preservation
+    default_severity: blocker
+    default_blocking: true
+    review_status: active
+    source_requirement: >-
+      Candidate-side liaison records must expose all mounting preservation
+      failures and must not hide shifted hole families.
+  - group_id: actual_mating_alignment
+    default_severity: characterization
+    default_blocking: false
+    review_status: active
+    source_requirement: >-
+      Actual mating CAD should have matching fastening-hole centers and axes.
+      Current arm.step is characterized separately because its connector
+      occurrence is not dimension-identical to the standalone generated part.
+  - group_id: contact_face_validity
+    default_severity: characterization
+    default_blocking: false
+    review_status: active
+    source_requirement: >-
+      Mating parts should have real contact or an explained contact gap before
+      boltability is claimed.
+  - group_id: fastener_depth
+    default_severity: characterization
+    default_blocking: false
+    review_status: active
+    source_requirement: >-
+      Screw length/depth must be checked against mounting depth before a
+      fastening set is accepted.
+  - group_id: tool_access
+    default_severity: characterization
+    default_blocking: false
+    review_status: active
+    source_requirement: >-
+      Driver/head access must be checked before an aligned hole pattern is
+      treated as buildable.
+rules:
+  - rule_id: shape_preservation.original_shape_equivalent
+    group_id: shape_preservation
+    feature_type: body
+    extractor: extension_preservation
+    metric_path: checks.C_A1_original_shape.passed
+    aggregate: value
+    operator: eq
+    expected: true
+    failure_message: Original STL/STEP-equivalence gate failed.
+  - rule_id: shape_preservation.swap_is_noop_without_mask
+    group_id: shape_preservation
+    feature_type: body
+    extractor: extension_preservation
+    metric_path: checks.swap_is_noop_until_change_mask.passed
+    aggregate: value
+    operator: eq
+    expected: true
+    failure_message: XL430 variant changed geometry without an approved edit mask.
+  - rule_id: shape_preservation.local_edit_inactive
+    group_id: shape_preservation
+    feature_type: change_mask
+    extractor: extension_preservation
+    metric_path: checks.local_edit_inactive.passed
+    aggregate: value
+    operator: eq
+    expected: true
+    failure_message: Local edit mask is active or ambiguous.
+  - rule_id: shape_preservation.no_unapproved_phi24_collar
+    group_id: shape_preservation
+    feature_type: generated_cylinders
+    extractor: extension_preservation
+    metric_path: checks.no_unapproved_phi24_collar.passed
+    aggregate: value
+    operator: eq
+    expected: true
+    failure_message: Unapproved circular collar feature appeared.
+  - rule_id: hole_family_preservation.worst_center_nn
+    group_id: hole_family_preservation
+    feature_type: mounting_hole_family
+    extractor: fastening_interface
+    metric_path: worst_center_nn_mm
+    aggregate: value
+    operator: le
+    threshold: 0.15
+    unit: mm
+    failure_message: Candidate hole centers moved too far from the reference STEP.
+  - rule_id: hole_family_preservation.all_family_centers
+    group_id: hole_family_preservation
+    feature_type: mounting_hole_family
+    extractor: fastening_interface
+    metric_path: families[*].center_nn_mm
+    aggregate: max
+    operator: le
+    threshold: 0.15
+    unit: mm
+    failure_message: At least one hole family center pattern exceeds tolerance.
+  - rule_id: hole_family_preservation.all_family_diameters
+    group_id: hole_family_preservation
+    feature_type: mounting_hole_family
+    extractor: fastening_interface
+    metric_path: families[*].diameter_delta_mm
+    aggregate: max
+    operator: le
+    threshold: 0.10
+    unit: mm
+    failure_message: At least one hole family diameter changed beyond tolerance.
+  - rule_id: hole_family_preservation.no_extra_candidate_families
+    group_id: hole_family_preservation
+    feature_type: generated_cylinders
+    extractor: fastening_interface
+    metric_path: extra_candidate_families
+    aggregate: len
+    operator: eq
+    expected: 0
+    failure_message: Candidate introduced extra cylindrical hole/wall families.
+  - rule_id: liaison_candidate_preservation.all_mountings_passed
+    group_id: liaison_candidate_preservation
+    feature_type: liaison_mounting
+    extractor: liaison_interface
+    metric_path: liaisons[*].mountings[*].passed
+    aggregate: all
+    operator: eq
+    expected: true
+    failure_message: Candidate-side liaison mounting preservation failed.
+  - rule_id: liaison_candidate_preservation.mounting_center_max
+    group_id: liaison_candidate_preservation
+    feature_type: liaison_mounting
+    extractor: liaison_interface
+    metric_path: liaisons[*].mountings[*].center_nn_mm
+    aggregate: max
+    operator: le
+    threshold: 0.15
+    unit: mm
+    failure_message: Candidate-side liaison center offset exceeds tolerance.
+  - rule_id: contact_face_validity.actual_contacts_exist
+    group_id: contact_face_validity
+    feature_type: contact_pair
+    extractor: assembly_liaison
+    metric_path: liaisons[*].contact.min_distance_mm
+    aggregate: max
+    operator: le
+    threshold: 0.05
+    unit: mm
+    failure_message: Assembly mating solids are not in contact.
+  - rule_id: actual_mating_alignment.actual_center_offsets
+    group_id: actual_mating_alignment
+    feature_type: assembly_mounting
+    extractor: assembly_liaison
+    metric_path: liaisons[*].mountings[*].center_nn_mm
+    aggregate: max
+    operator: le
+    threshold: 0.25
+    unit: mm
+    failure_message: Actual assembly mating hole centers are misaligned.
+  - rule_id: fastener_depth.depth_status_pass_or_na
+    group_id: fastener_depth
+    feature_type: fastener_set
+    extractor: assembly_liaison
+    metric_path: liaisons[*].fastener_set.screw_length_depth_check.status
+    aggregate: all_in
+    operator: all_in
+    expected: ["pass", "not_applicable"]
+    failure_message: Screw length/depth is not certified.
+  - rule_id: tool_access.tool_status_pass_or_na
+    group_id: tool_access
+    feature_type: fastener_set
+    extractor: assembly_liaison
+    metric_path: liaisons[*].fastener_set.tool_access_check.status
+    aggregate: all_in
+    operator: all_in
+    expected: ["pass", "not_applicable"]
+    failure_message: Tool access is not certified.

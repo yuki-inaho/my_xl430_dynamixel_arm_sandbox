@@ -1,0 +1,204 @@
+{
+  "captured_at": "2026-10-03T21:53:55.062865+09:00",
+  "status": "PASS",
+  "unchanged": [
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/CONTROL_AUDIT.md",
+      "before": "9ea96a394e70cec433b44d8e375a1a209fab3cead4c3799a0b1e3ee0d07f7e20",
+      "after": "9ea96a394e70cec433b44d8e375a1a209fab3cead4c3799a0b1e3ee0d07f7e20"
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/CONTROL_SPEC_DRAFT.md",
+      "before": "93a218fc7b31ac8bcc125baabc71f21397e216462f7217624c3d2325e4285f4e",
+      "after": "93a218fc7b31ac8bcc125baabc71f21397e216462f7217624c3d2325e4285f4e"
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/REPORT.md",
+      "before": "aea6bf0d794a342620d2d17c033204ecdd28402756b480cde00acad90a080279",
+      "after": "aea6bf0d794a342620d2d17c033204ecdd28402756b480cde00acad90a080279"
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/current-arm-status.json",
+      "before": "b1e48075400640994778f81c497c9eab15f480cf66491632af97c0c3d9a6194f",
+      "after": "b1e48075400640994778f81c497c9eab15f480cf66491632af97c0c3d9a6194f"
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/artifact-manifest.json",
+      "before": "53d349e496857de68e933c7a6b8ae8d619786df47e57159da106c67aa19d14c2",
+      "after": "53d349e496857de68e933c7a6b8ae8d619786df47e57159da106c67aa19d14c2"
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/browser-review.json",
+      "before": "d268a7f8a673d71c4f5a99feeb956540a80ca988e8c73e40892ec4084cb1d1f4",
+      "after": "d268a7f8a673d71c4f5a99feeb956540a80ca988e8c73e40892ec4084cb1d1f4"
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/model-provenance.json",
+      "before": "8375e073297aab2bdeb007f25f9ab32c45da52a3115aa056bfdf87ff7d5322bb",
+      "after": "8375e073297aab2bdeb007f25f9ab32c45da52a3115aa056bfdf87ff7d5322bb"
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/arm-r3/arm_XL430_R3.step",
+      "before": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "after": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb"
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/pg3-c9/PG3_C92_J28/reference/C7/source/design.py",
+      "before": "c20f0dd65fa1338ba3d42c9424990937bd161b491b5a937e429a84ccf4bb25d0",
+      "after": "c20f0dd65fa1338ba3d42c9424990937bd161b491b5a937e429a84ccf4bb25d0"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/AGENTS.md",
+      "before": "0484a0248dd0e1a00469cbb7b3601a8ab1f4c4bba019114609bd4f302262e014",
+      "after": "0484a0248dd0e1a00469cbb7b3601a8ab1f4c4bba019114609bd4f302262e014"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/config/arm.toml",
+      "before": "e2e3129255d2295856a78a2a016facc2537c31b48599999817b4c871d129d500",
+      "after": "e2e3129255d2295856a78a2a016facc2537c31b48599999817b4c871d129d500"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/contracts/stream-v2.schema.json",
+      "before": "bfc4c6ec89363241d41af744876771a44a2fb2cd59b65465675b1b30c60f87e2",
+      "after": "bfc4c6ec89363241d41af744876771a44a2fb2cd59b65465675b1b30c60f87e2"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/status_20261003T185915_405929+0900.json",
+      "before": "c5f5676a9b509263b04282c4b59411aee0c23a0de178c9a7f57b6e414a7d66a0",
+      "after": "c5f5676a9b509263b04282c4b59411aee0c23a0de178c9a7f57b6e414a7d66a0"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/watch_20261003T185915_978979+0900.jsonl",
+      "before": "3fe5a5e72727eaaba233289f2bb5120f4a01e518bcb00e10fc2126fc5239cbf5",
+      "after": "3fe5a5e72727eaaba233289f2bb5120f4a01e518bcb00e10fc2126fc5239cbf5"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/watch_20261003T185930_745502+0900.jsonl",
+      "before": "fcc927ca52401737b819fe9025e2f1a575095b5e983d91b3f8300dd4f73c4d1d",
+      "after": "fcc927ca52401737b819fe9025e2f1a575095b5e983d91b3f8300dd4f73c4d1d"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/watch_20261003T185935_192160+0900.jsonl",
+      "before": "03e793cce0e4f43396cbed8a2237dd03f0128a68aced5c3f3fab7d76cb69cc6e",
+      "after": "03e793cce0e4f43396cbed8a2237dd03f0128a68aced5c3f3fab7d76cb69cc6e"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/__init__.py",
+      "before": "9e4456afa8283ce1f2d1f5c83dd83dc2a9a3266135a3fe5a2845a4e2c1e29877",
+      "after": "9e4456afa8283ce1f2d1f5c83dd83dc2a9a3266135a3fe5a2845a4e2c1e29877"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/bus.py",
+      "before": "e93adff150845ee7f9d699c43feef5424167642e3cb0d60341b88c93224b1768",
+      "after": "e93adff150845ee7f9d699c43feef5424167642e3cb0d60341b88c93224b1768"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/cli.py",
+      "before": "2b636b4b7e8d365f6b606d2b9003c97dd49ca4fb6b3bc4ac4d04f9297aa87442",
+      "after": "2b636b4b7e8d365f6b606d2b9003c97dd49ca4fb6b3bc4ac4d04f9297aa87442"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/configuration.py",
+      "before": "5b153c8b87763cc2960066deb5a1a933bb738289572b74e37bc7388fec62bf00",
+      "after": "5b153c8b87763cc2960066deb5a1a933bb738289572b74e37bc7388fec62bf00"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/contracts.py",
+      "before": "b6713f4f3334a5e035b833793897e62234d287e6c1f3fe34360beb56de03e4bf",
+      "after": "b6713f4f3334a5e035b833793897e62234d287e6c1f3fe34360beb56de03e4bf"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/diagnostics.py",
+      "before": "928011fe86b5ae9bd4691730166020d6534c713411f34b630a7c3842e4c6e267",
+      "after": "928011fe86b5ae9bd4691730166020d6534c713411f34b630a7c3842e4c6e267"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/models.py",
+      "before": "304d29a628e025ed832d08d67dcdd5d46f5be5eee6584aa2d17779e3e1d4e162",
+      "after": "304d29a628e025ed832d08d67dcdd5d46f5be5eee6584aa2d17779e3e1d4e162"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/numerics.py",
+      "before": "ff041f4929313d1be52e7a5a1dcce4020f765d0ea1f726b2b750bc0226c25b6b",
+      "after": "ff041f4929313d1be52e7a5a1dcce4020f765d0ea1f726b2b750bc0226c25b6b"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/output.py",
+      "before": "530c74a2e3ef62fce770cc01f7ffaa9cd993fc406d25805ae53d02da2bbe001a",
+      "after": "530c74a2e3ef62fce770cc01f7ffaa9cd993fc406d25805ae53d02da2bbe001a"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/reader.py",
+      "before": "1ce5eb58c1e79aa18cc19c3d0de8de1c3b551004c1fb61d6ec2e924472cd90b0",
+      "after": "1ce5eb58c1e79aa18cc19c3d0de8de1c3b551004c1fb61d6ec2e924472cd90b0"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/registers.py",
+      "before": "8f43cf750e4b78e90a577f67743adf53a7920cfb3451d9018f4a78f6b1ee2c82",
+      "after": "8f43cf750e4b78e90a577f67743adf53a7920cfb3451d9018f4a78f6b1ee2c82"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/fixtures/frame_v2.json",
+      "before": "7ece197fa6db92e6a56760db880d6bc1240113da8d6beb9e4382735a62366335",
+      "after": "7ece197fa6db92e6a56760db880d6bc1240113da8d6beb9e4382735a62366335"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/fixtures/stream_v2.jsonl",
+      "before": "c432c12fd9c9605d6373f52b6e9a23b2cd75161f99b26578eb466ebdf235a155",
+      "after": "c432c12fd9c9605d6373f52b6e9a23b2cd75161f99b26578eb466ebdf235a155"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/test_packaging.py",
+      "before": "619dab79c3ae72fac0c485cde68e3f48347690d1c27bd5fc6d3029889467eb67",
+      "after": "619dab79c3ae72fac0c485cde68e3f48347690d1c27bd5fc6d3029889467eb67"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/test_readonly.py",
+      "before": "8d79514e070a176d070f22afef121076e3c0c675e0dacc4fe861918ec4faeb7b",
+      "after": "8d79514e070a176d070f22afef121076e3c0c675e0dacc4fe861918ec4faeb7b"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/test_streaming.py",
+      "before": "2d2e978966033efacc9191dd3fe62924e929f9280fbdd48824986a6e6bfc4532",
+      "after": "2d2e978966033efacc9191dd3fe62924e929f9280fbdd48824986a6e6bfc4532"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/uv.lock",
+      "before": "bc9ea9f03a7659e8a6aada2b93b1c80e174060d2d2c15919be020c7380057cd4",
+      "after": "bc9ea9f03a7659e8a6aada2b93b1c80e174060d2d2c15919be020c7380057cd4"
+    }
+  ],
+  "authorized_changes": [
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/pyproject.toml",
+      "before": "88d167c8f257b80480b160d553d497453b99531b903f6a2489ea828ee69a84fc",
+      "after": "09e3392f32bcf305c191a414a8365550cd06dec3a598fa81e06ad533d7005675"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/observer.py",
+      "before": "55629a63c08ba1ac2b38550a5a00a41bb0fc8eb24b69f4d48eeb50552aa20f63",
+      "after": "4488da259cb543751f9b02a58906f6bca7d6d45e786e1a0dc9cfcc87224e7809"
+    }
+  ],
+  "reviewed_prior_document_updates": [
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/photo-version-check_20261003/REPORT_ja.md",
+      "before": "4562b25914646ac3e9575e2b2c6bc2ea756ab564a40df1d4728e5e3f6bed95a7",
+      "after": "68ec010ba88aae80b378a8e46d45c78bb2f0a2cc2cf8c0d2462456f61a74ca21"
+    }
+  ],
+  "missing_links": [],
+  "donor_hashes": {
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/arm-r3/arm_XL430_R3.step": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/pg3-c9/PG3_C92_J28/reference/C7/source/design.py": "c20f0dd65fa1338ba3d42c9424990937bd161b491b5a937e429a84ccf4bb25d0"
+  },
+  "whitespace": [],
+  "git_diff_check": [
+    0,
+    0
+  ],
+  "hardware_frames": 200,
+  "physical_calibration": "UNVERIFIED",
+  "motion_executed": false,
+  "cad_collision": "ERROR/UNKNOWN unchanged"
+}

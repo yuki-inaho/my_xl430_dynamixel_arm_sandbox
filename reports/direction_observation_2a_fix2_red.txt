@@ -1,0 +1,123 @@
+.......................................FFFFFFF                           [100%]
+=================================== FAILURES ===================================
+___________ test_non_object_before_payload_clears_the_baseline[None] ___________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-42/test_non_object_before_payload0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x758165f38650>
+payload = None
+
+    @pytest.mark.parametrize("payload", [None, [], "x", 3])
+    def test_non_object_before_payload_clears_the_baseline(tmp_path, monkeypatch, payload):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        with pytest.raises((TypeError, ValueError)):
+            app.live_action("/api/direction/before", payload)
+>       assert app.direction_start is None
+E       AssertionError: assert DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T14:02:08.321210+00:00', sequence=1, mode=3, ...ingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True, physical_confirmed=True) is None
+E        +  where DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T14:02:08.321210+00:00', sequence=1, mode=3, ...ingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True, physical_confirmed=True) = <simulation.current_arm_viewer.server.Viewer object at 0x758165f384d0>.direction_start
+
+tests/test_direction_observation.py:270: AssertionError
+_________ test_non_object_before_payload_clears_the_baseline[payload1] _________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-42/test_non_object_before_payload1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x758165f3aa80>
+payload = []
+
+    @pytest.mark.parametrize("payload", [None, [], "x", 3])
+    def test_non_object_before_payload_clears_the_baseline(tmp_path, monkeypatch, payload):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        with pytest.raises((TypeError, ValueError)):
+            app.live_action("/api/direction/before", payload)
+>       assert app.direction_start is None
+E       AssertionError: assert DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T14:02:08.371164+00:00', sequence=1, mode=3, ...ingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True, physical_confirmed=True) is None
+E        +  where DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T14:02:08.371164+00:00', sequence=1, mode=3, ...ingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True, physical_confirmed=True) = <simulation.current_arm_viewer.server.Viewer object at 0x758165f3a660>.direction_start
+
+tests/test_direction_observation.py:270: AssertionError
+____________ test_non_object_before_payload_clears_the_baseline[x] _____________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-42/test_non_object_before_payload2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x758165f3bf20>
+payload = 'x'
+
+    @pytest.mark.parametrize("payload", [None, [], "x", 3])
+    def test_non_object_before_payload_clears_the_baseline(tmp_path, monkeypatch, payload):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        with pytest.raises((TypeError, ValueError)):
+            app.live_action("/api/direction/before", payload)
+>       assert app.direction_start is None
+E       AssertionError: assert DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T14:02:08.380627+00:00', sequence=1, mode=3, ...ingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True, physical_confirmed=True) is None
+E        +  where DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T14:02:08.380627+00:00', sequence=1, mode=3, ...ingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True, physical_confirmed=True) = <simulation.current_arm_viewer.server.Viewer object at 0x758165f3b140>.direction_start
+
+tests/test_direction_observation.py:270: AssertionError
+____________ test_non_object_before_payload_clears_the_baseline[3] _____________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-42/test_non_object_before_payload3')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x758165f3bf80>
+payload = 3
+
+    @pytest.mark.parametrize("payload", [None, [], "x", 3])
+    def test_non_object_before_payload_clears_the_baseline(tmp_path, monkeypatch, payload):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        with pytest.raises((TypeError, ValueError)):
+            app.live_action("/api/direction/before", payload)
+>       assert app.direction_start is None
+E       AssertionError: assert DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T14:02:08.394992+00:00', sequence=1, mode=3, ...ingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True, physical_confirmed=True) is None
+E        +  where DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T14:02:08.394992+00:00', sequence=1, mode=3, ...ingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True, physical_confirmed=True) = <simulation.current_arm_viewer.server.Viewer object at 0x758165f3b9b0>.direction_start
+
+tests/test_direction_observation.py:270: AssertionError
+_______________ test_unencodable_record_leaves_no_evidence_file ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-42/test_unencodable_record_leaves0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x758165f38d70>
+
+    def test_unencodable_record_leaves_no_evidence_file(tmp_path, monkeypatch):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        for value in (app.bridge.data,):
+            value["session_id"] = "\ud800"
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        end = later(1267, 2)
+        end["session_id"] = "\ud800"
+        app.bridge.data = end
+        with pytest.raises(ValueError):
+            app.live_action("/api/direction/after", {"physical_change_confirmed": True})
+>       assert saved_files(tmp_path) == []
+E       AssertionError: assert [PosixPath('/...409483.json')] == []
+E         
+E         Left contains one more item: PosixPath('/tmp/pytest-of-inaho-omen/pytest-42/test_unencodable_record_leaves0/synthetic/observation_20261003T230208409483.json')
+E         Use -v to get more diff
+
+tests/test_direction_observation.py:287: AssertionError
+__________________ test_failed_write_removes_the_partial_file __________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-42/test_failed_write_removes_the_0')
+
+    def test_failed_write_removes_the_partial_file(tmp_path):
+        from simulation.current_arm_viewer import server
+        target = tmp_path / "observation.json"
+        with pytest.raises(TypeError):
+>           server.write_exclusive(target, 12345)
+            ^^^^^^^^^^^^^^^^^^^^^^
+E           AttributeError: module 'simulation.current_arm_viewer.server' has no attribute 'write_exclusive'
+
+tests/test_direction_observation.py:295: AttributeError
+_______________ test_compare_rechecks_the_baseline_confirmation ________________
+
+    def test_compare_rechecks_the_baseline_confirmation():
+        baseline = direction.sample(later(1153, 1), 3, "yes", MODEL_DIR)
+>       with pytest.raises(ValueError, match="畳んだ位置"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_direction_observation.py:305: Failed
+=========================== short test summary info ============================
+FAILED tests/test_direction_observation.py::test_non_object_before_payload_clears_the_baseline[None]
+FAILED tests/test_direction_observation.py::test_non_object_before_payload_clears_the_baseline[payload1]
+FAILED tests/test_direction_observation.py::test_non_object_before_payload_clears_the_baseline[x]
+FAILED tests/test_direction_observation.py::test_non_object_before_payload_clears_the_baseline[3]
+FAILED tests/test_direction_observation.py::test_unencodable_record_leaves_no_evidence_file
+FAILED tests/test_direction_observation.py::test_failed_write_removes_the_partial_file
+FAILED tests/test_direction_observation.py::test_compare_rechecks_the_baseline_confirmation
+7 failed, 39 passed in 2.13s

@@ -1,0 +1,71 @@
+schema_version: 1
+status: pg3_installation_candidate_under_validation_not_approved
+requirements: [R-01, R-02, R-03, R-04, R-05, R-06, R-07, R-08, R-09, R-10]
+variant_catalog: specs/gripper_variants.yaml
+active_variant: pg3_c92_j28_c9
+active_installation_spec: specs/pg3_id5.yaml
+actuator:
+  model: XL430-W250-T
+  physical_id: 5
+  role: gripper_open_close
+  role_source: user_2026-09-24_ID5_only_no_additional_motor
+  selection_status: user_confirmed_2026-09-22
+integration:
+  upstream_physical_id: 4
+  additional_gripper_motor_count: 0
+  include_id4_to_id5_link: true
+  physical_to_cad: {"4": null, "5": null}
+  accepted_arm_revision: null
+camera:
+  required: true
+  purchase_status: not_purchased
+  mounting_decision_source: user_2026-09-24_ID5_motor_corner_and_diagonal_downward_view
+  model: null
+  mounting_reference: SO_ARM101_standard_UVC_28x28_M2
+  mass_kg: null
+  mounting_pattern_mm: [28.0, 28.0]
+  mounting_hole_count: 4
+  requested_parent: ID5_XL430_motor_case_corner_screw_region
+  requested_view: above_motor_oblique_down_to_grasp_zone
+  implementation_status: new_candidate_not_yet_designed
+  optical_frame_in_gripper: null
+  working_distance_mm: null
+  required_visible_roi: null
+performance:
+  opening_range_mm: null
+  finger_length_mm: null
+  object_definition: cube
+  cube_edge_mm: null
+  roll_required: false
+  roll_decision_source: user_2026-09-24_roll_not_needed_supersedes_plus_minus_30
+  normal_force_per_jaw_N: null
+  opening_speed_mm_s: null
+  repeatability_mm: null
+  payload_kg: null
+  duty_cycle: null
+  id4_motion_range_rad: null
+p05_cable_relief_authorization:
+  source: user_2026-09-24_local_cable_relief_candidate_authorized
+  candidate_design_allowed: true
+  reprint_proposal_allowed: true
+  source_mutation_allowed: false
+  preserve: [existing_holes, fastening_faces, contact_faces, support_function, outline_outside_local_mask]
+  fabrication_approved: false
+hardware:
+  oem_m2_6x5_tapper_possession: absent_or_unknown
+  source: user_2026-09-24
+  same_diameter_substitution_approved: false
+materials:
+  existing_links: PLA
+  prototype_proposal: PLA
+  gear_slide_pad_materials: null
+electrical:
+  existing_power_board: E148
+  existing_supply_type: regulated_bench_supply
+  supply_model: null
+  cable_specification: null
+  camera_supply: null
+release:
+  cad_accepted: false
+  fabrication_approved: false
+  powered_operation_approved: false

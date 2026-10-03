@@ -1,0 +1,4 @@
+interface:
+  display_name: "Print CAD Validation"
+  short_description: "Validate CAD/STL artifacts before 3D printing."
+  default_prompt: "Validate CAD/STL files for 3D printing readiness, including geometry preservation, mesh watertightness, fastening interfaces, and repair/reporting steps."

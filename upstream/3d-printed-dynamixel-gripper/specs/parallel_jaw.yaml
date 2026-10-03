@@ -1,0 +1,37 @@
+schema_version: 1
+status: concept_only
+mechanism: opposed_racks_with_central_pinion
+actuator: XL430-W250-T
+physical_bus_id: null
+cad_joint_candidate: J6
+interface_source: specs/interfaces_all_xl430.yaml
+interface_source_status: measured_geometry_not_thread_claim
+output_pitch_circle_diameter_mm: 16.0
+opposite_support_required: true
+
+diagnostic_parameters:
+  pinion_pitch_radius_mm: 8.0
+  base_opening_mm: 40.0
+  theta_min_rad: -0.5
+  theta_max_rad: 0.5
+  jaw_thickness_mm: 8.0
+  jaw_length_mm: 40.0
+  jaw_height_mm: 24.0
+
+unknown_requirements:
+  - target_object
+  - required_opening
+  - normal_force_per_jaw
+  - speed
+  - hold_duration
+  - payload
+  - duty_cycle
+  - allowable_backlash
+  - actual_operating_torque
+  - gear_and_guide_print_clearance
+
+release:
+  production_named_step_allowed: false
+  production_named_stl_allowed: false
+  gcode_allowed: false
+  fabrication_approved: false

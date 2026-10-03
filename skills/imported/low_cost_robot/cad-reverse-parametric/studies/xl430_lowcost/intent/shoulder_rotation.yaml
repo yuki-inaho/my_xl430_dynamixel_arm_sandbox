@@ -1,0 +1,77 @@
+part: follower_shoulder_rotation
+intent: >-
+  the "rotation connector" - a thin disc/plate (Z thickness 10.9) that mounts ON the
+  joint1 base-rotation servo. NOTE - joint1 is XL430-W250-T ALREADY (the base 2 axes
+  are unchanged in this migration); this part is therefore NOT an XL330->XL430 swap
+  target. We reconstruct it (stage-1, equivalence-first) and explicitly record
+  "swap not applicable" rather than emitting a spurious XL430 variant. Frame -
+  X[-20,20] Y[-38.25,14.25] Z[19,29.9]. All hole-family numbers MEASURED from
+  hardware/follower/step/shoulder_rotation.step via cadre.cli inspect.
+swap_applicable: false
+swap_reason: >-
+  holds joint1 = XL430-W250-T (base rotation), which is unchanged in the XL330->XL430
+  migration (only joint3/4/5 swap). The phi10 horn bore + 4x M2 cross at radius 8 is
+  the XL430 horn interface; there is no XL330 envelope to grow here.
+features:
+  - name: horn_mount        # mounts to the joint1 (XL430) servo horn
+    type: servo_mount
+    servo: XL430-W250-T      # already XL430 (joint1); NOT swapped
+    preserves: [output_axis, screw_pattern]
+    constraints:
+      screw: M2
+      hole_function: clearance     # inspect screw label "M2", dia 2.40 -> M2 clearance
+      hole_diameter_mm: 2.4
+      through: true                # 4 faces / 4 axes -> 1 face per line = through (+Z)
+      through_evidence: "4 faces / 4 axes -> single face per axis line = through along Z"
+      axis_dir: [0.0, 0.0, 1.0]
+      cross_centers_xy_mm: [[0.0, -8.0], [8.0, 0.0], [0.0, 8.0], [-8.0, 0.0]]
+  - name: link_mount        # M3 bolts to the shoulder structure (axis X)
+    type: servo_mount
+    servo: XL430-W250-T
+    preserves: [screw_pattern]
+    constraints:
+      screw: M3
+      hole_function: clearance     # inspect screw label "M3", dia 3.50 -> M3 clearance
+      hole_diameter_mm: 3.5
+      through: true                # 4 faces / 2 axes -> 2 faces per line = through (X)
+      through_evidence: "4 faces / 2 axes -> 2 coaxial faces per line = through along X"
+      axis_dir: [1.0, 0.0, 0.0]
+      mount_centers_mm: [[0.0, -32.0, 25.3], [0.0, 8.0, 25.3]]
+  - name: horn_boss_bore
+    type: bore
+    preserves: [output_axis]
+    constraints:
+      diameter_mm: 10.0
+      axis_dir: [0.0, 0.0, 1.0]
+      center_xy_mm: [0.0, 0.0]
+      through: true                # 1 face / 1 axis along Z = horn shaft passage
+      through_evidence: "10.0 dia 1 face / 1 axis along Z -> horn shaft passage"
+      seat_role: horn_shaft_bore
+  - name: hub_bore
+    type: bore
+    preserves: [output_axis]
+    constraints:
+      diameter_mm: 21.5
+      axis_dir: [1.0, 0.0, 0.0]
+      # MEASURED axis line perp-foot at (Y=0, Z=36.291) — the cylinder sits high above
+      # the plate's Z[19,29.9] (a rounded top-edge face the kernel reads as a phi21.5
+      # cylinder). Reproduce the family at that exact axis line for C-A2.
+      center_yz_mm: [0.0, 36.291]
+      through: false               # 2 faces / 1 axis along X = side hub recess
+      blind_depth_mm: 3.0
+      through_evidence: "21.5 dia 2 faces / 1 axis along X at (Y0,Z36.3) -> top-edge hub face"
+      seat_role: hub_recess
+  - name: plate_body
+    type: structural_beam
+    preserves: [plate_thickness]
+    constraints:
+      min_wall_mm: 2.5
+      plate_thickness_mm: 10.9     # Z extent of the disc/plate (preserved)
+measured_families:
+  - {diameter_mm: 2.4,  screw: M2,   axes: 4, faces: 4, dir: [0,0,1]}
+  - {diameter_mm: 3.5,  screw: M3,   axes: 2, faces: 4, dir: [1,0,0]}
+  - {diameter_mm: 21.5, screw: null, axes: 1, faces: 2, dir: [1,0,0]}
+  - {diameter_mm: 10.0, screw: null, axes: 1, faces: 1, dir: [0,0,1]}
+tests:
+  - hole_pattern_match
+  - min_wall_thickness

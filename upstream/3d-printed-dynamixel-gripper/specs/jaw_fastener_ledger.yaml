@@ -1,0 +1,78 @@
+schema_version: 1
+status: complete_interface_inventory_with_unconfirmed_hardware
+scope: all_changed_jaw_fasteners_and_supports
+
+interfaces:
+  xl430_output_side:
+    count: 4
+    function: attach_jaw_base_to_J6_output
+    pitch_circle_diameter_mm: 16.0
+    measured_bore_diameter_mm: 2.0
+    thread_spec: null
+    axial_depth_mm: null
+    fastener_candidate: null
+    purchased: false
+    dimensions_confirmed: false
+    seat_contact_status: geometric_probe_only
+    stack_status: UNKNOWN
+    tool_status: UNKNOWN
+    counterhold_status: UNKNOWN
+    reason: thread_depth_head_and_tool_not_confirmed
+  xl430_idler_side:
+    count: 4
+    function: attach_opposite_support_to_J6_idler
+    pitch_circle_diameter_mm: 16.0
+    measured_bore_diameter_mm: 2.0
+    thread_spec: null
+    axial_depth_mm: null
+    fastener_candidate: null
+    purchased: false
+    dimensions_confirmed: false
+    seat_contact_status: candidate_not_assembly_proven
+    stack_status: UNKNOWN
+    tool_status: UNKNOWN
+    counterhold_status: UNKNOWN
+    reason: idler_hardware_and_mating_depth_not_selected
+  pinion_opposite_support_axis:
+    count: 1
+    function: react_pinion_radial_load_without_single_horn_cantilever
+    nominal_concept_bore_diameter_mm: 8.2
+    shaft_spec: null
+    bearing_or_bushing_spec: null
+    retention_method: null
+    purchased: false
+    dimensions_confirmed: false
+    fit_status: UNKNOWN
+    insertion_status: UNKNOWN
+    tool_status: UNKNOWN
+    reason: support_hardware_load_and_print_fit_not_selected
+
+assembly_sequence:
+  - stage: bench_attach_jaw_base_to_output
+    status: PROPOSED_NOT_PHYSICALLY_CHECKED
+  - stage: bench_attach_opposite_support_to_idler
+    status: PROPOSED_NOT_PHYSICALLY_CHECKED
+  - stage: install_pinion_axis_and_support
+    status: PROPOSED_NOT_PHYSICALLY_CHECKED
+  - stage: install_left_and_right_carriages
+    status: PROPOSED_NOT_PHYSICALLY_CHECKED
+  - stage: verify_hard_stops_without_power
+    status: REQUIRED_NOT_PERFORMED
+  - stage: verify_tool_and_counterhold_access
+    status: REQUIRED_NOT_PERFORMED
+
+known_bad_controls:
+  - insufficient_engagement
+  - bottoms_out
+  - head_collision
+  - tool_shaft_collision
+  - tool_handle_collision
+  - counterhold_unavailable
+  - unsupported_tool_motion
+
+release:
+  all_fastener_interfaces_inventoried: true
+  hardware_selected: false
+  physical_assembly_checked: false
+  fabrication_approved: false
+  powered_operation_approved: false

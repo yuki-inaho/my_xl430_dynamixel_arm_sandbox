@@ -1,0 +1,126 @@
+schema_version: 1
+common:
+  actuator: XL430-W250-T
+  physical_id_5_role: gripper_open_close_confirmed
+  roll_required: false
+  jaw_motor_physical_id: 5
+  additional_gripper_motor_count: 0
+  camera_parent_required: P05_wrist_XL430
+  material_candidate: PLA
+  fabrication_approved: false
+  powered_operation_approved: false
+variants:
+  pg3_c92_j28_c9:
+    implementation: gripper_design/pg3.py
+    source: references/pg3-c9/PG3_C92_J28
+    receipt: references/pg3-c9/intake.json
+    state: diagnostic_arm_camera_integration_fail_not_print_release
+    mechanism: central_crank_two_links_printed_rectangular_slides
+    construction_axes: {x: jaw_travel, y: up, z: forward}
+    exported_step_axes: {x: jaw_travel, y: backward, z: up}
+    mechanism_angle_degrees: [25, 135]
+    crank_radius_mm: 14.0
+    link_length_mm: 24.0
+    finger_length_mm: 28.0
+    frame_width_mm: 92.0
+    arm_from_construction:
+      rotation: Ry_positive_90_degrees
+      translation_mm: [-0.2, 234.9, 164.6]
+      verified_scope: vertex_area_volume_signature_not_exact_surface_equivalence
+    retained_motor_support: P06_fixed_gripper_XL430
+    removed_occurrences: [P07_moving_gripper_XL430, M06_ref00]
+    camera_parent: P05_wrist_XL430
+    donor_camera_present: false
+    simulation: simulation/pg3_scene.py
+    simulation_mode: analytic_joint_trajectory_mj_forward_not_dynamics
+    review_command: python -m scripts.review_pg3 review --out outputs/pg3-next
+    # Fields above and blockers below describe the immutable intake baseline.
+    # Do not mistake its old P06 interference for the locally repaired candidate.
+    installation_candidate:
+      revision: id5-r1
+      state: incomplete_not_installation_approval
+      implementation: gripper_design/pg3_id5.py
+      specification: specs/pg3_id5.yaml
+      design_document: docs/PG3_ID5_ONLY_DESIGN.md
+      workdoc: temp/workdoc_Sep24-2026_pg3_id5_only.md
+      review_script: scripts/review_pg3_id5.py
+      review_command: rtk proxy uv run python -m scripts.review_pg3_id5 --out outputs/pg3-id5-only-r2
+      frozen_geometry: outputs/pg3-id5-only-r1
+      p05_window_comparison: outputs/pg3-id5-p05-windows-r2
+      rejected_p05_window_comparison: outputs/pg3-id5-p05-windows-r1
+      source_archive_modified: false
+      p05_modified: false
+      downstream_motor_removed: true
+      additional_motor_count: 0
+      candidate_bom: null
+      bom_status: old_r5_BOM_not_applicable_requires_rebuild
+      simulation: null
+      simulation_status: no_roll_exporter_pending_do_not_use_old_roll_scene
+      whole_arm_fit_approved: false
+      physical_assembly_verified: false
+    historical_installation_candidate:
+      revision: r5
+      state: historical_roll_architecture_not_current_installation_approval
+      current_request_compatibility: requires_no_roll_motor_arrangement_revision
+      implementation: gripper_design/pg3_installation.py
+      specification: specs/pg3_installation.yaml
+      design_document: docs/PG3_INSTALLATION_CANDIDATE.md
+      review_script: scripts/review_pg3_installation.py
+      review_command: rtk proxy uv run python -m scripts.review_pg3_installation --out outputs/pg3-install-next
+      frozen_geometry: outputs/pg3-installable-candidate-r5
+      browser_evidence: outputs/pg3-r5-browser-r1
+      supplemental_evidence: outputs/pg3-installable-candidate-r5-audit
+      historical_supplemental_evidence: outputs/pg3-installable-candidate-r4-audit
+      candidate_bom: specs/pg3_candidate_bom.yaml
+      bom_checker: scripts/check_pg3_bom.py
+      source_archive_modified: false
+      p05_modified: false
+      p06_local_changes: true
+      pg3_frame_local_changes: true
+      pg3_crank_representation_changed_without_dimension_change: true
+      simulation_mesh_source: installed_assembly_mid_not_cached_neutral
+      whole_arm_fit_approved: false
+      physical_assembly_verified: false
+      unresolved:
+        - saved_assembly_boolean_controls_and_unclassified_contacts
+        - complete_continuous_motion_and_assembly_paths
+        - accepted_cable_route_with_authorized_local_P05_candidate
+        - actual_camera_optics_cube_dimensions_and_cantilever_loads
+        - no_roll_motor_arrangement_revision
+        - exact_fasteners_full_form_engagement_and_actual_tools
+        - PLA_print_fit_creep_and_nonpowered_physical_assembly
+    blockers:
+      - retained_P06_intersects_PG3_frame_slider_and_fasteners
+      - boolean_self_controls_fail_for_some_imported_or_rotated_shapes
+      - camera_current_proxy_view_occluded
+      - installed_camera_tool_access_collisions
+      - actual_camera_cable_fasteners_and_loads_unconfirmed
+      - no_full_arm_swept_clearance_or_force_validation
+  rack_pinion_concept:
+    implementation: gripper_design/parallel_jaw.py
+    state: visualization_concept_only
+    mechanism: opposed_racks_and_pinion_envelopes
+    blockers: [missing_teeth, variable_length_racks, missing_guides_and_retention, unknown_loads]
+  pg2_upright_crank_slider_r5:
+    implementation: gripper_design/pg2.py
+    source: references/pg2-r5/PG2_XL430
+    receipt: references/pg2-r5/intake.json
+    state: imported_candidate_not_arm_integrated
+    mechanism: central_crank_two_links_printed_rectangular_slides
+    local_axes: {x: jaw_travel, y: motor_long_axis, z: output_and_finger_direction}
+    mechanism_angle_degrees: [30, 140]
+    nominal_closed_gap_mm: 0.8
+    crank_radius_mm: 15.0
+    link_length_mm: 36.0
+    arm_from_gripper_transform: null
+    donor_optional_camera_parent: PG2_frame
+    donor_optional_camera_adopted_as_P05_camera: false
+    printed_guide_total_gap_options_mm: [0.5, 0.7, 0.9]
+    imported_assembly_guide_gap_mm: 0.7
+    blockers:
+      - whole_arm_mount_transform_and_fasteners_unresolved
+      - physical_to_cad_motor_mapping_unresolved
+      - thread_depth_and_tool_handle_unverified
+      - PLA_slide_friction_wear_creep_and_load_unmeasured
+      - actual_camera_cable_and_optics_unknown
+      - discrete_collision_tests_are_not_continuous_sweep

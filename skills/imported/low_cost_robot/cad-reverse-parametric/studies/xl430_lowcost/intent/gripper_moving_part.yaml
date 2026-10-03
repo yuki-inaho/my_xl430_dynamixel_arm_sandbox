@@ -1,0 +1,62 @@
+part: follower_gripper_moving_part
+intent: >-
+  the "moving side" of the gripper - the moving jaw that rides on the joint5 servo
+  HORN (it is not a full servo cradle; it bolts to the horn/idler, so the XL330->XL430
+  swap effect here is limited to the HORN/IDLER seat following the XL430 horn, per the
+  impact tier "indirect"). Frame - X[-5,16] Y[-8,56] Z[0,35.5]. Interfaces (all axis Z)
+  - a 4x phi1.8 tap diamond on the horn boss, a phi16 horn-boss seat, a phi31 outer
+  body-clearance recess. MEASURED via cadre.cli inspect.
+swap_applicable: true
+swap_scope: >-
+  horn/idler seat only (indirect). The jaw bolts to the servo horn, not the servo body,
+  so the swap follows the XL430 horn (phi16 boss / phi1.8 pattern stay; the phi31 outer
+  clearance grows for the larger XL430 body). No motor-body cradle to resize here.
+features:
+  - name: horn_idler_mount     # 4x phi1.8 tap diamond on the horn boss (axis Z)
+    type: servo_mount
+    servo: XL330-M288-T          # joint5 horn; swap follows XL430 horn
+    preserves: [output_axis, screw_pattern]
+    constraints:
+      screw: M2-tap
+      hole_function: tap         # dia 1.80 -> M2-tap band (1.9-2.15 lower edge); self-tap
+      hole_diameter_mm: 1.8
+      through: false             # 8 faces / 4 axes -> 2 faces per line = blind tap from Z=0
+      blind_depth_mm: 6.0
+      through_evidence: "8 faces / 4 axes -> 2 faces per line = blind tap into the boss"
+      axis_dir: [0.0, 0.0, 1.0]
+      diamond_centers_xy_mm: [[14.1, 0.3], [8.1, -5.7], [2.1, 0.3], [8.1, 6.3]]
+  - name: horn_boss_bore        # phi16 horn-boss seat
+    type: bore
+    preserves: [output_axis]
+    constraints:
+      diameter_mm: 16.0
+      axis_dir: [0.0, 0.0, 1.0]
+      center_xy_mm: [8.0, 0.0]
+      through: false             # 2 faces / 1 axis along Z = blind horn-boss seat
+      blind_depth_mm: 4.0
+      through_evidence: "16.0 dia 2 faces / 1 axis along Z -> blind horn-boss seat"
+      seat_role: horn_boss_seat
+  - name: body_clearance_recess # phi31 outer recess clearing the servo body; grows on swap
+    type: bore
+    preserves: [output_axis]
+    constraints:
+      diameter_mm: 31.0
+      axis_dir: [0.0, 0.0, 1.0]
+      center_xy_mm: [8.4, 0.3]
+      through: false             # 1 face / 1 axis along Z = a shallow outer recess
+      blind_depth_mm: 3.0
+      through_evidence: "31.0 dia 1 face / 1 axis along Z -> shallow body-clearance recess"
+      seat_role: body_clearance
+  - name: jaw_body
+    type: structural_beam
+    preserves: [jaw_offset]
+    constraints:
+      min_wall_mm: 2.5
+      jaw_z_mm: 35.5
+measured_families:
+  - {diameter_mm: 1.8,  screw: null, axes: 4, faces: 8, dir: [0,0,1]}
+  - {diameter_mm: 31.0, screw: null, axes: 1, faces: 1, dir: [0,0,1]}
+  - {diameter_mm: 16.0, screw: null, axes: 1, faces: 2, dir: [0,0,1]}
+tests:
+  - hole_pattern_match
+  - min_wall_thickness

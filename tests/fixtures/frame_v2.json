@@ -1,0 +1,56 @@
+{
+  "frame": {
+    "sequence": 0,
+    "started_at": "2026-10-03T00:00:00.000+09:00",
+    "finished_at": "2026-10-03T00:00:00.000+09:00",
+    "monotonic_ns": 123456,
+    "duration_ms": 5.0,
+    "requested_rate_hz": 20.0,
+    "deadline_missed": false,
+    "read_mode": "sync",
+    "motors": [
+      {
+        "motor_id": 1,
+        "torque_enabled": false,
+        "hardware_error": 0,
+        "position_counts": -2048,
+        "velocity_raw": -10,
+        "pwm_raw": -20,
+        "load_raw": -30,
+        "voltage_raw": 92,
+        "temperature_c": 30,
+        "moving": false,
+        "moving_status": 1,
+        "tick_ms": 123,
+        "device_alert": false,
+        "faults": []
+      },
+      {
+        "motor_id": 2,
+        "torque_enabled": null,
+        "hardware_error": null,
+        "position_counts": null,
+        "velocity_raw": null,
+        "pwm_raw": null,
+        "load_raw": null,
+        "voltage_raw": null,
+        "temperature_c": null,
+        "moving": null,
+        "moving_status": null,
+        "tick_ms": null,
+        "device_alert": false,
+        "faults": [
+          {
+            "motor_id": 2,
+            "operation": "sync_read",
+            "comm_result": -3001,
+            "device_error": 0,
+            "message": "Timeout; value unknown"
+          }
+        ]
+      }
+    ]
+  },
+  "kind": "frame",
+  "schema_version": 2
+}

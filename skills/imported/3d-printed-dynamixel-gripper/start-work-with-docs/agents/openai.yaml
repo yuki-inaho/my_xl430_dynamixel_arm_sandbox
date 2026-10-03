@@ -1,0 +1,4 @@
+interface:
+  display_name: "Start Work With Docs"
+  short_description: "Execute workdoc checklists one item at a time"
+  default_prompt: "Use $start-work-with-docs to execute the specified workdoc checklist sequentially with immediate records."

@@ -1,0 +1,91 @@
+part: hn11_m2_idler_xl430
+intent: >-
+  Print-replace the ROBOTIS HN11-I101 idler ring using the user-supplied ESJNNK
+  brass M2 heat-set insert (product title "M2 x 3 mm x 3 mm"). The replacement
+  preserves the source idler envelope, PCD16 hole pattern, centre bore and cap
+  interface, and converts the four 0-degree M2 fastening holes into blind
+  heat-set insert seats that open on the outer (link-side) face. Prototype only:
+  insert dimensions are provisional until the physical insert or its drawing is
+  measured, and strength, fit, retention and service life are unqualified.
+source:
+  # Koch v1.1 Robotis_HN11_I101.STEP, used read-only at runtime; never copied
+  # into version control.
+  step_sha256: 94ba196133d894d60120eb12070adcfa7d0e797a51f5a182901a116f261b1a23
+  attribution: >-
+    Geometry source: jess-moss/koch-v1-1 Robotis_HN11_I101.STEP.  The Koch v1.1
+    repository carries an Apache-2.0 LICENSE, but that does not settle the
+    conditions of the ROBOTIS-derived reference CAD.  This prototype is not
+    intended for redistribution or publication, and the printed cap is derived
+    from the same source geometry.  Confirm the provider's conditions before
+    publishing any derived CAD, STL or G-code.
+  license_review_status: source-license-unconfirmed-do-not-redistribute
+  rotor_outer_diameter_mm: 20.5
+  rotor_thickness_mm: 3.5
+  axis_world_xy_mm: [5.45, 116.604]
+  outer_face_world_z_mm: -101.937
+  motor_face_world_z_mm: -98.437
+features:
+  - name: insert_seat
+    type: heat_set_insert
+    preserves: [joint_axis, source_hole_pattern, link_fastening_side]
+    constraints:
+      family_angles_deg: [0, 90, 180, 270]
+      pcd_mm: 16.0
+      count: 4
+      opening_face: outer
+      insert_bore_diameter_mm: 2.5
+      insert_bore_depth_mm: 3.0
+      minimum_floor_mm: 0.5
+      insert_outer_diameter_mm: 3.0
+      insert_length_mm: 3.0
+      insert_thread: M2
+      insert_pitch_mm: 0.4
+      confirmed: false
+      effective_seat_diameter_mm: 2.5
+      boolean_compensation: >-
+        counterbore fill inset 0.01 mm; plug inset 0.03 mm; seat cut at the
+        nominal radius.  Effective seat diameter equals the nominal bore while
+        every boolean surface stays off an exact coincidence (watertight mesh).
+      evidence: >-
+        R3 J2 measurement: link P03 has four Ø2.4 holes at PCD16 0/90/180/270 on
+        the idler-side plate; the M02/M03 servo cover idler face has no PCD16
+        thread. The official PHS M2 screws therefore thread into the rotor's
+        0-degree holes from the outer face, so the insert seats must open there.
+  - name: motor_face_clearance_fill
+    type: clearance_fill
+    preserves: [servo_boss_clearance]
+    constraints:
+      fill_diameter_mm: 4.5
+      fill_depth_mm: 2.0
+      family_angles_deg: [0, 90, 180, 270]
+      evidence: >-
+        The source rotor's 0-degree Ø4.5 counterbores open toward the servo.
+        They are re-filled so each insert seat can have a floor. The M02 and M03
+        servo idler faces show no PCD16 feature that needs the recess.
+  - name: coupon
+    type: hole_test_coupon
+    preserves: [insert_bore_decision]
+    constraints:
+      hole_diameters_mm: [2.4, 2.5, 2.6, 2.7, 2.8]
+      hole_depth_mm: 4.0
+      block_xyz_mm: [48.0, 12.0, 5.0]
+      hole_identification: >-
+        Raised pip count under each hole identifies the diameter after
+        printing: 1 pip = smallest (2.4 mm) through 5 pips = largest (2.8 mm).
+      note: >-
+        Physical press-fit result decides the production bore. CAD diameters
+        alone never qualify the fit. The coupon is 5 mm thick with a 4 mm hole
+        and a 1 mm floor, so it cannot qualify the thinner body (3.5 mm, 3 mm
+        seat, 0.5 mm floor) heat-set behaviour by itself.
+  - name: printed_material
+    type: material
+    constraints:
+      name: PLA
+      density_kg_m3: 1240.0
+tests:
+  - rotor is one valid solid and STEP re-import preserves it
+  - four blind insert seats open on the outer face at PCD16 0/90/180/270
+  - insert seat floor is at least 0.5 mm
+  - out-of-range insert dimensions are rejected
+  - coupon has the intended blind hole diameters
+  - the cap is reproduced from the source cap solid

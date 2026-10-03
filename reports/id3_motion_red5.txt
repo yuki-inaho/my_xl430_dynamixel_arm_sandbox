@@ -1,0 +1,33 @@
+........................................................................ [ 59%]
+..............................................FF.                        [100%]
+=================================== FAILURES ===================================
+_____________ test_isolated_missed_samples_are_retried_and_logged ______________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-63/test_isolated_missed_samples_a0')
+
+    def test_isolated_missed_samples_are_retried_and_logged(tmp_path):
+        arm = FakeArm()
+        arm.drop_reads = {12, 25, 26, 40}
+        outcome, events = run(tmp_path, arm)
+>       assert outcome.status == "converged"
+E       AssertionError: assert 'aborted' == 'converged'
+E         
+E         - converged
+E         + aborted
+
+tests/test_id3_motion.py:829: AssertionError
+_________ test_consecutive_missed_samples_abort_as_communication_loss __________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-63/test_consecutive_missed_sample0')
+
+    def test_consecutive_missed_samples_abort_as_communication_loss(tmp_path):
+        arm = FakeArm()
+>       arm.drop_reads = set(range(15, 15 + motion.MAX_CONSECUTIVE_MISSES + 1))
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'arm_observer.id3_motion' has no attribute 'MAX_CONSECUTIVE_MISSES'
+
+tests/test_id3_motion.py:835: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_id3_motion.py::test_isolated_missed_samples_are_retried_and_logged
+FAILED tests/test_id3_motion.py::test_consecutive_missed_samples_abort_as_communication_loss
+2 failed, 119 passed in 1.01s

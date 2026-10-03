@@ -1,0 +1,76 @@
+{
+  "scope": [
+    "onshape-robot-workflow",
+    "write-workdoc-uv",
+    "review-written-workdoc",
+    "start-work-with-docs"
+  ],
+  "files": [
+    {
+      "path": "onshape-robot-workflow/SKILL.md",
+      "source": "skills/onshape-robot-workflow/SKILL.md",
+      "sha256": "630dd2b80a69d71a65e4f414b8dadeeae73cc5c8a3a22ac53714161cad76236f"
+    },
+    {
+      "path": "onshape-robot-workflow/references/api-and-export.md",
+      "source": "skills/onshape-robot-workflow/references/api-and-export.md",
+      "sha256": "963b994799310bc052cd3149ea33ed5ee11cb4e70b06adaee15b7b9cc90f474f"
+    },
+    {
+      "path": "onshape-robot-workflow/references/compact-camera-and-headless.md",
+      "source": "skills/onshape-robot-workflow/references/compact-camera-and-headless.md",
+      "sha256": "66b060961cad6c63e5cd72e0e5765ad3e5297251046182635e29ca89702881c5"
+    },
+    {
+      "path": "onshape-robot-workflow/references/ui-first-step-pixi.md",
+      "source": "skills/onshape-robot-workflow/references/ui-first-step-pixi.md",
+      "sha256": "6686546f09f81ab13461c0e8848a80138966801aeb46b02f29ed4cdd7fade6f8"
+    },
+    {
+      "path": "onshape-robot-workflow/references/validation.md",
+      "source": "skills/onshape-robot-workflow/references/validation.md",
+      "sha256": "388f4c924a38079728a7d99164863b7bd29782c9ce0adfa9f24b657e3d5837a5"
+    },
+    {
+      "path": "write-workdoc-uv/SKILL.md",
+      "source": "skills/write-workdoc-uv/SKILL.md",
+      "sha256": "79fea44d8ddd7b33eee491d6c4e5a82341c6aaa0ea72b3a0c12ffcc78e7b45c7"
+    },
+    {
+      "path": "write-workdoc-uv/agents/openai.yaml",
+      "source": "skills/write-workdoc-uv/agents/openai.yaml",
+      "sha256": "2620c925ba4509f89dd1ac9ab743c9b94ac2a8472b6177a2383cecf0391137fb"
+    },
+    {
+      "path": "write-workdoc-uv/references/workdoc-template.md",
+      "source": "skills/write-workdoc-uv/references/workdoc-template.md",
+      "sha256": "3fa327bd8d6bf610dac8a61cfd97e280b02211d5449fe46f2393e056ddc010c1"
+    },
+    {
+      "path": "review-written-workdoc/SKILL.md",
+      "source": "skills/review-written-workdoc/SKILL.md",
+      "sha256": "5641b9bbdee8fbda795ade1ba9a5362104053f88b15cc0a64131202557593885"
+    },
+    {
+      "path": "review-written-workdoc/agents/openai.yaml",
+      "source": "skills/review-written-workdoc/agents/openai.yaml",
+      "sha256": "ea4a1d4e02f397a799c8c71e2c632da23ac729b857d6697535b9cdf06cf2d32d"
+    },
+    {
+      "path": "review-written-workdoc/references/review-rubric.md",
+      "source": "skills/review-written-workdoc/references/review-rubric.md",
+      "sha256": "ae965052c2e7a232fef088cddeb7c4223e6663f639d6f8824cb35a9d005b8544"
+    },
+    {
+      "path": "start-work-with-docs/SKILL.md",
+      "source": "skills/start-work-with-docs/SKILL.md",
+      "sha256": "cc8b5ef1ab093e8061ce96f571ed6c7f983b5e9b6d16c855190f6889db753bef"
+    },
+    {
+      "path": "start-work-with-docs/agents/openai.yaml",
+      "source": "skills/start-work-with-docs/agents/openai.yaml",
+      "sha256": "194b81c265c7195d0db99ea9199e12cfdf0fb51b6731cf7603b6fafc400bcf97"
+    }
+  ],
+  "policy": "Source user-local skills; Onshape updated with demonstrated task findings; no browser credentials"
+}

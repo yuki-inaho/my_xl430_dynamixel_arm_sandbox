@@ -1,0 +1,16 @@
+
+==================================== ERRORS ====================================
+_____________ ERROR collecting tests/test_direction_observation.py _____________
+ImportError while importing test module '/home/inaho-omen/Project/3d-printed-dynamixel-gripper/tests/test_direction_observation.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_direction_observation.py:9: in <module>
+    from simulation.current_arm_viewer import direction_observation as direction
+E   ImportError: cannot import name 'direction_observation' from 'simulation.current_arm_viewer' (unknown location)
+=========================== short test summary info ============================
+ERROR tests/test_direction_observation.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.53s

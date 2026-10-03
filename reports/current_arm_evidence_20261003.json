@@ -1,0 +1,2996 @@
+{
+  "captured_at": "2026-10-03T11:38:48.310212+00:00",
+  "collection_kind": "OFFLINE_RECHECK_OF_SAVED_OBSERVATIONS",
+  "new_hardware_access": false,
+  "physical_order_verified": false,
+  "snapshot": {
+    "path": "reports/status_20261003T185915_405929+0900.json",
+    "metadata_observed_at": "2026-10-03T18:59:14.870+09:00",
+    "frame_times": [
+      "2026-10-03T18:59:14.902+09:00",
+      "2026-10-03T18:59:15.157+09:00",
+      "2026-10-03T18:59:15.397+09:00"
+    ],
+    "motors": [
+      {
+        "motor_id": 1,
+        "identity": {
+          "motor_id": 1,
+          "model_number": 1060,
+          "firmware_version": 43,
+          "observed_at": "2026-10-03T18:59:10.830+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "base_rotation",
+        "registers": {
+          "model_number": 1060,
+          "model_information": 0,
+          "firmware_version": 43,
+          "id": 1,
+          "baud_rate": 3,
+          "return_delay_time": 250,
+          "drive_mode": 0,
+          "operating_mode": 3,
+          "secondary_id": 255,
+          "protocol_type": 2,
+          "homing_offset": 0,
+          "moving_threshold": 10,
+          "temperature_limit": 72,
+          "max_voltage_limit": 140,
+          "min_voltage_limit": 60,
+          "pwm_limit": 885,
+          "velocity_limit": 265,
+          "max_position_limit": 4095,
+          "min_position_limit": 0,
+          "shutdown": 52,
+          "torque_enable": 0,
+          "led": 0,
+          "status_return_level": 2,
+          "registered_instruction": 0,
+          "hardware_error_status": 0,
+          "velocity_i_gain": 1000,
+          "velocity_p_gain": 100,
+          "position_d_gain": 3600,
+          "position_i_gain": 0,
+          "position_p_gain": 640,
+          "feedforward_2nd_gain": 0,
+          "feedforward_1st_gain": 0,
+          "bus_watchdog": 0,
+          "goal_pwm": 885,
+          "goal_velocity": 265,
+          "profile_acceleration": 0,
+          "profile_velocity": 0,
+          "goal_position": 2550,
+          "realtime_tick": 30997,
+          "moving": 0,
+          "moving_status": 1,
+          "present_pwm": 0,
+          "present_load": 0,
+          "present_velocity": 0,
+          "present_position": 2550,
+          "velocity_trajectory": 0,
+          "position_trajectory": 2550,
+          "present_input_voltage": 92,
+          "present_temperature": 35
+        },
+        "samples": [
+          {
+            "motor_id": 1,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2550,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 92,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1678,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 1,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2550,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 92,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1934,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 1,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2550,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 92,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 2173,
+            "device_alert": false,
+            "faults": []
+          }
+        ],
+        "position_counts": [
+          2550,
+          2550,
+          2550
+        ]
+      },
+      {
+        "motor_id": 2,
+        "identity": {
+          "motor_id": 2,
+          "model_number": 1060,
+          "firmware_version": 42,
+          "observed_at": "2026-10-03T18:59:11.644+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "shoulder",
+        "registers": {
+          "model_number": 1060,
+          "model_information": 0,
+          "firmware_version": 42,
+          "id": 2,
+          "baud_rate": 3,
+          "return_delay_time": 250,
+          "drive_mode": 0,
+          "operating_mode": 3,
+          "secondary_id": 255,
+          "protocol_type": 2,
+          "homing_offset": 0,
+          "moving_threshold": 10,
+          "temperature_limit": 72,
+          "max_voltage_limit": 140,
+          "min_voltage_limit": 60,
+          "pwm_limit": 885,
+          "velocity_limit": 265,
+          "max_position_limit": 4095,
+          "min_position_limit": 0,
+          "shutdown": 52,
+          "torque_enable": 0,
+          "led": 0,
+          "status_return_level": 2,
+          "registered_instruction": 0,
+          "hardware_error_status": 0,
+          "velocity_i_gain": 1000,
+          "velocity_p_gain": 100,
+          "position_d_gain": 3600,
+          "position_i_gain": 0,
+          "position_p_gain": 640,
+          "feedforward_2nd_gain": 0,
+          "feedforward_1st_gain": 0,
+          "bus_watchdog": 0,
+          "goal_pwm": 885,
+          "goal_velocity": 265,
+          "profile_acceleration": 0,
+          "profile_velocity": 0,
+          "goal_position": 3354,
+          "realtime_tick": 31617,
+          "moving": 0,
+          "moving_status": 1,
+          "present_pwm": 0,
+          "present_load": 0,
+          "present_velocity": 0,
+          "present_position": 3354,
+          "velocity_trajectory": 0,
+          "position_trajectory": 3354,
+          "present_input_voltage": 92,
+          "present_temperature": 36
+        },
+        "samples": [
+          {
+            "motor_id": 2,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 3354,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 92,
+            "temperature_c": 37,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1484,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 2,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 3354,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 92,
+            "temperature_c": 37,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1739,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 2,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 3354,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 92,
+            "temperature_c": 37,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1979,
+            "device_alert": false,
+            "faults": []
+          }
+        ],
+        "position_counts": [
+          3354,
+          3354,
+          3354
+        ]
+      },
+      {
+        "motor_id": 3,
+        "identity": {
+          "motor_id": 3,
+          "model_number": 1060,
+          "firmware_version": 42,
+          "observed_at": "2026-10-03T18:59:12.458+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "elbow",
+        "registers": {
+          "model_number": 1060,
+          "model_information": 0,
+          "firmware_version": 42,
+          "id": 3,
+          "baud_rate": 3,
+          "return_delay_time": 250,
+          "drive_mode": 0,
+          "operating_mode": 3,
+          "secondary_id": 255,
+          "protocol_type": 2,
+          "homing_offset": 0,
+          "moving_threshold": 10,
+          "temperature_limit": 72,
+          "max_voltage_limit": 140,
+          "min_voltage_limit": 60,
+          "pwm_limit": 885,
+          "velocity_limit": 265,
+          "max_position_limit": 4095,
+          "min_position_limit": 0,
+          "shutdown": 52,
+          "torque_enable": 0,
+          "led": 0,
+          "status_return_level": 2,
+          "registered_instruction": 0,
+          "hardware_error_status": 0,
+          "velocity_i_gain": 1000,
+          "velocity_p_gain": 100,
+          "position_d_gain": 3600,
+          "position_i_gain": 0,
+          "position_p_gain": 640,
+          "feedforward_2nd_gain": 0,
+          "feedforward_1st_gain": 0,
+          "bus_watchdog": 0,
+          "goal_pwm": 885,
+          "goal_velocity": 265,
+          "profile_acceleration": 0,
+          "profile_velocity": 0,
+          "goal_position": 1153,
+          "realtime_tick": 32426,
+          "moving": 0,
+          "moving_status": 1,
+          "present_pwm": 0,
+          "present_load": 0,
+          "present_velocity": 0,
+          "present_position": 1153,
+          "velocity_trajectory": 0,
+          "position_trajectory": 1153,
+          "present_input_voltage": 90,
+          "present_temperature": 35
+        },
+        "samples": [
+          {
+            "motor_id": 3,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 1153,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 90,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1478,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 3,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 1153,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 90,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1734,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 3,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 1153,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 90,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1974,
+            "device_alert": false,
+            "faults": []
+          }
+        ],
+        "position_counts": [
+          1153,
+          1153,
+          1153
+        ]
+      },
+      {
+        "motor_id": 4,
+        "identity": {
+          "motor_id": 4,
+          "model_number": 1060,
+          "firmware_version": 42,
+          "observed_at": "2026-10-03T18:59:13.273+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "wrist",
+        "registers": {
+          "model_number": 1060,
+          "model_information": 0,
+          "firmware_version": 42,
+          "id": 4,
+          "baud_rate": 3,
+          "return_delay_time": 250,
+          "drive_mode": 0,
+          "operating_mode": 3,
+          "secondary_id": 255,
+          "protocol_type": 2,
+          "homing_offset": 0,
+          "moving_threshold": 10,
+          "temperature_limit": 72,
+          "max_voltage_limit": 140,
+          "min_voltage_limit": 60,
+          "pwm_limit": 885,
+          "velocity_limit": 265,
+          "max_position_limit": 4095,
+          "min_position_limit": 0,
+          "shutdown": 52,
+          "torque_enable": 0,
+          "led": 0,
+          "status_return_level": 2,
+          "registered_instruction": 0,
+          "hardware_error_status": 0,
+          "velocity_i_gain": 1000,
+          "velocity_p_gain": 100,
+          "position_d_gain": 3600,
+          "position_i_gain": 0,
+          "position_p_gain": 640,
+          "feedforward_2nd_gain": 0,
+          "feedforward_1st_gain": 0,
+          "bus_watchdog": 0,
+          "goal_pwm": 885,
+          "goal_velocity": 265,
+          "profile_acceleration": 0,
+          "profile_velocity": 0,
+          "goal_position": 2059,
+          "realtime_tick": 475,
+          "moving": 0,
+          "moving_status": 1,
+          "present_pwm": 0,
+          "present_load": 0,
+          "present_velocity": 0,
+          "present_position": 2059,
+          "velocity_trajectory": 0,
+          "position_trajectory": 2059,
+          "present_input_voltage": 91,
+          "present_temperature": 36
+        },
+        "samples": [
+          {
+            "motor_id": 4,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2059,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 91,
+            "temperature_c": 36,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1481,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 4,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2059,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 91,
+            "temperature_c": 36,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1737,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 4,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2059,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 91,
+            "temperature_c": 36,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1976,
+            "device_alert": false,
+            "faults": []
+          }
+        ],
+        "position_counts": [
+          2059,
+          2059,
+          2059
+        ]
+      },
+      {
+        "motor_id": 5,
+        "identity": {
+          "motor_id": 5,
+          "model_number": 1060,
+          "firmware_version": 43,
+          "observed_at": "2026-10-03T18:59:14.087+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "gripper_open_close",
+        "registers": {
+          "model_number": 1060,
+          "model_information": 0,
+          "firmware_version": 43,
+          "id": 5,
+          "baud_rate": 3,
+          "return_delay_time": 250,
+          "drive_mode": 0,
+          "operating_mode": 3,
+          "secondary_id": 255,
+          "protocol_type": 2,
+          "homing_offset": 0,
+          "moving_threshold": 10,
+          "temperature_limit": 72,
+          "max_voltage_limit": 140,
+          "min_voltage_limit": 60,
+          "pwm_limit": 885,
+          "velocity_limit": 265,
+          "max_position_limit": 4095,
+          "min_position_limit": 0,
+          "shutdown": 52,
+          "torque_enable": 0,
+          "led": 0,
+          "status_return_level": 2,
+          "registered_instruction": 0,
+          "hardware_error_status": 0,
+          "velocity_i_gain": 1000,
+          "velocity_p_gain": 100,
+          "position_d_gain": 3600,
+          "position_i_gain": 0,
+          "position_p_gain": 640,
+          "feedforward_2nd_gain": 0,
+          "feedforward_1st_gain": 0,
+          "bus_watchdog": 0,
+          "goal_pwm": 885,
+          "goal_velocity": 265,
+          "profile_acceleration": 0,
+          "profile_velocity": 0,
+          "goal_position": 2059,
+          "realtime_tick": 1491,
+          "moving": 0,
+          "moving_status": 1,
+          "present_pwm": 0,
+          "present_load": 0,
+          "present_velocity": 0,
+          "present_position": 2059,
+          "velocity_trajectory": 0,
+          "position_trajectory": 2059,
+          "present_input_voltage": 91,
+          "present_temperature": 35
+        },
+        "samples": [
+          {
+            "motor_id": 5,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2059,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 91,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1683,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 5,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2059,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 91,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 1938,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 5,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2059,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 91,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 2178,
+            "device_alert": false,
+            "faults": []
+          }
+        ],
+        "position_counts": [
+          2059,
+          2059,
+          2059
+        ]
+      }
+    ],
+    "port_closed": true,
+    "is_live_now": false
+  },
+  "watch": [
+    {
+      "path": "reports/watch_20261003T185915_978979+0900.jsonl",
+      "validated_records": 102,
+      "frames": 100,
+      "requested_hz": 20.0,
+      "read_mode": "sync",
+      "first_started_at": "2026-10-03T18:59:16.787+09:00",
+      "last_finished_at": "2026-10-03T18:59:21.769+09:00",
+      "recomputed_hz": 19.999547440543765,
+      "deadline_misses": 0,
+      "mean_read_ms": 30.39464204,
+      "min_voltage_v": 9.0,
+      "max_temperature_c": 37,
+      "observation_counts": {
+        "position_missing": 0,
+        "read_faults": 0,
+        "device_alerts": 0,
+        "hardware_errors": 0,
+        "hardware_error_missing": 0,
+        "torque_on": 0,
+        "torque_missing": 0
+      },
+      "end_summary": {
+        "frames": 100,
+        "incomplete_frames": 0,
+        "deadline_misses": 0,
+        "elapsed_seconds": 5.000073186,
+        "achieved_rate_hz": 19.999547440543765,
+        "interrupted": false,
+        "port_closed": true
+      },
+      "is_live_now": false,
+      "schema_positive_control": "PASS",
+      "schema_negative_control_rejected": true
+    },
+    {
+      "path": "reports/watch_20261003T185930_745502+0900.jsonl",
+      "validated_records": 77,
+      "frames": 75,
+      "requested_hz": 50.0,
+      "read_mode": "sync",
+      "first_started_at": "2026-10-03T18:59:31.558+09:00",
+      "last_finished_at": "2026-10-03T18:59:34.544+09:00",
+      "recomputed_hz": 24.99961096889174,
+      "deadline_misses": 75,
+      "mean_read_ms": 30.539949813333333,
+      "min_voltage_v": 9.0,
+      "max_temperature_c": 37,
+      "observation_counts": {
+        "position_missing": 0,
+        "read_faults": 0,
+        "device_alerts": 0,
+        "hardware_errors": 0,
+        "hardware_error_missing": 0,
+        "torque_on": 0,
+        "torque_missing": 0
+      },
+      "end_summary": {
+        "frames": 75,
+        "incomplete_frames": 0,
+        "deadline_misses": 75,
+        "elapsed_seconds": 3.00006998,
+        "achieved_rate_hz": 24.99961096889174,
+        "interrupted": false,
+        "port_closed": true
+      },
+      "is_live_now": false,
+      "schema_positive_control": "PASS",
+      "schema_negative_control_rejected": true
+    },
+    {
+      "path": "reports/watch_20261003T185935_192160+0900.jsonl",
+      "validated_records": 6,
+      "frames": 4,
+      "requested_hz": 20.0,
+      "read_mode": "unicast",
+      "first_started_at": "2026-10-03T18:59:36.006+09:00",
+      "last_finished_at": "2026-10-03T18:59:39.583+09:00",
+      "recomputed_hz": 1.1110493947862294,
+      "deadline_misses": 4,
+      "mean_read_ms": 873.284604,
+      "min_voltage_v": 9.0,
+      "max_temperature_c": 37,
+      "observation_counts": {
+        "position_missing": 0,
+        "read_faults": 0,
+        "device_alerts": 0,
+        "hardware_errors": 0,
+        "hardware_error_missing": 0,
+        "torque_on": 0,
+        "torque_missing": 0
+      },
+      "end_summary": {
+        "frames": 4,
+        "incomplete_frames": 0,
+        "deadline_misses": 4,
+        "elapsed_seconds": 3.576905304,
+        "achieved_rate_hz": 1.1110493947862294,
+        "interrupted": false,
+        "port_closed": true
+      },
+      "is_live_now": false,
+      "schema_positive_control": "PASS",
+      "schema_negative_control_rejected": true
+    }
+  ],
+  "cad_audit": {
+    "audit_date": "2026-10-03",
+    "configuration": {
+      "arm": "R3-like, visually inferred",
+      "jaws": "C7-like, user-relayed independent photo comparison",
+      "camera_holder": "long D405 R5-like; 65deg versus compact75 unresolved",
+      "combined_gripper_camera_arm_assembly_observed": false,
+      "design_motor_count": 5,
+      "independent_wrist_roll_required": false,
+      "design_id5_role": "PG3 gripper drive"
+    },
+    "physical_id_mapping_verified": false,
+    "cad_zero_encoder_counts": null,
+    "physical_rotation_signs": null,
+    "physical_collision_free_joint_limits_deg": null,
+    "physical_collision_free_count_limits": null,
+    "continuous_path_verified": false,
+    "profile_velocity_values": null,
+    "profile_acceleration_values": null,
+    "watchdog_setting": null,
+    "nominal_cad_check_status": "ERROR_INPUT_BOOLEAN_CONTROL",
+    "legacy_range_evidence_status": "HISTORICAL_FINITE_SAMPLES_NOT_PHYSICAL_LIMITS",
+    "legacy_proxy_replay_status": "COLLISION_REPRODUCED_MODEL_DOES_NOT_MATCH_CURRENT_ARM",
+    "legacy_controller_status": "CONFIRMED_DEFECTS_OFFLINE_NO_SOURCE_MODIFICATION",
+    "hardware_access_performed": false,
+    "release": {
+      "fabrication": false,
+      "hardware_write": false,
+      "energize": false,
+      "operate": false
+    }
+  },
+  "viewer_provenance": {
+    "source_cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+    "c7_source_sha256": "c20f0dd65fa1338ba3d42c9424990937bd161b491b5a937e429a84ccf4bb25d0",
+    "cadquery": "2.7.0",
+    "selected_arm_occurrences": 180,
+    "sheet_arm_occurrences": 55,
+    "inventory": [
+      {
+        "mesh": "M01",
+        "entries": [
+          {
+            "name": "M01_ref00",
+            "vertices": 25584,
+            "triangles": 27206,
+            "solids": 2
+          },
+          {
+            "name": "M01_ref01",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref02",
+            "vertices": 5144,
+            "triangles": 8022,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref03",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref04",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref05",
+            "vertices": 656,
+            "triangles": 610,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref06",
+            "vertices": 2124,
+            "triangles": 1982,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref07",
+            "vertices": 8694,
+            "triangles": 9248,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref08",
+            "vertices": 3611,
+            "triangles": 3742,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref09",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref10",
+            "vertices": 2292,
+            "triangles": 2454,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref11",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref12",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref13",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref14",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref15",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref16",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref17",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref18",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref19",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref20",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref21",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref22",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref23",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref24",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref25",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M01_ref26",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref27",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref28",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref29",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref30",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref31",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref32",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref33",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M01_ref34",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "M02",
+        "entries": [
+          {
+            "name": "M02_ref00",
+            "vertices": 25584,
+            "triangles": 27206,
+            "solids": 2
+          },
+          {
+            "name": "M02_ref01",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref02",
+            "vertices": 5144,
+            "triangles": 8022,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref03",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref04",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref05",
+            "vertices": 656,
+            "triangles": 610,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref06",
+            "vertices": 2124,
+            "triangles": 1982,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref07",
+            "vertices": 8694,
+            "triangles": 9248,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref08",
+            "vertices": 3611,
+            "triangles": 3742,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref09",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref10",
+            "vertices": 2292,
+            "triangles": 2454,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref11",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref12",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref13",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref14",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref15",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref16",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref17",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref18",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref19",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref20",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref21",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref22",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref23",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref24",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref25",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M02_ref26",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref27",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref28",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref29",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref30",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref31",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref32",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref33",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M02_ref34",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "M03",
+        "entries": [
+          {
+            "name": "M03_ref00",
+            "vertices": 25584,
+            "triangles": 27206,
+            "solids": 2
+          },
+          {
+            "name": "M03_ref01",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref02",
+            "vertices": 5144,
+            "triangles": 8022,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref03",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref04",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref05",
+            "vertices": 656,
+            "triangles": 610,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref06",
+            "vertices": 2124,
+            "triangles": 1982,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref07",
+            "vertices": 8694,
+            "triangles": 9248,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref08",
+            "vertices": 3611,
+            "triangles": 3742,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref09",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref10",
+            "vertices": 2292,
+            "triangles": 2454,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref11",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref12",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref13",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref14",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref15",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref16",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref17",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref18",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref19",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref20",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref21",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref22",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref23",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref24",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref25",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M03_ref26",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref27",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref28",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref29",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref30",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref31",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref32",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref33",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M03_ref34",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "M04",
+        "entries": [
+          {
+            "name": "M04_ref00",
+            "vertices": 25584,
+            "triangles": 27206,
+            "solids": 2
+          },
+          {
+            "name": "M04_ref01",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref02",
+            "vertices": 5144,
+            "triangles": 8022,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref03",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref04",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref05",
+            "vertices": 656,
+            "triangles": 610,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref06",
+            "vertices": 2124,
+            "triangles": 1982,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref07",
+            "vertices": 8694,
+            "triangles": 9248,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref08",
+            "vertices": 3611,
+            "triangles": 3742,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref09",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref10",
+            "vertices": 2292,
+            "triangles": 2454,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref11",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref12",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref13",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref14",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref15",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref16",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref17",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref18",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref19",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref20",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref21",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref22",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref23",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref24",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref25",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M04_ref26",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref27",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref28",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref29",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref30",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref31",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref32",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref33",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M04_ref34",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "M05",
+        "entries": [
+          {
+            "name": "M05_ref00",
+            "vertices": 25584,
+            "triangles": 27206,
+            "solids": 2
+          },
+          {
+            "name": "M05_ref01",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref02",
+            "vertices": 5144,
+            "triangles": 8022,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref03",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref04",
+            "vertices": 300,
+            "triangles": 196,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref05",
+            "vertices": 656,
+            "triangles": 610,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref06",
+            "vertices": 2124,
+            "triangles": 1982,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref07",
+            "vertices": 8694,
+            "triangles": 9248,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref08",
+            "vertices": 3611,
+            "triangles": 3742,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref09",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref10",
+            "vertices": 2292,
+            "triangles": 2454,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref11",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref12",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref13",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref14",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref15",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref16",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref17",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref18",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref19",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref20",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref21",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref22",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref23",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref24",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref25",
+            "vertices": 422,
+            "triangles": 420,
+            "solids": 0
+          },
+          {
+            "name": "M05_ref26",
+            "vertices": 1926,
+            "triangles": 2142,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref27",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref28",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref29",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref30",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref31",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref32",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref33",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          },
+          {
+            "name": "M05_ref34",
+            "vertices": 1646,
+            "triangles": 1840,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "P01_base",
+        "entries": [
+          {
+            "name": "P01_base",
+            "vertices": 8874,
+            "triangles": 9406,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "P02_yaw_carrier",
+        "entries": [
+          {
+            "name": "P02_yaw_carrier",
+            "vertices": 6838,
+            "triangles": 7740,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "P03_shoulder_XL430",
+        "entries": [
+          {
+            "name": "P03_shoulder_XL430",
+            "vertices": 11221,
+            "triangles": 12640,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "P04_extension_XL430",
+        "entries": [
+          {
+            "name": "P04_extension_XL430",
+            "vertices": 6680,
+            "triangles": 6676,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "P05_wrist_XL430",
+        "entries": [
+          {
+            "name": "P05_wrist_XL430",
+            "vertices": 8392,
+            "triangles": 8388,
+            "solids": 1
+          }
+        ],
+        "display_group": 0
+      },
+      {
+        "mesh": "c7_fixed_printed",
+        "entries": [
+          {
+            "name": "frame",
+            "vertices": 4454,
+            "triangles": 4668,
+            "solids": 1
+          },
+          {
+            "name": "cap_U",
+            "vertices": 1308,
+            "triangles": 1292,
+            "solids": 1
+          },
+          {
+            "name": "cap_D",
+            "vertices": 1308,
+            "triangles": 1292,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_fixed_fastener",
+        "entries": [
+          {
+            "name": "cap_-37.5_-24.5_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "cap_-37.5_-24.5_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "cap_-37.5_-24.5_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "cap_-37.5_24.5_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "cap_-37.5_24.5_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "cap_-37.5_24.5_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "cap_37.5_-24.5_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "cap_37.5_-24.5_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "cap_37.5_-24.5_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "cap_37.5_24.5_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "cap_37.5_24.5_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "cap_37.5_24.5_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "case_tapper_-11",
+            "vertices": 796,
+            "triangles": 944,
+            "solids": 1
+          },
+          {
+            "name": "case_tapper_11",
+            "vertices": 796,
+            "triangles": 944,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_drive_printed",
+        "entries": [
+          {
+            "name": "crank",
+            "vertices": 5296,
+            "triangles": 5250,
+            "solids": 1
+          },
+          {
+            "name": "horn_spacer",
+            "vertices": 2532,
+            "triangles": 2536,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_drive_fastener",
+        "entries": [
+          {
+            "name": "pivot_drive_R_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "pivot_drive_R_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "pivot_drive_R_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "pivot_drive_L_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "pivot_drive_L_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "pivot_drive_L_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "horn_bolt_0",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "horn_bolt_1",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "horn_bolt_2",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "horn_bolt_3",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_R_printed",
+        "entries": [
+          {
+            "name": "carriage_R",
+            "vertices": 2296,
+            "triangles": 2200,
+            "solids": 1
+          },
+          {
+            "name": "finger_R",
+            "vertices": 1820,
+            "triangles": 1768,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_R_pad",
+        "entries": [
+          {
+            "name": "pad_R",
+            "vertices": 24,
+            "triangles": 12,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_R_fastener",
+        "entries": [
+          {
+            "name": "pivot_carriage_R_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "pivot_carriage_R_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "pivot_carriage_R_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "finger_R_-14_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "finger_R_-14_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "finger_R_-14_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "finger_R_14_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "finger_R_14_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "finger_R_14_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_link_R_printed",
+        "entries": [
+          {
+            "name": "link_R",
+            "vertices": 1656,
+            "triangles": 1636,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_L_printed",
+        "entries": [
+          {
+            "name": "carriage_L",
+            "vertices": 2296,
+            "triangles": 2200,
+            "solids": 1
+          },
+          {
+            "name": "finger_L",
+            "vertices": 1820,
+            "triangles": 1768,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_L_pad",
+        "entries": [
+          {
+            "name": "pad_L",
+            "vertices": 24,
+            "triangles": 12,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_L_fastener",
+        "entries": [
+          {
+            "name": "pivot_carriage_L_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "pivot_carriage_L_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "pivot_carriage_L_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "finger_L_-14_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "finger_L_-14_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "finger_L_-14_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          },
+          {
+            "name": "finger_L_14_washer",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          },
+          {
+            "name": "finger_L_14_bolt",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          },
+          {
+            "name": "finger_L_14_nut",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "c7_link_L_printed",
+        "entries": [
+          {
+            "name": "link_L",
+            "vertices": 1656,
+            "triangles": 1636,
+            "solids": 1
+          }
+        ],
+        "display_group": 1
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE",
+        "entries": [
+          {
+            "name": "CAM5_BASE",
+            "vertices": 5768,
+            "triangles": 5692,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_D405_CARRIER",
+        "entries": [
+          {
+            "name": "CAM5_D405_CARRIER",
+            "vertices": 4756,
+            "triangles": 4724,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE_WASHER_0",
+        "entries": [
+          {
+            "name": "CAM5_BASE_WASHER_0",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE_TAP_0",
+        "entries": [
+          {
+            "name": "CAM5_BASE_TAP_0",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE_WASHER_1",
+        "entries": [
+          {
+            "name": "CAM5_BASE_WASHER_1",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE_TAP_1",
+        "entries": [
+          {
+            "name": "CAM5_BASE_TAP_1",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE_WASHER_2",
+        "entries": [
+          {
+            "name": "CAM5_BASE_WASHER_2",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE_TAP_2",
+        "entries": [
+          {
+            "name": "CAM5_BASE_TAP_2",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE_WASHER_3",
+        "entries": [
+          {
+            "name": "CAM5_BASE_WASHER_3",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_BASE_TAP_3",
+        "entries": [
+          {
+            "name": "CAM5_BASE_TAP_3",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_TIE_WASHER_0",
+        "entries": [
+          {
+            "name": "CAM5_TIE_WASHER_0",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_TIE_BOLT_0",
+        "entries": [
+          {
+            "name": "CAM5_TIE_BOLT_0",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_TIE_NUT_0",
+        "entries": [
+          {
+            "name": "CAM5_TIE_NUT_0",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_TIE_WASHER_1",
+        "entries": [
+          {
+            "name": "CAM5_TIE_WASHER_1",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_TIE_BOLT_1",
+        "entries": [
+          {
+            "name": "CAM5_TIE_BOLT_1",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_TIE_NUT_1",
+        "entries": [
+          {
+            "name": "CAM5_TIE_NUT_1",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_D405_SCREW_0",
+        "entries": [
+          {
+            "name": "CAM5_D405_SCREW_0",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_D405_SCREW_1",
+        "entries": [
+          {
+            "name": "CAM5_D405_SCREW_1",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_D405_BODY",
+        "entries": [
+          {
+            "name": "CAM5_D405_BODY",
+            "vertices": 1308,
+            "triangles": 1284,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_D405_USB_PLUG",
+        "entries": [
+          {
+            "name": "CAM5_D405_USB_PLUG",
+            "vertices": 24,
+            "triangles": 12,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "r5_65_CAM5_D405_USB_CABLE_STUB",
+        "entries": [
+          {
+            "name": "CAM5_D405_USB_CABLE_STUB",
+            "vertices": 422,
+            "triangles": 416,
+            "solids": 1
+          }
+        ],
+        "display_group": 2
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE",
+        "entries": [
+          {
+            "name": "CAM5_BASE",
+            "vertices": 5800,
+            "triangles": 5718,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_D405_CARRIER",
+        "entries": [
+          {
+            "name": "CAM5_D405_CARRIER",
+            "vertices": 4756,
+            "triangles": 4724,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE_WASHER_0",
+        "entries": [
+          {
+            "name": "CAM5_BASE_WASHER_0",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE_TAP_0",
+        "entries": [
+          {
+            "name": "CAM5_BASE_TAP_0",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE_WASHER_1",
+        "entries": [
+          {
+            "name": "CAM5_BASE_WASHER_1",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE_TAP_1",
+        "entries": [
+          {
+            "name": "CAM5_BASE_TAP_1",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE_WASHER_2",
+        "entries": [
+          {
+            "name": "CAM5_BASE_WASHER_2",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE_TAP_2",
+        "entries": [
+          {
+            "name": "CAM5_BASE_TAP_2",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE_WASHER_3",
+        "entries": [
+          {
+            "name": "CAM5_BASE_WASHER_3",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_BASE_TAP_3",
+        "entries": [
+          {
+            "name": "CAM5_BASE_TAP_3",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_TIE_WASHER_0",
+        "entries": [
+          {
+            "name": "CAM5_TIE_WASHER_0",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_TIE_BOLT_0",
+        "entries": [
+          {
+            "name": "CAM5_TIE_BOLT_0",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_TIE_NUT_0",
+        "entries": [
+          {
+            "name": "CAM5_TIE_NUT_0",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_TIE_WASHER_1",
+        "entries": [
+          {
+            "name": "CAM5_TIE_WASHER_1",
+            "vertices": 844,
+            "triangles": 840,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_TIE_BOLT_1",
+        "entries": [
+          {
+            "name": "CAM5_TIE_BOLT_1",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_TIE_NUT_1",
+        "entries": [
+          {
+            "name": "CAM5_TIE_NUT_1",
+            "vertices": 458,
+            "triangles": 444,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_D405_SCREW_0",
+        "entries": [
+          {
+            "name": "CAM5_D405_SCREW_0",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_D405_SCREW_1",
+        "entries": [
+          {
+            "name": "CAM5_D405_SCREW_1",
+            "vertices": 880,
+            "triangles": 860,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_D405_BODY",
+        "entries": [
+          {
+            "name": "CAM5_D405_BODY",
+            "vertices": 1308,
+            "triangles": 1284,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_D405_USB_PLUG",
+        "entries": [
+          {
+            "name": "CAM5_D405_USB_PLUG",
+            "vertices": 24,
+            "triangles": 12,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      },
+      {
+        "mesh": "compact_75_CAM5_D405_USB_CABLE_STUB",
+        "entries": [
+          {
+            "name": "CAM5_D405_USB_CABLE_STUB",
+            "vertices": 422,
+            "triangles": 416,
+            "solids": 1
+          }
+        ],
+        "display_group": 3
+      }
+    ],
+    "configuration": "R3 bare arm + C7 + selectable nominal R5_65/compact75",
+    "physical_match": "inferred; camera angle unresolved; no actual joint readout",
+    "qpos_semantics": "4 CAD relative arm angles + gripper construction delta(theta-90) + two passive sliders",
+    "kinematic_view_only": true,
+    "collision_certified": false,
+    "dynamic_values_are_placeholders": true,
+    "no_hardware_access": true,
+    "motor_internal_reference_parts_render_rigidly": true,
+    "real_cables_absent": true,
+    "mesh_tessellation_mm": 0.12
+  },
+  "source_files": [
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/CONTROL_AUDIT.md",
+      "sha256": "9ea96a394e70cec433b44d8e375a1a209fab3cead4c3799a0b1e3ee0d07f7e20",
+      "bytes": 10102
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/CONTROL_SPEC_DRAFT.md",
+      "sha256": "93a218fc7b31ac8bcc125baabc71f21397e216462f7217624c3d2325e4285f4e",
+      "bytes": 5273
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/REPORT.md",
+      "sha256": "aea6bf0d794a342620d2d17c033204ecdd28402756b480cde00acad90a080279",
+      "bytes": 12678
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/current-arm-status.json",
+      "sha256": "b1e48075400640994778f81c497c9eab15f480cf66491632af97c0c3d9a6194f",
+      "bytes": 1243
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/artifact-manifest.json",
+      "sha256": "53d349e496857de68e933c7a6b8ae8d619786df47e57159da106c67aa19d14c2",
+      "bytes": 15101
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/browser-review.json",
+      "sha256": "d268a7f8a673d71c4f5a99feeb956540a80ca988e8c73e40892ec4084cb1d1f4",
+      "bytes": 7822
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/model-provenance.json",
+      "sha256": "8375e073297aab2bdeb007f25f9ab32c45da52a3115aa056bfdf87ff7d5322bb",
+      "bytes": 44093
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/arm-r3/arm_XL430_R3.step",
+      "sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "bytes": 6001108
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/pg3-c9/PG3_C92_J28/reference/C7/source/design.py",
+      "sha256": "c20f0dd65fa1338ba3d42c9424990937bd161b491b5a937e429a84ccf4bb25d0",
+      "bytes": 11832
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/photo-version-check_20261003/REPORT_ja.md",
+      "sha256": "4562b25914646ac3e9575e2b2c6bc2ea756ab564a40df1d4728e5e3f6bed95a7",
+      "bytes": 8536
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/AGENTS.md",
+      "sha256": "0484a0248dd0e1a00469cbb7b3601a8ab1f4c4bba019114609bd4f302262e014",
+      "bytes": 2350
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/config/arm.toml",
+      "sha256": "e2e3129255d2295856a78a2a016facc2537c31b48599999817b4c871d129d500",
+      "bytes": 289
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/contracts/stream-v2.schema.json",
+      "sha256": "bfc4c6ec89363241d41af744876771a44a2fb2cd59b65465675b1b30c60f87e2",
+      "bytes": 12757
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/pyproject.toml",
+      "sha256": "88d167c8f257b80480b160d553d497453b99531b903f6a2489ea828ee69a84fc",
+      "bytes": 1026
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/status_20261003T185915_405929+0900.json",
+      "sha256": "c5f5676a9b509263b04282c4b59411aee0c23a0de178c9a7f57b6e414a7d66a0",
+      "bytes": 69288
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/watch_20261003T185915_978979+0900.jsonl",
+      "sha256": "3fe5a5e72727eaaba233289f2bb5120f4a01e518bcb00e10fc2126fc5239cbf5",
+      "bytes": 169444
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/watch_20261003T185930_745502+0900.jsonl",
+      "sha256": "fcc927ca52401737b819fe9025e2f1a575095b5e983d91b3f8300dd4f73c4d1d",
+      "bytes": 128747
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/watch_20261003T185935_192160+0900.jsonl",
+      "sha256": "03e793cce0e4f43396cbed8a2237dd03f0128a68aced5c3f3fab7d76cb69cc6e",
+      "bytes": 12050
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/__init__.py",
+      "sha256": "9e4456afa8283ce1f2d1f5c83dd83dc2a9a3266135a3fe5a2845a4e2c1e29877",
+      "bytes": 43
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/bus.py",
+      "sha256": "e93adff150845ee7f9d699c43feef5424167642e3cb0d60341b88c93224b1768",
+      "bytes": 5188
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/cli.py",
+      "sha256": "2b636b4b7e8d365f6b606d2b9003c97dd49ca4fb6b3bc4ac4d04f9297aa87442",
+      "bytes": 7745
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/configuration.py",
+      "sha256": "5b153c8b87763cc2960066deb5a1a933bb738289572b74e37bc7388fec62bf00",
+      "bytes": 2014
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/contracts.py",
+      "sha256": "b6713f4f3334a5e035b833793897e62234d287e6c1f3fe34360beb56de03e4bf",
+      "bytes": 3610
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/diagnostics.py",
+      "sha256": "928011fe86b5ae9bd4691730166020d6534c713411f34b630a7c3842e4c6e267",
+      "bytes": 4272
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/models.py",
+      "sha256": "304d29a628e025ed832d08d67dcdd5d46f5be5eee6584aa2d17779e3e1d4e162",
+      "bytes": 4816
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/numerics.py",
+      "sha256": "ff041f4929313d1be52e7a5a1dcce4020f765d0ea1f726b2b750bc0226c25b6b",
+      "bytes": 1070
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/observer.py",
+      "sha256": "55629a63c08ba1ac2b38550a5a00a41bb0fc8eb24b69f4d48eeb50552aa20f63",
+      "bytes": 6762
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/output.py",
+      "sha256": "530c74a2e3ef62fce770cc01f7ffaa9cd993fc406d25805ae53d02da2bbe001a",
+      "bytes": 4205
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/reader.py",
+      "sha256": "1ce5eb58c1e79aa18cc19c3d0de8de1c3b551004c1fb61d6ec2e924472cd90b0",
+      "bytes": 7646
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/registers.py",
+      "sha256": "8f43cf750e4b78e90a577f67743adf53a7920cfb3451d9018f4a78f6b1ee2c82",
+      "bytes": 3351
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/fixtures/frame_v2.json",
+      "sha256": "7ece197fa6db92e6a56760db880d6bc1240113da8d6beb9e4382735a62366335",
+      "bytes": 1364
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/fixtures/stream_v2.jsonl",
+      "sha256": "c432c12fd9c9605d6373f52b6e9a23b2cd75161f99b26578eb466ebdf235a155",
+      "bytes": 1685
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/test_packaging.py",
+      "sha256": "619dab79c3ae72fac0c485cde68e3f48347690d1c27bd5fc6d3029889467eb67",
+      "bytes": 605
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/test_readonly.py",
+      "sha256": "8d79514e070a176d070f22afef121076e3c0c675e0dacc4fe861918ec4faeb7b",
+      "bytes": 7431
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/test_streaming.py",
+      "sha256": "2d2e978966033efacc9191dd3fe62924e929f9280fbdd48824986a6e6bfc4532",
+      "bytes": 10633
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/uv.lock",
+      "sha256": "bc9ea9f03a7659e8a6aada2b93b1c80e174060d2d2c15919be020c7380057cd4",
+      "bytes": 108364
+    }
+  ],
+  "readme_before": "# My DYNAMIXEL Arm Sandbox\n\nUbuntu上の5台のXL430-W250を、情報読み取り専用で確認するuvプロジェクトです。\nDXHUB E148経由、Protocol 2.0、1 Mbps、ID 1〜5を既定としています。\n\n```bash\ncd ~/Project/my_dynamixel_arm_sandbox\nrtk proxy uv sync --locked\nrtk proxy uv run arm-status ports\nrtk proxy uv run arm-status status --scan\n```\n\n`ports` は接続候補の一覧だけを表示します。`scan` はID 0〜252をPingします。\n`status` はID 1〜5の設定と状態を読み、3回の状態観測をJSONとMarkdownへ保存します。\n`--scan` を付けると全IDの検索結果も記録します。数値オプションは次のように指定できます。\n\n```bash\nrtk proxy uv run arm-status status --ids 1 2 3 4 5 --samples 3 --interval 0.25\nrtk proxy uv run arm-status scan\nrtk proxy uv run pytest\nrtk proxy uv run ruff check src tests scripts\n```\n\n接続先と想定IDは [config/arm.toml](config/arm.toml) で管理します。\n`--device` と `--baudrate` はPC側の接続条件の指定で、モーターの保存設定を書き換えません。\nWizard等がポートを使用していると終了します。確認後・失敗時・中断時にはポートを閉じます。\n\nCLIの実機命令はユニキャストのPing/Readと、範囲を固定したSync Readだけです。\n送信直前にも命令種別と読取範囲を検査し、\n書き込み、トルク変更、移動、LED変更、再起動、初期化、ファームウェア更新は拒否します。\n読み取り専用なので、既にトルクONだったモーターをOFFにする処理もありません。\nPing/Readは有効なBus Watchdogの通信期限を更新し得るため、既に動作中のモーターを\nこのCLIで止められるとは扱いません。\n\n終了コードは `0` が読取完了、`1` が接続・設定・保存等の失敗、`2` が応答なし／読取不足／\n未対応モデル、`130` が中断です。読取完了は可動範囲や負荷時の安全性の確認を意味しません。\n\n確認内容はEEPROM設定、RAM設定、目標と現在位置、速度、PWM、推定負荷、電圧、温度、\nハードウェアエラー、PID、位置・速度・PWM制限、動作プロファイル、Watchdog等です。\nファームウェア45以降のStartup ConfigurationとBackup Readyは、旧版では読みません。\nXL430のPresent Loadは推定値で、電流や実測トルクではありません。\n角度換算はエンコーダ基準であり、アーム関節のゼロ点や可動範囲は未校正です。\n\n| 保存先 | 内容 |\n|---|---|\n| `src/arm_observer/` | 読み取り専用CLI・Pythonパッケージ |\n| `config/arm.toml` | 接続条件、ID、仮の関節役割 |\n| `reports/` | 日時付きの詳細状態JSON・Markdown |\n| `diary/` | 作業記録と実機状態の考察 |\n| `skills/dynamixel-readonly-status/` | 実機状態確認スキル |\n| `skills/imported/` | 2プロジェクトからコピーしたスキル |\n| `upstream/` | コピーしたスクリプト・モジュール・仕様と出典 |\n\n参照元は `../low_cost_robot` と `../3d-printed-dynamixel-gripper` です。\nグリッパーの設計仕様はID5を開閉、ID4を直前の関節としています。実機の物理順序は通信だけでは\n確定できないため、設定では `physical_order_verified = false` としています。\n\nレジスタの根拠: [ROBOTIS XL430-W250 e-Manual](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/)。\n\n## 継続監視とメタ情報\n\n```bash\nrtk proxy uv run arm-status metadata\nrtk proxy uv run arm-status metadata --full\nrtk proxy uv run arm-status watch --rate 20 --duration 10\nrtk proxy uv run arm-status watch --rate 20 --duration 0 --count 100 --format jsonl\n```\n\n`metadata` はID、機種、FW、通信条件、モード、オフセットを取得します。\n`--full` は対応する全レジスタ、`watch` は位置・速度・PWM・推定負荷・電圧・温度・\nトルク・エラー・Realtime Tickを繰り返し読みます。メタ情報の再取得は既定30秒間隔で、\n`--metadata-every 0` なら開始時だけです。ログは `reports/watch_*.jsonl` に逐次保存します。\n`--duration 0` かつ `--count 0` はCtrl+Cまで継続します。\n\n既定のSync Readは2パケットで5台を読みます。個別Readとの比較には\n`--mode unicast` を使えます。欠測は `null` とエラー情報になり、前回値で埋めません。\n観測周期、読取時間、期限超過、実測Hzを記録しますが、ハードリアルタイムではなく、\n2ブロックと各モーターの値が厳密に同時刻のサンプルとも限りません。\n\n2026-10-03の実機確認では20 Hz指定で実測20.00 Hz、100フレーム欠測・期限超過なし。\n50 Hz指定では25.00 Hz、個別Readの20 Hz指定では1.11 Hzでした。\n詳細とログは [diary](diary/2026-10-03_typed-readonly-monitoring.md) にあります。\nUSB設定、Return Delay、FW、モーター設定は変更していません。\n\n## 型と移植性\n\nドメインデータは `frozen/slots dataclass`、小さな結果束は `NamedTuple`、\n読み取り接口は `Reader Protocol` です。辞書は主にTOML/JSON境界と定義の索引に限定します。\nSDK、観測周期、診断、保存を分離し、Rust等への移植時も取得ロジックとデータ契約を\n切り分けられる構成です。数値変換ではjaxtypingとbeartypeが配列の型・形状を検査します。\n校正関数を使うにはゼロ点、方向、減速比を明示する必要があります。運動指令はありません。\n\nJSONLは `metadata` / `frame` / `end` の3種、`schema_version = 2` です。\n[JSON Schema](contracts/stream-v2.schema.json) はPythonの型から生成します。\n[Rust crate](rust/arm-observer-contract/src/lib.rs) はSerdeで型付きデコードします。\nRust版はログの消費側で、シリアル通信や制御の完全なRust移植ではありません。\n旧版レポートの形式は上書きせず残しています。設計詳細は\n[読み取り専用アーキテクチャ](docs/readonly-architecture.md) を参照してください。\n\n`my_dynamixel_arm_sandbox/src/arm_observer/` はPythonのsrcレイアウトです。\n外側は作業フォルダ、内側は `import arm_observer` の名前で、二重管理ではありません。\nuvの配布名は `my-dynamixel-arm-sandbox`、コマンド名は `arm-status` のままです。\n説明中のソースパスはプロジェクトルートからの相対パスで表します。\n\n## 品質確認\n\n```bash\nrtk proxy uv run pytest\nrtk proxy uv run ruff check src tests scripts\nrtk proxy uv run ty check\nrtk proxy uv run scripts/check_quality.py --output reports/code_quality_v2.json\nrtk proxy uv run scripts/export_contract.py\nrtk proxy cargo test --locked --manifest-path rust/arm-observer-contract/Cargo.toml\nrtk proxy cargo clippy --locked --manifest-path rust/arm-observer-contract/Cargo.toml --all-targets -- -D warnings\nrtk proxy cargo run --locked --quiet --manifest-path rust/arm-observer-contract/Cargo.toml --example read_jsonl < tests/fixtures/stream_v2.jsonl\n```\n\nbeartypeは型付きレコードと取得サービス、jaxtypingは数値変換、tyは静的型検査、\nRadonは保守対象 `src/` の複雑度検査に使用します。最大循環的複雑度は10以下を検査します。\nコピーした `upstream/` は実行・改修対象から分離し、この品質ゲートには含めません。\n"
+}

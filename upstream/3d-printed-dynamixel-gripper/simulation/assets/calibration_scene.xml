@@ -1,0 +1,14 @@
+<mujoco model="p05_aprilgrid_calibration">
+  <compiler angle="degree" texturedir="."/>
+  <option gravity="0 0 0"/>
+  <visual>
+    <global azimuth="90" elevation="-90"/>
+    <quality shadowsize="2048"/>
+    <map znear="0.01" zfar="5"/>
+    <rgba haze="0.8 0.8 0.8 1"/>
+  </visual>
+  <asset/>
+  <worldbody>
+    <light name="board_light" pos="0 0 1" dir="0 0 -1" diffuse="1 1 1"/>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,233 @@
+schema_version: 1
+status: design_in_progress_not_approved
+units: mm
+source_run: outputs/all_xl430_revision/unaccepted/j4-datum-20260922
+source_sha256: 4b0ecfd89411f11285ce7611f0b914bb7bc07515da7daff3f4460cfca9d7dee3
+coordinate_convention: Each motor uses its actual body occurrence frame; Z is the output axis.
+role_ids_are_physical_motor_ids: false
+preservation:
+  policy: Original shape first; no from-scratch links or motor modifications.
+  diameter_change_permission: Necessary link fastening holes only, explicitly permitted on 2026-09-22.
+  diameter_selection_gate: Select real screw and check receiver depth before fixing the new link bore diameter.
+  outside_local_masks: Preserve source shape, or declared rigid chunk placement if locally stretched.
+  masks_finalized: false
+  accepted_geometry: false
+material: PLA
+power_board: E148
+power_supply: regulated_bench_supply_model_unknown
+payload: null
+motion_ranges: null
+
+sources:
+  case_side_warning:
+    url: https://emanual.robotis.com/assets/images/dxl/x/assembly/xl430/etc/xl430_4mm_mount_warning.png
+    sha256: 56a43408615bba402d7f42798797fee026d5a76484b54f53292d5713266eb4a2
+    verified: image_inspected_2026-09-22
+    facts: Case side tapping holes permit at most 4 mm penetration; repeated use can damage the plastic thread.
+  case_side_example:
+    url: https://emanual.robotis.com/assets/images/dxl/x/assembly/xl430/etc/xl430_etc_assembly_example_side.jpg
+    sha256: af8f71c772cc681d7bd6e20a61466efc3af3c2939eafcafc8217b43c34906b30
+    facts: Manufacturer example uses 2 mm frame and PHS M2.6x5 TAP.
+  case_front_example:
+    url: https://emanual.robotis.com/assets/images/dxl/x/assembly/xl430/etc/xl430_etc_assembly_example_front2_02.jpg
+    sha256: c4289811b708b3442f0af1b73f34420840c602be46cf6e21805cee7edc8a6063
+    facts: Replace original front screws; 2 mm frame with supplied spacer rings and PHS M2.5x14.
+  manufacturer_drawing_reprint:
+    url: https://media.distrelec.com/Web/Downloads/_t/ds/Dynamixel_XL-Series_eng_tds.pdf
+    author: ROBOTIS
+    host: distributor_reprint_not_manufacturer_download
+    sha256: a09f275fb4856a26c6582d132bfe53f2df779701c10a0c2d848b575016e31c5b
+    revision: not_printed
+    facts: XL430 horn/idler four M2 tapped holes, PCD16, depth 3.5 mm maximum; side pilot bores 2.1 mm and depth 4 mm maximum.
+    applicability: Relevant geometry agrees with repository CAD; physical product revision still unverified.
+
+fastener_families:
+  horn_m2:
+    nominal_thread_mm: 2.0
+    bolt_circle_diameter_mm: 16.0
+    maximum_depth_mm: 3.5
+    maximum_depth_source: manufacturer_drawing_reprint
+    minimum_engagement_mm: null
+    selected_length_mm: null
+    selected_head: null
+    tightening_torque_Nm: null
+    status: supplier_upper_limit_not_joint_acceptance
+  case_side_tapping:
+    nominal_thread_mm: 2.6
+    cad_pilot_bore_mm: 2.1
+    maximum_penetration_mm: 4.0
+    maximum_depth_source: case_side_warning
+    manufacturer_example: {frame_thickness_mm: 2.0, screw_length_mm: 5.0, head: PHS}
+    minimum_engagement_mm: null
+    selected_link_clearance_diameter_mm: null
+    tightening_torque_Nm: null
+    status: no_actual_joint_selected_for_this_family_yet
+  case_front_cover_replacement:
+    nominal_thread_mm: 2.5
+    original_screw: FHS_M2.5x10
+    manufacturer_example: {frame_thickness_mm: 2.0, screw_length_mm: 14.0, spacer: supplied_ring}
+    selected_length_mm: null
+    selected_link_clearance_diameter_mm: null
+    receiver_thread_depth_mm: null
+    tightening_torque_Nm: null
+    status: example_stack_not_validated_for_existing_3mm_prints
+  case_back_cover_replacement:
+    status: unresolved_do_not_copy_front_screw_length
+    original_screw_drawing_label: FHS_M2.6x8_TAPPING
+    original_label_is_external_fastener_spec: false
+    selected_screw: null
+    receiver_thread_depth_mm: null
+    tightening_torque_Nm: null
+
+interfaces:
+  base:
+    motor: KEEP_000_DC11_A01_DUMMY_1
+    input_link: KEEP_056_Base_1
+    output_link: KEEP_059_rotation_connector_1
+    case_faces:
+      - {side: back, link_z_mm: -17.0, source_bore_mm: 3.0,
+         source_xy_mm: [[-11, -32], [11, -32], [-11, 8], [11, 8]],
+         corresponding_case_xy_mm: [[-11, -32], [11, -32], [-11, 8], [11, 8]],
+         hardware_family: case_back_cover_replacement}
+    output: {source_seat_z_mm: 19.0, source_pattern_radius_mm: 8.0, source_bore_mm: 2.4}
+    planned_local_mask: null
+    unresolved: [Back mounting hardware, tool approach from underside, real bearing clearance]
+  shoulder:
+    motor: KEEP_060_DC11_A01_DUMMY_1
+    input_link: KEEP_059_rotation_connector_1
+    output_link: KEEP_058_connector_1
+    case_faces:
+      - {side: front, link_z_mm: 17.0, source_bore_mm: 3.5,
+         source_xy_mm: [[-11, -32], [-11, 8]], corresponding_case_xy_mm: [[-11, -32], [-11, 8]],
+         hardware_family: case_front_cover_replacement}
+      - {side: back, link_z_mm: -17.4, source_bore_mm: 3.5,
+         source_xy_mm: [[-11, -32], [-11, 8]], corresponding_case_xy_mm: [[-11, -32], [-11, 8]],
+         hardware_family: case_back_cover_replacement}
+    output: {source_seat_z_mm: 19.0, source_idler_seat_z_mm: -19.0, source_pattern_radius_mm: 8.0, source_bore_mm: 2.4}
+    planned_local_mask: null
+    unresolved: [Back face has nominal 0.4 mm gap, Emergency idler variant, Front and back hardware stacks]
+  elbow:
+    motor: J4_XL430_00_DC11_A01_DUMMY_1
+    input_link: KEEP_058_connector_1
+    output_link: KEEP_160_connector_1
+    case_faces:
+      - {side: front, link_z_mm: 3.5, source_bore_mm: 2.3,
+         source_xy_mm: [[-8, -22.5], [8, -22.5]], corresponding_case_xy_mm: [[-11, -32], [11, -32]],
+         hardware_family: case_front_cover_replacement}
+      - {side: back, link_z_mm: -20.0, source_bore_mm: 2.3,
+         source_xy_mm: [[-8, -22.5], [8, -22.5]], corresponding_case_xy_mm: [[-11, -32], [11, -32]],
+         hardware_family: case_back_cover_replacement}
+    output: {source_seat_z_mm: 6.5, source_idler_seat_z_mm: -22.5, source_pattern_radius_mm: 6.0, source_bore_mm: 1.8}
+    planned_local_mask: null
+    unresolved: [Case width and bolt-pattern changes, Output pattern and idler spacing, Hardware stacks]
+  extension:
+    motor: J6_XL430_00_DC11_A01_DUMMY_1
+    input_link: KEEP_160_connector_1
+    output_link: KEEP_057_shoulder_rotation_1
+    case_faces:
+      - {side: front, link_z_mm: 3.75, source_bore_mm: 2.2,
+         source_xy_mm: [[-8, -22.5], [8, -22.5]], corresponding_case_xy_mm: [[-11, -32], [11, -32]],
+         hardware_family: case_front_cover_replacement}
+      - {side: back, link_z_mm: -19.75, source_bore_mm: 2.2,
+         source_xy_mm: [[-8, -22.5], [8, -22.5]], corresponding_case_xy_mm: [[-11, -32], [11, -32]],
+         hardware_family: case_back_cover_replacement}
+    output: {source_seat_z_mm: 7.0, source_idler_seat_z_mm: -22.5, source_pattern_radius_mm: 6.0, source_bore_mm: 2.0}
+    planned_local_mask: null
+    unresolved: [Case attachment changes, Source output pattern has in-plane offset, Original horn-to-link axial gap 0.5 mm]
+  wrist:
+    motor: J3_XL430_00_DC11_A01_DUMMY_1
+    input_link: KEEP_057_shoulder_rotation_1
+    output_link: KEEP_117_static_side_1
+    case_faces:
+      - {side: back, link_z_mm: -19.5, source_bore_mm: 2.3,
+         source_xy_mm: [[-8, -22.5], [8, -22.5], [-8, 7.5], [8, 7.5]],
+         corresponding_case_xy_mm: [[-11, -32], [11, -32], [-11, 8], [11, 8]],
+         hardware_family: case_back_cover_replacement}
+    output: {source_seat_z_mm: 6.5, source_pattern_radius_mm: 6.0, source_bore_mm: 2.3}
+    planned_local_mask: null
+    unresolved: [Existing four standoffs need correct pattern, Idler-body recess clearance, Wrist-gripper envelope separation]
+  gripper:
+    motor: J5_GRIPPER_XL430_00_DC11_A01_DUMMY_1
+    input_link: KEEP_117_static_side_1
+    output_link: KEEP_116_moving_side_1
+    case_faces:
+      - {side: front, link_z_mm: 4.0, source_bore_mm: [2.3, 2.3, 2.34],
+         source_xy_mm: [[-8, -22.5], [8, -22.5], [-8.15, 7.65]],
+         corresponding_case_xy_mm: [[-11, -32], [11, -32], [-11, 8]],
+         hardware_family: case_front_cover_replacement}
+      - {side: back, link_z_mm: -19.5, source_bore_mm: [2.3, 2.3, 2.34],
+         source_xy_mm: [[-8, -22.5], [8, -22.5], [-8.15, 7.65]],
+         corresponding_case_xy_mm: [[-11, -32], [11, -32], [-11, 8]],
+         hardware_family: case_back_cover_replacement}
+    output: {source_seat_z_mm: 7.0, source_idler_seat_z_mm: -22.5, source_pattern_radius_mm: 6.0, source_bore_mm: 1.8}
+    planned_local_mask: null
+    unresolved: [Preserve asymmetric finger outline, Three-hole case interface, Original horn-to-link axial gap 0.5 mm]
+
+design_hypotheses:
+  evaluated_in: temp/assembly_resolution/datum_strategy_comparison.json
+  variants: [preserve_output_link, preserve_case_face, symmetric_case_width]
+  chosen_variant: null
+  motor_cluster_diagnostic:
+    report: temp/assembly_resolution/motor_cluster_strategy.json
+    strategy: preserve_case_face_and_propagate_then_half_width_gripper_offset
+    gripper_group_offset_along_wrist_output_mm: 4.25
+    motor_solids: 144
+    inter_motor_pairs: 8640
+    bbox_overlapping_pairs: 0
+    nearest_motor_distance_mm: 1.15
+    scope: Static motor-to-motor only; links have NOT been reshaped or accepted.
+  gripper_width_only_probe:
+    status: blocked_by_source_boolean_identity_preflight_no_candidate_exported
+    occurrence: KEEP_117_static_side_1
+    frame: J5_GRIPPER_XL430_00_DC11_A01_DUMMY_1
+    cut_axis: X
+    cut_coordinate_mm: -4.5
+    moving_region: X less than -4.5 in the unchanged source motor frame
+    moving_translation_mm: [-4.25, 0, 0]
+    bridge: Extrusion of the exact source section, not a bounding rectangle.
+    preserve_fixed_region: Source material for X greater than -4.5, including the entire finger.
+    preserve_moving_region: Original left chunk rigidly translated; bore and countersink profiles unchanged.
+    uniform_section_guard_half_width_mm: 0.25
+    numerical_symmetric_difference_tolerance_mm3: 0.0000001
+    numerical_tolerance_is_manufacturing_clearance: false
+    source_section_area_mm2: 153.344309524
+    expected_side_wall_mm: {thickness: 3.0, inner_x: -14.400000316, outer_x: -17.400000316}
+    functional_warning: Left case holes move with this chunk; this probe does not yet locate them on the new case pattern.
+    rejected_cuts:
+      - {axis: X, coordinate_mm: -10.05, reason: Cuts countersinks and would elongate them.}
+      - {axis: Y, coordinate_mm: -24.55, reason: Cuts the finger and countersinks.}
+      - {axis: Z, coordinate_mm: -19.4, reason: Cuts the curved finger root.}
+    required_tests:
+      - Zero extension preserves the original solid.
+      - All three axes and both directions preserve stationary and translated chunks.
+      - A bore cut across its diameter fails the uniform-section guard.
+      - Non-solid, empty section, out-of-range cut, non-finite dimensions and kernel errors cannot pass.
+      - Real source cut at X=-10.05 fails; X=-4.5 passes only the local width contract.
+      - Any added or removed material outside the declared chunks/bridge fails preservation.
+  source_boolean_identity_preflight:
+    status: unresolved_do_not_approve_edits
+    original_link_count: 7
+    source_is_valid_count: 7
+    independent_copy_comparison_pass_count: 0
+    original_environment: {cadquery: 2.7.0, ocp: 7.8.1.1}
+    isolated_comparison_environment: {cadquery: 2.8.0, ocp: 7.9.3.1}
+    comparison_environment_pass_count: 0
+    independent_reimport_comparison_pass_count: 0
+    identity_contract: Both directional cuts are empty and both directional common volumes preserve positive input volumes.
+    diagnosis: No self-interference was reported; periodic face coincidence can fail even on an input with no argument-analyzer warnings. Root cause remains unresolved.
+    reports:
+      - temp/assembly_resolution/boolean_identity_all_links.json
+      - temp/assembly_resolution/boolean_identity_cq280.json
+      - temp/assembly_resolution/boolean_identity_reimport.json
+      - temp/assembly_resolution/boolean_arguments_all_links.json
+      - temp/assembly_resolution/periodic_face_identity.json
+      - temp/assembly_resolution/boolean_identity_common.json
+    limitation: Invalid independent-copy Boolean differences do not establish that the physical source parts are defective.
+    required_next_step: Establish a reliable no-change preservation oracle before exporting a modified part.
+  no_release_until:
+    - Exact masks and preservation oracle are defined for each modified link.
+    - Source corner bores are not misrepresented as 26 mm of usable thread.
+    - Front spacer rings and back fastening route are resolved independently.
+    - Every motor/link and motor/motor collision is checked in the full final assembly.
+    - Each screw can enter, seat and be tightened with the actual tool in the assembly sequence.
+    - Physical PLA, load, motion and wiring requirements have evidence.

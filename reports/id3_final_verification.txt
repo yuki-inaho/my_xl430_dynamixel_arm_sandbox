@@ -1,0 +1,18 @@
+=== sandbox
+210 passed in 3.29s
+All checks passed!
+All checks passed!
+Maximum complexity: 10; allowed: 10
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.40s
+=== gripper viewer
+100 passed in 71.06s (0:01:11)
+All checks passed!
+=== git diff --check (gripper tracked)
+rc=0
+=== trailing whitespace in changed/new files
+../3d-printed-dynamixel-gripper/HANDOFF.md:3:> Generated: 2026-10-03 22:03 JST  
+../3d-printed-dynamixel-gripper/HANDOFF.md:4:> Current project: /home/inaho-omen/Project/3d-printed-dynamixel-gripper  
+../3d-printed-dynamixel-gripper/HANDOFF.md:5:> Main software workspace: /home/inaho-omen/Project/my_dynamixel_arm_sandbox  
+../3d-printed-dynamixel-gripper/HANDOFF.md:6:> Current Codex session: 01a10159-a252-7e72-b112-cf34f1a05dce  
+ws-check done

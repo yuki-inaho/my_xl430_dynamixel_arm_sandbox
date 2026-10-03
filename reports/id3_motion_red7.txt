@@ -1,0 +1,97 @@
+...................................................................FFFF. [ 54%]
+.....F......................................................             [100%]
+=================================== FAILURES ===================================
+_________ test_gravity_shortfall_is_corrected_by_moving_the_goal[-12] __________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-71/test_gravity_shortfall_is_corr0')
+shortfall = -12
+
+    @pytest.mark.parametrize("shortfall", [-12, -19, -24])
+    def test_gravity_shortfall_is_corrected_by_moving_the_goal(tmp_path, shortfall):
+        arm = FakeArm()
+        arm.open_shortfall = shortfall  # P-only position control sags under the forearm load
+        outcome, events = run(tmp_path, arm)
+>       assert outcome.status == "converged"
+E       AssertionError: assert 'settled_off_target' == 'converged'
+E         
+E         - converged
+E         + settled_off_target
+
+tests/test_id3_motion.py:466: AssertionError
+_________ test_gravity_shortfall_is_corrected_by_moving_the_goal[-19] __________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-71/test_gravity_shortfall_is_corr1')
+shortfall = -19
+
+    @pytest.mark.parametrize("shortfall", [-12, -19, -24])
+    def test_gravity_shortfall_is_corrected_by_moving_the_goal(tmp_path, shortfall):
+        arm = FakeArm()
+        arm.open_shortfall = shortfall  # P-only position control sags under the forearm load
+        outcome, events = run(tmp_path, arm)
+>       assert outcome.status == "converged"
+E       AssertionError: assert 'settled_off_target' == 'converged'
+E         
+E         - converged
+E         + settled_off_target
+
+tests/test_id3_motion.py:466: AssertionError
+_________ test_gravity_shortfall_is_corrected_by_moving_the_goal[-24] __________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-71/test_gravity_shortfall_is_corr2')
+shortfall = -24
+
+    @pytest.mark.parametrize("shortfall", [-12, -19, -24])
+    def test_gravity_shortfall_is_corrected_by_moving_the_goal(tmp_path, shortfall):
+        arm = FakeArm()
+        arm.open_shortfall = shortfall  # P-only position control sags under the forearm load
+        outcome, events = run(tmp_path, arm)
+>       assert outcome.status == "converged"
+E       AssertionError: assert 'settled_off_target' == 'converged'
+E         
+E         - converged
+E         + settled_off_target
+
+tests/test_id3_motion.py:466: AssertionError
+_______________ test_correction_is_capped_and_reports_off_target _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-71/test_correction_is_capped_and_0')
+
+    def test_correction_is_capped_and_reports_off_target(tmp_path):
+        arm = FakeArm()
+        arm.hard_stop_high = 1250  # something blocks the joint below the target
+        outcome, _ = run(tmp_path, arm)
+>       assert outcome.status == "settled_off_target"
+E       AssertionError: assert 'aborted' == 'settled_off_target'
+E         
+E         - settled_off_target
+E         + aborted
+
+tests/test_id3_motion.py:478: AssertionError
+________________________ test_goal_window_matches_plan _________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-71/test_goal_window_matches_plan0')
+
+    def test_goal_window_matches_plan(tmp_path):
+        arm = FakeArm()
+        evidence = motion.load_evidence(write_evidence(tmp_path, evidence_record()))
+        actuator = FakeActuator(arm)
+        clock = FakeClock()
+        motion.run_motion(FakeReader(arm), actuator, evidence, lambda e: None, clock.monotonic,
+                          clock.sleep)
+        (envelope,) = actuator.envelopes
+        assert envelope.motor_id == 3
+        assert envelope.goal_low <= 1153 - motion.JUMP_TOLERANCE
+        assert envelope.goal_high >= 1153 + 114 + motion.JUMP_TOLERANCE
+        assert envelope.goal_high - envelope.goal_low <= 114 + 2 * 40
+>       assert envelope.goal_low == 1153 - motion.FOLD_SIDE_MARGIN
+                                           ^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'arm_observer.id3_motion' has no attribute 'FOLD_SIDE_MARGIN'
+
+tests/test_id3_motion.py:557: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_id3_motion.py::test_gravity_shortfall_is_corrected_by_moving_the_goal[-12]
+FAILED tests/test_id3_motion.py::test_gravity_shortfall_is_corrected_by_moving_the_goal[-19]
+FAILED tests/test_id3_motion.py::test_gravity_shortfall_is_corrected_by_moving_the_goal[-24]
+FAILED tests/test_id3_motion.py::test_correction_is_capped_and_reports_off_target
+FAILED tests/test_id3_motion.py::test_goal_window_matches_plan - AttributeErr...
+5 failed, 127 passed in 2.36s

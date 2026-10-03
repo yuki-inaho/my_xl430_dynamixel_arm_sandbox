@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Workdoc UV"
+  short_description: "Create detailed UV-based workdoc plans in temp/."
+  default_prompt: "write_workdoc_uv: Create a detailed self-contained workdoc for the requested task."

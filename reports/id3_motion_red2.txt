@@ -1,0 +1,52 @@
+...................................................F.........F.....
+=================================== FAILURES ===================================
+________ test_successful_opening_reaches_converges_returns_and_restores ________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-48/test_successful_opening_reache0')
+
+    def test_successful_opening_reaches_converges_returns_and_restores(tmp_path):
+        arm = FakeArm()
+        outcome, events = run(tmp_path, arm)
+        assert outcome.status == "converged"
+        assert outcome.target == 1153 + 114
+        assert outcome.final_error_counts == 0
+>       assert written(arm) == [
+            ("profile_acceleration", 1), ("profile_velocity", 5), ("goal_pwm", 350),
+            ("goal_position", 1153), ("torque", 1), ("goal_position", 1267),
+            ("goal_position", 1153), ("torque", 0), ("goal_position", 1153), ("goal_pwm", 885),
+            ("profile_velocity", 0), ("profile_acceleration", 0),
+        ]
+E       AssertionError: assert [('profile_ac...', 1267), ...] == [('profile_ac...', 1267), ...]
+E         
+E         At index 8 diff: ('goal_pwm', 885) != ('goal_position', 1153)
+E         Right contains one more item: ('profile_acceleration', 0)
+E         Use -v to get more diff
+
+tests/test_id3_motion.py:334: AssertionError
+________________ test_jump_at_torque_on_aborts_with_torque_off _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-48/test_jump_at_torque_on_aborts_0')
+
+    def test_jump_at_torque_on_aborts_with_torque_off(tmp_path):
+        arm = FakeArm()
+        arm.rebase = 40
+        outcome, _ = run(tmp_path, arm)
+        assert outcome.status == "aborted"
+        assert "jump" in outcome.reason
+        assert ("goal_position", 1153 + 40 + 114) not in written(arm)
+        names = [name for name, _ in written(arm)]
+>       assert names[-5:] == ["torque", "goal_position", "goal_pwm", "profile_velocity",
+                              "profile_acceleration"]
+E       AssertionError: assert ['torque', 't...acceleration'] == ['torque', 'g...acceleration']
+E         
+E         At index 1 diff: 'torque' != 'goal_position'
+E         Use -v to get more diff
+
+tests/test_id3_motion.py:401: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_id3_motion.py::test_successful_opening_reaches_converges_returns_and_restores
+FAILED tests/test_id3_motion.py::test_jump_at_torque_on_aborts_with_torque_off
+!!!!!!!!!!!!!!!!!! KeyboardInterrupt: serial read interrupted !!!!!!!!!!!!!!!!!!
+/home/inaho-omen/Project/my_dynamixel_arm_sandbox/tests/test_id3_motion.py:460: KeyboardInterrupt: serial read interrupted
+(to show a full traceback on KeyboardInterrupt use --full-trace)
+2 failed, 65 passed in 1.07s

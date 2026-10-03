@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Written Workdoc"
+  short_description: "Review workdocs for clarity, completeness, and traceability."
+  default_prompt: "review_written_workdoc: Review the specified workdoc for self-contained, executable task planning."

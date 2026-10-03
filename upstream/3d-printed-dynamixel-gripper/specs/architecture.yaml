@@ -1,0 +1,110 @@
+schema_version: 1
+status: ID5_only_confirmed_geometry_under_validation
+decision_date: 2026-09-24
+
+scope:
+  objective: all_xl430_terminal_with_link_fixed_camera_and_parallel_jaw_without_roll
+  fabrication_approved: false
+  powered_operation_approved: false
+  reason_not_approved:
+    - physical_to_cad_joint_mapping_not_confirmed
+    - jaw_object_opening_force_and_duty_requirements_unknown
+    - exact_camera_and_fastener_hardware_not_purchased
+    - upstream_r3_arm_not_accepted_for_fabrication
+
+namespaces:
+  physical:
+    meaning: labels_and_bus_ids_on_the_real_arm
+    confirmed:
+      - physical_id: 5
+        actuator_model: XL430-W250-T
+        intended_role: parallel_jaw_drive
+        mapping_status: user_role_confirmed_physical_CAD_observation_pending
+    additional_gripper_motor_count: 0
+  cad:
+    source: references/arm-r3/joints.json
+    source_sha256: 988890dd93df387ce22f027c10f9e7f3e4f7ac1841e010f18fd7aec47eebf7a7
+    joints:
+      - cad_joint: J5
+        motor_occurrence: M05
+        centre_mm: [-0.2, 164.9, 164.6]
+        axis: [0.0, 1.0, 0.0]
+        provisional_role: wrist_roll_geometry_candidate
+      - cad_joint: J6
+        motor_occurrence: M06
+        centre_mm: [-0.2, 234.9, 164.6]
+        axis: [1.0, 0.0, 0.0]
+        provisional_role: downstream_actuator_geometry_candidate
+
+mapping:
+  physical_to_cad:
+    "4": null
+    "5": null
+    jaw_drive_physical_id: null
+  rule: do_not_infer_mapping_from_equal_numbers
+
+camera:
+  mount_parent:
+    part: P05_wrist_XL430
+    source: references/arm-r3/P05_wrist_XL430.step
+    source_sha256: 7bbbb927b75b656a0c0662b1617eff3731d8892f235e9c85c832996af4615d42
+    attachment_region: central_bridge_plate
+  kinematic_relationship:
+    follows_parent: P05_wrist_XL430
+    follows_cad_joint_J5_output_rotation: false
+    required_invariant: T_P05_camera_constant_when_only_J5_roll_changes
+  carrier:
+    type: interchangeable_plate
+    provisional_reference: SO_ARM101_standard_UVC_28x28_M2
+    exact_camera_model: null
+    optical_frame: null
+
+roll:
+  actuator_model: XL430-W250-T
+  required: false
+  physical_id_candidate: null
+  cad_joint_candidate: null
+  function_reserved: false
+  may_drive_jaw: true
+  source: user_2026-09-24_roll_not_needed
+  supersedes: prior_ID5_roll_reservation_and_plus_minus_30_request
+
+jaw:
+  actuator_model: XL430-W250-T
+  physical_id: 5
+  physical_id_candidate: 5
+  cad_joint_candidate: null
+  motor_arrangement_status: user_confirmed_ID5_only_no_additional_motor
+  additional_motor_count: 0
+  mechanism_requirement: symmetric_parallel_jaw
+  design_state: concept_only_until_object_requirements_are_known
+
+rejected_architectures:
+  - id: mixed_servo_lateral_delivery
+    reason:
+      - uses_XL330_terminal_geometry
+      - pcd12_mount_does_not_match_all_xl430_pcd16_reference
+      - camera_is_roll_horn_following_instead_of_P05_fixed
+      - fixed_plus_rotating_finger_is_not_parallel_jaw
+    evidence: docs/REVIEW_LATERAL_20260922.md
+
+historical_decisions:
+  - id: physical_id_5_directly_drives_jaw
+    previous_status: rejected_by_old_roll_reservation
+    current_status: eligible_candidate_after_2026-09-24_user_removed_roll
+    note: not_evidence_of_physical_to_CAD_mapping_or_assembly_fit
+
+stop_gates:
+  fabrication_dimensions:
+    state: blocked
+    unblock_when:
+      - physical_ID4_ID5_to_CAD_mapping_is_observed
+      - target_object_and_opening_are_defined
+      - required_grip_force_speed_and_duty_are_defined
+      - exact_camera_fasteners_and_tools_are_selected
+  real_camera_calibration:
+    state: blocked
+    unblock_when:
+      - camera_model_resolution_lens_and_focus_are_known
+      - printed_board_scale_is_measured
+      - real_images_cover_required_pose_diversity

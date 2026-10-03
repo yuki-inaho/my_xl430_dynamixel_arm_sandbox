@@ -1,0 +1,9 @@
+[bus]
+device = "/dev/serial/by-id/usb-BestTechnology_E148_E148-if00-port0"
+baudrate = 1000000
+protocol = 2.0
+expected_ids = [1, 2, 3, 4, 5]
+
+[arm]
+physical_order_verified = false
+roles = { "1" = "base_rotation", "2" = "shoulder", "3" = "elbow", "4" = "wrist", "5" = "gripper_open_close" }

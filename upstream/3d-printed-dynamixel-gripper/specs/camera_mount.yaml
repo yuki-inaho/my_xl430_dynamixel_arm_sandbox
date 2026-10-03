@@ -1,0 +1,151 @@
+schema_version: 1
+status: candidate_assumptions_not_purchase_or_fabrication_approval
+# Historical P05-side camera candidate. Superseded as the requested camera layout by
+# specs/camera_mount_id5_corner.yaml; retained for reproducibility and regression tests.
+design_role: historical_superseded_view_candidate
+superseded_by: specs/camera_mount_id5_corner.yaml
+# This source-preserving jig builder must not mutate the reference P05 STEP.
+# Sep24 permission for a NEW local-relief candidate is in specs/project.yaml.
+
+parent:
+  part: P05_wrist_XL430
+  step_path: references/arm-r3/P05_wrist_XL430.step
+  sha256: 7bbbb927b75b656a0c0662b1617eff3731d8892f235e9c85c832996af4615d42
+  bbox_mm: [-23.2, 91.4, 151.1, 22.8, 174.9, 196.6]
+  camera_follows_parent: true
+  camera_follows_J5_output_roll: false
+  modification_allowed: false
+
+assembly_source:
+  step_path: references/arm-r3/arm_XL430_R3.step
+  sha256: 3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb
+
+donor_reference:
+  step_path: references/robonine/RB9.01.062.000 Gripper.STEP
+  sha256: 3d10caca74f4e82e8d0b26c0ef2254e12dc1495c027eba1eae207944521d2104
+  usage: camera_and_spacer_envelope_reference_only
+
+camera:
+  exact_model: null
+  origin_world_mm: [-0.2, 139.0, 228.0]
+  carrier_rotation_axis: [1.0, 0.0, 0.0]
+  carrier_rotation_deg: -120.0
+  mounting_pattern_mm: [28.0, 28.0]
+  mounting_hole_diameter_mm: 2.4
+  mounting_pattern_detection_window_half_mm: 20.0
+  carrier_outer_mm: [38.0, 38.0, 3.0]
+  carrier_opening_mm: [23.0, 23.0]
+  corner_fillet_mm: 2.0
+  optical_frame: null
+  field_of_view_deg: null
+  mass_kg: null
+  mechanical_camera_frame_candidate:
+    status: carrier_normal_proxy_not_exact_optical_frame
+    source: carrier_rotation_and_camera_origin_in_this_spec
+    origin_world_mm: [-0.2, 139.0, 228.0]
+    rotation_world_from_opencv_camera:
+      construction: rotation_about_world_x
+      degrees: -120.0
+    may_be_used_for: kinematic_parentage_and_axis_conversion_tests
+    may_not_be_used_for: real_camera_extrinsic_approval
+
+clamp_geometry:
+  saddle: {size_mm: [64.0, 3.5, 16.0], origin_mm: [-32.2, 136.9, 180.6]}
+  top_stop: {size_mm: [46.0, 7.25, 3.0], origin_mm: [-23.2, 136.9, 196.6]}
+  mast_local: {size_mm: [12.0, 30.0, 4.0], origin_mm: [-6.0, 17.0, -4.0]}
+  shelf: {size_mm: [12.0, 26.4, 4.0], origin_mm: [-6.2, 114.0, 188.0]}
+  front_jaw: {size_mm: [64.0, 2.5, 24.0], origin_mm: [-32.2, 144.4, 180.6]}
+  jaw_reliefs:
+    size_mm: [4.5, 4.5, 17.25]
+    center_x_mm: [-16.45, 16.05]
+    origin_yz_mm: [143.4, 179.6]
+  clamp_bores:
+    center_x_mm: [-28.7, 28.3]
+    center_z_mm: 188.6
+    diameter_mm: 3.4
+    drill_start_y_mm: 125.0
+    drill_length_mm: 35.0
+  interchangeable_carrier:
+    tab_size_mm: [12.0, 10.0, 3.0]
+    tab_origin_local_mm: [-6.0, 19.0, 0.0]
+    attachment_hole_centres_local_mm: [[-4.0, 24.0], [4.0, 24.0]]
+    attachment_hole_diameter_mm: 2.4
+    candidate_fastener: M2x10_with_captive_nut
+    insertion_side: saddle_underside_toward_carrier
+    purchased: false
+    dimensions_confirmed: false
+  cable_strain_relief_reservations_local:
+    status: bilateral_printable_zip_tie_anchors_route_not_validated
+    left_bbox_mm: [-27.0, 12.0, 0.0, -19.0, 27.0, 8.0]
+    right_bbox_mm: [19.0, 12.0, 0.0, 27.0, 27.0, 8.0]
+    ear_size_mm: [8.0, 15.0, 3.0]
+    ear_origins_local_mm: [[-27.0, 12.0, 0.0], [19.0, 12.0, 0.0]]
+    slot_size_mm: [3.0, 8.0, 5.0]
+    slot_origins_local_mm: [[-24.5, 17.0, -1.0], [21.5, 17.0, -1.0]]
+
+change_mask:
+  source_part_mutation_allowed: false
+  allowed_new_parts: [saddle, front_jaw, camera_carrier, camera_spacer]
+  maximum_source_intersection_mm3: 0.00001
+  maximum_change_outside_new_parts_mm3: 0.0
+
+contact_requirements:
+  probe_depth_mm: 0.01
+  minimum_saddle_to_p05_area_mm2: 500.0
+  minimum_front_jaw_to_p05_area_mm2: 500.0
+  minimum_carrier_to_saddle_area_mm2: 100.0
+
+fastener_ledger:
+  camera_carrier:
+    count: 4
+    candidate: M2x10_with_nut
+    grip_mm: 6.5
+    nut_thickness_mm: 1.6
+    pitch_mm: 0.4
+    purchased: false
+    dimensions_confirmed: false
+  p05_clamp:
+    count: 2
+    candidate: M3x16_with_nut
+    grip_mm: 10.0
+    nut_thickness_mm: 2.4
+    pitch_mm: 0.5
+    purchased: false
+    dimensions_confirmed: false
+  interchangeable_carrier:
+    count: 2
+    candidate: M2x10_with_captive_nut
+    grip_mm: 7.0
+    nut_thickness_mm: 1.6
+    pitch_mm: 0.4
+    purchased: false
+    dimensions_confirmed: false
+    counterhold: captive_nut_pocket_in_carrier_candidate
+
+tool_assumptions:
+  source: nominal_envelope_not_manufacturer_drawing
+  shaft_length_mm: 75.0
+  handle_diameter_mm: 20.0
+  handle_length_mm: 30.0
+  shaft_radius_mm: {M2_head: 1.5, M2_nut: 3.5, M3_head: 2.5, M3_nut: 4.5}
+  L_key_sweep_supported: false
+
+cable_assumptions:
+  connector_side: null
+  connector_envelope_mm: null
+  cable_diameter_mm: null
+  minimum_bend_radius_mm: null
+  strain_relief_required: true
+  motion_sweep_status: unknown
+
+release:
+  camera_model_confirmed: false
+  fasteners_confirmed: false
+  tools_confirmed: false
+  cable_confirmed: false
+  fabrication_approved: false
+
+output_policy:
+  require_new_run_directory: true
+  legacy_gcode_is_current: false
+  legacy_gcode_status: superseded_candidate_do_not_print_as_updated_design

@@ -1,0 +1,14 @@
+{
+  "log": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/id3_motion_20261004T001621_347275+0900.jsonl",
+  "status": "settled_off_target",
+  "reason": "settled -19 counts from the target",
+  "target": 1267,
+  "final_error_counts": -19,
+  "start_counts": 1153,
+  "torque_on_counts": 1153,
+  "sign": 1,
+  "return_error_counts": 1,
+  "torque_off_confirmed": true,
+  "release_problems": [],
+  "interrupted": false
+}

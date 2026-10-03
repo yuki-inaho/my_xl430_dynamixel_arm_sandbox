@@ -1,0 +1,53 @@
+# Mechanical route study only. Colors denote routes, not electrical conductors.
+schema_version: 1
+motor_configuration: all_xl430_user_confirmed_2026_09_22
+electrical_release: false
+bundle_diameter_mm: 6.0  # Assumption: measure the actual harness before acceptance.
+minimum_bend_radius_mm: 15.0  # Study target, NOT a manufacturer cable specification.
+wire_exit_local_y_mm: 8.1  # JST EH top-entry assembled height, PCB datum y=0.
+port_straight_control_length_mm: 30.0
+insertion_probe:
+  travel_mm: 40.0
+  step_mm: 2.0
+# Assumed straight 2.5 mm hex driver, not measured hardware. Match the reference
+# bolt's modeled socket only; actual socket fit and torque remain unverified.
+center_bolt_tool:
+  drive_af_mm: 2.5
+  shaft_length_mm: 60.0
+  handle_diameter_mm: 24.0
+  handle_length_mm: 80.0
+  withdrawal_mm: 40.0
+  shaft_margin_mm: 1.0
+  hand_radial_margin_mm: 15.0
+routes:
+  - name: C0_feed_to_base
+    start_xyz_mm: [-75, 65, -100]  # Free feed endpoint, not measured E148 placement.
+    start_direction: [1, 0, 0]
+    end_port: KEEP_004_B3B-EH_2
+    waypoints_mm: [[-20, 65, -140], [-4.7, 102.50434683498, -140]]
+    color: [0.85, 0.3, 0.45]
+  - name: C1_base_to_shoulder
+    start_port: KEEP_003_B3B-EH_1
+    end_port: KEEP_064_B3B-EH_2
+    waypoints_mm: [[65, 102.50434683498, -134.83670903944], [65, 102.50434683498, -56.78670903944]]
+    color: [0.1, 0.65, 0.95]
+  - name: C2_shoulder_to_elbow_CAD_J4
+    start_port: KEEP_063_B3B-EH_1
+    end_port: J4_XL430_03_B3B-EH_1
+    waypoints_mm: [[65, 102.50434683498, -36.48670903944], [65, 82, 15], [-45, 82, 15], [-45, 126.95650629444, 52.045869188716]]
+    color: [0.95, 0.75, 0.05]
+  - name: C3_elbow_to_extension_CAD_J6
+    start_port: J4_XL430_04_B3B-EH_2
+    end_port: J6_XL430_03_B3B-EH_1
+    waypoints_mm: [[-55, 126.95650629444, 72.345869188716], [-55, 217.78043114132, 54.213151105118]]
+    color: [0.3, 0.85, 0.5]
+  - name: C4_extension_to_wrist_CAD_J3
+    start_port: J6_XL430_04_B3B-EH_2
+    end_port: J3_XL430_03_B3B-EH_1
+    waypoints_mm: [[-55, 217.78043114132, 74.513151105118], [-55, 270, 110], [18.496676675036, 270, 110], [18.496676675036, 221.71714018077, 110]]
+    color: [0.7, 0.4, 0.85]
+  - name: C5_wrist_to_gripper
+    start_port: J3_XL430_04_B3B-EH_2
+    end_port: J5_GRIPPER_XL430_03_B3B-EH_1
+    waypoints_mm: [[18.496676675036, 242.01714018077, 110], [65, 280, 110], [65, 280, -50], [11.096676665723, 195, -50], [11.096676665723, 195, -7.124861872902]]
+    color: [0.05, 0.85, 0.8]

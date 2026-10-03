@@ -1,0 +1,106 @@
+schema_version: 1
+status: historical_r5_geometry_pending_no_roll_architecture_revision
+# Current user permissions/requirements live in project.yaml; this layout is r5.
+# source_link_modification=false below describes unchanged r5, not current permission.
+source_support_occurrence: P06_fixed_gripper_XL430
+source_assembly: references/arm-r3/arm_XL430_R3.step
+units: mm
+coordinates: R3_arm_world
+pg3_crank_representation:
+  method: supplied_CSG_with_deferred_intermediate_clean
+  implementation: gripper_design/pg3_crank_representation.py
+  source: references/pg3-c9/PG3_C92_J28/reference/C7/source/design.py
+  source_sha256: c20f0dd65fa1338ba3d42c9424990937bd161b491b5a937e429a84ccf4bb25d0
+  material_reference: references/pg3-c9/PG3_C92_J28/CAD/parts/07_crank.step
+  dimensions_changed: false
+  source_archive_modified: false
+  saved_material_equivalence_required: true
+  physical_fastening_verified: false
+pg3_frame_relief:
+  coordinate_frame: PG3_construction
+  four_subtractive_strips:
+    x_intervals_mm: [[-46.0, -44.0], [44.0, 46.0]]
+    y_intervals_mm: [[-18.8, -18.5], [18.5, 18.8]]
+    z_interval_mm: [19.5, 24.1]
+  nominal_added_side_gap_mm: 0.3
+  retained_end_land_size_mm: [2.0, 3.2, 4.6]
+  preserve: [outer_envelope, main_rails, case_bores, cap_bores, motor_seats, carriage_geometry]
+  source_archive_modified: false
+  strength_and_print_fit_verified: false
+support_change_mask:
+  distal_finger_removal: {y_min: 240.9}
+  outboard_edge_relief: {x_min: 16.3}
+  original_outboard_support_edge_x: 16.8
+  nominal_frame_clearance: 0.5
+  case_hole_diameter_only: 2.8
+  lower_horn_rear_counterbore:
+    cutter_origin: [-0.2, 187.9, 156.6]
+    cutter_axis: [0, 1, 0]
+    diameter: 4.8
+    cutter_length: 4.1
+    seat_y: 187.9
+    retained_wall_to_motor_seat: 4.0
+    rationale: open_original_blind_lower_hole_and_create_full_spacer_seat
+  rationale: remove_obsolete_fixed_finger_and_peripheral_strip_without_removing_motor_support
+protected_interfaces:
+  upstream_horn:
+    seat_y: 183.9
+    hole_centres_xz: [[-8.2, 164.6], [-0.2, 156.6], [-0.2, 172.6], [7.8, 164.6]]
+    original_diameter: 2.4
+    central_bore_diameter: 11.0
+    outer_boss_diameter: 27.0
+    rear_seat_y_all_four: 187.9
+    screw_candidate: {type: M2_socket_head, length: 8.0, head_diameter_max: 3.8, head_height_max: 2.0}
+    metal_spacer_candidate:
+      thickness: 1.0
+      inside_diameter: 2.2
+      outside_diameter_three_upper: 5.0
+      outside_diameter_lower: 4.3
+    engagement: 3.0
+    tip_to_bottom_margin: 0.5
+    full_bearing_footprint_required: true
+  downstream_case_bottom:
+    seat_z: 150.35
+    bottom_z: 146.35
+    hole_centres_xy: [[-6.2, 206.9], [-6.2, 230.9], [5.8, 206.9], [5.8, 230.9]]
+    original_diameter: 2.4
+    candidate_diameter: 2.8
+    fastener_candidate: ROBOTIS_S14_PHS_M2.6x8_TAP_K
+    washer_candidate: {inside_diameter: 2.8, outside_diameter: 7.0, thickness: 0.5}
+    nominal_screw_engagement: 3.5
+    manufacturer_max_depth: 4.0
+    nominal_bottoming_margin: 0.5
+    purchase_and_strength_confirmed: false
+    protected_radius_around_each_axis: 5.2
+    last_hole_outer_edge_to_cut_y: 8.6
+camera_mount:
+  parent: P05_wrist_XL430
+  source_link_modification: false
+  reference_camera_mounting_pitch: [28.0, 28.0]
+  new_mount_geometry: rear_set_outboard_bracket_with_interchangeable_carrier
+  carrier_origin: [52.0, 53.0, 164.6]
+  carrier_rotation: {axis: [1, 0, 0], degrees: -90}
+  optical_proxy: {origin: [52.0, 85.0, 164.6], direction: [0, 1, 0], fovy_deg_assumed: 50}
+  bridge_bbox: [26.0, 49.0, 193.6, 58.0, 140.4, 199.6]
+  root_roof_bbox: [-23.2, 130.4, 196.6, 58.0, 144.15, 202.6]
+  root_roof_intent: broaden_clamp_to_side_arm_load_path_without_changing_P05_or_optics
+  root_strength_and_creep_verified: false
+  roll_range_diagnostic_deg: [-30, 30]
+  actual_required_roll_range: null
+  optical_margin_diagnostic_px: 20
+  right_M3_nut_tool:
+    socket_shaft_diameter: 9.0
+    exposed_shaft_length: 100.0
+    handle_diameter: 20.0
+    handle_length: 30.0
+  left_cable_tie_ear: removed_to_clear_right_M3_clamp_screw
+  right_cable_tie_ear: retained
+sources:
+  robotis_drawing: https://www.robotis.com/service/download.php?no=772
+  drawing_direct: https://www.dropbox.com/s/j4uzfinaxd2vjws/XL-430_new.pdf?dl=1
+  case_tapper_size: https://en.robotis.com/shop_en/item.php?it_id=902-0135-000
+  s14_candidate: https://www.robotis.com/shop/item.php?it_id=903-0183-000
+acceptance:
+  engineering_scope: actual_installability_not_diagnostics_only
+  whole_arm_fit_approved: false
+  physical_assembly_verified: false

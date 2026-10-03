@@ -1,0 +1,619 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:my-dynamixel-arm:stream:v2",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/MetadataEvent"
+    },
+    {
+      "$ref": "#/$defs/FrameEvent"
+    },
+    {
+      "$ref": "#/$defs/EndEvent"
+    }
+  ],
+  "$defs": {
+    "MetadataEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "metadata": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/MotorMetadata"
+          }
+        },
+        "config": {
+          "$ref": "#/$defs/ArmConfig"
+        },
+        "observed_at": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "metadata"
+          ]
+        },
+        "schema_version": {
+          "enum": [
+            2
+          ]
+        }
+      },
+      "required": [
+        "metadata",
+        "config",
+        "observed_at",
+        "kind",
+        "schema_version"
+      ]
+    },
+    "MotorMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "motor_id": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 252
+        },
+        "identity": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Identity"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "proposed_role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "registers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RegisterValue"
+          }
+        },
+        "faults": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Fault"
+          }
+        },
+        "skipped_registers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "motor_id",
+        "identity",
+        "proposed_role",
+        "registers",
+        "faults",
+        "skipped_registers"
+      ]
+    },
+    "Identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "motor_id": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 252
+        },
+        "model_number": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 65535
+        },
+        "firmware_version": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": 0,
+          "maximum": 255
+        },
+        "observed_at": {
+          "type": "string"
+        },
+        "device_error": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255
+        },
+        "faults": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Fault"
+          }
+        }
+      },
+      "required": [
+        "motor_id",
+        "model_number",
+        "firmware_version",
+        "observed_at",
+        "device_error",
+        "faults"
+      ]
+    },
+    "Fault": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "motor_id": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 252
+        },
+        "operation": {
+          "type": "string"
+        },
+        "comm_result": {
+          "type": "integer",
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "device_error": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255
+        },
+        "message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "motor_id",
+        "operation",
+        "comm_result",
+        "device_error",
+        "message"
+      ]
+    },
+    "RegisterValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 65535
+        },
+        "size": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 255
+        },
+        "memory": {
+          "type": "string"
+        },
+        "raw": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "value": {
+          "type": "integer",
+          "minimum": -9223372036854775808,
+          "maximum": 9223372036854775807
+        },
+        "device_alert": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "address",
+        "size",
+        "memory",
+        "raw",
+        "value",
+        "device_alert"
+      ]
+    },
+    "ArmConfig": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bus": {
+          "$ref": "#/$defs/BusConfig"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/JointRole"
+          }
+        },
+        "physical_order_verified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "bus",
+        "roles",
+        "physical_order_verified"
+      ]
+    },
+    "BusConfig": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "device": {
+          "type": "string"
+        },
+        "baudrate": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "protocol": {
+          "type": "number"
+        },
+        "expected_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 252
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      },
+      "required": [
+        "device",
+        "baudrate",
+        "protocol",
+        "expected_ids"
+      ]
+    },
+    "JointRole": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "motor_id": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 252
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "motor_id",
+        "name"
+      ]
+    },
+    "FrameEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frame": {
+          "$ref": "#/$defs/TelemetryFrame"
+        },
+        "kind": {
+          "enum": [
+            "frame"
+          ]
+        },
+        "schema_version": {
+          "enum": [
+            2
+          ]
+        }
+      },
+      "required": [
+        "frame",
+        "kind",
+        "schema_version"
+      ]
+    },
+    "TelemetryFrame": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sequence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18446744073709551615
+        },
+        "started_at": {
+          "type": "string"
+        },
+        "finished_at": {
+          "type": "string"
+        },
+        "monotonic_ns": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18446744073709551615
+        },
+        "duration_ms": {
+          "type": "number"
+        },
+        "requested_rate_hz": {
+          "type": "number"
+        },
+        "deadline_missed": {
+          "type": "boolean"
+        },
+        "read_mode": {
+          "enum": [
+            "sync",
+            "unicast"
+          ]
+        },
+        "motors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/MotorTelemetry"
+          }
+        }
+      },
+      "required": [
+        "sequence",
+        "started_at",
+        "finished_at",
+        "monotonic_ns",
+        "duration_ms",
+        "requested_rate_hz",
+        "deadline_missed",
+        "read_mode",
+        "motors"
+      ]
+    },
+    "MotorTelemetry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "motor_id": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 252
+        },
+        "torque_enabled": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hardware_error": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": 0,
+          "maximum": 255
+        },
+        "position_counts": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "velocity_raw": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        },
+        "pwm_raw": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": -32768,
+          "maximum": 32767
+        },
+        "load_raw": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": -32768,
+          "maximum": 32767
+        },
+        "voltage_raw": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": 0,
+          "maximum": 65535
+        },
+        "temperature_c": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": 0,
+          "maximum": 255
+        },
+        "moving": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "moving_status": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": 0,
+          "maximum": 255
+        },
+        "tick_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "minimum": 0,
+          "maximum": 65535
+        },
+        "device_alert": {
+          "type": "boolean"
+        },
+        "faults": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Fault"
+          }
+        }
+      },
+      "required": [
+        "motor_id",
+        "torque_enabled",
+        "hardware_error",
+        "position_counts",
+        "velocity_raw",
+        "pwm_raw",
+        "load_raw",
+        "voltage_raw",
+        "temperature_c",
+        "moving",
+        "moving_status",
+        "tick_ms",
+        "device_alert",
+        "faults"
+      ]
+    },
+    "EndEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "summary": {
+          "$ref": "#/$defs/StreamSummary"
+        },
+        "kind": {
+          "enum": [
+            "end"
+          ]
+        },
+        "schema_version": {
+          "enum": [
+            2
+          ]
+        }
+      },
+      "required": [
+        "summary",
+        "kind",
+        "schema_version"
+      ]
+    },
+    "StreamSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frames": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18446744073709551615
+        },
+        "incomplete_frames": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18446744073709551615
+        },
+        "deadline_misses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18446744073709551615
+        },
+        "elapsed_seconds": {
+          "type": "number"
+        },
+        "achieved_rate_hz": {
+          "type": "number"
+        },
+        "interrupted": {
+          "type": "boolean"
+        },
+        "port_closed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "frames",
+        "incomplete_frames",
+        "deadline_misses",
+        "elapsed_seconds",
+        "achieved_rate_hz",
+        "interrupted",
+        "port_closed"
+      ]
+    }
+  }
+}

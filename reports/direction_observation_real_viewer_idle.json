@@ -1,0 +1,17 @@
+{
+  "captured_at": "2026-10-03 22:46:38 JST+0900",
+  "method": "passive GET http://127.0.0.1:8084/api/state (no POST, no serial)",
+  "telemetry_state": "stopped",
+  "fresh": false,
+  "can_render": false,
+  "port_closed": true,
+  "calibration_verified": false,
+  "source": "manual",
+  "direction_observation": {
+    "before": null,
+    "result": null,
+    "saved_path": null
+  },
+  "buttons_enabled_rule": "index.html: direction-before disabled unless live_available && telemetry.fresh; direction-after additionally needs before",
+  "conclusion": "idle real viewer exposes no fabricated direction/calibration values"
+}

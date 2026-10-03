@@ -1,0 +1,75 @@
+part: emergency_center_bolt_idler_xl430
+intent: >-
+  Temporary printed idler for the shoulder XL430 when the HN11-I101 set is not
+  available. A center bolt fixes the printed spacer to the servo-side center
+  feature. The opposite link rotates around a cylindrical pilot and retains
+  axial clearance when a wide washer is tightened against the pilot end. This
+  is a geometry prototype for low-speed diagnosis, not a load-rated replacement
+  for the HN11-I101 bearing and hook mechanism.
+features:
+  - name: support_flange
+    type: axial_support
+    preserves: [source_idler_mount_plane, link_inner_face]
+    constraints:
+      diameter_mm: 20.0
+      thickness_mm: 3.5
+      source_idler_diameter_mm: 20.5
+      source_idler_thickness_mm: 3.5
+  - name: rotating_pilot
+    type: plain_bearing
+    preserves: [joint_axis, free_rotation, unclamped_link]
+    constraints:
+      diameter_mm: 9.5
+      link_bore_diameter_mm: 10.0
+      link_thickness_mm: 3.0
+      axial_clearance_mm: 0.25
+      radial_clearance_mm: 0.25
+      extension_from_flange_mm: 3.25
+  - name: center_fastener
+    type: fastener_clearance
+    preserves: [joint_axis]
+    constraints:
+      nominal_screw: M3
+      clearance_diameter_mm: 3.4
+      reference_bolt_length_mm: 12.0
+      reference_head_diameter_mm: 5.5
+      reference_head_height_mm: 3.0
+      # Required modeled bore overlap only; not proof of actual thread engagement.
+      thread_engagement_target_mm: 3.5
+      bolt_length_status: actual_servo_thread_depth_must_be_measured
+  - name: motor_hook_relief
+    type: clearance_notch
+    preserves: [servo_case_clearance]
+    constraints:
+      size_xyz_mm: [0.7, 2.4, 2.0]
+      center_xyz_mm: [0.3, 4.15, 0.0]
+      evidence: >-
+        Measured from the source arm STEP. Without this notch a full circular
+        flange overlaps the shoulder XL430 case hook by about 0.896 mm^3.
+  - name: retaining_washer
+    type: assembly_reference
+    preserves: [link_retention, unclamped_link]
+    constraints:
+      outer_diameter_mm: 12.0
+      inner_diameter_mm: 3.4
+      thickness_mm: 1.0
+      note: >-
+        Simulation reference for a metal washer. The washer bears on the pilot
+        end, which stands 0.25 mm proud of the link outer face.
+  - name: printed_material
+    type: material
+    constraints:
+      name: PLA
+      density_kg_m3: 1240.0
+      note: nominal bulk density; actual printed mass depends on process and slicer settings
+tests:
+  - generated solid is valid and has one solid
+  - pilot diametral clearance is 0.5 mm in the source phi10 link bore
+  - link axial clearance is 0.25 mm after tightening the retaining washer
+  - adapter has zero volume intersection with retained shoulder motor solids
+  - adapter, washer and bolt clear the link at sampled 5 degree increments over 360 degrees
+  - additions clear the retained source arm at its saved pose
+  - reference M3 bolt envelope clears the adapter, washer, link, and retained motor solids
+  - PLA mass, center of mass, and positive-definite inertia tensor are exported in SI units
+  - standalone URDF parses and references the generated STL with millimeter-to-meter scale
+  - actual center thread diameter and usable depth are measured before installation

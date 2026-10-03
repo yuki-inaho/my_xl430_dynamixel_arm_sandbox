@@ -1,0 +1,89 @@
+part: follower_elbow_to_wrist
+intent: >-
+  Unvalidated interface prototype for the XL330 to XL430 study. Source STEP
+  envelope is X[0,22] Y[0,42] Z[0,28], with two rounded tabs. Review on 2026-09-18
+  found that phi18.124 surfaces are CONVEX outside profiles, not a horn-boss bore.
+  The source has eight phi2 cylindrical faces in two separated axial intervals,
+  not proof of four 6mm blind taps. Constraints below drive the legacy diagnostic
+  prototype and must not be treated as verified source design intent. Source
+  equivalence must pass before the CLI exports a normal XL430 candidate.
+features:
+  - name: motor_cradle
+    type: servo_mount
+    servo: XL330-M288-T          # change to XL430-W250-T to perform the swap
+    preserves: [output_axis, screw_pattern, body_clearance]
+    constraints:
+      clearance_mm: 0.5
+      wall_mm: 4.0
+      screw: M2
+      # the cradle holds the motor body; its envelope drives the bracket size and
+      # grows on the swap (XL330 20x34x26 -> XL430 28.5x46.5x34).
+  - name: base_mount          # bolts the bracket to the motor case (Z=0 face)
+    type: servo_mount
+    servo: XL330-M288-T
+    preserves: [screw_pattern]
+    constraints:
+      screw: M2
+      # C-B6 function: inspect screw label "M2" (dia 2.30 -> M2 clearance band),
+      # through-bolt into the motor case. NOT tap.
+      hole_function: clearance
+      hole_diameter_mm: 2.3
+      through: true
+      through_evidence: "Prototype specification; face counts alone cannot prove through-ness"
+      mount_axis_dir: [0.0, 0.0, 1.0]
+      # measured absolute centers (x,y,z): rectangle 16 (X) x 30 (Y) at Z=0
+      mount_centers_mm: [[3.0, 3.1, 0.0], [19.0, 3.1, 0.0], [3.0, 33.1, 0.0], [19.0, 33.1, 0.0]]
+      rect_x_mm: 16.0
+      rect_y_mm: 30.0
+  - name: horn_mount          # wrist-horn screw pattern (Y=42 end face)
+    type: servo_mount
+    servo: XL330-M288-T
+    preserves: [output_axis, screw_pattern]
+    constraints:
+      screw: M2-tap
+      # M2-tap is only a diameter-band guess; threads/function are unverified.
+      hole_function: tap
+      hole_diameter_mm: 2.0
+      # Diagnostic prototype depth; not a measurement of the original tabs.
+      through: false
+      blind_depth_mm: 6.0
+      through_evidence: "Unverified: source cylinder intervals are Y[8.3,9.5] and [39,40.2]"
+      horn_axis_dir: [0.0, 1.0, 0.0]
+      # diamond pattern in (x,z) at the Y=42 face, around (11,19):
+      diamond_centers_xz_mm: [[5.0, 19.0], [11.0, 13.0], [11.0, 25.0], [17.0, 19.0]]
+      face_y_mm: 42.0
+  - name: prototype_boss_pocket
+    type: experimental_pocket
+    preserves: [output_axis]
+    constraints:
+      diameter_mm: 18.124
+      # Retained only to diagnose the old prototype. The source's diameter
+      # 18.124 belongs to a rounded OUTER profile, not a pocket.
+      axis_dir: [0.0, 1.0, 0.0]
+      center_xz_mm: [11.0, 18.94]
+      face_y_mm: 42.0
+      through: false
+      blind_depth_mm: 4.0
+      through_evidence: "Prototype-only pocket; no matching concave surface in source STEP"
+      seat_role: unverified_prototype
+  - name: link_body
+    type: structural_beam
+    preserves: [joint_distance, base_to_horn_offset]
+    constraints:
+      min_wall_mm: 2.5
+      # geometry invariants of the bracket envelope (mm):
+      base_z_mm: 0.0           # base plate sits at Z=0
+      horn_face_y_mm: 42.0     # horn interface at Y=42
+      base_to_horn_y_mm: 42.0  # base->horn axial offset (preserved on swap)
+preserves_global:
+  output_axis: Y            # motor output / horn axis is the global Y line
+  base_to_horn_y_mm: 42.0
+measured_families:           # cylindrical surfaces, not functional hole declarations
+  - {diameter_mm: 2.0, surface_sense: concave, axes: 4, faces: 8, dir: [0,1,0], axial_ranges_mm: [[8.3,9.5], [39,40.2]]}
+  - {diameter_mm: 2.3, surface_sense: concave, axes: 4, faces: 4, dir: [0,0,1]}
+  - {diameter_mm: 18.124, surface_sense: convex, axes: 1, faces: 2, dir: [0,1,0], axial_ranges_mm: [[6.5,9.5], [39,42]]}
+tests:
+  - axes_collinear            # horn axis == boss-bore axis
+  - hole_pattern_match        # base + horn patterns match the spec
+  - envelope_clearance        # motor body fits with clearance
+  - min_wall_thickness        # >= 2.5 mm (manufacturability)

@@ -1,0 +1,2061 @@
+{
+  "captured_at": "2026-10-03T18:37:24.090968+09:00",
+  "purpose": "Source snapshots only; upstream code was not executed",
+  "included_extensions": [
+    ".html",
+    ".js",
+    ".json",
+    ".lock",
+    ".md",
+    ".py",
+    ".sh",
+    ".toml",
+    ".txt",
+    ".urdf",
+    ".xml",
+    ".yaml",
+    ".yml"
+  ],
+  "excluded_directories": [
+    ".git",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+    "node_modules",
+    "outputs",
+    "reports",
+    "temp"
+  ],
+  "binary_cad_and_generated_outputs_copied": false,
+  "sources": [
+    {
+      "name": "low_cost_robot",
+      "source_root": "/home/inaho-omen/Project/low_cost_robot",
+      "git_head": "f29f33b3b99320b3ad35171ec08897bede459fbb",
+      "includes_current_worktree_files": true,
+      "files": [
+        {
+          "source": "skills/cad-reverse-parametric/SKILL.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/SKILL.md",
+          "sha256": "74a0d29a5515adf37666d1b2070f8bb19b23108fbedd297903d5fe00768246b3",
+          "bytes": 13267
+        },
+        {
+          "source": "skills/cad-reverse-parametric/pyproject.toml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/pyproject.toml",
+          "sha256": "aa83556e552c8d57c5a712fe57c37bf4bb05cf44c718b6dd4a4f5a5bb944498a",
+          "bytes": 501
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/assembly-serviceability.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/assembly-serviceability.md",
+          "sha256": "d70cb966387085156abe61936aad3b9ec80533210a15dd14f200f0e34c7e9627",
+          "bytes": 9378
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/chili3d_viewing.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/chili3d_viewing.md",
+          "sha256": "c568d2d50082d22206ccc98c18816e24fb2e896242deb5da92e957b95c4280ae",
+          "bytes": 8072
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/geometry-review.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/geometry-review.md",
+          "sha256": "0eb7a4b683787e9b93a3777d325b41706ed0e2185910f20aaf714069f7b050ee",
+          "bytes": 9328
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/lessons.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/lessons.md",
+          "sha256": "1ec59970626cb99384929bde22ed665e9c86676d3c785d0ea69fea00bdbe735b",
+          "bytes": 17419
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/orca-headless-cli.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/orca-headless-cli.md",
+          "sha256": "5c78dcf02d08aee515e6245a8538fc770682002c653e3dda779a873a543249da",
+          "bytes": 3747
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/research_context.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/research_context.md",
+          "sha256": "2eaf9099d1937a07457c8c527c984d911918633e110a11e40721b10621a8385b",
+          "bytes": 3490
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/servo_specs.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/servo_specs.md",
+          "sha256": "92be7ef1072a620f36fff448f6b4423bb35a3ebeba13a7655a9dacbb78470078",
+          "bytes": 1897
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/step-to-slicer.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/step-to-slicer.md",
+          "sha256": "96000d9c4088828f87edf4489d18e37ceee155413f4d982ccfe09d50f940f0cb",
+          "bytes": 8571
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/workflow.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/references/workflow.md",
+          "sha256": "4d79b5c2c20436f55d3cdbc6c726cc34aeacd4da89f84084298c1f3681952d40",
+          "bytes": 5688
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/__init__.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/__init__.py",
+          "sha256": "12fd5d20a06df912fca32e0f354f71b5480b7e097c642d5081443840b20c6b98",
+          "bytes": 1337
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/checks.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/checks.py",
+          "sha256": "cbb6d4b50af42ec3a2211cd12661911b3196d0cc359e8197c8c6f45fdbc895c5",
+          "bytes": 3389
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/cli.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/cli.py",
+          "sha256": "9fc3b50e8b023dba10430686b7d7616517200c8917cdf8be28b359a9fe68b915",
+          "bytes": 7613
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/descriptor.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/descriptor.py",
+          "sha256": "5c58a49954364aea25a394cb94b7d726de967a7d67dad4940ee7114f476b8c77",
+          "bytes": 2182
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/equivalence.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/equivalence.py",
+          "sha256": "d7561c27cb7df0602baf2ac6279f016eb41466dbf798d1d3361a3ed96fc8e2db",
+          "bytes": 2729
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/geometry.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/geometry.py",
+          "sha256": "ec74e1144cefb0aaf15f9a6ca24f9f813a26a009018adebf54c73960a9b860f0",
+          "bytes": 2626
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/impact.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/impact.py",
+          "sha256": "302f2e9443c8bfb0689dec6d6331b59daf5cff83a8414bb6de42c0c87f0de405",
+          "bytes": 3316
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/intent.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/intent.py",
+          "sha256": "a642ce7cf7eee7796a6126a4a630889637395c42d3694c1d865aa0c25293f7e1",
+          "bytes": 2474
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/local_edits.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/local_edits.py",
+          "sha256": "db2f4c1b1c544699dbf0008482815d5df9da657ec4c8c0a17329a6604b702880",
+          "bytes": 7818
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/orca_presets.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/orca_presets.py",
+          "sha256": "913c84dd0200de8a4273ab1e2d9c841b83cea1044f8ff258bc5db8fb85d7636d",
+          "bytes": 4692
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/parametric.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/parametric.py",
+          "sha256": "545b9c53e5d87053865df2f93845989d7b3790c8719c6e09a01b932c1dc227e5",
+          "bytes": 3035
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/probes.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/probes.py",
+          "sha256": "e3112678b18d1c45e6b736aa44bcfc108097ec0444a78a340d5c5b6ac79c9913",
+          "bytes": 18371
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/report.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/src/cadre/report.py",
+          "sha256": "6b9cd564702f7b938436ded434388e3ad2ae220015364398f162be1439f00ca5",
+          "bytes": 2903
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/README_ja.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/README_ja.md",
+          "sha256": "c195a1b7917d8bf21e39b7d6d73ad8a2ebfafd71d4e9d49cbb22fda925db987d",
+          "bytes": 5646
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/prepare_print_package.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/prepare_print_package.py",
+          "sha256": "69c7297b976c45386ca16f7cc31b4567810d14236fd6ee35f9ea90c6f33cf2a5",
+          "bytes": 974
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/source/build_all_xl430.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/source/build_all_xl430.py",
+          "sha256": "c9db9fcb04b40156883571190fd0e7c1714aff16ea2f3ec12820b25da533bfa4",
+          "bytes": 9195
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/source/cad_worker.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/source/cad_worker.py",
+          "sha256": "fc1aa234e013b8dd05ac572ad93fbf034c76097de613f0545bea7b096c729daa",
+          "bytes": 815
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/source/collisions.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/source/collisions.py",
+          "sha256": "6856832c6732b73a05dc44a7719745262a4f539cd559927686bc7be730a2b930",
+          "bytes": 7129
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/source/common.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/source/common.py",
+          "sha256": "bd5a8cb5bb3716723636a8ff62cdc52eb519910ad919b0f8ecf0b57ae5ca7810",
+          "bytes": 4796
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/source/print_gate.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/source/print_gate.py",
+          "sha256": "f3ad32a470f31dc5bb732dc4221300fd4bff00f989c0cc6318e3b1329522709e",
+          "bytes": 3996
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/source/study.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/source/study.py",
+          "sha256": "38018a2238c6e005e7d46d31eb13d01ef9ea1e4c052b434908ebfe699f7c1f22",
+          "bytes": 4554
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/source/test_all_xl430.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/source/test_all_xl430.py",
+          "sha256": "341b59a0d7e5d2efe20db203f497d60c8004c77d906a37444b5bd234ba649e92",
+          "bytes": 16269
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/all_xl430_revision/source/validate.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/all_xl430_revision/source/validate.py",
+          "sha256": "47ca79ecf4144ae040857de384a309849299e697dd22b8a2cbec54cedf470746",
+          "bytes": 3150
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/README_ja.md",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/README_ja.md",
+          "sha256": "6fc2fbbe696da1341b22698346342193aab6282a6156787a4144d6f01f901471",
+          "bytes": 1737
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/prepare_print_package.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/prepare_print_package.py",
+          "sha256": "22871bd24bc1480ef6d3b3913ae1624dee459d5a1a0a018b760a2eee7308eda8",
+          "bytes": 5744
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/assembly_io.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/assembly_io.py",
+          "sha256": "660b0c6f8bcda22cc908a655265a7d79c76c4262afc838fecb7da95a0d656920",
+          "bytes": 2970
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/input_sha256.json",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/input_sha256.json",
+          "sha256": "3c07d0975648a5efb751c1bea974a5275b3a86589e4300d4e62536c395bd0515",
+          "bytes": 187
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/make_previews.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/make_previews.py",
+          "sha256": "b7584833dd2f4546515fefc857895758cc3cd3946bcd7ffffc50ed37de8302de",
+          "bytes": 1268
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/make_report.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/make_report.py",
+          "sha256": "2dfffacb5305b2ba2623b6f66aa2b1b9fc5d244a492024354f0425290985e14b",
+          "bytes": 1099
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/mesh_export.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/mesh_export.py",
+          "sha256": "d0c4b74350e08972e1c72ffbbc627524d209aef5075dd6ba1aae000a39262045",
+          "bytes": 3266
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/rebuild.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/rebuild.py",
+          "sha256": "b2841ad30cb4ec05a080d0a57ee4408a1d147908f5c4bd9f5f7021b507d377e0",
+          "bytes": 13999
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/render_cad.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/render_cad.py",
+          "sha256": "62324cacd0c3058fcf1901b1484a6be91f7f00b0a4d627b2cd5f88f5bd498259",
+          "bytes": 3181
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/report_template.html",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/report_template.html",
+          "sha256": "0f675c00190fe4519e821ef6a8ec7fca722d831361e54b6d3a02c03cbd81e6b6",
+          "bytes": 8018
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/requirements.txt",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/requirements.txt",
+          "sha256": "dd1384c9cff2a126c9749c37e4761b9aab4cde9a4a9e6b8b5a47e8a3eebfe0d3",
+          "bytes": 70
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/test_revision.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/test_revision.py",
+          "sha256": "c7af2fc17252007763bcaa623223f7981c67947c30bd6cf267e9315f5513f793",
+          "bytes": 7325
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/follower_geometry_revision/source/validate.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/follower_geometry_revision/source/validate.py",
+          "sha256": "07dadb12ff9be488a91ebc051ee2d2b5734229aba7e37605a1448264d8312c98",
+          "bytes": 13889
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/assembly_sequence.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/assembly_sequence.py",
+          "sha256": "c4cfe13eaf3b98bd3bc67566de3b9b471d299b7ead73b7afa1944386b2100254",
+          "bytes": 13365
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/build_liaison_interfaces.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/build_liaison_interfaces.py",
+          "sha256": "f733a6280c71029cf92a6688a02020798ffa693ccdf3b63762f0dddf9ad04c65",
+          "bytes": 10509
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/cable_routing.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/cable_routing.py",
+          "sha256": "5caecb7aa51caa5df459366a4f879225c89a3254f4e2314159ca2744e81e7a51",
+          "bytes": 16736
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/connector.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/connector.py",
+          "sha256": "3790aef54c1729af792ee25997d79dd17a7ce1023253a70e84cf755d8ac49001",
+          "bytes": 3700
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/domain.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/domain.py",
+          "sha256": "08fa090cc148059148b27882ae234b7bdf670106af0a98b80c86bad2d5e1f8f8",
+          "bytes": 2580
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/assembly_fit.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/assembly_fit.yaml",
+          "sha256": "82a05c0f1dff682bc3dc8c5b33886a39ff9586a792ff90607e15642307fb8cbc",
+          "bytes": 12877
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/assembly_sequence.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/assembly_sequence.yaml",
+          "sha256": "3af908fe5dc73dc70d38421d97f0b11c6cad24d611b99aea24273394c52165e8",
+          "bytes": 2953
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/cable_routing.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/cable_routing.yaml",
+          "sha256": "c5b1601b2751364548d4cd7cdfbacd23be50084eda88c23111f67e353705a0f0",
+          "bytes": 2463
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/elbow_to_wrist.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/elbow_to_wrist.yaml",
+          "sha256": "de390ca41327d29684d998521f9da134fc08c0be997d7eebb838da6a26336546",
+          "bytes": 4234
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/elbow_to_wrist_extension.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/elbow_to_wrist_extension.yaml",
+          "sha256": "9b628c72423b1b1b55debea70d95595fbab73bee539e392cf93890e400b80ff6",
+          "bytes": 5541
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/emergency_center_bolt_idler.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/emergency_center_bolt_idler.yaml",
+          "sha256": "a3aebfae731f249df48499eb6be18a0ea836d2ee7abfc7868c599b678de04eb1",
+          "bytes": 3218
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/fastener_ledger.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/fastener_ledger.yaml",
+          "sha256": "1f48529c71197c104f914d6e88471bf2c77e787afc18b207a972a7442869ed80",
+          "bytes": 7102
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/gripper_moving_part.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/gripper_moving_part.yaml",
+          "sha256": "99cc3517ca556c0d6035e209feb6f612fc3e4f4020c4da6ad3cd6dd340126f70",
+          "bytes": 2851
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/gripper_static_part.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/gripper_static_part.yaml",
+          "sha256": "71b472456de57434bd02b0e91ebfd3bab8cc9dffacf1aaed8e4b21e46443be18",
+          "bytes": 2913
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/hn11_m2_idler.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/hn11_m2_idler.yaml",
+          "sha256": "e4c6f9fa695dbf41376f43f699a98b3f7689a7d63fd06a0032671e3ad088df69",
+          "bytes": 4183
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/shoulder_rotation.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/shoulder_rotation.yaml",
+          "sha256": "8be49da71486c2297c72abe9c16396be0303002ed6377d9d99926fa73e153632",
+          "bytes": 3671
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/intent/shoulder_to_elbow.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/intent/shoulder_to_elbow.yaml",
+          "sha256": "fbb8891ec5a57d90d379984a3e33d51a10bcbaf4c953aaa3482a59819bb8161e",
+          "bytes": 5713
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/measure_section.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/measure_section.py",
+          "sha256": "2297426974044a2ba6749637add7272bf3642b9985d55d1d9b7631a85cbb29c5",
+          "bytes": 4183
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/mount_interfaces.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/mount_interfaces.py",
+          "sha256": "614d5e53ff74b3e81a434618364c3acd5fe3508f7a8ce151fb7d08a8da8f02df",
+          "bytes": 10885
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/_partlib.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/_partlib.py",
+          "sha256": "909c0cc342078afcad81bcfc17ed6ba95c3fa5c002b10093c895ee67ac7e1263",
+          "bytes": 4686
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/elbow_to_wrist.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/elbow_to_wrist.py",
+          "sha256": "ca80df8421268853f5c96129cba9e8dd9d3530a61d3fc4baa85b0954402902c3",
+          "bytes": 9072
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/elbow_to_wrist_extension.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/elbow_to_wrist_extension.py",
+          "sha256": "2f306a2c7827a456d3008d32ee779ac00151311ef0d11d0abd715809d2d5963a",
+          "bytes": 2389
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/emergency_center_bolt_idler.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/emergency_center_bolt_idler.py",
+          "sha256": "788929ae7f212bb0fbba50e4d6f6c54519155d4b77ca3812a0e275330c36fead",
+          "bytes": 8926
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/external_center_support.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/external_center_support.py",
+          "sha256": "6460ffb8b89beee8512bfb0ce8f6d20412cbfb1655d74e549e708c8ce551c44c",
+          "bytes": 3380
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/gripper_moving_part.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/gripper_moving_part.py",
+          "sha256": "e2ec7ee76447a06ac0d524c81c1097cabd7cd48704d94cc68f91f9b508689b17",
+          "bytes": 4189
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/gripper_static_part.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/gripper_static_part.py",
+          "sha256": "fb9b5616a59e148d5892561777f3858f18cdaea1bad13799ccfdef6321e7e756",
+          "bytes": 3168
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/hn11_m2_idler.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/hn11_m2_idler.py",
+          "sha256": "7fb4bae897099063f14ab6faf53d87da6eb32d570f922d67e38eac374987c6fc",
+          "bytes": 15053
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/motor_mount.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/motor_mount.py",
+          "sha256": "da5ec180538b45debd6dee672fe8f2cf73f0f932ad2e42116c5318c4b2e51cd1",
+          "bytes": 2512
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/shoulder_rotation.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/shoulder_rotation.py",
+          "sha256": "6ad7f11e25c57e321742807ad851167add21504d4eaf33e9373e70e21ca91450",
+          "bytes": 3911
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/parts/shoulder_to_elbow.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/parts/shoulder_to_elbow.py",
+          "sha256": "6c95b07e2120612c747571dc5fb89aafd383d6e02a3114ddb63dea245a19bdf5",
+          "bytes": 11557
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/prepare_print_package.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/prepare_print_package.py",
+          "sha256": "8cca5dc15b75368be2c8321bd4aa8d14adfd503eb7ff3124547cdbd9a98225fd",
+          "bytes": 19035
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/rules/validation_rule_catalog.yaml",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/rules/validation_rule_catalog.yaml",
+          "sha256": "88f6bfa2bbbeab58eaff38cf83b16a35da3d5f399570b3753bda124bc32b5c39",
+          "bytes": 8291
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/run.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/run.py",
+          "sha256": "686f554d555fca20492307bcec8351b224bcd39fea6cb67d018467c6bb4a3302",
+          "bytes": 2110
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/validate_assembly_liaisons.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/validate_assembly_liaisons.py",
+          "sha256": "b03f8688d57297ca63f315a546d3e1006b1b089423ebcdd2602c3da6f9aed896",
+          "bytes": 13041
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/validate_emergency_idler.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/validate_emergency_idler.py",
+          "sha256": "5d0ca1fe8da596cfc391c3d437668d49f9018a66b97c204dd07c2281e2434dad",
+          "bytes": 17702
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/validate_extension_preservation.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/validate_extension_preservation.py",
+          "sha256": "7a402b95ee388cba5d0025c4cc1d903a484c4eb82c14ff8ea2e789406d7f93fe",
+          "bytes": 6381
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/validate_fastening_interfaces.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/validate_fastening_interfaces.py",
+          "sha256": "8999d779bd5df501dde9db7b26aaaeae824cdf68e557c8a34e05a219875b8a74",
+          "bytes": 8246
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/validate_hn11_replacement.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/validate_hn11_replacement.py",
+          "sha256": "0d725aa4f16185bc870515a856266a2fc194c2b236808588ca3af4352d220a03",
+          "bytes": 23998
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/validate_print_readiness.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/validate_print_readiness.py",
+          "sha256": "011b07fed91202e9afa2ca91e9f20e64db6e405b7c8ed98aff42483d7983a190",
+          "bytes": 9728
+        },
+        {
+          "source": "skills/cad-reverse-parametric/studies/xl430_lowcost/validate_rule_catalog.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/studies/xl430_lowcost/validate_rule_catalog.py",
+          "sha256": "0e6477464fa196693b28370d595dc6f0ea936192ddf5454eb2fd1c62e81cdb1c",
+          "bytes": 20343
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_assembly_sequence.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_assembly_sequence.py",
+          "sha256": "13eb8f06eabe5f877c402c5f766d829e67b30986f0d4ae4fe04c7ba66bdc6a57",
+          "bytes": 10193
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_cable_routing.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_cable_routing.py",
+          "sha256": "11c6c34842b50064c7fcc75abeddbd486603e478ab6716aa8bd78a83ebaaa39b",
+          "bytes": 4518
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_cadre.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_cadre.py",
+          "sha256": "96b3ba7f9789422914a6c601c42bd7ddd5ac314dfa1e0d1de5134431391160ee",
+          "bytes": 7308
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_emergency_idler.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_emergency_idler.py",
+          "sha256": "99429c102fc9e8f26dde0205dd5fb653be4f49c1577ca82d2b81b4b64387a03e",
+          "bytes": 4815
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_geometry_review.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_geometry_review.py",
+          "sha256": "b2a34359f6e67593514cbaa9e8205dd18543f502939bbd5eb8304641f532cac4",
+          "bytes": 7228
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_hn11_replacement.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_hn11_replacement.py",
+          "sha256": "b88b31373b29864b895f6eb315419ae17734ec3d414d024d0f013dea55b4a967",
+          "bytes": 11332
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_local_edits.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_local_edits.py",
+          "sha256": "2d3fcb719a5971c14b5af743e757f45d9a2ea267e1e3642b8f8532d973dd12ab",
+          "bytes": 5342
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_mount_interfaces.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_mount_interfaces.py",
+          "sha256": "ce3eb4d98d811c9a9118a430bfbb1a6c7d778078d85d4ed472775d3ea597a644",
+          "bytes": 4364
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_orca_presets.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_orca_presets.py",
+          "sha256": "7f3fb991f7e9f8c18a2049c36b61feba121d94f487c97f05d4d8eb685e3e729e",
+          "bytes": 4531
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_parts.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_parts.py",
+          "sha256": "baf248b8776c480df7060b8cf4c54d6ff379b11667022871093805214ae0859c",
+          "bytes": 33228
+        },
+        {
+          "source": "skills/cad-reverse-parametric/tests/test_print_package.py",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/tests/test_print_package.py",
+          "sha256": "eb75308cdc891b40ff117dbd972ba3ead78ab7810aea1fc95c033d7694b48c3d",
+          "bytes": 1841
+        },
+        {
+          "source": "skills/cad-reverse-parametric/uv.lock",
+          "destination": "skills/imported/low_cost_robot/cad-reverse-parametric/uv.lock",
+          "sha256": "4c532b73a56cdc384bd685dbe8ea8ec11b8ceef8273300d08f77cd1c35f21665",
+          "bytes": 181665
+        },
+        {
+          "source": "skills/claude-tmux-review-bridge/SKILL.md",
+          "destination": "skills/imported/low_cost_robot/claude-tmux-review-bridge/SKILL.md",
+          "sha256": "306aaac52914b8c2a2cb5dc9cd8e2e225a5d100b9c7f25f5a567a77da0451ee5",
+          "bytes": 4558
+        },
+        {
+          "source": "skills/claude-tmux-review-bridge/agents/openai.yaml",
+          "destination": "skills/imported/low_cost_robot/claude-tmux-review-bridge/agents/openai.yaml",
+          "sha256": "69b4ce14ab61241c2cad90d6eba1e883b7056dd94f2067534588d11de0dd805d",
+          "bytes": 221
+        },
+        {
+          "source": "skills/claude-tmux-review-bridge/references/review-loop-lessons.md",
+          "destination": "skills/imported/low_cost_robot/claude-tmux-review-bridge/references/review-loop-lessons.md",
+          "sha256": "e8be13ced773596640613e0faa0f7dd0ee4cff6ec09c5d51ee61ce5732490ec6",
+          "bytes": 1868
+        },
+        {
+          "source": "skills/playwright-cli/SKILL.md",
+          "destination": "skills/imported/low_cost_robot/playwright-cli/SKILL.md",
+          "sha256": "8d3a2765127a6f982db8478deab1301bea55adda81009764eb23201f6fee8fcf",
+          "bytes": 9595
+        },
+        {
+          "source": "skills/playwright-cli/references/request-mocking.md",
+          "destination": "skills/imported/low_cost_robot/playwright-cli/references/request-mocking.md",
+          "sha256": "54e801c9663fc2b6d68ceb058cb1c360724c2499f42acc7852a68e83e5b5f37c",
+          "bytes": 2182
+        },
+        {
+          "source": "skills/playwright-cli/references/running-code.md",
+          "destination": "skills/imported/low_cost_robot/playwright-cli/references/running-code.md",
+          "sha256": "c11b8f816625b541d07e9b3e516ae373fe4f3a10586803b50cff6a22e581308a",
+          "bytes": 8192
+        },
+        {
+          "source": "skills/playwright-cli/references/session-management.md",
+          "destination": "skills/imported/low_cost_robot/playwright-cli/references/session-management.md",
+          "sha256": "db700243b3d2e53d54ee6f6b1b24b3ad3409c75c5fd152ec2fba435cd88809cd",
+          "bytes": 6985
+        },
+        {
+          "source": "skills/playwright-cli/references/storage-state.md",
+          "destination": "skills/imported/low_cost_robot/playwright-cli/references/storage-state.md",
+          "sha256": "1122778c9b13b44bddebb4476a7f99d918afd31757be8b4fade3cb09c3d48c99",
+          "bytes": 5198
+        },
+        {
+          "source": "skills/playwright-cli/references/test-generation.md",
+          "destination": "skills/imported/low_cost_robot/playwright-cli/references/test-generation.md",
+          "sha256": "f08d14388b7002963e27bd242550154cb1379def89597464deb36b6f7afca15f",
+          "bytes": 2411
+        },
+        {
+          "source": "skills/playwright-cli/references/tracing.md",
+          "destination": "skills/imported/low_cost_robot/playwright-cli/references/tracing.md",
+          "sha256": "792e0ac7705e56ac48df84c0f5400221ce86107897c671590a64a4ea6a82508e",
+          "bytes": 3440
+        },
+        {
+          "source": "skills/playwright-cli/references/video-recording.md",
+          "destination": "skills/imported/low_cost_robot/playwright-cli/references/video-recording.md",
+          "sha256": "f5a1309e73b080e900d9e01c019d729c0132c616c0e905bc0af79b479d29242a",
+          "bytes": 1060
+        },
+        {
+          "source": "skills/print-cad-validation/SKILL.md",
+          "destination": "skills/imported/low_cost_robot/print-cad-validation/SKILL.md",
+          "sha256": "a15f9cbbe7532c47b1474d43410d061973cc5b2454f847fbcd3d0f21cbf94ae3",
+          "bytes": 3457
+        },
+        {
+          "source": "skills/print-cad-validation/agents/openai.yaml",
+          "destination": "skills/imported/low_cost_robot/print-cad-validation/agents/openai.yaml",
+          "sha256": "abc6fb54ae76d99843c4ee5d4af2ebec22cfb590d5c4ff15196fdc934f84f743",
+          "bytes": 294
+        },
+        {
+          "source": "skills/print-cad-validation/scripts/stl_preflight.py",
+          "destination": "skills/imported/low_cost_robot/print-cad-validation/scripts/stl_preflight.py",
+          "sha256": "2be19c25b7024a5add14860d06b813a995ea82f4aa0bb5ec54c653ef3ec25998",
+          "bytes": 2775
+        },
+        {
+          "source": "scripts/bimanual_teleop.py",
+          "destination": "upstream/low_cost_robot/scripts/bimanual_teleop.py",
+          "sha256": "a66df32ee1a5c00ca96858df5713383c6e02545442b539098088f864e0d2a14e",
+          "bytes": 840
+        },
+        {
+          "source": "scripts/check_simulation.py",
+          "destination": "upstream/low_cost_robot/scripts/check_simulation.py",
+          "sha256": "ca06bebbbbf29ce209b8f55bf0b86189eb4f235632c0f1582a034b21c7f8e208",
+          "bytes": 12325
+        },
+        {
+          "source": "scripts/jointspace_safety_report.py",
+          "destination": "upstream/low_cost_robot/scripts/jointspace_safety_report.py",
+          "sha256": "ef3af19ec3fa051dd11065bd035ee3e333e8767f92d44fc7f3448cf6b4bcee73",
+          "bytes": 13296
+        },
+        {
+          "source": "scripts/replay_poses.py",
+          "destination": "upstream/low_cost_robot/scripts/replay_poses.py",
+          "sha256": "65eccf817abe8a607ad2af7d10cf56cd4a6a60f283607af90dd26ab94356dc11",
+          "bytes": 8277
+        },
+        {
+          "source": "scripts/run_simulation.py",
+          "destination": "upstream/low_cost_robot/scripts/run_simulation.py",
+          "sha256": "f85a1e63f128b98c9118e22bc885ce2bb28ebf3ba71f5a6c9506528724240fe3",
+          "bytes": 550
+        },
+        {
+          "source": "scripts/teleoperate_real.py",
+          "destination": "upstream/low_cost_robot/scripts/teleoperate_real.py",
+          "sha256": "c3bc60b2bd811917ce159a451c7350aa7f708e60317b1f12d00d91cf5da6cca2",
+          "bytes": 495
+        },
+        {
+          "source": "scripts/teleoperate_sim.py",
+          "destination": "upstream/low_cost_robot/scripts/teleoperate_sim.py",
+          "sha256": "97eb058fb193dc407d6910f9a244b5dbc8b9c4a033d1965bafef95de8fd49e75",
+          "bytes": 1264
+        },
+        {
+          "source": "low_cost_robot/__init__.py",
+          "destination": "upstream/low_cost_robot/low_cost_robot/__init__.py",
+          "sha256": "218123b50274aeba95ba035768eaa15295b4362938227045a84b4b26b4202c03",
+          "bytes": 274
+        },
+        {
+          "source": "low_cost_robot/dynamixel.py",
+          "destination": "upstream/low_cost_robot/low_cost_robot/dynamixel.py",
+          "sha256": "6680deb84f3b5d2fdaad2a7b8383dd38e210406a99035f936d443df8aefd6c82",
+          "bytes": 10884
+        },
+        {
+          "source": "low_cost_robot/robot.py",
+          "destination": "upstream/low_cost_robot/low_cost_robot/robot.py",
+          "sha256": "a29e0332d3b79d5891cb20dda865f1ac4f39c59a6826bf88e9b72977e07803f2",
+          "bytes": 4947
+        },
+        {
+          "source": "low_cost_robot/robot_base.py",
+          "destination": "upstream/low_cost_robot/low_cost_robot/robot_base.py",
+          "sha256": "94b68304562bc0c4bd6d070bfd8cf0925082d7ae774f58a06265e11714cb3936",
+          "bytes": 325
+        },
+        {
+          "source": "low_cost_robot/simulated_robot.py",
+          "destination": "upstream/low_cost_robot/low_cost_robot/simulated_robot.py",
+          "sha256": "77bd0ad1198034ae91c53eb8ac9c5ab5fbee7737391c5723c2a866eb270b8ca2",
+          "bytes": 1305
+        },
+        {
+          "source": "docs/3d_print_checklist.md",
+          "destination": "upstream/low_cost_robot/docs/3d_print_checklist.md",
+          "sha256": "2200c83c21386cf6428d6c7da0939440e3c53db6d3cd2915f62a9501fae9ea8b",
+          "bytes": 5556
+        },
+        {
+          "source": "docs/all_xl430_assembly_wiring_review.md",
+          "destination": "upstream/low_cost_robot/docs/all_xl430_assembly_wiring_review.md",
+          "sha256": "9a0939a7a882d676f62da4e4c87a1e4e9ab25088a44002f56f785c63464f2752",
+          "bytes": 31104
+        },
+        {
+          "source": "docs/all_xl430_revision_20260919.md",
+          "destination": "upstream/low_cost_robot/docs/all_xl430_revision_20260919.md",
+          "sha256": "17a555206848790aa59896346e5e9b23321d15f89f63e6e70f0a96ef91003a61",
+          "bytes": 4402
+        },
+        {
+          "source": "docs/cadre_review_20260918.md",
+          "destination": "upstream/low_cost_robot/docs/cadre_review_20260918.md",
+          "sha256": "03d038681d90877bd6cb79e459eb9278cc4bc5efc8a729fedbf6728a0df0c9f3",
+          "bytes": 7738
+        },
+        {
+          "source": "docs/emergency_center_bolt_idler.md",
+          "destination": "upstream/low_cost_robot/docs/emergency_center_bolt_idler.md",
+          "sha256": "62e641d49954f03d7fb4f4906922aac082d294e7cd172b47bb1fcb876a86a1eb",
+          "bytes": 12223
+        },
+        {
+          "source": "docs/follower_geometry_revision_20260919.md",
+          "destination": "upstream/low_cost_robot/docs/follower_geometry_revision_20260919.md",
+          "sha256": "9daca278c6d16506cc75e450f5421000918baf6795876961c4b5f5627ffeaf58",
+          "bytes": 3069
+        },
+        {
+          "source": "docs/jointspace_safety_protocol.md",
+          "destination": "upstream/low_cost_robot/docs/jointspace_safety_protocol.md",
+          "sha256": "7ee2160cb2d93a1d97285c4813f6d51e862a84b0bd398ff82da824512d37e5f4",
+          "bytes": 8292
+        },
+        {
+          "source": "docs/xl430_part_completion_status.md",
+          "destination": "upstream/low_cost_robot/docs/xl430_part_completion_status.md",
+          "sha256": "d0a8d8566ba46431209f1b0c9fe05c966a00d6af98636c95a052ac866a23db18",
+          "bytes": 5733
+        },
+        {
+          "source": "README.md",
+          "destination": "upstream/low_cost_robot/README.md",
+          "sha256": "0265132f6569c0c4ec03289d15c016d2ee180b8814cca2e2ac278e9c915d2b4a",
+          "bytes": 6237
+        },
+        {
+          "source": "pyproject.toml",
+          "destination": "upstream/low_cost_robot/pyproject.toml",
+          "sha256": "0338714b4ed1ced8a833b033a7df5400dee9e2f7386e65d068afafbc1ac148f7",
+          "bytes": 358
+        },
+        {
+          "source": "uv.lock",
+          "destination": "upstream/low_cost_robot/uv.lock",
+          "sha256": "067ba9eb781758f6e4f03bbdc97fac674e3e137c2da92960c32cc24b006e062b",
+          "bytes": 87393
+        },
+        {
+          "source": "LICENSE",
+          "destination": "upstream/low_cost_robot/LICENSE",
+          "sha256": "a5b12cd55a8327fe53f2bd5c4e4ae333d8bae8962f7f8e16c015015393737fca",
+          "bytes": 1071
+        }
+      ],
+      "excluded": [
+        "skills/cad-reverse-parametric/.gitignore",
+        "skills/cad-reverse-parametric/.python-version",
+        "skills/cad-reverse-parametric/studies/xl430_lowcost/rules/validation_rules.duckdb"
+      ]
+    },
+    {
+      "name": "3d-printed-dynamixel-gripper",
+      "source_root": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper",
+      "git_head": "47b52a56ea429abf8b058222883fcb4794f53a88",
+      "includes_current_worktree_files": true,
+      "files": [
+        {
+          "source": "skills/ONSHAPE-WORKFLOW.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/ONSHAPE-WORKFLOW.md",
+          "sha256": "ea9db1f82ae32ea3af7d48a6e0dd8dc8b0820d4cecfed98e0feb25b547fa4e77",
+          "bytes": 1470
+        },
+        {
+          "source": "skills/cad-assembly-manual/SKILL.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-assembly-manual/SKILL.md",
+          "sha256": "7d02ca034e4ad273fea35456551f500f2bdbc9f7c764694f64158036e0dc6a89",
+          "bytes": 4495
+        },
+        {
+          "source": "skills/cad-assembly-manual/references/chili3d-views.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-assembly-manual/references/chili3d-views.md",
+          "sha256": "97eca8f1fcc7da1fe47dc24165cdf556842394a5eed51afadd1394091c91891e",
+          "bytes": 1771
+        },
+        {
+          "source": "skills/cad-reverse-parametric/SKILL.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/SKILL.md",
+          "sha256": "573d6f6f04c59b43385e37aafe7dbfcad24cd112e3081ecb86eb96d305b80c77",
+          "bytes": 3515
+        },
+        {
+          "source": "skills/cad-reverse-parametric/pyproject.toml",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/pyproject.toml",
+          "sha256": "aa83556e552c8d57c5a712fe57c37bf4bb05cf44c718b6dd4a4f5a5bb944498a",
+          "bytes": 501
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/add-on-fixtures.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/add-on-fixtures.md",
+          "sha256": "e5f19ddb9c16d5d6d2cce63593d66610c280b0a5c1420ef86677490093782f2f",
+          "bytes": 2182
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/assembly-serviceability.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/assembly-serviceability.md",
+          "sha256": "7e753481ca6828b3b8ef608080ac579233c37a46b70c7fb5132899e777c0bb0b",
+          "bytes": 16678
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/chili3d_viewing.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/chili3d_viewing.md",
+          "sha256": "c568d2d50082d22206ccc98c18816e24fb2e896242deb5da92e957b95c4280ae",
+          "bytes": 8072
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/geometry-review.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/geometry-review.md",
+          "sha256": "3a9cba5e7467ce7ddab367116937c27672bdc82808c78035dca43fb5308610f4",
+          "bytes": 16980
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/lessons.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/lessons.md",
+          "sha256": "d3fc0f43285812294aab07c8f91b3199ab95da62343fb5e2d2858735c579fc93",
+          "bytes": 15968
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/research_context.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/research_context.md",
+          "sha256": "2eaf9099d1937a07457c8c527c984d911918633e110a11e40721b10621a8385b",
+          "bytes": 3490
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/servo_specs.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/servo_specs.md",
+          "sha256": "92be7ef1072a620f36fff448f6b4423bb35a3ebeba13a7655a9dacbb78470078",
+          "bytes": 1897
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/step-to-slicer.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/step-to-slicer.md",
+          "sha256": "f600b18d0cd633436325b0aaa6ff2e1ca5b85d003c139bb18a314da17791595b",
+          "bytes": 7047
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/upstream-skill.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/upstream-skill.md",
+          "sha256": "3dc907fffa7fc877b81440d165f34a0af0300ad707027fb2e1ba843b79581921",
+          "bytes": 12665
+        },
+        {
+          "source": "skills/cad-reverse-parametric/references/workflow.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/references/workflow.md",
+          "sha256": "4d79b5c2c20436f55d3cdbc6c726cc34aeacd4da89f84084298c1f3681952d40",
+          "bytes": 5688
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/__init__.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/__init__.py",
+          "sha256": "12fd5d20a06df912fca32e0f354f71b5480b7e097c642d5081443840b20c6b98",
+          "bytes": 1337
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/checks.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/checks.py",
+          "sha256": "cbb6d4b50af42ec3a2211cd12661911b3196d0cc359e8197c8c6f45fdbc895c5",
+          "bytes": 3389
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/cli.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/cli.py",
+          "sha256": "9fc3b50e8b023dba10430686b7d7616517200c8917cdf8be28b359a9fe68b915",
+          "bytes": 7613
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/descriptor.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/descriptor.py",
+          "sha256": "5c58a49954364aea25a394cb94b7d726de967a7d67dad4940ee7114f476b8c77",
+          "bytes": 2182
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/equivalence.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/equivalence.py",
+          "sha256": "d7561c27cb7df0602baf2ac6279f016eb41466dbf798d1d3361a3ed96fc8e2db",
+          "bytes": 2729
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/geometry.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/geometry.py",
+          "sha256": "ec74e1144cefb0aaf15f9a6ca24f9f813a26a009018adebf54c73960a9b860f0",
+          "bytes": 2626
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/impact.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/impact.py",
+          "sha256": "302f2e9443c8bfb0689dec6d6331b59daf5cff83a8414bb6de42c0c87f0de405",
+          "bytes": 3316
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/intent.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/intent.py",
+          "sha256": "a642ce7cf7eee7796a6126a4a630889637395c42d3694c1d865aa0c25293f7e1",
+          "bytes": 2474
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/local_edits.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/local_edits.py",
+          "sha256": "db2f4c1b1c544699dbf0008482815d5df9da657ec4c8c0a17329a6604b702880",
+          "bytes": 7818
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/parametric.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/parametric.py",
+          "sha256": "545b9c53e5d87053865df2f93845989d7b3790c8719c6e09a01b932c1dc227e5",
+          "bytes": 3035
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/probes.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/probes.py",
+          "sha256": "e3112678b18d1c45e6b736aa44bcfc108097ec0444a78a340d5c5b6ac79c9913",
+          "bytes": 18371
+        },
+        {
+          "source": "skills/cad-reverse-parametric/src/cadre/report.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/src/cadre/report.py",
+          "sha256": "6b9cd564702f7b938436ded434388e3ad2ae220015364398f162be1439f00ca5",
+          "bytes": 2903
+        },
+        {
+          "source": "skills/cad-reverse-parametric/uv.lock",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/cad-reverse-parametric/uv.lock",
+          "sha256": "30d0aebb147110ca2041b5d663b36ca6733bfbc34e349196b960c31a5237a3ef",
+          "bytes": 201987
+        },
+        {
+          "source": "skills/fdm-plate-layout/SKILL.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/fdm-plate-layout/SKILL.md",
+          "sha256": "40adb44510f429ef8a72443942f24d574fe4d58f3ee5a1f7774f3dd851f343b7",
+          "bytes": 3046
+        },
+        {
+          "source": "skills/fdm-plate-layout/scripts/compare_gcode.py",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/fdm-plate-layout/scripts/compare_gcode.py",
+          "sha256": "f2f92d67986bfa33721c5eb6b7eccea899ad9071d1f7b425064be5cdec419359",
+          "bytes": 15427
+        },
+        {
+          "source": "skills/onshape-robot-workflow/SKILL.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/onshape-robot-workflow/SKILL.md",
+          "sha256": "630dd2b80a69d71a65e4f414b8dadeeae73cc5c8a3a22ac53714161cad76236f",
+          "bytes": 2579
+        },
+        {
+          "source": "skills/onshape-robot-workflow/references/api-and-export.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/onshape-robot-workflow/references/api-and-export.md",
+          "sha256": "963b994799310bc052cd3149ea33ed5ee11cb4e70b06adaee15b7b9cc90f474f",
+          "bytes": 4100
+        },
+        {
+          "source": "skills/onshape-robot-workflow/references/compact-camera-and-headless.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/onshape-robot-workflow/references/compact-camera-and-headless.md",
+          "sha256": "66b060961cad6c63e5cd72e0e5765ad3e5297251046182635e29ca89702881c5",
+          "bytes": 7778
+        },
+        {
+          "source": "skills/onshape-robot-workflow/references/ui-first-step-pixi.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/onshape-robot-workflow/references/ui-first-step-pixi.md",
+          "sha256": "6686546f09f81ab13461c0e8848a80138966801aeb46b02f29ed4cdd7fade6f8",
+          "bytes": 9929
+        },
+        {
+          "source": "skills/onshape-robot-workflow/references/validation.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/onshape-robot-workflow/references/validation.md",
+          "sha256": "388f4c924a38079728a7d99164863b7bd29782c9ce0adfa9f24b657e3d5837a5",
+          "bytes": 3908
+        },
+        {
+          "source": "skills/onshape-workflow-snapshot.json",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/onshape-workflow-snapshot.json",
+          "sha256": "15f06a04982a2effe8412f2b146953e5421583c95e892468f3b5bd0ba398937d",
+          "bytes": 3185
+        },
+        {
+          "source": "skills/playwright-cli/SKILL.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/playwright-cli/SKILL.md",
+          "sha256": "8d3a2765127a6f982db8478deab1301bea55adda81009764eb23201f6fee8fcf",
+          "bytes": 9595
+        },
+        {
+          "source": "skills/playwright-cli/references/request-mocking.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/playwright-cli/references/request-mocking.md",
+          "sha256": "54e801c9663fc2b6d68ceb058cb1c360724c2499f42acc7852a68e83e5b5f37c",
+          "bytes": 2182
+        },
+        {
+          "source": "skills/playwright-cli/references/running-code.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/playwright-cli/references/running-code.md",
+          "sha256": "c11b8f816625b541d07e9b3e516ae373fe4f3a10586803b50cff6a22e581308a",
+          "bytes": 8192
+        },
+        {
+          "source": "skills/playwright-cli/references/session-management.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/playwright-cli/references/session-management.md",
+          "sha256": "db700243b3d2e53d54ee6f6b1b24b3ad3409c75c5fd152ec2fba435cd88809cd",
+          "bytes": 6985
+        },
+        {
+          "source": "skills/playwright-cli/references/storage-state.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/playwright-cli/references/storage-state.md",
+          "sha256": "1122778c9b13b44bddebb4476a7f99d918afd31757be8b4fade3cb09c3d48c99",
+          "bytes": 5198
+        },
+        {
+          "source": "skills/playwright-cli/references/test-generation.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/playwright-cli/references/test-generation.md",
+          "sha256": "f08d14388b7002963e27bd242550154cb1379def89597464deb36b6f7afca15f",
+          "bytes": 2411
+        },
+        {
+          "source": "skills/playwright-cli/references/tracing.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/playwright-cli/references/tracing.md",
+          "sha256": "792e0ac7705e56ac48df84c0f5400221ce86107897c671590a64a4ea6a82508e",
+          "bytes": 3440
+        },
+        {
+          "source": "skills/playwright-cli/references/video-recording.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/playwright-cli/references/video-recording.md",
+          "sha256": "f5a1309e73b080e900d9e01c019d729c0132c616c0e905bc0af79b479d29242a",
+          "bytes": 1060
+        },
+        {
+          "source": "skills/review-written-workdoc/SKILL.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/review-written-workdoc/SKILL.md",
+          "sha256": "5641b9bbdee8fbda795ade1ba9a5362104053f88b15cc0a64131202557593885",
+          "bytes": 6547
+        },
+        {
+          "source": "skills/review-written-workdoc/agents/openai.yaml",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/review-written-workdoc/agents/openai.yaml",
+          "sha256": "ea4a1d4e02f397a799c8c71e2c632da23ac729b857d6697535b9cdf06cf2d32d",
+          "bytes": 255
+        },
+        {
+          "source": "skills/review-written-workdoc/references/review-rubric.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/review-written-workdoc/references/review-rubric.md",
+          "sha256": "ae965052c2e7a232fef088cddeb7c4223e6663f639d6f8824cb35a9d005b8544",
+          "bytes": 6140
+        },
+        {
+          "source": "skills/start-work-with-docs/SKILL.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/start-work-with-docs/SKILL.md",
+          "sha256": "cc8b5ef1ab093e8061ce96f571ed6c7f983b5e9b6d16c855190f6889db753bef",
+          "bytes": 6835
+        },
+        {
+          "source": "skills/start-work-with-docs/agents/openai.yaml",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/start-work-with-docs/agents/openai.yaml",
+          "sha256": "194b81c265c7195d0db99ea9199e12cfdf0fb51b6731cf7603b6fafc400bcf97",
+          "bytes": 245
+        },
+        {
+          "source": "skills/write-workdoc-uv/SKILL.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/write-workdoc-uv/SKILL.md",
+          "sha256": "79fea44d8ddd7b33eee491d6c4e5a82341c6aaa0ea72b3a0c12ffcc78e7b45c7",
+          "bytes": 4453
+        },
+        {
+          "source": "skills/write-workdoc-uv/agents/openai.yaml",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/write-workdoc-uv/agents/openai.yaml",
+          "sha256": "2620c925ba4509f89dd1ac9ab743c9b94ac2a8472b6177a2383cecf0391137fb",
+          "bytes": 221
+        },
+        {
+          "source": "skills/write-workdoc-uv/references/workdoc-template.md",
+          "destination": "skills/imported/3d-printed-dynamixel-gripper/write-workdoc-uv/references/workdoc-template.md",
+          "sha256": "3fa327bd8d6bf610dac8a61cfd97e280b02211d5449fe46f2393e056ddc010c1",
+          "bytes": 19538
+        },
+        {
+          "source": "scripts/assembly_io.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/assembly_io.py",
+          "sha256": "6c7d856c843c15b7d30ea00d7671b334ee89ea4b43a001fec43994552faa3d8c",
+          "bytes": 2946
+        },
+        {
+          "source": "scripts/audit_pg3_run.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/audit_pg3_run.py",
+          "sha256": "b3b73fa862cb31ee66c84247e8937bac46e8b6f80724db5919bcce28535060e3",
+          "bytes": 4202
+        },
+        {
+          "source": "scripts/build_camera_overhead_d405_r5.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/build_camera_overhead_d405_r5.py",
+          "sha256": "55d56758c131e1fec5b31099aab8cdeba3332918c44c33a0ae7c7fe9ccdecee1",
+          "bytes": 5123
+        },
+        {
+          "source": "scripts/build_camera_overhead_r4.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/build_camera_overhead_r4.py",
+          "sha256": "fe7afe9f973da6e0411caaf0622fe87ac2799fa6d022b0fef446ea6a49e87a14",
+          "bytes": 4525
+        },
+        {
+          "source": "scripts/camera_view_d405_r5.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/camera_view_d405_r5.py",
+          "sha256": "83f5c46d301cffb1bb00f1197c4d00e812cc00a9f1773760ddcd09996b74bf90",
+          "bytes": 7808
+        },
+        {
+          "source": "scripts/camera_view_r4.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/camera_view_r4.py",
+          "sha256": "cb6a461c73d775815bdb8c1210ed0e68652a5b92ff325538b55e3991796b4c54",
+          "bytes": 7067
+        },
+        {
+          "source": "scripts/certify_pg3_insertion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/certify_pg3_insertion.py",
+          "sha256": "cfd423d33a501801a14d0450cb21e17378df23923193ff3089fbf0eaf93c9976",
+          "bytes": 4995
+        },
+        {
+          "source": "scripts/check_pg3_bom.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/check_pg3_bom.py",
+          "sha256": "086b8b23bbc096d02ba080c47faea66bfcb16352aa430a444857e3a755c48e57",
+          "bytes": 4225
+        },
+        {
+          "source": "scripts/compare_lateral_wrist.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/compare_lateral_wrist.py",
+          "sha256": "827a4c4714c7c8bb27203a210067e8a7fdb906b0f977b81ff36cde7d0ebdce14",
+          "bytes": 4087
+        },
+        {
+          "source": "scripts/continuous_camera_clearance_r4.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/continuous_camera_clearance_r4.py",
+          "sha256": "471150d56e44577b8d28b68ef922f0737720268fe2400de11bbf33536deeb31f",
+          "bytes": 3549
+        },
+        {
+          "source": "scripts/id4_sweep_d405_r5.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/id4_sweep_d405_r5.py",
+          "sha256": "445c9c700e4e64192b21821b276f86bbd74f57f31c0ef5c8613d2ab90818af19",
+          "bytes": 5204
+        },
+        {
+          "source": "scripts/orca_presets.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/orca_presets.py",
+          "sha256": "d9753f2e7006849a96fd9e23032fab6332a41fc103c28241f693683aaa597953",
+          "bytes": 4664
+        },
+        {
+          "source": "scripts/preview_gcode.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/preview_gcode.py",
+          "sha256": "50136e0205b083a9cd21792f00fc8e2968e54b8fc455d03f3bac8a200d6c645f",
+          "bytes": 3302
+        },
+        {
+          "source": "scripts/probe_pg3_boolean.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/probe_pg3_boolean.py",
+          "sha256": "519dc58bb8fb505c8174cfc95883b47f5daa18669f76f3c7a848d4d6aa81aebc",
+          "bytes": 1705
+        },
+        {
+          "source": "scripts/probe_pg3_connector_access.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/probe_pg3_connector_access.py",
+          "sha256": "a6df93d3de1a3751712dbf07ff9d774d3665f17693fb16cdac7f4ae776b49f1c",
+          "bytes": 3654
+        },
+        {
+          "source": "scripts/probe_pg3_face_identity.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/probe_pg3_face_identity.py",
+          "sha256": "def530d80890dc437363ed36a7f1bb7ea4577972de549a8c6918b05a911be2a6",
+          "bytes": 3304
+        },
+        {
+          "source": "scripts/probe_pg3_saved_boolean.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/probe_pg3_saved_boolean.py",
+          "sha256": "8067edb0f8663d27ae110c2b0badffeef7ee3cddb0938ec4472e61d28571da36",
+          "bytes": 4477
+        },
+        {
+          "source": "scripts/probe_pg3_wire_routes.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/probe_pg3_wire_routes.py",
+          "sha256": "f27544fed2404a9dc951ae972c0ec93e5e180d9059db3a2808c01a114ee33963",
+          "bytes": 8116
+        },
+        {
+          "source": "scripts/render_cad.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/render_cad.py",
+          "sha256": "9985f91a7314c305010a9f65ad703802c86a21dea66d51c10390571af17d1222",
+          "bytes": 3176
+        },
+        {
+          "source": "scripts/render_pg3_pad_insertion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/render_pg3_pad_insertion.py",
+          "sha256": "8175c3a99211e3d4f9580f1c40ff92d2f937c05286ee76b898eb44c88ed93fd2",
+          "bytes": 3099
+        },
+        {
+          "source": "scripts/review_lateral_delivery.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_lateral_delivery.py",
+          "sha256": "d29f033eb7338cb928ee49022c6604fb12046c120c90256f9a588001d2a854b2",
+          "bytes": 10216
+        },
+        {
+          "source": "scripts/review_p05_cable_relief.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_p05_cable_relief.py",
+          "sha256": "09b3e9eedd3df4f9e611d083ebb978af4926d7d744b2698e54ab2c9947bc7fbc",
+          "bytes": 4819
+        },
+        {
+          "source": "scripts/review_pg2.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg2.py",
+          "sha256": "53d8905172d42f9574385a0b4dca381aca3df8567afff4ec04b1e3ee7e6a0c35",
+          "bytes": 4515
+        },
+        {
+          "source": "scripts/review_pg3.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3.py",
+          "sha256": "a2942638e23e492a2767fce216886205dd043b0e998a14eafc212515d93b16cf",
+          "bytes": 12878
+        },
+        {
+          "source": "scripts/review_pg3_bench_cluster.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_bench_cluster.py",
+          "sha256": "e3f741af1134655dbdc6e37d403dd97299f08e023137167175b0a26a89775f6e",
+          "bytes": 6481
+        },
+        {
+          "source": "scripts/review_pg3_bench_loading.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_bench_loading.py",
+          "sha256": "2073988e63a57e16c352fdfb22ccecae41ccdef6e1a438afdf5df0a25f612ce1",
+          "bytes": 9029
+        },
+        {
+          "source": "scripts/review_pg3_bench_support.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_bench_support.py",
+          "sha256": "c9fd826cb4e45fe9d1497009b8bf23435f295c0f4eeff61d8c79d5b19d733f87",
+          "bytes": 7739
+        },
+        {
+          "source": "scripts/review_pg3_camera_range.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_camera_range.py",
+          "sha256": "8a975c5f7d3eab2c3c797adad709a312c9eca7977aa87a1ef95def2a731a38f0",
+          "bytes": 5028
+        },
+        {
+          "source": "scripts/review_pg3_cap_finger_insertion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_cap_finger_insertion.py",
+          "sha256": "4ffb0350c4c63b44b4837cb2dbacfa2ff405234c269c9ff5a84ca28c60e9c352",
+          "bytes": 4658
+        },
+        {
+          "source": "scripts/review_pg3_components.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_components.py",
+          "sha256": "848745590edde17b1410a851bbc16d4d0367f64ea3e88d3c771988e1ba1c75a8",
+          "bytes": 3650
+        },
+        {
+          "source": "scripts/review_pg3_crank_fasteners.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_crank_fasteners.py",
+          "sha256": "ddfa31c8dd56dc42b60d614fdbaf5be0d7084d690edb9365ef585bf3c2940be8",
+          "bytes": 9938
+        },
+        {
+          "source": "scripts/review_pg3_crank_representation.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_crank_representation.py",
+          "sha256": "edabb46654a3883f5c76fff90c126051505d7ea19867e08afa60e4683304ee48",
+          "bytes": 5271
+        },
+        {
+          "source": "scripts/review_pg3_drive_fasteners.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_drive_fasteners.py",
+          "sha256": "ab193563083341ae83778a84f24bf9d66b7870b31e22c00282e990e6a5ebb1e1",
+          "bytes": 8993
+        },
+        {
+          "source": "scripts/review_pg3_drive_screw_exchange.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_drive_screw_exchange.py",
+          "sha256": "0b59dac63353c2e7b25100185f90c45f35eab063100b26186c489d87c44d11ab",
+          "bytes": 10297
+        },
+        {
+          "source": "scripts/review_pg3_guide_relief.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_guide_relief.py",
+          "sha256": "c0d4c744fe1b7c77e8d0e8856f2e9614b1635acf095b2bea11dd8ebb1a5b7e60",
+          "bytes": 5843
+        },
+        {
+          "source": "scripts/review_pg3_horn_sweep.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_horn_sweep.py",
+          "sha256": "2fcc63cbd7a44f71463d9faf4f24d3a3d1ddf50da34d7ad8163646bf965b009b",
+          "bytes": 7894
+        },
+        {
+          "source": "scripts/review_pg3_id5.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_id5.py",
+          "sha256": "7bf1c6a51e5b44f947f31c15fbc9485b34e2e2894bf436a8a2f95d9e26720cd1",
+          "bytes": 4081
+        },
+        {
+          "source": "scripts/review_pg3_insertion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_insertion.py",
+          "sha256": "6d2af2a1541328f08d392a3a5363197ac3a3ee77402c319b65ee0fee0ac2a6be",
+          "bytes": 4142
+        },
+        {
+          "source": "scripts/review_pg3_installation.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_installation.py",
+          "sha256": "3e079b92a97ce4542fd99009b75d8ca641bfdb51b6235bf67ddf655efb381aae",
+          "bytes": 12188
+        },
+        {
+          "source": "scripts/review_pg3_local_contacts.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_local_contacts.py",
+          "sha256": "7b0a61fcb1e224496951297d4eec80d72badd5762903ecdbb8ca4039cec1b817",
+          "bytes": 4606
+        },
+        {
+          "source": "scripts/review_pg3_mating_regions.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_mating_regions.py",
+          "sha256": "21c634abcc17b8a1700cb133e27e211ee8fc5edb4e36cc646004d47612abeaf7",
+          "bytes": 4434
+        },
+        {
+          "source": "scripts/review_pg3_mechanism_insertion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_mechanism_insertion.py",
+          "sha256": "4fce4cd8af96c21bdad287c3c85f5693d227bc2a4d0b8e9a9aa346304c828272",
+          "bytes": 13218
+        },
+        {
+          "source": "scripts/review_pg3_motion_clearance.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_motion_clearance.py",
+          "sha256": "1b8f5ac87ca9dd64a2ca6dfc41605e8b526b30273d5e99213ba684d6ab3fc1f1",
+          "bytes": 12116
+        },
+        {
+          "source": "scripts/review_pg3_motor_partition.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_motor_partition.py",
+          "sha256": "9e72664771263c35558dc30d435ba9e84194b4d0e9fa1846373b5ab3526e9d50",
+          "bytes": 8736
+        },
+        {
+          "source": "scripts/review_pg3_nut_late_loading.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_nut_late_loading.py",
+          "sha256": "420fb6de3ded6c17c2a15237f73e791858e2930e3871a0ffb4ef5a242a8fbc1c",
+          "bytes": 6583
+        },
+        {
+          "source": "scripts/review_pg3_nut_loading.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_nut_loading.py",
+          "sha256": "398f3c37052147ac9bdf1aa4df497c13e755b123bfa47c84dbd98af354659794",
+          "bytes": 9801
+        },
+        {
+          "source": "scripts/review_pg3_occluders.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_occluders.py",
+          "sha256": "dad7e023fa527946fdb76d1d6a0cb8bd45353ab113890a0da0df3b9aa9d3c27c",
+          "bytes": 7653
+        },
+        {
+          "source": "scripts/review_pg3_occlusion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_occlusion.py",
+          "sha256": "ee1f103c2407d4b4ac484eb84f1b0eb334fb8ad9afff603a3e2b64570656b47b",
+          "bytes": 3138
+        },
+        {
+          "source": "scripts/review_pg3_pad_insertion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_pad_insertion.py",
+          "sha256": "2e2f7175c94991124092a093bebf2768185f8e7897251e4bef9c4cf92441b98c",
+          "bytes": 5076
+        },
+        {
+          "source": "scripts/review_pg3_pivot_motion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_pivot_motion.py",
+          "sha256": "499ad38a6c0092600c1278e7ae02be78fb2d31b3b2780c32b9e85658caa826fb",
+          "bytes": 12143
+        },
+        {
+          "source": "scripts/review_pg3_pivot_stacks.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_pivot_stacks.py",
+          "sha256": "d178ecb168b62b861faf1dd11dee000b41789a4d4da2b2e837a35812252f65d0",
+          "bytes": 9241
+        },
+        {
+          "source": "scripts/review_pg3_slider_link_insertion.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_slider_link_insertion.py",
+          "sha256": "c2a0d1b4e513a7050f44378e22e67413c1939c2055d41cef96844c15b41ae567",
+          "bytes": 4730
+        },
+        {
+          "source": "scripts/review_pg3_supplier_inventory.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_supplier_inventory.py",
+          "sha256": "b9f1c19e82d44ef30b2b72af60aabcf303e23e15c50e06bdca041ac352864e92",
+          "bytes": 8441
+        },
+        {
+          "source": "scripts/review_pg3_temporary_drive_screws.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_temporary_drive_screws.py",
+          "sha256": "36006f833997943c9f2f294970ac71dafcb3e387f95919ab211671740e9d6813",
+          "bytes": 7813
+        },
+        {
+          "source": "scripts/review_pg3_washer_contacts.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/review_pg3_washer_contacts.py",
+          "sha256": "558038a1541dbed3f43453b201479024c4e12543c5a11699f7a2baa8c12fd6ae",
+          "bytes": 11845
+        },
+        {
+          "source": "scripts/run_calibration_demo.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/run_calibration_demo.py",
+          "sha256": "da1d40ac1a50540e40639f11fe57c3ac5e037f31c41abfdaba9dea06a6c40c34",
+          "bytes": 11323
+        },
+        {
+          "source": "scripts/service_camera_overhead_r4.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/service_camera_overhead_r4.py",
+          "sha256": "bde3bf3c8ef837667cd5029dc3e68edc9aa6d524c126a339916683e630e36f07",
+          "bytes": 10738
+        },
+        {
+          "source": "scripts/simulate_pg3_saved.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/simulate_pg3_saved.py",
+          "sha256": "84d5780b1d0e00362741bd679325ac570a840dd8bd6f23e627d587c992674beb",
+          "bytes": 3912
+        },
+        {
+          "source": "scripts/step_cache.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/step_cache.py",
+          "sha256": "f19f5ceef7ccb31c9171820eb0205f081f2af6ad54748d811250ffeae1f88ad0",
+          "bytes": 5674
+        },
+        {
+          "source": "scripts/survey_arm_fastener_sites.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/survey_arm_fastener_sites.py",
+          "sha256": "ebc5e0f095c77d5e0c510e6d81aa336f3f9aee37a073ef6ccceab5cf1352fd22",
+          "bytes": 5510
+        },
+        {
+          "source": "scripts/triage_pg3_contacts.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/triage_pg3_contacts.py",
+          "sha256": "e578eca07b964980cf088dbdb109b2524e5e2dfe9f92785c3d3ba70e78de04e3",
+          "bytes": 5282
+        },
+        {
+          "source": "scripts/validate_camera_overhead_d405_r5.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/validate_camera_overhead_d405_r5.py",
+          "sha256": "9a2bc0e3f6185d24b0a8045dd402c30fb24031be86d776dd9e8b082abbda2c5d",
+          "bytes": 10165
+        },
+        {
+          "source": "scripts/validate_camera_overhead_r4.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/validate_camera_overhead_r4.py",
+          "sha256": "fb82a4af6fa69da7cb4ba2a0caf7794ecfa93acd991aa299b2dc023ca2d51c0f",
+          "bytes": 13043
+        },
+        {
+          "source": "scripts/verify_d405_intake.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/verify_d405_intake.py",
+          "sha256": "c1bd44b64c82ab12e278a3c5665bd5c87a79af118e96bb6e84d14bd7a2839c6c",
+          "bytes": 2024
+        },
+        {
+          "source": "scripts/verify_pg3_attachment_export.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/verify_pg3_attachment_export.py",
+          "sha256": "a0f8f41d72756b484c982d3399be25b0f368acbd445087e9281b9266e4fda322",
+          "bytes": 3191
+        },
+        {
+          "source": "scripts/verify_pg3_service_stages.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/scripts/verify_pg3_service_stages.py",
+          "sha256": "d1a1f65711d36e184ca7f997633497416e64e5f5476b636bebb813ab3dc1ab76",
+          "bytes": 10337
+        },
+        {
+          "source": "gripper_design/__init__.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/__init__.py",
+          "sha256": "7405f04a1153f609dd087f615ea203526f7fa39d586e109af336c1eda5383ce1",
+          "bytes": 75
+        },
+        {
+          "source": "gripper_design/architecture.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/architecture.py",
+          "sha256": "6e3356dce0c18c41bfcd0d0c57fa60fe2680428673576edf81a26050737bbee9",
+          "bytes": 2578
+        },
+        {
+          "source": "gripper_design/assembly_contracts.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/assembly_contracts.py",
+          "sha256": "0ab620aa3c66dfde581ff7e3996d92344a7afa2ddc146b256a833e23deab696f",
+          "bytes": 11782
+        },
+        {
+          "source": "gripper_design/build.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/build.py",
+          "sha256": "86d3d015f235d0e58621a997db7752ffc9492ac7387240d0777c1cd0fed319b5",
+          "bytes": 9024
+        },
+        {
+          "source": "gripper_design/camera_overhead_d405_r5.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/camera_overhead_d405_r5.py",
+          "sha256": "dde08cf48a5ad8458d24ce5926128a1cf1058fa68452a791bae38b172d7cb7f9",
+          "bytes": 12602
+        },
+        {
+          "source": "gripper_design/camera_overhead_r4.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/camera_overhead_r4.py",
+          "sha256": "04fb9343d7d20e8ede0b324d0634b4a7c7bbcf7aab2fbb7793b2883a9bb003aa",
+          "bytes": 11865
+        },
+        {
+          "source": "gripper_design/fastener_ledger.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/fastener_ledger.py",
+          "sha256": "1ddcbd0b6d724ae06679331dfd75fae13117b1b67f3f2f3fbea32e347851e2ff",
+          "bytes": 2367
+        },
+        {
+          "source": "gripper_design/interface_envelopes.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/interface_envelopes.py",
+          "sha256": "c0854c2495548cec7e8d814ddba8a12c938d19289309b2e195647f1ae771b0c8",
+          "bytes": 11460
+        },
+        {
+          "source": "gripper_design/interfaces.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/interfaces.py",
+          "sha256": "510354417ba2d54453060ab553d78c83114691afd4b7225d1d729d4e47345d56",
+          "bytes": 3840
+        },
+        {
+          "source": "gripper_design/p05_cable_relief.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/p05_cable_relief.py",
+          "sha256": "80a2dd3ae08a68d29e575fe604ccdc2bd9f392eb05481e4f8c69a833e712cccb",
+          "bytes": 2458
+        },
+        {
+          "source": "gripper_design/parallel_jaw.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/parallel_jaw.py",
+          "sha256": "25bb6dd2ae96e7f5ad200cef954b111ac37b4bc8321c1d36abe95099c136b0be",
+          "bytes": 5671
+        },
+        {
+          "source": "gripper_design/pg2.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/pg2.py",
+          "sha256": "d865f84ee400498d60ed75b7640bdca9b96b69eebf9c08d6a7be840041559361",
+          "bytes": 8465
+        },
+        {
+          "source": "gripper_design/pg3.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/pg3.py",
+          "sha256": "ac2da0e35e6665c5526ed03f02f1881c4edd8c69c1679c58add1810814b1b775",
+          "bytes": 7766
+        },
+        {
+          "source": "gripper_design/pg3_bench_support.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/pg3_bench_support.py",
+          "sha256": "eacc388c79eb4f754c88a1677f7ecb8d46a5b69f62ece2a827fa8d64f1e44a1a",
+          "bytes": 3983
+        },
+        {
+          "source": "gripper_design/pg3_crank_representation.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/pg3_crank_representation.py",
+          "sha256": "f1b7f4817c6fae6bc017e0ebc20ad84a410284b5d3ef48a9f42ffa6920c1ac83",
+          "bytes": 1567
+        },
+        {
+          "source": "gripper_design/pg3_id5.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/pg3_id5.py",
+          "sha256": "86c5086ad2b376425de02c9a4f9c5ad66aef4af20793b7632ef7e672d0be9a15",
+          "bytes": 2461
+        },
+        {
+          "source": "gripper_design/pg3_installation.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/pg3_installation.py",
+          "sha256": "581bc8183ea6e69822932a6cadb2676a4ec2ff9b00d6234352ffb9ad16db9762",
+          "bytes": 16588
+        },
+        {
+          "source": "gripper_design/rotational_envelopes.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/rotational_envelopes.py",
+          "sha256": "48a8b945b3b8f5c78f32f7f6f9b48e524d8e477e8a3ef97d94e6259ac4e318cb",
+          "bytes": 5130
+        },
+        {
+          "source": "gripper_design/serviceability.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/gripper_design/serviceability.py",
+          "sha256": "712658c525f3c632abb15b52a312760bee5d17c6b38914a7aaf31ae6081780e3",
+          "bytes": 7419
+        },
+        {
+          "source": "camera_jig/__init__.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/__init__.py",
+          "sha256": "40c1de658ea4bf0a8c1154b5d25da140210fe146094a62af618fa3f3a1e0aa3a",
+          "bytes": 76
+        },
+        {
+          "source": "camera_jig/build.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/build.py",
+          "sha256": "61ff21040963b2795ad1a02419a6c0b1a3b0ca0f96e72dd9d06042aa10eb40ff",
+          "bytes": 17866
+        },
+        {
+          "source": "camera_jig/id5_corner.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/id5_corner.py",
+          "sha256": "1dfb3eaf0bbe08857820bf8dd1701af668e4a069a030049472409679066fe543",
+          "bytes": 7551
+        },
+        {
+          "source": "camera_jig/id5_corner_anchor.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/id5_corner_anchor.py",
+          "sha256": "e98d447a25e0e22fcb7caeb1408cabc036b973556d83f4d503b9b8cdc9d5a8c2",
+          "bytes": 2829
+        },
+        {
+          "source": "camera_jig/id5_corner_validate.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/id5_corner_validate.py",
+          "sha256": "97d2b15dde95815729afb63db74d27fe9c9fa36fef9ab629142cd5e622d7429a",
+          "bytes": 8846
+        },
+        {
+          "source": "camera_jig/id5_corner_vision.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/id5_corner_vision.py",
+          "sha256": "9ee20f940dd8a93fd79bd6cbb15a6d0f42f459669c7e8dfa39c5f2763d35ef85",
+          "bytes": 9189
+        },
+        {
+          "source": "camera_jig/prepare_print.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/prepare_print.py",
+          "sha256": "4d0c65d0734519362d98f4f4bc6b5db9038589a26c25ea2bdc58023e3d166087",
+          "bytes": 13151
+        },
+        {
+          "source": "camera_jig/serviceability.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/serviceability.py",
+          "sha256": "bdb4800d4a423a81925b365e8e479060fc9182a162d0a7d4866c8eee48e7e9a0",
+          "bytes": 5654
+        },
+        {
+          "source": "camera_jig/spec.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/camera_jig/spec.py",
+          "sha256": "fcb5a6787754b76763dd5b7b0d3ce2eaf9272b475abec9bc4552b7bb3f678a79",
+          "bytes": 1659
+        },
+        {
+          "source": "simulation/__init__.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/__init__.py",
+          "sha256": "c79092fc034f164b279bf8e1b7bab6f7f26f69cfda1e1571a8227ed1c850de53",
+          "bytes": 53
+        },
+        {
+          "source": "simulation/aprilgrid.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/aprilgrid.py",
+          "sha256": "88b1642e516746da5a2bcbfb75b0f00a8ddb91bfb43de5d51603613bc9936628",
+          "bytes": 6144
+        },
+        {
+          "source": "simulation/assets/calibration_scene.xml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/assets/calibration_scene.xml",
+          "sha256": "ca5ad15204f2e270eebe22b9dffc0ef1b1c488664cda2b8b3fb5bb17fcc1428a",
+          "bytes": 403
+        },
+        {
+          "source": "simulation/calibrate.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/calibrate.py",
+          "sha256": "ac36ab409e2a04e31c45a91306209749a92acf3701dee6ae9825e40e59724d2e",
+          "bytes": 10845
+        },
+        {
+          "source": "simulation/detect_aprilgrid.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/detect_aprilgrid.py",
+          "sha256": "db0fe11b3ffeb0fbec57566d2438c7ab63cea01076c6f7413f932f1f6356469b",
+          "bytes": 7915
+        },
+        {
+          "source": "simulation/frames.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/frames.py",
+          "sha256": "90db0b670507c82fe7ebdbee7deabd1b0c0dc4022650d0ac489bd38ab7768ca9",
+          "bytes": 4799
+        },
+        {
+          "source": "simulation/integration.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/integration.py",
+          "sha256": "1258daedb35a1d559c488504641012f105b42b79df9e598d26d4b75d6679289f",
+          "bytes": 9962
+        },
+        {
+          "source": "simulation/mujoco_scene.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/mujoco_scene.py",
+          "sha256": "16bba995ca2c6d0bc45dfcf05791919b82c39080ca56c9ef4dadd27f2153fd36",
+          "bytes": 12603
+        },
+        {
+          "source": "simulation/pg3_scene.py",
+          "destination": "upstream/3d-printed-dynamixel-gripper/simulation/pg3_scene.py",
+          "sha256": "5f0452636178499253a8734ffdd18c67477df2c4ac4e204a93c7bd2906e47d46",
+          "bytes": 17096
+        },
+        {
+          "source": "specs/architecture.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/architecture.yaml",
+          "sha256": "c7f989685143226ab5c3a54a132b532b2a3d6d3c87bcbbabaa2602967e9f8043",
+          "bytes": 3694
+        },
+        {
+          "source": "specs/camera_mount.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/camera_mount.yaml",
+          "sha256": "9e0b0fed84cff35ba5748249d3c58914edd9ea80076d6ce71b5e1ad3353b0386",
+          "bytes": 5190
+        },
+        {
+          "source": "specs/camera_mount_id5_corner.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/camera_mount_id5_corner.yaml",
+          "sha256": "209b5d50fa6adbe9240ae834a323193d977a38a9dc485f8b24d4ca9edcada20a",
+          "bytes": 4552
+        },
+        {
+          "source": "specs/camera_mount_overhead_d405_r5.json",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/camera_mount_overhead_d405_r5.json",
+          "sha256": "c13461c45489bf8a4b18cfce7ca1d9523e2863026a2f97cf8840bfdd2280a5d8",
+          "bytes": 757
+        },
+        {
+          "source": "specs/gripper_variants.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/gripper_variants.yaml",
+          "sha256": "863392eb3389d86a32314e09ecff1502ef4dec600d0d41e972d9bca5915590e6",
+          "bytes": 5965
+        },
+        {
+          "source": "specs/interfaces_all_xl430.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/interfaces_all_xl430.yaml",
+          "sha256": "d8f2476598c5775cad2b8c82620b9762479745995b40a00bf7c6ef655c78ac44",
+          "bytes": 4115
+        },
+        {
+          "source": "specs/jaw_fastener_ledger.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/jaw_fastener_ledger.yaml",
+          "sha256": "42fcf4063e278cc1b356cf94d2cb8a53d52409b6eecd230c1d6b4bfbe173b311",
+          "bytes": 2415
+        },
+        {
+          "source": "specs/parallel_jaw.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/parallel_jaw.yaml",
+          "sha256": "267089b989aff99334ba074074af444947dd6caf43f8fdc03f59276600209fca",
+          "bytes": 890
+        },
+        {
+          "source": "specs/pg3_candidate_bom.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/pg3_candidate_bom.yaml",
+          "sha256": "d14dc0669dd8cdb73c72c731667f6cf925bcff6b4b33572f3bac31df0452ac1e",
+          "bytes": 5195
+        },
+        {
+          "source": "specs/pg3_id5.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/pg3_id5.yaml",
+          "sha256": "23f41bd23be2a7085103fa27a7af4f6c35996bc8eb3e5f2ceba2fc10115e8ffc",
+          "bytes": 1399
+        },
+        {
+          "source": "specs/pg3_installation.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/pg3_installation.yaml",
+          "sha256": "e3e1bd7947a207b1438cb2d3c09eabeb28d5bece5f67d2b48f1fd8caa52322ce",
+          "bytes": 4520
+        },
+        {
+          "source": "specs/project.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/project.yaml",
+          "sha256": "22f4981a366f33152a2c4c7ec251e8bb6ec8e3b8e52378ccc8f53ba66b14f527",
+          "bytes": 2372
+        },
+        {
+          "source": "specs/simulation_calibration.yaml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/specs/simulation_calibration.yaml",
+          "sha256": "8310a1174ecc25b14413cae19fb5a4e2b0b9f737066299c39c92b8cb7f9f63f9",
+          "bytes": 764
+        },
+        {
+          "source": "docs/ALL_XL430_TERMINAL_STATUS.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/ALL_XL430_TERMINAL_STATUS.md",
+          "sha256": "80712f713670db2f5d6f28930d6bbbaec8fd9f01a13df38459586618609bcfe1",
+          "bytes": 3326
+        },
+        {
+          "source": "docs/ASSEMBLY_AND_CALIBRATION.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/ASSEMBLY_AND_CALIBRATION.md",
+          "sha256": "3786ad867fecaad08501f26abb781e8d795f3dd29fdf947dd985a8d06f1c9380",
+          "bytes": 2467
+        },
+        {
+          "source": "docs/BOM_DRAFT.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/BOM_DRAFT.md",
+          "sha256": "12f6b215200bcfae6e4fe9167dd8ee668e85695759a6d6c70ac264c081edbe20",
+          "bytes": 7631
+        },
+        {
+          "source": "docs/CAD_PDCA.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/CAD_PDCA.md",
+          "sha256": "7a51c27d7cce68c3b9f33e8933a12bef25aa1e384a1c47907b0871be5f03502a",
+          "bytes": 5857
+        },
+        {
+          "source": "docs/CAMERA_JIG.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/CAMERA_JIG.md",
+          "sha256": "be85a90a9db3cf7551ce31e121ddf33b20d7ac88de916d4ea694d03af92c5dbf",
+          "bytes": 9102
+        },
+        {
+          "source": "docs/CAMERA_JIG_PRINT.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/CAMERA_JIG_PRINT.md",
+          "sha256": "1d54c4426a802e0b818a6b7d6efe13c4d1379030723e285803e6305517c3c277",
+          "bytes": 5825
+        },
+        {
+          "source": "docs/CAMERA_MOUNT_CODE_INDEX.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/CAMERA_MOUNT_CODE_INDEX.md",
+          "sha256": "ccb312e22a414caf203b3328eed19669b6143781f3806f53abd850b0308e876e",
+          "bytes": 4453
+        },
+        {
+          "source": "docs/CAMERA_MOUNT_ID5_CORNER.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/CAMERA_MOUNT_ID5_CORNER.md",
+          "sha256": "a488a07abaa58970212483c8376927e619120f6621ab769b981361061d01e8a7",
+          "bytes": 8206
+        },
+        {
+          "source": "docs/CAMERA_MOUNT_ID5_D405_R5.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/CAMERA_MOUNT_ID5_D405_R5.md",
+          "sha256": "03c8bb4a5b91c8ab8dbf4775f1e14cf9df5c6a0357e06b13be7b81fd458cc230",
+          "bytes": 12982
+        },
+        {
+          "source": "docs/CAMERA_SELECTION.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/CAMERA_SELECTION.md",
+          "sha256": "52283422293953fe15ad370b77ae0d85e831fdd8f718f84a897245af531bd33c",
+          "bytes": 2896
+        },
+        {
+          "source": "docs/COORDINATE_FRAMES.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/COORDINATE_FRAMES.md",
+          "sha256": "88d30cf5cdbde703f9ee9efa5d64b99a20ec23e4f5c1262b5eaf1d34e4f4c74a",
+          "bytes": 1404
+        },
+        {
+          "source": "docs/D405_LOW_PROFILE_INTAKE.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/D405_LOW_PROFILE_INTAKE.md",
+          "sha256": "534e3364d0606dcb5fd5ad286632c2917427fa8e5114b53ad2059c51bfb4552e",
+          "bytes": 6467
+        },
+        {
+          "source": "docs/DESIGN_BASIS.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/DESIGN_BASIS.md",
+          "sha256": "d0c3ee2ab27587968f620d5c02f76a8969df98cf9540b36f2e740f6331f23d3f",
+          "bytes": 7128
+        },
+        {
+          "source": "docs/FASTENER_BOM.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/FASTENER_BOM.md",
+          "sha256": "4bb719924b6b4e2a89813762553abe826a4e8f05862b748da94624749b4a0ecb",
+          "bytes": 7082
+        },
+        {
+          "source": "docs/HANDOFF.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/HANDOFF.md",
+          "sha256": "e9d20fba5c424e71b0bc1a6c131af3bf7bfd55b93199f96ce2badb02f63aae6a",
+          "bytes": 6008
+        },
+        {
+          "source": "docs/INSTALLATION_READINESS.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/INSTALLATION_READINESS.md",
+          "sha256": "82519973c1a84ff2a174a44b33a726cf1dddacb17f7db13bc8791d89d7e94157",
+          "bytes": 9479
+        },
+        {
+          "source": "docs/INTERFACES.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/INTERFACES.md",
+          "sha256": "99d6493b9fcda9cc2bd10bc96b77799fb56a40db8a2cf27a4b2a034a4a2d91ed",
+          "bytes": 5820
+        },
+        {
+          "source": "docs/MECHANISM_DECISION.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/MECHANISM_DECISION.md",
+          "sha256": "1cb4f815972cc267d642c4a303204059f07408edea856d4735f99d3f75c91d5a",
+          "bytes": 5137
+        },
+        {
+          "source": "docs/OPEN_ISSUES.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/OPEN_ISSUES.md",
+          "sha256": "1fd039100fff83c574fe6e571cd14dc722623ab802e16d0d2ce27e496fe227b8",
+          "bytes": 1735
+        },
+        {
+          "source": "docs/PG3_C9_INTEGRATION.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/PG3_C9_INTEGRATION.md",
+          "sha256": "e0b0c1a13089e5ff9a1d2598ec7e0f51884f46133251da7d2fb83d21dc58d9a4",
+          "bytes": 10064
+        },
+        {
+          "source": "docs/PG3_ID5_ONLY_DESIGN.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/PG3_ID5_ONLY_DESIGN.md",
+          "sha256": "3b508e2617018cdc041eef54acf22af3d09229415e412718dc5649b891b1b1f1",
+          "bytes": 10444
+        },
+        {
+          "source": "docs/PG3_INSTALLATION_CANDIDATE.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/PG3_INSTALLATION_CANDIDATE.md",
+          "sha256": "99ca0420d8dff4bec8200e3bbfc78ef587ec55b91e90f6bcc9ac40fcac29ee19",
+          "bytes": 100809
+        },
+        {
+          "source": "docs/REQUIREMENTS.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/REQUIREMENTS.md",
+          "sha256": "2b8ad23f28df71bcacf0153191dc2eddb4cc5786d13b9cbf34f4f5faeb93bb0e",
+          "bytes": 7167
+        },
+        {
+          "source": "docs/REVIEW_LATERAL_20260922.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/REVIEW_LATERAL_20260922.md",
+          "sha256": "53f870f8c11a64070f717fac7f1debc34ed3a0dbe3a7ca7be5a104b20211c67b",
+          "bytes": 17824
+        },
+        {
+          "source": "docs/REVIEW_PG2_AND_SELF_AUDIT.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/REVIEW_PG2_AND_SELF_AUDIT.md",
+          "sha256": "0cc956afc43098a4b2f361c3666587040feb5fbe1517d6d94ea4743358862488",
+          "bytes": 6608
+        },
+        {
+          "source": "docs/TEST_PERFORMANCE.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/docs/TEST_PERFORMANCE.md",
+          "sha256": "4e550a580775b5e242d9870200ac049811c79fb5cc4a0e59c0dd61838789dd05",
+          "bytes": 8652
+        },
+        {
+          "source": "README.md",
+          "destination": "upstream/3d-printed-dynamixel-gripper/README.md",
+          "sha256": "d8052a9c2d391ed2e2433e8ea40ca2343a19fe2c997f68598c874abeda1b870c",
+          "bytes": 8128
+        },
+        {
+          "source": "pyproject.toml",
+          "destination": "upstream/3d-printed-dynamixel-gripper/pyproject.toml",
+          "sha256": "2fdbc2d03c35aca49e43846fb7612f3e53a9a0f5ad2b0357c95c4581e239bfb2",
+          "bytes": 694
+        },
+        {
+          "source": "uv.lock",
+          "destination": "upstream/3d-printed-dynamixel-gripper/uv.lock",
+          "sha256": "8617682db97d453c5aa84f2e3c4705f9fc0284be5e4f04eaea66f268bd62e3c0",
+          "bytes": 125196
+        }
+      ],
+      "excluded": []
+    }
+  ]
+}

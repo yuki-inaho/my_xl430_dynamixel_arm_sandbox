@@ -1,0 +1,4 @@
+interface:
+  display_name: "DYNAMIXEL Read-Only Status"
+  short_description: "Inspect arm registers and telemetry without motor writes"
+  default_prompt: "Use $dynamixel-readonly-status to inspect the arm and save a read-only status report."

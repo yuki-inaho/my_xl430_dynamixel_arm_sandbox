@@ -1,0 +1,110 @@
+part: follower_shoulder_to_elbow
+intent: >-
+  connect the XL430 shoulder joint to the downstream servo/link (the original STEP
+  PRODUCT name is literally "XL430 to XL330 new connector"). Frame - long axis = Y
+  (bbox Y[-13,119]=132). Upstream servo cradle straddles the X=+/-19 walls (servo
+  output axis = X). Downstream end (Y 100-116) carries the link/servo mount holes.
+  All hole-family numbers below are MEASURED from
+  hardware/follower/step/shoulder_to_elbow.step via cadre.cli inspect (ground truth;
+  catalog values are secondary). C-A2 / C-B6 / C-B7 / C-B8 declarations live in each
+  feature constraints block (Feature has fixed fields, so per-hole metadata must
+  go under constraints to keep PartIntent.load happy).
+features:
+  - name: upstream_servo_mount
+    type: servo_mount
+    servo: XL430-W250-T
+    preserves: [output_axis, screw_pattern, body_clearance]
+    constraints:
+      clearance_mm: 0.5
+      # CF-1 manufacturability: the phi26 servo-case seat is a blind counterbore
+      # of depth 3.0 cut into this wall, so the residual floor = wall_mm - 3.0.
+      # With wall_mm=4.0 the floor was 1.0mm (< C-B4 2.5mm). Raised to 5.5 so the
+      # floor = 5.5 - 3.0 = 2.5mm >= C-B4. Only the UPSTREAM wall carries the seat;
+      # the downstream mount wall_mm stays 4.0 (no seat there).
+      wall_mm: 5.5
+      screw: M2
+      # C-B6 function type: M2 clearance (through-bolt), inspect screw label = "M2"
+      # measured dia 2.40 -> falls in M2 clearance band (2.15-2.55), NOT M2-tap.
+      hole_function: clearance
+      hole_diameter_mm: 2.4
+      # C-B8 through/blind: 8 faces / 4 axis-lines -> each cross hole spans BOTH
+      # walls x=-19 and x=+19 with identical (radius, dir, perp-foot) -> THROUGH.
+      through: true
+      through_evidence: "8 faces / 4 axes -> 2 coaxial faces per line on opposing
+        x=+/-19 walls = through bolt access on both sides"
+      # cross pattern in the (y,z) plane at x=+/-19, measured absolute centers:
+      cross_centers_yz_mm: [[0.0, 8.0], [0.0, -8.0], [8.0, 0.0], [-8.0, 0.0]]
+      wall_x_mm: 19.0
+  - name: downstream_servo_mount
+    type: servo_mount
+    servo: XL330-M288-T          # change to XL430-W250-T to perform the swap
+    preserves: [output_axis, screw_pattern, body_clearance]
+    constraints:
+      clearance_mm: 0.5
+      wall_mm: 4.0
+      screw: M2
+      # C-B6 function type: inspect screw label "M2", measured dia 2.30 -> M2
+      # clearance band (2.15-2.55). Through-bolt into the downstream servo/link.
+      hole_function: clearance
+      hole_diameter_mm: 2.3
+      # C-B8 through/blind: 4 faces / 2 axis-lines -> 2 coaxial faces per line
+      # (entry + exit through the local boss) along +X -> THROUGH.
+      through: true
+      through_evidence: "4 faces / 2 axes -> through holes along +X at the downstream boss"
+      # measured absolute centers (x,y,z):
+      mount_centers_mm: [[-14.75, 100.3, 7.7], [-14.75, 116.3, 7.7]]
+      mount_axis_dir: [1.0, 0.0, 0.0]
+  - name: link_beam
+    type: structural_beam
+    preserves: [joint_distance]
+    constraints:
+      min_wall_mm: 2.5
+      joint_distance_mm: 132.0   # = bbox Y extent (Y[-13,119]); preserved on swap
+      beam_w_mm: 20.0            # X section of the spine
+      beam_t_mm: 12.0            # Z section of the spine
+  - name: motor_body_bore
+    type: bore
+    preserves: [output_axis]
+    constraints:
+      diameter_mm: 26.0
+      # C-B7 seat: case-side counterbore (servo body face). measured dia 26.0.
+      # 2 faces / 1 axis-line -> the phi26 seat is cut SEPARATELY into each outer
+      # cradle wall (x=+19 and x=-19) as a shallow BLIND counterbore (depth 3.0),
+      # NOT one bore through both walls: a through-cut would swallow the coaxial
+      # phi10 horn passage and the surrounding M2 cross ring. The 2 faces are the
+      # two seat ENTRANCES (one per wall, from the outer face inward); the 1 axis
+      # is the common X line they share. This matches parts/_counterbore_x (blind).
+      axis_dir: [1.0, 0.0, 0.0]
+      centers_mm: [[-19.0, 0.0, 0.0], [19.0, 0.0, 0.0]]
+      through: false
+      through_evidence: "26.0 dia: 2 faces / 1 axis at x=+/-19 -> the servo-case
+        seat is a BLIND counterbore (depth 3.0) cut from each outer wall face
+        inward; the 2 faces are the per-wall seat entrances, NOT a through bore"
+      seat_role: servo_case_seat
+  - name: horn_idler_bore
+    type: bore
+    preserves: [output_axis]
+    constraints:
+      diameter_mm: 10.0
+      # C-B7 seat: horn/idler counterbore. measured dia 10.0.
+      axis_dir: [1.0, 0.0, 0.0]
+      centers_mm: [[-19.0, 0.0, 0.0], [19.0, 0.0, 0.0]]
+      through: true
+      through_evidence: "10.0 dia coaxial with 26.0 bore: 2 faces / 1 axis at
+        x=+/-19 -> idler/horn shaft passage through both walls"
+      seat_role: horn_idler_seat
+preserves_global:
+  output_axis: X            # servo output / idler axis is the global X line
+  joint_distance_mm: 132.0
+measured_families:           # snapshot of `cadre.cli inspect` ground truth (C-A2 ref)
+  - {diameter_mm: 2.4,  screw: M2, axes: 4, faces: 8, dir: [1,0,0]}
+  - {diameter_mm: 2.3,  screw: M2, axes: 2, faces: 4, dir: [1,0,0]}
+  # phi26: faces=2 are the two BLIND seat entrances (one per x=+/-19 wall), 1 axis
+  # is their common X line. This is a blind counterbore, NOT a through bore (CF-3).
+  - {diameter_mm: 26.0, screw: null, axes: 1, faces: 2, dir: [1,0,0]}
+  - {diameter_mm: 10.0, screw: null, axes: 1, faces: 2, dir: [1,0,0]}
+tests:
+  - axes_collinear            # output axis == idler axis
+  - hole_pattern_match        # mount holes match the servo spec
+  - envelope_clearance        # servo body fits with clearance
+  - min_wall_thickness        # >= 2.5 mm (manufacturability)

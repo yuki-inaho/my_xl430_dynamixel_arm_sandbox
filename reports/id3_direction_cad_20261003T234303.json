@@ -1,0 +1,63 @@
+{
+  "kind": "cad_derivation",
+  "motor_id": 3,
+  "opening_count_sign": 1,
+  "folded_count": 1153,
+  "folded_read": {
+    "log": "reports/live_20261003T234141_004377+0900.jsonl",
+    "sha256": "b3f66a77590c02cc4f7d2d17d3bd2a61a6de23e7fd2de1a08ad1ad1c9ff25972",
+    "frames": 188,
+    "excluded_fault_frames": 1,
+    "min": 1153,
+    "max": 1153,
+    "folded_count": 1153
+  },
+  "derivation": {
+    "j3_axis": [
+      1,
+      0,
+      0
+    ],
+    "j3_centre_mm": [
+      -0.2,
+      14.8,
+      164.6
+    ],
+    "idler_centre_x_mm": -17.45,
+    "horn_side_x": 1,
+    "case_bounds_mm": [
+      -17.200000000000003,
+      -20.4500000000015,
+      150.3499999999985,
+      20.7,
+      26.0500000000015,
+      178.8500000000015
+    ],
+    "case_link": "P03_shoulder_XL430",
+    "elbow_to_shoulder_mm": [
+      0.0,
+      -14.8,
+      -108.3
+    ],
+    "elbow_to_wrist_mm": [
+      0.0,
+      90.10000000000001,
+      0.0
+    ],
+    "folding_sign_about_x": -1,
+    "opening_count_sign": 1
+  },
+  "sources": {
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/arm-r3/manifest.json": "d2fa5203e88d36589c3083a1649467522f275b91f12e9c6040a95e8fc1188d21",
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/arm-r3/joints.json": "988890dd93df387ce22f027c10f9e7f3e4f7ac1841e010f18fd7aec47eebf7a7"
+  },
+  "physical_report": "user: ID3 is the elbow, fully folded; requested motion opens it",
+  "assumptions": [
+    "XL430 Drive Mode 0: position counts increase counter-clockwise seen from the horn",
+    "the horn is on the side opposite the idler",
+    "the printed arm matches the R3 layout at the elbow (photo check: R3 family)",
+    "fully folded means the forearm lies toward the upper arm by the short rotation"
+  ],
+  "runtime_check": "arm-id3-open aborts if ID3 does not progress in this direction within the early-progress window (a fold stop would block it)",
+  "created_at": "2026-10-03T23:43:04+09:00"
+}

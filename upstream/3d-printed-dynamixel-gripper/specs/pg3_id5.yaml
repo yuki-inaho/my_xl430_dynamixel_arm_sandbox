@@ -1,0 +1,43 @@
+schema_version: 1
+status: candidate_not_installation_approval
+user_decision: 2026-09-24_ID5_open_close_no_added_motor
+jaw_motor_physical_id: 5
+additional_motor_count: 0
+roll_required: false
+cad_placement:
+  target_reference: M05
+  origin_mm: [-0.2, 164.9, 164.6]
+  rotation_axis: [1.0, 0.0, 0.0]
+  rotation_degrees: -90.0
+  observed_physical_mapping_verified: false
+source_preservation:
+  immutable_source: references/arm-r3/arm_XL430_R3.step
+  removal_from_candidate: [M06_all_references, P06_fixed_gripper_XL430, P07_moving_gripper_XL430]
+  replacement: {M05_ref00: [PG3_XL430_fixed, PG3_XL430_horn]}
+  physical_motor_count_by_design: 5
+camera:
+  parent: P05_wrist_XL430
+  mounting_pattern_mm: [28.0, 28.0]
+  exact_model: null
+  current_geometry: inherited_side_bracket_requires_new_view_validation
+object:
+  shape: cube
+  required_edge_mm: null
+  diagnostic_edges_mm: [10, 20, 30]
+p05_cable_window_comparison:
+  adopted_in_main_candidate: false
+  implementation: gripper_design/p05_cable_relief.py
+  centre_y_mm: 151.0
+  end_centres_z_mm: [176.2, 181.2]
+  end_radius_mm: 1.5
+  width_mm: 3.0
+  full_height_mm: 8.0
+  wire_diameter_assumed_mm: 1.9
+  wire_bend_radius_assumed_mm: 1.2
+  nominal_sidewall_margin_mm: 0.55
+  actual_harness_fit_verified: false
+  structural_strength_verified: false
+release:
+  installation_approved: false
+  fabrication_approved: false
+  powered_operation_approved: false

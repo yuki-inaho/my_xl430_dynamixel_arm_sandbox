@@ -1,0 +1,32 @@
+[project]
+name = "dynamixel-gripper-handoff"
+version = "0.1.0"
+description = "Evidence-gated CAD handoff and a deliberately limited interface coupon"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "cadre",
+  "cadquery==2.7.0",
+  "cadquery-ocp==7.8.1.1.post1",
+  "mujoco==3.13.0",
+  "numpy>=2,<3",
+  "opencv-contrib-python-headless>=4.10,<5",
+  "pyyaml>=6,<7",
+]
+
+[tool.uv.sources]
+cadre = { path = "skills/cad-reverse-parametric", editable = true }
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<9",
+    "pytest-xdist>=3,<4",
+    "ruff>=0.11,<1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+exclude = ["skills", "references", "temp"]

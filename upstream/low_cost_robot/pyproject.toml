@@ -1,0 +1,19 @@
+[project]
+name = "low-cost-robot"
+version = "0.1.0"
+description = "Low cost robot arm with Dynamixel servos and MuJoCo simulation"
+requires-python = ">=3.10"
+dependencies = [
+    "dynamixel-sdk>=4.0.5",
+    "numpy",
+]
+
+[dependency-groups]
+sim = ["mujoco"]
+dev = ["pytest"]
+
+[tool.uv]
+default-groups = ["sim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
