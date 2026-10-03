@@ -64,6 +64,12 @@ committing. Warnings (large files, e-mail addresses, absolute home paths, conver
 exports, binaries) need a deliberate decision. Conversation exports are only committed when
 the user asked for them, and only to a private remote unless they say otherwise.
 
+Before the first commit there is no HEAD: `git restore --staged` and `git reset <path>` fail,
+so unstage with `git rm --cached <path>`. Run each commit as its own step and check its exit
+status; never chain a commit after a step that can fail with `;`, or the next commit will
+swallow everything still staged. If that happens before pushing, `git update-ref -d HEAD`
+removes a mistaken root commit while keeping the index; inspect, then commit again.
+
 For a first commit of a large workspace, split commits by purpose when it helps review
 (source and tests, records and reports, exported conversations). Do not invent history that
 did not happen; a single initial commit is fine when the parts are intertwined.
