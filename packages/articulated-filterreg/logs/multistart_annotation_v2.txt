@@ -1,0 +1,34 @@
+trial 000 completed score=0.1576242 IoU=0.90701 seconds=2.73
+trial 001 completed score=0.1572273 IoU=0.90698 seconds=2.71
+trial 002 completed score=0.1573706 IoU=0.90701 seconds=2.55
+trial 003 completed score=0.1580284 IoU=0.90678 seconds=2.61
+trial 004 completed score=0.1579993 IoU=0.90689 seconds=2.53
+trial 005 completed score=0.1574699 IoU=0.90702 seconds=2.52
+trial 006 completed score=0.1576680 IoU=0.90677 seconds=2.55
+trial 007 completed score=0.1579157 IoU=0.90691 seconds=2.50
+trial 008 completed score=0.1576234 IoU=0.90691 seconds=2.50
+trial 009 completed score=0.1575840 IoU=0.90692 seconds=2.51
+trial 010 completed score=0.1575227 IoU=0.90694 seconds=2.54
+trial 011 completed score=0.1578320 IoU=0.90696 seconds=2.54
+trial 012 completed score=0.1574827 IoU=0.90687 seconds=2.52
+trial 013 completed score=0.1575567 IoU=0.90696 seconds=2.54
+trial 014 completed score=0.1578242 IoU=0.90688 seconds=2.54
+trial 015 completed score=0.1575414 IoU=0.90695 seconds=2.56
+trial 016 completed score=0.1574690 IoU=0.90692 seconds=2.60
+trial 017 completed score=0.1577036 IoU=0.90700 seconds=2.53
+trial 018 completed score=0.1577836 IoU=0.90693 seconds=2.56
+trial 019 completed score=0.1576120 IoU=0.90705 seconds=2.65
+trial 020 completed score=0.1577782 IoU=0.90704 seconds=3.33
+trial 021 completed score=0.1576597 IoU=0.90708 seconds=2.51
+trial 022 completed score=0.1578895 IoU=0.90697 seconds=2.52
+trial 023 completed score=0.1573934 IoU=0.90692 seconds=2.52
+trial 024 completed score=0.1574291 IoU=0.90705 seconds=2.49
+trial 025 completed score=0.1575053 IoU=0.90690 seconds=2.53
+trial 026 completed score=0.1578801 IoU=0.90698 seconds=2.59
+trial 027 completed score=0.1575828 IoU=0.90699 seconds=2.55
+trial 028 completed score=0.1578136 IoU=0.90682 seconds=2.44
+trial 029 completed score=0.1576791 IoU=0.90703 seconds=2.46
+trial 030 completed score=0.1575230 IoU=0.90693 seconds=2.48
+trial 031 completed score=0.1573010 IoU=0.90702 seconds=2.55
+BEST 1 {'selection_score': 0.15722733779558395, 'iou': 0.906978908765986, 'foreground_intersection_px': 48722, 'foreground_union_px': 53719, 'predicted_visible_pixels': 51879, 'observed_foreground_pixels': 50562, 'symmetric_cloud_rmse_depth_units': 0.019365936000665423, 'symmetric_cloud_trim90_rmse_depth_units': 0.0045844475405806134, 'symmetric_cloud_trim90_rmse_cad_equivalent_mm': 2.719543468441084, 'training_landmark_rmse_px': 0.9192876074602556, 'training_landmark_errors_px': [0.17905539458554, 0.4794606571961885, 0.9790751591684124, 0.8717066552149986, 1.4983472594742677], 'overlap_depth_median_abs_error_units': 0.005768656487122548, 'overlap_depth_rmse_units': 0.03168090849549838, 'scale_depth_units_per_meter': 1.685741593683201, 'score_definition': '(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)', 'metric_warning': 'CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy.'}
+TOTAL_SECONDS 85.13941184299983

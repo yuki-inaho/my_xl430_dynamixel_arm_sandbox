@@ -1,0 +1,9 @@
+{
+  "sigma": 0.012,
+  "observations": 700,
+  "queries": 150,
+  "valid_queries": 150,
+  "lattice_vs_exact_centroid_median_error": 0.0018108562612789572,
+  "lattice_vs_exact_centroid_p95_error": 0.004312829092090619,
+  "note": "No-blur permutohedral is an approximation, not exactly equal to the Gaussian oracle; recorded without treating density gains as exact."
+}

@@ -1,0 +1,15 @@
+{
+  "source": "diary/2026-10-04/articulated-fit/live-mask768/poses.jsonl",
+  "window_requested_seconds": 30.0,
+  "window_observed_seconds": 22.802175777003868,
+  "records": 26,
+  "status_counts": {
+    "tracking": 19,
+    "reacquiring": 2,
+    "lost": 5
+  },
+  "distinct_successful_poses": 19,
+  "successful_pose_hz": 0.8332538169081923,
+  "successful_publication_age_p95_seconds": 0.17905613039765733,
+  "note": "Includes lost/reacquisition gaps; publication age excludes subsequent browser delay. A short observation window is not proof of sustained performance."
+}

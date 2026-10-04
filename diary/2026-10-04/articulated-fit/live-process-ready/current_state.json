@@ -1,0 +1,88 @@
+{
+  "status": "tracking",
+  "sequence": 3169,
+  "pose": {
+    "rotation_camera_from_reference": [
+      [
+        -0.24795933469226275,
+        0.9680555838953714,
+        0.037209606662295086
+      ],
+      [
+        0.1772246189028267,
+        0.08308856750314193,
+        -0.9806567821643948
+      ],
+      [
+        -0.9524219667740339,
+        -0.23656854490668874,
+        -0.1921658678512224
+      ]
+    ],
+    "translation_depth_units": [
+      0.051337054033190506,
+      0.14564361409997958,
+      0.39876344039602424
+    ],
+    "log_scale": 0.0,
+    "scale_depth_units_per_meter": 1.0,
+    "meters_per_depth_unit": 1.0,
+    "joint_angles_rad": [
+      0.0011630089075695825,
+      -0.6944840532546106,
+      -1.441699408564962,
+      2.047668541182336
+    ],
+    "joint_angles_deg": [
+      0.06663550193985754,
+      -39.79100519062789,
+      -82.60329143727925,
+      117.32276525145807
+    ],
+    "J5": null,
+    "J5_reason": "unobservable without downstream installed geometry"
+  },
+  "quality": {
+    "iou": 0.7480579096045198,
+    "median_surface_residual_m": 0.003270066646489228,
+    "p90_surface_residual_m": 0.01411136742867228,
+    "scale": 1.0,
+    "observed_points": 1200
+  },
+  "reason": null,
+  "pose_hz": 4.590711237573286,
+  "frame_age_seconds": 0.48171383299632,
+  "frame_received_monotonic": 107156.72811121,
+  "mask_age_seconds": 0.18762841100397054,
+  "registration_seconds": 0.06603692501084879,
+  "model": "current_arm_r3_d405_r5_65.npz",
+  "gaussian_backend": "native",
+  "metadata": {
+    "serial": "922612070196",
+    "device": "RealSense D435",
+    "host_received_at": "2026-10-04T11:39:52.546931+00:00",
+    "color_timestamp_ms": 1791113992455.8125,
+    "depth_timestamp_ms": 1791113992455.7886,
+    "timestamp_domain": "timestamp_domain.global_time",
+    "raw_depth_scale_m": 0.0010000000474974513,
+    "intrinsics_original": {
+      "fx": 925.4581298828125,
+      "fy": 925.7662963867188,
+      "ppx": 645.314453125,
+      "ppy": 360.0555419921875,
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model": "distortion.inverse_brown_conrady"
+    },
+    "processed_resolution": [
+      640,
+      360
+    ],
+    "rectified": false
+  }
+}

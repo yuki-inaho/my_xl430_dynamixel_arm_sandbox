@@ -1,0 +1,14 @@
+{
+  "timestamp_jst": "2026-10-04T19:40:40+09:00",
+  "archive": "/mnt/data/robot_fit_20261004.zip",
+  "archive_bytes": 26836907,
+  "archive_sha256": "6a10f1c92577ee6920017348d49497b7116fe17a61076eb54ce90a5500ff0229",
+  "extracted_root": "/mnt/data/robot_fit_package_check/robot_fit_20261004",
+  "file_count_including_manifest": 545,
+  "crc_passed": true,
+  "all_hashes_and_sizes_match": true,
+  "member_set_matches_manifest": true,
+  "fonts_included": false,
+  "build_artifacts_included": false,
+  "passed": true
+}

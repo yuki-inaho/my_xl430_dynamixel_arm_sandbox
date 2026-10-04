@@ -1,0 +1,121 @@
+{
+  "status": "tracking",
+  "sequence": 46025,
+  "pose": {
+    "rotation_camera_from_reference": [
+      [
+        -0.33817671831764046,
+        0.9405501973273949,
+        0.031651753431864264
+      ],
+      [
+        0.14595825546833693,
+        0.08564657734977889,
+        -0.9855764056880165
+      ],
+      [
+        -0.9296949471996452,
+        -0.32867915981344015,
+        -0.16624474444559276
+      ]
+    ],
+    "translation_depth_units": [
+      0.0519135460533678,
+      0.14492900985333115,
+      0.39582279808426607
+    ],
+    "log_scale": 0.0,
+    "scale_depth_units_per_meter": 1.0,
+    "meters_per_depth_unit": 1.0,
+    "joint_angles_rad": [
+      0.1306423535590278,
+      -0.6620213683818147,
+      -1.38200094941981,
+      2.056923059929393
+    ],
+    "joint_angles_deg": [
+      7.485255484588203,
+      -37.93103035575351,
+      -79.18282168482787,
+      117.85301011708911
+    ],
+    "J5": null,
+    "J5_reason": "unobservable without downstream installed geometry"
+  },
+  "quality": {
+    "iou": 0.8420195439739414,
+    "median_surface_residual_m": 0.002543508171570125,
+    "p90_surface_residual_m": 0.011263378181278436,
+    "scale": 1.0,
+    "observed_points": 1200
+  },
+  "reason": null,
+  "pose_hz": 14.313264251741119,
+  "frame_age_seconds": 0.07904798399249557,
+  "frame_received_monotonic": 111035.036933337,
+  "mask_age_seconds": 0.1985000729910098,
+  "mask_received_monotonic": 111034.917481248,
+  "registration_seconds": 0.03151053300825879,
+  "model": "current_arm_r3_d405_r5_65.npz",
+  "model_sha256": "cc15059b6256b1cf88452d3c85a5a0f8861b08ce00978c9e498f86208ce9dcf0",
+  "gaussian_backend": "native",
+  "metadata": {
+    "serial": "922612070196",
+    "device": "RealSense D435",
+    "host_received_at": "2026-10-04T12:44:30.857125+00:00",
+    "color_timestamp_ms": 1791117870783.6082,
+    "depth_timestamp_ms": 1791117870750.2268,
+    "timestamp_domain": "timestamp_domain.global_time",
+    "raw_depth_scale_m": 0.0010000000474974513,
+    "intrinsics_original": {
+      "fx": 925.4581298828125,
+      "fy": 925.7662963867188,
+      "ppx": 645.314453125,
+      "ppy": 360.0555419921875,
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model": "distortion.inverse_brown_conrady"
+    },
+    "processed_resolution": [
+      480,
+      270
+    ],
+    "rectified": false
+  },
+  "segmentation_rejections": 0,
+  "raw_mask_rgb": "segmentation-046022.png",
+  "raw_mask_image": "segmentation-046022.raw-mask.png",
+  "raw_mask_metadata": {
+    "serial": "922612070196",
+    "device": "RealSense D435",
+    "host_received_at": "2026-10-04T12:44:30.736248+00:00",
+    "color_timestamp_ms": 1791117870683.5364,
+    "depth_timestamp_ms": 1791117870683.5125,
+    "timestamp_domain": "timestamp_domain.global_time",
+    "raw_depth_scale_m": 0.0010000000474974513,
+    "intrinsics_original": {
+      "fx": 925.4581298828125,
+      "fy": 925.7662963867188,
+      "ppx": 645.314453125,
+      "ppy": 360.0555419921875,
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model": "distortion.inverse_brown_conrady"
+    },
+    "processed_resolution": [
+      480,
+      270
+    ],
+    "rectified": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source": "diary/2026-10-04/articulated-fit/live-final/poses.jsonl",
+  "window_requested_seconds": 180.0,
+  "window_observed_seconds": 179.98011398600647,
+  "records": 2854,
+  "status_counts": {
+    "tracking": 2836,
+    "reacquiring": 18
+  },
+  "distinct_successful_poses": 2836,
+  "successful_pose_hz": 15.757296387869275,
+  "successful_publication_age_p95_seconds": 0.12798464050138136,
+  "note": "Includes lost/reacquisition gaps; publication age excludes subsequent browser delay. A short observation window is not proof of sustained performance."
+}

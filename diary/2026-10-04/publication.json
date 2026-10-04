@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-04T23:55:24.315447+09:00",
+  "remote": "https://github.com/yuki-inaho/my_xl430_dynamixel_arm_sandbox",
+  "visibility": "PRIVATE",
+  "branch": "main",
+  "parent_head": "2b3185b1f2b5708e0bb934bc19f0f1aeb24569e4",
+  "staged_files": 1290,
+  "staged_bytes": 356031971,
+  "blockers": 0,
+  "warnings": 761,
+  "warning_decision": "Authorized private diary export: retain pictures, compressed conversations, local evidence paths and upstream author attribution. Secret-looking data redacted before compression.",
+  "whitespace": {
+    "full_check_exit": 2,
+    "original_vendor_results_STEP_preserved": true,
+    "maintained_paths": 835,
+    "maintained_check": "PASS"
+  },
+  "excluded": [
+    "unrelated untracked reports",
+    "continuous unselected frames",
+    "build/cache artifacts",
+    "invalid last-good-pose cache"
+  ],
+  "conversation": "149533744-byte faithful JSON local; 103813834-byte gzip in five <=25MB parts; original restoration SHA matched;107 API users plus1 later user API record in sidecar",
+  "push_verified": false
+}

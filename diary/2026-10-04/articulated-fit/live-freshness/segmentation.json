@@ -1,0 +1,9 @@
+{
+  "model_id": "ZhengPeng7/BiRefNet_lite",
+  "revision": "aa62cd87eafb9cc43056d08ef3615a14628b831d",
+  "input_size": 512,
+  "threshold": 0.5,
+  "device": "cuda",
+  "precision": "float16",
+  "last_inference_seconds": 1.090057531997445
+}

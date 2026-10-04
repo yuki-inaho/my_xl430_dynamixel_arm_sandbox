@@ -1,0 +1,127 @@
+[
+  {
+    "run": "open-close-run",
+    "status": "candidate stopped; see actual positions",
+    "id5_min_max_counts": [
+      2067,
+      2105
+    ],
+    "max_abs_pwm": 150,
+    "max_abs_load": 169,
+    "other_axis_max_change": 1,
+    "write_ids": [
+      5
+    ],
+    "final_release": {
+      "kind": "released",
+      "at": "2026-10-04T23:16:15.854+09:00",
+      "host_unix_s": 1791123375.8547425,
+      "final": {
+        "torque_enable": 0,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      }
+    }
+  },
+  {
+    "run": "open-close-retry",
+    "status": "candidate stopped; see actual positions",
+    "id5_min_max_counts": [
+      2105,
+      2113
+    ],
+    "max_abs_pwm": 250,
+    "max_abs_load": 282,
+    "other_axis_max_change": 1,
+    "write_ids": [
+      5
+    ],
+    "final_release": {
+      "kind": "released",
+      "at": "2026-10-04T23:19:20.999+09:00",
+      "host_unix_s": 1791123560.999535,
+      "final": {
+        "torque_enable": 0,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      }
+    }
+  },
+  {
+    "run": "open-close-photo-output",
+    "status": "candidate stopped; see actual positions",
+    "id5_min_max_counts": [
+      2107,
+      2281
+    ],
+    "max_abs_pwm": 300,
+    "max_abs_load": 334,
+    "other_axis_max_change": 1,
+    "write_ids": [
+      5
+    ],
+    "final_release": {
+      "kind": "released",
+      "at": "2026-10-04T23:29:19.781+09:00",
+      "host_unix_s": 1791124159.7812474,
+      "final": {
+        "torque_enable": 0,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      }
+    }
+  },
+  {
+    "run": "open-close-final",
+    "status": "candidate stopped; see actual positions",
+    "id5_min_max_counts": [
+      2281,
+      2487
+    ],
+    "max_abs_pwm": 265,
+    "max_abs_load": 279,
+    "other_axis_max_change": 1,
+    "write_ids": [
+      5
+    ],
+    "final_release": {
+      "kind": "released",
+      "at": "2026-10-04T23:31:32.189+09:00",
+      "host_unix_s": 1791124292.1899157,
+      "final": {
+        "torque_enable": 0,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      }
+    }
+  },
+  {
+    "run": "open-close-return",
+    "status": "closed/returned/released",
+    "id5_min_max_counts": [
+      2091,
+      2487
+    ],
+    "max_abs_pwm": 240,
+    "max_abs_load": 269,
+    "other_axis_max_change": 1,
+    "write_ids": [
+      5
+    ],
+    "final_release": {
+      "kind": "released",
+      "at": "2026-10-04T23:33:54.193+09:00",
+      "host_unix_s": 1791124434.193801,
+      "final": {
+        "torque_enable": 0,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      }
+    }
+  }
+]

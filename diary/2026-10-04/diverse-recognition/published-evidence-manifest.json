@@ -1,0 +1,1877 @@
+[
+  {
+    "path": "diary/2026-10-04/articulated-fit/REPORT.html",
+    "bytes": 13712,
+    "sha256": "4bb4d16df3a8117867099acf196c23b47acfab39891390767d8764b32be35fa2"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/automatic-segmentation/evaluation.json",
+    "bytes": 345,
+    "sha256": "9464250e4fdd6e05334d08c33762cda884cd25e4858a21bfec822bf7043ef2b0"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/automatic-segmentation/original-auto-mask.png",
+    "bytes": 4244,
+    "sha256": "099012521617b142b26455154f1406d59006e6b8d42b703791fa1b81643f9cf8"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/automatic-segmentation/original-foreground.png",
+    "bytes": 301653,
+    "sha256": "fd2d69d05e1188da4e1fe4bcbe0d657a5b7582e0307de2d83a5131bde97b006e"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/aligned_depth.png",
+    "bytes": 357139,
+    "sha256": "24821febbb692571bddc3bc8397e136e5c8db4162b5ee200b329aeedcba3661f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/anchored_fit.json",
+    "bytes": 1194,
+    "sha256": "1d0a300212339959faa71f65baac9294b7322a0384230f587ff0b0ecbda06e29"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/anchored_overlay.png",
+    "bytes": 394596,
+    "sha256": "f54f0d4685297461adb96ca4268034bc2224d1f5aba66ee32e9aedad077d1de1"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/assisted_fit.json",
+    "bytes": 1196,
+    "sha256": "195d7eaf6d8947ff105d1f46c3114a4056fa6dfdcef48ff446a9b92a6185dfc3"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/assisted_overlay.png",
+    "bytes": 392762,
+    "sha256": "5ec4d50f60ba277ee7b9a83b0d162b6f4edcad80b1465c1c63b30aec2269e9d9"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/automatic_foreground.png",
+    "bytes": 984627,
+    "sha256": "83ed853bf4a8a2f3343037941837d66073b08456fceed1360267f037634667ea"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/automatic_mask.png",
+    "bytes": 7575,
+    "sha256": "8553d32a5088f8addb022db68143c8aa017a86ce1cca81cbe60d8c25647038f9"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/broad_fit.json",
+    "bytes": 1201,
+    "sha256": "1cc56473f8f979685aa77033f9e4ea6585394f5b29d83837489f3e07a080c77c"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/broad_overlay.png",
+    "bytes": 396321,
+    "sha256": "b783291799bd79a2d06719b3a8a84f2efb86ae61da7d887736f193218da5636a"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/calibration.toml",
+    "bytes": 1186,
+    "sha256": "08b3ebb96850c59e3b8600b5ef65464ae5ca674800ffb9ef56706fb42842eb1d"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/cleaned_fit.json",
+    "bytes": 1202,
+    "sha256": "b10b250d6e5c200d59251553e7d65fbb08155482034ba3ec9f42128be7db2d26"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/cleaned_overlay.png",
+    "bytes": 396368,
+    "sha256": "cca1df41d6314e00060404e91734f5bba6ea0befaaec13980be57cf8b40fad6e"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/color.png",
+    "bytes": 1445782,
+    "sha256": "5471035fd91b0cc9178e68594fa7f2b98fef8a3a2749a6347544cc9cb40b91ff"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/depth.png",
+    "bytes": 376120,
+    "sha256": "d9666f5fc643de3a20b63768c44684914e37514f87ee89c5c2ddd20e4dded586"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/depth_preview.png",
+    "bytes": 273499,
+    "sha256": "6146bc2b391695e484881ffc36eb5f7cccb8f46e494d17b503143ea5d1eeb828"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/foot_fit.json",
+    "bytes": 1191,
+    "sha256": "1b15e67396b07f0f53ea3864752284717e9f0a6a0487ad37c913e113d40faf5b"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/foot_overlay.png",
+    "bytes": 396681,
+    "sha256": "ba5f8414e8aca21211c9ce2f9e141d5df7c2ae47c0e346b55040f4db6621d635"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/initial_fit.json",
+    "bytes": 1191,
+    "sha256": "0cbb3399070e24e80a4df7dd086d1945f868b99c4e289beb4e246c24e9eaadf8"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/initial_overlay.png",
+    "bytes": 396839,
+    "sha256": "24bc4b2ce3be756d1580468c0cd73720b4a257ed9cd26bab1a8519d1ae2a30c1"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/ir_left.png",
+    "bytes": 569718,
+    "sha256": "72f1dd9f57040e84ba1a86a2f48a6205df48b4c81a1b2c4213c16efcef9283a8"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/ir_right.png",
+    "bytes": 573820,
+    "sha256": "5a7647282aa991b7469d6d578b2d15127dfa883cf60ea2d643f096276ca3b5ab"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/metadata.json",
+    "bytes": 2535,
+    "sha256": "e25bf6ac99dbda8328b362f0adf702f76fb6a260a237371ca9440e9c4db994b9"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/registration_mask.png",
+    "bytes": 2942,
+    "sha256": "1f4a4f4af4462863a1a0070974e45e7587e200a937fb2a192260ec09fb3d57ef"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/segmentation.json",
+    "bytes": 239,
+    "sha256": "0e3cf15a68a8c820f4ee37dceb23f8f8de0be3376b8d2e40c105a45222d6e3ab"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/upright_fit.json",
+    "bytes": 1192,
+    "sha256": "df31e61fe62fb782d94b8762c79f4078a69abdc90ddffa6b15346042bf697a4c"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/d435-source-inspection/upright_overlay.png",
+    "bytes": 396681,
+    "sha256": "ba5f8414e8aca21211c9ce2f9e141d5df7c2ae47c0e346b55040f4db6621d635"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/input_manifest.json",
+    "bytes": 104984,
+    "sha256": "ae03ff5a923bb03237aac2fd39a91e67f186b756914d482125ada00e98b01569"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-async/poses.jsonl.gz",
+    "bytes": 51919,
+    "sha256": "1a0a74a801ebf598d8ee5f73097b67e6d32d58ce253ccef1753426319551b3b7"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-async/segmentation.json",
+    "bytes": 238,
+    "sha256": "25261ec35018d9bbd452dc2787cdc78f19ce789506690f130290e1001f7136d5"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/frame-032321.json",
+    "bytes": 3219,
+    "sha256": "b7c6d4a2ec112b75cdac99340c8b1c1a5bf97cfb297e049ad5eaf758982cba55"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/frame-032321.mask.png",
+    "bytes": 2113,
+    "sha256": "5fa4b5c7197bd207dca7df75258f9aaee519a988dcc0ef9bd67e6c31293febbe"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/frame-032321.npz",
+    "bytes": 97933,
+    "sha256": "8e46543c584503cae6a4edc8f3eb15c6e9b8684b84c7c9d1e88650bc277268c4"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/frame-032321.png",
+    "bytes": 218163,
+    "sha256": "cbc9c02711222616b91c5ed472893838a09b415818d5fc578281a02f5c752568"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/last-good-pose.json",
+    "bytes": 3218,
+    "sha256": "f8c3e7c80891ae2267e67a6de32a395fbf8b35ed817c22aeb9b663e8856293d8"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/performance.json",
+    "bytes": 533,
+    "sha256": "b7a94404afd904ed214644efe2127af6625bacf6a0f827eeae3847e3b754f602"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/poses.jsonl.gz",
+    "bytes": 5124261,
+    "sha256": "ed6a4647218b0cb52b6fec57adb84621133c443c04fa6229ef37a7022ccf167c"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/segmentation-032313.png",
+    "bytes": 218951,
+    "sha256": "d397cba1c7677739275c53358e86a18d7a0038855759dbefcfedc3b6ee3da43f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/segmentation-032313.raw-mask.png",
+    "bytes": 2267,
+    "sha256": "4c04568e66b30353f5fd1066d1cd18fd3cab49699a4653d6a08af068994301c2"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/segmentation.json",
+    "bytes": 258,
+    "sha256": "4b15cc3ad937c77ff94df180ba3450e0f842bf9af41f273f9bc6360a67fb052d"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-final/viewer.png",
+    "bytes": 492309,
+    "sha256": "b08efc30e870c6a1375b81df66aaafb56a8894346af431fc457bfae25080c016"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-first/poses.jsonl.gz",
+    "bytes": 722,
+    "sha256": "5ddac2d5d7d15476130f7a2e8b93d6edb94c4c0ffe9d702f4be33a8cff581f6e"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-first/segmentation.json",
+    "bytes": 237,
+    "sha256": "ca7d04c2f6bfa1db13b39c8c390818c40de4ca7e41cd270b648ddfba916eb2d8"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-flow-small/poses.jsonl.gz",
+    "bytes": 106111,
+    "sha256": "35b29d00e1b2ad1f6c662bf98f1d74fcb8df27702ae7578832c1ab680e39525f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-flow-small/segmentation.json",
+    "bytes": 238,
+    "sha256": "bf3048305b06b06d8c2b9993b65d180a2af6678e614d411cab699156f3cc50af"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-freshness/poses.jsonl.gz",
+    "bytes": 2285,
+    "sha256": "c02d7382e8d26011dc455be09168fb93c7e5d22792564676788d04bcb127d5ab"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-freshness/segmentation.json",
+    "bytes": 236,
+    "sha256": "c81f9ec01e38ce7fa90482feac51375b97acd068581438e8da15b2bc38730093"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-mask768/performance.json",
+    "bytes": 568,
+    "sha256": "590fcbec4a78344d81c346a615e1e0e63013eef1a125e4799e3f4d6f3e7e624d"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-mask768/poses.jsonl.gz",
+    "bytes": 95714,
+    "sha256": "3d6a7eacba4e6e41940963be0a2e8afe9a79782b58f81ca95b1b44afcd349c26"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-mask768/segmentation.json",
+    "bytes": 258,
+    "sha256": "f6ab0cc0d49a713a895bfebe3cefa3e5b013f0e3897713d0e9e19808ec54bc1c"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-open-elbow/poses.jsonl.gz",
+    "bytes": 1502,
+    "sha256": "2a68031210d143964bf7b30e6f83503ff97de82a7db358da0b0783a7c0549765"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-open-elbow/segmentation.json",
+    "bytes": 236,
+    "sha256": "1d7750b0cd5c2d9b0048cd1e649fe08d1abcaa7e10687007ee57d45d6229ca00"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-open30-full-mask/performance.json",
+    "bytes": 576,
+    "sha256": "4e7261586ea26a7f670dd1a1aebf3e03a03d4d345d456c55411717803303a712"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-open30-full-mask/poses.jsonl.gz",
+    "bytes": 59381,
+    "sha256": "ea90f2f76aeee762373ce46b1f1dfd194a566d4100309ea896bdc1a858a8959c"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-open30-full-mask/segmentation.json",
+    "bytes": 237,
+    "sha256": "d0b862470b8f3f2d140cd972323d8c197d8fe1940010398a2432500a0977d062"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-poll/poses.jsonl.gz",
+    "bytes": 3171,
+    "sha256": "3fa1585fbd7a596333837ba3749657eedcf38f7defaa1e2d7d5a4aa26521c71d"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-poll/segmentation.json",
+    "bytes": 237,
+    "sha256": "c3cea9a06d00ef9d60fd4d0d5e4fd6970286321c514ee07eab359df99d09f56e"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-process-ready/current_state.json",
+    "bytes": 2224,
+    "sha256": "695e5a287c08c069aaeadfc3bbf0b8f51a86bccb5deb5b2fe30a593e7860ce14"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-process-ready/poses.jsonl.gz",
+    "bytes": 71486,
+    "sha256": "7d62f0161e0f9580b722f35e4e3193c7dd93ac2b78195a2c19cf8902679343be"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-process-ready/segmentation.json",
+    "bytes": 238,
+    "sha256": "21bf0e41758873c41de5fed769eb9b61b48b80ad60a97ef74d90e650ae3f7217"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-quality-mask/performance.json",
+    "bytes": 571,
+    "sha256": "f14aac0c8356aa0fb8003c1e30e78d4068eb65b267848e23a188e9e9b3eae855"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-quality-mask/poses.jsonl.gz",
+    "bytes": 117144,
+    "sha256": "d24e0af840abb8170f309e4b667b8113133a41f60d23bea52dd306696da7ca88"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-quality-mask/segmentation.json",
+    "bytes": 238,
+    "sha256": "2dee2305ecf0d797a236f476eec9832e5920ddd9eb24b0ab912099e510ff855f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-quality-mask/viewer.png",
+    "bytes": 479509,
+    "sha256": "722cfe24c5a4e525d536a7507a99ebf0d8418376363a4ca0d1c2c30c08e1ce6f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-seeded768/http-age.json",
+    "bytes": 264384,
+    "sha256": "d836e53d1f508c25c78ee694b5a31901a9ccc29f30c3e4ebdfdbbb24e8622df5"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-seeded768/performance.json",
+    "bytes": 558,
+    "sha256": "6f477acddb9372badbfc165e01556bb540abd8009de6d413efdf4682e9a31c19"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-seeded768/poses.jsonl.gz",
+    "bytes": 1218372,
+    "sha256": "11f89b2c45b3f4da476b5839dad9c3321b1c086fb7076242a2abf23678aa937b"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-seeded768/segmentation.json",
+    "bytes": 258,
+    "sha256": "04db897fcb9162184346c4ba13afe356f6411e8e5704c47b909747ba95bfd49b"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-stable-mask/poses.jsonl.gz",
+    "bytes": 25239,
+    "sha256": "0d11c7e552bc47b583e2e755f3e9d6d3f813e7d0d797555b78b355e69eb3e78c"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-stable-mask/segmentation.json",
+    "bytes": 237,
+    "sha256": "1fc57ce6348a82c2a1628ff6e0b7b52f6d8097ba7f9956f74c84a49a82a2b9e4"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-width480/poses.jsonl.gz",
+    "bytes": 65191,
+    "sha256": "b36055085ee61eb1f9566a7446df07455fe69af0236081ff04202ad5f7cdd723"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/live-width480/segmentation.json",
+    "bytes": 238,
+    "sha256": "56cc0c77e5600b490c5816dcc013e3cfd874a8e385251f6bbe7f1e8ed3c2bcc4"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/native-build.json",
+    "bytes": 233,
+    "sha256": "858734ca8a0d4832ed2f40d470baaa40a3dbb15f5768a7449722956c00e9706f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/events.jsonl",
+    "bytes": 765472,
+    "sha256": "5e7580dc0f6ae14c92bc962790bf07cabe1b852ea0ba32e4fb247bba78861023"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/neutral/color.png",
+    "bytes": 222166,
+    "sha256": "48b95c63cf879934114f0dd16108539e2b906a9dee053f127b3f991f5c2d473e"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/neutral/metric-depth-K.npz",
+    "bytes": 98926,
+    "sha256": "64eff0cfdb9d102ad42fd0eedee33e97675d3c2f59ef4601e659ca5184d7aa63"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/neutral/source-metadata.json",
+    "bytes": 2007,
+    "sha256": "d60586ef120a92d76d5b9671eb01f9a506e58df85dacfabbe31f233642b0ea14"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/open-10.jpg",
+    "bytes": 50048,
+    "sha256": "55d96945f97903f6eb0c123e448a564b005c73200695b1c1d75029b7574826a7"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/open-20.jpg",
+    "bytes": 48974,
+    "sha256": "f26d6897f6ccdfc783caffa6745a6130ddd29c1adf324c4df7e666c58712ceea"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/open-30-overlay.jpg",
+    "bytes": 90486,
+    "sha256": "0a43e98ad3685c1fe3f7038276904a7c02f58cbec1a9313ab86345ede1a8790f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/open-30-viewer.png",
+    "bytes": 575328,
+    "sha256": "f63799d6910223b5cf041e06e9715fb6c09bcceb377b293c60db4f06ebadbf6b"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/open-30.jpg",
+    "bytes": 48971,
+    "sha256": "92445c60296a44164785ecedbe617b93fed667b28a72a12116a67bb9961619fa"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/plan.json",
+    "bytes": 3195,
+    "sha256": "53a680fc0b78f27d4c6af3da2dd67a7e8c3dae6c3c8e9c71bd893050f8ad4287"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/returned.jpg",
+    "bytes": 90167,
+    "sha256": "41493bf020721ae6e08e5d56bef93348b9bb0c89703775531ac91fcc6c7a2342"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion/vision-seed.json",
+    "bytes": 2603,
+    "sha256": "da938cc81289ee8a8867a09a38b83ced8c8b0e337bf26c1f6452cfed846a4e4d"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion-confirmed/before-state.json",
+    "bytes": 1854,
+    "sha256": "fd8f82c12bceeb3920c388b8f111d6bf35808a748580390b3b1d3bb9d17c4e30"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion-confirmed/events.jsonl",
+    "bytes": 316907,
+    "sha256": "05f4c38ce4cb21ba28fee9aa1f6599822088bf2ad8dcb6afb068669882d30a22"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion-confirmed/neutral/color.png",
+    "bytes": 225537,
+    "sha256": "239203273e97d8337f7ddd634def3dbe166f6847a73cfe285a4001abc917802a"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion-confirmed/neutral/metric-depth-K.npz",
+    "bytes": 97621,
+    "sha256": "0dc5fde557099dc5e3730cd24c3fd5f55a5004a47a525aab411593739cb4f333"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion-confirmed/neutral/source-metadata.json",
+    "bytes": 3133,
+    "sha256": "6ba1cec300b06f04e74634d78cc08b6afb42c06656ed3444a4e58a37f3594be0"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion-confirmed/open-20-overlay.jpg",
+    "bytes": 49260,
+    "sha256": "dd49a0838bc69cd36bd62cc48d289a225c0776ba54608e1c84160b36c8368f69"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion-confirmed/open-20-state.json",
+    "bytes": 1852,
+    "sha256": "11566c5c3a3f588b984f016543b2b95870b2af3e0ee8475dd9bf752b194c5d2c"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recognition-motion-confirmed/plan.json",
+    "bytes": 3195,
+    "sha256": "22575f58777ea76c1ee39131cda71b1a4695ff5d18830fddf506f1c8f7aef574"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/neutral.png",
+    "bytes": 396294,
+    "sha256": "1e2284af7be2538e8ef6c3cf42058801eb1ddc1de9a91711f67221f703e1e5e6"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_01.png",
+    "bytes": 400766,
+    "sha256": "140d4a2a4246373b162341d0d74840cf555c401a5be01bac8f34c1f3288d7532"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_02.png",
+    "bytes": 393813,
+    "sha256": "9938bc9d3f900b37dae1e935c34285d2ba0dfa0373dfd560b73d1f602c9773ef"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_03.png",
+    "bytes": 394466,
+    "sha256": "36cb480522b19c6512a1fcfe5a008a3ac8143b32cedcd601021c61cdfbffb153"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_04.png",
+    "bytes": 394291,
+    "sha256": "b2cf47540277167bd4967a3e5dfde49f1b77e792b0821567171819f086471a1a"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_05.png",
+    "bytes": 396792,
+    "sha256": "c4630b64e8a26828261fda60087a830aa64dfa4068d459b4053403efd20ff1cc"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_06.png",
+    "bytes": 396893,
+    "sha256": "f1fdf0a6b65e8764ac0305ab88e889c8378637f9961b49161f71df49bd65d443"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_07.png",
+    "bytes": 404001,
+    "sha256": "347d34efb934fc44c22a2ca7b5865d95e691c8b90a65ad80466623a45263c00f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_08.png",
+    "bytes": 404256,
+    "sha256": "8145d383e802f62d825a827477995b6932bfdee0e64e1c02af7e580f50c99ffe"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_09.png",
+    "bytes": 403709,
+    "sha256": "6baab2e74e2d5e576b4f106501717375198cb99bc8f201a3a80c68220d8d87da"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_10.png",
+    "bytes": 402398,
+    "sha256": "768d5a3729609d66397d627b6a82b3803f5f63cdb10da29938b6f6d2497233c3"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_11.png",
+    "bytes": 394863,
+    "sha256": "5f059c6be7a962d92ab13d8b7a7477801148cff2f1353c1412e9332a0451f856"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_12.png",
+    "bytes": 397913,
+    "sha256": "2e503a868a03073d9ee6ca733b61a24913646089c876754d35f662d9d438d55c"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_13.png",
+    "bytes": 391224,
+    "sha256": "a6f7076a3816381e7bf249fa976a85f364d140452990cae3ce2d4d778d7f0ed0"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_14.png",
+    "bytes": 391111,
+    "sha256": "06f79aa90c848572c00fbfb88daa0ba99b3196a646043704180420efaaf34fed"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_15.png",
+    "bytes": 390676,
+    "sha256": "b6b6ae32ce07cb4882fe83d9ac0a6dbb2ee8d95611245ec7526ec78375a97cc1"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_16.png",
+    "bytes": 390337,
+    "sha256": "61c08cfc0ce2d07335206d485b92431a69e56376f27bb0aaaae787022ea20274"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_17.png",
+    "bytes": 390476,
+    "sha256": "b88d0a28139a853d5b1aca789ffcb4662837f04c44f7f9d8a0c7689d85a6b460"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_18.png",
+    "bytes": 391578,
+    "sha256": "a9dd2b374b0609803b31023f29bf39d12ae4736f964f1f2bac1370026bb2bdbd"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_19.png",
+    "bytes": 392282,
+    "sha256": "ab7e70ed13dcfe6547b935150b8b67d2b04830614c6bcc600c8ff677d510fdec"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/pose_20.png",
+    "bytes": 390713,
+    "sha256": "48076cdeb66d5ff6356a46fe58ba2f048552f9e1484356008d57a947547e89c5"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/poses.json",
+    "bytes": 31138,
+    "sha256": "4964c5e6f27e9e1395786d67fd0b62e1cf2510f3b0420da552ac245313a99e82"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/recorded-poses/segmentation.json",
+    "bytes": 238,
+    "sha256": "c1b0ec4799ae0f0cb10de9fffde8588fb30cd981ccf5f4ed850852c3d1a5f247"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-000189-1024-rgb.png",
+    "bytes": 268254,
+    "sha256": "de36299954c4678882da5000eca5149537d1d384944cbd5bc9c148de7fcac75b"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-000189-1024.png",
+    "bytes": 3412,
+    "sha256": "9f735a8335e0a41a247ea118b6534eeffe2beae0514c010570b7652f522988b5"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-000189-512-rgb.png",
+    "bytes": 272691,
+    "sha256": "e8b46ae248c1704eba35979f36498f3b0738bb8414c0008f65b9a906aca89016"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-000189-512.png",
+    "bytes": 3207,
+    "sha256": "6179da2761bd954c056cb1296980844c241a6fe3ba04370b640a1a8cde0a8381"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-000189-768-rgb.png",
+    "bytes": 271518,
+    "sha256": "c688e02a393b2e9fefe804b6750a626b914810c97839e0432bc578f337ec069b"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-000189-768.png",
+    "bytes": 3526,
+    "sha256": "839ff13acc6adf51786fcf88062732271aa752250af76cf3fc2ee8429dae1ad6"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-002252-1024-rgb.png",
+    "bytes": 263240,
+    "sha256": "e154662ecf55d77a618525801be850bc1bf4e491032bc57ee21c982afc32fb72"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-002252-1024.png",
+    "bytes": 3586,
+    "sha256": "46fa63c01dc5fe5a18d34c43230e0d36ce64e10f533c53324fd2b571f9f0df82"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-002252-512-rgb.png",
+    "bytes": 262823,
+    "sha256": "88f0b7a2cf57a340bf123fa0d83dedf6c754194b61e34efb1646ec379a4a14b2"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-002252-512.png",
+    "bytes": 3100,
+    "sha256": "b940d7c655bd98ed64988a5d5e70a64ba61a7a48544511bc4d567175e5369af4"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-002252-768-rgb.png",
+    "bytes": 265989,
+    "sha256": "145f93d9dc68ff240ed35111677dc9e28cf686de53b2fb418aed7397d2014291"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-002252-768.png",
+    "bytes": 3503,
+    "sha256": "34610441b28411127e17ca2cab244fb5a54b6a15581d4b16228d47ed0955d9a8"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-004076-1024-rgb.png",
+    "bytes": 277836,
+    "sha256": "25d241d2d01411e62f573d2fafaae74bf293b5b24c4e9573ac841cf25c35e8e8"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-004076-1024.png",
+    "bytes": 3679,
+    "sha256": "7f2549ee4c1c17b41511eeafb9ef8073d0c5b963b89f8c6e92a99b3366fd6c13"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-004076-512-rgb.png",
+    "bytes": 245813,
+    "sha256": "5ec8fd0a11ea1eff144ed6d77a9443605d0ada6bbb6af2b5b7b6761a6c0b65a5"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-004076-512.png",
+    "bytes": 1754,
+    "sha256": "2c13c3df3671ee94c0a18f4df1ec2057d098a342347c3b802f085625d177992f"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-004076-768-rgb.png",
+    "bytes": 269776,
+    "sha256": "3b551047d42eedead8186ed2c9587ad9333b6d0a8aa5d8f0cb3915809f9f5e64"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/frame-004076-768.png",
+    "bytes": 3495,
+    "sha256": "ed00f58a5d60ce4cc57836d1f977cd4786ba5ce287f7ea6d1b44b55a8ccd781d"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/segmentation-resolution/results.json",
+    "bytes": 2369,
+    "sha256": "64d6ce9ad7b88b910868a497123a55a210424a90923290583cdb9ca9bc68ed74"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/static-replay/cad.png",
+    "bytes": 24772,
+    "sha256": "09d55088428b87d408c2b1eabadae76feddb154426e9ee546ae9edfdeaa551cf"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/static-replay/input.png",
+    "bytes": 397704,
+    "sha256": "0b6b031bddee517f380a0ec77513321f64a9eb0b1759ff60c0964b84a7e8da5b"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/static-replay/overlay.png",
+    "bytes": 390910,
+    "sha256": "50a3f2c2ea6bea258c5943fe7c240f4f279bea76e27d369906304d51134cddfc"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/static-replay/replay.json",
+    "bytes": 6603,
+    "sha256": "8cd2896d6fe7883c262829438b1aea40c46d9399bf778d6cae10cbb0bdf3ab4a"
+  },
+  {
+    "path": "diary/2026-10-04/articulated-fit/static-replay/trace.json",
+    "bytes": 37526,
+    "sha256": "bc7cc20189ed22adf4e41769b20539a1b0afc1dab631bfee8782c5e1c9b76123"
+  },
+  {
+    "path": "diary/2026-10-04/conversation-review/2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-001",
+    "bytes": 25000000,
+    "sha256": "ee13ffa380ce1db64d830278cb01292ca033bc1cfdda3b702ec7a011e4b6e0c7"
+  },
+  {
+    "path": "diary/2026-10-04/conversation-review/2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-002",
+    "bytes": 25000000,
+    "sha256": "82bd86a1fbe80acb67a3c1cc6b07d049f22416f8e55e7cdb941bdcfb9ad1aff2"
+  },
+  {
+    "path": "diary/2026-10-04/conversation-review/2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-003",
+    "bytes": 25000000,
+    "sha256": "caf8b84a2611aa782743e8b9492080cbbd3d33f7a7a0a687a0c2e94924c895f8"
+  },
+  {
+    "path": "diary/2026-10-04/conversation-review/2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-004",
+    "bytes": 25000000,
+    "sha256": "e4b3b4ea1f9b2f01d24664b6ef77bb30a631d56a20d160137a9f6db5907eada0"
+  },
+  {
+    "path": "diary/2026-10-04/conversation-review/README.md",
+    "bytes": 1569,
+    "sha256": "b2f86b40d5609aabb5509006c270c51d23f1887d48442656a7374c2e788030d1"
+  },
+  {
+    "path": "diary/2026-10-04/conversation-review/manifest.json",
+    "bytes": 2392,
+    "sha256": "e338727da48d9e5a214f03972c87c2bec5ab69aeaeabae945eab35cf37996798"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/REPORT.html",
+    "bytes": 14865,
+    "sha256": "cde20d77919b68f0c177e43d0b72a9ae1a2b2d4e160ce8591440f3f8501ad1a9"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/REVIEW.md",
+    "bytes": 7681,
+    "sha256": "f28a263f5443286a05263d4a79b154c56f05d8d83cbd3baeb73574ae5656894c"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/absence-review-live/poses.jsonl.gz",
+    "bytes": 258171,
+    "sha256": "7065fe61ed9be3793d0287e27c700a5e603947bab40b1071c58377b362938f94"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/absence-review-live/segmentation.json",
+    "bytes": 258,
+    "sha256": "c398702edb1c5ad29bb50199f11eadc0dd36a5170db28d6a0f177d0f10ec39ec"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/base-presence-controls.json",
+    "bytes": 4818,
+    "sha256": "bdce8f051c5b39714b0e6b43009915a675420814e3167cb17bd9a87f939634b9"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/baseline-live-180s.json",
+    "bytes": 559,
+    "sha256": "f75e149362d5e889f9d6f13d05e7768cad2a2e6e54957fa6078d6f1d544db1ae"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/capture-manifest.json",
+    "bytes": 27330,
+    "sha256": "4c5ede464b459745794328eb531dc29ca80b8300d1896d538020e8cc24463e31"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/arm-absent-negative/color.png",
+    "bytes": 212873,
+    "sha256": "f4133dc53aca3c06a3428a8fc585d65861222bac3bca5e345a97fd87300e09da"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/arm-absent-negative/mask.png",
+    "bytes": 1502,
+    "sha256": "276517bc34fd96be3bca019d3acb754054661c361dac0c568be5fdcd8f342684"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/arm-absent-negative/observation.npz",
+    "bytes": 430671,
+    "sha256": "2048491c8ea086293de35bb2841b6852e4b9839b4589bef5c112e915ac470b8e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/arm-absent-negative/pose.json",
+    "bytes": 4254,
+    "sha256": "dfdf2860dc602fb69daba4563e5214661806b6d83eb6d92de651f258bf29e201"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral/color.png",
+    "bytes": 219525,
+    "sha256": "e674ce7ffb75edb7ee000e116fa97b098df9c6ac1fcff41926e7e45b99c71b18"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral/depth-preview.png",
+    "bytes": 59553,
+    "sha256": "bbb14519216f45a8d23b13b2a4abef4bdcd6b526c27d195a7d707e4f846eae04"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral/mask-source.png",
+    "bytes": 219339,
+    "sha256": "58f5085f9784f36f9ed68937cc40b28fbc9a45b2b5b0cb22aada4129b8d3112e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral/mask.png",
+    "bytes": 2113,
+    "sha256": "e284b06eb0f0f164c90675563b174648b67424b2c74f86c71644686683bf8a63"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral/observation.npz",
+    "bytes": 805092,
+    "sha256": "d40ae9efe163bc5c6b070af2e36f46ca6ff9d63052fce915a592ce3d9bb6c8e8"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral/overlay.jpg",
+    "bytes": 46870,
+    "sha256": "4feccf14e2ed29e13c3e047d7fed2c1b4127c1d13b2bed33364ab32068c3b9f8"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral/pose.json",
+    "bytes": 4226,
+    "sha256": "fe4725a89e40b050dda6ea96d5ee77609c4e8e30176cba1af7f05fafaae0abcf"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral/raw-mask.png",
+    "bytes": 2235,
+    "sha256": "0aa33e8f9e41dd9a7706d4ac6c44ecbd36d3935f9fb3b7df812104cc2ceb4ccc"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral-final/color.png",
+    "bytes": 216352,
+    "sha256": "2e271e1be25fc9669fb5f43eca9c32f400b34ce37ad2af984d6a05a6eb13b674"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral-final/depth-preview.png",
+    "bytes": 61107,
+    "sha256": "6356153f4babc6eec8930369b083fad2eca64106e8aa47654bdafa70266d8ec2"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral-final/mask-source.png",
+    "bytes": 216077,
+    "sha256": "6d8740b9b58237eadb13425b8b3db74e6b3acd84109dac642d0cacf66c65283b"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral-final/mask.png",
+    "bytes": 2122,
+    "sha256": "c389584be0f163813ba780440144f168c473b70fa35e57879d8766d5b30d9b2a"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral-final/observation.npz",
+    "bytes": 793322,
+    "sha256": "2db842899c6cce67c8e85efaf9248170050c185f11447e38d44ff2ce48b555be"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral-final/overlay.jpg",
+    "bytes": 45673,
+    "sha256": "ea01bc45052dcf49b0f7607933e97a7fe917667003bf70606a42dd10a09b64f6"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral-final/pose.json",
+    "bytes": 4220,
+    "sha256": "ac71c03707a02807ddb8efa23d6c7e9dffe6fac80c7ac5361e44b5aec9d5afd7"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/neutral-final/raw-mask.png",
+    "bytes": 2252,
+    "sha256": "676373c398cfdcb11d3c6df80176f789ee414912b79107b2249472c941828d88"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_01/color.png",
+    "bytes": 219206,
+    "sha256": "d10eb7e62baf0a4c29eb3e720a801e25d95fa3723fc5fe4b673cd6a83aa9a401"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_01/depth-preview.png",
+    "bytes": 59418,
+    "sha256": "9f73fde2f7785b1fbee44417748c63a5357d99710486cfb5a1a5db244526f0d0"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_01/mask-source.png",
+    "bytes": 219405,
+    "sha256": "f48bf6e31a6a0d6b21643402f3e3761966b59af3e1058619e207314bc736ceea"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_01/mask.png",
+    "bytes": 2260,
+    "sha256": "5ddb08fa5f0ebe1aa7ac66e5a92b697a84ef386b876fb3fcd539ab6c5802fa71"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_01/observation.npz",
+    "bytes": 806230,
+    "sha256": "5817892b5ace5aa807ca5600e52660fbf248ebd973d297317f241f34a3c81bdc"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_01/overlay.jpg",
+    "bytes": 47250,
+    "sha256": "4b264c0f529f40c7a649fc4d6e315359ce0ca345d0a7a5df62f599f1701f11ce"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_01/pose.json",
+    "bytes": 5544,
+    "sha256": "57ca7ecf45c4d3db35df49285bccd2ae7929da23e9e07a332064bba70c05bfaf"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_01/raw-mask.png",
+    "bytes": 2425,
+    "sha256": "facd6f5fb83205dd5a8342a99c5fe0b79856c031044786c86cb0e5aa013d0858"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_02/color.png",
+    "bytes": 218823,
+    "sha256": "216bdf1bf801c968e0ffc838ad352812d74374666b6085d2153dfa65f95e82ca"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_02/depth-preview.png",
+    "bytes": 58803,
+    "sha256": "0d57b4e321af9831b9d45ad86746289ac4c2c81845c81746c3475c537112e6e0"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_02/mask-source.png",
+    "bytes": 219094,
+    "sha256": "a31c5a49a98542a44f292a819ce1d8a71ba3cc4ac3fb5f919773031101f4b802"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_02/mask.png",
+    "bytes": 2272,
+    "sha256": "752a386c113ae2e4de7078b60fe1794917977da0e976a3023517bade929c7232"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_02/observation.npz",
+    "bytes": 807540,
+    "sha256": "bdb3f1b51fb80b4b3fd0cbf64954f61453c822ad348632cf89e63a54e451505a"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_02/overlay.jpg",
+    "bytes": 47058,
+    "sha256": "18b94727b7b1c15336e257818fed1a57ccef357d81040b3455beb18af8d372c5"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_02/pose.json",
+    "bytes": 5544,
+    "sha256": "22c58a82dcd453d4909196a528256463d45744c7a37c011a788ada3589bb14b9"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_02/raw-mask.png",
+    "bytes": 2432,
+    "sha256": "a1b0cf4d40deac058cd389b77d6fdb05245d9a7ba50dffe5859ed2b87852b142"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_03/color.png",
+    "bytes": 218613,
+    "sha256": "3da295dd265f468e440983d61591e6f1290fb4b217632c533fabaefe48b59ad2"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_03/depth-preview.png",
+    "bytes": 58630,
+    "sha256": "7f7302462bddabffb44097a2a74ed6a354c6927c296629f9a499b1fdc8fae386"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_03/mask-source.png",
+    "bytes": 218754,
+    "sha256": "e96bc89e59f0f90a8fb37bd76a8a10fd7e25734cfee73e103aae03e2714f6858"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_03/mask.png",
+    "bytes": 2341,
+    "sha256": "94e34439a02d645323b59405a5f1b7a912553e6d47811a7ba2451f2b134e5ea3"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_03/observation.npz",
+    "bytes": 808657,
+    "sha256": "61c26b8a322d63db05e07bc0e1515dff09a985957f26436dab5b4c9c38160d12"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_03/overlay.jpg",
+    "bytes": 47555,
+    "sha256": "33c2551ceeaac5873ca628fcffa40babab994d2374be6b25d03d4f28d3dee464"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_03/pose.json",
+    "bytes": 5537,
+    "sha256": "073ca184a9d49f0399063fabc987bb39b54693b8f37fc0438fe3818678b3a005"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_03/raw-mask.png",
+    "bytes": 2471,
+    "sha256": "a0d9497559250eb18b14015a5767d4b8a5b3dcf4a592412e539ecc53cb711b23"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_04/color.png",
+    "bytes": 218879,
+    "sha256": "e66b71bb1977b6ddb1af9333dfe0ecc82a9aa439356b181d8e9f92a215da9140"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_04/depth-preview.png",
+    "bytes": 58164,
+    "sha256": "f3c7d7c012d2396c7925b92961de4f844884ec1e1e879fb14143ba12b47c2e75"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_04/mask-source.png",
+    "bytes": 218685,
+    "sha256": "7f97697545aa9a7139b305f3d843317d5f6df16713b8bb1ebf6b53f4d2f0dd74"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_04/mask.png",
+    "bytes": 2217,
+    "sha256": "11bc46f3bb42365d64d35d627199453d33499e65c4fa7e205d67beae5079c390"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_04/observation.npz",
+    "bytes": 808155,
+    "sha256": "ebe59881d0f1793f044d6203578fbe538b9c921514595462be3143b2e27126cf"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_04/overlay.jpg",
+    "bytes": 47601,
+    "sha256": "ea16aea9174b80bcf110e903de57477e34f06bb939362ea418b234cc1421aa2d"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_04/pose.json",
+    "bytes": 5543,
+    "sha256": "cad727aae8405c14a143edb097e8c362360c0cfd5c9691d5e9f78f6a3ddbaa7b"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_04/raw-mask.png",
+    "bytes": 2372,
+    "sha256": "7bc26f83349edaf11e5796ba4d760b15ad703540266f2eb312802310c07a2ccd"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_05/color.png",
+    "bytes": 218909,
+    "sha256": "5536e4ec17f247085b3c6ad148e93d0c1b6b7be76c300314148f52a8a116daa1"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_05/depth-preview.png",
+    "bytes": 58217,
+    "sha256": "a4be88a1b1375eb4886daa903e8b1edc1bec40fd82ff65f5e3a09f7ea86f6e6e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_05/mask-source.png",
+    "bytes": 218991,
+    "sha256": "c712b0ffd2826cb5f34f7610fb9ffbd5ee4483e0ef8d6054c8e88172d550904e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_05/mask.png",
+    "bytes": 2196,
+    "sha256": "bb35f17f752dcb2a87a2bf44589e3c65a4aef90de0695f3122012746d90e9cbe"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_05/observation.npz",
+    "bytes": 809222,
+    "sha256": "e9c6612e748ecaf4ad9bc5f41b7b47f0c908a24357a1cda327b91a2fecc9db8b"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_05/overlay.jpg",
+    "bytes": 47660,
+    "sha256": "92bc6f1820af0555f50aa010909c26e30ba46b05b0333470ab1e4fe408b35fca"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_05/pose.json",
+    "bytes": 5547,
+    "sha256": "aa8bd218b8ef4fd6ec6d7591414a517b6b0cc0bd32e9ef77c79bedfd7d16e1db"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_05/raw-mask.png",
+    "bytes": 2334,
+    "sha256": "a1689c78d2359f9749808cea0e012982de5bcc276c9eaff506d536d44c1cd94b"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_06/color.png",
+    "bytes": 218857,
+    "sha256": "60b28a6cf86c599b6682c5cefdf66a3614639817d996ef5572888666de12f775"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_06/depth-preview.png",
+    "bytes": 59317,
+    "sha256": "d08e4d672d7844a26f38c167a109296935a695e09b8fdda051877cf14b279bef"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_06/mask-source.png",
+    "bytes": 218933,
+    "sha256": "5ac9785667cae58daaacfc392c39de492df944c4f9ff6c90c31baa92c5b3bdc3"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_06/mask.png",
+    "bytes": 2197,
+    "sha256": "4f30cb9d42af4046c8e7299971c4b794a6503a03b16c730300cabfcf921049ca"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_06/observation.npz",
+    "bytes": 808226,
+    "sha256": "830ac3f8ea36351f2d1cdba46b0856049833c5a8fceebd9d6cc5a5263a269531"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_06/overlay.jpg",
+    "bytes": 47315,
+    "sha256": "55438fd20216f0d384a568f34d55b3bc3c56a333d6362ee67a006de15c133466"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_06/pose.json",
+    "bytes": 5550,
+    "sha256": "e1a4d93be193abbcf58dd7fcc3006bd90d7a690a7eaeea7b99adb633ee8227cb"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_06/raw-mask.png",
+    "bytes": 2306,
+    "sha256": "f78077e2a3805afad7ddf9ff93793202defadda0fc4451d857c77a33fb46d4b0"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_07/color.png",
+    "bytes": 220017,
+    "sha256": "cbeffc58ca43a7d239600f1a366c04a9246e278c3e8c15d74ea7555126b5e472"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_07/depth-preview.png",
+    "bytes": 60732,
+    "sha256": "bd0924068e9d64657f1af393273074a40b32ab7f6d10a0ad1ab90d21c7b5e2c2"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_07/mask-source.png",
+    "bytes": 220345,
+    "sha256": "d4f694454bb2f54c1a34993988819f44eec3be32bd0378ce2f260b0ca5a134c0"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_07/mask.png",
+    "bytes": 2074,
+    "sha256": "99ceeb3659d7656d4975371c101ca402b21dcb70f0fb900abfe41e0cfd564388"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_07/observation.npz",
+    "bytes": 807338,
+    "sha256": "89eb6c006b1307a81baf6078462ed0a3c424e7b84ae0f1921c2b11ec2065afb3"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_07/overlay.jpg",
+    "bytes": 47562,
+    "sha256": "0fe1c5576a7381b2a54f34284121ad24ce907c76460e02597e5e8980b9efdf76"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_07/pose.json",
+    "bytes": 5554,
+    "sha256": "5498aadc04e159d8aea1834015cb2a4fc0049aa54d5a6f43e4b6940c16fddd3f"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_07/raw-mask.png",
+    "bytes": 2262,
+    "sha256": "9e732f4a5d0ac1f5c558fca886537c00632ab439283506f543646ed2c581e619"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_08/color.png",
+    "bytes": 220578,
+    "sha256": "aeebc4634acfec2f1f4fdd0c40e4ba42bd2fe234bbecbbf3e47ae3adf97cc779"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_08/depth-preview.png",
+    "bytes": 64088,
+    "sha256": "3a902195c72964e2a90557d06f44c808135a2beeb99d3bf05cf1feefe7a25f85"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_08/mask-source.png",
+    "bytes": 220373,
+    "sha256": "0d8e48bb9b43cb79699571d7c50690406ad302d3198c15fee120dbd597cae376"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_08/mask.png",
+    "bytes": 1750,
+    "sha256": "a8dd565d1810f69401fba449d4331265ab290ea21666fe9275bf88508e184c04"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_08/observation.npz",
+    "bytes": 798061,
+    "sha256": "26ac70b75188680cd60ca50828870fdd9cd4e78f8e192b2a73dda4026527b4f2"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_08/overlay.jpg",
+    "bytes": 47495,
+    "sha256": "b1dc86a36ae13bef2328a050dec2b5b784b7b7c944177ae9a29b28346e9bbc7f"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_08/pose.json",
+    "bytes": 5552,
+    "sha256": "4cab39bee0e3ab44ce8ed6309b8e75ea9b0a4d38378c92c49bfcd6dff4d1d273"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_08/raw-mask.png",
+    "bytes": 1868,
+    "sha256": "720d2efa9f0c06bfbd2e084ef54467c742423f3211c73a4b51b961c64b74d55e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_09/color.png",
+    "bytes": 221051,
+    "sha256": "c99927d04a1f39ed9a12bc60d6be9a864fe25e5ec9216aa56aff41a744044e1f"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_09/depth-preview.png",
+    "bytes": 64475,
+    "sha256": "ef71c5112c3a2faef058aaf4b3bd9bff8e71763e69f1b2036ff9ea41a1abb197"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_09/mask-source.png",
+    "bytes": 221268,
+    "sha256": "ddfdc291560ac153837dd3a7970d8352c70dad7a3cc8a7f8879090d49cf34227"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_09/mask.png",
+    "bytes": 1702,
+    "sha256": "485f2a58b8ed4d9ab34d83912f6a96bf2374056992ccb52da271175ea9cb759e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_09/observation.npz",
+    "bytes": 801122,
+    "sha256": "4d976f99441ccf0352cb7dd31352f98ff19611d4f903110a2cb08ac4a91da154"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_09/overlay.jpg",
+    "bytes": 47927,
+    "sha256": "39278d11e10efaa85b721f2194b632859fddb3f93ec74f863cf8b66a177d578b"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_09/pose.json",
+    "bytes": 5549,
+    "sha256": "9aa853657d09b0d1e0b23151241665607cd17b1e8d73418027001bd78b23801d"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_09/raw-mask.png",
+    "bytes": 1812,
+    "sha256": "af32a6ed9a1adc82be5ea86d29e85e2721dccd62ef73f51b767b10845751a7ad"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_10/color.png",
+    "bytes": 220057,
+    "sha256": "cdacd2a5aad237c4a98a99935aca3b971b1d1121bf0c385f50ebb1acf9dac525"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_10/depth-preview.png",
+    "bytes": 62630,
+    "sha256": "115c3efc460a25a19751872081be63b200d8dc1ee3c36f56d45744538006e825"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_10/mask-source.png",
+    "bytes": 220211,
+    "sha256": "8c4f6cd722062c9915a4683054244e4e78fe2120e68d5904b79839d11e37d8da"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_10/mask.png",
+    "bytes": 1849,
+    "sha256": "3d3ed28dde93a3f9d0fde65595bc0412e4de986c326cc655a5c9e8dbd82706d2"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_10/observation.npz",
+    "bytes": 802788,
+    "sha256": "b28b6946eb76ffa25821702e0681e92df6181acf4576b8b2bc92dc2178ce7a63"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_10/overlay.jpg",
+    "bytes": 47410,
+    "sha256": "73daca890bc9ce9ff5b888d2a06496a44725deabb5a69feb51137df639e9a4a4"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_10/pose.json",
+    "bytes": 5550,
+    "sha256": "0ed84f67312efe10be0047ef2e7ffa31b6298ddd34c0e122ad79e4fcd113276c"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_10/raw-mask.png",
+    "bytes": 1956,
+    "sha256": "ab694b7e36c8853b83104e455cf8329b2c1c34aa9c873b40c5ffbfa0bdf94144"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_11/color.png",
+    "bytes": 218597,
+    "sha256": "2ed6f754f6a15590e118c4d92407f469dc8457b45c6d32f1ac1cd7d18e234817"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_11/depth-preview.png",
+    "bytes": 59440,
+    "sha256": "539461194b5fe783153775a250af6b5efd8805f1f747847d470be4d3e32bb6ee"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_11/mask-source.png",
+    "bytes": 219053,
+    "sha256": "1972e88c818b8bbb3585b6a1652bb14a2c1bfa896647c488c30718d2aeeb2fae"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_11/mask.png",
+    "bytes": 2103,
+    "sha256": "53d57f78627e556cfde44d4e56a6a24091ae4b4f4b8a7c48960b66c6454e47a2"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_11/observation.npz",
+    "bytes": 807666,
+    "sha256": "bba5d5c8188a66d419ecd765962c4f21d4616937128c910a6a83bc31778ee4c4"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_11/overlay.jpg",
+    "bytes": 47315,
+    "sha256": "20cf7bece9cab128cac6e9edbfa44f5979674d0e012f7746efe4fb356f8bd6cc"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_11/pose.json",
+    "bytes": 5557,
+    "sha256": "ccf6333c755714ab3f24caec057b2e54b58a8fd2d03b5ff7ae074536fee203d0"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_11/raw-mask.png",
+    "bytes": 2217,
+    "sha256": "421e729758788c302e87f668a5a0645e9c6004441c561ef543edd19d58ffa84a"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_12/color.png",
+    "bytes": 214676,
+    "sha256": "12cae2334350b964ce40548bc0161dd3fee680f3043f23d69375186e1bc302c4"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_12/depth-preview.png",
+    "bytes": 59492,
+    "sha256": "28bb7bf8a381d05114431ae42482576cf1e447959dceabd98e103721101bda8a"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_12/mask-source.png",
+    "bytes": 215214,
+    "sha256": "41c932764792d9cb915ac4af0563389fb12524990bcabb779b9299ab913470e9"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_12/mask.png",
+    "bytes": 2451,
+    "sha256": "c6766cb244ce8f3e96621dbe30a4cd31245a250286f62ec30cb2f3ad5d67c509"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_12/observation.npz",
+    "bytes": 801623,
+    "sha256": "7ee47f9bc134a1af74bf94bba5adfe01d2881b90896bae202295720d4ccc6c06"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_12/overlay.jpg",
+    "bytes": 45863,
+    "sha256": "f12cf7bf9ec989d14516ee9e4283918497c1f98efffa4e3b030dcddb0953d1c2"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_12/pose.json",
+    "bytes": 5548,
+    "sha256": "863534252e1d238b403fac0faf27f6d73a1c2068c2f42097e4f269919265c4f0"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_12/raw-mask.png",
+    "bytes": 2573,
+    "sha256": "4455c2ac2f2f555ed591e45d146ff1f24bbf226b9330aadc7dc3984ed0fa3ac8"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_13/color.png",
+    "bytes": 215159,
+    "sha256": "9e45b09f30a3a378cb38da7625d5954a6c16856112b565577fe02162857aadba"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_13/depth-preview.png",
+    "bytes": 60870,
+    "sha256": "d04f31aab302346781c5c565eb823367df04da0c3488f6839cbff6fbe33ee9c3"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_13/mask-source.png",
+    "bytes": 215468,
+    "sha256": "c9f4d64b4f04c5b4c57b6cff2ae71a1bb290dd154cb7841ed3815c967c3a8080"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_13/mask.png",
+    "bytes": 2567,
+    "sha256": "decc493e36349f46ab69532a7d4af7fe47698ce6963ac6cbc2ad873e47f4a001"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_13/observation.npz",
+    "bytes": 806116,
+    "sha256": "cc0c7f44b81b6d0082e766d255642b864a7e9aec365fa1c6fb53db2620e1538e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_13/overlay.jpg",
+    "bytes": 45894,
+    "sha256": "75ff4091b57adec83710475e481f10d505020e42004e819a0a767c7a1a6b4e4d"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_13/pose.json",
+    "bytes": 5549,
+    "sha256": "d7de90bbcba552dd34310cf23858623d820befce14ca88d457a3af02e22784ec"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_13/raw-mask.png",
+    "bytes": 2762,
+    "sha256": "a4b979360449705ec8098a50bccc0ea3b9a1225ed1495f39902d3b980e867fd4"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_14/color.png",
+    "bytes": 214738,
+    "sha256": "d372c080dc215c8036e406564c8aa61ba06b04787e5d7b29be011f75e40ec020"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_14/depth-preview.png",
+    "bytes": 61293,
+    "sha256": "0d3cd15a83207c2a3d0bbb250eb44a1825237b00d61cc4c7f5b3294990584d96"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_14/mask-source.png",
+    "bytes": 214710,
+    "sha256": "039ff99f703bf1b7b617856633782479d26303d6618291d21a6bb8f972d65a66"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_14/mask.png",
+    "bytes": 2637,
+    "sha256": "08fef42eefdf820cf4e6907df1afc5770b8e8c21102a640ac3c4ba6809bb8e42"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_14/observation.npz",
+    "bytes": 805930,
+    "sha256": "d3d4507d340b2588b25b771911b1943a31cad293526f4b9f993fce4beadc65cc"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_14/overlay.jpg",
+    "bytes": 45929,
+    "sha256": "f1ca18a0e90c8bb0e8f5289aaa7d81b8d6bb5e31fd740b06f12ff4935fde807e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_14/pose.json",
+    "bytes": 5542,
+    "sha256": "5fbb40ba9e26040d297792f0a234c7390f9fb013050af1dafaa63607ecd079f4"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_14/raw-mask.png",
+    "bytes": 2831,
+    "sha256": "fb617a1f5fc480baa6493696dd37acbc148eac784e289c423fca614f6beafe16"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_15/color.png",
+    "bytes": 214354,
+    "sha256": "8ae83743fb7328fa694bc64f7a6d5ebf97fff2b6e8759eff04481ec0236ccdba"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_15/depth-preview.png",
+    "bytes": 60282,
+    "sha256": "9384e3b5548b945c6e06e67901087b2d9e0773175521a9c609ee017fd4ef17e4"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_15/mask-source.png",
+    "bytes": 214760,
+    "sha256": "491e9e74f34585a6f161f6abf12e17a3a1a32fc4abf98232f37862a666e2d3ac"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_15/mask.png",
+    "bytes": 2446,
+    "sha256": "73296d71d1ad1d24473e92d7c166886d8485fee5c0855898cdfb53fcb5876589"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_15/observation.npz",
+    "bytes": 802778,
+    "sha256": "4fdea59069e08a202ac218e5514736763baccc94ded3834c1233a117187abfca"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_15/overlay.jpg",
+    "bytes": 45822,
+    "sha256": "7cbb0bd0596ed420d88ecbf5a4ab308fa3cf86577627374beb28db845d87682e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_15/pose.json",
+    "bytes": 5544,
+    "sha256": "4ee0f04180ac5ee6a732b7f601f4359eb85ce7516d1b2abb659430308e0e9df5"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_15/raw-mask.png",
+    "bytes": 2638,
+    "sha256": "507562d37df1b31ca099787f00dacfcca648c13c5cf9ae4fe4be653e1ce3642f"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_16/color.png",
+    "bytes": 215590,
+    "sha256": "0d26b812585e888a01328c813745e05b45fed6423cf3341d0e463053b637c6a2"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_16/depth-preview.png",
+    "bytes": 60126,
+    "sha256": "82e5cbce86512c10e7dd4184a82c127d500820292f987f012b51a7fa17740361"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_16/mask-source.png",
+    "bytes": 215568,
+    "sha256": "9aaa2fa044e81eefd058463bd76e660cd6d588b17abd25fa786d233c316c84f6"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_16/mask.png",
+    "bytes": 2206,
+    "sha256": "517a8c25f26d05b31f6ce64ff1f0e9c1c4b8bb953d78d0bb6c80ac18ed1fe71b"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_16/observation.npz",
+    "bytes": 795677,
+    "sha256": "0353ffd39746e7cb09a2ab36d434f3ad4356acf9f3b58e3c1e5b25701aede20a"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_16/overlay.jpg",
+    "bytes": 45872,
+    "sha256": "d17325c1d8b18d11ca3a396adf4b63dfed3ea87fac420a505f13b836c8673b00"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_16/pose.json",
+    "bytes": 5550,
+    "sha256": "a65dc2e369e3390ee1de9ad15f4d3c434a4825c55efa234fba0713d1d837c969"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_16/raw-mask.png",
+    "bytes": 2406,
+    "sha256": "ff13ce76fa7de126a82bd5eb419efc0382acbfe6a0340c8b1fdb229d5d7823e6"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_17/color.png",
+    "bytes": 217021,
+    "sha256": "5a2b4185d24ef9c4ddc977228ccebfad9613893a7fd3f2c9eead50afaba9b35e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_17/depth-preview.png",
+    "bytes": 62076,
+    "sha256": "0d46a0dd7d41f87246a30962f7c2ade269b341c5c5ec34e2b861292d01e8a584"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_17/mask-source.png",
+    "bytes": 217055,
+    "sha256": "dfef72c889100ebfb63d8d902cfd77ebceddcdb6655140093823eb751e5de499"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_17/mask.png",
+    "bytes": 1775,
+    "sha256": "4731a310b637773e5cfb47c8bd8580056804e98ec3bbc55b3d878deff696d3c8"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_17/observation.npz",
+    "bytes": 789678,
+    "sha256": "ce039f56c0bc0d08ccd65d5122b14917a6b942a30728f73a45bd345f161edb91"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_17/overlay.jpg",
+    "bytes": 45997,
+    "sha256": "3e7c6380373c59150606023a90b00f494f6841204980bfa0ed72c2fecd9aa46c"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_17/pose.json",
+    "bytes": 5555,
+    "sha256": "06b70db6a8f6f7685bdfb51e528bdbc98c6b68830c6f4d95ca117acef08195e0"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_17/raw-mask.png",
+    "bytes": 2009,
+    "sha256": "a41cf0e9d302a6b9127627054a7ee0971cedecf61bf8f7e7d34ed7473850eaf9"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_18/color.png",
+    "bytes": 216990,
+    "sha256": "5d4e4190382fa7facc73b5a9452f0e010c97919656a4da5f2e337fc45e57f702"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_18/depth-preview.png",
+    "bytes": 64317,
+    "sha256": "3d99d42156c935f14d9afcd9227a44bfd1ecef644b88f63bd9a925ecda04a3ea"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_18/mask-source.png",
+    "bytes": 217760,
+    "sha256": "628356d617ce0d7ead538cd49bf2baafb0f86f98a7645bab8dca1d2085ace3aa"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_18/mask.png",
+    "bytes": 1625,
+    "sha256": "8513bb33878999fcf11d41f7b969c9f1fdc941df83e115890eeff40f1db2e98d"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_18/observation.npz",
+    "bytes": 791191,
+    "sha256": "2948ae17ac99a87f680a3c00f0c5fc9c520127cf4d5d39044491455325229b4a"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_18/overlay.jpg",
+    "bytes": 45844,
+    "sha256": "efb9ed51fd54bb1db735104d372e694d7f7e4633afc035a8a42747a068d5834d"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_18/pose.json",
+    "bytes": 5555,
+    "sha256": "d5845be01a42e416587e978ac88831579ec36ffd4e79f02f862c4b51469a54c1"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_18/raw-mask.png",
+    "bytes": 1825,
+    "sha256": "30e64587faf7d698c5abdad243fe248dcf116c2374da3c333a1f74c815c5f0bc"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_19/color.png",
+    "bytes": 217352,
+    "sha256": "696fd3b3836499d50a8f4f1fe9e74e5287f2aab427209f00d4535b4e7756a2bd"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_19/depth-preview.png",
+    "bytes": 64267,
+    "sha256": "7975351fffd803c267d0f30056a70e9413ac28b102bc2199818907dd90da8a6d"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_19/mask-source.png",
+    "bytes": 217239,
+    "sha256": "240108469a0e5f7f26a17ec2f5545d06b9fd9cb1ddb89cc230fea71202167e43"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_19/mask.png",
+    "bytes": 1787,
+    "sha256": "d7067bfe98e8a307ebe43051444dc54b7793fd46bcd4d956f2e24e137323df76"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_19/observation.npz",
+    "bytes": 787359,
+    "sha256": "f040d9f4560d7d404c933de5e43f1ae727911eb533b3474d19fec5017b9aa632"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_19/overlay.jpg",
+    "bytes": 46074,
+    "sha256": "d97a80b5a2eccb455714626ba5b753a2dc752f1d4809624d523b0f52e1edc338"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_19/pose.json",
+    "bytes": 5547,
+    "sha256": "5aff17c1490646c77ee5da2c259f45f13891601d9efcd9fae663a970919eced0"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_19/raw-mask.png",
+    "bytes": 2026,
+    "sha256": "56c338a45cdeed81e3adbbb8fc4ef119889b3e4c6d6163ee079292e42f391879"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_20/color.png",
+    "bytes": 215864,
+    "sha256": "a8613c62a4f34c6daf805ab65328b1f8ff6452078f726d2b3fb11499dbac1e45"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_20/depth-preview.png",
+    "bytes": 60354,
+    "sha256": "ce2eedb2bb2f229fb15b350a477ec245e796428eb5526ef8007e8a0cf201cc13"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_20/mask-source.png",
+    "bytes": 215622,
+    "sha256": "0027084df9736c2685d8203dd01976092eb7cf981c1857810a09467ee40578a6"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_20/mask.png",
+    "bytes": 2066,
+    "sha256": "a642f6a75055cf9790af7dae39e97c558dc1be54d13d25f54677076e0f43ed41"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_20/observation.npz",
+    "bytes": 794364,
+    "sha256": "c6aaf1fd4e9b3bf142169fadc7a4bb6b84b525e9bce24836d9aa084ee3fcc689"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_20/overlay.jpg",
+    "bytes": 45860,
+    "sha256": "8da41f0856400f519099bad41d364e559612de83dd6e49c04971ebc2293f0c8d"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_20/pose.json",
+    "bytes": 5550,
+    "sha256": "a5146d7c145831f4ebda199a13f28faf349a8d0e215f351babb20db47c73ec38"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/captures/pose_20/raw-mask.png",
+    "bytes": 2208,
+    "sha256": "576e7c9fbdf1a4a0e5ec6b0f5d92a80354cf40cdb501f75dd1fd11d26bb2806c"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/evaluation.json",
+    "bytes": 22512,
+    "sha256": "9ae4b389aee221252418ba67a2caabfb5d87de30f5649e0fbbd5735e8d5d91da"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/http-age-arm-absent-before-fix.json",
+    "bytes": 366427,
+    "sha256": "35db5c988d6e93aaf695efb82b905904801421cea4a0081bd8371166c2eb7e9f"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/http-age-moved-scene-after-fix.json",
+    "bytes": 199529,
+    "sha256": "1996970cd1486204985b331b46681585908d8614df33fdb83b340886e3d1e2c7"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/live/poses.jsonl.gz",
+    "bytes": 5164162,
+    "sha256": "063cf7c692395c22bb69a23a328a5248d78072f21b6370e9e25ca027c27c9406"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/live/segmentation.json",
+    "bytes": 258,
+    "sha256": "3af317280b6dcccf6c763de833b389efe30f61085a36678c168919ed44da4514"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/live-summary-900s.json",
+    "bytes": 559,
+    "sha256": "3461272ebd61a81d4c95da92876c45e1720efda535c1f1a28541af30f30aa4a9"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/motion-performance.json",
+    "bytes": 1253,
+    "sha256": "70c3b08594b02e224c0be8d4c51dc48ca424c0011b64ea533b4cd178c62a9325"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/motion-records/continuation/events.jsonl",
+    "bytes": 347568,
+    "sha256": "094d128c7dfc228114492eb45e4fea9ae2f1ee32e7938d8a641e738d54ab3739"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/motion-records/continuation/plan.json",
+    "bytes": 3272,
+    "sha256": "0452cc9c1bffb7d278051cd2a8b47a093a05ea4fca865f5dbbd549948e1b7f2c"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/motion-records/continuation-2/events.jsonl",
+    "bytes": 633068,
+    "sha256": "255e0338e284c094642e5a40f02cbfc98937d141a8dc40c1fe970165d92c318e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/motion-records/continuation-2/plan.json",
+    "bytes": 3272,
+    "sha256": "0452cc9c1bffb7d278051cd2a8b47a093a05ea4fca865f5dbbd549948e1b7f2c"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/motion-records/original/events.jsonl",
+    "bytes": 445455,
+    "sha256": "1229f39119781277693b9ce886dc190620db8f3665a5d5f40c80e922933b5656"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/motion-records/original/plan.json",
+    "bytes": 1641,
+    "sha256": "f103e1b64745b4272fb90dd65fc8f7ddc0849e8487e7b913d4d8e283d1bbd670"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/moved-scene-after-fix-viewer.png",
+    "bytes": 502258,
+    "sha256": "2c3d80baa7a85d8cfc28386356cb6b1404289b02178a0173447c7f74ae9b9926"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/moved-scene-after-fix.json",
+    "bytes": 2670,
+    "sha256": "924265463d0fa7259bb65c55c0abce3d1fe0cca78381112a55359601133d7e75"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/moved-scene-after-fix.npz",
+    "bytes": 82453,
+    "sha256": "c1e0a86da7987302e78ad4cbbdff6bf0ecd66cb5a11c575703882681cb1a1659"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/moved-scene-after-fix.png",
+    "bytes": 235290,
+    "sha256": "36fb7a81a0df0281a5588994d172bd451439f0e180c7618080aeaf470282bbe4"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/performance.json",
+    "bytes": 2774,
+    "sha256": "0ad6b0747fc7f5ed1949db05ad0b3585dfff5fb8c5975417775ca54a225d5508"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/presence-regression.json",
+    "bytes": 11821,
+    "sha256": "dedfe02ede99100ad2d2cd655a84bac1e9c55e60f00d1cb35a1780e863b00e8e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/profile-after/profile.txt",
+    "bytes": 3645,
+    "sha256": "895bfd351e0eea85d31def105662ac138fb795a5ef9ff35211281b3379e8cfa7"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/profile-after/results.json",
+    "bytes": 85156,
+    "sha256": "89ffdc78ab58324088f3c4c49b7ac52a49ff5af4bad00e4d9e440f1111b2a937"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/profile-before/profile.txt",
+    "bytes": 3642,
+    "sha256": "6ed5964419815901d0837af62bc130ffccfe3a8fe7c04a492cc78217e1d50438"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/profile-before/results.json",
+    "bytes": 85146,
+    "sha256": "63ee42ed4bc85877aa3bced14e86a781b44cc89877d66cfa2711002ef1bbf0c4"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/quality-final.json",
+    "bytes": 88541,
+    "sha256": "8a6b98fe9f58420a4fdd8b28657c54057dd9531d7d95e9f08c36db9f5cbd7c47"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/report-preview.png",
+    "bytes": 625182,
+    "sha256": "c7f48d2aa168c267089260a3b0184b0f288d516464270d0031df86d97f3e22ea"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/status_20261004T214538_833927+0900.json",
+    "bytes": 69373,
+    "sha256": "18ab346f392afa18e55538f62a13b0339c09bdd7a40851110aa404ceafc18338"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/status_20261004T214538_833927+0900.md",
+    "bytes": 16937,
+    "sha256": "d455039e2fff919233951626eb8080e46e923aa1e33c349cf4a1392c8cb3f7f3"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/status_20261004T215942_828299+0900.json",
+    "bytes": 69355,
+    "sha256": "40e052a662dbfa6eec15aa9779499079ba0e15c8c5297178044b5e582ed2cc0e"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/status_20261004T215942_828299+0900.md",
+    "bytes": 16931,
+    "sha256": "7387ffd2c5193acd33cd0fe1818256d6b769216046ff57b3b37e5c72bcb85abc"
+  },
+  {
+    "path": "diary/2026-10-04/diverse-recognition/vision-seed.json",
+    "bytes": 3629,
+    "sha256": "4e55b56f5f050fe8a0131fd8448b291652ef857f8558cc59bf7acf0fc85470f3"
+  },
+  {
+    "path": "diary/2026-10-04/workdocs/workdoc_Oct04-2026_diverse_pose_validation.md",
+    "bytes": 19399,
+    "sha256": "73f598d218ff5e175244bd5604c6c4f10af51ad2c5b83f6ce07ae569786a8f08"
+  },
+  {
+    "path": "diary/2026-10-04/workdocs/workdoc_Oct04-2026_diverse_pose_validation.review.md",
+    "bytes": 1239,
+    "sha256": "9d50d9ec77566ade00f773b626ac504c2ec1d70bac1bb7b2ea3654e31c24612b"
+  },
+  {
+    "path": "diary/2026-10-04/workdocs/workdoc_Oct04-2026_live_articulated_fit.md",
+    "bytes": 27276,
+    "sha256": "e87c316774320932cff96a6f66c2809e3e1833853cdc0324478d53d745e0ec80"
+  },
+  {
+    "path": "diary/2026-10-04/workdocs/workdoc_Oct04-2026_live_articulated_fit.review.md",
+    "bytes": 2906,
+    "sha256": "bc00df934df1b232da546027b857c325bcac5258b32e5f09cdb6881da3c08eea"
+  },
+  {
+    "path": "docs/ARTICULATED_POSE_RECOGNITION.md",
+    "bytes": 14115,
+    "sha256": "654b49f5704244a2080a8150e7d4f3d9b617b45d458fc13670dcc4ae96f7d5c1"
+  },
+  {
+    "path": "reports/status_20261004T205959_497054+0900.json",
+    "bytes": 70473,
+    "sha256": "92141f6c715c16f410c2043ac28814fa312c3ff60bc783ef627aaddd0aaa2355"
+  },
+  {
+    "path": "reports/status_20261004T205959_497054+0900.md",
+    "bytes": 16990,
+    "sha256": "2438a6af4f69d213182d6119c5ab2fb90fa5161830f68a3627d2e5921bab2ff8"
+  },
+  {
+    "path": "reports/status_20261004T210725_950121+0900.json",
+    "bytes": 69519,
+    "sha256": "053f40f6fd8c0e1b8d94823e223d5caab13a306d6a22d7150153e393d14081b0"
+  },
+  {
+    "path": "reports/status_20261004T210725_950121+0900.md",
+    "bytes": 16988,
+    "sha256": "603d9ef16ce946e0dcb4e3870c078a5306d6752e7f4081c8b380e2004ca2814e"
+  }
+]

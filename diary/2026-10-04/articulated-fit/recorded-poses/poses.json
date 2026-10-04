@@ -1,0 +1,1157 @@
+[
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/neutral",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8652049150172908,
+      "median_surface_residual_m": 0.002653012313695454,
+      "p90_surface_residual_m": 0.006920660575233255,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.17381857021216587,
+        -0.7344679141569582,
+        -1.3981314936410218,
+        2.0536197749511302
+      ],
+      "joint_angles_deg": [
+        9.959070474155475,
+        -42.081911668970555,
+        -80.10703378995245,
+        117.6637458293057
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 23.37876058999973,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_01",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7258710801393728,
+      "median_surface_residual_m": 0.002969241956857228,
+      "p90_surface_residual_m": 0.00635523215928369,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.14768778841248087,
+        -0.733314058623641,
+        -1.2784632378877197,
+        2.0596045378049297
+      ],
+      "joint_angles_deg": [
+        8.461886961656258,
+        -42.015800616743654,
+        -73.2505477935961,
+        118.00664748221507
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5456270720023895,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_02",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.70239710538218,
+      "median_surface_residual_m": 0.003065211033657327,
+      "p90_surface_residual_m": 0.006459037807225984,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.15151735847846556,
+        -0.7309004520906339,
+        -1.0984940151464098,
+        2.0590809913964736
+      ],
+      "joint_angles_deg": [
+        8.681305163786817,
+        -41.87751114899715,
+        -62.93907088826921,
+        117.97665048263131
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5636636240087682,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_03",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7234323626115547,
+      "median_surface_residual_m": 0.002769091915775049,
+      "p90_surface_residual_m": 0.005840629002710722,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.16496997921494302,
+        -0.7386985759648219,
+        -0.9239916696376704,
+        2.0521775909067714
+      ],
+      "joint_angles_deg": [
+        9.452083555377149,
+        -42.32431073510833,
+        -52.940822975484764,
+        117.58111477028284
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5326631760108285,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_04",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7169588623082016,
+      "median_surface_residual_m": 0.003002418084865322,
+      "p90_surface_residual_m": 0.006525948547185995,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.1572997414996146,
+        -0.7345773189679181,
+        -1.1647515680236475,
+        2.056591081298149
+      ],
+      "joint_angles_deg": [
+        9.012611306426763,
+        -42.088180102896985,
+        -66.73534902899982,
+        117.83398914263032
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5965297069924418,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_05",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7327114288906268,
+      "median_surface_residual_m": 0.0030557668634892308,
+      "p90_surface_residual_m": 0.007033477718271038,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        -0.07217902120835873,
+        -0.7469588099121247,
+        -1.1691064399221935,
+        2.036340464200332
+      ],
+      "joint_angles_deg": [
+        -4.135553284624215,
+        -42.79758727807947,
+        -66.98486480910663,
+        116.67371425038993
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5788703260041075,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_06",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7422281676214849,
+      "median_surface_residual_m": 0.002919031858633029,
+      "p90_surface_residual_m": 0.007872351487012768,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        -0.035137998363256234,
+        -0.7560984781183097,
+        -1.2267417225032455,
+        2.00826220418407
+      ],
+      "joint_angles_deg": [
+        -2.0132590067521767,
+        -43.32125169244377,
+        -70.28712325204478,
+        115.06494845538718
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.628819598001428,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_07",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.868010715757659,
+      "median_surface_residual_m": 0.003714323138709366,
+      "p90_surface_residual_m": 0.009605589755162895,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        -0.25683521937708487,
+        -0.7658120773548414,
+        -1.2519792546105195,
+        1.99705896853601
+      ],
+      "joint_angles_deg": [
+        -14.715574100623583,
+        -43.87779993257853,
+        -71.73312732711749,
+        114.42305033586284
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5684092430019518,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_08",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8562194916680693,
+      "median_surface_residual_m": 0.003636671790217136,
+      "p90_surface_residual_m": 0.009324764563976991,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        -0.25455501086121257,
+        -0.772609850181685,
+        -1.1970912407729093,
+        1.9913026995383378
+      ],
+      "joint_angles_deg": [
+        -14.584927776254311,
+        -44.26728362564539,
+        -68.58827578836676,
+        114.09324041655422
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.7290376000019023,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_09",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7417482456900286,
+      "median_surface_residual_m": 0.003840060190016605,
+      "p90_surface_residual_m": 0.007930123286845342,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        -0.2539808735439511,
+        -0.7466608504790602,
+        -1.0843606025762695,
+        2.016923693098367
+      ],
+      "joint_angles_deg": [
+        -14.552032131114265,
+        -42.78051546009876,
+        -62.129285997883024,
+        115.56121521447575
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5689515709964326,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_10",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7232223345261836,
+      "median_surface_residual_m": 0.003757618144568104,
+      "p90_surface_residual_m": 0.006644450671074635,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        -0.2785692652754403,
+        -0.7239007888792782,
+        -0.9333000828335183,
+        2.05013487537398
+      ],
+      "joint_angles_deg": [
+        -15.960843202342966,
+        -41.47645998897348,
+        -53.474155765570735,
+        117.46407579150805
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5577768899966031,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_11",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8448791089377886,
+      "median_surface_residual_m": 0.002918561568426689,
+      "p90_surface_residual_m": 0.00801520499858473,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        -0.08368587843295948,
+        -0.7446469435892045,
+        -0.9434359192015209,
+        2.0489802000735526
+      ],
+      "joint_angles_deg": [
+        -4.794847639053457,
+        -42.66512709497771,
+        -54.05489641129249,
+        117.39791777008557
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5529393379983958,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_12",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8600165906262961,
+      "median_surface_residual_m": 0.002820257354756388,
+      "p90_surface_residual_m": 0.007975641974656316,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        -0.0684692967611788,
+        -0.7531073584317334,
+        -1.0925598704046675,
+        2.0336364857846183
+      ],
+      "joint_angles_deg": [
+        -3.923001730644302,
+        -43.14987315838445,
+        -62.59906943954763,
+        116.51878769927507
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5422854920034297,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_13",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8248593385480993,
+      "median_surface_residual_m": 0.003400204579076427,
+      "p90_surface_residual_m": 0.00691160871809824,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.41722269431793585,
+        -0.736823386768449,
+        -1.07784583509084,
+        2.0491348449542506
+      ],
+      "joint_angles_deg": [
+        23.905099501494597,
+        -42.21687030836764,
+        -61.75601731645886,
+        117.40677826907287
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5918361700023524,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_14",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8407817315774727,
+      "median_surface_residual_m": 0.003491914027200626,
+      "p90_surface_residual_m": 0.006727189744873005,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.4271261707228363,
+        -0.7399083757938821,
+        -0.9242977937022891,
+        2.0492465514377516
+      ],
+      "joint_angles_deg": [
+        24.472526902002787,
+        -42.39362715936913,
+        -52.95836259239481,
+        117.41317857912173
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.6056642519979505,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_15",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.720187477196823,
+      "median_surface_residual_m": 0.0045317453543992706,
+      "p90_surface_residual_m": 0.007839375333050182,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.6750449514855398,
+        -0.7287133553031062,
+        -0.9152189196811064,
+        2.062377703790153
+      ],
+      "joint_angles_deg": [
+        38.67722670173484,
+        -41.752199733685195,
+        -52.43818142825007,
+        118.16553818905761
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5884376440080814,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_16",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7508330138884793,
+      "median_surface_residual_m": 0.004407890372491845,
+      "p90_surface_residual_m": 0.007618748355899284,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.6730774889429351,
+        -0.7279268625205021,
+        -1.0654212985242577,
+        2.0593580877114124
+      ],
+      "joint_angles_deg": [
+        38.56449940169351,
+        -41.70713701662448,
+        -61.04414380878773,
+        117.99252693199593
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5904338040127186,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_17",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8570022497187851,
+      "median_surface_residual_m": 0.004263262911799747,
+      "p90_surface_residual_m": 0.011622556677376225,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.6741166504783096,
+        -0.7303781172744496,
+        -1.1572100002749588,
+        2.057922475416105
+      ],
+      "joint_angles_deg": [
+        38.624038971902806,
+        -41.84758356853705,
+        -66.30324902608797,
+        117.91027240645774
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.6379393440001877,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_18",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8484315251598931,
+      "median_surface_residual_m": 0.004058219892349569,
+      "p90_surface_residual_m": 0.008748466699770772,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.659801607363402,
+        -0.7388252701210161,
+        -1.2460285339752288,
+        2.0444760786178087
+      ],
+      "joint_angles_deg": [
+        37.80384741787079,
+        -42.33156977554722,
+        -71.39217614965392,
+        117.13985062025712
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.6076926649984671,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_19",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.8471568809038711,
+      "median_surface_residual_m": 0.0032053358790436956,
+      "p90_surface_residual_m": 0.009261230021094,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.4392716933102754,
+        -0.7319275581881292,
+        -1.2490921062561027,
+        2.050027246112087
+      ],
+      "joint_angles_deg": [
+        25.168414086243857,
+        -41.93635999349578,
+        -71.56770591158126,
+        117.4579090890495
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5750592020049226,
+    "encoder_used_for_fitting": false
+  },
+  {
+    "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/pose_20",
+    "status": "tracking",
+    "quality": {
+      "iou": 0.7653565016670941,
+      "median_surface_residual_m": 0.0033916029975980515,
+      "p90_surface_residual_m": 0.006979557778405019,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.3484042610518349,
+          0.9341504095737114,
+          0.07731418481875785
+        ],
+        [
+          0.1568565429833915,
+          0.13942287799212344,
+          -0.9777306817399624
+        ],
+        [
+          -0.924126882957218,
+          -0.32851829992506915,
+          -0.19510312865281756
+        ]
+      ],
+      "translation_depth_units": [
+        0.060091123555595566,
+        0.12885915144586485,
+        0.3991675825788285
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.4400100987613404,
+        -0.7313895432720716,
+        -1.1747513606881506,
+        2.0523894251770223
+      ],
+      "joint_angles_deg": [
+        25.210721602159335,
+        -41.9055340094906,
+        -67.30829494468172,
+        117.59325197992443
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "reason": null,
+    "offline_settling_seconds": 0.5356809359946055,
+    "encoder_used_for_fitting": false
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "source_names": {
+    "scan.glb": "Scaniverse 2026-10-04 205850.glb",
+    "photo.jpg": "写真 2026-10-04 21 00 35.jpg"
+  },
+  "scan_vertices": 83525,
+  "scan_faces": 147506,
+  "sha256": {
+    "inputs/scan.glb": "26c22e1eaa1b7e919594a30340bba0fede815686c8b924b075af3642b25dda4f",
+    "inputs/photo.jpg": "db602473457b8d8ea231b402340554496904ae4402d82226a75730e32ceada57",
+    "inputs/reference_cad/01_frame.step": "fecd407d27f8d41a1c22cd56fe782ed1f1ca0fb7edd03137af000b614b759bfe",
+    "inputs/reference_cad/02_cap.step": "5a92f764b2a1305e4b5a65a7c78b71d90867700d90bcbea4fd07a5ab9c4da4a7"
+  }
+}

@@ -33,6 +33,12 @@ explicit hardware source, acquisition session, all required motors and a normal 
 Unknown provenance cannot authorize motion. An early-progress check supplements this evidence;
 it cannot make an unknown direction safe to try at a hard stop.
 
+For supplied photographs and controller screenshots, retain the originals and establish which
+physical state belongs to each count. Listing order, a motor-case photograph, and a missing ID
+label do not establish that pairing or the horn phase. Record an explicit user-confirmed pairing
+when that is the only available evidence. After a power cycle or USB reconnect, reacquire the
+identity, offsets, modes and stable starting state rather than reusing the previous baseline.
+
 ## 3. Transport guard and actuator
 
 - A port subclass that validates every outgoing packet: the read-only set plus WRITE frames to
@@ -63,9 +69,16 @@ it cannot make an unknown direction safe to try at a hard stop.
    moving motor must remain torque-enabled through opening, correction, hold and return. A
    lost torque state aborts without automatic re-enabling.
 5. Convergence = profile finished, position stable for about 1 s, error within tolerance.
-   P-only position control leaves a load sag; correct it by offsetting the goal a bounded
+   For a supported arm link, P-only position control may leave a load sag; correct it only under
+   an explicitly reviewed per-run correction envelope by offsetting the goal a bounded
    number of times and counts instead of changing gains. Correction stages skip the
    early-progress check so a blocked joint stops correcting instead of being dropped.
+   Do not transfer this arm correction to a gripper with soft tips or a contact limit. Separate
+   stationary near-target observations from far-target stalls, record the achieved count and
+   residual, and require physical evidence for opening/closing. Accepting an observed stationary
+   state for photography does not make the requested encoder target successful. Do not increase
+   output repeatedly to erase a stall; any revised cap needs independent evidence and a recorded
+   decision. Internal estimated Load is not a force measurement.
 6. Hold briefly, return slowly to the start within the actual return tolerance, then release.
    An opening/correction settling band must not silently loosen the return criterion.
 

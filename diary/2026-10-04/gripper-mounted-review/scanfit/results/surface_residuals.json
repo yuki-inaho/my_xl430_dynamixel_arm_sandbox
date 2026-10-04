@@ -1,0 +1,48 @@
+{
+  "definition": "one-sided closest Euclidean distance from uniformly downsampled annotated scan vertices to exported model surface triangulation",
+  "not_an_accuracy_certificate": "Fit-region residual, not held-out physical accuracy, not a confidence interval. Unseen surfaces are not validated.",
+  "components": {
+    "cot_L": {
+      "evaluation_points": 890,
+      "distance_mean_mm": 0.322503179551215,
+      "distance_median_mm": 0.25477449426639687,
+      "distance_p95_mm": 0.9121068843658574,
+      "distance_max_mm": 1.7962755896309741
+    },
+    "cot_R": {
+      "evaluation_points": 860,
+      "distance_mean_mm": 0.3550549543405287,
+      "distance_median_mm": 0.28230023624362716,
+      "distance_p95_mm": 0.9577764595239442,
+      "distance_max_mm": 2.014816019963484
+    },
+    "foam_L": {
+      "evaluation_points": 965,
+      "distance_mean_mm": 0.7896743600386019,
+      "distance_median_mm": 0.6307297375658668,
+      "distance_p95_mm": 1.94504369469825,
+      "distance_max_mm": 3.0939995936692934
+    },
+    "foam_R": {
+      "evaluation_points": 1002,
+      "distance_mean_mm": 1.1105046636628846,
+      "distance_median_mm": 0.931360538265479,
+      "distance_p95_mm": 2.790100461477896,
+      "distance_max_mm": 4.377309262481931
+    },
+    "band_L": {
+      "evaluation_points": 270,
+      "distance_mean_mm": 0.5225589460026984,
+      "distance_median_mm": 0.32389312888197336,
+      "distance_p95_mm": 1.831646342619351,
+      "distance_max_mm": 3.576271657984984
+    },
+    "band_R": {
+      "evaluation_points": 291,
+      "distance_mean_mm": 0.5463649252576391,
+      "distance_median_mm": 0.39517699712383125,
+      "distance_p95_mm": 1.8990868007998003,
+      "distance_max_mm": 3.6093600735687885
+    }
+  }
+}

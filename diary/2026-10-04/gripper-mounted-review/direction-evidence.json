@@ -1,0 +1,12 @@
+{
+  "motor_id": 5,
+  "positive_opens": true,
+  "confirmed_by_user": true,
+  "closed_count": 2067,
+  "closed_photo": "photos/c3a8828f-6d24-4fdc-989f-c1fb73afadae.jpeg",
+  "closed_screen_degrees": 181.41,
+  "open_photo": "photos/b6397f37-42a1-466e-a803-fd382b927846.jpeg",
+  "open_screen_degrees": 239.50,
+  "user_reply": "181.41°が閉、239.50°が開",
+  "limits": "Photo screens crop out ID. ID5 linkage relies on user identification and fresh closed-state read2067. Mounting photo does not determine crank phase. No successful automatic opening established yet."
+}

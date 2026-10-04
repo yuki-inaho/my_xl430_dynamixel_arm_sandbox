@@ -1,0 +1,3 @@
+WARN `--no-project` was provided, but no project was found
+warning: `--no-sync` has no effect when used alongside `--no-project`
+/mnt/data/robot_fit_20261004/.venv/bin/python: No module named pytest

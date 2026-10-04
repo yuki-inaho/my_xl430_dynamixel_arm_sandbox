@@ -1,0 +1,241 @@
+{
+  "ready": {
+    "name": "pose_05",
+    "positions": [
+      2113,
+      3489,
+      1489,
+      3398,
+      1951
+    ],
+    "at": 1791118338.2522614,
+    "delta_deg": [
+      0,
+      3,
+      30,
+      0,
+      0
+    ],
+    "goal_counts": [
+      2113,
+      3508,
+      1501,
+      3392,
+      1951
+    ],
+    "commanded_goal_counts": [
+      2113,
+      3508,
+      1501,
+      3392,
+      1951
+    ],
+    "settled_reference_counts": [
+      2113,
+      3488,
+      1489,
+      3398,
+      1951
+    ],
+    "goal_error_counts": [
+      0,
+      -19,
+      -12,
+      6,
+      0
+    ],
+    "hold_drift_counts": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "hold_seconds": 2.5,
+    "active_ids": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "before": {
+    "at": "2026-10-04T21:52:18.921+09:00",
+    "kind": "sample",
+    "stage": "holding_photo",
+    "positions": [
+      2113,
+      3489,
+      1489,
+      3398,
+      1951
+    ],
+    "torque": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    }
+  },
+  "after": {
+    "at": "2026-10-04T21:52:19.319+09:00",
+    "kind": "sample",
+    "stage": "holding_photo",
+    "positions": [
+      2113,
+      3489,
+      1489,
+      3398,
+      1951
+    ],
+    "torque": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    }
+  },
+  "vision": {
+    "status": "tracking",
+    "sequence": 13403,
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.33817671831764046,
+          0.9405501973273949,
+          0.031651753431864264
+        ],
+        [
+          0.14595825546833693,
+          0.08564657734977889,
+          -0.9855764056880165
+        ],
+        [
+          -0.9296949471996452,
+          -0.32867915981344015,
+          -0.16624474444559276
+        ]
+      ],
+      "translation_depth_units": [
+        0.0519135460533678,
+        0.14492900985333115,
+        0.39582279808426607
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.14791946642843765,
+        -0.6755457360244694,
+        -0.8845781656550339,
+        2.0587671051690335
+      ],
+      "joint_angles_deg": [
+        8.475161134176545,
+        -38.705919542260915,
+        -50.68259554145763,
+        117.9586661265517
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "quality": {
+      "iou": 0.6980955354355292,
+      "median_surface_residual_m": 0.0025892011022041915,
+      "p90_surface_residual_m": 0.023530059122651076,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "reason": null,
+    "pose_hz": 17.1545071115382,
+    "frame_age_seconds": 0.06625610899936873,
+    "frame_received_monotonic": 111503.259251953,
+    "mask_age_seconds": 0.33708162599941716,
+    "mask_received_monotonic": 111502.988426436,
+    "registration_seconds": 0.02323320400319062,
+    "model": "current_arm_r3_d405_r5_65.npz",
+    "model_sha256": "cc15059b6256b1cf88452d3c85a5a0f8861b08ce00978c9e498f86208ce9dcf0",
+    "gaussian_backend": "native",
+    "metadata": {
+      "serial": "922612070196",
+      "device": "RealSense D435",
+      "host_received_at": "2026-10-04T12:52:19.078043+00:00",
+      "color_timestamp_ms": 1791118339005.6619,
+      "depth_timestamp_ms": 1791118338972.281,
+      "timestamp_domain": "timestamp_domain.global_time",
+      "raw_depth_scale_m": 0.0010000000474974513,
+      "intrinsics_original": {
+        "fx": 925.4581298828125,
+        "fy": 925.7662963867188,
+        "ppx": 645.314453125,
+        "ppy": 360.0555419921875,
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model": "distortion.inverse_brown_conrady"
+      },
+      "processed_resolution": [
+        480,
+        270
+      ],
+      "rectified": false
+    },
+    "segmentation_rejections": 0,
+    "skipped_periodic_evidence": 0,
+    "segmentation": {
+      "model_id": "ZhengPeng7/BiRefNet_lite",
+      "revision": "aa62cd87eafb9cc43056d08ef3615a14628b831d",
+      "input_size": 768,
+      "threshold": 0.5,
+      "device": "cuda",
+      "precision": "float16",
+      "cpu_threads": 1,
+      "last_inference_seconds": 0.11983406399667729
+    },
+    "timings_seconds": {
+      "mask_preparation": 0.01521907199639827,
+      "registration": 0.02323320400319062,
+      "jpeg": 0.0039923379954416305
+    },
+    "raw_mask_metadata": {
+      "serial": "922612070196",
+      "device": "RealSense D435",
+      "host_received_at": "2026-10-04T12:52:18.807212+00:00",
+      "color_timestamp_ms": 1791118338738.808,
+      "depth_timestamp_ms": 1791118338738.784,
+      "timestamp_domain": "timestamp_domain.global_time",
+      "raw_depth_scale_m": 0.0010000000474974513,
+      "intrinsics_original": {
+        "fx": 925.4581298828125,
+        "fy": 925.7662963867188,
+        "ppx": 645.314453125,
+        "ppy": 360.0555419921875,
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model": "distortion.inverse_brown_conrady"
+      },
+      "processed_resolution": [
+        480,
+        270
+      ],
+      "rectified": false
+    },
+    "raw_mask_sequence": 13395
+  },
+  "hardware_synchronized": false,
+  "encoder_used_for_fitting": false,
+  "stored_data": "Processed RGB and aligned metric depth; source native1280x720, processed resolution and K stored in observation.npz",
+  "recorded_at": "2026-10-04T21:52:19.387977+09:00"
+}

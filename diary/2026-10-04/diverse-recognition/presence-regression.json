@@ -1,0 +1,331 @@
+{
+  "model_sha256": "cc15059b6256b1cf88452d3c85a5a0f8861b08ce00978c9e498f86208ce9dcf0",
+  "scope": "Stored-pose gate compatibility and anchored absence rejection; no new fit",
+  "positive_accepted": 20,
+  "negative_rejected": true,
+  "min_base_depth_points": 100,
+  "max_base_depth_error_m": 0.015,
+  "observations": [
+    {
+      "path": "continuation/pose_05/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.6980955354355292,
+        "median_surface_residual_m": 0.0025892011022041915,
+        "p90_surface_residual_m": 0.023530059122651076,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1341,
+        "median_base_depth_error_m": 0.0020280182361602783
+      },
+      "sha256": "e9c6612e748ecaf4ad9bc5f41b7b47f0c908a24357a1cda327b91a2fecc9db8b"
+    },
+    {
+      "path": "continuation/pose_06/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.7094273568392098,
+        "median_surface_residual_m": 0.002808655774683237,
+        "p90_surface_residual_m": 0.02447574626194797,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1371,
+        "median_base_depth_error_m": 0.002278923988342285
+      },
+      "sha256": "830ac3f8ea36351f2d1cdba46b0856049833c5a8fceebd9d6cc5a5263a269531"
+    },
+    {
+      "path": "continuation/pose_07/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.7163325507194028,
+        "median_surface_residual_m": 0.002796500000463421,
+        "p90_surface_residual_m": 0.03181222510845764,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1362,
+        "median_base_depth_error_m": 0.0023706555366516113
+      },
+      "sha256": "89eb6c006b1307a81baf6078462ed0a3c424e7b84ae0f1921c2b11ec2065afb3"
+    },
+    {
+      "path": "continuation/pose_08/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.8006718924972005,
+        "median_surface_residual_m": 0.003045335546711397,
+        "p90_surface_residual_m": 0.01281108740843399,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1412,
+        "median_base_depth_error_m": 0.0018942058086395264
+      },
+      "sha256": "26ac70b75188680cd60ca50828870fdd9cd4e78f8e192b2a73dda4026527b4f2"
+    },
+    {
+      "path": "continuation-2/pose_09/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.8734672116580772,
+        "median_surface_residual_m": 0.0029750560444260794,
+        "p90_surface_residual_m": 0.0089382762857837,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1464,
+        "median_base_depth_error_m": 0.0023188143968582153
+      },
+      "sha256": "4d976f99441ccf0352cb7dd31352f98ff19611d4f903110a2cb08ac4a91da154"
+    },
+    {
+      "path": "continuation-2/pose_10/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.7489501551944495,
+        "median_surface_residual_m": 0.002876767050344019,
+        "p90_surface_residual_m": 0.016687751101688172,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1440,
+        "median_base_depth_error_m": 0.00229761004447937
+      },
+      "sha256": "b28b6946eb76ffa25821702e0681e92df6181acf4576b8b2bc92dc2178ce7a63"
+    },
+    {
+      "path": "continuation-2/pose_11/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.8506715661429296,
+        "median_surface_residual_m": 0.0026555899639936534,
+        "p90_surface_residual_m": 0.009568058139543005,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1396,
+        "median_base_depth_error_m": 0.002365201711654663
+      },
+      "sha256": "bba5d5c8188a66d419ecd765962c4f21d4616937128c910a6a83bc31778ee4c4"
+    },
+    {
+      "path": "continuation-2/pose_12/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.7501215362177929,
+        "median_surface_residual_m": 0.002619170661233506,
+        "p90_surface_residual_m": 0.014158246990542151,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1329,
+        "median_base_depth_error_m": 0.0022128522396087646
+      },
+      "sha256": "7ee47f9bc134a1af74bf94bba5adfe01d2881b90896bae202295720d4ccc6c06"
+    },
+    {
+      "path": "continuation-2/pose_13/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.6914487387178894,
+        "median_surface_residual_m": 0.003174567771995716,
+        "p90_surface_residual_m": 0.01810314502802851,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1312,
+        "median_base_depth_error_m": 0.002102106809616089
+      },
+      "sha256": "cc0c7f44b81b6d0082e766d255642b864a7e9aec365fa1c6fb53db2620e1538e"
+    },
+    {
+      "path": "continuation-2/pose_14/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.7142775393419171,
+        "median_surface_residual_m": 0.0035130948933894315,
+        "p90_surface_residual_m": 0.02202632377204847,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1301,
+        "median_base_depth_error_m": 0.002273648977279663
+      },
+      "sha256": "d3d4507d340b2588b25b771911b1943a31cad293526f4b9f993fce4beadc65cc"
+    },
+    {
+      "path": "continuation-2/pose_15/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.7401945787187175,
+        "median_surface_residual_m": 0.0029345508849613388,
+        "p90_surface_residual_m": 0.017002331182183153,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1361,
+        "median_base_depth_error_m": 0.0024151206016540527
+      },
+      "sha256": "4fdea59069e08a202ac218e5514736763baccc94ded3834c1233a117187abfca"
+    },
+    {
+      "path": "continuation-2/pose_16/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.8494603875398578,
+        "median_surface_residual_m": 0.0025390136549033448,
+        "p90_surface_residual_m": 0.008968536960875533,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1375,
+        "median_base_depth_error_m": 0.0023965835571289062
+      },
+      "sha256": "0353ffd39746e7cb09a2ab36d434f3ad4356acf9f3b58e3c1e5b25701aede20a"
+    },
+    {
+      "path": "continuation-2/pose_17/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.8032495979592968,
+        "median_surface_residual_m": 0.0027076942545218065,
+        "p90_surface_residual_m": 0.009069007567828235,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1336,
+        "median_base_depth_error_m": 0.002145931124687195
+      },
+      "sha256": "ce039f56c0bc0d08ccd65d5122b14917a6b942a30728f73a45bd345f161edb91"
+    },
+    {
+      "path": "continuation-2/pose_18/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.8980286738351254,
+        "median_surface_residual_m": 0.002889644814997496,
+        "p90_surface_residual_m": 0.009034125708436104,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1468,
+        "median_base_depth_error_m": 0.0018459409475326538
+      },
+      "sha256": "2948ae17ac99a87f680a3c00f0c5fc9c520127cf4d5d39044491455325229b4a"
+    },
+    {
+      "path": "continuation-2/pose_19/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.818793797936324,
+        "median_surface_residual_m": 0.0030536490960407676,
+        "p90_surface_residual_m": 0.008652397631380713,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1398,
+        "median_base_depth_error_m": 0.002013176679611206
+      },
+      "sha256": "f040d9f4560d7d404c933de5e43f1ae727911eb533b3474d19fec5017b9aa632"
+    },
+    {
+      "path": "continuation-2/pose_20/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.8463516160626836,
+        "median_surface_residual_m": 0.002530900920331891,
+        "p90_surface_residual_m": 0.009393904405141644,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1441,
+        "median_base_depth_error_m": 0.0022928714752197266
+      },
+      "sha256": "c6aaf1fd4e9b3bf142169fadc7a4bb6b84b525e9bce24836d9aa084ee3fcc689"
+    },
+    {
+      "path": "pose_01/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.7229508196721312,
+        "median_surface_residual_m": 0.0028444899785740286,
+        "p90_surface_residual_m": 0.010028968098320434,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1382,
+        "median_base_depth_error_m": 0.0022731125354766846
+      },
+      "sha256": "5817892b5ace5aa807ca5600e52660fbf248ebd973d297317f241f34a3c81bdc"
+    },
+    {
+      "path": "pose_02/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.6902451225612807,
+        "median_surface_residual_m": 0.002789047529089438,
+        "p90_surface_residual_m": 0.00837655213541345,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1380,
+        "median_base_depth_error_m": 0.0022208094596862793
+      },
+      "sha256": "bdb3f1b51fb80b4b3fd0cbf64954f61453c822ad348632cf89e63a54e451505a"
+    },
+    {
+      "path": "pose_03/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.7455499344200862,
+        "median_surface_residual_m": 0.0024904006658714676,
+        "p90_surface_residual_m": 0.01774158188926739,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1442,
+        "median_base_depth_error_m": 0.0022905319929122925
+      },
+      "sha256": "61c26b8a322d63db05e07bc0e1515dff09a985957f26436dab5b4c9c38160d12"
+    },
+    {
+      "path": "pose_04/observation.npz",
+      "absent": false,
+      "accepted": true,
+      "quality": {
+        "iou": 0.6967693650991643,
+        "median_surface_residual_m": 0.0026358340083861157,
+        "p90_surface_residual_m": 0.02348200708383977,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 1390,
+        "median_base_depth_error_m": 0.0022611767053604126
+      },
+      "sha256": "ebe59881d0f1793f044d6203578fbe538b9c921514595462be3143b2e27126cf"
+    },
+    {
+      "path": "arm-absent-negative/observation.npz",
+      "absent": true,
+      "accepted": false,
+      "quality": {
+        "iou": 0.09562921677911411,
+        "median_surface_residual_m": 0.06632864749133421,
+        "p90_surface_residual_m": 0.11948436776034137,
+        "scale": 1.0,
+        "observed_points": 1200,
+        "base_depth_points": 2058,
+        "median_base_depth_error_m": 0.03471623361110687
+      },
+      "sha256": "2048491c8ea086293de35bb2841b6852e4b9839b4589bef5c112e915ac470b8e",
+      "repeated_loss_reasons": [
+        "fixed base absent or scene moved: {'base_depth_points': 2058, 'median_base_depth_error_m': 0.03471623361110687}",
+        "fixed base absent or scene moved: {'base_depth_points': 2058, 'median_base_depth_error_m': 0.03471623361110687}",
+        "fixed base absent or scene moved: {'base_depth_points': 2058, 'median_base_depth_error_m': 0.03471623361110687}",
+        "fixed base absent or scene moved: {'base_depth_points': 2058, 'median_base_depth_error_m': 0.03471623361110687}"
+      ]
+    }
+  ]
+}

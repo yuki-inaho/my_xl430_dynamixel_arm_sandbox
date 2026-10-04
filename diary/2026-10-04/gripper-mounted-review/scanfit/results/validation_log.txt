@@ -1,0 +1,124 @@
+{
+  "definition": "one-sided closest Euclidean distance from uniformly downsampled annotated scan vertices to exported model surface triangulation",
+  "not_an_accuracy_certificate": "Fit-region residual, not held-out physical accuracy, not a confidence interval. Unseen surfaces are not validated.",
+  "components": {
+    "cot_L": {
+      "evaluation_points": 890,
+      "distance_mean_mm": 0.322503179551215,
+      "distance_median_mm": 0.25477449426639687,
+      "distance_p95_mm": 0.9121068843658574,
+      "distance_max_mm": 1.7962755896309741
+    },
+    "cot_R": {
+      "evaluation_points": 860,
+      "distance_mean_mm": 0.3550549543405287,
+      "distance_median_mm": 0.28230023624362716,
+      "distance_p95_mm": 0.9577764595239442,
+      "distance_max_mm": 2.014816019963484
+    },
+    "foam_L": {
+      "evaluation_points": 965,
+      "distance_mean_mm": 0.7896743600386019,
+      "distance_median_mm": 0.6307297375658668,
+      "distance_p95_mm": 1.94504369469825,
+      "distance_max_mm": 3.0939995936692934
+    },
+    "foam_R": {
+      "evaluation_points": 1002,
+      "distance_mean_mm": 1.1105046636628846,
+      "distance_median_mm": 0.931360538265479,
+      "distance_p95_mm": 2.790100461477896,
+      "distance_max_mm": 4.377309262481931
+    },
+    "band_L": {
+      "evaluation_points": 270,
+      "distance_mean_mm": 0.5225589460026984,
+      "distance_median_mm": 0.32389312888197336,
+      "distance_p95_mm": 1.831646342619351,
+      "distance_max_mm": 3.576271657984984
+    },
+    "band_R": {
+      "evaluation_points": 291,
+      "distance_mean_mm": 0.5463649252576391,
+      "distance_median_mm": 0.39517699712383125,
+      "distance_p95_mm": 1.8990868007998003,
+      "distance_max_mm": 3.6093600735687885
+    }
+  }
+}
+{
+  "step_components": {
+    "cot_L": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 4954.903962163011,
+      "relative_volume_roundtrip_error": 3.432468328956966e-13,
+      "mesh_vertices": 4226,
+      "mesh_faces": 8448,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.005912341409720329
+    },
+    "foam_L": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 9482.197952531507,
+      "relative_volume_roundtrip_error": 5.480641463027288e-13,
+      "mesh_vertices": 2403,
+      "mesh_faces": 4802,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.001389369815878111
+    },
+    "band_L": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 471.14008525237386,
+      "relative_volume_roundtrip_error": 2.9549789082137566e-12,
+      "mesh_vertices": 508,
+      "mesh_faces": 1016,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.017935476099464793
+    },
+    "cot_R": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 5044.3778865837785,
+      "relative_volume_roundtrip_error": 1.4892671416674803e-13,
+      "mesh_vertices": 4226,
+      "mesh_faces": 8448,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.0030314608254323593
+    },
+    "foam_R": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 12305.122597562404,
+      "relative_volume_roundtrip_error": 2.675609929372255e-14,
+      "mesh_vertices": 4696,
+      "mesh_faces": 9388,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.00032819665754540837
+    },
+    "band_R": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 582.0787872668934,
+      "relative_volume_roundtrip_error": 7.736221050441762e-11,
+      "mesh_vertices": 492,
+      "mesh_faces": 984,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.018617195876352896
+    }
+  },
+  "glb_geometry_count": 6,
+  "glb_roundtrip_bounds_max_error_mm": 3.6273823269539207e-06,
+  "glb_units": "metres, +Y up",
+  "step_stl_units": "millimetres, +Z up in C92 construction coordinates",
+  "all_step_valid": true,
+  "all_addon_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "scale_positive": true,
+  "rotation_determinant": 0.999999999999998,
+  "max_mesh_vs_step_volume_relative_error": 0.018617195876352896,
+  "mesh_volume_tolerance_relative": 0.025,
+  "pass": true
+}

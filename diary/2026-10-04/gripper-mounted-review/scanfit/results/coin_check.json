@@ -1,0 +1,37 @@
+{
+  "role": "independent check, not a scale constraint",
+  "nominal_coin_diameter_mm": 22.6,
+  "nominal_source": "https://www.mint.go.jp/faq-list/faq_coin",
+  "measurement": "circle fit to textured orthographic coin boundary after CAD-based scale correction",
+  "threshold_sensitivity": [
+    {
+      "brightness_threshold": 110,
+      "circle_diameter_mm": 22.439820610158325,
+      "outline_radial_median_residual_mm": 0.16853228080260807
+    },
+    {
+      "brightness_threshold": 120,
+      "circle_diameter_mm": 22.192767274384092,
+      "outline_radial_median_residual_mm": 0.1626629097380726
+    },
+    {
+      "brightness_threshold": 130,
+      "circle_diameter_mm": 21.946960318220505,
+      "outline_radial_median_residual_mm": 0.17385279872885007
+    },
+    {
+      "brightness_threshold": 140,
+      "circle_diameter_mm": 21.644921798862676,
+      "outline_radial_median_residual_mm": 0.16789202383323754
+    },
+    {
+      "brightness_threshold": 150,
+      "circle_diameter_mm": 20.475551667877124,
+      "outline_radial_median_residual_mm": 0.26535544245123105
+    }
+  ],
+  "selected_threshold": 130,
+  "measured_diameter_mm": 21.946960318220505,
+  "diameter_difference_mm": -0.6530396817794966,
+  "limitations": "Mesh/texture edge and scan smoothing; threshold spread is sensitivity, not a calibrated confidence interval."
+}

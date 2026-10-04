@@ -1,0 +1,99 @@
+{
+  "configuration": "R3 arm + nominal D405 long R5_65; no jaws",
+  "physical_match": "R5 family inferred from photos; 65/75-degree distinction unresolved",
+  "units": "metres",
+  "attachment_body_level": 4,
+  "mesh_local_origin_reference_m": [
+    -0.0002,
+    0.10490000000000001,
+    0.1646
+  ],
+  "bare_sha256": "ae862cb057b226cced2882fe1ae4add4c17519b68d5648cbd558f05cf5c30a52",
+  "output_sha256": "cc15059b6256b1cf88452d3c85a5a0f8861b08ce00978c9e498f86208ce9dcf0",
+  "inputs": [
+    {
+      "file": "r5_65_CAM5_BASE.obj",
+      "sha256": "224bdfbc1740e60541ee397dd0d05070a9707ae72da8b7bce8c29b7b101820d8"
+    },
+    {
+      "file": "r5_65_CAM5_BASE_TAP_0.obj",
+      "sha256": "0c7220e0f1a8acbc00adc86d8ed49f6840137e76f8a3e97700ddb8aeec51160f"
+    },
+    {
+      "file": "r5_65_CAM5_BASE_TAP_1.obj",
+      "sha256": "4413d06ef831f188f33628d50b27a5049bd26936ecd8d26e023dcf1f27af9516"
+    },
+    {
+      "file": "r5_65_CAM5_BASE_TAP_2.obj",
+      "sha256": "58a3a3b1df3816048ddc6dd448d731b1211d4d04db2d065f0bac423f0b13f68d"
+    },
+    {
+      "file": "r5_65_CAM5_BASE_TAP_3.obj",
+      "sha256": "d3d0be24417e54733b063999d08d0a5cc7afe51727bf3dbeb62602b104f08d17"
+    },
+    {
+      "file": "r5_65_CAM5_BASE_WASHER_0.obj",
+      "sha256": "1a3601d62da6108fc51ec2ba0c57b69749b1d8f6382ae2c743fe7b9015572f07"
+    },
+    {
+      "file": "r5_65_CAM5_BASE_WASHER_1.obj",
+      "sha256": "11b4cd165ce6a22a2552f97b998dd5c71d11fac24fccf4ce72de3465c6111398"
+    },
+    {
+      "file": "r5_65_CAM5_BASE_WASHER_2.obj",
+      "sha256": "cd74e54c73762d70bc6dcd75e2ea7d932362c7d3f8d59f5409fcd0c3e14d6a7b"
+    },
+    {
+      "file": "r5_65_CAM5_BASE_WASHER_3.obj",
+      "sha256": "334758034988f697302d028ed10062aedc7c14dde8218e6e6547c505ddab3158"
+    },
+    {
+      "file": "r5_65_CAM5_D405_BODY.obj",
+      "sha256": "43a5499ab08061bcc453d14a6c4cfc6bc8c1297b1762cbabfcf5c94d8c5207a4"
+    },
+    {
+      "file": "r5_65_CAM5_D405_CARRIER.obj",
+      "sha256": "398795ce75b231e2bb67321bb9683a3382bbc8985aa1001652d884b21ff4e448"
+    },
+    {
+      "file": "r5_65_CAM5_D405_SCREW_0.obj",
+      "sha256": "93df43c2c9f4668ad7c2f95f6ea16844dddc8958374dc48d2bedb984d3f74525"
+    },
+    {
+      "file": "r5_65_CAM5_D405_SCREW_1.obj",
+      "sha256": "4a5869ad15e41d6e8c179c2ced044144facabcd95b93ef9e574728b3ca35d018"
+    },
+    {
+      "file": "r5_65_CAM5_D405_USB_CABLE_STUB.obj",
+      "sha256": "c110ce275e407ff7844981aaea867e5395d34d5aa68d7f69b74a685fb7df892a"
+    },
+    {
+      "file": "r5_65_CAM5_D405_USB_PLUG.obj",
+      "sha256": "fc2184db8020dd84092106f6171db860d0d088cfa507db02b2cee366ee222d8a"
+    },
+    {
+      "file": "r5_65_CAM5_TIE_BOLT_0.obj",
+      "sha256": "3fce07159a7d89c91373a828ec5ccd64babd44940506a268d2dff1d0b0892c30"
+    },
+    {
+      "file": "r5_65_CAM5_TIE_BOLT_1.obj",
+      "sha256": "7bf824752362cf5fad4b709c5e8beec442327770f343a69cf9ae691b6f03e21d"
+    },
+    {
+      "file": "r5_65_CAM5_TIE_NUT_0.obj",
+      "sha256": "e5ec044d2af87f54c99f2261e13fd6c88bc621fb091fadd7efc1d596ad5b4e00"
+    },
+    {
+      "file": "r5_65_CAM5_TIE_NUT_1.obj",
+      "sha256": "ed0ab4f0dd47cf5c275dfdcd05386f2863964682fb98c82ade2b9b2439fdbe58"
+    },
+    {
+      "file": "r5_65_CAM5_TIE_WASHER_0.obj",
+      "sha256": "aefb0758e29d7c4a36e424bf0dc9340a810578638ff51226121ea1b5dcfadbf0"
+    },
+    {
+      "file": "r5_65_CAM5_TIE_WASHER_1.obj",
+      "sha256": "574ff63d78a2027cb941925eb659b25a95836416026cc3dbf93eef1c6d090c0f"
+    }
+  ]
+}

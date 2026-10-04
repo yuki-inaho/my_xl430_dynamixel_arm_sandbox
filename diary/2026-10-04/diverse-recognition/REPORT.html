@@ -1,0 +1,73 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>多姿勢 RGB-D 認識検証</title><style>body{font:16px system-ui;margin:24px;background:#f5f7f8;color:#17313d}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px}article{background:white;padding:16px}img{width:100%;height:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere}h1{font-size:26px}</style><h1>多姿勢のRGB-D認識検証 · 2026-10-04</h1><p>20姿勢を画像確認しながら撮影。元の支持姿勢へ復帰し全5台トルクOFF、22:00頃にユーザーが電源OFFを報告。</p><p>相対符号を決めた観測を評価集合から除外しています。絶対角の校正ではありません。肩の実変化は小さく、手首は未検証です。MuJoCo表示モデルの接触は無効のため、全可動域の非干渉を認定していません。</p><p><a href="REVIEW.md">レビュー・性能・停止例</a> <a href="evaluation.json">全測定表JSON</a> <a href="performance.json">期間別性能</a></p><p>台座・肩・肘の16姿勢相対MAE：1.15° / 0.43° / 0.37°。撮影701.97秒で19.80成功Hz、frame age p95 0.101秒。固定frame処理中央値40.76→29.23ms。性能は最終不在修正前の測定です。</p><main><article><h2>開始時の支持姿勢</h2><img src="captures/neutral/color.png" alt="撮影開始時の折り畳み姿勢"></article><article><h2>復帰・全トルクOFF</h2><img src="captures/neutral-final/color.png" alt="撮影終了後の支持姿勢"></article><article><h2>発見した背景への誤追跡</h2><img src="captures/arm-absent-negative/color.png" alt="アーム不在の失敗画像"><p>この画像では腕が写っていないのに背景への誤fitが生じました。台座の位置保持と深度判定により修正後はlost。元の誤推定も保存しています。</p></article><article><h2>台座位置変更後の表示</h2><img src="moved-scene-after-fix-viewer.png" alt="位置変更されたアームをlost表示"><p>アームは見えていますが古い台座anchorに一致せずlost。再取得が必要です。</p></article></main><details><summary>数値集計</summary><pre>{
+  &quot;captured_poses&quot;: 20,
+  &quot;sign_convention&quot;: [
+    1,
+    -1,
+    1
+  ],
+  &quot;sign_evidence&quot;: [
+    {
+      &quot;axis&quot;: 1,
+      &quot;first&quot;: &quot;pose_06&quot;,
+      &quot;second&quot;: &quot;pose_07&quot;,
+      &quot;encoder_delta_deg&quot;: -14.0625,
+      &quot;image_delta_deg&quot;: -14.035088192342434,
+      &quot;sign&quot;: 1
+    },
+    {
+      &quot;axis&quot;: 2,
+      &quot;first&quot;: &quot;pose_05&quot;,
+      &quot;second&quot;: &quot;pose_06&quot;,
+      &quot;encoder_delta_deg&quot;: -4.130859375,
+      &quot;image_delta_deg&quot;: 3.3172776701334,
+      &quot;sign&quot;: -1
+    },
+    {
+      &quot;axis&quot;: 3,
+      &quot;first&quot;: &quot;neutral&quot;,
+      &quot;second&quot;: &quot;pose_01&quot;,
+      &quot;encoder_delta_deg&quot;: 8.96484375,
+      &quot;image_delta_deg&quot;: 8.532158686553046,
+      &quot;sign&quot;: 1
+    }
+  ],
+  &quot;holdout_poses&quot;: 16,
+  &quot;axes_evaluated&quot;: [
+    &quot;ID1/base&quot;,
+    &quot;ID2/shoulder&quot;,
+    &quot;ID3/elbow&quot;
+  ],
+  &quot;holdout_mae_deg&quot;: [
+    1.151826034718985,
+    0.43013809716647877,
+    0.3714175837360325
+  ],
+  &quot;holdout_max_abs_error_deg&quot;: [
+    2.969608704970412,
+    1.405141521635855,
+    0.8763044332202554
+  ],
+  &quot;iou_range&quot;: [
+    0.6902451225612807,
+    0.8980286738351254
+  ],
+  &quot;median_depth_residual_mm_range&quot;: [
+    2.4904006658714675,
+    3.5130948933894315
+  ],
+  &quot;encoder_range_deg&quot;: [
+    58.53515625,
+    4.39453125,
+    19.951171875,
+    1.845703125,
+    0.0
+  ],
+  &quot;max_bracket_drift_counts&quot;: 1,
+  &quot;hardware_synchronized&quot;: false,
+  &quot;absolute_calibration_verified&quot;: false,
+  &quot;wrist_verified&quot;: false,
+  &quot;wrist_reason&quot;: &quot;Only about 1.8 degree motion; +6 candidate stalled. Image estimate did not resolve that small change.&quot;,
+  &quot;id5_verified&quot;: false,
+  &quot;id5_reason&quot;: &quot;No moving downstream jaw geometry installed.&quot;,
+  &quot;collision_status&quot;: &quot;No visible contact on reviewed paths; whole-range collision evidence is unavailable. Wrist candidate is rejected.&quot;
+}</pre></details><main><article><h2>pose_01</h2><p>指令 [0, 0, 10, 0, 0]<br>相対角誤差（台座・肩・肘） -0.26, +0.27, -0.43°<br>IoU 0.723</p><a href="captures/pose_01/color.png"><img src="captures/pose_01/color.png" alt="pose_01 実画像"></a><img src="captures/pose_01/overlay.jpg" alt="pose_01 CAD重畳"><img src="captures/pose_01/depth-preview.png" alt="pose_01 深度"><p><a href="captures/pose_01/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_01/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_02</h2><p>指令 [0, 0, 20, 0, 0]<br>相対角誤差（台座・肩・肘） -0.33, +0.60, +0.74°<br>IoU 0.690</p><a href="captures/pose_02/color.png"><img src="captures/pose_02/color.png" alt="pose_02 実画像"></a><img src="captures/pose_02/overlay.jpg" alt="pose_02 CAD重畳"><img src="captures/pose_02/depth-preview.png" alt="pose_02 深度"><p><a href="captures/pose_02/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_02/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_03</h2><p>指令 [0, 0, 30, 0, 0]<br>相対角誤差（台座・肩・肘） +0.79, +0.05, -0.15°<br>IoU 0.746</p><a href="captures/pose_03/color.png"><img src="captures/pose_03/color.png" alt="pose_03 実画像"></a><img src="captures/pose_03/overlay.jpg" alt="pose_03 CAD重畳"><img src="captures/pose_03/depth-preview.png" alt="pose_03 深度"><p><a href="captures/pose_03/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_03/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_04</h2><p>指令 [0, 0, 30, 3, 0]<br>相対角誤差（台座・肩・肘） +0.72, +0.08, -0.29°<br>IoU 0.697</p><a href="captures/pose_04/color.png"><img src="captures/pose_04/color.png" alt="pose_04 実画像"></a><img src="captures/pose_04/overlay.jpg" alt="pose_04 CAD重畳"><img src="captures/pose_04/depth-preview.png" alt="pose_04 深度"><p><a href="captures/pose_04/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_04/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_05</h2><p>指令 [0, 3, 30, 0, 0]<br>相対角誤差（台座・肩・肘） +1.10, +0.59, -0.26°<br>IoU 0.698</p><a href="captures/pose_05/color.png"><img src="captures/pose_05/color.png" alt="pose_05 実画像"></a><img src="captures/pose_05/overlay.jpg" alt="pose_05 CAD重畳"><img src="captures/pose_05/depth-preview.png" alt="pose_05 深度"><p><a href="captures/pose_05/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_05/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_06</h2><p>指令 [0, -3, 30, 0, 0]<br>相対角誤差（台座・肩・肘） +0.19, -0.22, +0.05°<br>IoU 0.709</p><a href="captures/pose_06/color.png"><img src="captures/pose_06/color.png" alt="pose_06 実画像"></a><img src="captures/pose_06/overlay.jpg" alt="pose_06 CAD重畳"><img src="captures/pose_06/depth-preview.png" alt="pose_06 深度"><p><a href="captures/pose_06/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_06/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_07</h2><p>指令 [-15, -3, 30, 0, 0]<br>相対角誤差（台座・肩・肘） +0.22, -0.79, -0.50°<br>IoU 0.716</p><a href="captures/pose_07/color.png"><img src="captures/pose_07/color.png" alt="pose_07 実画像"></a><img src="captures/pose_07/overlay.jpg" alt="pose_07 CAD重畳"><img src="captures/pose_07/depth-preview.png" alt="pose_07 深度"><p><a href="captures/pose_07/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_07/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_08</h2><p>指令 [-30, -3, 30, 0, 0]<br>相対角誤差（台座・肩・肘） +2.72, +1.41, -0.74°<br>IoU 0.801</p><a href="captures/pose_08/color.png"><img src="captures/pose_08/color.png" alt="pose_08 実画像"></a><img src="captures/pose_08/overlay.jpg" alt="pose_08 CAD重畳"><img src="captures/pose_08/depth-preview.png" alt="pose_08 深度"><p><a href="captures/pose_08/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_08/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_09</h2><p>指令 [-30, 3, 30, 0, 0]<br>相対角誤差（台座・肩・肘） +1.04, +0.72, -0.14°<br>IoU 0.873</p><a href="captures/pose_09/color.png"><img src="captures/pose_09/color.png" alt="pose_09 実画像"></a><img src="captures/pose_09/overlay.jpg" alt="pose_09 CAD重畳"><img src="captures/pose_09/depth-preview.png" alt="pose_09 深度"><p><a href="captures/pose_09/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_09/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_10</h2><p>指令 [-15, 3, 30, 0, 0]<br>相対角誤差（台座・肩・肘） -0.01, +0.14, -0.88°<br>IoU 0.749</p><a href="captures/pose_10/color.png"><img src="captures/pose_10/color.png" alt="pose_10 実画像"></a><img src="captures/pose_10/overlay.jpg" alt="pose_10 CAD重畳"><img src="captures/pose_10/depth-preview.png" alt="pose_10 深度"><p><a href="captures/pose_10/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_10/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_11</h2><p>指令 [0, 3, 25, 0, 0]<br>相対角誤差（台座・肩・肘） +0.54, +0.42, +0.05°<br>IoU 0.851</p><a href="captures/pose_11/color.png"><img src="captures/pose_11/color.png" alt="pose_11 実画像"></a><img src="captures/pose_11/overlay.jpg" alt="pose_11 CAD重畳"><img src="captures/pose_11/depth-preview.png" alt="pose_11 深度"><p><a href="captures/pose_11/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_11/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_12</h2><p>指令 [15, 3, 25, 0, 0]<br>相対角誤差（台座・肩・肘） +0.66, +0.58, +0.34°<br>IoU 0.750</p><a href="captures/pose_12/color.png"><img src="captures/pose_12/color.png" alt="pose_12 実画像"></a><img src="captures/pose_12/overlay.jpg" alt="pose_12 CAD重畳"><img src="captures/pose_12/depth-preview.png" alt="pose_12 深度"><p><a href="captures/pose_12/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_12/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_13</h2><p>指令 [30, 3, 25, 0, 0]<br>相対角誤差（台座・肩・肘） +1.82, +0.74, +0.47°<br>IoU 0.691</p><a href="captures/pose_13/color.png"><img src="captures/pose_13/color.png" alt="pose_13 実画像"></a><img src="captures/pose_13/overlay.jpg" alt="pose_13 CAD重畳"><img src="captures/pose_13/depth-preview.png" alt="pose_13 深度"><p><a href="captures/pose_13/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_13/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_14</h2><p>指令 [30, -3, 25, 0, 0]<br>相対角誤差（台座・肩・肘） +2.54, +0.37, +0.44°<br>IoU 0.714</p><a href="captures/pose_14/color.png"><img src="captures/pose_14/color.png" alt="pose_14 実画像"></a><img src="captures/pose_14/overlay.jpg" alt="pose_14 CAD重畳"><img src="captures/pose_14/depth-preview.png" alt="pose_14 深度"><p><a href="captures/pose_14/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_14/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_15</h2><p>指令 [15, -3, 25, 0, 0]<br>相対角誤差（台座・肩・肘） +0.86, -0.03, +0.35°<br>IoU 0.740</p><a href="captures/pose_15/color.png"><img src="captures/pose_15/color.png" alt="pose_15 実画像"></a><img src="captures/pose_15/overlay.jpg" alt="pose_15 CAD重畳"><img src="captures/pose_15/depth-preview.png" alt="pose_15 深度"><p><a href="captures/pose_15/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_15/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_16</h2><p>指令 [0, -3, 25, 0, 0]<br>相対角誤差（台座・肩・肘） +0.56, +0.01, +0.25°<br>IoU 0.849</p><a href="captures/pose_16/color.png"><img src="captures/pose_16/color.png" alt="pose_16 実画像"></a><img src="captures/pose_16/overlay.jpg" alt="pose_16 CAD重畳"><img src="captures/pose_16/depth-preview.png" alt="pose_16 深度"><p><a href="captures/pose_16/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_16/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_17</h2><p>指令 [-15, -3, 20, 0, 0]<br>相対角誤差（台座・肩・肘） +0.85, -0.84, +0.28°<br>IoU 0.803</p><a href="captures/pose_17/color.png"><img src="captures/pose_17/color.png" alt="pose_17 実画像"></a><img src="captures/pose_17/overlay.jpg" alt="pose_17 CAD重畳"><img src="captures/pose_17/depth-preview.png" alt="pose_17 深度"><p><a href="captures/pose_17/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_17/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_18</h2><p>指令 [-30, -3, 20, 0, 0]<br>相対角誤差（台座・肩・肘） +2.97, +0.19, -0.20°<br>IoU 0.898</p><a href="captures/pose_18/color.png"><img src="captures/pose_18/color.png" alt="pose_18 実画像"></a><img src="captures/pose_18/overlay.jpg" alt="pose_18 CAD重畳"><img src="captures/pose_18/depth-preview.png" alt="pose_18 深度"><p><a href="captures/pose_18/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_18/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_19</h2><p>指令 [-30, 3, 20, 0, 0]<br>相対角誤差（台座・肩・肘） +1.79, +0.09, -0.56°<br>IoU 0.819</p><a href="captures/pose_19/color.png"><img src="captures/pose_19/color.png" alt="pose_19 実画像"></a><img src="captures/pose_19/overlay.jpg" alt="pose_19 CAD重畳"><img src="captures/pose_19/depth-preview.png" alt="pose_19 深度"><p><a href="captures/pose_19/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_19/pose.json">前後READ・推定・時刻</a></p></article><article><h2>pose_20</h2><p>指令 [0, 3, 20, 0, 0]<br>相対角誤差（台座・肩・肘） +0.22, +0.62, -0.07°<br>IoU 0.846</p><a href="captures/pose_20/color.png"><img src="captures/pose_20/color.png" alt="pose_20 実画像"></a><img src="captures/pose_20/overlay.jpg" alt="pose_20 CAD重畳"><img src="captures/pose_20/depth-preview.png" alt="pose_20 深度"><p><a href="captures/pose_20/observation.npz">RGB-D・K・mask</a> <a href="captures/pose_20/pose.json">前後READ・推定・時刻</a></p></article></main></html>

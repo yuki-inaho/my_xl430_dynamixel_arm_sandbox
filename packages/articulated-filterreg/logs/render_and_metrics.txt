@@ -1,0 +1,202 @@
+{
+  "selection_score": 0.171602532917301,
+  "iou": 0.894349164467898,
+  "foreground_intersection_px": 48810,
+  "foreground_union_px": 54576,
+  "predicted_visible_pixels": 51881,
+  "observed_foreground_pixels": 51505,
+  "symmetric_cloud_rmse_depth_units": 0.03915870914189803,
+  "symmetric_cloud_trim90_rmse_depth_units": 0.004717185464081472,
+  "symmetric_cloud_trim90_rmse_cad_equivalent_mm": 2.801333880776206,
+  "training_landmark_rmse_px": 0.9345471816221371,
+  "training_landmark_errors_px": [
+    0.1592650126020413,
+    0.4822516415804096,
+    1.0917112369274837,
+    0.8480915121011035,
+    1.4825206729120501
+  ],
+  "overlap_depth_median_abs_error_units": 0.005844402920011982,
+  "overlap_depth_rmse_units": 0.032606786980032276,
+  "scale_depth_units_per_meter": 1.6839069046544404,
+  "score_definition": "(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)",
+  "metric_warning": "CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy.",
+  "held_out_landmark_median_px": 3.6759391480323953,
+  "held_out_landmark_rmse_px": 3.353461837640792,
+  "held_out_landmark_max_px": 4.962187281538439,
+  "held_out_landmarks": [
+    {
+      "name": "P03_screw_left",
+      "annotation_uv": [
+        208.5,
+        277.8
+      ],
+      "prediction_uv": [
+        209.1647266270316,
+        277.6929391035152
+      ],
+      "error_px": 0.6732930448481848
+    },
+    {
+      "name": "P03_screw_up",
+      "annotation_uv": [
+        225.2,
+        267.8
+      ],
+      "prediction_uv": [
+        224.5392127194398,
+        266.5564504698439
+      ],
+      "error_px": 1.408209950292055
+    },
+    {
+      "name": "P03_screw_right",
+      "annotation_uv": [
+        238.5,
+        280.5
+      ],
+      "prediction_uv": [
+        239.37173279833036,
+        279.2227656950005
+      ],
+      "error_px": 1.546365267830499
+    },
+    {
+      "name": "P03_screw_down",
+      "annotation_uv": [
+        225.0,
+        292.0
+      ],
+      "prediction_uv": [
+        224.05327175382197,
+        290.09720954999676
+      ],
+      "error_px": 2.1253013595099506
+    },
+    {
+      "name": "P04_screw_left",
+      "annotation_uv": [
+        242.5,
+        93.3
+      ],
+      "prediction_uv": [
+        243.47583224572315,
+        89.76743796391605
+      ],
+      "error_px": 3.6648660426507598
+    },
+    {
+      "name": "P04_screw_up",
+      "annotation_uv": [
+        263.8,
+        81.4
+      ],
+      "prediction_uv": [
+        264.6901680698132,
+        77.71288140364211
+      ],
+      "error_px": 3.7930519026402854
+    },
+    {
+      "name": "P04_screw_right",
+      "annotation_uv": [
+        278.8,
+        101.4
+      ],
+      "prediction_uv": [
+        278.160325866994,
+        97.76890149398447
+      ],
+      "error_px": 3.687012253414031
+    },
+    {
+      "name": "P04_screw_down",
+      "annotation_uv": [
+        257.5,
+        114.4
+      ],
+      "prediction_uv": [
+        257.1864253489319,
+        109.45306466921437
+      ],
+      "error_px": 4.956863749264011
+    },
+    {
+      "name": "P05_screw_yminus",
+      "annotation_uv": [
+        439.4,
+        128.9
+      ],
+      "prediction_uv": [
+        437.0875702672363,
+        125.79717686660373
+      ],
+      "error_px": 3.869734185458815
+    },
+    {
+      "name": "P05_screw_zplus",
+      "annotation_uv": [
+        463.1,
+        129.4
+      ],
+      "prediction_uv": [
+        460.9380176385753,
+        126.32254084050585
+      ],
+      "error_px": 3.760973625202149
+    },
+    {
+      "name": "P05_screw_yplus",
+      "annotation_uv": [
+        460.1,
+        151.6
+      ],
+      "prediction_uv": [
+        457.5578722353272,
+        147.6208780662776
+      ],
+      "error_px": 4.7218455010039335
+    },
+    {
+      "name": "P05_screw_zminus",
+      "annotation_uv": [
+        436.5,
+        151.5
+      ],
+      "prediction_uv": [
+        434.12751234620845,
+        147.14171995511205
+      ],
+      "error_px": 4.962187281538439
+    },
+    {
+      "name": "P05_plate_far_low",
+      "annotation_uv": [
+        530.0,
+        212.0
+      ],
+      "prediction_uv": [
+        529.3235926889879,
+        210.39824513492061
+      ],
+      "error_px": 1.7387194995732058
+    },
+    {
+      "name": "P05_plate_far_high",
+      "annotation_uv": [
+        567.2,
+        182.6
+      ],
+      "prediction_uv": [
+        568.9375215686873,
+        182.77690390732403
+      ],
+      "error_px": 1.746503992002304
+    }
+  ],
+  "provisional_acceptance": {
+    "iou_threshold": 0.7,
+    "held_out_median_threshold_px": 8.0,
+    "passed": true
+  }
+}

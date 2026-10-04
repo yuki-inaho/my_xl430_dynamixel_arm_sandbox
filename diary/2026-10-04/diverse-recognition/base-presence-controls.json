@@ -1,0 +1,170 @@
+[
+  {
+    "path": "arm-absent-negative/observation.npz",
+    "absent": true,
+    "base_pixels": 2387,
+    "valid_pixels": 2058,
+    "masked_fraction": 0.5446166736489317,
+    "median_base_depth_error_m": 0.03471623361110687
+  },
+  {
+    "path": "continuation/pose_05/observation.npz",
+    "absent": false,
+    "base_pixels": 2382,
+    "valid_pixels": 1341,
+    "masked_fraction": 0.09151973131821999,
+    "median_base_depth_error_m": 0.0020280182361602783
+  },
+  {
+    "path": "continuation/pose_06/observation.npz",
+    "absent": false,
+    "base_pixels": 2387,
+    "valid_pixels": 1371,
+    "masked_fraction": 0.09551738583996648,
+    "median_base_depth_error_m": 0.002278923988342285
+  },
+  {
+    "path": "continuation/pose_07/observation.npz",
+    "absent": false,
+    "base_pixels": 2439,
+    "valid_pixels": 1362,
+    "masked_fraction": 0.1025010250102501,
+    "median_base_depth_error_m": 0.0023706555366516113
+  },
+  {
+    "path": "continuation/pose_08/observation.npz",
+    "absent": false,
+    "base_pixels": 2504,
+    "valid_pixels": 1412,
+    "masked_fraction": 0.31549520766773165,
+    "median_base_depth_error_m": 0.0018942058086395264
+  },
+  {
+    "path": "continuation-2/pose_09/observation.npz",
+    "absent": false,
+    "base_pixels": 2512,
+    "valid_pixels": 1464,
+    "masked_fraction": 0.981687898089172,
+    "median_base_depth_error_m": 0.0023188143968582153
+  },
+  {
+    "path": "continuation-2/pose_10/observation.npz",
+    "absent": false,
+    "base_pixels": 2449,
+    "valid_pixels": 1440,
+    "masked_fraction": 0.13924050632911392,
+    "median_base_depth_error_m": 0.00229761004447937
+  },
+  {
+    "path": "continuation-2/pose_11/observation.npz",
+    "absent": false,
+    "base_pixels": 2387,
+    "valid_pixels": 1396,
+    "masked_fraction": 0.8516966904063679,
+    "median_base_depth_error_m": 0.002365201711654663
+  },
+  {
+    "path": "continuation-2/pose_12/observation.npz",
+    "absent": false,
+    "base_pixels": 2356,
+    "valid_pixels": 1329,
+    "masked_fraction": 0.5360780984719864,
+    "median_base_depth_error_m": 0.0022128522396087646
+  },
+  {
+    "path": "continuation-2/pose_13/observation.npz",
+    "absent": false,
+    "base_pixels": 2269,
+    "valid_pixels": 1312,
+    "masked_fraction": 0.2005288673424416,
+    "median_base_depth_error_m": 0.002102106809616089
+  },
+  {
+    "path": "continuation-2/pose_14/observation.npz",
+    "absent": false,
+    "base_pixels": 2266,
+    "valid_pixels": 1301,
+    "masked_fraction": 0.48102383053839365,
+    "median_base_depth_error_m": 0.002273648977279663
+  },
+  {
+    "path": "continuation-2/pose_15/observation.npz",
+    "absent": false,
+    "base_pixels": 2345,
+    "valid_pixels": 1361,
+    "masked_fraction": 0.5113006396588486,
+    "median_base_depth_error_m": 0.0024151206016540527
+  },
+  {
+    "path": "continuation-2/pose_16/observation.npz",
+    "absent": false,
+    "base_pixels": 2380,
+    "valid_pixels": 1375,
+    "masked_fraction": 0.9869747899159664,
+    "median_base_depth_error_m": 0.0023965835571289062
+  },
+  {
+    "path": "continuation-2/pose_17/observation.npz",
+    "absent": false,
+    "base_pixels": 2436,
+    "valid_pixels": 1336,
+    "masked_fraction": 0.8669950738916257,
+    "median_base_depth_error_m": 0.002145931124687195
+  },
+  {
+    "path": "continuation-2/pose_18/observation.npz",
+    "absent": false,
+    "base_pixels": 2503,
+    "valid_pixels": 1468,
+    "masked_fraction": 0.9244906112664802,
+    "median_base_depth_error_m": 0.0018459409475326538
+  },
+  {
+    "path": "continuation-2/pose_19/observation.npz",
+    "absent": false,
+    "base_pixels": 2511,
+    "valid_pixels": 1398,
+    "masked_fraction": 0.992831541218638,
+    "median_base_depth_error_m": 0.002013176679611206
+  },
+  {
+    "path": "continuation-2/pose_20/observation.npz",
+    "absent": false,
+    "base_pixels": 2389,
+    "valid_pixels": 1441,
+    "masked_fraction": 0.9782335705316032,
+    "median_base_depth_error_m": 0.0022928714752197266
+  },
+  {
+    "path": "pose_01/observation.npz",
+    "absent": false,
+    "base_pixels": 2387,
+    "valid_pixels": 1382,
+    "masked_fraction": 0.9912023460410557,
+    "median_base_depth_error_m": 0.0022731125354766846
+  },
+  {
+    "path": "pose_02/observation.npz",
+    "absent": false,
+    "base_pixels": 2387,
+    "valid_pixels": 1380,
+    "masked_fraction": 0.9824046920821115,
+    "median_base_depth_error_m": 0.0022208094596862793
+  },
+  {
+    "path": "pose_03/observation.npz",
+    "absent": false,
+    "base_pixels": 2384,
+    "valid_pixels": 1442,
+    "masked_fraction": 0.3334731543624161,
+    "median_base_depth_error_m": 0.0022905319929122925
+  },
+  {
+    "path": "pose_04/observation.npz",
+    "absent": false,
+    "base_pixels": 2384,
+    "valid_pixels": 1390,
+    "masked_fraction": 0.09312080536912752,
+    "median_base_depth_error_m": 0.0022611767053604126
+  }
+]

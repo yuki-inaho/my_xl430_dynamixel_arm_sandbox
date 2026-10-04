@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "stdout": "Live camera: http://127.0.0.1:18109\n",
+  "stderr": "",
+  "frame_observed": 15,
+  "no_motor_access": true,
+  "scope": "one D405 stop after completed native frame; not a general race-freedom proof"
+}

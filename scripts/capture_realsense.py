@@ -119,7 +119,7 @@ def serve(camera, args):
     import signal
     from collections import deque
     from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
-    from threading import Condition, Lock, Thread
+    from threading import Condition, Event, Lock, Thread
 
     args.output.mkdir(parents=True, exist_ok=True)
     lock = Lock()
@@ -238,10 +238,15 @@ def serve(camera, args):
     server = ThreadingHTTPServer(("127.0.0.1", args.serve_port), Handler)
     server.daemon_threads = True
     Thread(target=server.serve_forever, daemon=True).start()
-    signal.signal(signal.SIGTERM, lambda *_: (_ for _ in ()).throw(KeyboardInterrupt()))
+    # Do not unwind Python/native SDK image processing on a signal. Finish the
+    # current frame, then close HTTP and the camera through their normal finally.
+    stop = Event()
+    previous = {s: signal.getsignal(s) for s in (signal.SIGINT, signal.SIGTERM)}
+    for s in previous:
+        signal.signal(s, lambda *_: stop.set())
     print(f"Live camera: http://127.0.0.1:{args.serve_port}", flush=True)
     try:
-        while True:
+        while not stop.is_set():
             frame = camera.grab()
             received = datetime.now().astimezone()
             depth_m = frame.aligned_depth.astype(np.float32) * scale
@@ -279,6 +284,8 @@ def serve(camera, args):
             condition.notify_all()
         server.shutdown()
         server.server_close()
+        for s, handler in previous.items():
+            signal.signal(s, handler)
 
 
 def start_camera(camera, profiles):

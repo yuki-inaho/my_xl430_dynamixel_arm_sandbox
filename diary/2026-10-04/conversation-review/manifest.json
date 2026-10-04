@@ -1,0 +1,61 @@
+{
+  "format": "lossless gzip split into ordered byte parts",
+  "original_json": "2026-10-04_codex_session_01a10159_pose_review_clean.json",
+  "original_bytes": 149533744,
+  "original_sha256": "81088e45aa03aacde6395a48dce8a9a212af66f177ad862725fa1a3a69ee035d",
+  "compressed_sha256": "fe8804131780aba92da9a9cf2c6f8ed7657fa49fb85bd432a3fde2e1bc57d320",
+  "parts": [
+    {
+      "path": "2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-001",
+      "bytes": 25000000,
+      "sha256": "ee13ffa380ce1db64d830278cb01292ca033bc1cfdda3b702ec7a011e4b6e0c7"
+    },
+    {
+      "path": "2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-002",
+      "bytes": 25000000,
+      "sha256": "82bd86a1fbe80acb67a3c1cc6b07d049f22416f8e55e7cdb941bdcfb9ad1aff2"
+    },
+    {
+      "path": "2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-003",
+      "bytes": 25000000,
+      "sha256": "caf8b84a2611aa782743e8b9492080cbbd3d33f7a7a0a687a0c2e94924c895f8"
+    },
+    {
+      "path": "2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-004",
+      "bytes": 25000000,
+      "sha256": "e4b3b4ea1f9b2f01d24664b6ef77bb30a631d56a20d160137a9f6db5907eada0"
+    },
+    {
+      "path": "2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-005",
+      "bytes": 3813834,
+      "sha256": "ca955f2af7ff17b05f55bc4de432186dd8b1146cd6c0289bc7182d1c06d95a3d"
+    }
+  ],
+  "redactions": {
+    "github_token": 0,
+    "anthropic_key": 0,
+    "openai_key": 0,
+    "aws_access_key": 1,
+    "slack_token": 0,
+    "bearer_token": 0
+  },
+  "snapshot": {
+    "session": "/home/inaho-omen/.codex/sessions/2026/10/03/rollout-2026-10-03T19-40-13-01a10159-a252-7e72-b112-cf34f1a05dce.jsonl",
+    "sha256": "11d06615ea315482509ed818d4b4d6b46d2940b1c9884a92944bdfbd69ff9540",
+    "bytes": 222661398,
+    "records": 15191
+  },
+  "user_coverage": {
+    "expected": {
+      "api_user": 107
+    },
+    "observed": {
+      "api_user": 107
+    },
+    "verified": true
+  },
+  "created_at": "2026-10-04T23:38:09+09:00",
+  "note": "Complete-line snapshot at 23:38 JST, includes user camera move; final review/commit/push reply is outside cutoff. Encrypted reasoning is not recovered.",
+  "restore_command": "cat 2026-10-04_codex_session_01a10159_pose_review_clean.json.gz.part-* | gzip -dc > 2026-10-04_codex_session_01a10159_pose_review_clean.json",
+  "restoration_verified": true
+}

@@ -1,0 +1,21 @@
+...........F.                                                            [100%]
+=================================== FAILURES ===================================
+_______ test_32_main_runs_are_complete_and_best_selection_is_consistent ________
+
+    def test_32_main_runs_are_complete_and_best_selection_is_consistent():
+        records=[json.loads(p.read_text()) for p in sorted((ROOT/'results/trials').glob('trial_*.json'))]
+        assert len(records)==32
+        for r in records:
+            assert r['status']=='completed' and len(r['trace'])>0
+            assert r['final']['scale_depth_units_per_meter']>0
+            R=np.array(r['final']['rotation_camera_from_reference'])
+            np.testing.assert_allclose(R.T@R,np.eye(3),atol=1e-12)
+            assert abs(np.linalg.det(R)-1)<1e-12
+>           assert np.max(abs(r['final']['joint_angles_rad']))<=np.pi
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           TypeError: bad operand type for abs(): 'list'
+
+tests/test_recorded_runs.py:16: TypeError
+=========================== short test summary info ============================
+FAILED tests/test_recorded_runs.py::test_32_main_runs_are_complete_and_best_selection_is_consistent - TypeError: bad operand type for abs(): 'list'
+1 failed, 12 passed in 0.68s

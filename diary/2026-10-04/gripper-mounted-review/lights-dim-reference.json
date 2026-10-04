@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-04T23:47:43.592331+09:00",
+  "context": "User reports lights off for sleep; monitor/LED illumination remains. No motor commands. Frame is a lighting reference, not a re-run of open/close.",
+  "captures": {
+    "d435": {
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/gripper-open-close/d435/capture-20261004-234743-674974",
+      "relative": "captures/d435/capture-20261004-234743-674974"
+    },
+    "d405": {
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/gripper-open-close/d405/capture-20261004-234744-077348",
+      "relative": "captures/d405/capture-20261004-234744-077348"
+    }
+  }
+}

@@ -135,3 +135,62 @@ D405 serial230322272284, USB3.2, RGB/depth/IR1280x720@30 verified. Preserve sens
 specific option support, nonzero RGB distortion and actual frame/encoder timestamps.
 Read skills/rgbd-arm-pose-capture/SKILL.md before the next pose shooting run; review
 the new cable/load and reacquire the reference before reusing motion targets.
+
+User decision D15 (2026-10-04, live_articulated_fit workdoc): the agent should
+choose, observe and execute a less occluded initial-recognition posture itself.
+Reuse CameraPhotoController/D14 profiles and guards; hold ID1/2/4/5 and open ID3
+in 10/20/30-degree stages with image review of support, links and wrist USB slack.
+Fresh all-OFF readings and the current supported folded image define the new
+per-run reference; do not widen the controller windows or +/-3 start check.
+Do not feed image-estimated CAD angles to hardware goals. Return to the newly
+observed supported baseline before release. No EEPROM or calibration changes.
+
+User decision D16 (2026-10-04, diverse_pose_validation workdoc): autonomously
+validate more diverse noninterfering camera-equipped poses against RealSense.
+The separate `diverse-v1` camera plan reuses all D14 freshness, alias, health,
+hold, return/release and PV6/PA1/PWM350 guards. Candidate relative bounds:
+ID1 +/-30 degrees, ID2 +/-3, ID3 opening 0..30, ID4 0..+6, ID5 held.
+Shoulder/wrist changes require elbow >=20 degrees, first observed at 3 degrees
+on one axis. Prior failed wrist -5 route remains excluded. Review every actual
+pose and cable/support; a candidate is not an automatic collision approval.
+Use fresh supported all-OFF counts, never image-estimated angles as motor goals.
+Keep the original ID3-only, observer, and D14 motion windows unchanged.
+
+User decision D18 (2026-10-04, gripper_open_close workdoc): test the newly fitted
+gripper open/close and capture D435/D405 evidence at each state. The separate
+gripper_motion controller may WRITE ID5 RAM 64/100/108/112/116 only. Fresh READ
+pins ID5 model1060/firmware43/mode3/drive0/homing0, all-five aliases and supported
+all-OFF stable starting counts. Photo pairing gives positive counts = opening;
+verify it first at +114 counts (user requested a clearer move than 5 degrees).
+Candidate stages +228/+455, cap2668, close only
+to the fresh initial touching count; initially PV3/PA1/PWM150 (superseded by
+the explicitly evidenced revision below), no squeeze/goal correction.
+Monitor all five during camera capture and review; abort on stalls/contact,
+other-axis drift, unhealthy/incomplete READ. Always release ID5 and restore its
+RAM profiles/PWM while OFF; never release/move IDs1–4. Existing guards unchanged.
+This instruction authorizes this workdoc's execution; no additional motion
+approval is required. New cables/position still require actual image review.
+
+D18 execution revision (first-stop evidence, 23:16–23:18): PWM150 saturated at
+2105 before +10 degrees; output/load169 and OFF restoration verified. A single
+reviewed retry uses PWM250 (~28.25%, below user's photographed 35.03%) and load
+guard300. Preserve original touching count2067, park/enable at fresh current2105.
+Position window and stall/health/other-axis guards unchanged. This is a documented
+engineering adjustment within the authorized open/close test, not a proven friction
+diagnosis. If it stalls again, no further power increase under this plan.
+
+D18 direction correction: the earlier visual-opening claim was withdrawn; the
+original photo pairing had only been inferred. User explicitly confirmed
+181.41 degrees=closed and 239.50=open after re-viewing all four originals.
+Positive encoder counts therefore follow the provided manual opening evidence.
+One final short test uses the actual photographed output ceiling PWM310=35.03%,
+load guard370, unchanged stall/angle/health/other-axis boundaries, fresh post-power-
+cycle READs and preserved closed2067. Beyond this observed output no increase.
+
+D18 final observation: open2486 then reclosed2091 with soft tips visually touching;
+40-degree goal was not reached. Accepting stationary error <=25 for photography
+does not declare that goal successful. Far-target progress guard remains 4 counts
+per 1.5s, deadline18s, no force correction. Current full-five torque OFF and ID5
+RAM readback885/0/0 verified. Candidate future interior2091..2486 is observed only,
+not a validated whole-range/contact/load limit. A user camera move after capture
+invalidates old external-camera registration/seed; retain a separately labelled frame.

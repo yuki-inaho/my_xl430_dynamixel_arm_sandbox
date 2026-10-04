@@ -1,0 +1,56 @@
+{
+  "schema": "post-snapshot-user-message-records/v1",
+  "source": "/home/inaho-omen/.codex/sessions/2026/10/03/rollout-2026-10-03T19-40-13-01a10159-a252-7e72-b112-cf34f1a05dce.jsonl",
+  "covered_records": 1,
+  "snapshot_scope": "Selected later API user records, not complete tools/assistant session. Main faithful bundle ends at23:38.",
+  "records": [
+    {
+      "timestamp": "2026-10-04T14:47:16.167Z",
+      "ordinal": 16472,
+      "type": "response_item",
+      "payload": {
+        "type": "message",
+        "id": "msg_01a10762-29c7-77f0-8470-79587727c760",
+        "role": "user",
+        "content": [
+          {
+            "type": "input_text",
+            "text": "私は寝るので、消灯します。モニタとLEDはたいているので、たしょうあかりはあると思うが、よろしく"
+          }
+        ],
+        "internal_chat_message_metadata_passthrough": {
+          "turn_id": "01a1074d-a191-7c62-8581-0eb14e3ac1f6",
+          "create_time": 1791125236.167434,
+          "content_item_kinds": [
+            "user.text"
+          ]
+        }
+      },
+      "metadata": {
+        "retained_source": {
+          "id": {
+            "message_id": "msg_01a10762-29c7-77f0-8470-79587727c760",
+            "turn_id": "01a1074d-a191-7c62-8581-0eb14e3ac1f6",
+            "role": "user"
+          },
+          "revision": "retained_01a10762-29c7-77f0-8470-797f0fd1280c",
+          "complete": true
+        },
+        "client_authored": false,
+        "user_input_order": 543,
+        "mcp_attribution": {
+          "status": "complete",
+          "sources": [
+            {
+              "plugin_id": "claude-mem@claude-mem-local",
+              "server_name": "mcp-search",
+              "tool_name": "search",
+              "first_turn_id": "01a101da-0ca7-7cd0-9578-f3cfffe3e820"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "selected_records_sha256": "c250ba6cbddff094f5a3dffc5e24a558e20da5dae563ce3d3bcd1d7a277a246d"
+}

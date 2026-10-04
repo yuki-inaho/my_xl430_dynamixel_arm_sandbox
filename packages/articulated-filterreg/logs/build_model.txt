@@ -1,0 +1,35 @@
+{
+  "source_leaf_count": 217,
+  "included_leaf_count": 180,
+  "units": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "P01_base",
+    "P02_yaw_carrier",
+    "P03_shoulder_XL430",
+    "P04_extension_XL430",
+    "P05_wrist_XL430"
+  ],
+  "vertices": 193699,
+  "triangles": 192151,
+  "tessellation_linear_tolerance_mm": 0.18,
+  "tessellation_angular_tolerance_rad": 0.28,
+  "elapsed_seconds": 3.6560550899999953,
+  "reference_bounds_m": [
+    [
+      -0.0665,
+      -0.068,
+      0.0
+    ],
+    [
+      0.0665,
+      0.18580000000000002,
+      0.19985
+    ]
+  ],
+  "urdf_search_limits_note": "+/-pi are mathematical search bounds only, not calibrated hardware limits",
+  "J5_note": "No downstream observed geometry; excluded/unobservable, not fitted as zero"
+}

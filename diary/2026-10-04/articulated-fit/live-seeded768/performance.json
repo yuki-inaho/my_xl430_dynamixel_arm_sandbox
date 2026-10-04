@@ -1,0 +1,14 @@
+{
+  "source": "diary/2026-10-04/articulated-fit/live-seeded768/poses.jsonl",
+  "window_requested_seconds": 60.0,
+  "window_observed_seconds": 59.97785189200658,
+  "records": 945,
+  "status_counts": {
+    "tracking": 926,
+    "reacquiring": 19
+  },
+  "distinct_successful_poses": 926,
+  "successful_pose_hz": 15.439032422623502,
+  "successful_publication_age_p95_seconds": 0.13186765725549776,
+  "note": "Includes lost/reacquisition gaps; publication age excludes subsequent browser delay. A short observation window is not proof of sustained performance."
+}

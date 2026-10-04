@@ -71,3 +71,15 @@ The output is validated by reading it back.
 - Encrypted or omitted reasoning cannot be recovered; do not claim otherwise.
 - The bundle contains conversation text and local paths. Commit it only when the user asked,
   and prefer a private remote; run the `git-commit-push` audit on it before pushing.
+
+## Large reviewed bundles
+
+Keep the requested complete `*_clean.json` locally. For an explicitly authorized private
+push, a large faithful bundle can be gzip-compressed without removing messages or images.
+If the compressed file still exceeds the repository audit limit, split its bytes into
+ordered parts below that limit (for example 25 MB each). Save a manifest with original and
+compressed SHA256, each ordered part's size/hash, source snapshot, user coverage, redaction
+counts and cutoff. Concatenate parts, decompress, and check the restored JSON SHA256 before
+committing. Preserve the original locally; stage only the manifest and parts. Document the
+restore command and state that the snapshot ends before the final reply. Do not hide a
+secret by compressing it: perform the normal redaction/private-key/coverage check first.

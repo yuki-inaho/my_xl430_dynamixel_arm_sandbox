@@ -1,0 +1,19 @@
+[project]
+name = "gripper-scanfit"
+version = "2.0.0"
+description = "Measured primitive gripper soft-add-on reconstruction"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "cadquery==2.8.0",
+  "trimesh==4.11.1",
+  "numpy==2.3.5",
+  "scipy==1.17.0",
+  "Pillow==12.3.0",
+  "opencv-python==4.13.0.92",
+  "numba==0.65.1",
+  "vtk==9.6.2",
+  "pytest==9.0.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

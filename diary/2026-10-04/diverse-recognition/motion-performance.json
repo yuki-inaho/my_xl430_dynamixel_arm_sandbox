@@ -1,0 +1,41 @@
+{
+  "source": "diary/2026-10-04/diverse-recognition/live/poses.jsonl",
+  "window_requested_seconds": 900.0,
+  "window_observed_seconds": 701.9744708380022,
+  "records": 13916,
+  "status_counts": {
+    "tracking": 13897,
+    "reacquiring": 19
+  },
+  "distinct_successful_poses": 13897,
+  "successful_pose_hz": 19.79701624107506,
+  "successful_record_fraction": 0.9986346651336591,
+  "publication_frame_age_seconds": {
+    "p50": 0.06879497450427152,
+    "p95": 0.10082877400054713
+  },
+  "publication_mask_age_seconds": {
+    "p50": 0.26635030600300524,
+    "p95": 0.35520754674143973
+  },
+  "timings_seconds": {
+    "mask_preparation": {
+      "p50": 0.012493602000176907,
+      "p95": 0.016821014498418663
+    },
+    "registration": {
+      "p50": 0.02664508149609901,
+      "p95": 0.03674207100266358
+    },
+    "jpeg": {
+      "p50": 0.0037572569999611005,
+      "p95": 0.005507250501977978
+    }
+  },
+  "host_time_bounds": {
+    "start_iso": "2026-10-04T21:46:54+09:00",
+    "end_iso": "2026-10-04T21:58:36+09:00"
+  },
+  "successful_publication_age_p95_seconds": 0.10059157040668647,
+  "note": "Includes lost/reacquisition gaps; publication age excludes subsequent browser delay. A short observation window is not proof of sustained performance."
+}

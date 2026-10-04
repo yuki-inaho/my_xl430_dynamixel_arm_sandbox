@@ -1,0 +1,877 @@
+{
+  "summary": {
+    "captured_poses": 20,
+    "sign_convention": [
+      1,
+      -1,
+      1
+    ],
+    "sign_evidence": [
+      {
+        "axis": 1,
+        "first": "pose_06",
+        "second": "pose_07",
+        "encoder_delta_deg": -14.0625,
+        "image_delta_deg": -14.035088192342434,
+        "sign": 1
+      },
+      {
+        "axis": 2,
+        "first": "pose_05",
+        "second": "pose_06",
+        "encoder_delta_deg": -4.130859375,
+        "image_delta_deg": 3.3172776701334,
+        "sign": -1
+      },
+      {
+        "axis": 3,
+        "first": "neutral",
+        "second": "pose_01",
+        "encoder_delta_deg": 8.96484375,
+        "image_delta_deg": 8.532158686553046,
+        "sign": 1
+      }
+    ],
+    "holdout_poses": 16,
+    "axes_evaluated": [
+      "ID1/base",
+      "ID2/shoulder",
+      "ID3/elbow"
+    ],
+    "holdout_mae_deg": [
+      1.151826034718985,
+      0.43013809716647877,
+      0.3714175837360325
+    ],
+    "holdout_max_abs_error_deg": [
+      2.969608704970412,
+      1.405141521635855,
+      0.8763044332202554
+    ],
+    "iou_range": [
+      0.6902451225612807,
+      0.8980286738351254
+    ],
+    "median_depth_residual_mm_range": [
+      2.4904006658714675,
+      3.5130948933894315
+    ],
+    "encoder_range_deg": [
+      58.53515625,
+      4.39453125,
+      19.951171875,
+      1.845703125,
+      0.0
+    ],
+    "max_bracket_drift_counts": 1,
+    "hardware_synchronized": false,
+    "absolute_calibration_verified": false,
+    "wrist_verified": false,
+    "wrist_reason": "Only about 1.8 degree motion; +6 candidate stalled. Image estimate did not resolve that small change.",
+    "id5_verified": false,
+    "id5_reason": "No moving downstream jaw geometry installed.",
+    "collision_status": "No visible contact on reviewed paths; whole-range collision evidence is unavailable. Wrist candidate is rejected."
+  },
+  "poses": [
+    {
+      "name": "pose_01",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/pose_01",
+      "commanded_deg": [
+        0,
+        0,
+        10,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        0.0,
+        0.0,
+        8.96484375,
+        0.0,
+        0.0
+      ],
+      "image_delta_deg": [
+        -0.2560026691628883,
+        0.2710435024171076,
+        8.532158686553046,
+        0.8597774397791085
+      ],
+      "error_deg": [
+        -0.2560026691628883,
+        0.2710435024171076,
+        -0.4326850634469537
+      ],
+      "sign_calibration_observation": true,
+      "bracket_seconds": 0.3989999294281006,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.7229508196721312,
+        "median_surface_residual_m": 0.0028444899785740286,
+        "p90_surface_residual_m": 0.010028968098320434,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.024169921875
+    },
+    {
+      "name": "pose_02",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/pose_02",
+      "commanded_deg": [
+        0,
+        0,
+        20,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        0.0,
+        0.0,
+        18.896484375,
+        0.087890625,
+        0.0
+      ],
+      "image_delta_deg": [
+        -0.3337579179557686,
+        0.603682375982693,
+        19.640932583444958,
+        0.5896114700168198
+      ],
+      "error_deg": [
+        -0.3337579179557686,
+        0.603682375982693,
+        0.7444482084449575
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.3989999294281006,
+      "max_bracket_drift_counts": 1,
+      "quality": {
+        "iou": 0.6902451225612807,
+        "median_surface_residual_m": 0.002789047529089438,
+        "p90_surface_residual_m": 0.00837655213541345,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_03",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/pose_03",
+      "commanded_deg": [
+        0,
+        0,
+        30,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        0.0,
+        0.0,
+        28.916015625,
+        0.087890625,
+        0.0
+      ],
+      "image_delta_deg": [
+        0.7870724071244908,
+        0.05098546916386937,
+        28.7689187843201,
+        0.09167604167006971
+      ],
+      "error_deg": [
+        0.7870724071244908,
+        0.05098546916386937,
+        -0.14709684067990025
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.4790000915527344,
+      "max_bracket_drift_counts": 1,
+      "quality": {
+        "iou": 0.7455499344200862,
+        "median_surface_residual_m": 0.0024904006658714676,
+        "p90_surface_residual_m": 0.01774158188926739,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_04",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/pose_04",
+      "commanded_deg": [
+        0,
+        0,
+        30,
+        3,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        0.0,
+        0.0,
+        28.916015625,
+        1.845703125,
+        0.0
+      ],
+      "image_delta_deg": [
+        0.7247720118011003,
+        0.07591253239496609,
+        28.63089494022416,
+        0.15591699708518547
+      ],
+      "error_deg": [
+        0.7247720118011003,
+        0.07591253239496609,
+        -0.2851206847758405
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.3190000057220459,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.6967693650991643,
+        "median_surface_residual_m": 0.0026358340083861157,
+        "p90_surface_residual_m": 0.02348200708383977,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 33.381103515625
+    },
+    {
+      "name": "pose_05",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation/pose_05",
+      "commanded_deg": [
+        0,
+        3,
+        30,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        0.0,
+        1.318359375,
+        28.916015625,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        1.1018676745626568,
+        -0.7279914192937369,
+        28.65165389089391,
+        0.05955416599658747
+      ],
+      "error_deg": [
+        1.1018676745626568,
+        0.5903679557062631,
+        -0.2643617341060889
+      ],
+      "sign_calibration_observation": true,
+      "bracket_seconds": 0.39800000190734863,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.6980955354355292,
+        "median_surface_residual_m": 0.0025892011022041915,
+        "p90_surface_residual_m": 0.023530059122651076,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 33.380859375
+    },
+    {
+      "name": "pose_06",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation/pose_06",
+      "commanded_deg": [
+        0,
+        -3,
+        30,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        0.0,
+        -2.8125,
+        28.916015625,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        0.192441736727476,
+        2.5892862508396632,
+        28.966105406761358,
+        0.10308806756557942
+      ],
+      "error_deg": [
+        0.192441736727476,
+        -0.22321374916033676,
+        0.0500897817613577
+      ],
+      "sign_calibration_observation": true,
+      "bracket_seconds": 0.31800007820129395,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.7094273568392098,
+        "median_surface_residual_m": 0.002808655774683237,
+        "p90_surface_residual_m": 0.02447574626194797,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.024169921875
+    },
+    {
+      "name": "pose_07",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation/pose_07",
+      "commanded_deg": [
+        -15,
+        -3,
+        30,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -14.0625,
+        -2.8125,
+        28.916015625,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -13.842646455614958,
+        2.0191854278641017,
+        28.412223659394307,
+        -0.18236761533493961
+      ],
+      "error_deg": [
+        0.21985354438504245,
+        -0.7933145721358983,
+        -0.5037919656056928
+      ],
+      "sign_calibration_observation": true,
+      "bracket_seconds": 0.3990001678466797,
+      "max_bracket_drift_counts": 1,
+      "quality": {
+        "iou": 0.7163325507194028,
+        "median_surface_residual_m": 0.002796500000463421,
+        "p90_surface_residual_m": 0.03181222510845764,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_08",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation/pose_08",
+      "commanded_deg": [
+        -30,
+        -3,
+        30,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -29.1796875,
+        -2.8125,
+        28.916015625,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -26.46089275093616,
+        4.217641521635855,
+        28.17860643526496,
+        1.3483821659482942
+      ],
+      "error_deg": [
+        2.7187947490638393,
+        1.405141521635855,
+        -0.7374091897350397
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.3989999294281006,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.8006718924972005,
+        "median_surface_residual_m": 0.003045335546711397,
+        "p90_surface_residual_m": 0.01281108740843399,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_09",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_09",
+      "commanded_deg": [
+        -30,
+        3,
+        30,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -29.267578125,
+        1.318359375,
+        28.916015625,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -28.2267122378953,
+        -0.6033375243063333,
+        28.776791897571442,
+        0.11968006565901135
+      ],
+      "error_deg": [
+        1.040865887104701,
+        0.7150218506936667,
+        -0.1392237274285577
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.32000017166137695,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.8734672116580772,
+        "median_surface_residual_m": 0.0029750560444260794,
+        "p90_surface_residual_m": 0.0089382762857837,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.024169921875
+    },
+    {
+      "name": "pose_10",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_10",
+      "commanded_deg": [
+        -15,
+        3,
+        30,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -15.732421875,
+        1.318359375,
+        28.916015625,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -15.739919064339631,
+        -1.1753241243206816,
+        28.039711191779745,
+        -0.23805243156124334
+      ],
+      "error_deg": [
+        -0.00749718933963095,
+        0.14303525067931844,
+        -0.8763044332202554
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.3190000057220459,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.7489501551944495,
+        "median_surface_residual_m": 0.002876767050344019,
+        "p90_surface_residual_m": 0.016687751101688172,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_11",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_11",
+      "commanded_deg": [
+        0,
+        3,
+        25,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -0.87890625,
+        1.318359375,
+        25.224609375,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -0.33692002626866113,
+        -0.8974042116766867,
+        25.271931048950584,
+        0.03668816039132139
+      ],
+      "error_deg": [
+        0.5419862237313389,
+        0.4209551633233133,
+        0.0473216739505844
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.31999993324279785,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.8506715661429296,
+        "median_surface_residual_m": 0.0026555899639936534,
+        "p90_surface_residual_m": 0.009568058139543005,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_12",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_12",
+      "commanded_deg": [
+        15,
+        3,
+        25,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        14.23828125,
+        1.318359375,
+        25.224609375,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        14.901718981105804,
+        -0.7336592184760633,
+        25.56904338666763,
+        0.33366364886784083
+      ],
+      "error_deg": [
+        0.6634377311058035,
+        0.5847001565239367,
+        0.3444340116676301
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.3190000057220459,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.7501215362177929,
+        "median_surface_residual_m": 0.002619170661233506,
+        "p90_surface_residual_m": 0.014158246990542151,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_13",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_13",
+      "commanded_deg": [
+        30,
+        3,
+        25,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        29.267578125,
+        1.318359375,
+        25.224609375,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        31.087582233570075,
+        -0.5788082766290259,
+        25.693756640086534,
+        0.5799554629050618
+      ],
+      "error_deg": [
+        1.8200041085700747,
+        0.7395510983709741,
+        0.4691472650865336
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.3190000057220459,
+      "max_bracket_drift_counts": 1,
+      "quality": {
+        "iou": 0.6914487387178894,
+        "median_surface_residual_m": 0.003174567771995716,
+        "p90_surface_residual_m": 0.01810314502802851,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_14",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_14",
+      "commanded_deg": [
+        30,
+        -3,
+        25,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        29.267578125,
+        -2.98828125,
+        25.224609375,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        31.80684037692337,
+        3.359092339439954,
+        25.66014201022884,
+        0.9089991830299056
+      ],
+      "error_deg": [
+        2.5392622519233683,
+        0.3708110894399539,
+        0.43553263522883867
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.3190000057220459,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.7142775393419171,
+        "median_surface_residual_m": 0.0035130948933894315,
+        "p90_surface_residual_m": 0.02202632377204847,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_15",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_15",
+      "commanded_deg": [
+        15,
+        -3,
+        25,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        15.908203125,
+        -2.98828125,
+        25.224609375,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        16.773188769486843,
+        2.956333655957181,
+        25.57870022226095,
+        0.12728030888072794
+      ],
+      "error_deg": [
+        0.8649856444868433,
+        -0.031947594042819105,
+        0.35409084726094875
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.3210000991821289,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.7401945787187175,
+        "median_surface_residual_m": 0.0029345508849613388,
+        "p90_surface_residual_m": 0.017002331182183153,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_16",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_16",
+      "commanded_deg": [
+        0,
+        -3,
+        25,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        1.23046875,
+        -2.98828125,
+        25.224609375,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        1.7905093979878668,
+        2.9950698651287553,
+        25.472969325423307,
+        0.23913214097595414
+      ],
+      "error_deg": [
+        0.5600406479878668,
+        0.006788615128755282,
+        0.24835995042330694
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.31999993324279785,
+      "max_bracket_drift_counts": 1,
+      "quality": {
+        "iou": 0.8494603875398578,
+        "median_surface_residual_m": 0.0025390136549033448,
+        "p90_surface_residual_m": 0.008968536960875533,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_17",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_17",
+      "commanded_deg": [
+        -15,
+        -3,
+        20,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -14.150390625,
+        -2.98828125,
+        19.951171875,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -13.304300134747812,
+        2.1500004917425244,
+        20.232577694616026,
+        -1.1728770612406265
+      ],
+      "error_deg": [
+        0.8460904902521875,
+        -0.8382807582574756,
+        0.28140581961602606
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.31999993324279785,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.8032495979592968,
+        "median_surface_residual_m": 0.0027076942545218065,
+        "p90_surface_residual_m": 0.009069007567828235,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 33.381103515625
+    },
+    {
+      "name": "pose_18",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_18",
+      "commanded_deg": [
+        -30,
+        -3,
+        20,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -29.1796875,
+        -2.98828125,
+        19.951171875,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -26.210078795029588,
+        3.1797186149024057,
+        19.752760789641904,
+        -0.5041902760784609
+      ],
+      "error_deg": [
+        2.969608704970412,
+        0.1914373649024057,
+        -0.19841108535809582
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.31999993324279785,
+      "max_bracket_drift_counts": 1,
+      "quality": {
+        "iou": 0.8980286738351254,
+        "median_surface_residual_m": 0.002889644814997496,
+        "p90_surface_residual_m": 0.009034125708436104,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_19",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_19",
+      "commanded_deg": [
+        -30,
+        3,
+        20,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -29.267578125,
+        1.318359375,
+        19.951171875,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -27.479243642917083,
+        -1.2319338521288614,
+        19.39140683960524,
+        -1.1565591185355686
+      ],
+      "error_deg": [
+        1.7883344820829166,
+        0.08642552287113858,
+        -0.5597650353947614
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.31999993324279785,
+      "max_bracket_drift_counts": 0,
+      "quality": {
+        "iou": 0.818793797936324,
+        "median_surface_residual_m": 0.0030536490960407676,
+        "p90_surface_residual_m": 0.008652397631380713,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.02392578125
+    },
+    {
+      "name": "pose_20",
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-04/diverse-recognition/continuation-2/pose_20",
+      "commanded_deg": [
+        0,
+        3,
+        20,
+        0,
+        0
+      ],
+      "actual_encoder_delta_deg": [
+        -0.87890625,
+        1.40625,
+        19.951171875,
+        0.52734375,
+        0.0
+      ],
+      "image_delta_deg": [
+        -0.6562001419965808,
+        -0.7887168087474805,
+        19.876561943494757,
+        0.22019472213619906
+      ],
+      "error_deg": [
+        0.22270610800341917,
+        0.6175331912525195,
+        -0.07460993150524331
+      ],
+      "sign_calibration_observation": false,
+      "bracket_seconds": 0.40000009536743164,
+      "max_bracket_drift_counts": 1,
+      "quality": {
+        "iou": 0.8463516160626836,
+        "median_surface_residual_m": 0.002530900920331891,
+        "p90_surface_residual_m": 0.009393904405141644,
+        "scale": 1.0,
+        "observed_points": 1200
+      },
+      "color_depth_skew_ms": 0.024169921875
+    }
+  ]
+}

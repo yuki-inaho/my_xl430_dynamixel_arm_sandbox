@@ -1,0 +1,8 @@
+# 実際に数値計算・テストした環境の版。uv.lockではありません。
+numpy==2.3.5
+scipy==1.17.0
+opencv-python-headless==4.13.0.92
+trimesh==4.11.1
+numba==0.65.1
+pillow==12.3.0
+pytest==9.0.2

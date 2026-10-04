@@ -1,0 +1,28 @@
+WARN `--no-project` was provided, but no project was found
+
+==================================== ERRORS ====================================
+___________________ ERROR collecting tests/test_geometry.py ____________________
+ImportError while importing test module '/mnt/data/robot_fit_20261004/tests/test_geometry.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_geometry.py:3: in <module>
+    from articulated_filterreg.geometry import State,KinematicChain,projection
+E   ModuleNotFoundError: No module named 'articulated_filterreg.geometry'
+____________________ ERROR collecting tests/test_native.py _____________________
+ImportError while importing test module '/mnt/data/robot_fit_20261004/tests/test_native.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_native.py:3: in <module>
+    from articulated_filterreg.native import GaussianMoments, assemble_blocks
+E   ModuleNotFoundError: No module named 'articulated_filterreg.native'
+=========================== short test summary info ============================
+ERROR tests/test_geometry.py
+ERROR tests/test_native.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+2 errors in 0.28s

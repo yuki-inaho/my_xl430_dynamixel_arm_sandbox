@@ -1,0 +1,145 @@
+{
+  "ready": null,
+  "before": null,
+  "after": null,
+  "vision": {
+    "status": "tracking",
+    "sequence": 25471,
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.33817671831764046,
+          0.9405501973273949,
+          0.031651753431864264
+        ],
+        [
+          0.14595825546833693,
+          0.08564657734977889,
+          -0.9855764056880165
+        ],
+        [
+          -0.9296949471996452,
+          -0.32867915981344015,
+          -0.16624474444559276
+        ]
+      ],
+      "translation_depth_units": [
+        0.0519135460533678,
+        0.14492900985333115,
+        0.39582279808426607
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        0.11831337957668493,
+        -0.676578186344618,
+        -1.378117211279083,
+        2.055596594388831
+      ],
+      "joint_angles_deg": [
+        6.778857309673357,
+        -38.765074588162356,
+        -78.96029988063022,
+        117.77700923994537
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "quality": {
+      "iou": 0.8256087981146897,
+      "median_surface_residual_m": 0.002487655683884803,
+      "p90_surface_residual_m": 0.009796987842275413,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "reason": null,
+    "pose_hz": 23.9215455638072,
+    "frame_age_seconds": 0.046482638994348235,
+    "frame_received_monotonic": 111905.801755463,
+    "mask_age_seconds": 0.3941655119997449,
+    "mask_received_monotonic": 111905.45407259,
+    "registration_seconds": 0.02591198899608571,
+    "model": "current_arm_r3_d405_r5_65.npz",
+    "model_sha256": "cc15059b6256b1cf88452d3c85a5a0f8861b08ce00978c9e498f86208ce9dcf0",
+    "gaussian_backend": "native",
+    "metadata": {
+      "serial": "922612070196",
+      "device": "RealSense D435",
+      "host_received_at": "2026-10-04T12:59:01.620549+00:00",
+      "color_timestamp_ms": 1791118741563.149,
+      "depth_timestamp_ms": 1791118741563.125,
+      "timestamp_domain": "timestamp_domain.global_time",
+      "raw_depth_scale_m": 0.0010000000474974513,
+      "intrinsics_original": {
+        "fx": 925.4581298828125,
+        "fy": 925.7662963867188,
+        "ppx": 645.314453125,
+        "ppy": 360.0555419921875,
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model": "distortion.inverse_brown_conrady"
+      },
+      "processed_resolution": [
+        480,
+        270
+      ],
+      "rectified": false
+    },
+    "segmentation_rejections": 0,
+    "skipped_periodic_evidence": 0,
+    "segmentation": {
+      "model_id": "ZhengPeng7/BiRefNet_lite",
+      "revision": "aa62cd87eafb9cc43056d08ef3615a14628b831d",
+      "input_size": 768,
+      "threshold": 0.5,
+      "device": "cuda",
+      "precision": "float16",
+      "cpu_threads": 1,
+      "last_inference_seconds": 0.14111660400521941
+    },
+    "timings_seconds": {
+      "mask_preparation": 0.010194967995630577,
+      "registration": 0.02591198899608571,
+      "jpeg": 0.004075291988556273
+    },
+    "raw_mask_metadata": {
+      "serial": "922612070196",
+      "device": "RealSense D435",
+      "host_received_at": "2026-10-04T12:59:01.272868+00:00",
+      "color_timestamp_ms": 1791118741196.219,
+      "depth_timestamp_ms": 1791118741196.1948,
+      "timestamp_domain": "timestamp_domain.global_time",
+      "raw_depth_scale_m": 0.0010000000474974513,
+      "intrinsics_original": {
+        "fx": 925.4581298828125,
+        "fy": 925.7662963867188,
+        "ppx": 645.314453125,
+        "ppy": 360.0555419921875,
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model": "distortion.inverse_brown_conrady"
+      },
+      "processed_resolution": [
+        480,
+        270
+      ],
+      "rectified": false
+    },
+    "raw_mask_sequence": 25460
+  },
+  "hardware_synchronized": false,
+  "encoder_used_for_fitting": false,
+  "stored_data": "Processed RGB and aligned metric depth; source native1280x720, processed resolution and K stored in observation.npz",
+  "recorded_at": "2026-10-04T21:59:01.887411+09:00"
+}

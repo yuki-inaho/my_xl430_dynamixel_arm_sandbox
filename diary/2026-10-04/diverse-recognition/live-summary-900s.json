@@ -1,0 +1,14 @@
+{
+  "source": "diary/2026-10-04/diverse-recognition/live/poses.jsonl",
+  "window_requested_seconds": 900.0,
+  "window_observed_seconds": 881.6631646199967,
+  "records": 17572,
+  "status_counts": {
+    "reacquiring": 43,
+    "tracking": 17529
+  },
+  "distinct_successful_poses": 17529,
+  "successful_pose_hz": 19.881742487852634,
+  "successful_publication_age_p95_seconds": 0.10054801300284451,
+  "note": "Includes lost/reacquisition gaps; publication age excludes subsequent browser delay. A short observation window is not proof of sustained performance."
+}

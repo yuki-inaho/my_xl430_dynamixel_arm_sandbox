@@ -1,0 +1,67 @@
+{
+  "model": {
+    "model_id": "ZhengPeng7/BiRefNet_lite",
+    "revision": "aa62cd87eafb9cc43056d08ef3615a14628b831d",
+    "input_size": 1024,
+    "threshold": 0.5,
+    "device": "cuda",
+    "precision": "float16",
+    "last_inference_seconds": 0.13685092100058682
+  },
+  "records": [
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-000189.png",
+      "size": 512,
+      "seconds": 0.07626812199305277,
+      "area": 28316
+    },
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-002252.png",
+      "size": 512,
+      "seconds": 0.06897454299905803,
+      "area": 23886
+    },
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-004076.png",
+      "size": 512,
+      "seconds": 0.05578358999628108,
+      "area": 2692
+    },
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-000189.png",
+      "size": 768,
+      "seconds": 0.08370298899535555,
+      "area": 26926
+    },
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-002252.png",
+      "size": 768,
+      "seconds": 0.08370734000345692,
+      "area": 27491
+    },
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-004076.png",
+      "size": 768,
+      "seconds": 0.07986808799614664,
+      "area": 24846
+    },
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-000189.png",
+      "size": 1024,
+      "seconds": 0.14145800400001463,
+      "area": 24066
+    },
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-002252.png",
+      "size": 1024,
+      "seconds": 0.1402908479940379,
+      "area": 24720
+    },
+    {
+      "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04/articulated-fit/live-open30-full-mask/frame-004076.png",
+      "size": 1024,
+      "seconds": 0.13685092100058682,
+      "area": 33027
+    }
+  ]
+}

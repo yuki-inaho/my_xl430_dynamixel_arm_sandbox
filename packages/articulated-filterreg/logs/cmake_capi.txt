@@ -1,0 +1,241 @@
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /mnt/data/robot_fit_20261004/build
+[1/12] Building CXX object CMakeFiles/acpd_support.dir/third_party/acpd_cpp/src/lattice.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/types.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/lattice.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/src/lattice.cpp:3:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[2/12] Building CXX object CMakeFiles/acpd_support.dir/third_party/acpd_cpp/src/types.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/types.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/src/types.cpp:1:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[3/12] Building CXX object CMakeFiles/acpd_support.dir/third_party/acpd_cpp/src/fgt.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/types.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/fgt.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/src/fgt.cpp:1:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[4/12] Building CXX object CMakeFiles/acpd_support.dir/third_party/acpd_cpp/src/gaussian.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/types.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/lattice.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/gaussian.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/src/gaussian.cpp:1:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[5/12] Building CXX object CMakeFiles/acpd_support.dir/third_party/acpd_cpp/src/analytic.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/types.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/lattice.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/gaussian.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/analytic.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/src/analytic.cpp:1:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[6/12] Building CXX object CMakeFiles/acpd_support.dir/third_party/acpd_cpp/src/rigid.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/types.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/lattice.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/gaussian.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/rigid.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/src/rigid.cpp:1:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[7/12] Building CXX object CMakeFiles/acpd_support.dir/third_party/acpd_cpp/src/registration.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/types.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/lattice.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/gaussian.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/include/acpd/analytic.hpp:2,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/src/registration.cpp:1:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[8/12] Linking CXX static library libacpd_support.a
+[9/12] Building CXX object CMakeFiles/af_capi.dir/cpp/c_api.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/cpp/core.hpp:2,
+                 from /mnt/data/robot_fit_20261004/cpp/c_api.cpp:2:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[10/12] Building CXX object CMakeFiles/af_core.dir/cpp/core.cpp.o
+In file included from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:448,
+                 from /mnt/data/robot_fit_20261004/cpp/core.hpp:2,
+                 from /mnt/data/robot_fit_20261004/cpp/core.cpp:1:
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:87:28: warning: 'template<class _Predicate> class std::unary_negate' is deprecated [-Wdeprecated-declarations]
+   87 | struct functor_traits<std::unary_negate<T> >
+      |                            ^~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/istream:40,
+                 from /usr/include/c++/14/sstream:40,
+                 from /usr/include/c++/14/complex:45,
+                 from /mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/Core:99:
+/usr/include/c++/14/bits/stl_function.h:1021:33: note: declared here
+ 1021 |     class _GLIBCXX17_DEPRECATED unary_negate
+      |                                 ^~~~~~~~~~~~
+/mnt/data/robot_fit_20261004/third_party/acpd_cpp/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h:91:28: warning: 'template<class _Predicate> class std::binary_negate' is deprecated [-Wdeprecated-declarations]
+   91 | struct functor_traits<std::binary_negate<T> >
+      |                            ^~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_function.h:1048:33: note: declared here
+ 1048 |     class _GLIBCXX17_DEPRECATED binary_negate
+      |                                 ^~~~~~~~~~~~~
+[11/12] Linking CXX static library libaf_core.a
+[12/12] Linking CXX shared library libaf_capi.so

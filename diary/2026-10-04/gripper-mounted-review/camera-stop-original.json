@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-04T23:52:25+09:00",
+  "context": "Shutdown of own camera processes by SIGINT after all captures, no motor commands",
+  "d435_exit_code": 130,
+  "d405_exit_code": 134,
+  "d405_stderr": "KeyboardInterrupt in cv2.imencode; free(): corrupted unsorted chunks",
+  "subsequent_fix": "Record-only signal; see camera-stop-check.json"
+}

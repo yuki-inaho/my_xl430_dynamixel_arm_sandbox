@@ -15,6 +15,8 @@ root and localhost port explicitly; do not embed another machine's paths in new 
 2. Start one camera owner and reuse it for preview/save. Configure only supported sensor
    options; a shared API does not mean D435 laser/emitter settings work on D405. Reuse the
    existing project environment instead of reinstalling SDKs or copying acquisition code.
+   Moving either camera changes the observation geometry. Save a new reference frame, label
+   the changed view separately, and invalidate old extrinsic/registration seeds before reuse.
 3. Save and inspect one real RGB-D frame **before generating the full batch**: focus at the
    target distance, readable link edges/target, framing, exposure and occlusion. Inspect raw
    depth validity in the target region. A sharp background or global validity percentage
@@ -27,6 +29,8 @@ root and localhost port explicitly; do not embed another machine's paths in new 
    Require current all-motor holding telemetry and the matching live ready event. Remove old
    ready files on motion/finish/stop. Do not capture from a stopped/released run, a stale ready
    file or an unfinished JSONL record. Keep stop evidence and rejected attempts.
+   The newest ready event must follow the newest motor write; verify zero velocity and bounded
+   drift from its accepted actual count immediately before and after each camera receipt.
 6. Request a frame acquired after the pre-capture encoder sample, then obtain a new sample
    after capture. Save both observations, host frame receipt and SDK timestamp/frame number.
    This is host-time bracketing, not hardware synchronization or precise angle calibration.
@@ -42,3 +46,17 @@ Keep verification proportional: reuse existing packet/stop/release tests; add a 
 only for a distinct failure. A table of twenty poses does not need twenty repetitions of the
 same offline controller path. Run the changed checks once and retest only failures or later
 behavior changes. Record final torque/power states separately from camera stream status.
+For camera owner shutdown, record-only SIGINT/SIGTERM handlers should request loop termination;
+finish the current native SDK/OpenCV frame, close HTTP, then stop the pipeline. Do not throw
+KeyboardInterrupt through native image processing. Verify the changed shutdown on one finite
+camera-only run and preserve any original crash; a single successful stop is not proof against
+all native-library races.
+
+For vision/CAD recognition, reuse the observer's matched snapshot endpoint rather than
+opening another camera pipeline. Store the inference inputs and vision output together;
+encoder samples are evaluation evidence, never optimizer input. Define one shooting table
+and retain amended continuation tables after stops. If a joint stalls, preserve the attempt,
+exclude further movement of that joint and retain original progress/output guards. A
+communication stop is also a stopped run; fresh state checks precede resumption. Do not
+rewrite stopped runs as successful captures or infer whole-range collision safety from a
+contact-disabled display model. See [vision/CAD tracking](../vision-cad-arm-tracking/SKILL.md).

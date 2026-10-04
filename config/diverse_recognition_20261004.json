@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "mode": "diverse-v1",
+  "decision": "D16: image-reviewed small multi-joint changes; no absolute calibration",
+  "device": "/dev/serial/by-id/usb-BestTechnology_E148_E148-if00-port0",
+  "reference_counts": [2113,3474,1160,3392,1951],
+  "reference_report": "diary/2026-10-04/diverse-recognition/status_20261004T214538_833927+0900.json",
+  "profiles": {"velocity":6,"acceleration":1,"pwm":350,"hold_seconds":2.5},
+  "collision_status": "Candidate; inspect actual support/cable/link clearance after every pose",
+  "capture_camera": "External D435 922612070196; mounted D405 connected with USB cable",
+  "poses": [
+    {"name":"pose_01","delta_deg":[0,0,10,0,0]},
+    {"name":"pose_02","delta_deg":[0,0,20,0,0]},
+    {"name":"pose_03","delta_deg":[0,0,30,0,0]},
+    {"name":"pose_04","delta_deg":[0,0,30,3,0]},
+    {"name":"pose_05","delta_deg":[0,0,30,6,0]},
+    {"name":"pose_06","delta_deg":[0,3,30,0,0]},
+    {"name":"pose_07","delta_deg":[0,-3,30,0,0]},
+    {"name":"pose_08","delta_deg":[0,-3,30,3,0]},
+    {"name":"pose_09","delta_deg":[0,3,30,3,0]},
+    {"name":"pose_10","delta_deg":[0,3,30,6,0]},
+    {"name":"pose_11","delta_deg":[-15,3,30,6,0]},
+    {"name":"pose_12","delta_deg":[-30,3,30,6,0]},
+    {"name":"pose_13","delta_deg":[-30,-3,30,6,0]},
+    {"name":"pose_14","delta_deg":[-15,-3,25,6,0]},
+    {"name":"pose_15","delta_deg":[0,-3,25,6,0]},
+    {"name":"pose_16","delta_deg":[15,-3,25,6,0]},
+    {"name":"pose_17","delta_deg":[30,-3,25,6,0]},
+    {"name":"pose_18","delta_deg":[30,3,20,3,0]},
+    {"name":"pose_19","delta_deg":[15,3,20,3,0]},
+    {"name":"pose_20","delta_deg":[0,0,20,6,0]}
+  ]
+}

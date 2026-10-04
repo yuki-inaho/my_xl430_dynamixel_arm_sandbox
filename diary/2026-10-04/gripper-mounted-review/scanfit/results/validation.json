@@ -1,0 +1,76 @@
+{
+  "step_components": {
+    "cot_L": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 4954.903962163011,
+      "relative_volume_roundtrip_error": 3.432468328956966e-13,
+      "mesh_vertices": 4226,
+      "mesh_faces": 8448,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.005912341409720329
+    },
+    "foam_L": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 9482.197952531507,
+      "relative_volume_roundtrip_error": 5.480641463027288e-13,
+      "mesh_vertices": 2403,
+      "mesh_faces": 4802,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.001389369815878111
+    },
+    "band_L": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 471.14008525237386,
+      "relative_volume_roundtrip_error": 2.9549789082137566e-12,
+      "mesh_vertices": 508,
+      "mesh_faces": 1016,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.017935476099464793
+    },
+    "cot_R": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 5044.3778865837785,
+      "relative_volume_roundtrip_error": 1.4892671416674803e-13,
+      "mesh_vertices": 4226,
+      "mesh_faces": 8448,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.0030314608254323593
+    },
+    "foam_R": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 12305.122597562404,
+      "relative_volume_roundtrip_error": 2.675609929372255e-14,
+      "mesh_vertices": 4696,
+      "mesh_faces": 9388,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.00032819665754540837
+    },
+    "band_R": {
+      "valid_after_step_reimport": true,
+      "solids": 1,
+      "volume_mm3": 582.0787872668934,
+      "relative_volume_roundtrip_error": 7.736221050441762e-11,
+      "mesh_vertices": 492,
+      "mesh_faces": 984,
+      "mesh_watertight": true,
+      "mesh_volume_relative_error": 0.018617195876352896
+    }
+  },
+  "glb_geometry_count": 6,
+  "glb_roundtrip_bounds_max_error_mm": 3.6273823269539207e-06,
+  "glb_units": "metres, +Y up",
+  "step_stl_units": "millimetres, +Z up in C92 construction coordinates",
+  "all_step_valid": true,
+  "all_addon_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "scale_positive": true,
+  "rotation_determinant": 0.999999999999998,
+  "max_mesh_vs_step_volume_relative_error": 0.018617195876352896,
+  "mesh_volume_tolerance_relative": 0.025,
+  "pass": true
+}

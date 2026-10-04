@@ -1,0 +1,114 @@
+{
+  "start_time": "2026-10-04T19:13:54+09:00",
+  "seed": 20261004,
+  "starts": 32,
+  "binding": "ctypes",
+  "configuration": {
+    "sigmas": [
+      0.035,
+      0.023,
+      0.015,
+      0.01,
+      0.007
+    ],
+    "iterations_per_sigma": 14,
+    "source_stride": 3,
+    "outlier_probability": 0.1,
+    "geometry_sigma": 0.012,
+    "landmark_sigma_px": 3.0,
+    "landmark_weight": 1.5,
+    "silhouette_sigma_px": 3.0,
+    "silhouette_weight": 0.6,
+    "damping": 0.0002,
+    "step_tolerance": 2e-06
+  },
+  "annotation_sha256": "0f6d6bb52f841f82548fab2d86da58d5b08e9676e3a2d9577931af2219ae782e",
+  "model_sha256": "ae862cb057b226cced2882fe1ae4add4c17519b68d5648cbd558f05cf5c30a52",
+  "target_point_count": 5450,
+  "camera_K": [
+    [
+      683.4732133027449,
+      0.0,
+      325.5
+    ],
+    [
+      0.0,
+      684.831323188889,
+      183.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "initialized_state": {
+    "rotation_camera_from_reference": [
+      [
+        0.03435127177708995,
+        0.9951212238494659,
+        0.09248643128393524
+      ],
+      [
+        0.5172936645867606,
+        0.06147637890358092,
+        -0.8535970474499686
+      ],
+      [
+        -0.8551182694257544,
+        0.0771647891284939,
+        -0.512658112793564
+      ]
+    ],
+    "translation_depth_units": [
+      -0.10049818062209258,
+      0.14678270593095125,
+      0.691022151201204
+    ],
+    "log_scale": 0.5178565407349657,
+    "scale_depth_units_per_meter": 1.6784261531585571,
+    "meters_per_depth_unit": 0.5957962452611594,
+    "joint_angles_rad": [
+      -5.366110805462189e-10,
+      3.569054743185081e-10,
+      -0.17021647327174652,
+      -0.5663979482657066
+    ],
+    "joint_angles_deg": [
+      -3.074555015525302e-08,
+      2.0449177363565305e-08,
+      -9.75268552207246,
+      -32.45221196049413
+    ],
+    "J5": null,
+    "J5_reason": "unobservable without downstream installed geometry"
+  },
+  "initialized_metrics": {
+    "selection_score": 0.1853755571134656,
+    "iou": 0.8880836032870294,
+    "foreground_intersection_px": 48524,
+    "foreground_union_px": 54639,
+    "predicted_visible_pixels": 51658,
+    "observed_foreground_pixels": 51505,
+    "symmetric_cloud_rmse_depth_units": 0.03952992611994648,
+    "symmetric_cloud_trim90_rmse_depth_units": 0.005369472322069268,
+    "symmetric_cloud_trim90_rmse_cad_equivalent_mm": 3.1991114485225887,
+    "training_landmark_rmse_px": 0.9025492535663758,
+    "training_landmark_errors_px": [
+      0.021997775420008372,
+      0.4683895117587233,
+      0.9496270265990912,
+      0.9836538460848587,
+      1.408451901966177
+    ],
+    "overlap_depth_median_abs_error_units": 0.006391234669267998,
+    "overlap_depth_rmse_units": 0.03325075478364265,
+    "scale_depth_units_per_meter": 1.6784261531585571,
+    "score_definition": "(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)",
+    "metric_warning": "CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy."
+  },
+  "held_out_policy": "No held-out landmarks used for initialization, optimization or ranking.",
+  "resume_times": [
+    "2026-10-04T19:15:38+09:00"
+  ]
+}

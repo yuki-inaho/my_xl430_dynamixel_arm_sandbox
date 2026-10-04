@@ -1,0 +1,19 @@
+[build-system]
+requires = ["scikit-build-core>=0.11,<1", "nanobind==2.12.0"]
+build-backend = "scikit_build_core.build"
+[project]
+name = "articulated-filterreg-r3"
+version = "0.1.0"
+description = "Auditable scale-aware articulated FilterReg for a bare XL430 CAD arm"
+requires-python = ">=3.10"
+dependencies = ["numpy>=2,<3", "scipy>=1.11", "opencv-contrib-python-headless>=4.10,<5", "trimesh>=4.0", "numba>=0.59", "pillow>=10"]
+[dependency-groups]
+dev = ["pytest>=8"]
+[project.scripts]
+articulated-filterreg = "articulated_filterreg.cli:main"
+[tool.scikit-build]
+cmake.build-type = "Release"
+wheel.packages = ["src/articulated_filterreg"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

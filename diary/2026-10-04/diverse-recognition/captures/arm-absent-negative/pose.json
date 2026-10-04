@@ -1,0 +1,142 @@
+{
+  "vision": {
+    "status": "tracking",
+    "sequence": 53518,
+    "pose": {
+      "rotation_camera_from_reference": [
+        [
+          -0.9053134782982831,
+          0.4034165497658099,
+          -0.13290068993994644
+        ],
+        [
+          0.14498365881388547,
+          -0.0005968606666167729,
+          -0.9894338696619805
+        ],
+        [
+          -0.399233321114862,
+          -0.9150162463762018,
+          -0.05794846140496619
+        ]
+      ],
+      "translation_depth_units": [
+        -0.08142889640646388,
+        0.1279935532237313,
+        0.40450304523477343
+      ],
+      "log_scale": 0.0,
+      "scale_depth_units_per_meter": 1.0,
+      "meters_per_depth_unit": 1.0,
+      "joint_angles_rad": [
+        1.3282795192339814,
+        1.8831875834782803,
+        -1.6048587035969875,
+        2.141725509599381
+      ],
+      "joint_angles_deg": [
+        76.10481046577318,
+        107.89870056474587,
+        -91.95163043094414,
+        122.71183257555002
+      ],
+      "J5": null,
+      "J5_reason": "unobservable without downstream installed geometry"
+    },
+    "quality": {
+      "iou": 0.6438056325696775,
+      "median_surface_residual_m": 0.013919798237942288,
+      "p90_surface_residual_m": 0.03252421779479777,
+      "scale": 1.0,
+      "observed_points": 1200
+    },
+    "reason": null,
+    "pose_hz": 22.527941406219295,
+    "frame_age_seconds": 0.06336253900371958,
+    "frame_received_monotonic": 112841.365972027,
+    "mask_age_seconds": 0.19905652999295853,
+    "mask_received_monotonic": 112841.230278036,
+    "registration_seconds": 0.026009608001913875,
+    "model": "current_arm_r3_d405_r5_65.npz",
+    "model_sha256": "cc15059b6256b1cf88452d3c85a5a0f8861b08ce00978c9e498f86208ce9dcf0",
+    "gaussian_backend": "native",
+    "metadata": {
+      "serial": "922612070196",
+      "device": "RealSense D435",
+      "host_received_at": "2026-10-04T13:14:37.184742+00:00",
+      "color_timestamp_ms": 1791119677133.2224,
+      "depth_timestamp_ms": 1791119677133.1985,
+      "timestamp_domain": "timestamp_domain.global_time",
+      "raw_depth_scale_m": 0.0010000000474974513,
+      "intrinsics_original": {
+        "fx": 925.4581298828125,
+        "fy": 925.7662963867188,
+        "ppx": 645.314453125,
+        "ppy": 360.0555419921875,
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model": "distortion.inverse_brown_conrady"
+      },
+      "processed_resolution": [
+        480,
+        270
+      ],
+      "rectified": false
+    },
+    "segmentation_rejections": 161,
+    "skipped_periodic_evidence": 0,
+    "segmentation": {
+      "model_id": "ZhengPeng7/BiRefNet_lite",
+      "revision": "aa62cd87eafb9cc43056d08ef3615a14628b831d",
+      "input_size": 768,
+      "threshold": 0.5,
+      "device": "cuda",
+      "precision": "float16",
+      "cpu_threads": 1,
+      "last_inference_seconds": 0.11165197499212809
+    },
+    "timings_seconds": {
+      "mask_preparation": 0.010547886005952023,
+      "registration": 0.026009608001913875,
+      "jpeg": 0.004218282003421336
+    },
+    "raw_mask_rgb": "segmentation-053514.png",
+    "raw_mask_image": "segmentation-053514.raw-mask.png",
+    "raw_mask_metadata": {
+      "serial": "922612070196",
+      "device": "RealSense D435",
+      "host_received_at": "2026-10-04T13:14:37.049087+00:00",
+      "color_timestamp_ms": 1791119676999.7988,
+      "depth_timestamp_ms": 1791119676999.775,
+      "timestamp_domain": "timestamp_domain.global_time",
+      "raw_depth_scale_m": 0.0010000000474974513,
+      "intrinsics_original": {
+        "fx": 925.4581298828125,
+        "fy": 925.7662963867188,
+        "ppx": 645.314453125,
+        "ppy": 360.0555419921875,
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model": "distortion.inverse_brown_conrady"
+      },
+      "processed_resolution": [
+        480,
+        270
+      ],
+      "rectified": false
+    }
+  },
+  "source_periodic_snapshot": "diary/2026-10-04/diverse-recognition/live/frame-053518.json",
+  "independent_vlm_assessment": "Inspect color: no arm in the original anchored region; candidate background/cable fit is not an arm",
+  "encoder_used_for_fitting": false
+}

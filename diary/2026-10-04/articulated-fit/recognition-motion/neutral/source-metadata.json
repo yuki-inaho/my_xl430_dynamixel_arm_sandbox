@@ -1,0 +1,74 @@
+{
+  "status": "reacquiring",
+  "sequence": 199,
+  "pose": null,
+  "quality": {},
+  "reason": "segmentation mask is stale",
+  "pose_hz": null,
+  "frame_age_seconds": 0.06243923200236168,
+  "frame_received_monotonic": 108346.730755578,
+  "mask_age_seconds": 1.1709889470075723,
+  "mask_received_monotonic": 108345.622205863,
+  "registration_seconds": 0,
+  "model": "current_arm_r3_d405_r5_65.npz",
+  "gaussian_backend": "native",
+  "metadata": {
+    "serial": "922612070196",
+    "device": "RealSense D435",
+    "host_received_at": "2026-10-04T11:59:42.549556+00:00",
+    "color_timestamp_ms": 1791115182468.4854,
+    "depth_timestamp_ms": 1791115182468.4614,
+    "timestamp_domain": "timestamp_domain.global_time",
+    "raw_depth_scale_m": 0.0010000000474974513,
+    "intrinsics_original": {
+      "fx": 925.4581298828125,
+      "fy": 925.7662963867188,
+      "ppx": 645.314453125,
+      "ppy": 360.0555419921875,
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model": "distortion.inverse_brown_conrady"
+    },
+    "processed_resolution": [
+      480,
+      270
+    ],
+    "rectified": false
+  },
+  "segmentation_rejections": 0,
+  "raw_mask_rgb": "segmentation-000166.png",
+  "raw_mask_image": "segmentation-000166.raw-mask.png",
+  "raw_mask_metadata": {
+    "serial": "922612070196",
+    "device": "RealSense D435",
+    "host_received_at": "2026-10-04T11:59:41.441015+00:00",
+    "color_timestamp_ms": 1791115181367.6892,
+    "depth_timestamp_ms": 1791115181334.313,
+    "timestamp_domain": "timestamp_domain.global_time",
+    "raw_depth_scale_m": 0.0010000000474974513,
+    "intrinsics_original": {
+      "fx": 925.4581298828125,
+      "fy": 925.7662963867188,
+      "ppx": 645.314453125,
+      "ppy": 360.0555419921875,
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model": "distortion.inverse_brown_conrady"
+    },
+    "processed_resolution": [
+      480,
+      270
+    ],
+    "rectified": false
+  }
+}

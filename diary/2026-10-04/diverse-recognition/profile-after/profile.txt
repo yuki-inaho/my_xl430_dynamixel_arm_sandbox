@@ -1,0 +1,51 @@
+         237360 function calls in 1.736 seconds
+
+   Ordered by: cumulative time
+   List reduced from 249 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       60    0.001    0.000    1.735    0.029 tracker.py:319(update)
+       60    0.002    0.000    1.629    0.027 tracker.py:341(_fit)
+       60    0.017    0.000    1.068    0.018 tracker.py:165(register)
+       60    0.115    0.002    0.560    0.009 tracker.py:200(quality)
+       60    0.002    0.000    0.381    0.006 tracker.py:143(_line_step)
+      120    0.065    0.001    0.347    0.003 renderer.py:101(render)
+      120    0.012    0.000    0.255    0.002 tracker.py:126(_frozen_cost)
+      480    0.066    0.000    0.247    0.001 geometry.py:60(fk)
+      120    0.000    0.000    0.238    0.002 __init__.py:833(read)
+      120    0.237    0.002    0.237    0.002 {method 'read' of 'mgl.Texture' objects}
+      420    0.008    0.000    0.225    0.001 geometry.py:68(transforms)
+      240    0.068    0.000    0.198    0.001 geometry.py:71(transform)
+      420    0.002    0.000    0.191    0.000 fromnumeric.py:48(_wrapfunc)
+      300    0.001    0.000    0.190    0.001 fromnumeric.py:2031(nonzero)
+      300    0.188    0.001    0.188    0.001 {method 'nonzero' of 'numpy.ndarray' objects}
+       60    0.013    0.000    0.145    0.002 tracker.py:77(_silhouette_field)
+       60    0.025    0.000    0.139    0.002 tracker.py:86(_silhouette_terms)
+     1980    0.033    0.000    0.137    0.000 _rotation.py:658(from_rotvec)
+       60    0.023    0.000    0.120    0.002 geometry.py:79(space_maps)
+      120    0.025    0.000    0.116    0.001 tracker.py:68(_surface)
+       60    0.041    0.001    0.104    0.002 tracker.py:52(sample_points)
+      120    0.032    0.000    0.101    0.001 tracker.py:105(_reference)
+      120    0.077    0.001    0.077    0.001 {distanceTransform}
+     1980    0.009    0.000    0.077    0.000 _rotation.py:40(_promote)
+     1980    0.017    0.000    0.065    0.000 _array_api.py:548(xp_promote)
+      660    0.022    0.000    0.064    0.000 numeric.py:1563(cross)
+       60    0.000    0.000    0.061    0.001 filterreg.py:54(gaussian_filter)
+       60    0.058    0.001    0.060    0.001 native.py:60(__init__)
+      180    0.000    0.000    0.053    0.000 einsumfunc.py:1242(einsum)
+      180    0.053    0.000    0.053    0.000 {built-in method numpy._core._multiarray_umath.c_einsum}
+       60    0.049    0.001    0.051    0.001 _function_base_impl.py:1013(gradient)
+      240    0.002    0.000    0.050    0.000 _function_base_impl.py:3827(_ureduce)
+       60    0.009    0.000    0.040    0.001 geometry.py:101(point_jacobians)
+       60    0.037    0.001    0.040    0.001 native.py:75(evaluate)
+      180    0.001    0.000    0.038    0.000 _function_base_impl.py:3914(median)
+     1980    0.010    0.000    0.038    0.000 numeric.py:1489(moveaxis)
+      180    0.005    0.000    0.035    0.000 _function_base_impl.py:4003(_median)
+     4440    0.029    0.000    0.029    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     2460    0.029    0.000    0.029    0.000 {method 'astype' of 'numpy.ndarray' objects}
+     1980    0.015    0.000    0.028    0.000 _array_api.py:497(xp_result_type)
+     3240    0.019    0.000    0.026    0.000 _twodim_base_impl.py:178(eye)
+       60    0.019    0.000    0.025    0.000 native.py:112(assemble_blocks)
+     1980    0.005    0.000    0.023    0.000 _rotation.py:2646(_from_raw_quat)
+       60    0.004    0.000    0.023    0.000 tracker.py:114(_increment)
+     3960    0.015    0.000    0.023    0.000 numeric.py:1427(normalize_axis_tuple)

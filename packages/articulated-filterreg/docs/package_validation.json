@@ -1,0 +1,32 @@
+{
+  "timestamp_jst": "2026-10-04T19:41:47+09:00",
+  "stage": "Pre-release archive extracted; documentation may be finalized afterward. Source and numeric assets are unchanged.",
+  "initial_archive_crc_and_all_member_sha256_verified": true,
+  "extracted_root": "/mnt/data/robot_fit_package_check/robot_fit_20261004",
+  "from_extracted_source_capi_build_succeeded": true,
+  "test_count_passed": 14,
+  "test_binding": "ctypes",
+  "replay": {
+    "binding": "ctypes",
+    "best_trial_id": 1,
+    "replay_status": "completed",
+    "max_abs_state_parameter_difference": 0.0,
+    "selection_score_difference": 0.0,
+    "passed": true
+  },
+  "rerender_byte_identical": {
+    "overlay.png": true,
+    "overlay_2x.png": true,
+    "comparison.png": true,
+    "cad_view.png": true,
+    "raw_geometry_overlay.png": true,
+    "silhouette_error.png": true,
+    "held_out_landmarks.png": true,
+    "metrics.json": true,
+    "transforms.json": true
+  },
+  "compiler_warning": "Bundled Eigen emits deprecated std::unary_negate / std::binary_negate warnings under GCC 14; retained in build log, not suppressed.",
+  "nanobind_build_verified": false,
+  "final_archive_validation": "See adjacent robot_fit_20261004.validation.json (outside ZIP; avoids self-referential archive hash).",
+  "passed": true
+}

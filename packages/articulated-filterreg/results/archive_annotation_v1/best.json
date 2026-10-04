@@ -1,0 +1,142 @@
+{
+  "id": 4,
+  "seed_entropy": [
+    20261004,
+    4
+  ],
+  "status": "completed",
+  "elapsed_seconds": 2.533844120999902,
+  "initial": {
+    "rotation_camera_from_reference": [
+      [
+        0.08258523418216632,
+        0.9919143721017992,
+        0.096361597708687
+      ],
+      [
+        0.43162220580732835,
+        0.05155255589712834,
+        -0.9005801493673344
+      ],
+      [
+        -0.8982660800392576,
+        0.11596642789345347,
+        -0.423874789357116
+      ]
+    ],
+    "translation_depth_units": [
+      -0.09373025974457047,
+      0.14286769793711948,
+      0.6897136329662077
+    ],
+    "log_scale": 0.45230352470653445,
+    "scale_depth_units_per_meter": 1.5719289954632696,
+    "meters_per_depth_unit": 0.6361610498222828,
+    "joint_angles_rad": [
+      -0.025897935250266155,
+      -0.24533963594067273,
+      -0.17215277759533912,
+      -0.5399811654195981
+    ],
+    "joint_angles_deg": [
+      -1.483842387943332,
+      -14.056925686676673,
+      -9.86362758766725,
+      -30.938641795098523
+    ],
+    "J5": null,
+    "J5_reason": "unobservable without downstream installed geometry"
+  },
+  "final": {
+    "rotation_camera_from_reference": [
+      [
+        0.09960810660097225,
+        0.9843590620553965,
+        0.1453116032833942
+      ],
+      [
+        0.5225159832671505,
+        0.07253549572330037,
+        -0.8495384918239666
+      ],
+      [
+        -0.8467911621703039,
+        0.16054855592497974,
+        -0.5071182198074443
+      ]
+    ],
+    "translation_depth_units": [
+      -0.10586486067831533,
+      0.14710404342398864,
+      0.6930480153499486
+    ],
+    "log_scale": 0.5211166320203039,
+    "scale_depth_units_per_meter": 1.6839069046544404,
+    "meters_per_depth_unit": 0.5938570577957295,
+    "joint_angles_rad": [
+      -0.06685126496795712,
+      -0.05373109300349948,
+      -0.16955913239393713,
+      -0.5645210738509477
+    ],
+    "joint_angles_deg": [
+      -3.8302953377747158,
+      -3.0785648577254263,
+      -9.715022664072556,
+      -32.344674977852364
+    ],
+    "J5": null,
+    "J5_reason": "unobservable without downstream installed geometry"
+  },
+  "initial_metrics": {
+    "selection_score": 1.3135759741669206,
+    "iou": 0.5321252846292257,
+    "foreground_intersection_px": 33418,
+    "foreground_union_px": 62801,
+    "predicted_visible_pixels": 44714,
+    "observed_foreground_pixels": 51505,
+    "symmetric_cloud_rmse_depth_units": 0.041817499145621675,
+    "symmetric_cloud_trim90_rmse_depth_units": 0.016136457392928256,
+    "symmetric_cloud_trim90_rmse_cad_equivalent_mm": 10.265385675497777,
+    "training_landmark_rmse_px": 65.20637700810072,
+    "training_landmark_errors_px": [
+      13.470876841232164,
+      42.473736967093785,
+      72.86859475725093,
+      77.0413372087392,
+      89.60287616468679
+    ],
+    "overlap_depth_median_abs_error_units": 0.017893395457837857,
+    "overlap_depth_rmse_units": 0.04279486229394793,
+    "scale_depth_units_per_meter": 1.5719289954632696,
+    "score_definition": "(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)",
+    "metric_warning": "CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy."
+  },
+  "final_metrics": {
+    "selection_score": 0.171602532917301,
+    "iou": 0.894349164467898,
+    "foreground_intersection_px": 48810,
+    "foreground_union_px": 54576,
+    "predicted_visible_pixels": 51881,
+    "observed_foreground_pixels": 51505,
+    "symmetric_cloud_rmse_depth_units": 0.03915870914189803,
+    "symmetric_cloud_trim90_rmse_depth_units": 0.004717185464081472,
+    "symmetric_cloud_trim90_rmse_cad_equivalent_mm": 2.801333880776206,
+    "training_landmark_rmse_px": 0.9345471816221371,
+    "training_landmark_errors_px": [
+      0.1592650126020413,
+      0.4822516415804096,
+      1.0917112369274837,
+      0.8480915121011035,
+      1.4825206729120501
+    ],
+    "overlap_depth_median_abs_error_units": 0.005844402920011982,
+    "overlap_depth_rmse_units": 0.032606786980032276,
+    "scale_depth_units_per_meter": 1.6839069046544404,
+    "score_definition": "(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)",
+    "metric_warning": "CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy."
+  },
+  "iteration_count": 70,
+  "selection_scope": "minimum predefined score among 32 completed runs, not a proof of global optimality",
+  "elapsed_all_seconds": 52.70708240299996
+}

@@ -1,0 +1,176 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-10-04 · 画像とCADによるアーム認識の検証記録</title>
+<style>body{font:16px/1.7 system-ui;background:#f4f6f8;color:#192531;max-width:1200px;
+margin:auto;padding:24px}h1{font-size:28px}.grid{display:grid;grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));gap:18px}figure{margin:0;background:white;padding:12px}
+img{width:100%;height:auto}pre{white-space:pre-wrap;background:#fff;padding:16px}
+table{border-collapse:collapse;width:100%}td,th{padding:10px;border:1px solid #ccd3dc}
+.pending{padding:16px;border-left:5px solid #c56816;background:#fff2dc}</style>
+<h1>画像とCADによるアーム認識の検証記録</h1><p>2026-10-04 / Codex単独。
+提供アーカイブの再現、保存RGB-Dの位置合わせ、現在のライブ観測を分けて記録します。</p>
+<p class="pending">後続の<a href="../diverse-recognition/REPORT.html">20姿勢検証・最終レビュー</a>で、
+腕不在時に背景へ根元を移す誤追跡を発見し修正しました。このページの性能はその修正前の記録です。
+最新の制約・手首の停止・不在判定は後続レポートを参照してください。</p>
+<p class="pending">修正後の60秒計測で成功1012姿勢（16.87Hz）、処理時点の画像age
+p95 0.114秒を確認しました。別のHTTP観測99回は全てtracking、age p95 0.157秒。
+条件はcamera/base固定、開いた姿勢の画像由来初期値、nominal R5_65。
+完全に畳まれた画像からの初回探索と絶対角精度は未保証です。</p>
+<table><tr><th>項目</th><th>確認結果</th></tr>
+<tr><td>入力</td><td>robot_fit_20261004.zip、550ファイル。原本と取り込みSHA256は
+<a href="input_manifest.json">manifest</a>。元の注釈と32試行を保存。</td></tr>
+<tr><td>数値核</td><td>nanobindを実ビルド、元14試験成功。Gaussian E段階・共有FKとtwist M段階を再利用。</td></tr>
+<tr><td>元静止画</td><td>選択最良初期値の再計算。state最大差1.64e-14、score差1.11e-16。
+全32試行を新規再実行した結果ではありません。</td></tr>
+<tr><td>実装検証</td><td>root344試験成功後、表示の鮮度とカウント用に追加1試験成功。
+後続変更は関節回復・表示の影響2試験のみ再確認。ruff/ty成功、複雑度最大10。</td></tr>
+<tr><td>現物モデル</td><td>裸R3 + 長尺D405 R5 nominal65°。現物65/75°は未確定。
+爪なし・USBケーブル未モデル化。J5は不可観測(null)。</td></tr>
+<tr><td>RGB-D</td><td>外部D435 922612070196、1280×720/30。colorへdepthをalign、
+SDKのK・m/count・同一frame RGB-Dを保存。手先D405とは別。</td></tr></table>
+<h2>元静止画の再現</h2><p>手動訓練点を使った原実装の再現です。ライブ自動認識とは区別します。</p>
+<figure><a href="static-replay/overlay.png"><img src="static-replay/overlay.png"
+alt="提供静止画に再計算したCADを重畳"></a><figcaption>
+<a href="static-replay/replay.json">数値比較</a></figcaption></figure>
+<h2>現在の画像を自分で観察し、肘を段階的に開く</h2>
+<p>ユーザー指示D15により実施。新しいREADの安定した折り畳み基準は
+[2113,3474,1153,3392,1951] count。既存CameraPhotoController、PV6/PA1/PWM350、
+元のRAM制限と健康・保持guardを再利用。ID1/2/4/5を保持しました。</p>
+<div class="grid"><figure><img src="recognition-motion/open-10.jpg" alt="肘10度指令後">
+<figcaption>10°指令：ID3 1250 count、基準から約8.5°の変化。</figcaption></figure>
+<figure><img src="recognition-motion/open-20.jpg" alt="肘20度指令後">
+<figcaption>20°指令：ID3 1369 count、約19.0°の変化。</figcaption></figure>
+<figure><img src="recognition-motion/open-30.jpg" alt="肘30度指令後">
+<figcaption>30°指令：ID3 1484 count、約29.1°の変化。</figcaption></figure></div>
+<p>関節の間隔が広がり、画像上ではケーブルのループに余裕があり台座移動も見えません。
+これは目視確認で、全可動域の干渉認証ではありません。実機経過は
+<a href="recognition-motion/events.jsonl">イベントとREADの記録</a>を参照。
+21:06:30に基準へ復帰・全5台トルクOFF・RAM設定復元が完了。
+約1分後の3回READでもID3 1157 count、他軸も安定しエラー0を確認しました。</p>
+<h2>折り畳みライブで判明した未達</h2>
+<p>一時的な9Hz表示と、再取得の時間を含めた持続性能は違います。
+下記は改修前runの計測。現在は再認識中のpose Hzをnullとし、mask ageも現在時刻から
+数えます。古いmask/poseを現在値として表示しません。</p>
+<pre>{
+  &quot;source&quot;: &quot;diary/2026-10-04/articulated-fit/live-quality-mask/poses.jsonl&quot;,
+  &quot;window_requested_seconds&quot;: 60,
+  &quot;window_observed_seconds&quot;: 56.01651754400518,
+  &quot;records&quot;: 68,
+  &quot;status_counts&quot;: {
+    &quot;tracking&quot;: 45,
+    &quot;lost&quot;: 20,
+    &quot;reacquiring&quot;: 3
+  },
+  &quot;distinct_successful_poses&quot;: 45,
+  &quot;successful_pose_hz&quot;: 0.8033344801316704,
+  &quot;successful_publication_age_p95_seconds&quot;: 0.21022542259597676,
+  &quot;note&quot;: &quot;Includes lost/reacquisition gaps; publication age excludes subsequent browser delay. A short observation window is not proof of sustained performance.&quot;
+}
+</pre><figure><img src="live-quality-mask/viewer.png"
+alt="再取得中の旧viewer。46Hzという誤表示は修正済み">
+<figcaption>改修前の証拠：再取得通知46Hzの誤表示を発見。成功推定の速度ではありません。</figcaption></figure>
+<h2>修正後のライブと実機追従確認</h2>
+<pre>{
+  &quot;source&quot;: &quot;diary/2026-10-04/articulated-fit/live-final/poses.jsonl&quot;,
+  &quot;window_requested_seconds&quot;: 60.0,
+  &quot;window_observed_seconds&quot;: 59.99566991000029,
+  &quot;records&quot;: 1012,
+  &quot;status_counts&quot;: {
+    &quot;tracking&quot;: 1012
+  },
+  &quot;distinct_successful_poses&quot;: 1012,
+  &quot;successful_pose_hz&quot;: 16.86788399092976,
+  &quot;successful_publication_age_p95_seconds&quot;: 0.11438544470511261,
+  &quot;note&quot;: &quot;Includes lost/reacquisition gaps; publication age excludes subsequent browser delay. A short observation window is not proof of sustained performance.&quot;
+}
+</pre><div class="grid"><figure>
+<img src="live-final/viewer.png" alt="最終版、水色のCADが折り畳み姿勢に重なる">
+<figcaption>開いた姿勢の視覚初期値から折り畳みを追跡</figcaption></figure>
+<figure><img src="recognition-motion-confirmed/open-20-overlay.jpg"
+alt="再確認の20度開きにCADが追従する"><figcaption>20°指令でencoder変化約18.9°、
+画像推定約18°。復帰後21:15:36に全5台OFF・RAM復元を確認。</figcaption></figure></div>
+<p><a href="live-seeded768/http-age.json">HTTPの99観測とage</a> ·
+<a href="recognition-motion-confirmed/events.jsonl">修正後の実機動作・復帰記録</a>。
+空mask・欠損depth3回→復元の再取得は独立した合成関節回復試験で確認。
+実SDKの切断試験とは区別します。絶対角精度や全可動域の干渉認証ではありません。</p>
+<h2>保存neutral + 20姿勢の再処理</h2>
+<p>全21画像がtracking、IoU0.702–0.868、深度点距離中央値2.65–4.53mm。
+静止画間のジャンプごとに8回整定しており、動画fps・実角度の真値検証ではありません。
+画像をクリックすると元サイズを開きます。
+<a href="recorded-poses/poses.json">全結果と入力path</a></p>
+<div class="grid"><figure><a href="recorded-poses/neutral.png">
+    <img loading="lazy" src="recorded-poses/neutral.png" alt="neutralの実画像とCAD"></a>
+    <figcaption>neutral: IoU 0.865, 深度点距離中央値
+    2.65 mm</figcaption></figure><figure><a href="recorded-poses/pose_01.png">
+    <img loading="lazy" src="recorded-poses/pose_01.png" alt="pose_01の実画像とCAD"></a>
+    <figcaption>pose_01: IoU 0.726, 深度点距離中央値
+    2.97 mm</figcaption></figure><figure><a href="recorded-poses/pose_02.png">
+    <img loading="lazy" src="recorded-poses/pose_02.png" alt="pose_02の実画像とCAD"></a>
+    <figcaption>pose_02: IoU 0.702, 深度点距離中央値
+    3.07 mm</figcaption></figure><figure><a href="recorded-poses/pose_03.png">
+    <img loading="lazy" src="recorded-poses/pose_03.png" alt="pose_03の実画像とCAD"></a>
+    <figcaption>pose_03: IoU 0.723, 深度点距離中央値
+    2.77 mm</figcaption></figure><figure><a href="recorded-poses/pose_04.png">
+    <img loading="lazy" src="recorded-poses/pose_04.png" alt="pose_04の実画像とCAD"></a>
+    <figcaption>pose_04: IoU 0.717, 深度点距離中央値
+    3.00 mm</figcaption></figure><figure><a href="recorded-poses/pose_05.png">
+    <img loading="lazy" src="recorded-poses/pose_05.png" alt="pose_05の実画像とCAD"></a>
+    <figcaption>pose_05: IoU 0.733, 深度点距離中央値
+    3.06 mm</figcaption></figure><figure><a href="recorded-poses/pose_06.png">
+    <img loading="lazy" src="recorded-poses/pose_06.png" alt="pose_06の実画像とCAD"></a>
+    <figcaption>pose_06: IoU 0.742, 深度点距離中央値
+    2.92 mm</figcaption></figure><figure><a href="recorded-poses/pose_07.png">
+    <img loading="lazy" src="recorded-poses/pose_07.png" alt="pose_07の実画像とCAD"></a>
+    <figcaption>pose_07: IoU 0.868, 深度点距離中央値
+    3.71 mm</figcaption></figure><figure><a href="recorded-poses/pose_08.png">
+    <img loading="lazy" src="recorded-poses/pose_08.png" alt="pose_08の実画像とCAD"></a>
+    <figcaption>pose_08: IoU 0.856, 深度点距離中央値
+    3.64 mm</figcaption></figure><figure><a href="recorded-poses/pose_09.png">
+    <img loading="lazy" src="recorded-poses/pose_09.png" alt="pose_09の実画像とCAD"></a>
+    <figcaption>pose_09: IoU 0.742, 深度点距離中央値
+    3.84 mm</figcaption></figure><figure><a href="recorded-poses/pose_10.png">
+    <img loading="lazy" src="recorded-poses/pose_10.png" alt="pose_10の実画像とCAD"></a>
+    <figcaption>pose_10: IoU 0.723, 深度点距離中央値
+    3.76 mm</figcaption></figure><figure><a href="recorded-poses/pose_11.png">
+    <img loading="lazy" src="recorded-poses/pose_11.png" alt="pose_11の実画像とCAD"></a>
+    <figcaption>pose_11: IoU 0.845, 深度点距離中央値
+    2.92 mm</figcaption></figure><figure><a href="recorded-poses/pose_12.png">
+    <img loading="lazy" src="recorded-poses/pose_12.png" alt="pose_12の実画像とCAD"></a>
+    <figcaption>pose_12: IoU 0.860, 深度点距離中央値
+    2.82 mm</figcaption></figure><figure><a href="recorded-poses/pose_13.png">
+    <img loading="lazy" src="recorded-poses/pose_13.png" alt="pose_13の実画像とCAD"></a>
+    <figcaption>pose_13: IoU 0.825, 深度点距離中央値
+    3.40 mm</figcaption></figure><figure><a href="recorded-poses/pose_14.png">
+    <img loading="lazy" src="recorded-poses/pose_14.png" alt="pose_14の実画像とCAD"></a>
+    <figcaption>pose_14: IoU 0.841, 深度点距離中央値
+    3.49 mm</figcaption></figure><figure><a href="recorded-poses/pose_15.png">
+    <img loading="lazy" src="recorded-poses/pose_15.png" alt="pose_15の実画像とCAD"></a>
+    <figcaption>pose_15: IoU 0.720, 深度点距離中央値
+    4.53 mm</figcaption></figure><figure><a href="recorded-poses/pose_16.png">
+    <img loading="lazy" src="recorded-poses/pose_16.png" alt="pose_16の実画像とCAD"></a>
+    <figcaption>pose_16: IoU 0.751, 深度点距離中央値
+    4.41 mm</figcaption></figure><figure><a href="recorded-poses/pose_17.png">
+    <img loading="lazy" src="recorded-poses/pose_17.png" alt="pose_17の実画像とCAD"></a>
+    <figcaption>pose_17: IoU 0.857, 深度点距離中央値
+    4.26 mm</figcaption></figure><figure><a href="recorded-poses/pose_18.png">
+    <img loading="lazy" src="recorded-poses/pose_18.png" alt="pose_18の実画像とCAD"></a>
+    <figcaption>pose_18: IoU 0.848, 深度点距離中央値
+    4.06 mm</figcaption></figure><figure><a href="recorded-poses/pose_19.png">
+    <img loading="lazy" src="recorded-poses/pose_19.png" alt="pose_19の実画像とCAD"></a>
+    <figcaption>pose_19: IoU 0.847, 深度点距離中央値
+    3.21 mm</figcaption></figure><figure><a href="recorded-poses/pose_20.png">
+    <img loading="lazy" src="recorded-poses/pose_20.png" alt="pose_20の実画像とCAD"></a>
+    <figcaption>pose_20: IoU 0.765, 深度点距離中央値
+    3.39 mm</figcaption></figure></div>
+<h2>領域抽出の入力解像度比較</h2>
+<p>同じRGB画像で512/768/1024を比較。512では腕が消えて青いケーブルだけ残る例があり、
+768では腕の全体が残りました。単独GPU計測で768は約80–84ms。
+これはライブ持続速度ではありません。
+<a href="segmentation-resolution/results.json">同一画像の比較結果</a></p>
+<div class="grid"><figure><img src="segmentation-resolution/frame-004076-512-rgb.png"
+alt="512入力ではケーブルのみを抽出"><figcaption>512：領域抽出の崩壊</figcaption></figure>
+<figure><img src="segmentation-resolution/frame-004076-768-rgb.png"
+alt="768入力では腕が抽出される"><figcaption>768：腕の領域が残る</figcaption></figure></div>
+<p><a href="../../../docs/ARTICULATED_POSE_RECOGNITION.md">再現と起動手順</a> ·
+<a href="../workdocs/workdoc_Oct04-2026_live_articulated_fit.md">作業書とDoD</a></p>
+</html>

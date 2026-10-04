@@ -168,3 +168,16 @@ rtk proxy uv run arm-tag-sheet detect --image <path> --output-json <path>
 RGB-D撮影・接続済み手先D405の実profileと保存データは
 [RGB-D撮影](docs/RGBD_CAPTURE.md)、撮影時の再利用手順は
 [rgbd-arm-pose-capture](skills/rgbd-arm-pose-capture/SKILL.md)を参照。
+
+画像とCADによる関節姿勢認識は [ARTICULATED_POSE_RECOGNITION.md](docs/ARTICULATED_POSE_RECOGNITION.md)。
+`arm-pose-fit`はカメラ専用で、motorへ指令しません。GPU追加依存を使うセットアップ、
+モデル出典、座標、不在判定と再取得条件を記載しています。
+[20姿勢の最新検証](diary/2026-10-04/diverse-recognition/REPORT.html)では、相対encoder比較、
+停止した手首、処理時間改善と背景への誤追跡の修正を画像付きで確認できます。
+作業書の完成記録は日付別diary/workdocs/に格納しています。
+
+現物の写真・元branch・モデル版・ID対応は [現行アーム仕様](docs/CURRENT_ARM_SPEC.md)。
+装着済みグリッパの[二眼開閉レポート](diary/2026-10-04/gripper-mounted-review/REPORT.html)と
+[ID5制約](docs/GRIPPER_ID5_CONSTRAINTS.md)には実測位置、停止した試行、最終OFFを記録しています。
+[会話archive](diary/2026-10-04/conversation-review/README.md)は107発言を保持する23:38のsnapshot。
+大きいclean JSONはローカルに原本を残し、Gitには復元検証した圧縮5partsを保存しています。

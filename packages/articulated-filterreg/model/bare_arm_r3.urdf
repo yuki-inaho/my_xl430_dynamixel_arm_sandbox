@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="xl430_r3_bare_observation_model">
+  <link name="body_0">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="body_0.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="body_1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="body_1.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="J1" type="revolute">
+    <parent link="body_0" />
+    <child link="body_1" />
+    <origin xyz="0.0 0.0 0.02" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.141592653589793" upper="3.141592653589793" effort="0" velocity="0" />
+  </joint>
+  <link name="body_2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="body_2.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="J2" type="revolute">
+    <parent link="body_1" />
+    <child link="body_2" />
+    <origin xyz="-0.0002 0.0 0.0363" rpy="0 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit lower="-3.141592653589793" upper="3.141592653589793" effort="0" velocity="0" />
+  </joint>
+  <link name="body_3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="body_3.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="J3" type="revolute">
+    <parent link="body_2" />
+    <child link="body_3" />
+    <origin xyz="0.0 0.0148 0.10830000000000001" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-3.141592653589793" upper="3.141592653589793" effort="0" velocity="0" />
+  </joint>
+  <link name="body_4">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="body_4.stl" scale="1 1 1" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="J4" type="revolute">
+    <parent link="body_3" />
+    <child link="body_4" />
+    <origin xyz="0.0 0.09010000000000001 0.0" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-3.141592653589793" upper="3.141592653589793" effort="0" velocity="0" />
+  </joint>
+</robot>

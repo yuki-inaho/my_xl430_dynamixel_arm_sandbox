@@ -1,0 +1,264 @@
+{
+  "closed": {
+    "d435": {
+      "rect_xyxy": [
+        600,
+        105,
+        785,
+        305
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.6952702702702702,
+      "p10_p50_p90_m": [
+        0.31500001496169716,
+        0.3200000151991844,
+        0.5410000256961212
+      ],
+      "depth_scale_m_per_count": 0.0010000000474974513,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    },
+    "d405": {
+      "rect_xyxy": [
+        545,
+        295,
+        895,
+        685
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.44132600732600735,
+      "p10_p50_p90_m": [
+        0.09349999763799133,
+        0.1032999973904225,
+        0.6572999833952053
+      ],
+      "depth_scale_m_per_count": 9.999999747378752e-05,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    }
+  },
+  "open10": {
+    "d435": {
+      "rect_xyxy": [
+        600,
+        105,
+        785,
+        305
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.6901621621621622,
+      "p10_p50_p90_m": [
+        0.31300001486670226,
+        0.31900001515168697,
+        0.5350000254111364
+      ],
+      "depth_scale_m_per_count": 0.0010000000474974513,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    },
+    "d405": {
+      "rect_xyxy": [
+        545,
+        295,
+        895,
+        685
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.4096336996336996,
+      "p10_p50_p90_m": [
+        0.09419999762030784,
+        0.10199999742326327,
+        0.6303999840747565
+      ],
+      "depth_scale_m_per_count": 9.999999747378752e-05,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    }
+  },
+  "open20": {
+    "d435": {
+      "rect_xyxy": [
+        600,
+        105,
+        785,
+        305
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.6571081081081082,
+      "p10_p50_p90_m": [
+        0.31300001486670226,
+        0.31900001515168697,
+        0.5370000255061314
+      ],
+      "depth_scale_m_per_count": 0.0010000000474974513,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    },
+    "d405": {
+      "rect_xyxy": [
+        545,
+        295,
+        895,
+        685
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.41924542124542125,
+      "p10_p50_p90_m": [
+        0.09649999756220495,
+        0.10259999740810599,
+        0.6480999836276169
+      ],
+      "depth_scale_m_per_count": 9.999999747378752e-05,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    }
+  },
+  "open-observed": {
+    "d435": {
+      "rect_xyxy": [
+        600,
+        105,
+        785,
+        305
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.6158648648648649,
+      "p10_p50_p90_m": [
+        0.31100001477170736,
+        0.32100001524668187,
+        0.5310000252211466
+      ],
+      "depth_scale_m_per_count": 0.0010000000474974513,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    },
+    "d405": {
+      "rect_xyxy": [
+        545,
+        295,
+        895,
+        685
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.3877948717948718,
+      "p10_p50_p90_m": [
+        0.09519999759504572,
+        0.1048999973500031,
+        0.6703999830642715
+      ],
+      "depth_scale_m_per_count": 9.999999747378752e-05,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    }
+  },
+  "reclosed": {
+    "d435": {
+      "rect_xyxy": [
+        600,
+        105,
+        785,
+        305
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.6747027027027027,
+      "p10_p50_p90_m": [
+        0.3140000149141997,
+        0.3180000151041895,
+        0.534000025363639
+      ],
+      "depth_scale_m_per_count": 0.0010000000474974513,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    },
+    "d405": {
+      "rect_xyxy": [
+        545,
+        295,
+        895,
+        685
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.41726007326007325,
+      "p10_p50_p90_m": [
+        0.09489999760262435,
+        0.10289999740052735,
+        0.6435999837412965
+      ],
+      "depth_scale_m_per_count": 9.999999747378752e-05,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    }
+  },
+  "first-stop": {
+    "d435": {
+      "rect_xyxy": [
+        600,
+        105,
+        785,
+        305
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.6876216216216217,
+      "p10_p50_p90_m": [
+        0.31500001496169716,
+        0.3200000151991844,
+        0.5410000256961212
+      ],
+      "depth_scale_m_per_count": 0.0010000000474974513,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    },
+    "d405": {
+      "rect_xyxy": [
+        545,
+        295,
+        895,
+        685
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.43741391941391944,
+      "p10_p50_p90_m": [
+        0.0936999976329389,
+        0.10259999740810599,
+        0.6424999837690848
+      ],
+      "depth_scale_m_per_count": 9.999999747378752e-05,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    }
+  },
+  "retry-stop": {
+    "d435": {
+      "rect_xyxy": [
+        600,
+        105,
+        785,
+        305
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.6843783783783783,
+      "p10_p50_p90_m": [
+        0.3140000149141997,
+        0.31900001515168697,
+        0.5400000256486237
+      ],
+      "depth_scale_m_per_count": 0.0010000000474974513,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    },
+    "d405": {
+      "rect_xyxy": [
+        545,
+        295,
+        895,
+        685
+      ],
+      "rectangle_not_segmentation": true,
+      "nonzero_fraction": 0.4471501831501831,
+      "p10_p50_p90_m": [
+        0.09379999763041269,
+        0.10419999736768659,
+        0.6198999843400088
+      ],
+      "depth_scale_m_per_count": 9.999999747378752e-05,
+      "note": "Foreground/background mixed; not metrology or exact tip distance"
+    }
+  },
+  "end-view": {
+    "d435": {
+      "rect_xyxy": null,
+      "note": "Camera moved; original target ROI is not applicable"
+    },
+    "d405": {
+      "rect_xyxy": null,
+      "note": "Camera moved; original target ROI is not applicable"
+    }
+  }
+}

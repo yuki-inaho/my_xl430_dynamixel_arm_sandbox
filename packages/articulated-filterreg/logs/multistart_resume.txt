@@ -1,0 +1,34 @@
+trial 000 resumed from saved record
+trial 001 resumed from saved record
+trial 002 resumed from saved record
+trial 003 resumed from saved record
+trial 004 resumed from saved record
+trial 005 resumed from saved record
+trial 006 resumed from saved record
+trial 007 resumed from saved record
+trial 008 resumed from saved record
+trial 009 resumed from saved record
+trial 010 resumed from saved record
+trial 011 resumed from saved record
+trial 012 completed score=0.1721472 IoU=0.89449 seconds=2.65
+trial 013 completed score=0.1719463 IoU=0.89429 seconds=2.54
+trial 014 completed score=0.1716701 IoU=0.89432 seconds=2.52
+trial 015 completed score=0.1716345 IoU=0.89461 seconds=2.53
+trial 016 completed score=0.1718405 IoU=0.89447 seconds=2.59
+trial 017 completed score=0.1719414 IoU=0.89423 seconds=2.51
+trial 018 completed score=0.1716717 IoU=0.89438 seconds=2.52
+trial 019 completed score=0.1719469 IoU=0.89431 seconds=2.55
+trial 020 completed score=0.1718112 IoU=0.89412 seconds=2.54
+trial 021 completed score=0.1720486 IoU=0.89425 seconds=2.51
+trial 022 completed score=0.1717129 IoU=0.89415 seconds=2.50
+trial 023 completed score=0.1725003 IoU=0.89438 seconds=2.54
+trial 024 completed score=0.1716613 IoU=0.89438 seconds=2.57
+trial 025 completed score=0.1720999 IoU=0.89444 seconds=2.56
+trial 026 completed score=0.1722602 IoU=0.89436 seconds=2.53
+trial 027 completed score=0.1720387 IoU=0.89442 seconds=2.51
+trial 028 completed score=0.1718006 IoU=0.89430 seconds=2.54
+trial 029 completed score=0.1717499 IoU=0.89449 seconds=2.51
+trial 030 completed score=0.1718020 IoU=0.89420 seconds=2.53
+trial 031 completed score=0.1719828 IoU=0.89430 seconds=2.54
+BEST 4 {'selection_score': 0.171602532917301, 'iou': 0.894349164467898, 'foreground_intersection_px': 48810, 'foreground_union_px': 54576, 'predicted_visible_pixels': 51881, 'observed_foreground_pixels': 51505, 'symmetric_cloud_rmse_depth_units': 0.03915870914189803, 'symmetric_cloud_trim90_rmse_depth_units': 0.004717185464081472, 'symmetric_cloud_trim90_rmse_cad_equivalent_mm': 2.801333880776206, 'training_landmark_rmse_px': 0.9345471816221371, 'training_landmark_errors_px': [0.1592650126020413, 0.4822516415804096, 1.0917112369274837, 0.8480915121011035, 1.4825206729120501], 'overlap_depth_median_abs_error_units': 0.005844402920011982, 'overlap_depth_rmse_units': 0.032606786980032276, 'scale_depth_units_per_meter': 1.6839069046544404, 'score_definition': '(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)', 'metric_warning': 'CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy.'}
+TOTAL_SECONDS 52.70802139399984

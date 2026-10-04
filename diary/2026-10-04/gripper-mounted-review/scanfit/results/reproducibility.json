@@ -1,0 +1,45 @@
+{
+  "scope": "rebuild from only copied input GLB, photograph, two reference STEP files and source; no raster cache or numerical output copied",
+  "environment": "same preinstalled Python 3.13 environment via uv; not a fresh dependency installation",
+  "stage_exit_status": 0,
+  "numeric_outputs": {
+    "calibration.json": {
+      "json_values_equal": true
+    },
+    "parameters.json": {
+      "json_values_equal": true
+    },
+    "photo_camera.json": {
+      "json_values_equal": true
+    },
+    "surface_residuals.json": {
+      "json_values_equal": true
+    },
+    "validation.json": {
+      "json_values_equal": true
+    }
+  },
+  "image_outputs": {
+    "photo_overlay.png": {
+      "sha256_original": "b39a85f9058f42a10e3563a8e07863f4fc57308500121dcb796a78b65aa0859c",
+      "sha256_rebuilt": "b39a85f9058f42a10e3563a8e07863f4fc57308500121dcb796a78b65aa0859c",
+      "equal": true
+    },
+    "photo_overlay_labeled.png": {
+      "sha256_original": "73513aebab3577108437cc0f067e77132701f62b87488fe450042a0a1fb19db0",
+      "sha256_rebuilt": "73513aebab3577108437cc0f067e77132701f62b87488fe450042a0a1fb19db0",
+      "equal": true
+    },
+    "photo_comparison.png": {
+      "sha256_original": "b468db2cbec5acc251d97ea9b600d68546e03b89aadb85a9be567e454ff8dd7a",
+      "sha256_rebuilt": "b468db2cbec5acc251d97ea9b600d68546e03b89aadb85a9be567e454ff8dd7a",
+      "equal": true
+    },
+    "scan_overlay_oblique.png": {
+      "sha256_original": "df909ad2fe5b69ee36b486d21a4505184368b2ca6505268a12ab645466aab051",
+      "sha256_rebuilt": "df909ad2fe5b69ee36b486d21a4505184368b2ca6505268a12ab645466aab051",
+      "equal": true
+    }
+  },
+  "pass": true
+}

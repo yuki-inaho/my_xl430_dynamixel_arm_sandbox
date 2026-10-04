@@ -1,0 +1,1612 @@
+{
+  "id": 15,
+  "seed_entropy": [
+    20261004,
+    15
+  ],
+  "status": "completed",
+  "elapsed_seconds": 2.561929113000133,
+  "initial": {
+    "rotation_camera_from_reference": [
+      [
+        -0.16084098162837773,
+        0.9827084848581138,
+        0.09172901622000933
+      ],
+      [
+        0.5875506625163441,
+        0.1700111899160094,
+        -0.7911260419679965
+      ],
+      [
+        -0.793041233231555,
+        -0.07335004492986673,
+        -0.6047357880127169
+      ]
+    ],
+    "translation_depth_units": [
+      -0.10947281862407861,
+      0.1453675502322803,
+      0.6953749722414059
+    ],
+    "log_scale": 0.5188553195767593,
+    "scale_depth_units_per_meter": 1.680103367131333,
+    "meters_per_depth_unit": 0.5952014736494665,
+    "joint_angles_rad": [
+      0.1715110647276637,
+      -0.15682131739466643,
+      -0.2727382451222886,
+      -0.6422888791739058
+    ],
+    "joint_angles_deg": [
+      9.82686014869021,
+      -8.985199624395909,
+      -15.626750357311648,
+      -36.800442004852876
+    ],
+    "J5": null,
+    "J5_reason": "unobservable without downstream installed geometry"
+  },
+  "final": {
+    "rotation_camera_from_reference": [
+      [
+        0.09623558601096047,
+        0.9847230082949043,
+        0.14511825839557319
+      ],
+      [
+        0.5226992881396054,
+        0.07407727638038757,
+        -0.8492926535078565
+      ],
+      [
+        -0.8470679820200259,
+        0.1575853865645575,
+        -0.5075851453478745
+      ]
+    ],
+    "translation_depth_units": [
+      -0.10594044419258633,
+      0.14718875375533297,
+      0.6935428319549919
+    ],
+    "log_scale": 0.5221855693598472,
+    "scale_depth_units_per_meter": 1.6857078580027958,
+    "meters_per_depth_unit": 0.5932226009700083,
+    "joint_angles_rad": [
+      -0.06273221985478762,
+      -0.05340736145326404,
+      -0.16949290633963246,
+      -0.5661747947481657
+    ],
+    "joint_angles_deg": [
+      -3.5942914371661168,
+      -3.0600164062017083,
+      -9.711228190667095,
+      -32.43942620575554
+    ],
+    "J5": null,
+    "J5_reason": "unobservable without downstream installed geometry"
+  },
+  "initial_metrics": {
+    "selection_score": 1.0351540776520283,
+    "iou": 0.5884478690678852,
+    "foreground_intersection_px": 39406,
+    "foreground_union_px": 66966,
+    "predicted_visible_pixels": 55810,
+    "observed_foreground_pixels": 50562,
+    "symmetric_cloud_rmse_depth_units": 0.02887589775252058,
+    "symmetric_cloud_trim90_rmse_depth_units": 0.01783188464007362,
+    "symmetric_cloud_trim90_rmse_cad_equivalent_mm": 10.613564015719103,
+    "training_landmark_rmse_px": 40.961933103903014,
+    "training_landmark_errors_px": [
+      14.64815404748082,
+      58.4138188847938,
+      43.707189808968934,
+      39.80062863367053,
+      35.61247932545997
+    ],
+    "overlap_depth_median_abs_error_units": 0.02394696122279727,
+    "overlap_depth_rmse_units": 0.051082506607593815,
+    "scale_depth_units_per_meter": 1.680103367131333,
+    "score_definition": "(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)",
+    "metric_warning": "CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy."
+  },
+  "final_metrics": {
+    "selection_score": 0.15754143862486483,
+    "iou": 0.906945142495486,
+    "foreground_intersection_px": 48722,
+    "foreground_union_px": 53721,
+    "predicted_visible_pixels": 51881,
+    "observed_foreground_pixels": 50562,
+    "symmetric_cloud_rmse_depth_units": 0.019029818506610622,
+    "symmetric_cloud_trim90_rmse_depth_units": 0.004607944450701729,
+    "symmetric_cloud_trim90_rmse_cad_equivalent_mm": 2.7335367921705958,
+    "training_landmark_rmse_px": 0.9191247711930047,
+    "training_landmark_errors_px": [
+      0.16888922824714092,
+      0.4851836761371188,
+      0.979275964097368,
+      0.8750747513802966,
+      1.495087863549499
+    ],
+    "overlap_depth_median_abs_error_units": 0.005767621370689202,
+    "overlap_depth_rmse_units": 0.03168935203690705,
+    "scale_depth_units_per_meter": 1.6857078580027958,
+    "score_definition": "(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)",
+    "metric_warning": "CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy."
+  },
+  "iteration_count": 70,
+  "trace": [
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 0,
+      "gaussian_queries": 6195,
+      "boundary_points": 1083,
+      "mean_mass": 149.40925981954842,
+      "frozen_cost_before": 299.47488971778677,
+      "frozen_cost_after": 16.601790403916112,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.1917411767179646,
+      "scale": 1.671907617737818,
+      "joints_rad": [
+        0.21672022937116497,
+        -0.047966241340447635,
+        -0.20464537097828434,
+        -0.550797156260162
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 1,
+      "gaussian_queries": 5813,
+      "boundary_points": 1076,
+      "mean_mass": 178.43544535147342,
+      "frozen_cost_before": 12.09517366296511,
+      "frozen_cost_after": 6.567782534669098,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.06452938345021246,
+      "scale": 1.6587805284463135,
+      "joints_rad": [
+        0.18732002268388126,
+        -0.03936791300274373,
+        -0.16790059763807608,
+        -0.5642511735871057
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 2,
+      "gaussian_queries": 5696,
+      "boundary_points": 1070,
+      "mean_mass": 185.57089466086177,
+      "frozen_cost_before": 6.286634152822566,
+      "frozen_cost_after": 6.163036411328708,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.028680800688551077,
+      "scale": 1.6577497381012205,
+      "joints_rad": [
+        0.16711611353393674,
+        -0.04084073154198672,
+        -0.16378901933486723,
+        -0.5657437696739009
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 3,
+      "gaussian_queries": 5679,
+      "boundary_points": 1070,
+      "mean_mass": 187.51360483149926,
+      "frozen_cost_before": 6.0336708842365905,
+      "frozen_cost_after": 6.015699869115807,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.017189324384580516,
+      "scale": 1.6576671064213873,
+      "joints_rad": [
+        0.1550822825073075,
+        -0.04220734396072837,
+        -0.16302579499673192,
+        -0.5662990830710152
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 4,
+      "gaussian_queries": 5673,
+      "boundary_points": 1071,
+      "mean_mass": 188.1283090414503,
+      "frozen_cost_before": 6.024021135056294,
+      "frozen_cost_after": 6.0105423550874395,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.016597647099473062,
+      "scale": 1.6577482984798937,
+      "joints_rad": [
+        0.14446012987659348,
+        -0.04531639517936645,
+        -0.16267611127162496,
+        -0.5662738825060157
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 5,
+      "gaussian_queries": 5676,
+      "boundary_points": 1069,
+      "mean_mass": 188.3568017906889,
+      "frozen_cost_before": 5.992649440719381,
+      "frozen_cost_after": 5.978655518525468,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.019271134183884084,
+      "scale": 1.6577710885523285,
+      "joints_rad": [
+        0.13138939207428885,
+        -0.04421228313792037,
+        -0.16240014727040905,
+        -0.5663660415997996
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 6,
+      "gaussian_queries": 5674,
+      "boundary_points": 1067,
+      "mean_mass": 188.5064536925238,
+      "frozen_cost_before": 6.002757359824233,
+      "frozen_cost_after": 5.989434762636266,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.01797076863638581,
+      "scale": 1.6579284297406063,
+      "joints_rad": [
+        0.11956790471334468,
+        -0.04525616772801568,
+        -0.16223842180562253,
+        -0.5663253153723505
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 7,
+      "gaussian_queries": 5677,
+      "boundary_points": 1068,
+      "mean_mass": 188.446940469323,
+      "frozen_cost_before": 5.914606625359397,
+      "frozen_cost_after": 5.904550646891256,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.014242748333052032,
+      "scale": 1.6579102744392942,
+      "joints_rad": [
+        0.11028559656251033,
+        -0.04658906333553129,
+        -0.16264729156657404,
+        -0.5664221816083436
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 8,
+      "gaussian_queries": 5678,
+      "boundary_points": 1062,
+      "mean_mass": 188.55580920089488,
+      "frozen_cost_before": 5.992483171413765,
+      "frozen_cost_after": 5.9830498561854935,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.014747556915236975,
+      "scale": 1.657815209025288,
+      "joints_rad": [
+        0.10048979774282737,
+        -0.047497257200062565,
+        -0.16219751088570522,
+        -0.5667162668652266
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 9,
+      "gaussian_queries": 5683,
+      "boundary_points": 1063,
+      "mean_mass": 188.46509198735643,
+      "frozen_cost_before": 5.951966523203897,
+      "frozen_cost_after": 5.942511221983629,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.01601912524331608,
+      "scale": 1.6578623725929538,
+      "joints_rad": [
+        0.08976084885693864,
+        -0.045808274366963546,
+        -0.1623062932793163,
+        -0.5664848784799175
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 10,
+      "gaussian_queries": 5684,
+      "boundary_points": 1061,
+      "mean_mass": 188.46063704328324,
+      "frozen_cost_before": 5.959034672502419,
+      "frozen_cost_after": 5.95240854763758,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.012228648059152504,
+      "scale": 1.6578187293320048,
+      "joints_rad": [
+        0.0816432731339146,
+        -0.04568728983620592,
+        -0.16240936027137584,
+        -0.5665301965130168
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 11,
+      "gaussian_queries": 5683,
+      "boundary_points": 1061,
+      "mean_mass": 188.49470082725665,
+      "frozen_cost_before": 5.946702188584904,
+      "frozen_cost_after": 5.938110111761178,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.01391331278606706,
+      "scale": 1.65756234685199,
+      "joints_rad": [
+        0.07225490056149542,
+        -0.04569906010786596,
+        -0.16208326830677477,
+        -0.5665041592908711
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 12,
+      "gaussian_queries": 5684,
+      "boundary_points": 1060,
+      "mean_mass": 188.50179312877856,
+      "frozen_cost_before": 5.911666902564491,
+      "frozen_cost_after": 5.902988559652961,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.013977725606999206,
+      "scale": 1.6581404046839734,
+      "joints_rad": [
+        0.06350091566425173,
+        -0.043628881489249094,
+        -0.16273029917180157,
+        -0.5664350060657231
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 0,
+      "sigma": 0.035,
+      "iteration": 13,
+      "gaussian_queries": 5689,
+      "boundary_points": 1061,
+      "mean_mass": 188.37122274557086,
+      "frozen_cost_before": 5.9956363487630195,
+      "frozen_cost_after": 5.988909923423904,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.011335226317839267,
+      "scale": 1.6577668145083755,
+      "joints_rad": [
+        0.05589129120294547,
+        -0.044346086475603654,
+        -0.16222590327285916,
+        -0.5664966766858709
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 0,
+      "gaussian_queries": 5687,
+      "boundary_points": 1060,
+      "mean_mass": 100.46867491220488,
+      "frozen_cost_before": 4.4958500894755025,
+      "frozen_cost_after": 4.447460548515439,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.012333712437799238,
+      "scale": 1.6664729305300907,
+      "joints_rad": [
+        0.05004074591988896,
+        -0.04543494111621658,
+        -0.16465906829860766,
+        -0.5660300527518511
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 1,
+      "gaussian_queries": 5703,
+      "boundary_points": 1057,
+      "mean_mass": 101.65318696792582,
+      "frozen_cost_before": 4.3700501022601,
+      "frozen_cost_after": 4.356252623293904,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.011825636501787336,
+      "scale": 1.66981076440846,
+      "joints_rad": [
+        0.043287559266965606,
+        -0.046440644883170276,
+        -0.16571372671267284,
+        -0.5657303290610741
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 2,
+      "gaussian_queries": 5711,
+      "boundary_points": 1054,
+      "mean_mass": 101.95730270688345,
+      "frozen_cost_before": 4.325318887908802,
+      "frozen_cost_after": 4.320106385150876,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.01052614431097912,
+      "scale": 1.670703736470965,
+      "joints_rad": [
+        0.03625704012770497,
+        -0.04629902141313027,
+        -0.1658875048854384,
+        -0.5659317375465721
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 3,
+      "gaussian_queries": 5710,
+      "boundary_points": 1056,
+      "mean_mass": 102.08873876083696,
+      "frozen_cost_before": 4.299179292228629,
+      "frozen_cost_after": 4.292438892672736,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.010883259639033723,
+      "scale": 1.6710941904767254,
+      "joints_rad": [
+        0.02965402119073527,
+        -0.04842790666589018,
+        -0.16583619550864387,
+        -0.5658845382093319
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 4,
+      "gaussian_queries": 5716,
+      "boundary_points": 1056,
+      "mean_mass": 102.07266358375348,
+      "frozen_cost_before": 4.371496756761928,
+      "frozen_cost_after": 4.366309480970312,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.010646912886527396,
+      "scale": 1.6710512338879315,
+      "joints_rad": [
+        0.022489448323465604,
+        -0.047180555720731134,
+        -0.16561830872232958,
+        -0.5661960953140396
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 5,
+      "gaussian_queries": 5716,
+      "boundary_points": 1055,
+      "mean_mass": 102.1120335375835,
+      "frozen_cost_before": 4.354159066511609,
+      "frozen_cost_after": 4.351209958226056,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.006593221075790417,
+      "scale": 1.6709799454013534,
+      "joints_rad": [
+        0.01825724738366817,
+        -0.04819526410589418,
+        -0.16571225664357267,
+        -0.5661310581855397
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 6,
+      "gaussian_queries": 5715,
+      "boundary_points": 1055,
+      "mean_mass": 102.17004083116842,
+      "frozen_cost_before": 4.331901892590264,
+      "frozen_cost_after": 4.327032736653112,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.00974536151992432,
+      "scale": 1.671105056386187,
+      "joints_rad": [
+        0.012114009664398396,
+        -0.04948041244653878,
+        -0.16578382204256345,
+        -0.5660087933593576
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 7,
+      "gaussian_queries": 5719,
+      "boundary_points": 1054,
+      "mean_mass": 102.13044776695656,
+      "frozen_cost_before": 4.367756415452167,
+      "frozen_cost_after": 4.364334777603563,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.007829892293477426,
+      "scale": 1.6710419399785639,
+      "joints_rad": [
+        0.007160056579342075,
+        -0.05087707312767834,
+        -0.1657171708476178,
+        -0.5661521175090307
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 8,
+      "gaussian_queries": 5718,
+      "boundary_points": 1053,
+      "mean_mass": 102.15619048107646,
+      "frozen_cost_before": 4.364419575846716,
+      "frozen_cost_after": 4.359834568918408,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.01137165776784483,
+      "scale": 1.6711012632086784,
+      "joints_rad": [
+        -0.00012143411541708313,
+        -0.04802799297366234,
+        -0.16581149680612142,
+        -0.5660926354314726
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 9,
+      "gaussian_queries": 5720,
+      "boundary_points": 1053,
+      "mean_mass": 102.16213543725907,
+      "frozen_cost_before": 4.340796430217882,
+      "frozen_cost_after": 4.335434726316477,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.008708415388654338,
+      "scale": 1.6711940621200148,
+      "joints_rad": [
+        -0.004718135463528682,
+        -0.051040745880701295,
+        -0.16567730903437894,
+        -0.5662195841815351
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 10,
+      "gaussian_queries": 5723,
+      "boundary_points": 1053,
+      "mean_mass": 102.12912063424517,
+      "frozen_cost_before": 4.359867895628549,
+      "frozen_cost_after": 4.356047687594807,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.00902174704520507,
+      "scale": 1.6710725179843924,
+      "joints_rad": [
+        -0.010857520751746886,
+        -0.050844253832312954,
+        -0.16564602030674605,
+        -0.5661729069314597
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 11,
+      "gaussian_queries": 5720,
+      "boundary_points": 1053,
+      "mean_mass": 102.20485021651342,
+      "frozen_cost_before": 4.336419053034579,
+      "frozen_cost_after": 4.333326071072097,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.007634921724228616,
+      "scale": 1.670952135620721,
+      "joints_rad": [
+        -0.015995188597928152,
+        -0.05082704554895887,
+        -0.1657062321748966,
+        -0.5661592402659782
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 12,
+      "gaussian_queries": 5722,
+      "boundary_points": 1055,
+      "mean_mass": 102.22736944396553,
+      "frozen_cost_before": 4.326085645092934,
+      "frozen_cost_after": 4.322512370422926,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.007643658097537443,
+      "scale": 1.6710036090906992,
+      "joints_rad": [
+        -0.020815223812147454,
+        -0.051684335226226084,
+        -0.1655525914189948,
+        -0.566095198359861
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 1,
+      "sigma": 0.023,
+      "iteration": 13,
+      "gaussian_queries": 5727,
+      "boundary_points": 1054,
+      "mean_mass": 102.20671569766975,
+      "frozen_cost_before": 4.328791865314665,
+      "frozen_cost_after": 4.325180844695531,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.009811518683977692,
+      "scale": 1.6707852322288113,
+      "joints_rad": [
+        -0.027404384693676214,
+        -0.049879938927894205,
+        -0.16538961872806462,
+        -0.566110925982708
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 0,
+      "gaussian_queries": 5726,
+      "boundary_points": 1051,
+      "mean_mass": 48.249420305956235,
+      "frozen_cost_before": 3.4032760551561276,
+      "frozen_cost_after": 3.3883925106358252,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.007006175261254784,
+      "scale": 1.6755144588922108,
+      "joints_rad": [
+        -0.02977915542646846,
+        -0.050890554397661325,
+        -0.16707483977433685,
+        -0.5660194249152432
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 1,
+      "gaussian_queries": 5736,
+      "boundary_points": 1054,
+      "mean_mass": 48.50148042328314,
+      "frozen_cost_before": 3.398645560107556,
+      "frozen_cost_after": 3.393131532215288,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.005730635662158091,
+      "scale": 1.6775286964529799,
+      "joints_rad": [
+        -0.03236552482962023,
+        -0.052294396355951116,
+        -0.16772828837971826,
+        -0.5658996107430467
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 2,
+      "gaussian_queries": 5744,
+      "boundary_points": 1052,
+      "mean_mass": 48.55016772967876,
+      "frozen_cost_before": 3.350555093239885,
+      "frozen_cost_after": 3.3472906430496225,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.00744741691080537,
+      "scale": 1.677838172413224,
+      "joints_rad": [
+        -0.036843555034308625,
+        -0.049524806635160026,
+        -0.16791651310801328,
+        -0.5657619866897097
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 3,
+      "gaussian_queries": 5746,
+      "boundary_points": 1051,
+      "mean_mass": 48.57651844700734,
+      "frozen_cost_before": 3.3432148197548144,
+      "frozen_cost_after": 3.3395203395331854,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.00720569594731378,
+      "scale": 1.6780632753722349,
+      "joints_rad": [
+        -0.04056722834033945,
+        -0.05192782209480738,
+        -0.16786916363779236,
+        -0.565691226563846
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 4,
+      "gaussian_queries": 5747,
+      "boundary_points": 1050,
+      "mean_mass": 48.58949160195221,
+      "frozen_cost_before": 3.3253060252747044,
+      "frozen_cost_after": 3.322908973065669,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.007085203955701473,
+      "scale": 1.6781191145620467,
+      "joints_rad": [
+        -0.045325400998160126,
+        -0.05133284116330941,
+        -0.16789606944215418,
+        -0.565780348895903
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 5,
+      "gaussian_queries": 5752,
+      "boundary_points": 1050,
+      "mean_mass": 48.566878667141246,
+      "frozen_cost_before": 3.4508772462798936,
+      "frozen_cost_after": 3.447258847709581,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0071274143512761595,
+      "scale": 1.67865589992708,
+      "joints_rad": [
+        -0.04981783132940209,
+        -0.05129701997762902,
+        -0.16798379585728707,
+        -0.5661199167767879
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 6,
+      "gaussian_queries": 5750,
+      "boundary_points": 1052,
+      "mean_mass": 48.55192528850398,
+      "frozen_cost_before": 3.4153987636538123,
+      "frozen_cost_after": 3.4132208844230805,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.005468854145263768,
+      "scale": 1.6784250016715065,
+      "joints_rad": [
+        -0.05277774923827799,
+        -0.053247593664734666,
+        -0.16771006522470275,
+        -0.5662665444462024
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 7,
+      "gaussian_queries": 5752,
+      "boundary_points": 1051,
+      "mean_mass": 48.56379380930674,
+      "frozen_cost_before": 3.428608224782135,
+      "frozen_cost_after": 3.4263760443967426,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.005055471669534862,
+      "scale": 1.678079564225164,
+      "joints_rad": [
+        -0.056317637754639396,
+        -0.05255597928030243,
+        -0.16742092881822446,
+        -0.5663769811525886
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 8,
+      "gaussian_queries": 5752,
+      "boundary_points": 1050,
+      "mean_mass": 48.577529174030175,
+      "frozen_cost_before": 3.363844789980265,
+      "frozen_cost_after": 3.3626759800066104,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0023474525260094295,
+      "scale": 1.678271027560708,
+      "joints_rad": [
+        -0.05784742683009788,
+        -0.05259484675645263,
+        -0.16771546134034523,
+        -0.566414899223753
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 9,
+      "gaussian_queries": 5752,
+      "boundary_points": 1050,
+      "mean_mass": 48.57111804421891,
+      "frozen_cost_before": 3.365784707522067,
+      "frozen_cost_after": 3.364469017013681,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0031377770374225616,
+      "scale": 1.6779700135260853,
+      "joints_rad": [
+        -0.0596963182664245,
+        -0.051277924973974945,
+        -0.16761962372211733,
+        -0.5659497744935507
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 10,
+      "gaussian_queries": 5751,
+      "boundary_points": 1049,
+      "mean_mass": 48.575008818263086,
+      "frozen_cost_before": 3.382732680786575,
+      "frozen_cost_after": 3.382191523139156,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0015089006576080085,
+      "scale": 1.6780401169305184,
+      "joints_rad": [
+        -0.060688759042931334,
+        -0.05098202459528974,
+        -0.16768612692625312,
+        -0.5660071746129052
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 11,
+      "gaussian_queries": 5750,
+      "boundary_points": 1050,
+      "mean_mass": 48.57768521992313,
+      "frozen_cost_before": 3.440137641476161,
+      "frozen_cost_after": 3.438873882578249,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0007360787703888122,
+      "scale": 1.678339559493181,
+      "joints_rad": [
+        -0.0608218318408426,
+        -0.050989998600192946,
+        -0.167764291792261,
+        -0.5662316062753029
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 12,
+      "gaussian_queries": 5749,
+      "boundary_points": 1051,
+      "mean_mass": 48.56703029674493,
+      "frozen_cost_before": 3.3798343186242406,
+      "frozen_cost_after": 3.3780128372851417,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0025012000510785757,
+      "scale": 1.6779802855626098,
+      "joints_rad": [
+        -0.06149608472279449,
+        -0.05253250787612421,
+        -0.16760494490833197,
+        -0.5660718869468545
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 2,
+      "sigma": 0.015,
+      "iteration": 13,
+      "gaussian_queries": 5752,
+      "boundary_points": 1048,
+      "mean_mass": 48.57413448869828,
+      "frozen_cost_before": 3.398272607980212,
+      "frozen_cost_after": 3.396220441335171,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.005573263168349244,
+      "scale": 1.6781251821353058,
+      "joints_rad": [
+        -0.06458900730817912,
+        -0.0501723008293894,
+        -0.16778264499637574,
+        -0.5661184571468014
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 0,
+      "gaussian_queries": 5745,
+      "boundary_points": 1047,
+      "mean_mass": 22.34116027113767,
+      "frozen_cost_before": 3.0615543046470575,
+      "frozen_cost_after": 3.057044200689286,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0032282908332134214,
+      "scale": 1.6803219774629967,
+      "joints_rad": [
+        -0.0640351957316948,
+        -0.05191353220679869,
+        -0.16857398752528954,
+        -0.5654944272907697
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 1,
+      "gaussian_queries": 5747,
+      "boundary_points": 1050,
+      "mean_mass": 22.395875196836855,
+      "frozen_cost_before": 3.09652358039533,
+      "frozen_cost_after": 3.094823426671144,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0013587447789260724,
+      "scale": 1.681395006125307,
+      "joints_rad": [
+        -0.06397238500013518,
+        -0.05260739476481318,
+        -0.16872243638337472,
+        -0.5657446316620172
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 2,
+      "gaussian_queries": 5746,
+      "boundary_points": 1052,
+      "mean_mass": 22.409061918145703,
+      "frozen_cost_before": 3.0061121969827878,
+      "frozen_cost_after": 3.0053115338485474,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0006011580044283712,
+      "scale": 1.6814515433897634,
+      "joints_rad": [
+        -0.06413261983086953,
+        -0.05285627869786311,
+        -0.1684781726023719,
+        -0.5659912726955636
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 3,
+      "gaussian_queries": 5744,
+      "boundary_points": 1051,
+      "mean_mass": 22.434393028918382,
+      "frozen_cost_before": 3.0634969236831617,
+      "frozen_cost_after": 3.0621676048038453,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0024261108925178214,
+      "scale": 1.6815703089382583,
+      "joints_rad": [
+        -0.06563624892214877,
+        -0.052217520490326845,
+        -0.168481624614136,
+        -0.565822954044303
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 4,
+      "gaussian_queries": 5749,
+      "boundary_points": 1051,
+      "mean_mass": 22.45082423052121,
+      "frozen_cost_before": 3.063557813481801,
+      "frozen_cost_after": 3.062875625268032,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0016204009716321603,
+      "scale": 1.6815582088610213,
+      "joints_rad": [
+        -0.06505439358226539,
+        -0.053164239714054914,
+        -0.16839781327552836,
+        -0.5661026556404831
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 5,
+      "gaussian_queries": 5745,
+      "boundary_points": 1052,
+      "mean_mass": 22.456785226893935,
+      "frozen_cost_before": 3.086059798816816,
+      "frozen_cost_after": 3.085078112815524,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0019646045972401055,
+      "scale": 1.6818652990381815,
+      "joints_rad": [
+        -0.06607500217629705,
+        -0.05259159861642601,
+        -0.1687113459984269,
+        -0.56580826177062
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 6,
+      "gaussian_queries": 5746,
+      "boundary_points": 1051,
+      "mean_mass": 22.445642826125837,
+      "frozen_cost_before": 3.0809727090006787,
+      "frozen_cost_after": 3.0805588686713947,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0006796599286680478,
+      "scale": 1.681731129327385,
+      "joints_rad": [
+        -0.06600663342058498,
+        -0.05299073924439392,
+        -0.16856472343157514,
+        -0.5659834576477418
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 7,
+      "gaussian_queries": 5745,
+      "boundary_points": 1052,
+      "mean_mass": 22.450241018835,
+      "frozen_cost_before": 3.0838940375005155,
+      "frozen_cost_after": 3.0833919089700723,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0018372872871914767,
+      "scale": 1.6817976405073127,
+      "joints_rad": [
+        -0.06720106482844677,
+        -0.05311462294192218,
+        -0.1685793742394551,
+        -0.56584387353402
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 8,
+      "gaussian_queries": 5746,
+      "boundary_points": 1051,
+      "mean_mass": 22.45582516135907,
+      "frozen_cost_before": 3.0815902998369493,
+      "frozen_cost_after": 3.081163558547394,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0017112681861362457,
+      "scale": 1.68188219995025,
+      "joints_rad": [
+        -0.06809455612120992,
+        -0.053735383231106076,
+        -0.16859385691779508,
+        -0.5658934253677639
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 9,
+      "gaussian_queries": 5746,
+      "boundary_points": 1052,
+      "mean_mass": 22.45772619056585,
+      "frozen_cost_before": 3.082287697120598,
+      "frozen_cost_after": 3.081639434006366,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.002132173044512952,
+      "scale": 1.6817612465762612,
+      "joints_rad": [
+        -0.06937259245067941,
+        -0.052891953720909705,
+        -0.1685365630477772,
+        -0.5658729769443196
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 10,
+      "gaussian_queries": 5747,
+      "boundary_points": 1050,
+      "mean_mass": 22.46187478234823,
+      "frozen_cost_before": 3.0850123014103468,
+      "frozen_cost_after": 3.084325866955482,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0016182517642922233,
+      "scale": 1.681950880229566,
+      "joints_rad": [
+        -0.06958651836462897,
+        -0.053924218304250024,
+        -0.16865716261319205,
+        -0.5659000226151503
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 11,
+      "gaussian_queries": 5748,
+      "boundary_points": 1051,
+      "mean_mass": 22.44921717846081,
+      "frozen_cost_before": 3.0828580272790127,
+      "frozen_cost_after": 3.082320021455206,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.002018663144519513,
+      "scale": 1.6818253316468998,
+      "joints_rad": [
+        -0.07100255417479674,
+        -0.05388279703535589,
+        -0.16861202827518276,
+        -0.5658849759643833
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 12,
+      "gaussian_queries": 5750,
+      "boundary_points": 1052,
+      "mean_mass": 22.455772292170785,
+      "frozen_cost_before": 3.081398055051514,
+      "frozen_cost_after": 3.081195329417598,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.00032102182164209356,
+      "scale": 1.6817993611969249,
+      "joints_rad": [
+        -0.07108630773523478,
+        -0.05409617090167755,
+        -0.1686419502626884,
+        -0.5659248091861149
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 3,
+      "sigma": 0.01,
+      "iteration": 13,
+      "gaussian_queries": 5749,
+      "boundary_points": 1052,
+      "mean_mass": 22.45577292976584,
+      "frozen_cost_before": 3.0839449783645927,
+      "frozen_cost_after": 3.083728202268843,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0009018258132819915,
+      "scale": 1.681774685431678,
+      "joints_rad": [
+        -0.0716183487670159,
+        -0.05372375066513807,
+        -0.16858580165791545,
+        -0.5658726451304482
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 0,
+      "gaussian_queries": 5700,
+      "boundary_points": 1051,
+      "mean_mass": 10.027508281334095,
+      "frozen_cost_before": 2.930868361455121,
+      "frozen_cost_after": 2.92737353223514,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0018536024153612658,
+      "scale": 1.683849531636096,
+      "joints_rad": [
+        -0.0714687338106214,
+        -0.05320873992707933,
+        -0.16914882204358314,
+        -0.5658272291395684
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 1,
+      "gaussian_queries": 5700,
+      "boundary_points": 1052,
+      "mean_mass": 10.100598024115005,
+      "frozen_cost_before": 2.841129993991567,
+      "frozen_cost_after": 2.8398287311636485,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0011452651998264606,
+      "scale": 1.6842144116599427,
+      "joints_rad": [
+        -0.0710212385539305,
+        -0.05268478928418664,
+        -0.16888724641057326,
+        -0.5657649724422535
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 2,
+      "gaussian_queries": 5697,
+      "boundary_points": 1052,
+      "mean_mass": 10.145132259047195,
+      "frozen_cost_before": 2.922920500531666,
+      "frozen_cost_after": 2.920736735142676,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.001700624823867889,
+      "scale": 1.6853675149176632,
+      "joints_rad": [
+        -0.07080132177752452,
+        -0.05348066637649167,
+        -0.16971434972124105,
+        -0.5655412154551996
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 3,
+      "gaussian_queries": 5702,
+      "boundary_points": 1049,
+      "mean_mass": 10.130420488693098,
+      "frozen_cost_before": 2.9116043965793152,
+      "frozen_cost_after": 2.9103297351354263,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0018122479481987113,
+      "scale": 1.6855843840889848,
+      "joints_rad": [
+        -0.07091457238608649,
+        -0.05218531855126121,
+        -0.16948255476944737,
+        -0.565856918954204
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 4,
+      "gaussian_queries": 5699,
+      "boundary_points": 1050,
+      "mean_mass": 10.150214941172965,
+      "frozen_cost_before": 2.9075530327467747,
+      "frozen_cost_after": 2.907060423453908,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0014511826998270213,
+      "scale": 1.6858160084380147,
+      "joints_rad": [
+        -0.07003595444346224,
+        -0.05187989263583948,
+        -0.16954629395964407,
+        -0.5660532162072535
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 5,
+      "gaussian_queries": 5697,
+      "boundary_points": 1052,
+      "mean_mass": 10.14930623983324,
+      "frozen_cost_before": 2.884260615177889,
+      "frozen_cost_after": 2.8835602011054595,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0015568029178258498,
+      "scale": 1.685852129436546,
+      "joints_rad": [
+        -0.06961956177578053,
+        -0.052951753350417,
+        -0.16964952952351614,
+        -0.5661732930584773
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 6,
+      "gaussian_queries": 5700,
+      "boundary_points": 1053,
+      "mean_mass": 10.143137463378368,
+      "frozen_cost_before": 2.89221400647059,
+      "frozen_cost_after": 2.890263645187961,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0017370971425120412,
+      "scale": 1.6853544830878806,
+      "joints_rad": [
+        -0.068980755888957,
+        -0.05378234805850511,
+        -0.16958472362276222,
+        -0.5654202610568111
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 7,
+      "gaussian_queries": 5699,
+      "boundary_points": 1052,
+      "mean_mass": 10.154294778462928,
+      "frozen_cost_before": 2.858932301396374,
+      "frozen_cost_after": 2.8574550839734085,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0011122691804066245,
+      "scale": 1.68578858322028,
+      "joints_rad": [
+        -0.06881152849290238,
+        -0.053252849695074995,
+        -0.169845957901126,
+        -0.5658097915244222
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 8,
+      "gaussian_queries": 5697,
+      "boundary_points": 1049,
+      "mean_mass": 10.144305442594694,
+      "frozen_cost_before": 2.899714348330054,
+      "frozen_cost_after": 2.89878265540373,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0018326205022726,
+      "scale": 1.6855979258992901,
+      "joints_rad": [
+        -0.06810223299918619,
+        -0.05238068998709209,
+        -0.1694526943887637,
+        -0.5660433709117143
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 9,
+      "gaussian_queries": 5694,
+      "boundary_points": 1051,
+      "mean_mass": 10.15601813691687,
+      "frozen_cost_before": 2.9058498377823696,
+      "frozen_cost_after": 2.904908723641052,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0034277630403705974,
+      "scale": 1.685745097157803,
+      "joints_rad": [
+        -0.06594094881983974,
+        -0.053443651103816575,
+        -0.16958359966453798,
+        -0.56614597280319
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 10,
+      "gaussian_queries": 5694,
+      "boundary_points": 1052,
+      "mean_mass": 10.148885486767902,
+      "frozen_cost_before": 2.898845573600689,
+      "frozen_cost_after": 2.8979890452658554,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.002905549915224274,
+      "scale": 1.6856673306345715,
+      "joints_rad": [
+        -0.06414197640012002,
+        -0.0543577087577187,
+        -0.16945473942502262,
+        -0.5662351025529724
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 11,
+      "gaussian_queries": 5692,
+      "boundary_points": 1051,
+      "mean_mass": 10.151091087624732,
+      "frozen_cost_before": 2.9045608834184686,
+      "frozen_cost_after": 2.904160829294852,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0010247782746738608,
+      "scale": 1.6857816407494057,
+      "joints_rad": [
+        -0.0637815002663431,
+        -0.053795714134762834,
+        -0.16949596254530228,
+        -0.5661579140358959
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 12,
+      "gaussian_queries": 5693,
+      "boundary_points": 1051,
+      "mean_mass": 10.150557218999362,
+      "frozen_cost_before": 2.9071366375382137,
+      "frozen_cost_after": 2.906723172736089,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0015115870224419138,
+      "scale": 1.685732396741194,
+      "joints_rad": [
+        -0.06281492221777281,
+        -0.05409116910643518,
+        -0.1695272618847348,
+        -0.5659735298815028
+      ],
+      "binding": "ctypes"
+    },
+    {
+      "stage": 4,
+      "sigma": 0.007,
+      "iteration": 13,
+      "gaussian_queries": 5693,
+      "boundary_points": 1051,
+      "mean_mass": 10.151531868878198,
+      "frozen_cost_before": 2.9053510226170016,
+      "frozen_cost_after": 2.904922412498382,
+      "accepted": true,
+      "step_factor": 1.0,
+      "increment_norm": 0.0010748303637763549,
+      "scale": 1.6857078580027958,
+      "joints_rad": [
+        -0.06273221985478762,
+        -0.05340736145326404,
+        -0.16949290633963246,
+        -0.5661747947481657
+      ],
+      "binding": "ctypes"
+    }
+  ]
+}

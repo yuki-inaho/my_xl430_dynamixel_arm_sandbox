@@ -1,0 +1,816 @@
+{
+  "method": "manual assistant visual annotation of submitted RGB; no neural inference",
+  "image_size": [
+    652,
+    367
+  ],
+  "image_sha256": "ea65d30c19b9d1415fc4b6e2232296515172eb783c0bc40257a3f97242c0fc6b",
+  "frozen_before_multistart_optimization": true,
+  "annotation_revision": 2,
+  "revision_note": "RGB-only visual review of crop x268:386,y70:160 showed a missed concavity below P04. Added the observed inner corner (363,134); original v1 mask and all v1 runs are archived. No held-out landmark or acceptance threshold was changed.",
+  "mask_boundary_uncertainty_px": 2,
+  "polygons": {
+    "M01": [
+      [
+        159,
+        298
+      ],
+      [
+        246,
+        300
+      ],
+      [
+        241,
+        334
+      ],
+      [
+        160,
+        331
+      ]
+    ],
+    "P01_base": [
+      [
+        116,
+        278
+      ],
+      [
+        155,
+        278
+      ],
+      [
+        156,
+        295
+      ],
+      [
+        247,
+        300
+      ],
+      [
+        240,
+        350
+      ],
+      [
+        212,
+        347
+      ],
+      [
+        207,
+        341
+      ],
+      [
+        195,
+        345
+      ],
+      [
+        176,
+        344
+      ],
+      [
+        159,
+        350
+      ],
+      [
+        132,
+        339
+      ],
+      [
+        100,
+        329
+      ],
+      [
+        103,
+        314
+      ],
+      [
+        112,
+        294
+      ],
+      [
+        117,
+        293
+      ]
+    ],
+    "M02": [
+      [
+        164,
+        224
+      ],
+      [
+        196,
+        216
+      ],
+      [
+        200,
+        279
+      ],
+      [
+        154,
+        277
+      ]
+    ],
+    "P02_yaw_carrier": [
+      [
+        117,
+        275
+      ],
+      [
+        157,
+        278
+      ],
+      [
+        162,
+        282
+      ],
+      [
+        189,
+        285
+      ],
+      [
+        210,
+        294
+      ],
+      [
+        248,
+        293
+      ],
+      [
+        247,
+        302
+      ],
+      [
+        153,
+        297
+      ],
+      [
+        154,
+        286
+      ],
+      [
+        117,
+        285
+      ]
+    ],
+    "P03_shoulder_XL430": [
+      [
+        198,
+        121
+      ],
+      [
+        232,
+        124
+      ],
+      [
+        230,
+        155
+      ],
+      [
+        235,
+        173
+      ],
+      [
+        246,
+        188
+      ],
+      [
+        254,
+        208
+      ],
+      [
+        254,
+        233
+      ],
+      [
+        250,
+        254
+      ],
+      [
+        252,
+        273
+      ],
+      [
+        249,
+        299
+      ],
+      [
+        226,
+        298
+      ],
+      [
+        211,
+        290
+      ],
+      [
+        201,
+        278
+      ]
+    ],
+    "M03": [
+      [
+        182,
+        49
+      ],
+      [
+        191,
+        34
+      ],
+      [
+        220,
+        29
+      ],
+      [
+        242,
+        34
+      ],
+      [
+        284,
+        36
+      ],
+      [
+        290,
+        47
+      ],
+      [
+        288,
+        83
+      ],
+      [
+        286,
+        103
+      ],
+      [
+        280,
+        119
+      ],
+      [
+        204,
+        123
+      ],
+      [
+        185,
+        115
+      ]
+    ],
+    "P03_top": [
+      [
+        184,
+        113
+      ],
+      [
+        233,
+        116
+      ],
+      [
+        282,
+        123
+      ],
+      [
+        260,
+        130
+      ],
+      [
+        189,
+        123
+      ]
+    ],
+    "P04_extension_XL430": [
+      [
+        288,
+        51
+      ],
+      [
+        373,
+        71
+      ],
+      [
+        382,
+        111
+      ],
+      [
+        373,
+        140
+      ],
+      [
+        370,
+        153
+      ],
+      [
+        359,
+        151
+      ],
+      [
+        363,
+        134
+      ],
+      [
+        284,
+        118
+      ],
+      [
+        279,
+        118
+      ],
+      [
+        289,
+        111
+      ]
+    ],
+    "M04": [
+      [
+        377,
+        73
+      ],
+      [
+        389,
+        68
+      ],
+      [
+        409,
+        72
+      ],
+      [
+        432,
+        76
+      ],
+      [
+        456,
+        82
+      ],
+      [
+        471,
+        97
+      ],
+      [
+        475,
+        111
+      ],
+      [
+        461,
+        152
+      ],
+      [
+        436,
+        162
+      ],
+      [
+        372,
+        147
+      ],
+      [
+        379,
+        121
+      ]
+    ],
+    "P05_wrist_XL430": [
+      [
+        468,
+        135
+      ],
+      [
+        518,
+        107
+      ],
+      [
+        539,
+        130
+      ],
+      [
+        544,
+        125
+      ],
+      [
+        581,
+        174
+      ],
+      [
+        579,
+        186
+      ],
+      [
+        539,
+        224
+      ],
+      [
+        526,
+        230
+      ],
+      [
+        479,
+        187
+      ],
+      [
+        455,
+        166
+      ],
+      [
+        433,
+        164
+      ],
+      [
+        423,
+        151
+      ],
+      [
+        420,
+        137
+      ],
+      [
+        425,
+        120
+      ],
+      [
+        436,
+        112
+      ],
+      [
+        450,
+        110
+      ],
+      [
+        465,
+        116
+      ]
+    ]
+  },
+  "background_opening_polygon": [
+    [
+      248,
+      221
+    ],
+    [
+      254,
+      222
+    ],
+    [
+      253,
+      235
+    ],
+    [
+      246,
+      252
+    ],
+    [
+      246,
+      244
+    ]
+  ],
+  "external_occlusions": {
+    "yellow_tape": [
+      [
+        126,
+        225
+      ],
+      [
+        141,
+        226
+      ],
+      [
+        164,
+        233
+      ],
+      [
+        154,
+        280
+      ],
+      [
+        102,
+        268
+      ],
+      [
+        110,
+        252
+      ]
+    ],
+    "foreground_fabric": [
+      [
+        0,
+        367
+      ],
+      [
+        13,
+        363
+      ],
+      [
+        38,
+        348
+      ],
+      [
+        61,
+        333
+      ],
+      [
+        79,
+        330
+      ],
+      [
+        100,
+        332
+      ],
+      [
+        121,
+        339
+      ],
+      [
+        145,
+        349
+      ],
+      [
+        168,
+        361
+      ],
+      [
+        183,
+        367
+      ]
+    ]
+  },
+  "landmarks": [
+    {
+      "name": "J2_front_center",
+      "reference_point_m": [
+        0.0218,
+        0.0,
+        0.056299999999999996
+      ],
+      "pixel_uv": [
+        224.3,
+        278.3
+      ],
+      "level": 2,
+      "split": "train",
+      "annotation_uncertainty_px": 1.5
+    },
+    {
+      "name": "J3_front_center",
+      "reference_point_m": [
+        0.0228,
+        0.0148,
+        0.1646
+      ],
+      "pixel_uv": [
+        260.6,
+        93.4
+      ],
+      "level": 3,
+      "split": "train",
+      "annotation_uncertainty_px": 1.5
+    },
+    {
+      "name": "J4_front_center",
+      "reference_point_m": [
+        0.0228,
+        0.10490000000000001,
+        0.1646
+      ],
+      "pixel_uv": [
+        448.5,
+        137.0
+      ],
+      "level": 4,
+      "split": "train",
+      "annotation_uncertainty_px": 1.5
+    },
+    {
+      "name": "P05_plate_near_low",
+      "reference_point_m": [
+        0.01805,
+        0.1589,
+        0.1686
+      ],
+      "pixel_uv": [
+        517.0,
+        196.0
+      ],
+      "level": 4,
+      "split": "train",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P05_plate_near_high",
+      "reference_point_m": [
+        0.01805,
+        0.1589,
+        0.1926
+      ],
+      "pixel_uv": [
+        554.6,
+        168.2
+      ],
+      "level": 4,
+      "split": "train",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P03_screw_left",
+      "reference_point_m": [
+        0.0218,
+        -0.008,
+        0.056299999999999996
+      ],
+      "pixel_uv": [
+        208.5,
+        277.8
+      ],
+      "level": 2,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P03_screw_up",
+      "reference_point_m": [
+        0.0218,
+        0.0,
+        0.0643
+      ],
+      "pixel_uv": [
+        225.2,
+        267.8
+      ],
+      "level": 2,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P03_screw_right",
+      "reference_point_m": [
+        0.0218,
+        0.008,
+        0.056299999999999996
+      ],
+      "pixel_uv": [
+        238.5,
+        280.5
+      ],
+      "level": 2,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P03_screw_down",
+      "reference_point_m": [
+        0.0218,
+        0.0,
+        0.048299999999999996
+      ],
+      "pixel_uv": [
+        225.0,
+        292.0
+      ],
+      "level": 2,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P04_screw_left",
+      "reference_point_m": [
+        0.0228,
+        0.0068,
+        0.1646
+      ],
+      "pixel_uv": [
+        242.5,
+        93.3
+      ],
+      "level": 3,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P04_screw_up",
+      "reference_point_m": [
+        0.0228,
+        0.0148,
+        0.1726
+      ],
+      "pixel_uv": [
+        263.8,
+        81.4
+      ],
+      "level": 3,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P04_screw_right",
+      "reference_point_m": [
+        0.0228,
+        0.0228,
+        0.1646
+      ],
+      "pixel_uv": [
+        278.8,
+        101.4
+      ],
+      "level": 3,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P04_screw_down",
+      "reference_point_m": [
+        0.0228,
+        0.0148,
+        0.1566
+      ],
+      "pixel_uv": [
+        257.5,
+        114.4
+      ],
+      "level": 3,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P05_screw_yminus",
+      "reference_point_m": [
+        0.0228,
+        0.0969,
+        0.1646
+      ],
+      "pixel_uv": [
+        439.4,
+        128.9
+      ],
+      "level": 4,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P05_screw_zplus",
+      "reference_point_m": [
+        0.0228,
+        0.10490000000000001,
+        0.1726
+      ],
+      "pixel_uv": [
+        463.1,
+        129.4
+      ],
+      "level": 4,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P05_screw_yplus",
+      "reference_point_m": [
+        0.0228,
+        0.1129,
+        0.1646
+      ],
+      "pixel_uv": [
+        460.1,
+        151.6
+      ],
+      "level": 4,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P05_screw_zminus",
+      "reference_point_m": [
+        0.0228,
+        0.10490000000000001,
+        0.1566
+      ],
+      "pixel_uv": [
+        436.5,
+        151.5
+      ],
+      "level": 4,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2
+    },
+    {
+      "name": "P05_plate_far_low",
+      "reference_point_m": [
+        0.01805,
+        0.1709,
+        0.1686
+      ],
+      "pixel_uv": [
+        530.0,
+        212.0
+      ],
+      "level": 4,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2.5
+    },
+    {
+      "name": "P05_plate_far_high",
+      "reference_point_m": [
+        0.01805,
+        0.1709,
+        0.1926
+      ],
+      "pixel_uv": [
+        567.2,
+        182.6
+      ],
+      "level": 4,
+      "split": "held_out",
+      "annotation_uncertainty_px": 2.5
+    }
+  ],
+  "mask_note": "Includes black motor ID1 explicitly. Excludes cables and external foreground. Polygon part IDs are approximate semantic assistance, not an automatic segmentation result.",
+  "held_out_policy": "Held-out landmarks must not enter initialization, optimization, or candidate ranking; used only for final diagnostic evaluation.",
+  "geometry_difference": "The photographed large P05 far-low opening is wider than the R3 source hole. Its center is evaluated, not its radius; CAD is not edited to match it."
+}

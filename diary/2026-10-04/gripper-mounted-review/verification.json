@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-04T23:46:44.892221+09:00",
+  "tests": {
+    "initial_shared_116_passed": true,
+    "affected_final_6_passed": true,
+    "ruff": "PASS",
+    "ty_motor_and_capture_environments": "PASS",
+    "skills_2": "valid"
+  },
+  "browser": {
+    "desktop": [
+      1280,
+      900
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "decoded_images": 35,
+    "bad_links": 0,
+    "overflow": false,
+    "source": "Playwright DOM, fetch status and visually inspected screenshots"
+  },
+  "data": {
+    "actual_states": 5,
+    "cameras_per_state": 2,
+    "extra_stop_pairs": 2,
+    "changed_camera_view_pairs": 1,
+    "raw_rgb_z16_ir_calibration_metadata_verified": true,
+    "d405_nonzero_color_distortion_preserved": true,
+    "lighting_reference_pairs": 1,
+    "changed_camera_roi_invalidated": true
+  },
+  "physical": {
+    "write_ids": [
+      5
+    ],
+    "all_final_torque_off": true,
+    "id5_ram_restored_readback": [
+      885,
+      0,
+      0
+    ],
+    "observed_open_count": 2486,
+    "reclosed_count": 2091,
+    "closed_reference_count": 2067,
+    "returned_exactly_to_reference": false,
+    "exact_40deg_goal_reached": false,
+    "opening_and_visual_closing_confirmed": true
+  },
+  "cutoff": "No further motor writes after 23:33:54 release. Supply OUTPUT is not software controlled.",
+  "lighting_note": "Post-user lights-off reference: D435 noisy and tip top cropped; D405 backlit. Not an additional controlled open/close state."
+}

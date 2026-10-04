@@ -1,0 +1,31 @@
+{
+  "reproduction": {
+    "binding": "ctypes",
+    "best_trial_id": 1,
+    "replay_status": "completed",
+    "max_abs_state_parameter_difference": 0.0,
+    "selection_score_difference": 0.0,
+    "passed": true
+  },
+  "gaussian_approximation": {
+    "sigma": 0.012,
+    "observations": 700,
+    "queries": 150,
+    "valid_queries": 150,
+    "lattice_vs_exact_centroid_median_error": 0.0018108562612789572,
+    "lattice_vs_exact_centroid_p95_error": 0.004312829092090619,
+    "note": "No-blur permutohedral is an approximation, not exactly equal to the Gaussian oracle; recorded without treating density gains as exact."
+  },
+  "sensitivity_summary": {
+    "EXR_intrinsics_single_start": {
+      "scale": 1.6596578315763575,
+      "iou": 0.9064970332756729,
+      "train_rmse": 0.9289581893106882
+    },
+    "Gaussian_only_single_start": {
+      "scale": 0.5781316026548187,
+      "iou": 0.15399206085375153,
+      "train_rmse": 132.03291286824714
+    }
+  }
+}

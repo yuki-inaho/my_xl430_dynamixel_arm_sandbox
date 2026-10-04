@@ -1,0 +1,88 @@
+{
+  "image_size": [
+    652,
+    367
+  ],
+  "supplied_fov_deg": [
+    51.0,
+    30.0
+  ],
+  "camera_K_nominal": [
+    [
+      683.4732133027449,
+      0.0,
+      325.5
+    ],
+    [
+      0.0,
+      684.831323188889,
+      183.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "exr_fitted_intrinsics": {
+    "fx": 695.2164853350088,
+    "fy": 695.2165656339012,
+    "cx": 325.50000065489564,
+    "cy": 182.99999733014016,
+    "fov_deg": [
+      50.24551644576683,
+      29.57162714521216
+    ]
+  },
+  "depth_points_z_max_abs_diff": 0.0,
+  "exr_intrinsics_max_reprojection_px": 0.00011157682331486285,
+  "ply_to_exr_transform": "diag(1,-1,-1); PLY uses camera x-right y-up z-backward",
+  "ply_sample_max_nearest_error": 0.0,
+  "ply_vertices": 228674,
+  "depth_units": "arbitrary monocular reconstruction units, not independently measured meters",
+  "fit_target_definition": "reproject depth.exr with nominal supplied H51/V30 intrinsics; original EXR preserved",
+  "source_step": "3d-printed-dynamixel-gripper-main/references/arm-r3/arm_XL430_R3.step",
+  "source_step_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "source_units": "mm; divide by 1000 once for generated meter model",
+  "all_leaf_count": 217,
+  "bare_leaf_count": 180,
+  "included_physical_units": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "P01_base",
+    "P02_yaw_carrier",
+    "P03_shoulder_XL430",
+    "P04_extension_XL430",
+    "P05_wrist_XL430"
+  ],
+  "included_levels": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "excluded": [
+    "M06",
+    "P06_fixed_gripper_XL430",
+    "P07_moving_gripper_XL430",
+    "D405",
+    "camera mount",
+    "unmodeled cables"
+  ],
+  "old_urdf_links": [
+    "base_link",
+    "first-bracket-motor_1",
+    "shoulder-to-elbow-motor_v1_1",
+    "elbow-to-wrist-motor-reference_v1_1",
+    "gripper-static-motor_v2_1",
+    "gripper-moving-part-dumb_v2_1"
+  ],
+  "urdf_decision": "retain old URDF as topology reference only; derive a separate R3 bare-arm URDF from R3 STEP+joint source",
+  "joint5_observability": "M05 output has no downstream installed shape; J5 is unobservable and excluded from estimation",
+  "joint6_status": "not installed",
+  "annotation_model_status": "No EdgeTAM/BiRefNet weights or user-produced foreground mask attached; no neural inference performed"
+}

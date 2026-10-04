@@ -1,0 +1,86 @@
+{
+  "timestamp_jst": "2026-10-04T19:42:41+09:00",
+  "owned_source_file_count": 29,
+  "python_syntax_checked_count": 24,
+  "whitespace_checked": true,
+  "image_sizes": {
+    "overlay.png": [
+      652,
+      367
+    ],
+    "raw_geometry_overlay.png": [
+      652,
+      367
+    ],
+    "cad_view.png": [
+      652,
+      367
+    ],
+    "silhouette_error.png": [
+      652,
+      367
+    ]
+  },
+  "portable_photo_matches_original": true,
+  "original_inputs": [
+    {
+      "name": "pointcloud.ply",
+      "unchanged": true
+    },
+    {
+      "name": "mesh.glb",
+      "unchanged": true
+    },
+    {
+      "name": "FilterReg-master(1).zip",
+      "unchanged": true
+    },
+    {
+      "name": "acpd_filterreg_rs-main.zip",
+      "unchanged": true
+    },
+    {
+      "name": "points.exr",
+      "unchanged": true
+    },
+    {
+      "name": "sam3.cpp-main (2).zip",
+      "unchanged": true
+    },
+    {
+      "name": "my_xl430_dynamixel_arm_sandbox-main(1).zip",
+      "unchanged": true
+    },
+    {
+      "name": "3d-printed-dynamixel-gripper-main.zip",
+      "unchanged": true
+    },
+    {
+      "name": "normal.exr",
+      "unchanged": true
+    },
+    {
+      "name": "standby.jpg",
+      "unchanged": true
+    },
+    {
+      "name": "depth.exr",
+      "unchanged": true
+    },
+    {
+      "name": "mesh.ply",
+      "unchanged": true
+    },
+    {
+      "name": "low_cost_robot-fix-cadre-geometry-review-20260918 (4)(1).zip",
+      "unchanged": true
+    }
+  ],
+  "external_linter_executed": false,
+  "external_formatter_executed": false,
+  "static_type_checker_executed": false,
+  "nanobind_build_verified": false,
+  "warning": "These checks do not certify unavailable formatter/linter/type-checker/nanobind tools.",
+  "failures": [],
+  "passed": true
+}

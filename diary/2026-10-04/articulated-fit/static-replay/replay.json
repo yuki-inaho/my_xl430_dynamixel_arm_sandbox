@@ -1,0 +1,269 @@
+{
+  "binding": "nanobind",
+  "configuration": {
+    "sigmas": [
+      0.035,
+      0.023,
+      0.015,
+      0.01,
+      0.007
+    ],
+    "iterations_per_sigma": 14,
+    "source_stride": 3,
+    "outlier_probability": 0.1,
+    "geometry_sigma": 0.012,
+    "landmark_sigma_px": 3.0,
+    "landmark_weight": 1.5,
+    "silhouette_sigma_px": 3.0,
+    "silhouette_weight": 0.6,
+    "damping": 0.0002,
+    "step_tolerance": 2e-06
+  },
+  "trial_id": 1,
+  "elapsed_seconds": 5.936772814005963,
+  "state": {
+    "rotation_camera_from_reference": [
+      [
+        0.09457334456085151,
+        0.9847321618862592,
+        0.14614531071980516
+      ],
+      [
+        0.5225470589430128,
+        0.07585000368374838,
+        -0.849229855887782
+      ],
+      [
+        -0.8473490742831926,
+        0.15668231006718425,
+        -0.5073955065069345
+      ]
+    ],
+    "translation_depth_units": [
+      -0.10602839524976093,
+      0.1471949033804909,
+      0.6935205064346245
+    ],
+    "log_scale": 0.52220558192767,
+    "scale_depth_units_per_meter": 1.6857415936832012,
+    "meters_per_depth_unit": 0.5932107291812653,
+    "joint_angles_rad": [
+      -0.06103955645221704,
+      -0.0545118706997257,
+      -0.16958384465282947,
+      -0.5661285516177534
+    ],
+    "joint_angles_deg": [
+      -3.497308968062569,
+      -3.123300124457136,
+      -9.716438572209322,
+      -32.43677666955145
+    ],
+    "J5": null,
+    "J5_reason": "unobservable without downstream installed geometry"
+  },
+  "metrics": {
+    "selection_score": 0.15722733779558384,
+    "iou": 0.906978908765986,
+    "foreground_intersection_px": 48722,
+    "foreground_union_px": 53719,
+    "predicted_visible_pixels": 51879,
+    "observed_foreground_pixels": 50562,
+    "symmetric_cloud_rmse_depth_units": 0.019365936000665416,
+    "symmetric_cloud_trim90_rmse_depth_units": 0.004584447540580605,
+    "symmetric_cloud_trim90_rmse_cad_equivalent_mm": 2.719543468441079,
+    "training_landmark_rmse_px": 0.9192876074602554,
+    "training_landmark_errors_px": [
+      0.17905539458553885,
+      0.4794606571961688,
+      0.9790751591683426,
+      0.8717066552148948,
+      1.4983472594743792
+    ],
+    "overlap_depth_median_abs_error_units": 0.005768656487122381,
+    "overlap_depth_rmse_units": 0.031680908495498365,
+    "scale_depth_units_per_meter": 1.6857415936832012,
+    "score_definition": "(1-IoU)+0.12*(trim90 symmetric point-cloud RMSE / 0.01)+0.03*(training landmark RMSE / 3)",
+    "metric_warning": "CAD-equivalent mm are conditional reconstruction residuals, not independent real-world accuracy.",
+    "held_out_landmark_median_px": 3.7183325899497315,
+    "held_out_landmark_rmse_px": 3.3643720142566456,
+    "held_out_landmark_max_px": 4.989656540550092,
+    "held_out_landmarks": [
+      {
+        "name": "P03_screw_left",
+        "annotation_uv": [
+          208.5,
+          277.8
+        ],
+        "prediction_uv": [
+          209.17000337834736,
+          277.7189299480746
+        ],
+        "error_px": 0.6748902727970391
+      },
+      {
+        "name": "P03_screw_up",
+        "annotation_uv": [
+          225.2,
+          267.8
+        ],
+        "prediction_uv": [
+          224.5534252847463,
+          266.5750430590454
+        ],
+        "error_px": 1.3851275643774554
+      },
+      {
+        "name": "P03_screw_right",
+        "annotation_uv": [
+          238.5,
+          280.5
+        ],
+        "prediction_uv": [
+          239.39367873562162,
+          279.2363143052625
+        ],
+        "error_px": 1.5477607106999547
+      },
+      {
+        "name": "P03_screw_down",
+        "annotation_uv": [
+          225.0,
+          292.0
+        ],
+        "prediction_uv": [
+          224.06678810754033,
+          290.1178036321146
+        ],
+        "error_px": 2.1008444976982807
+      },
+      {
+        "name": "P04_screw_left",
+        "annotation_uv": [
+          242.5,
+          93.3
+        ],
+        "prediction_uv": [
+          243.50963892904656,
+          89.72553717863062
+        ],
+        "error_px": 3.7143175992903776
+      },
+      {
+        "name": "P04_screw_up",
+        "annotation_uv": [
+          263.8,
+          81.4
+        ],
+        "prediction_uv": [
+          264.74059946608895,
+          77.66027667161774
+        ],
+        "error_px": 3.856197340444775
+      },
+      {
+        "name": "P04_screw_right",
+        "annotation_uv": [
+          278.8,
+          101.4
+        ],
+        "prediction_uv": [
+          278.2180719836496,
+          97.7234212514006
+        ],
+        "error_px": 3.7223475806090853
+      },
+      {
+        "name": "P04_screw_down",
+        "annotation_uv": [
+          257.5,
+          114.4
+        ],
+        "prediction_uv": [
+          257.2286245395414,
+          109.4177286553104
+        ],
+        "error_px": 4.989656540550092
+      },
+      {
+        "name": "P05_screw_yminus",
+        "annotation_uv": [
+          439.4,
+          128.9
+        ],
+        "prediction_uv": [
+          437.2406927360318,
+          125.70735199053436
+        ],
+        "error_px": 3.8542974940409893
+      },
+      {
+        "name": "P05_screw_zplus",
+        "annotation_uv": [
+          463.1,
+          129.4
+        ],
+        "prediction_uv": [
+          461.09295717894645,
+          126.26182220965079
+        ],
+        "error_px": 3.7251014388045576
+      },
+      {
+        "name": "P05_screw_yplus",
+        "annotation_uv": [
+          460.1,
+          151.6
+        ],
+        "prediction_uv": [
+          457.6669520084527,
+          147.56372628504533
+        ],
+        "error_px": 4.712878953591563
+      },
+      {
+        "name": "P05_screw_zminus",
+        "annotation_uv": [
+          436.5,
+          151.5
+        ],
+        "prediction_uv": [
+          434.23503099896914,
+          147.05711064145183
+        ],
+        "error_px": 4.986917928734273
+      },
+      {
+        "name": "P05_plate_far_low",
+        "annotation_uv": [
+          530.0,
+          212.0
+        ],
+        "prediction_uv": [
+          529.2676247228892,
+          210.42817420429924
+        ],
+        "error_px": 1.7340732044967013
+      },
+      {
+        "name": "P05_plate_far_high",
+        "annotation_uv": [
+          567.2,
+          182.6
+        ],
+        "prediction_uv": [
+          568.9269728984635,
+          182.84869648435688
+        ],
+        "error_px": 1.7447880482622669
+      }
+    ],
+    "provisional_acceptance": {
+      "iou_threshold": 0.7,
+      "held_out_median_threshold_px": 8.0,
+      "passed": true
+    }
+  },
+  "max_abs_state_difference": 1.639660629493278e-14,
+  "selection_score_difference": 1.1102230246251565e-16
+}

@@ -1,0 +1,91 @@
+{
+  "status": "lost",
+  "sequence": 2439,
+  "pose": null,
+  "quality": {},
+  "reason": "fixed base absent or scene moved: {'base_depth_points': 1522, 'median_base_depth_error_m': 0.02418173849582672}",
+  "pose_hz": null,
+  "frame_age_seconds": 0.04301394299545791,
+  "frame_received_monotonic": 113449.456050152,
+  "mask_age_seconds": 0.20821793799404986,
+  "mask_received_monotonic": 113449.290846157,
+  "registration_seconds": 0.0025731990026542917,
+  "model": "current_arm_r3_d405_r5_65.npz",
+  "model_sha256": "cc15059b6256b1cf88452d3c85a5a0f8861b08ce00978c9e498f86208ce9dcf0",
+  "gaussian_backend": "native",
+  "metadata": {
+    "serial": "922612070196",
+    "device": "RealSense D435",
+    "host_received_at": "2026-10-04T13:24:45.274835+00:00",
+    "color_timestamp_ms": 1791120285219.773,
+    "depth_timestamp_ms": 1791120285219.749,
+    "timestamp_domain": "timestamp_domain.global_time",
+    "raw_depth_scale_m": 0.0010000000474974513,
+    "intrinsics_original": {
+      "fx": 925.4581298828125,
+      "fy": 925.7662963867188,
+      "ppx": 645.314453125,
+      "ppy": 360.0555419921875,
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model": "distortion.inverse_brown_conrady"
+    },
+    "processed_resolution": [
+      480,
+      270
+    ],
+    "rectified": false
+  },
+  "segmentation_rejections": 0,
+  "skipped_periodic_evidence": 0,
+  "segmentation": {
+    "model_id": "ZhengPeng7/BiRefNet_lite",
+    "revision": "aa62cd87eafb9cc43056d08ef3615a14628b831d",
+    "input_size": 768,
+    "threshold": 0.5,
+    "device": "cuda",
+    "precision": "float16",
+    "cpu_threads": 1,
+    "last_inference_seconds": 0.10846649399900343
+  },
+  "timings_seconds": {
+    "mask_preparation": 0.01258994999807328,
+    "registration": 0.0025731990026542917,
+    "jpeg": 0.003691278994665481
+  },
+  "raw_mask_rgb": "segmentation-002434.png",
+  "raw_mask_image": "segmentation-002434.raw-mask.png",
+  "raw_mask_metadata": {
+    "serial": "922612070196",
+    "device": "RealSense D435",
+    "host_received_at": "2026-10-04T13:24:45.109657+00:00",
+    "color_timestamp_ms": 1791120285052.989,
+    "depth_timestamp_ms": 1791120285052.965,
+    "timestamp_domain": "timestamp_domain.global_time",
+    "raw_depth_scale_m": 0.0010000000474974513,
+    "intrinsics_original": {
+      "fx": 925.4581298828125,
+      "fy": 925.7662963867188,
+      "ppx": 645.314453125,
+      "ppy": 360.0555419921875,
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model": "distortion.inverse_brown_conrady"
+    },
+    "processed_resolution": [
+      480,
+      270
+    ],
+    "rectified": false
+  }
+}

@@ -12,6 +12,7 @@ dependencies = [
     "numpy>=2,<3",
     "reportlab>=4.4,<5",
     "opencv-contrib-python-headless>=4.10,<5",
+    "articulated-filterreg-r3",
 ]
 
 [project.scripts]
@@ -19,6 +20,20 @@ arm-status = "arm_observer.cli:main"
 arm-live = "arm_observer.live_http:main"
 arm-id3-open = "arm_observer.id3_motion:main"
 arm-tag-sheet = "arm_observer.apriltag.cli:main"
+arm-pose-fit = "arm_observer.perception.cli:main"
+
+[project.optional-dependencies]
+perception-gpu = [
+    "torch==2.7.1",
+    "torchvision==0.22.1",
+    "transformers>=4.44,<5",
+    "timm>=1,<2",
+    "kornia>=0.7,<1",
+    "einops>=0.8,<1",
+    "huggingface-hub>=0.25,<1",
+    "moderngl>=5.12,<6",
+    "pyrealsense2>=2.56,<3",
+]
 
 [dependency-groups]
 dev = ["pytest>=8,<10", "ruff>=0.12,<1", "ty>=0.0.1,<1", "radon>=6,<7", "jsonschema>=4,<5"]
@@ -29,6 +44,21 @@ build-backend = "uv_build"
 
 [tool.uv.build-backend]
 module-name = "arm_observer"
+
+[tool.uv.workspace]
+members = [
+    "packages/articulated-filterreg",
+]
+
+[tool.uv.sources]
+articulated-filterreg-r3 = { workspace = true, editable = true }
+torch = { index = "pytorch-cu118" }
+torchvision = { index = "pytorch-cu118" }
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
