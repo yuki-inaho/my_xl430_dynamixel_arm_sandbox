@@ -62,6 +62,7 @@ class PhotoController(Controller):
                 if not envelope.goal_low <= positions[mid - 1] <= envelope.goal_high:
                     raise RuntimeError("Observed position outside photo envelope")
         self.current = positions
+        self.last_motors = motors
         self.event(
             "sample",
             stage=self.stage,
@@ -167,7 +168,8 @@ class PhotoController(Controller):
                 raise RuntimeError("Original RAM snapshot differs from this session")
             expected = dict(original[mid])
             expected.update(
-                profile_acceleration=1, profile_velocity=6, goal_pwm=350, goal_position=goals[mid]
+                profile_acceleration=1, profile_velocity=6,
+                goal_pwm=self.profile_pwm(mid), goal_position=goals[mid]
             )
             if self.saved[mid] != expected:
                 raise RuntimeError("Held profile/configuration/goal changed")
@@ -189,7 +191,7 @@ class PhotoController(Controller):
                 high,
                 frozenset({1, saved["profile_acceleration"]}),
                 frozenset({6, saved["profile_velocity"]}),
-                frozenset({350, saved["goal_pwm"]}),
+                frozenset({self.profile_pwm(mid), saved["goal_pwm"]}),
             )
         if any(
             not self.port.envelopes[mid].goal_low
@@ -204,6 +206,9 @@ class PhotoController(Controller):
             raise RuntimeError("Fresh plan required")
         return tuple(b + round(v * 4096 / 360) for b, v in zip(self.plan.baseline, degrees))
 
+    def profile_pwm(self, mid):
+        return 350
+
     def enable_photo(self):
         if self.plan is None:
             raise RuntimeError("Fresh plan required")
@@ -214,7 +219,7 @@ class PhotoController(Controller):
             for name, value in (
                 ("acceleration", 1),
                 ("velocity", 6),
-                ("pwm", 350),
+                ("pwm", self.profile_pwm(mid)),
                 ("goal", self.initial_positions[mid - 1]),
             ):
                 self.write(mid, name, value)
@@ -238,14 +243,19 @@ class PhotoController(Controller):
         # Return long moves to serial stages: no axis jumps over the reviewed 30 degrees.
         origin = self.sample()
         stages = max(1, math.ceil(max(abs(t - p) for t, p in zip(target, origin)) / 341))
+        origin = self.interpolation_origin(origin, target)
         for step in range(1, stages + 1):
             waypoint = tuple(round(p + (t - p) * step / stages) for p, t in zip(origin, target))
             self.move_waypoint(waypoint)
+
+    def interpolation_origin(self, observed, target):
+        return observed
 
     def move_waypoint(self, target):
         origin = self.sample()
         self.stage = "moving"
         previous_goal = self.goal
+        self.commanded_axes = {mid for mid in IDS if target[mid - 1] != previous_goal[mid - 1]}
         self.goal = target
         for mid in IDS:
             if target[mid - 1] != previous_goal[mid - 1]:
@@ -259,14 +269,16 @@ class PhotoController(Controller):
             elapsed = self.clock() - start
             for mid in IDS:
                 # Direction/overshoot/holding checks always precede any adjustment.
-                self.check_follow(mid, measured[mid - 1], origin[mid - 1], target[mid - 1], 0)
+                self.check_waypoint_follow(mid, measured[mid - 1], origin[mid - 1],
+                                           target[mid - 1], 0)
             recent = [*recent, measured][-10:]
             if elapsed >= 1:
                 self.compensate_photo(recent, target, corrected, corrected_at)
             for mid in IDS:
                 age = self.clock() - corrected_at.get(mid, start)
-                self.check_follow(mid, measured[mid - 1], origin[mid - 1], target[mid - 1], age)
-            if self.photo_settled(recent, target):
+                self.check_waypoint_follow(mid, measured[mid - 1], origin[mid - 1],
+                                           target[mid - 1], age)
+            if self.waypoint_settled(recent, target, origin):
                 self.hold_reference = measured
                 self.stage = "holding_photo"
                 self.event("reached", target=target, positions=measured)
@@ -274,6 +286,12 @@ class PhotoController(Controller):
             if elapsed > 18:
                 raise RuntimeError("Photo waypoint deadline")
             self.sleep(0.05)
+
+    def check_waypoint_follow(self, mid, measured, origin, target, elapsed):
+        self.check_follow(mid, measured, origin, target, elapsed)
+
+    def waypoint_settled(self, recent, target, origin):
+        return self.photo_settled(recent, target)
 
     def compensate_photo(self, recent, target, corrected, corrected_at):
         previous = set(corrected)

@@ -1,0 +1,84 @@
+{
+  "schema": "agent-conversation-clean-bundle/v1",
+  "created_at": "2026-10-05T02:38:31+09:00",
+  "source": {
+    "session": "/home/inaho-omen/.codex/sessions/2026/10/03/rollout-2026-10-03T19-40-13-01a10159-a252-7e72-b112-cf34f1a05dce.jsonl",
+    "sha256": "cf86506b34e762d2e68c59705a414709816238a4fbc93a8644b2806dc25c1c42",
+    "bytes": 329774664,
+    "records": 17354
+  },
+  "user_coverage": {
+    "expected": {
+      "api_user": 117
+    },
+    "observed": {
+      "api_user": 117
+    },
+    "verified": true
+  },
+  "redactions": {
+    "github_token": 0,
+    "anthropic_key": 0,
+    "openai_key": 0,
+    "aws_access_key": 1,
+    "slack_token": 0,
+    "bearer_token": 0
+  },
+  "coverage_notes": [
+    "Normalized events come from agent-jsonl-compact with faithful defaults.",
+    "supplemental_events hold records the extractor skips (mid-turn user messages for Claude Code, code-mode tool records for Codex).",
+    "Encrypted or omitted reasoning is not recoverable.",
+    "The snapshot holds complete lines only; later records are outside the cutoff.",
+    "Contains conversation text and local paths; review before sharing."
+  ],
+  "original": {
+    "file": "codex_cap_grasp_01a10159_clean.json",
+    "bytes": 241736641,
+    "sha256": "89a34a73bd80e5c592a96a6fa0ea0768062d8612f361eca7935ee959aa7845e7"
+  },
+  "compressed": {
+    "file": "codex_cap_grasp_01a10159_clean.json.gz",
+    "bytes": 171802523,
+    "sha256": "324496b558d411972d75cef737af0926854b015328d570a4db5c5ad8d712230e"
+  },
+  "parts": [
+    {
+      "file": "codex_cap_grasp_01a10159_clean.json.gz.part000",
+      "bytes": 25000000,
+      "sha256": "5b58cd5b75e11234fd99b16459bb9433c1369ee72886d5549d4f9bfb60fa9513"
+    },
+    {
+      "file": "codex_cap_grasp_01a10159_clean.json.gz.part001",
+      "bytes": 25000000,
+      "sha256": "befb2772615644acf8d9add249cea2df7c33887dd5d6c905285b6fe2d5d770ad"
+    },
+    {
+      "file": "codex_cap_grasp_01a10159_clean.json.gz.part002",
+      "bytes": 25000000,
+      "sha256": "2b580c9e18c484381d459eb16f922b76e62827c4ef6d0f2828b2642c27aea223"
+    },
+    {
+      "file": "codex_cap_grasp_01a10159_clean.json.gz.part003",
+      "bytes": 25000000,
+      "sha256": "e498ac97ebd9ba6cb377b262ff35958c4cbb5ccf74307c8bf30aeee46cffc35d"
+    },
+    {
+      "file": "codex_cap_grasp_01a10159_clean.json.gz.part004",
+      "bytes": 25000000,
+      "sha256": "bce6cd6b09fab71ebafffa3a2c30b119db3afc382fabccffdfccbea3543611da"
+    },
+    {
+      "file": "codex_cap_grasp_01a10159_clean.json.gz.part005",
+      "bytes": 25000000,
+      "sha256": "3784df0c055dd99385fb79c1932b5ad81b4e525941c105f9f8e4682ed1c750c9"
+    },
+    {
+      "file": "codex_cap_grasp_01a10159_clean.json.gz.part006",
+      "bytes": 21802523,
+      "sha256": "1e7c7a2460d966e376c0796df6669155e0ee187dbb1c495573a7553e0de0dba4"
+    }
+  ],
+  "restored_sha256": "89a34a73bd80e5c592a96a6fa0ea0768062d8612f361eca7935ee959aa7845e7",
+  "cutoff": "2026-10-04T17:38:18.071Z",
+  "restore_command": "cat codex_cap_grasp_01a10159_clean.json.gz.part000 codex_cap_grasp_01a10159_clean.json.gz.part001 codex_cap_grasp_01a10159_clean.json.gz.part002 codex_cap_grasp_01a10159_clean.json.gz.part003 codex_cap_grasp_01a10159_clean.json.gz.part004 codex_cap_grasp_01a10159_clean.json.gz.part005 codex_cap_grasp_01a10159_clean.json.gz.part006 | gzip -dc > codex_cap_grasp_01a10159_clean.json"
+}

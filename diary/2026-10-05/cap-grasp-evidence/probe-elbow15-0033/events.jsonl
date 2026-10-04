@@ -1,0 +1,278 @@
+{"at": "2026-10-05T00:33:04.539+09:00", "kind": "sample", "stage": "unprepared", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:04.571+09:00", "kind": "sample", "stage": "unprepared", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:04.603+09:00", "kind": "sample", "stage": "unprepared", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:04.634+09:00", "kind": "sample", "stage": "unprepared", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:04.667+09:00", "kind": "sample", "stage": "unprepared", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:04.667+09:00", "kind": "plan", "baseline": [2021, 3537, 1133, 3390, 2091], "active_ids": [1, 2, 3, 4, 5], "route": {"1": {"model_number": 1060, "secondary_id": 255, "operating_mode": 3, "drive_mode": 0, "homing_offset": 0, "status_return_level": 2, "id": 1, "min_position_limit": 0, "max_position_limit": 4095, "profile_acceleration": 0, "profile_velocity": 0, "goal_pwm": 885, "goal_position": 2021}, "2": {"model_number": 1060, "secondary_id": 255, "operating_mode": 3, "drive_mode": 0, "homing_offset": 0, "status_return_level": 2, "id": 2, "min_position_limit": 0, "max_position_limit": 4095, "profile_acceleration": 0, "profile_velocity": 0, "goal_pwm": 885, "goal_position": 3537}, "3": {"model_number": 1060, "secondary_id": 255, "operating_mode": 3, "drive_mode": 0, "homing_offset": 0, "status_return_level": 2, "id": 3, "min_position_limit": 0, "max_position_limit": 4095, "profile_acceleration": 0, "profile_velocity": 0, "goal_pwm": 885, "goal_position": 1133}, "4": {"model_number": 1060, "secondary_id": 255, "operating_mode": 3, "drive_mode": 0, "homing_offset": 0, "status_return_level": 2, "id": 4, "min_position_limit": 0, "max_position_limit": 4095, "profile_acceleration": 0, "profile_velocity": 0, "goal_pwm": 885, "goal_position": 3390}, "5": {"model_number": 1060, "secondary_id": 255, "operating_mode": 3, "drive_mode": 0, "homing_offset": 0, "status_return_level": 2, "id": 5, "min_position_limit": 0, "max_position_limit": 4095, "profile_acceleration": 0, "profile_velocity": 0, "goal_pwm": 885, "goal_position": 2091}}, "calibration_verified": false, "profile_velocity": 6, "hold_seconds": 2.5, "resumed": false, "restarted_from_off": false, "initial_positions": [2021, 3537, 1133, 3390, 2091]}
+{"at": "2026-10-05T00:33:04.698+09:00", "kind": "sample", "stage": "prepared", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:04.986+09:00", "kind": "sample", "stage": "prepared", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:04.989+09:00", "kind": "capture", "label": "before", "camera": "d435", "source": "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/d435/capture-20261005-003304-721049", "relative": "before/d435", "observation": {"positions": [2021, 3537, 1133, 3390, 2091], "host_at_unix_s": 1791127984.6988888, "active_ids": [], "stage": "prepared", "after_positions": [2021, 3537, 1133, 3390, 2091], "after_host_at_unix_s": 1791127984.98641}}
+{"at": "2026-10-05T00:33:05.018+09:00", "kind": "sample", "stage": "prepared", "positions": [2021, 3538, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:05.273+09:00", "kind": "sample", "stage": "prepared", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": false, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:05.278+09:00", "kind": "capture", "label": "before", "camera": "d405", "source": "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/d405/capture-20261005-003305-075298", "relative": "before/d405", "observation": {"positions": [2021, 3538, 1133, 3390, 2091], "host_at_unix_s": 1791127985.0183403, "active_ids": [], "stage": "prepared", "after_positions": [2021, 3537, 1133, 3390, 2091], "after_host_at_unix_s": 1791127985.2741187}}
+{"at": "2026-10-05T00:33:05.289+09:00", "kind": "write", "motor_id": 1, "name": "acceleration", "value": 1}
+{"at": "2026-10-05T00:33:05.305+09:00", "kind": "write", "motor_id": 1, "name": "velocity", "value": 6}
+{"at": "2026-10-05T00:33:05.321+09:00", "kind": "write", "motor_id": 1, "name": "pwm", "value": 350}
+{"at": "2026-10-05T00:33:05.337+09:00", "kind": "write", "motor_id": 1, "name": "goal", "value": 2021}
+{"at": "2026-10-05T00:33:05.353+09:00", "kind": "write", "motor_id": 1, "name": "torque", "value": 1}
+{"at": "2026-10-05T00:33:05.385+09:00", "kind": "sample", "stage": "enabling", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": false, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:05.401+09:00", "kind": "write", "motor_id": 2, "name": "acceleration", "value": 1}
+{"at": "2026-10-05T00:33:05.417+09:00", "kind": "write", "motor_id": 2, "name": "velocity", "value": 6}
+{"at": "2026-10-05T00:33:05.433+09:00", "kind": "write", "motor_id": 2, "name": "pwm", "value": 350}
+{"at": "2026-10-05T00:33:05.449+09:00", "kind": "write", "motor_id": 2, "name": "goal", "value": 3537}
+{"at": "2026-10-05T00:33:05.464+09:00", "kind": "write", "motor_id": 2, "name": "torque", "value": 1}
+{"at": "2026-10-05T00:33:05.497+09:00", "kind": "sample", "stage": "enabling", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": false, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:05.512+09:00", "kind": "write", "motor_id": 3, "name": "acceleration", "value": 1}
+{"at": "2026-10-05T00:33:05.528+09:00", "kind": "write", "motor_id": 3, "name": "velocity", "value": 6}
+{"at": "2026-10-05T00:33:05.544+09:00", "kind": "write", "motor_id": 3, "name": "pwm", "value": 350}
+{"at": "2026-10-05T00:33:05.560+09:00", "kind": "write", "motor_id": 3, "name": "goal", "value": 1133}
+{"at": "2026-10-05T00:33:05.576+09:00", "kind": "write", "motor_id": 3, "name": "torque", "value": 1}
+{"at": "2026-10-05T00:33:05.609+09:00", "kind": "sample", "stage": "enabling", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": false, "5": false}}
+{"at": "2026-10-05T00:33:05.624+09:00", "kind": "write", "motor_id": 4, "name": "acceleration", "value": 1}
+{"at": "2026-10-05T00:33:05.640+09:00", "kind": "write", "motor_id": 4, "name": "velocity", "value": 6}
+{"at": "2026-10-05T00:33:05.656+09:00", "kind": "write", "motor_id": 4, "name": "pwm", "value": 350}
+{"at": "2026-10-05T00:33:05.672+09:00", "kind": "write", "motor_id": 4, "name": "goal", "value": 3390}
+{"at": "2026-10-05T00:33:05.688+09:00", "kind": "write", "motor_id": 4, "name": "torque", "value": 1}
+{"at": "2026-10-05T00:33:05.720+09:00", "kind": "sample", "stage": "enabling", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": false}}
+{"at": "2026-10-05T00:33:05.736+09:00", "kind": "write", "motor_id": 5, "name": "acceleration", "value": 1}
+{"at": "2026-10-05T00:33:05.752+09:00", "kind": "write", "motor_id": 5, "name": "velocity", "value": 6}
+{"at": "2026-10-05T00:33:05.768+09:00", "kind": "write", "motor_id": 5, "name": "pwm", "value": 310}
+{"at": "2026-10-05T00:33:05.784+09:00", "kind": "write", "motor_id": 5, "name": "goal", "value": 2091}
+{"at": "2026-10-05T00:33:05.800+09:00", "kind": "write", "motor_id": 5, "name": "torque", "value": 1}
+{"at": "2026-10-05T00:33:05.832+09:00", "kind": "sample", "stage": "enabling", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:05.864+09:00", "kind": "sample", "stage": "holding_baseline", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:05.896+09:00", "kind": "sample", "stage": "holding_baseline", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:05.912+09:00", "kind": "write", "motor_id": 3, "name": "goal", "value": 1304}
+{"at": "2026-10-05T00:33:05.944+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.024+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.104+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1133, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.184+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1134, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.263+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1138, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.343+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1145, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.424+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1151, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.503+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1154, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.583+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1156, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.663+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1161, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.742+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1168, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.823+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1172, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.903+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1180, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:06.982+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1188, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.062+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1197, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.142+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1205, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.221+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1212, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.301+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1218, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.382+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1224, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.461+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1231, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.541+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1238, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.621+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1248, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.705+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1256, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.781+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1264, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.860+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1269, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:07.940+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1276, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.020+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1278, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.100+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.180+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.259+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.340+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.419+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.499+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.579+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.659+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.739+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.819+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.898+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:08.978+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.058+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.138+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.218+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.298+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.377+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.458+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.537+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.617+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.697+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.777+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.857+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:09.936+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.016+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.096+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.176+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.256+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.335+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.415+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.495+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.575+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.655+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.735+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.814+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.894+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:10.975+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.054+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.134+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.214+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.294+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.374+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.453+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.533+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.613+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.693+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.773+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.852+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:11.932+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.012+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.092+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.172+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.252+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.332+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.412+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.492+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.571+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.651+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.731+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.811+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.890+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:12.971+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.051+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.130+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.210+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.290+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.370+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.449+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.529+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.609+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.690+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.769+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.849+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:13.929+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.008+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.088+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.168+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.248+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.328+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.408+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.488+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.570+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.647+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.727+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.807+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.887+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:14.966+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.046+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.126+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.206+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.286+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.367+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.447+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.526+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.606+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3538, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.685+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.765+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.845+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:15.926+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.004+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.084+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.165+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.244+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.324+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.404+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.484+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.563+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.643+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.723+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.803+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.883+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:16.962+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.043+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.122+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.202+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.282+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.362+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.442+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.521+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.602+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.681+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.761+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.841+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:17.921+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.001+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.081+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.161+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.241+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.320+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.400+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.480+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.560+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.640+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.720+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.800+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.879+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:18.959+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.039+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.118+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.198+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.278+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.358+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.438+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.518+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.597+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.678+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.757+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.837+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.917+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:19.997+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.077+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.156+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.236+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.316+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.396+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.477+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.556+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.636+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.715+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.796+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.876+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:20.955+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.035+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.114+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.194+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.274+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.354+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.434+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.514+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.594+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.674+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3538, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.753+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.833+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.913+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:21.993+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.073+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.153+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.232+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.312+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.395+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.472+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.552+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.632+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.711+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.791+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3538, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.871+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:22.952+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.031+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.111+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.191+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.271+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.350+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.430+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.510+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.590+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.670+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.749+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.829+09:00", "kind": "sample", "stage": "moving", "positions": [2021, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.909+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3391, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.989+09:00", "kind": "sample", "stage": "moving", "positions": [2020, 3537, 1280, 3390, 2091], "torque": {"1": true, "2": true, "3": true, "4": true, "5": true}}
+{"at": "2026-10-05T00:33:23.989+09:00", "kind": "stop", "reason": "RuntimeError: Photo waypoint deadline", "enabled": [1, 2, 3, 4, 5]}
+{"at": "2026-10-05T00:33:24.021+09:00", "kind": "write", "motor_id": 1, "name": "goal", "value": 2021}
+{"at": "2026-10-05T00:33:24.052+09:00", "kind": "write", "motor_id": 2, "name": "goal", "value": 3537}
+{"at": "2026-10-05T00:33:24.084+09:00", "kind": "write", "motor_id": 3, "name": "goal", "value": 1280}
+{"at": "2026-10-05T00:33:24.116+09:00", "kind": "write", "motor_id": 4, "name": "goal", "value": 3390}
+{"at": "2026-10-05T00:33:24.148+09:00", "kind": "write", "motor_id": 5, "name": "goal", "value": 2091}

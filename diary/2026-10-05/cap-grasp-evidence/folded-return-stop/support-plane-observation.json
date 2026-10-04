@@ -1,0 +1,82 @@
+{
+  "source": "diary/2026-10-05/cap-grasp-evidence/folded-return-stop/d435",
+  "roi_xyxy": [
+    900,
+    350,
+    1220,
+    690
+  ],
+  "normal_camera": [
+    0.5316516713387095,
+    -0.7786326191363041,
+    -0.3332832800782187
+  ],
+  "center_camera_m": [
+    0.3049769945758006,
+    0.09924078028326269,
+    0.671691805937344
+  ],
+  "residual_mm_p50_p95_max": [
+    32.01280287566295,
+    96.62301595024934,
+    144.38645179412705
+  ],
+  "valid_points": 3027,
+  "support_verified": false,
+  "points": [
+    {
+      "label": "frame_lower_L",
+      "pixel": [
+        424,
+        518
+      ],
+      "depth_m": 0.33000001567415893,
+      "signed_plane_distance_mm": -56.783149964037705
+    },
+    {
+      "label": "frame_lower_R",
+      "pixel": [
+        648,
+        540
+      ],
+      "depth_m": 0.3160000150091946,
+      "signed_plane_distance_mm": -13.66097719513941
+    },
+    {
+      "label": "cap_top",
+      "pixel": [
+        760,
+        512
+      ],
+      "depth_m": 0.31100001477170736,
+      "signed_plane_distance_mm": 16.08855648663099
+    },
+    {
+      "label": "box_bottom",
+      "pixel": [
+        820,
+        691
+      ],
+      "depth_m": 0.3140000149141997,
+      "signed_plane_distance_mm": -21.547020440027044
+    },
+    {
+      "label": "base_foot",
+      "pixel": [
+        636,
+        535
+      ],
+      "depth_m": 0.31700001505669206,
+      "signed_plane_distance_mm": -14.996269436364534
+    },
+    {
+      "label": "desk_near",
+      "pixel": [
+        920,
+        650
+      ],
+      "depth_m": 0.35400001681409776,
+      "signed_plane_distance_mm": -9.45448804332548
+    }
+  ]
+}

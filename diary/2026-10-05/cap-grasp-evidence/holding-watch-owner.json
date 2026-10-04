@@ -1,0 +1,25 @@
+{
+  "pid": 629043,
+  "started_at": "2026-10-05T02:33:14.403779+09:00",
+  "command": [
+    "rtk",
+    "proxy",
+    "uv",
+    "run",
+    "--no-sync",
+    "arm-status",
+    "watch",
+    "--rate",
+    "5",
+    "--duration",
+    "900",
+    "--output",
+    "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/holding-watch-0229.jsonl",
+    "--quiet"
+  ],
+  "output": "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/holding-watch-0229.jsonl",
+  "readonly": true,
+  "duration_s": 900,
+  "rate_hz": 5,
+  "does_not_disable_torque_or_supply": true
+}

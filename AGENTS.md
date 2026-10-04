@@ -194,3 +194,27 @@ per 1.5s, deadline18s, no force correction. Current full-five torque OFF and ID5
 RAM readback885/0/0 verified. Candidate future interior2091..2486 is observed only,
 not a validated whole-range/contact/load limit. A user camera move after capture
 invalidates old external-camera registration/seed; retain a separately labelled frame.
+
+User decision D19 (2026-10-05): pursue actual cap grasp/lift/hold photographic
+evidence autonomously; user permits up to eight hours and requires actual staged
+robot work, rather than repeated observation while waiting for lighting. Use
+temp/workdoc_Oct05-2026_cap_grasp_evidence.md as the execution record. The first
+separately reviewed observation is scripts/cap_grasp_probe.py: fresh mounted
+reference [2021,3537,1133,3390,2091] +/-5, all axes parked/held, ID3 +15 degrees
+only, other axes unchanged. ID3 window -15..+200 counts; other axes +/-15.
+PA1/PV6, arm PWM350, jaw PWM310, no load compensation, finite stage/capture
+deadlines, all-five health/alias/jump/drift guards. Normal completion returns via
+the same small path to the stable start, verifies OFF and restores RAM. Failures
+hold available healthy current positions. Capture/review both existing camera
+owners before further decisions. RAM64/100/108/112/116 only; original observer,
+ID3 and prior motion guards remain unchanged. Later approach stages need their
+own concrete reviewed bounds; this probe does not certify the whole grasp path.
+
+D19 subsequent staged bounds and recovery-only decisions are recorded in that workdoc,
+with a portable copy at diary/2026-10-05/cap-grasp-evidence/WORKDOC.md. Do not infer
+authorization from the presence of candidate poses in a script. The final ID2 return
+stalled at PWM350 and at one documented PWM395 trial;395 was restored to350.
+No further increase or repeat of the failed route is authorized by that decision.
+The last observed state holds all five axes ON, not OFF; use CURRENT_STATE.json's
+timestamp and fresh reads. Physical support remains unverified. Confirm actual support
+before the existing supported-release procedure; no grasp or safe return has been achieved.

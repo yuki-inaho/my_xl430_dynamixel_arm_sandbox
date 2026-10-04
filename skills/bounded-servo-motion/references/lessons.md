@@ -150,3 +150,31 @@ Each was reproduced offline, fixed test-first, and is now covered by tests.
   カメラは既存serverへPOST保存し、撮影前後の新telemetry/時刻を添付する。
 - 固定焦点でも低照度ノイズは残る。実画像を毎回見てから次の動作へ進む。
   SDK profile 30fpsとalign/JPEG経路の実測約20Hzを分けて報告する。
+
+## Loaded multi-axis observation and recovery (2026-10-05)
+
+- Separate the newly commanded axes from stationary supporting axes. A loaded joint's
+  residual error against its raw goal is not evidence that it has started a new move.
+  Progress uses the commanded axes; physical holding drift uses the fresh accepted position.
+  Preserve the raw supporting goal in every intermediate waypoint as well as the final one.
+- Do not repeatedly park stationary supporting axes at present counts during stop/restart:
+  P-only load sag repeats and accumulates. In the scoped D19 controller, stop the currently
+  commanded axis at its observed count and retain existing supporting goals. Generic older
+  stop behavior stays unchanged. Log actual park failures separately; never invent a WRITE.
+- An incomplete five-axis stop log must fail normal resume. Recovery may use a saved read-only
+  register snapshot for the missing retained goal, but fresh hardware must verify all identities,
+  aliases, profiles, actual goals and drift before any new WRITE. Keep this separate from normal
+  exploration; return-only adjustments do not turn the failed original range test green.
+- A nominal reverse route can stall under a different load. Review the actual return geometry
+  and object clearance: folding first may bring a wrist/frame into the object. A small lateral
+  escape, then staged folding, is different from repeatedly pushing the same saturated joint.
+  Rest, return, torque OFF, RAM restoration and physical supply OFF remain separate outcomes.
+- Use one camera owner and one bounded motion owner; reuse logs and telemetry for snapshots.
+  Run an affected boundary/regression check after a behavior change, not full suites per photo.
+  Measure progress by observed physical changes and saved evidence, not the number of checks.
+- Output limits in a manufacturer's control table do not establish safe mechanical clearance.
+  The recorded one-time return-only ID2 revision from PWM350 to395 did not restore movement;
+  it was restored to350 and further increases stopped. Do not interpret this as a diagnosed
+  binding cause or as permission to keep increasing output. If physical support is unknown,
+  report the live torque state and obtain support before release; read-only monitoring cannot
+  provide gravity support or safely switch the supply off.

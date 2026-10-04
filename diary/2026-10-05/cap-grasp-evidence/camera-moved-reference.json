@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-05T00:09:25.512901+09:00",
+  "reason": "User moved D435; replace external-camera reference. No motor writes.",
+  "captures": {
+    "d435": {
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/d435/capture-20261005-000925-577487",
+      "relative": "d435/capture-20261005-000925-577487"
+    },
+    "d405": {
+      "source": "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/d405/capture-20261005-000925-904726",
+      "relative": "d405/capture-20261005-000925-904726"
+    }
+  }
+}

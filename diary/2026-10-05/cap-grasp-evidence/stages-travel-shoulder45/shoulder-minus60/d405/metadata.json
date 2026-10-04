@@ -1,0 +1,126 @@
+{
+  "captured_at": "2026-10-05T01:33:34.534857+09:00",
+  "host_frame_received_at": "2026-10-05T01:33:34.359441+09:00",
+  "device": {
+    "name": "Intel RealSense D405",
+    "serial": "230322272284",
+    "firmware": "5.17.0.10",
+    "usb_type": "3.2"
+  },
+  "requested_serial": "230322272284",
+  "depth_scale_m_per_count": 9.999999747378752e-05,
+  "intrinsics": {
+    "color": {
+      "width": 1280,
+      "height": 720,
+      "fx": 653.0734252929688,
+      "fy": 651.2503662109375,
+      "ppx": 635.7214965820312,
+      "ppy": 362.7729187011719,
+      "model": "distortion.inverse_brown_conrady",
+      "coeffs": [
+        -0.05370735749602318,
+        0.060372427105903625,
+        0.0005643789190798998,
+        0.001482103019952774,
+        -0.020219191908836365
+      ]
+    },
+    "depth": {
+      "width": 1280,
+      "height": 720,
+      "fx": 643.3300170898438,
+      "fy": 643.3300170898438,
+      "ppx": 643.2753295898438,
+      "ppy": 362.85235595703125,
+      "model": "distortion.brown_conrady",
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "depth_to_color": {
+    "rotation_sdk_column_major": [
+      0.9999949336051941,
+      -0.00015938088472466916,
+      -0.0031870936509221792,
+      0.00016096944455057383,
+      0.9999998807907104,
+      0.0004981878446415067,
+      0.003187013790011406,
+      -0.0004986983258277178,
+      0.9999948143959045
+    ],
+    "translation_m": [
+      -5.217440411797725e-05,
+      -3.0970772058935836e-05,
+      2.384900471952278e-05
+    ]
+  },
+  "alignment_target": "color",
+  "color_storage": "BGR encoded by OpenCV to PNG",
+  "frameset_timestamp_ms": 1791131614333.2712,
+  "frameset_frame_number": 109640,
+  "per_stream_timestamps": null,
+  "fps": 30,
+  "robot_observation": null,
+  "streams": [
+    {
+      "stream": "stream.depth",
+      "index": 0,
+      "fps": 30,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "stream": "stream.color",
+      "index": 0,
+      "fps": 30,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "stream": "stream.infrared",
+      "index": 1,
+      "fps": 30,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "stream": "stream.infrared",
+      "index": 2,
+      "fps": 30,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "shapes": {
+    "color": [
+      720,
+      1280,
+      3
+    ],
+    "depth": [
+      720,
+      1280
+    ],
+    "aligned_depth": [
+      720,
+      1280
+    ],
+    "ir_left": [
+      720,
+      1280
+    ],
+    "ir_right": [
+      720,
+      1280
+    ]
+  },
+  "depth_dtype": "uint16",
+  "aligned_depth_valid_fraction": 0.21760091145833332
+}

@@ -298,9 +298,12 @@ class Controller:
         for mid in sorted(self.enabled):
             try:
                 count = self.read(mid, ("present_position",))["present_position"]
-                self.write(mid, "goal", count)
+                self.write(mid, "goal", self.freeze_goal(mid, count))
             except Exception as exc:
                 self.safe_event("stop_hold_fault", motor_id=mid, error=str(exc))
+
+    def freeze_goal(self, mid: int, observed: int) -> int:
+        return observed
 
     def safe_event(self, kind: str, **values: object) -> None:
         try:

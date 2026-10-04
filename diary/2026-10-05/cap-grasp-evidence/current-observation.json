@@ -1,0 +1,225 @@
+{
+  "capture": "d435/capture-20261005-000925-577487",
+  "coordinate_system": "D435 color optical: x right, y down, z forward, metres",
+  "manual_image_regions_not_robot_calibration": true,
+  "regions": {
+    "cap_top": {
+      "pixel": [
+        760,
+        491
+      ],
+      "radius": 8,
+      "valid_fraction": 0.9896193771626297,
+      "depth_p10_p50_p90_m": [
+        0.3220000152941793,
+        0.3270000155316666,
+        0.33200001576915383
+      ],
+      "point_m": [
+        0.040522822587480474,
+        0.046252320882130826,
+        0.3270000155316666
+      ]
+    },
+    "cap_front": {
+      "pixel": [
+        760,
+        520
+      ],
+      "radius": 8,
+      "valid_fraction": 1.0,
+      "depth_p10_p50_p90_m": [
+        0.32300001534167677,
+        0.3250000154366717,
+        0.3260000154841691
+      ],
+      "point_m": [
+        0.04027497657777111,
+        0.05615018771415158,
+        0.3250000154366717
+      ]
+    },
+    "box_front": {
+      "pixel": [
+        799,
+        611
+      ],
+      "radius": 8,
+      "valid_fraction": 0.889273356401384,
+      "depth_p10_p50_p90_m": [
+        0.3000000142492354,
+        0.30100001429673284,
+        0.3020000143442303
+      ],
+      "point_m": [
+        0.04998535353774877,
+        0.08159109458061825,
+        0.30100001429673284
+      ]
+    },
+    "base_front": {
+      "pixel": [
+        608,
+        532
+      ],
+      "radius": 8,
+      "valid_fraction": 1.0,
+      "depth_p10_p50_p90_m": [
+        0.4390000208513811,
+        0.4400000208988786,
+        0.4400000208988786
+      ],
+      "point_m": [
+        -0.017740791965282346,
+        0.08172209920815737,
+        0.4400000208988786
+      ]
+    }
+  },
+  "motor_identity": [
+    {
+      "identity": {
+        "motor_id": 1,
+        "model_number": 1060,
+        "firmware_version": 43,
+        "observed_at": "2026-10-05T00:03:40.455+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "registers": {
+        "id": 1,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "secondary_id": 255,
+        "protocol_type": 2,
+        "homing_offset": 0,
+        "torque_enable": 0,
+        "status_return_level": 2,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      },
+      "faults": []
+    },
+    {
+      "identity": {
+        "motor_id": 2,
+        "model_number": 1060,
+        "firmware_version": 42,
+        "observed_at": "2026-10-05T00:03:41.270+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "registers": {
+        "id": 2,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "secondary_id": 255,
+        "protocol_type": 2,
+        "homing_offset": 0,
+        "torque_enable": 0,
+        "status_return_level": 2,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      },
+      "faults": []
+    },
+    {
+      "identity": {
+        "motor_id": 3,
+        "model_number": 1060,
+        "firmware_version": 42,
+        "observed_at": "2026-10-05T00:03:42.084+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "registers": {
+        "id": 3,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "secondary_id": 255,
+        "protocol_type": 2,
+        "homing_offset": 0,
+        "torque_enable": 0,
+        "status_return_level": 2,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      },
+      "faults": []
+    },
+    {
+      "identity": {
+        "motor_id": 4,
+        "model_number": 1060,
+        "firmware_version": 42,
+        "observed_at": "2026-10-05T00:03:42.898+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "registers": {
+        "id": 4,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "secondary_id": 255,
+        "protocol_type": 2,
+        "homing_offset": 0,
+        "torque_enable": 0,
+        "status_return_level": 2,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      },
+      "faults": []
+    },
+    {
+      "identity": {
+        "motor_id": 5,
+        "model_number": 1060,
+        "firmware_version": 43,
+        "observed_at": "2026-10-05T00:03:43.713+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "registers": {
+        "id": 5,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "secondary_id": 255,
+        "protocol_type": 2,
+        "homing_offset": 0,
+        "torque_enable": 0,
+        "status_return_level": 2,
+        "goal_pwm": 885,
+        "profile_acceleration": 0,
+        "profile_velocity": 0
+      },
+      "faults": []
+    }
+  ],
+  "port_closed": true,
+  "positions": [
+    [
+      2021,
+      3537,
+      1133,
+      3390,
+      2091
+    ],
+    [
+      2021,
+      3538,
+      1133,
+      3390,
+      2091
+    ],
+    [
+      2021,
+      3537,
+      1133,
+      3390,
+      2091
+    ]
+  ]
+}
