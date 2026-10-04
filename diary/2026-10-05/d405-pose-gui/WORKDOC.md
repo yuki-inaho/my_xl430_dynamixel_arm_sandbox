@@ -48,7 +48,7 @@ serialは一つのworkerが排他的所有し、UIスレッドはTk描画だけ�
 - 🧪 **テスト**: 通信エミュレータのみでON/OFF。GUIの実機切替は未検証と記録する。
 - 🛠 **エラー時対処**: 対象の失敗だけ修正・再検証。実機支持未確認で切替検証しない。
 ### 手順4: 再現手順・技能・保存（TR3）
-- [ ] 🖐 **操作**: `docs/D405_POSE_GUI.md`、技能の再利用手順、diary作業書/証跡を保存し明示pathsだけcommit/pushする。
+- [x] 🖐 **操作**: `docs/D405_POSE_GUI.md`、技能の再利用手順、diary作業書/証跡を保存し明示pathsだけcommit/pushする。
 - 🔎 **確認**: PRIVATE mainとHEAD一致、git diff --check成功。
 - 🧪 **テスト**: 過剰な全suite再実行はしない。
 - 🛠 **エラー時対処**: 関係ない差分を取り込まない。push失敗は実状態を記載する。
@@ -57,9 +57,9 @@ serialは一つのworkerが排他的所有し、UIスレッドはTk描画だけ�
 最終レビューで撮影キーをF8へ変更。SpaceのTkボタン通常activationとグローバル撮影bindingが二重発火しうるため専用キーにする。preview decode失敗はUNKNOWN表示し、Tk更新ループを維持する。
 
 ## 4. 完了の定義
-- [ ] TR1: 手動ON/OFF境界のSDKエミュレータ検証が成功し実機未検証範囲が明記されている。
-- [ ] TR2: 表示・手本・実D405撮影をxdotoolで操作しスクリーンショットが保存されている。
-- [ ] TR3: 再起動手順/技能/diaryと実体RGB-Dの保存先が記録され、commit/push済み。
+- [x] TR1: 手動ON/OFF境界のSDKエミュレータ検証が成功し実機未検証範囲が明記されている。
+- [x] TR2: 表示・手本・実D405撮影をxdotoolで操作しスクリーンショットが保存されている。
+- [x] TR3: 再起動手順/技能/diaryと実体RGB-Dの保存先が記録され、commit/push済み。
 
 ## 5. 注意事項
 `rtk proxy` / `uv run --no-sync`。サブエージェント無し。READ監視とwriterを競合させない。D19の失敗ルート/395PWMは再実行しない。ロボットの現在countは写真から世界角に校正されていない。既存dataと参照CADを改変しない。
@@ -72,6 +72,10 @@ serialは一つのworkerが排他的所有し、UIスレッドはTk描画だけ�
 | 2026-10-05 06:23:03 +0900 | 手順2 | GUI/専用transaction guard/現在位置parkを実装。SDKエミュレータ2件と既存release3件PASS(0.38s)。ruff PASS、tyのOptional count/PhotoImage保持型を修正してPASS。実機WRITEなし。撮影はreceipt時刻と前後countを照合し実体保存。 |
 | 2026-10-05 06:24:08 +0900 | 周期記録 | READ-only画面起動、実D405約18fps表示。nohup起動は環境のchild終了で起動せず、exec継続セッションで再起動。xdotool alt+F4で終了/serial close。独立arm-statusは06:25:54 全5台No PING response。未確定のままON/OFF無効表示。カメラのみ撮影は別の明示操作として追加。 |
 | 2026-10-05 06:33:13 +0900 | 手順3 | xdotool clickで実D405 RGB-D保存、RGB/深度切替、UNKNOWN撮影の手本登録拒否、Xボタン終了を確認。証跡gui-final.png/gui-capture-depth.png/gui-unknown-reference-refused.png。実RGB-Dは720x1280 uint16、depth scale約0.0001m/count。session/eventsに実機WRITE0を確認、close記録あり。関節bracket/初期RAM profileからのON/低PWM維持/alias拒否はSDKエミュレータ4件PASS(0.33s)、ruff/ty PASS。 |
+| 2026-10-05 06:44:58 +0900 | 手順4/周期記録 | docs/HTML/実RGB-D/技能を保存。技能quick_validate PASS。27明示files、5.41MiB、audit blockers0/warnings14（既知の画像とhome pathsを依頼済PRIVATEへ保存）。commit9cd9d65、push成功、local/remote main同一を確認。diff --cached --check PASS。最後のGUIは専用tmux `d405-pose-gui-20261005` で起動し、F8/手本/D405ライブ画面gui-current.pngを確認。実機の切替・把持は未実施。 |
+| 2026-10-05 06:44:58 +0900 | DoD TR1 | tests/test_pose_gui.py 4件PASS。物理ON/OFFは未検証とdocs/HTML/本書に明記。RAM制限と現在値parkを実SDK送信で検証。 |
+| 2026-10-05 06:44:58 +0900 | DoD TR2 | 手本実体copy/ライブRGB/深度/カメラのみ撮影/不明姿勢の手本拒否/終了を確認。4枚の画面証跡とRGB-D実体をdiaryへ格納。 |
+| 2026-10-05 06:44:58 +0900 | DoD TR3 | docs/D405_POSE_GUI.md、rgbd-arm-pose-capture skill、diary/HTMLを9cd9d65でPRIVATE mainへpush済み。原本~/data/xl430-arm/2026-10-05/pose-gui/を維持。完了記録をportable WORKDOCへ同期して追記commitする。 |
 
 ## 7. 未確定事項
 現在の実機の重量支持。実機ON/OFFの効果はGUI提供後に利用者が支えた状態で確認する。手本の姿勢が正解かは人が選んだ資料の意味に依存し、保存時に認定を捏造しない。
