@@ -34,6 +34,10 @@ def test_real_sdk_run_writes_only_id3_and_ends_torque_off(tmp_path):
     assert {address for _, address, _ in writes} <= {64, 100, 108, 112, 116}
     assert port.ser.torque() == 0 and port.is_using is False
     assert {opcode for opcode in (frame[7] for frame in port.ser.sent)} <= {0x02, 0x03, 0x82}
+    first_write = next(i for i, frame in enumerate(port.ser.sent) if frame[7] == 3)
+    route_reads = {frame[4] for frame in port.ser.sent[:first_write]
+                   if frame[7] == 2 and (frame[8] | frame[9] << 8) == 12}
+    assert route_reads == {1, 2, 3, 4, 5}
 
 
 def test_interrupt_inside_a_sync_read_still_sends_torque_off(tmp_path):

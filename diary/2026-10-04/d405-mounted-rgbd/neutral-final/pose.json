@@ -1,0 +1,23 @@
+{
+  "name": "camera_mounted_neutral_final",
+  "positions": [
+    2112,
+    3473,
+    1153,
+    3392,
+    1951
+  ],
+  "reference_counts": [
+    2102,
+    3473,
+    1147,
+    3398,
+    1951
+  ],
+  "all_torque_off": true,
+  "ram_restored": true,
+  "robot_read": "status_20261004T183841_888418+0900.json",
+  "hardware_synchronized": false,
+  "accepted": true,
+  "review": "VLM whole folded arm/D405 stable above motor group; independent three-sample READ all OFF/error0/velocity0"
+}

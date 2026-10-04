@@ -37,15 +37,17 @@ class LiveSnapshot:
     summary: StreamSummary | None = None
     log_path: Path | None = None
     error: str | None = None
+    simulated: bool = False
 
 
 class LiveMonitor:
     def __init__(self, config: ArmConfig, reports: Path, acquire: Acquire = run_acquisition):
         self.config, self.reports, self.acquire = config, reports, acquire
+        self.simulated = acquire is not run_acquisition
         self._lock = Lock()
         self._stop = Event()
         self._thread: Thread | None = None
-        self._snapshot = LiveSnapshot()
+        self._snapshot = LiveSnapshot(simulated=self.simulated)
 
     def snapshot(self) -> LiveSnapshot:
         with self._lock:
@@ -62,6 +64,7 @@ class LiveMonitor:
             self._snapshot = LiveSnapshot(
                 state="starting", session_id=str(uuid4()), port_closed=False,
                 log_path=self.reports / (report_stem("live") + ".jsonl"),
+                simulated=self.simulated,
             )
             self._stop = Event()
             self._thread = Thread(target=self._run, args=(options,), daemon=True)
@@ -90,6 +93,9 @@ class LiveMonitor:
 
     def _record(self, options: PollOptions, sink: JsonlSink) -> StreamSummary:
         def emit(event: StreamEvent) -> None:
+            if isinstance(event, MetadataEvent):
+                event = replace(event, simulated=self.simulated,
+                                acquisition_id=self.snapshot().session_id)
             sink.emit(event)
             self._receive(event)
         return self.acquire(self.config, options, emit, self._stop)
@@ -114,4 +120,3 @@ class LiveMonitor:
                 self._snapshot, state="error" if error else "stopped",
                 summary=summary, port_closed=None if error else summary.port_closed, error=error,
             )
-

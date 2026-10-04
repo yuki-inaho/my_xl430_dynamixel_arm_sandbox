@@ -92,9 +92,23 @@ def test_finite_run_closes_and_writes_v2_end(tmp_path, transport):
     assert transport == ["open", "closed"]
     records = [json.loads(line) for line in status.log_path.read_text().splitlines()]
     assert records[0]["kind"] == "metadata"
+    assert records[0]["simulated"] is False
+    assert records[0]["acquisition_id"] == status.session_id
+    assert status.simulated is False
     assert records[-1]["kind"] == "end"
     assert records[-1]["summary"]["port_closed"]
     assert all(record["schema_version"] == 2 for record in records)
+
+
+def test_injected_acquisition_is_marked_synthetic(tmp_path, transport):
+    monitor = live.LiveMonitor(CONFIG, tmp_path, acquire=run_fake)
+    assert monitor.snapshot().simulated is True
+    monitor.start(0.1)
+    assert monitor.join(3)
+    status = monitor.snapshot()
+    records = [json.loads(line) for line in status.log_path.read_text().splitlines()]
+    assert status.simulated is True and status.metadata.simulated is True
+    assert records[0]["simulated"] is True
 
 
 def test_stop_cancels_continuous_run_and_new_session(tmp_path, transport):

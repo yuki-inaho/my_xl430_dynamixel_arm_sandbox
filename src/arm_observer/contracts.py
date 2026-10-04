@@ -44,7 +44,8 @@ def dataclass_schema(record_type: type, definitions: dict[str, object]) -> dict[
             "type": "object",
             "additionalProperties": False,
             "properties": properties,
-            "required": list(properties),
+            "required": [name for name in properties
+                         if name not in ("simulated", "acquisition_id")],
         }
     return {"$ref": f"#/$defs/{name}"}
 

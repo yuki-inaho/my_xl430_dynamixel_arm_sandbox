@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "request": "Actual robot pose + stop 2-3 sec + camera capture; rest/standby/yaw ±30/20 neutral variants",
+  "baseline_policy": "Fresh stable all-torque-off folded counts; previous 2063/3123/1147/2049/2059 are observations, not executable targets.",
+  "physical_calibration": false,
+  "hold_seconds": 2.5,
+  "profile_velocity": 6,
+  "profile_acceleration": 1,
+  "goal_pwm": 350,
+  "poses": [
+    {
+      "name": "rest",
+      "label": "休止・現在の畳み姿勢",
+      "delta_deg": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "standby",
+      "label": "スタンバイ",
+      "delta_deg": [
+        0,
+        0,
+        72,
+        -30,
+        0
+      ]
+    },
+    {
+      "name": "yaw_minus30",
+      "label": "スタンバイ・ID1 −30°",
+      "delta_deg": [
+        -30,
+        0,
+        72,
+        -30,
+        0
+      ]
+    },
+    {
+      "name": "yaw_plus30",
+      "label": "スタンバイ・ID1 +30°",
+      "delta_deg": [
+        30,
+        0,
+        72,
+        -30,
+        0
+      ]
+    },
+    {
+      "name": "neutral_01",
+      "label": "ID1中立・姿勢1",
+      "delta_deg": [
+        0,
+        -3,
+        66,
+        -24,
+        -10
+      ]
+    },
+    {
+      "name": "neutral_02",
+      "label": "ID1中立・姿勢2",
+      "delta_deg": [
+        0,
+        -3,
+        66,
+        -30,
+        0
+      ]
+    },
+    {
+      "name": "neutral_03",
+      "label": "ID1中立・姿勢3",
+      "delta_deg": [
+        0,
+        -3,
+        66,
+        -36,
+        10
+      ]
+    },
+    {
+      "name": "neutral_04",
+      "label": "ID1中立・姿勢4",
+      "delta_deg": [
+        0,
+        -3,
+        72,
+        -36,
+        0
+      ]
+    },
+    {
+      "name": "neutral_05",
+      "label": "ID1中立・姿勢5",
+      "delta_deg": [
+        0,
+        -3,
+        72,
+        -30,
+        -10
+      ]
+    },
+    {
+      "name": "neutral_06",
+      "label": "ID1中立・姿勢6",
+      "delta_deg": [
+        0,
+        -3,
+        72,
+        -24,
+        10
+      ]
+    },
+    {
+      "name": "neutral_07",
+      "label": "ID1中立・姿勢7",
+      "delta_deg": [
+        0,
+        -3,
+        78,
+        -24,
+        0
+      ]
+    },
+    {
+      "name": "neutral_08",
+      "label": "ID1中立・姿勢8",
+      "delta_deg": [
+        0,
+        -3,
+        78,
+        -30,
+        10
+      ]
+    },
+    {
+      "name": "neutral_09",
+      "label": "ID1中立・姿勢9",
+      "delta_deg": [
+        0,
+        -3,
+        78,
+        -36,
+        -10
+      ]
+    },
+    {
+      "name": "neutral_10",
+      "label": "ID1中立・姿勢10",
+      "delta_deg": [
+        0,
+        -2,
+        78,
+        -36,
+        0
+      ]
+    },
+    {
+      "name": "neutral_11",
+      "label": "ID1中立・姿勢11",
+      "delta_deg": [
+        0,
+        -2,
+        78,
+        -30,
+        -10
+      ]
+    },
+    {
+      "name": "neutral_12",
+      "label": "ID1中立・姿勢12",
+      "delta_deg": [
+        0,
+        -2,
+        78,
+        -24,
+        10
+      ]
+    },
+    {
+      "name": "neutral_13",
+      "label": "ID1中立・姿勢13",
+      "delta_deg": [
+        0,
+        -2,
+        72,
+        -24,
+        0
+      ]
+    },
+    {
+      "name": "neutral_14",
+      "label": "ID1中立・姿勢14",
+      "delta_deg": [
+        0,
+        -2,
+        72,
+        -30,
+        10
+      ]
+    },
+    {
+      "name": "neutral_15",
+      "label": "ID1中立・姿勢15",
+      "delta_deg": [
+        0,
+        -2,
+        72,
+        -36,
+        -10
+      ]
+    },
+    {
+      "name": "neutral_16",
+      "label": "ID1中立・姿勢16",
+      "delta_deg": [
+        0,
+        -2,
+        72,
+        -36,
+        0
+      ]
+    },
+    {
+      "name": "neutral_17",
+      "label": "ID1中立・姿勢17",
+      "delta_deg": [
+        0,
+        -2,
+        72,
+        -30,
+        -10
+      ]
+    },
+    {
+      "name": "neutral_18",
+      "label": "ID1中立・姿勢18",
+      "delta_deg": [
+        0,
+        -2,
+        72,
+        -24,
+        10
+      ]
+    },
+    {
+      "name": "neutral_19",
+      "label": "ID1中立・姿勢19",
+      "delta_deg": [
+        0,
+        -2,
+        66,
+        -24,
+        0
+      ]
+    },
+    {
+      "name": "neutral_20",
+      "label": "ID1中立・姿勢20",
+      "delta_deg": [
+        0,
+        -2,
+        66,
+        -30,
+        10
+      ]
+    }
+  ],
+  "default_execute": false,
+  "collision_status": "Candidate poses close to visually tested standby; each pose requires fresh camera review; no geometric all-pair certificate."
+}

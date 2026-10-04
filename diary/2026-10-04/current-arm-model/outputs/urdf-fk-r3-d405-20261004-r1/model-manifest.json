@@ -1,0 +1,522 @@
+{
+  "configuration": "R3 arm + long R5 holder + mounted D405 (65° candidate, USB disconnected)",
+  "source_cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "source_scene_sha256": "8d5d2cde0b15eb4ebd606a3830ef5d0e3e15fec982e96afe9872e8b907830b73",
+  "mujoco_version": "3.13.0",
+  "simulation_only": true,
+  "hardware_targets": null,
+  "collision_certified": false,
+  "dynamic_values_are_placeholders": true,
+  "effort_velocity_are_placeholders": true,
+  "selected_occurrences": 199,
+  "sheet_occurrences": 55,
+  "tool_definition": "M05 output-axis center, CAD saved frame; no gripper TCP",
+  "meshes": [
+    {
+      "name": "M01",
+      "file": "meshes/M01.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/M01.obj",
+      "source_sha256": "32f7ca3c6a32b35124b238f622270e163578d31661069bf67fcbcacdcbca6d2d",
+      "sha256": "32f7ca3c6a32b35124b238f622270e163578d31661069bf67fcbcacdcbca6d2d",
+      "link": "base_link",
+      "occurrences": 35,
+      "sheets": 11
+    },
+    {
+      "name": "P01_base",
+      "file": "meshes/P01_base.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/P01_base.obj",
+      "source_sha256": "e4ac720b45876831fbfb5acbf1f43b38dec2f0ab5e7e2ed1f85b305ab2d38328",
+      "sha256": "e4ac720b45876831fbfb5acbf1f43b38dec2f0ab5e7e2ed1f85b305ab2d38328",
+      "link": "base_link",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "M02",
+      "file": "meshes/M02.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/M02.obj",
+      "source_sha256": "14e48b383cb38c605ecfe5af93ec4aff8a618bce2cbd76f13b7f2846b6b23b02",
+      "sha256": "14e48b383cb38c605ecfe5af93ec4aff8a618bce2cbd76f13b7f2846b6b23b02",
+      "link": "arm_link_1",
+      "occurrences": 35,
+      "sheets": 11
+    },
+    {
+      "name": "P02_yaw_carrier",
+      "file": "meshes/P02_yaw_carrier.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/P02_yaw_carrier.obj",
+      "source_sha256": "f33e3663be8ac004df9dacb681eeb7f94778db55a8528f236b258d2e7631b479",
+      "sha256": "f33e3663be8ac004df9dacb681eeb7f94778db55a8528f236b258d2e7631b479",
+      "link": "arm_link_1",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "M03",
+      "file": "meshes/M03.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/M03.obj",
+      "source_sha256": "b1b729adad0ef7a0186a5db0b64a2f722ab26c3c399bbb7b61bfc6457d706b2b",
+      "sha256": "b1b729adad0ef7a0186a5db0b64a2f722ab26c3c399bbb7b61bfc6457d706b2b",
+      "link": "arm_link_2",
+      "occurrences": 35,
+      "sheets": 11
+    },
+    {
+      "name": "P03_shoulder_XL430",
+      "file": "meshes/P03_shoulder_XL430.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/P03_shoulder_XL430.obj",
+      "source_sha256": "c017300d342f62fb8cdca7359a59412073f0afcc610c4d0fa123347726cefadc",
+      "sha256": "c017300d342f62fb8cdca7359a59412073f0afcc610c4d0fa123347726cefadc",
+      "link": "arm_link_2",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "M04",
+      "file": "meshes/M04.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/M04.obj",
+      "source_sha256": "32a3e3879e803ef7d21fe33219294c4658468f0d238fed55eab777c45248bfb0",
+      "sha256": "32a3e3879e803ef7d21fe33219294c4658468f0d238fed55eab777c45248bfb0",
+      "link": "arm_link_3",
+      "occurrences": 35,
+      "sheets": 11
+    },
+    {
+      "name": "P04_extension_XL430",
+      "file": "meshes/P04_extension_XL430.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/P04_extension_XL430.obj",
+      "source_sha256": "ea8c9630450bf381ddc1a6b05e23ccbebe918eab7366309d4f71816783ad741e",
+      "sha256": "ea8c9630450bf381ddc1a6b05e23ccbebe918eab7366309d4f71816783ad741e",
+      "link": "arm_link_3",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "M05",
+      "file": "meshes/M05.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/M05.obj",
+      "source_sha256": "aa50e12a49da3d274eea1659c382eeb9db53f07def5f7e1ffe4fc6f398f1a8c2",
+      "sha256": "aa50e12a49da3d274eea1659c382eeb9db53f07def5f7e1ffe4fc6f398f1a8c2",
+      "link": "arm_link_4",
+      "occurrences": 35,
+      "sheets": 11
+    },
+    {
+      "name": "P05_wrist_XL430",
+      "file": "meshes/P05_wrist_XL430.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/P05_wrist_XL430.obj",
+      "source_sha256": "dc33ef0914bf5aa8b21ba92f35403367b27b80ca9fd0a5bf979ceecfd5088666",
+      "sha256": "dc33ef0914bf5aa8b21ba92f35403367b27b80ca9fd0a5bf979ceecfd5088666",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE",
+      "file": "meshes/r5_65_CAM5_BASE.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE.obj",
+      "source_sha256": "224bdfbc1740e60541ee397dd0d05070a9707ae72da8b7bce8c29b7b101820d8",
+      "sha256": "224bdfbc1740e60541ee397dd0d05070a9707ae72da8b7bce8c29b7b101820d8",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_D405_CARRIER",
+      "file": "meshes/r5_65_CAM5_D405_CARRIER.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_CARRIER.obj",
+      "source_sha256": "398795ce75b231e2bb67321bb9683a3382bbc8985aa1001652d884b21ff4e448",
+      "sha256": "398795ce75b231e2bb67321bb9683a3382bbc8985aa1001652d884b21ff4e448",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE_WASHER_0",
+      "file": "meshes/r5_65_CAM5_BASE_WASHER_0.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_WASHER_0.obj",
+      "source_sha256": "1a3601d62da6108fc51ec2ba0c57b69749b1d8f6382ae2c743fe7b9015572f07",
+      "sha256": "1a3601d62da6108fc51ec2ba0c57b69749b1d8f6382ae2c743fe7b9015572f07",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE_TAP_0",
+      "file": "meshes/r5_65_CAM5_BASE_TAP_0.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_TAP_0.obj",
+      "source_sha256": "0c7220e0f1a8acbc00adc86d8ed49f6840137e76f8a3e97700ddb8aeec51160f",
+      "sha256": "0c7220e0f1a8acbc00adc86d8ed49f6840137e76f8a3e97700ddb8aeec51160f",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE_WASHER_1",
+      "file": "meshes/r5_65_CAM5_BASE_WASHER_1.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_WASHER_1.obj",
+      "source_sha256": "11b4cd165ce6a22a2552f97b998dd5c71d11fac24fccf4ce72de3465c6111398",
+      "sha256": "11b4cd165ce6a22a2552f97b998dd5c71d11fac24fccf4ce72de3465c6111398",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE_TAP_1",
+      "file": "meshes/r5_65_CAM5_BASE_TAP_1.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_TAP_1.obj",
+      "source_sha256": "4413d06ef831f188f33628d50b27a5049bd26936ecd8d26e023dcf1f27af9516",
+      "sha256": "4413d06ef831f188f33628d50b27a5049bd26936ecd8d26e023dcf1f27af9516",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE_WASHER_2",
+      "file": "meshes/r5_65_CAM5_BASE_WASHER_2.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_WASHER_2.obj",
+      "source_sha256": "cd74e54c73762d70bc6dcd75e2ea7d932362c7d3f8d59f5409fcd0c3e14d6a7b",
+      "sha256": "cd74e54c73762d70bc6dcd75e2ea7d932362c7d3f8d59f5409fcd0c3e14d6a7b",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE_TAP_2",
+      "file": "meshes/r5_65_CAM5_BASE_TAP_2.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_TAP_2.obj",
+      "source_sha256": "58a3a3b1df3816048ddc6dd448d731b1211d4d04db2d065f0bac423f0b13f68d",
+      "sha256": "58a3a3b1df3816048ddc6dd448d731b1211d4d04db2d065f0bac423f0b13f68d",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE_WASHER_3",
+      "file": "meshes/r5_65_CAM5_BASE_WASHER_3.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_WASHER_3.obj",
+      "source_sha256": "334758034988f697302d028ed10062aedc7c14dde8218e6e6547c505ddab3158",
+      "sha256": "334758034988f697302d028ed10062aedc7c14dde8218e6e6547c505ddab3158",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_BASE_TAP_3",
+      "file": "meshes/r5_65_CAM5_BASE_TAP_3.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_TAP_3.obj",
+      "source_sha256": "d3d0be24417e54733b063999d08d0a5cc7afe51727bf3dbeb62602b104f08d17",
+      "sha256": "d3d0be24417e54733b063999d08d0a5cc7afe51727bf3dbeb62602b104f08d17",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_TIE_WASHER_0",
+      "file": "meshes/r5_65_CAM5_TIE_WASHER_0.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_WASHER_0.obj",
+      "source_sha256": "aefb0758e29d7c4a36e424bf0dc9340a810578638ff51226121ea1b5dcfadbf0",
+      "sha256": "aefb0758e29d7c4a36e424bf0dc9340a810578638ff51226121ea1b5dcfadbf0",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_TIE_BOLT_0",
+      "file": "meshes/r5_65_CAM5_TIE_BOLT_0.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_BOLT_0.obj",
+      "source_sha256": "3fce07159a7d89c91373a828ec5ccd64babd44940506a268d2dff1d0b0892c30",
+      "sha256": "3fce07159a7d89c91373a828ec5ccd64babd44940506a268d2dff1d0b0892c30",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_TIE_NUT_0",
+      "file": "meshes/r5_65_CAM5_TIE_NUT_0.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_NUT_0.obj",
+      "source_sha256": "e5ec044d2af87f54c99f2261e13fd6c88bc621fb091fadd7efc1d596ad5b4e00",
+      "sha256": "e5ec044d2af87f54c99f2261e13fd6c88bc621fb091fadd7efc1d596ad5b4e00",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_TIE_WASHER_1",
+      "file": "meshes/r5_65_CAM5_TIE_WASHER_1.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_WASHER_1.obj",
+      "source_sha256": "574ff63d78a2027cb941925eb659b25a95836416026cc3dbf93eef1c6d090c0f",
+      "sha256": "574ff63d78a2027cb941925eb659b25a95836416026cc3dbf93eef1c6d090c0f",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_TIE_BOLT_1",
+      "file": "meshes/r5_65_CAM5_TIE_BOLT_1.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_BOLT_1.obj",
+      "source_sha256": "7bf824752362cf5fad4b709c5e8beec442327770f343a69cf9ae691b6f03e21d",
+      "sha256": "7bf824752362cf5fad4b709c5e8beec442327770f343a69cf9ae691b6f03e21d",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_TIE_NUT_1",
+      "file": "meshes/r5_65_CAM5_TIE_NUT_1.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_NUT_1.obj",
+      "source_sha256": "ed0ab4f0dd47cf5c275dfdcd05386f2863964682fb98c82ade2b9b2439fdbe58",
+      "sha256": "ed0ab4f0dd47cf5c275dfdcd05386f2863964682fb98c82ade2b9b2439fdbe58",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_D405_SCREW_0",
+      "file": "meshes/r5_65_CAM5_D405_SCREW_0.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_SCREW_0.obj",
+      "source_sha256": "93df43c2c9f4668ad7c2f95f6ea16844dddc8958374dc48d2bedb984d3f74525",
+      "sha256": "93df43c2c9f4668ad7c2f95f6ea16844dddc8958374dc48d2bedb984d3f74525",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_D405_SCREW_1",
+      "file": "meshes/r5_65_CAM5_D405_SCREW_1.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_SCREW_1.obj",
+      "source_sha256": "4a5869ad15e41d6e8c179c2ced044144facabcd95b93ef9e574728b3ca35d018",
+      "sha256": "4a5869ad15e41d6e8c179c2ced044144facabcd95b93ef9e574728b3ca35d018",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    },
+    {
+      "name": "r5_65_CAM5_D405_BODY",
+      "file": "meshes/r5_65_CAM5_D405_BODY.obj",
+      "source": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_BODY.obj",
+      "source_sha256": "43a5499ab08061bcc453d14a6c4cfc6bc8c1297b1762cbabfcf5c94d8c5207a4",
+      "sha256": "43a5499ab08061bcc453d14a6c4cfc6bc8c1297b1762cbabfcf5c94d8c5207a4",
+      "link": "arm_link_4",
+      "occurrences": 1,
+      "sheets": 0
+    }
+  ],
+  "fixed_visuals": [
+    {
+      "body": "arm_link_4",
+      "group": 2,
+      "mesh_names": [
+        "r5_65_CAM5_BASE",
+        "r5_65_CAM5_D405_CARRIER",
+        "r5_65_CAM5_BASE_WASHER_0",
+        "r5_65_CAM5_BASE_TAP_0",
+        "r5_65_CAM5_BASE_WASHER_1",
+        "r5_65_CAM5_BASE_TAP_1",
+        "r5_65_CAM5_BASE_WASHER_2",
+        "r5_65_CAM5_BASE_TAP_2",
+        "r5_65_CAM5_BASE_WASHER_3",
+        "r5_65_CAM5_BASE_TAP_3",
+        "r5_65_CAM5_TIE_WASHER_0",
+        "r5_65_CAM5_TIE_BOLT_0",
+        "r5_65_CAM5_TIE_NUT_0",
+        "r5_65_CAM5_TIE_WASHER_1",
+        "r5_65_CAM5_TIE_BOLT_1",
+        "r5_65_CAM5_TIE_NUT_1",
+        "r5_65_CAM5_D405_SCREW_0",
+        "r5_65_CAM5_D405_SCREW_1",
+        "r5_65_CAM5_D405_BODY"
+      ],
+      "label": "旧長尺R5ホルダー＋D405本体 · 65°第一候補",
+      "variant_status": "Photo match: long R5 likely; 65 versus 75 degrees not physically established"
+    }
+  ],
+  "excluded": [
+    "M06/P06/P07",
+    "C7 mechanism",
+    "D405 USB plug/cable (user reports not connected)"
+  ],
+  "files": {
+    "robot.urdf": "ce1d4412336a7322eb9e9dffc775f44ac80d51a3d390bac24af623a0e8a4d3c0",
+    "scene.xml": "ef2ff87559311cf538ce8080cf682a8b118e9b0de14553882908eb14e1a81105",
+    "imported.xml": "e97f385441223f7b9ad15a8bd96ab15c2000bcda988e3f92881b197ffcd9d1ee"
+  },
+  "spec": {
+    "schema_version": 1,
+    "simulation_only": true,
+    "configuration": "R3 arm + long R5 holder + mounted D405 (65° candidate, USB disconnected)",
+    "source_scene": "outputs/current-arm-mujoco-20261003/scene.xml",
+    "source_provenance": "outputs/current-arm-mujoco-20261003/model-provenance.json",
+    "source_scene_sha256": "8d5d2cde0b15eb4ebd606a3830ef5d0e3e15fec982e96afe9872e8b907830b73",
+    "source_provenance_sha256": "8375e073297aab2bdeb007f25f9ab32c45da52a3115aa056bfdf87ff7d5322bb",
+    "cad_file": "references/arm-r3/arm_XL430_R3.step",
+    "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+    "joints_file": "references/arm-r3/joints.json",
+    "joints_sha256": "988890dd93df387ce22f027c10f9e7f3e4f7ac1841e010f18fd7aec47eebf7a7",
+    "joint_names": [
+      "cad_j1",
+      "cad_j2",
+      "cad_j3",
+      "cad_j4"
+    ],
+    "body_names": [
+      "arm_link_1",
+      "arm_link_2",
+      "arm_link_3",
+      "arm_link_4"
+    ],
+    "visual_group": 0,
+    "expected_meshes": 29,
+    "expected_occurrences": 199,
+    "expected_sheet_occurrences": 55,
+    "tool_body": "arm_link_4",
+    "tool_offset_m": [
+      0,
+      0.06,
+      0
+    ],
+    "tool_definition": "M05 output-axis center, CAD saved frame; no gripper TCP",
+    "units": {
+      "length": "m",
+      "angle": "rad"
+    },
+    "demo_ranges_deg": [
+      [
+        -40,
+        40
+      ],
+      [
+        -40,
+        40
+      ],
+      [
+        -60,
+        60
+      ],
+      [
+        -60,
+        60
+      ]
+    ],
+    "range_status": "demonstration search box, not verified physical limits",
+    "seed_deg": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "validation": {
+      "fk_tolerance_m": 1e-09,
+      "geometry_tolerance_m": 2e-07,
+      "poses_deg": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          -20,
+          25,
+          -30
+        ],
+        [
+          -25,
+          15,
+          -35,
+          40
+        ],
+        [
+          40,
+          40,
+          60,
+          60
+        ],
+        [
+          -40,
+          -40,
+          -60,
+          -60
+        ]
+      ],
+      "negative_joint_offset_deg": 2
+    },
+    "hardware_targets": null,
+    "collision_certified": false,
+    "dynamic_values_are_placeholders": true,
+    "poses": [
+      {
+        "name": "cad_zero",
+        "label": "CAD保存姿勢",
+        "angles_deg": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "standby_example",
+        "label": "前方・下向きの例",
+        "angles_deg": [
+          0,
+          -20,
+          -20,
+          -30
+        ]
+      },
+      {
+        "name": "yaw_example",
+        "label": "旋回を含む例",
+        "angles_deg": [
+          20,
+          -10,
+          15,
+          -20
+        ]
+      }
+    ],
+    "display": {
+      "fps": 20,
+      "max_frame_step_deg": 0.5
+    },
+    "task_change": "2026-10-04: user confirms D405 is mounted but USB is disconnected; include its body and two mounting screws.",
+    "model_name": "current_R3_R5_D405_kinematic",
+    "fixed_visuals": [
+      {
+        "body": "arm_link_4",
+        "group": 2,
+        "mesh_names": [
+          "r5_65_CAM5_BASE",
+          "r5_65_CAM5_D405_CARRIER",
+          "r5_65_CAM5_BASE_WASHER_0",
+          "r5_65_CAM5_BASE_TAP_0",
+          "r5_65_CAM5_BASE_WASHER_1",
+          "r5_65_CAM5_BASE_TAP_1",
+          "r5_65_CAM5_BASE_WASHER_2",
+          "r5_65_CAM5_BASE_TAP_2",
+          "r5_65_CAM5_BASE_WASHER_3",
+          "r5_65_CAM5_BASE_TAP_3",
+          "r5_65_CAM5_TIE_WASHER_0",
+          "r5_65_CAM5_TIE_BOLT_0",
+          "r5_65_CAM5_TIE_NUT_0",
+          "r5_65_CAM5_TIE_WASHER_1",
+          "r5_65_CAM5_TIE_BOLT_1",
+          "r5_65_CAM5_TIE_NUT_1",
+          "r5_65_CAM5_D405_SCREW_0",
+          "r5_65_CAM5_D405_SCREW_1",
+          "r5_65_CAM5_D405_BODY"
+        ],
+        "label": "旧長尺R5ホルダー＋D405本体 · 65°第一候補",
+        "variant_status": "Photo match: long R5 likely; 65 versus 75 degrees not physically established"
+      }
+    ],
+    "excluded": [
+      "M06/P06/P07",
+      "C7 mechanism",
+      "D405 USB plug/cable (user reports not connected)"
+    ]
+  }
+}

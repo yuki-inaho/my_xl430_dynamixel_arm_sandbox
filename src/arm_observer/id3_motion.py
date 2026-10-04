@@ -24,6 +24,7 @@ from dynamixel_sdk.protocol2_packet_handler import Protocol2PacketHandler
 
 from arm_observer.bus import open_bus
 from arm_observer.configuration import load_config
+from arm_observer.id3_direction import cad_problem
 from arm_observer.models import MotorTelemetry
 from arm_observer.motion_guard import MotionPort, MotionViolation, WriteEnvelope, open_motion_bus
 from arm_observer.output import report_stem
@@ -102,6 +103,26 @@ class StopRequested(MotionAbort):
 
 @beartype
 @dataclass(frozen=True, slots=True)
+class MovePlan:
+    """Explicit fixed choices; targets, packet envelope and deadline share one plan."""
+
+    open_degrees: int = 10
+
+    def __post_init__(self) -> None:
+        if type(self.open_degrees) is not int or self.open_degrees not in (10, 30):
+            raise ValueError("opening must be the fixed 10 or 30 degree plan")
+
+    @property
+    def open_counts(self) -> int:
+        return {10: OPEN_COUNTS, 30: 341}[self.open_degrees]
+
+    @property
+    def follow_timeout_s(self) -> float:
+        return FOLLOW_TIMEOUT_S * (self.open_degrees / 10)
+
+
+@beartype
+@dataclass(frozen=True, slots=True)
 class Evidence:
     path: str
     sha256: str
@@ -120,6 +141,14 @@ class Start:
 
     def setting(self, name: str) -> int:
         return dict(self.settings)[name]
+
+
+@beartype
+@dataclass(frozen=True, slots=True)
+class MotorRoute:
+    motor_id: int
+    secondary_id: int
+    model_number: int
 
 
 @beartype
@@ -199,32 +228,6 @@ def delta_problem(record: dict, sign: object, delta: object) -> str | None:
     return None
 
 
-def cad_sign_problem(record: dict) -> str | None:
-    sign = record.get("opening_count_sign")
-    if record.get("motor_id") != MOTOR_ID or type(sign) is not int or sign not in (1, -1):
-        return "CAD direction evidence must give an integer +-1 sign for ID3"
-    if (record.get("derivation") or {}).get("opening_count_sign") != sign:
-        return "CAD direction evidence sign differs from its derivation"
-    return None
-
-
-def cad_problem(record: dict) -> str | None:
-    folded, read = record.get("folded_count"), record.get("folded_read") or {}
-    if type(folded) is not int or read.get("folded_count") != folded or not read.get("frames"):
-        return "CAD direction evidence needs the folded count from a completed READ"
-    return cad_source_problem(record.get("sources")) or cad_sign_problem(record)
-
-
-def cad_source_problem(sources: object) -> str | None:
-    if not isinstance(sources, dict) or not sources:
-        return "CAD direction evidence must list its hashed CAD sources"
-    for name, digest in sources.items():
-        path = Path(name)
-        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
-            return f"CAD source {name} is missing or its hash differs"
-    return None
-
-
 def load_evidence(path: Path) -> Evidence:
     raw = path.read_bytes()
     record = json.loads(raw)
@@ -297,6 +300,11 @@ def position(motor: MotorTelemetry) -> int:
     return motor.position_counts
 
 
+def require_torque_on(motor: MotorTelemetry) -> None:
+    if motor.torque_enabled is not True:
+        raise MotionAbort("ID3 torque is not ON during motion or hold")
+
+
 def healthy(motors: tuple[MotorTelemetry, ...]) -> dict[int, MotorTelemetry]:
     found = {motor.motor_id: motor for motor in motors}
     for motor_id in IDS:
@@ -333,6 +341,7 @@ class Tracker:
     settle_limit: int = SETTLE_LIMIT
     overshoot_reference: int | None = None  # the true target when the goal is offset
     recent: list[int] = field(default_factory=list)
+    timeout_s: float = FOLLOW_TIMEOUT_S
 
     def check_others(self, motors: dict[int, MotorTelemetry]) -> None:
         for motor_id, start in self.others.items():
@@ -366,12 +375,13 @@ class Tracker:
 
     def update(self, motors: dict[int, MotorTelemetry], now: float) -> bool:
         id3 = motors[MOTOR_ID]
+        require_torque_on(id3)
         counts = position(id3)
         self.check_others(motors)
         self.check_id3(counts, now - self.started)
         if self.converged(counts, bool((id3.moving_status or 0) & 2)):
             return True
-        if now - self.started > FOLLOW_TIMEOUT_S:
+        if now - self.started > self.timeout_s:
             raise MotionAbort(f"ID3 following timeout at {counts} (target {self.target})")
         return False
 
@@ -379,10 +389,12 @@ class Tracker:
 class Session:
     def __init__(self, reader: Reader, actuator: Actuator, log: MotionLog,
                  monotonic: Callable[[], float], sleep: Callable[[float], None],
-                 stop_requested: Callable[[], bool] = lambda: False):
+                 stop_requested: Callable[[], bool] = lambda: False,
+                 plan: MovePlan = MovePlan()):
         self.reader, self.actuator, self.log = reader, actuator, log
         self.monotonic, self.sleep = monotonic, sleep
         self.stop_requested = stop_requested
+        self.plan = plan
         self.attempted = False
 
     def sample(self, stage: str) -> dict[int, MotorTelemetry]:
@@ -442,6 +454,7 @@ class Session:
         deadline = self.monotonic() + SAMPLE_PERIOD_S
         while self.monotonic() < end:
             motors = self.sample("hold")
+            require_torque_on(motors[MOTOR_ID])
             tracker.check_others(motors)
             found = position(motors[MOTOR_ID])
             if abs(found - settled) > REACHED_TOLERANCE:
@@ -471,18 +484,21 @@ class Session:
             self.write(name, value)
         others = dict(start.others)
         p1 = self.torque_on_position(start, others)
-        target = p1 + evidence.sign * OPEN_COUNTS
+        target = p1 + evidence.sign * self.plan.open_counts
         if not start.envelope.goal_low <= target <= start.envelope.goal_high:
             raise MotionAbort(f"target {target} outside the motion window")
         self.write("goal_position", target)
-        opened = self.follow("open", Tracker(target, evidence.sign, p1, others, self.monotonic()))
+        opened = self.follow("open", Tracker(target, evidence.sign, p1, others, self.monotonic(),
+                                             timeout_s=self.plan.follow_timeout_s))
         opened, correction = self.correct(target, opened, evidence.sign, others, start)
         self.hold(opened, others)
         if not start.envelope.goal_low <= p1 <= start.envelope.goal_high:
             raise MotionAbort(f"return goal {p1} outside the motion window")
         self.write("goal_position", p1)
         returned = self.follow("return",
-                               Tracker(p1, -evidence.sign, opened, others, self.monotonic()))
+                               Tracker(p1, -evidence.sign, opened, others, self.monotonic(),
+                                       settle_limit=REACHED_TOLERANCE,
+                                       timeout_s=self.plan.follow_timeout_s))
         error = opened - target
         status: Status = "converged" if abs(error) <= REACHED_TOLERANCE else "settled_off_target"
         reason = "" if status == "converged" else f"settled {error} counts from the target"
@@ -554,7 +570,7 @@ class Session:
             problems.append(f"final torque read: {type(exc).__name__}: {exc}")
             return {}
         states = {str(motor.motor_id): motor.torque_enabled for motor in motors}
-        if any(state is not False for state in states.values()):
+        if any(states.get(str(mid)) is not False for mid in IDS):
             problems.append(f"final torque states not all OFF: {states}")
         return states
 
@@ -576,9 +592,38 @@ class Session:
             self.park_goal(start, problems)
             for name in RESTORED:
                 self.guarded_write(name, start.setting(name), problems)
+                restored = self.guarded_read(name, problems)
+                self.safe_event("restore_readback", name=name, observed=restored,
+                                expected=start.setting(name))
+                if restored != start.setting(name):
+                    problems.append(f"{name} restore read back {restored}, "
+                                    f"expected {start.setting(name)}")
         self.safe_event("released", torque_off_confirmed=confirmed, problems=problems,
                         final_torque=states)
         return Release(confirmed, tuple(problems))
+
+
+def check_route_values(motor_id: int, values: dict[str, int]) -> None:
+    if values["id"] != motor_id or values["model_number"] != EXPECTED["model_number"]:
+        raise MotionRefused(f"ID{motor_id} routing identity/model does not match this arm: "
+                            f"id={values['id']}, model={values['model_number']}")
+    secondary = values["secondary_id"]
+    if secondary not in (*range(253), 255):
+        raise MotionRefused(f"ID{motor_id} invalid secondary_id={secondary}")
+    if motor_id != MOTOR_ID and secondary == MOTOR_ID:
+        raise MotionRefused(f"ID{motor_id} secondary_id={MOTOR_ID} aliases the motion target")
+
+
+def read_route(reader: Reader, motor_id: int) -> MotorRoute:
+    names = ("id", "secondary_id", "model_number")
+    batch = reader.registers(motor_id, tuple(BY_NAME[name] for name in names))
+    values = {reading.name: reading.value for reading in batch.readings}
+    if batch.faults or any(type(values.get(name)) is not int for name in names):
+        raise MotionRefused(f"ID{motor_id} routing metadata read is incomplete")
+    if any(reading.device_alert for reading in batch.readings):
+        raise MotionRefused(f"ID{motor_id} routing metadata carries a device alert")
+    check_route_values(motor_id, values)
+    return MotorRoute(motor_id, values["secondary_id"], values["model_number"])
 
 
 def read_settings(reader: Reader) -> dict[str, int]:
@@ -595,8 +640,9 @@ def read_settings(reader: Reader) -> dict[str, int]:
     return values
 
 
-def envelope_for(folded: int, sign: int, settings: dict[str, int]) -> WriteEnvelope:
-    target = folded + sign * OPEN_COUNTS
+def envelope_for(folded: int, sign: int, settings: dict[str, int],
+                 plan: MovePlan = MovePlan()) -> WriteEnvelope:
+    target = folded + sign * plan.open_counts
     if not settings["min_position_limit"] <= target <= settings["max_position_limit"]:
         raise MotionRefused(f"target {target} outside the ID3 position limits")
     fold_end = folded - sign * FOLD_SIDE_MARGIN
@@ -630,11 +676,13 @@ def folded_start(frames: list[dict[int, MotorTelemetry]], evidence: Evidence) ->
 
 
 def prepare(session: Session, evidence: Evidence) -> Start:
+    routes = tuple(read_route(session.reader, mid) for mid in IDS)
+    session.log.event("routing", motors=[asdict(route) for route in routes])
     settings = read_settings(session.reader)
     frames = start_frames(session)
     folded = folded_start(frames, evidence)
     others = tuple((mid, position(frames[-1][mid])) for mid in IDS if mid != MOTOR_ID)
-    envelope = envelope_for(folded, evidence.sign, settings)
+    envelope = envelope_for(folded, evidence.sign, settings, session.plan)
     kept = tuple((name, settings[name]) for name in RESTORED)
     start = Start(folded, others, kept, envelope)
     session.log.event("start", folded_counts=folded, others=dict(others), settings=settings,
@@ -650,21 +698,23 @@ def envelope_event(envelope: WriteEnvelope) -> Event:
             "goal_pwm": sorted(envelope.goal_pwm)}
 
 
-def plan_event(evidence: Evidence) -> Event:
-    return {"evidence": asdict(evidence), "motor_id": MOTOR_ID, "open_counts": OPEN_COUNTS,
+def plan_event(evidence: Evidence, plan: MovePlan = MovePlan()) -> Event:
+    return {"evidence": asdict(evidence), "motor_id": MOTOR_ID,
+            "open_degrees": plan.open_degrees, "open_counts": plan.open_counts,
             "profile_acceleration": PROFILE_ACCELERATION, "profile_velocity": PROFILE_VELOCITY,
             "goal_pwm": GOAL_PWM, "reached_tolerance": REACHED_TOLERANCE,
-            "stable_samples": STABLE_SAMPLES, "follow_timeout_s": FOLLOW_TIMEOUT_S,
+            "stable_samples": STABLE_SAMPLES, "follow_timeout_s": plan.follow_timeout_s,
             "hold_s": HOLD_S, "spec": "docs/id3_motion_spec.md"}
 
 
 def run_motion(reader: Reader, actuator: Actuator, evidence: Evidence,
                emit: Callable[[Event], None], monotonic: Callable[[], float],
                sleep: Callable[[float], None],
-               stop_requested: Callable[[], bool] = lambda: False) -> Outcome:
+               stop_requested: Callable[[], bool] = lambda: False,
+               plan: MovePlan = MovePlan()) -> Outcome:
     log = MotionLog(emit, monotonic)
-    session = Session(reader, actuator, log, monotonic, sleep, stop_requested)
-    session.safe_event("plan", **plan_event(evidence))
+    session = Session(reader, actuator, log, monotonic, sleep, stop_requested, plan)
+    session.safe_event("plan", **plan_event(evidence, plan))
     try:
         start = prepare(session, evidence)
     except (MotionRefused, MotionAbort) as exc:
@@ -685,6 +735,9 @@ def run_motion(reader: Reader, actuator: Actuator, evidence: Evidence,
         released = session.release(start)
     outcome = replace(outcome, torque_off_confirmed=released.torque_off_confirmed,
                       release_problems=released.problems)
+    if released.problems and outcome.status in ("converged", "settled_off_target"):
+        outcome = replace(outcome, status="aborted",
+                          reason="release failed: " + "; ".join(released.problems))
     session.safe_event("outcome", **asdict(outcome))
     return outcome
 
@@ -694,17 +747,21 @@ def exit_code(outcome: Outcome) -> int:
         return 3
     if outcome.interrupted:
         return 130
+    if outcome.release_problems:
+        return 4
     return 0 if outcome.status == "converged" else 2
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Open motor ID3 by about 10 degrees, then return")
+    parser = argparse.ArgumentParser(description="Open motor ID3 by 10 or 30 degrees, then return")
     parser.add_argument("--config", type=Path, default=PROJECT_ROOT / "config/arm.toml")
     parser.add_argument("--evidence", type=Path, required=True,
                         help="hardware direction observation JSON from the viewer helper")
     parser.add_argument("--execute", action="store_true",
                         help="send the bounded ID3 writes; default is a read-only dry run")
     parser.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "reports")
+    parser.add_argument("--open-degrees", type=int, choices=(10, 30), default=10,
+                        help="fixed relative opening plan; default 10 degrees")
     return parser
 
 
@@ -719,19 +776,20 @@ class DryRunActuator:
         raise MotionAbort("dry run: no writes")
 
 
-def dry_run(device: str, baudrate: int, evidence: Evidence) -> int:
+def dry_run(device: str, baudrate: int, evidence: Evidence, plan: MovePlan = MovePlan()) -> int:
     events: list[Event] = []
     with termination_as_interrupt(), open_bus(device, baudrate) as (port, packet):
         log = MotionLog(events.append, time.monotonic)
         session = Session(SdkReader(port, packet), DryRunActuator(), log,
-                          time.monotonic, time.sleep)
+                          time.monotonic, time.sleep, plan=plan)
         try:
             start = prepare(session, evidence)
         except (MotionRefused, MotionAbort) as exc:
             print(f"Dry run refused: {exc}; port closed after this block", file=sys.stderr)
             return 2
     print(json.dumps({"dry_run": "ok", "folded_counts": start.folded_counts,
-                      "target_estimate": start.folded_counts + evidence.sign * OPEN_COUNTS,
+                      "open_degrees": plan.open_degrees, "open_counts": plan.open_counts,
+                      "target_estimate": start.folded_counts + evidence.sign * plan.open_counts,
                       "envelope": [start.envelope.goal_low, start.envelope.goal_high],
                       "port_closed": True}))
     return 0
@@ -822,7 +880,7 @@ def open_log(path: Path):
 
 
 def execute(device: str, baudrate: int, evidence: Evidence, output_dir: Path,
-            restore_signals: bool = True) -> int:
+            restore_signals: bool = True, plan: MovePlan = MovePlan()) -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / (report_stem("id3_motion") + ".jsonl")
     with deferred_signals(restore_signals) as flag:
@@ -834,7 +892,8 @@ def execute(device: str, baudrate: int, evidence: Evidence, output_dir: Path,
 
             with open_motion_bus(device, baudrate) as (port, packet):
                 outcome = run_motion(SdkReader(port, packet), Id3Actuator(port, packet),
-                                     evidence, emit, time.monotonic, time.sleep, flag.requested)
+                                     evidence, emit, time.monotonic, time.sleep,
+                                     flag.requested, plan)
             try:
                 emit({"kind": "closed", "port_closed": True, "at": timestamp()})
             except OSError as exc:
@@ -854,10 +913,11 @@ def main(argv: list[str] | None = None) -> int:
         if config.bus.expected_ids != IDS:
             raise ValueError(f"expected IDs {IDS} in the configuration")
         evidence = load_evidence(args.evidence)
+        plan = MovePlan(args.open_degrees)
         if not args.execute:
-            return dry_run(config.bus.device, config.bus.baudrate, evidence)
+            return dry_run(config.bus.device, config.bus.baudrate, evidence, plan)
         return execute(config.bus.device, config.bus.baudrate, evidence, args.output_dir,
-                       restore_signals=False)
+                       restore_signals=False, plan=plan)
     except (OSError, RuntimeError, ValueError, KeyError) as exc:
         print(f"ID3 motion failed: {exc}", file=sys.stderr)
         return 1

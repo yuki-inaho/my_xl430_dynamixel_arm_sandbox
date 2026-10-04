@@ -128,6 +128,10 @@ pub enum Record {
         metadata: Vec<MotorMetadata>,
         config: ArmConfig,
         observed_at: String,
+        #[serde(default)]
+        simulated: Option<bool>,
+        #[serde(default)]
+        acquisition_id: Option<String>,
     },
     Frame {
         schema_version: u32,

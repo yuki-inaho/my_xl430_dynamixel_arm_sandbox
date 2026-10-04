@@ -2,6 +2,7 @@ import argparse
 import sys
 from dataclasses import dataclass, field, replace
 from pathlib import Path
+from uuid import uuid4
 
 from beartype.roar import BeartypeCallHintViolation
 from serial.tools import list_ports
@@ -121,8 +122,11 @@ def run_status(config: ArmConfig, args: argparse.Namespace) -> int:
 class WatchSink:
     def __init__(self, sink: JsonlSink, display: bool):
         self.sink, self.display = sink, display
+        self.acquisition_id = str(uuid4())
 
     def emit(self, event: MetadataEvent | FrameEvent) -> None:
+        if isinstance(event, MetadataEvent):
+            event = replace(event, simulated=False, acquisition_id=self.acquisition_id)
         self.sink.emit(event)
         if self.display and isinstance(event, FrameEvent):
             print("\n".join(frame_lines(event)), flush=True)

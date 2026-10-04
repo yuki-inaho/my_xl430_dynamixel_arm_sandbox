@@ -34,6 +34,7 @@ class Motor:
         put(t, 8, 1, 3)
         put(t, 9, 1, 250)
         put(t, 11, 1, 3)
+        put(t, 12, 1, 255)
         put(t, 13, 1, 2)
         put(t, 36, 2, 885)
         put(t, 48, 4, 4095)
@@ -119,7 +120,10 @@ class EmuSerial:
         elif inst == 0x03 and mid in self.motors:
             addr = p[8] | p[9] << 8
             data = p[10:-2]
-            self.motors[mid].t[addr:addr + len(data)] = bytes(data)
+            # Secondary ID accepts RAM writes without its own status response.
+            for motor in self.motors.values():
+                if motor.mid == mid or (addr >= 64 and motor.t[12] == mid):
+                    motor.t[addr:addr + len(data)] = bytes(data)
             self.status(mid)
         elif inst == 0x82:
             addr, size = p[8] | p[9] << 8, p[10] | p[11] << 8

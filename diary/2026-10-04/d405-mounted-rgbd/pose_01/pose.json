@@ -1,0 +1,75 @@
+{
+  "name": "pose_01",
+  "positions": [
+    2102,
+    3473,
+    1248,
+    3398,
+    1951
+  ],
+  "at": 1791106277.0327265,
+  "delta_deg": [
+    0,
+    0,
+    10,
+    0,
+    0
+  ],
+  "goal_counts": [
+    2102,
+    3473,
+    1261,
+    3398,
+    1951
+  ],
+  "hold_seconds": 2.5,
+  "active_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "camera_capture": "2026-10-04T18:31:38.110816+09:00",
+  "telemetry_before": {
+    "at": "2026-10-04T18:31:37.818+09:00",
+    "kind": "sample",
+    "stage": "moving",
+    "positions": [
+      2102,
+      3473,
+      1248,
+      3398,
+      1951
+    ],
+    "torque": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    }
+  },
+  "telemetry_after": {
+    "at": "2026-10-04T18:31:38.137+09:00",
+    "kind": "sample",
+    "stage": "moving",
+    "positions": [
+      2102,
+      3473,
+      1248,
+      3398,
+      1951
+    ],
+    "torque": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    }
+  },
+  "hardware_synchronized": false,
+  "accepted": true,
+  "review": "VLM actual RGB: arm/base in frame, fixed-focus edges visible, holder separated; low-light noise retained"
+}

@@ -40,7 +40,11 @@ Reports are saved as time-stamped JSON and Markdown under `reports/`; the port
 closes before snapshot files are written. Watch saves JSONL incrementally and emits
 its EndEvent with port_closed=True only after the bus context closes. Errors and
 interrupts also close the port. An aborted or failed output may lack EndEvent; do
-not infer successful completion from file existence. Exit
+not infer successful completion from file existence. Evidence used to authorize another
+workflow also needs explicit `simulated=false` and a matching acquisition ID at the actual
+acquisition boundary. Legacy nullable provenance may remain readable for diagnostics but is
+not proof of hardware origin. A source field alone is not evidence against deliberate forgery;
+retain the raw capture/hash, command and acquisition provenance. Exit
 code 2 means incomplete inspection; inspect missing values and read errors before
 making a diagnosis. Do not claim that absent values mean zero or torque OFF.
 

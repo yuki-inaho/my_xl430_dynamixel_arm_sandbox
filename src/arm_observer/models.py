@@ -160,6 +160,8 @@ class MetadataEvent:
     observed_at: str
     kind: Literal["metadata"] = "metadata"
     schema_version: Literal[2] = 2
+    simulated: bool | None = None
+    acquisition_id: str | None = None
 
 
 @beartype

@@ -1,0 +1,50 @@
+[
+  {
+    "file": "arm-current-user.jpeg",
+    "source": "/home/inaho-omen/Documents/HTvws4Qa0AALhgC.jpeg",
+    "sha256": "190a1d7c2f72543b814a5d5195235e1b3d02c139521bcc5281aea3af4f89f5ba",
+    "bytes": 519582
+  },
+  {
+    "file": "arm-earlier.jpeg",
+    "source": "/home/inaho-omen/Pictures/397595be-d993-4ee8-a447-036ff3046646.jpeg",
+    "sha256": "25116057f385d311baa2ff1ad74aa8c79e5bae6a26584a73259e331c8873aa66",
+    "bytes": 492897
+  },
+  {
+    "file": "gripper-old.jpeg",
+    "source": "/home/inaho-omen/Pictures/1888e231-325b-418e-98ae-6c22d27de5d0.jpeg",
+    "sha256": "d384d2bb43d3dd2579b4dcb2c3d9f3473277aae62ef912bb6ee66f79db878552",
+    "bytes": 485215
+  },
+  {
+    "file": "camera-long-old.jpeg",
+    "source": "/home/inaho-omen/Pictures/2ddc64b8-5f81-4700-96b3-8c76d2ba9f82.jpeg",
+    "sha256": "c0cc17842e305eb61663710804883ee046791b53648218564ce4a12e9bed6251",
+    "bytes": 423441
+  },
+  {
+    "file": "standby-actual.jpg",
+    "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/standby-camera/resumed-0098.jpg",
+    "sha256": "80eddb13cf7e2c4c59e0ccc8e17f7bb70340ce2411bf9e4db1236612bf741f57",
+    "bytes": 242515
+  },
+  {
+    "file": "power-off-actual.jpg",
+    "source": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/standby-camera/power-off-0003.jpg",
+    "sha256": "9e1aeaa5c9a8d9482cb1e150488ef5401d4ad7260a617f1884a553e9607c8c77",
+    "bytes": 244574
+  },
+  {
+    "file": "cad-standby-side.png",
+    "source": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/urdf-fk-r3-20261004-r2/standby_example-side.png",
+    "sha256": "640fde2bd09debedab7ae0f2b01937b80f5bcf480b2e6de0390224ae49b2b6e7",
+    "bytes": 141065
+  },
+  {
+    "file": "cad-standby-iso.png",
+    "source": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/urdf-fk-r3-20261004-r2/standby_example-iso.png",
+    "sha256": "aca56dca0a545f8671382d232323aba53093d49f656bb204fd498fcbde8396dd",
+    "bytes": 177668
+  }
+]

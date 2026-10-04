@@ -1,0 +1,75 @@
+{
+  "name": "pose_20",
+  "positions": [
+    2284,
+    3473,
+    1302,
+    3392,
+    1951
+  ],
+  "at": 1791106651.5810792,
+  "delta_deg": [
+    15,
+    0,
+    15,
+    0,
+    0
+  ],
+  "goal_counts": [
+    2273,
+    3473,
+    1318,
+    3398,
+    1951
+  ],
+  "hold_seconds": 2.5,
+  "active_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "camera_capture": "2026-10-04T18:37:31.942740+09:00",
+  "telemetry_before": {
+    "at": "2026-10-04T18:37:31.690+09:00",
+    "kind": "sample",
+    "stage": "moving",
+    "positions": [
+      2284,
+      3473,
+      1302,
+      3392,
+      1951
+    ],
+    "torque": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    }
+  },
+  "telemetry_after": {
+    "at": "2026-10-04T18:37:31.945+09:00",
+    "kind": "sample",
+    "stage": "moving",
+    "positions": [
+      2284,
+      3473,
+      1302,
+      3392,
+      1951
+    ],
+    "torque": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true
+    }
+  },
+  "hardware_synchronized": false,
+  "accepted": true,
+  "review": "Actual RGB reviewed: stable base, whole arm and mounted D405 in frame; no visible contact or taut cable; low-light grain"
+}

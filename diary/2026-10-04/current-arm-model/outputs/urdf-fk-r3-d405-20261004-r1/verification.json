@@ -1,0 +1,58 @@
+{
+  "pass": true,
+  "poses": [
+    {
+      "angles_deg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_transform_error": 0.0,
+      "max_world_mesh_bounds_error_m": 2.6921631868237483e-09
+    },
+    {
+      "angles_deg": [
+        15,
+        -20,
+        25,
+        -30
+      ],
+      "max_transform_error": 3.3306690738754696e-16,
+      "max_world_mesh_bounds_error_m": 1.9908703713378273e-09
+    },
+    {
+      "angles_deg": [
+        -25,
+        15,
+        -35,
+        40
+      ],
+      "max_transform_error": 1.1102230246251565e-16,
+      "max_world_mesh_bounds_error_m": 2.2892120976614194e-09
+    },
+    {
+      "angles_deg": [
+        40,
+        40,
+        60,
+        60
+      ],
+      "max_transform_error": 3.3306690738754696e-16,
+      "max_world_mesh_bounds_error_m": 2.5258660996119175e-09
+    },
+    {
+      "angles_deg": [
+        -40,
+        -40,
+        -60,
+        -60
+      ],
+      "max_transform_error": 3.3306690738754696e-16,
+      "max_world_mesh_bounds_error_m": 2.5902079092698926e-09
+    }
+  ],
+  "max_transform_error": 3.3306690738754696e-16,
+  "max_geometry_error_m": 2.6921631868237483e-09,
+  "source_scene_sha256": "8d5d2cde0b15eb4ebd606a3830ef5d0e3e15fec982e96afe9872e8b907830b73"
+}

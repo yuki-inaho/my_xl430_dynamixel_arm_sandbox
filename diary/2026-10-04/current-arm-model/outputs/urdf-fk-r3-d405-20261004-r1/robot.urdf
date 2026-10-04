@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="current_R3_R5_D405_kinematic">
+  <!--Simulation only. Demo joint limits and inertias are not hardware specifications.-->
+  <mujoco>
+    <compiler angle="radian" meshdir="meshes" strippath="true" discardvisual="false" fusestatic="false" inertiafromgeom="false" />
+    <option gravity="0 0 0" />
+  </mujoco>
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="M01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/M01.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_M01">
+        <color rgba="0.68 0.71 0.73 1" />
+      </material>
+    </visual>
+    <visual name="P01_base">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/P01_base.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_P01_base">
+        <color rgba="0.92 0.93 0.9 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="arm_link_1">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="M02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/M02.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_M02">
+        <color rgba="0.68 0.71 0.73 1" />
+      </material>
+    </visual>
+    <visual name="P02_yaw_carrier">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/P02_yaw_carrier.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_P02_yaw_carrier">
+        <color rgba="0.92 0.93 0.9 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="arm_link_2">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="M03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/M03.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_M03">
+        <color rgba="0.68 0.71 0.73 1" />
+      </material>
+    </visual>
+    <visual name="P03_shoulder_XL430">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/P03_shoulder_XL430.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_P03_shoulder_XL430">
+        <color rgba="0.92 0.93 0.9 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="arm_link_3">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="M04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/M04.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_M04">
+        <color rgba="0.68 0.71 0.73 1" />
+      </material>
+    </visual>
+    <visual name="P04_extension_XL430">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/P04_extension_XL430.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_P04_extension_XL430">
+        <color rgba="0.92 0.93 0.9 1" />
+      </material>
+    </visual>
+  </link>
+  <link name="arm_link_4">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.1" />
+      <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual name="M05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/M05.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_M05">
+        <color rgba="0.68 0.71 0.73 1" />
+      </material>
+    </visual>
+    <visual name="P05_wrist_XL430">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/P05_wrist_XL430.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_P05_wrist_XL430">
+        <color rgba="0.92 0.93 0.9 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE">
+        <color rgba="0.84 0.89 0.9 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_D405_CARRIER">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_D405_CARRIER.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_D405_CARRIER">
+        <color rgba="0.84 0.89 0.9 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE_WASHER_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE_WASHER_0.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE_WASHER_0">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE_TAP_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE_TAP_0.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE_TAP_0">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE_WASHER_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE_WASHER_1.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE_WASHER_1">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE_TAP_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE_TAP_1.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE_TAP_1">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE_WASHER_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE_WASHER_2.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE_WASHER_2">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE_TAP_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE_TAP_2.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE_TAP_2">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE_WASHER_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE_WASHER_3.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE_WASHER_3">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_BASE_TAP_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_BASE_TAP_3.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_BASE_TAP_3">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_TIE_WASHER_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_TIE_WASHER_0.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_TIE_WASHER_0">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_TIE_BOLT_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_TIE_BOLT_0.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_TIE_BOLT_0">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_TIE_NUT_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_TIE_NUT_0.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_TIE_NUT_0">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_TIE_WASHER_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_TIE_WASHER_1.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_TIE_WASHER_1">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_TIE_BOLT_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_TIE_BOLT_1.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_TIE_BOLT_1">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_TIE_NUT_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_TIE_NUT_1.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_TIE_NUT_1">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_D405_SCREW_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_D405_SCREW_0.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_D405_SCREW_0">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_D405_SCREW_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_D405_SCREW_1.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_D405_SCREW_1">
+        <color rgba="0.43 0.48 0.52 1" />
+      </material>
+    </visual>
+    <visual name="r5_65_CAM5_D405_BODY">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r5_65_CAM5_D405_BODY.obj" scale="1 1 1" />
+      </geometry>
+      <material name="material_r5_65_CAM5_D405_BODY">
+        <color rgba="0.23 0.28 0.32 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="cad_j1" type="revolute">
+    <parent link="base_link" />
+    <child link="arm_link_1" />
+    <origin xyz="0 0 0.02" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-0.6981317007977318" upper="0.6981317007977318" effort="1" velocity="0.1" />
+  </joint>
+  <joint name="cad_j2" type="revolute">
+    <parent link="arm_link_1" />
+    <child link="arm_link_2" />
+    <origin xyz="-0.0002 0 0.0363" rpy="0 0 0" />
+    <axis xyz="-1 0 0" />
+    <limit lower="-0.6981317007977318" upper="0.6981317007977318" effort="1" velocity="0.1" />
+  </joint>
+  <joint name="cad_j3" type="revolute">
+    <parent link="arm_link_2" />
+    <child link="arm_link_3" />
+    <origin xyz="0 0.0148 0.1083" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-1.0471975511965976" upper="1.0471975511965976" effort="1" velocity="0.1" />
+  </joint>
+  <joint name="cad_j4" type="revolute">
+    <parent link="arm_link_3" />
+    <child link="arm_link_4" />
+    <origin xyz="0 0.0901 0" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-1.0471975511965976" upper="1.0471975511965976" effort="1" velocity="0.1" />
+  </joint>
+  <link name="tool_link" />
+  <joint name="tool_fixed" type="fixed">
+    <parent link="arm_link_4" />
+    <child link="tool_link" />
+    <origin xyz="0 0.06 0" rpy="0 0 0" />
+  </joint>
+</robot>

@@ -46,13 +46,40 @@ def extract(path: Path, workdir: Path, name: str) -> tuple[dict, list[dict]]:
         raise SystemExit("agent-jsonl-compact not found (see agent-jsonl-compact-reader skill)")
     out = workdir / "extracts"
     subprocess.run([tool, "-i", str(path), "-o", str(out), "--name", name,
-                    "--format-out", "jsonl"], check=True, capture_output=True)
+                    "--format-out", "jsonl", "--channel", "both", "--no-dedup"],
+                   check=True, capture_output=True)
     summary = json.loads((out / f"{name}.summary.json").read_text())
     lines = (out / f"{name}.clean.jsonl").read_text().splitlines()
     events = [json.loads(line) for line in lines if line.strip()]
     if len(events) != summary["kept_events"]:
         raise SystemExit("extractor event count mismatch")
+    records = [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+    validate_user_coverage(records, summary["format"], events)
     return summary, events
+
+
+def user_record_kind(record: dict, fmt: str) -> str | None:
+    payload = record.get("payload", {})
+    if fmt == "codex":
+        if (record.get("type") == "response_item" and payload.get("type") == "message"
+                and payload.get("role") == "user"):
+            return "api_user"
+        if record.get("type") == "event_msg" and payload.get("type") == "user_message":
+            return "user"
+    if fmt == "claude_code" and record.get("type") == "user":
+        content = record.get("message", {}).get("content", [])
+        if isinstance(content, str) or any(block.get("type") == "text" for block in content):
+            return "user"
+    return None
+
+
+def validate_user_coverage(records: list[dict], fmt: str, events: list[dict]) -> dict:
+    expected = Counter(kind for record in records if (kind := user_record_kind(record, fmt)))
+    observed = Counter(e["kind"] for e in events if e["kind"] in ("user", "api_user"))
+    if expected != observed:
+        raise SystemExit(f"user coverage mismatch: source={dict(expected)}, "
+                         f"output={dict(observed)}")
+    return {"expected": dict(expected), "observed": dict(observed), "verified": True}
 
 
 def supplemental(records: list[dict], fmt: str) -> list[dict]:
@@ -104,7 +131,9 @@ def main() -> int:
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
         "source": {"session": str(args.session), "sha256": hashlib.sha256(raw).hexdigest(),
                    "bytes": len(raw), "records": len(records)},
-        "extractor": {"name": "agent-jsonl-compact", "defaults": "faithful (no truncation)"},
+        "extractor": {"name": "agent-jsonl-compact", "defaults": "faithful (no truncation)",
+                      "channel": "both", "deduplicate": False},
+        "user_coverage": validate_user_coverage(records, summary["format"], events),
         "summary": summary, "events": events, "supplemental_events": extra,
         "coverage_notes": [
             "Normalized events come from agent-jsonl-compact with faithful defaults.",

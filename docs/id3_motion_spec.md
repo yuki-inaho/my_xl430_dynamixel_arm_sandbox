@@ -1,5 +1,21 @@
 # ID3 bounded opening: control specification
 
+## Fixed choices added by user decision D9 (2026-10-04)
+
+`arm-id3-open --open-degrees 30` explicitly selects 341 counts (29.970703125°).
+Omitting the option preserves 10° / 114 counts. Other magnitudes are rejected.
+One immutable MovePlan determines the logged plan, dry-run target, actual target and
+packet envelope; no global constant is mutated. Opening and return deadlines are
+6 seconds for 10° and 18 seconds for 30°. Correction retains its 6-second deadline.
+The 1-second early-progress check, PV5/PA1/PWM350, tolerances, correction bound,
+all-five route checks and verified OFF/RAM restoration remain unchanged.
+The goal window extends 15 counts toward the fold and 35 beyond the selected target.
+This supersedes the historical symmetric ±15 envelope row below.
+Only ID3 receives RAM writes; ID2 remains read-only. Observe before/open/return with
+the connected camera. Relative visual confirmation does not establish absolute CAD
+zero angles or approve a whole-arm trajectory. The wrist/hand link moves with the elbow;
+the historical pre-run wording that it "will not swing" must not be relied upon.
+
 Status: revised 2026-10-03 23:17 JST by Claude after two adversarial reviews, for workdoc
 `temp/workdoc_Oct03-2026_id3_open_10deg.md` step 3. Values below are the
 proposal recorded in that workdoc; they are not vendor requirements.
@@ -84,17 +100,44 @@ be driven more than 15 counts past the intended 10 deg. Gains are not changed.
 ## End-state policy and release
 
 1. Success path: hold the target for 2.0 s while supervising, then return to `p1` with the
-   same profile and the same convergence criteria.
+   same profile; require return within 5 counts with the same stable-window criteria.
+   ID3 torque must remain ON for every open/correction/hold/return sample. Loss aborts;
+   it is never automatically re-enabled.
 2. Release (every path after the first write, in `finally`): clear the SDK busy state, write
    Torque Enable=0 (alert-only status accepted), read back `torque_enable`; up to 3 attempts.
 3. Only when torque OFF is confirmed: park Goal Position at the present count (if it lies in
    the window) so a later torque-on by any tool holds still, then restore Goal PWM, Profile
    Velocity and Profile Acceleration to their recorded originals (885/0/0 at last read).
    An older goal is never restored. If torque OFF is not confirmed, nothing else is written.
+   Read each restored RAM register back and record the expected/observed values.
 4. Read all five torque states once more and record them.
 5. Exit codes: 0 converged with torque OFF confirmed; 2 refused or aborted with torque OFF
    confirmed; 130 interrupted with torque OFF confirmed; 3 torque OFF NOT confirmed (stderr
    tells the user to press the supply OUTPUT OFF).
+   Exit 4 reports release/restoration problems even when torque OFF was confirmed;
+   release failure changes an otherwise successful status to aborted. OFF failure (3)
+   and interruption (130) retain priority.
+
+Before any WRITE, read model number, primary ID and Secondary ID (12) from all five
+configured motors. Reject missing/alerted identities or another motor with Secondary ID=3.
+The packet's unicast ID alone cannot prevent RAM writes reaching a Secondary ID alias.
+Do not change EEPROM to repair this condition automatically. See the
+[ROBOTIS Secondary ID specification](https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#secondaryshadow-id12).
+
+CAD-derived direction evidence is recomputed from the fixed R3 manifest/joints content
+hashes in id3_direction.py. Both recorded signs agreeing is insufficient. The READ original
+must exist, match its hash and independently computed summary, and contain one acquisition
+session with explicit simulated=false metadata. All five identities/settings must agree;
+hardware errors or alerts on any motor reject the entire log. Communication-fault frames
+are excluded without filling values; at least 50 complete, torque-OFF frames are required.
+Legacy logs lacking source/session markers remain historical observations but cannot be
+used to authorize a new CAD-derived motion. Acquire a fresh finite hardware READ first.
+
+Schema v2 metadata now optionally carries nullable simulated and acquisition_id fields.
+Missing/null means unknown; it never means hardware. arm-status watch marks its hardware
+acquisition explicitly, and arm-live marks injected acquisition as synthetic. The Rust
+consumer accepts legacy missing fields as None. Regenerate contracts with
+uv run --no-sync python scripts/export_contract.py after model changes.
 
 Rationale: leave the arm folded and torque off as found, without an uncontrolled gravity
 drop, and never report an unconfirmed torque-off as success.

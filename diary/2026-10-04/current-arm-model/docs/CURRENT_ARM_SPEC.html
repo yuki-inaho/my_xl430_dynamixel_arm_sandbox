@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>現行アームの仕様・写真・モデル来歴</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="current-arm-spec.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">現行アームの仕様・写真・モデル来歴</h1>
+</header>
+<h1
+id="現行アームの仕様写真モデル来歴">現行アームの仕様・写真・モデル来歴</h1>
+<p>更新：2026-10-04。対象はユーザーの手元の<strong>全XL430・爪未装着・D405取付済みのアーム</strong>。D405のUSBは未接続とユーザーが報告。外観はR3系に近く、表示には受領済みR3の選択部品を使う。印刷元ファイルの完全一致と、実機エンコーダからCAD角への絶対校正は未確定。</p>
+<h2 id="現物の構成">現物の構成</h2>
+<figure>
+<img src="images/current-arm-20261004/arm-current-user.jpeg"
+alt="ユーザー提供の現在の畳み姿勢。白い印刷リンク、黒いモーターケース、配線ループ。" />
+<figcaption
+aria-hidden="true">ユーザー提供の現在の畳み姿勢。白い印刷リンク、黒いモーターケース、配線ループ。</figcaption>
+</figure>
+<p>上のユーザー写真はホルダー装着前の記録。撮影時刻は確定していない。黒いクッションはあるが、実際に重量を受ける点・支持力・摩擦係数は測定していない。</p>
+<figure>
+<img src="images/current-arm-20261004/d405-mounted-d435.png"
+alt="2026-10-04 18:20:23、外部D435で撮影したD405と長尺ホルダー付きアーム。" />
+<figcaption aria-hidden="true">2026-10-04
+18:20:23、外部D435で撮影したD405と長尺ホルダー付きアーム。</figcaption>
+</figure>
+<p>ユーザーがD405取付済み・USB未接続と報告。外部D435の実RGB画像でも、長尺ホルダーの上のD405本体を確認した。写真だけで装着角や校正値は確定しない。取得条件は1280×720/30fps、D435
+serial922612070196、USB3.2。生RGB-Dの正本は
+<code>~/data/xl430-arm/2026-10-04/realsense-camera-check/capture-20261004-182023-913145/</code>。</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>部分</th>
+<th>現物の状態・推定</th>
+<th>根拠と確度</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>アーム</td>
+<td>XL430×5、台座旋回・肩・肘・手首と末端モーター</td>
+<td>保存した実機READでID1〜5/model1060を確認。リンク外観はR3
+P03/P04/P05に近い。細かな改訂版は未確定</td>
+</tr>
+<tr class="even">
+<td>ID5支持部</td>
+<td>旧P05系の箱状支持部</td>
+<td>現物に配線出口がないというユーザー報告。新しい窓付きV2の装着証拠はない</td>
+</tr>
+<tr class="odd">
+<td>グリッパ</td>
+<td>別置き。PG3旧C7の細い爪が有力</td>
+<td>細い爪・窓・三角補強なしの外観。枠/スライダの微小改訂までは未確定</td>
+</tr>
+<tr class="even">
+<td>カメラ</td>
+<td>D405と長い旧ホルダーを取付済み。D405のUSBは未接続</td>
+<td>ユーザー報告と18:20の外部D435画像。長尺R5系、2026-09-24の65°版が第一候補。似た75°短縮版との区別は未確定</td>
+</tr>
+<tr class="odd">
+<td>給電</td>
+<td>18:38時点は電源接続、全5台Torque OFF</td>
+<td>独立実READで9.0〜9.1V、速度0/error0。電源装置OUTPUTはPCから操作していない。13:06のOFF申告は過去の状態</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="カメラ付きの現行ニュートラル待機姿勢">カメラ付きの現行ニュートラル待機姿勢</h2>
+<p>ユーザーが2026-10-04に指定した基準は、腕を畳み、D405がモーター群の上に安定してある姿勢。
+開始参照count（ID1〜5）は
+<strong>[2102,3473,1147,3398,1951]</strong>。絶対CAD角の0°ではない。
+外部D435から基準RGB-Dと内部/外部カメラパラメータを保存した。</p>
+<figure>
+<img src="images/current-arm-20261004/neutral-final-rgbd.png"
+alt="20姿勢撮影後、新ニュートラルへ戻して全トルクOFFにした実画像。" />
+<figcaption
+aria-hidden="true">20姿勢撮影後、新ニュートラルへ戻して全トルクOFFにした実画像。</figcaption>
+</figure>
+<p>20候補は台座[-30,-15,0,15,30]°×肘の開き[10,15,20,30]°。ID2/4/5は保持。
+各姿勢2.5秒静止、原RGB-Dを個別確認して取得。手首-5°の候補は追従未達停止を記録し、再試行しなかった。
+18:38:02に復帰/全OFF/設定復元、18:38:41の実READは[2112〜2113,3473,1153,3392,1951]、速度0/error0。
+新基準への既定20count復帰誤差以内で、脱力後も安定。台座や支持位置が変われば再確認する。
+生データ正本は
+<code>~/data/xl430-arm/2026-10-04/d405-mounted-rgbd-1827/</code>。
+固定焦点だが低照度ノイズはあり、RGB-D/encoderはhardware同期していない。別時刻と前後READを保存している。</p>
+<p>現行FKモデルは <code>specs/urdf_fk_r3_d405.json</code> と
+<code>outputs/urdf-fk-r3-d405-20261004-r1/</code>。元R3＋長尺R5＋D405名目外形/2ねじ、29mesh/4DoF。
+ビューアの例示角[0,-20,-20,-30]を実機角と扱わない。光学軸の実登録と絶対角校正は未確定。</p>
+<figure>
+<img src="images/current-arm-20261004/arm-earlier.jpeg"
+alt="以前のアーム全体写真。爪とカメラホルダーは未装着。" />
+<figcaption
+aria-hidden="true">以前のアーム全体写真。爪とカメラホルダーは未装着。</figcaption>
+</figure>
+<h2 id="引用リポジトリと版">引用リポジトリと版</h2>
+<p>ユーザーは印刷元について <code>low_cost_robot の all-xl430-arm</code>
+と回答している。これは来歴の手がかりで、Gitブランチと後から受領したR3
+ZIPの内容が同一である証明ではない。</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>資料</th>
+<th>リポジトリ/モデル</th>
+<th>確認した版・識別子</th>
+<th>関係</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>元プロジェクト</td>
+<td><a
+href="https://github.com/AlexanderKoch-Koch/low_cost_robot">AlexanderKoch-Koch/low_cost_robot</a></td>
+<td>upstreamの採用commitは未確定</td>
+<td>yuki-inaho版のfork元。元の混成モーター構成を現物へ読み替えない</td>
+</tr>
+<tr class="even">
+<td>ユーザーのfork</td>
+<td><a
+href="https://github.com/yuki-inaho/low_cost_robot">yuki-inaho/low_cost_robot</a></td>
+<td>ローカルbranch <code>fix/cadre-geometry-review-20260918</code>、HEAD
+<code>f29f33b3b99320b3ad35171ec08897bede459fbb</code></td>
+<td><a
+href="https://github.com/yuki-inaho/low_cost_robot/blob/f29f33b3b99320b3ad35171ec08897bede459fbb/low_cost_robot/dynamixel.py">固定commitの制御実装</a>を公式仕様と照合</td>
+</tr>
+<tr class="odd">
+<td>印刷元の申告branch</td>
+<td>同forkの <code>feature/all-xl430-arm</code></td>
+<td>ローカルref
+<code>ecdc3e6d7424d93718e24388e5ee9654d8e9d348</code>、2026-06-14T13:34:03+09:00</td>
+<td><a
+href="https://github.com/yuki-inaho/low_cost_robot/tree/ecdc3e6d7424d93718e24388e5ee9654d8e9d348">固定commit</a>。Webのbranchページ取得に制約があり、refはローカルgitで確認</td>
+</tr>
+<tr class="even">
+<td>R3受領CAD</td>
+<td><code>XL430_collision_R3_20260919.zip</code> →
+<code>references/arm-r3/arm_XL430_R3.step</code></td>
+<td>ZIP SHA256
+<code>59555ef4011b80ab2d9367a9ab9def62925f6991658a6a256dfdf8911aa734b9</code></td>
+<td>元ブランチとは別の受領設計。今回の表示モデルの形状入力</td>
+</tr>
+<tr class="odd">
+<td>別の旧CAD</td>
+<td><code>low_cost_robot_all_XL430_CAD_20260919.zip</code></td>
+<td>SHA256
+<code>848ea763de613280a87d0988260252e60682d40be1a8c200018e3cbb4e003fe7</code></td>
+<td>54外部重なりを記録した旧静的モデル。R3と同一として扱わない</td>
+</tr>
+<tr class="even">
+<td>この作業repo</td>
+<td><a
+href="https://github.com/yuki-inaho/3d-printed-dynamixel-gripper">yuki-inaho/3d-printed-dynamixel-gripper</a></td>
+<td>記録時branch <code>main</code>、HEAD
+<code>e5b2c277e26a2fb5d42c13963b3cb259cc60edd1</code></td>
+<td>本仕様・FK追加はこのHEADに対する未commitの成果物</td>
+</tr>
+<tr class="odd">
+<td>実機作業repo</td>
+<td><a
+href="https://github.com/yuki-inaho/my_xl430_dynamixel_arm_sandbox">yuki-inaho/my_xl430_dynamixel_arm_sandbox</a></td>
+<td>記録アーカイブcommit
+<code>6a38ff8e2d405e99cfd6e00a9caa800376a05a26</code>、private/main</td>
+<td>スタンバイ/電源OFF/会話/画像記録。ローカルfolder名は
+<code>my_dynamixel_arm_sandbox</code></td>
+</tr>
+</tbody>
+</table>
+<p>R3 STEP
+SHA256：<code>3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb</code>。<a
+href="../references/arm-r3/joints.json">軸資料</a>
+SHA256：<code>988890dd93df387ce22f027c10f9e7f3e4f7ac1841e010f18fd7aec47eebf7a7</code>。<a
+href="../references/arm-r3/README_ja.md">R3説明</a>、<a
+href="../outputs/arm-current-audit-20261003/source-audit.json">来歴調査</a>。</p>
+<h2
+id="モーターid役割保存メタデータ">モーターID・役割・保存メタデータ</h2>
+<p>次表は2026-10-04 10:54:03〜06
+JSTの<strong>保存済みREAD</strong>とユーザーの役割確認による。文書作成で再接続・READ/WRITEはしていない。CADのM番号・J番号、URDF名、バスIDは別の名前空間。</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>実機ID</th>
+<th>役割</th>
+<th style="text-align: right;">モデル番号</th>
+<th style="text-align: right;">firmware</th>
+<th>CAD対応</th>
+<th>FK</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>台座旋回</td>
+<td style="text-align: right;">1060</td>
+<td style="text-align: right;">43</td>
+<td>M01 / J1</td>
+<td><code>cad_j1</code></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>肩</td>
+<td style="text-align: right;">1060</td>
+<td style="text-align: right;">42</td>
+<td>M02 / J2</td>
+<td><code>cad_j2</code></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>肘、畳みから開く動きを観測</td>
+<td style="text-align: right;">1060</td>
+<td style="text-align: right;">42</td>
+<td>M03 / J3</td>
+<td><code>cad_j3</code></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>手首、ID5支持部を傾ける</td>
+<td style="text-align: right;">1060</td>
+<td style="text-align: right;">42</td>
+<td>M04 / J4</td>
+<td><code>cad_j4</code></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>将来のPG3爪開閉</td>
+<td style="text-align: right;">1060</td>
+<td style="text-align: right;">43</td>
+<td>M05 / 出力軸中心</td>
+<td>ケースはID4のリンクに固定。爪なしのため開閉軸を表示しない</td>
+</tr>
+</tbody>
+</table>
+<p>保存値は全5台で Baud Rate=3、Protocol Type=2、Operating Mode=3、Drive
+Mode=0、Homing Offset=0、position register
+limits=0..4095。装置設定の記録で、幾何学的安全範囲ではない。公式仕様ではbaud値3は1
+Mbps、mode3はPosition Control、位置分解能は4096
+count/rev（0.087890625°/count）。<a
+href="https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/">ROBOTIS
+XL430公式仕様</a></p>
+<p>ID3はcount増加で肘が開くことを映像で確認。ID4は下向きの試行でcountを減少させた。全関節のCADゼロcount、軸符号、組立offset、世界前方との整列は絶対校正済みではない。<code>Homing Offset=0</code>
+やcount2048をCADゼロの根拠にしない。</p>
+<h2 id="座標とリンク寸法">座標とリンク寸法</h2>
+<p>R3保存world座標：+Yをモデルの前方、+Zを上向きと定義。+Xは右手系の残りの軸。机・カメラ座標との整列は未測定。中心位置は<strong>保存姿勢のCAD設計値</strong>で、写真の測定値ではない。</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>軸/評価点</th>
+<th>中心 x/y/z（mm）</th>
+<th>回転軸（保存frame）</th>
+<th>親からのURDF origin（m）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J1</td>
+<td>0 / 0 / 20.0</td>
+<td>0 / 0 / +1</td>
+<td>0 / 0 / 0.0200</td>
+</tr>
+<tr class="even">
+<td>J2</td>
+<td>−0.2 / 0 / 56.3</td>
+<td>−1 / 0 / 0</td>
+<td>−0.0002 / 0 / 0.0363</td>
+</tr>
+<tr class="odd">
+<td>J3</td>
+<td>−0.2 / 14.8 / 164.6</td>
+<td>+1 / 0 / 0</td>
+<td>0 / 0.0148 / 0.1083</td>
+</tr>
+<tr class="even">
+<td>J4</td>
+<td>−0.2 / 104.9 / 164.6</td>
+<td>+1 / 0 / 0</td>
+<td>0 / 0.0901 / 0</td>
+</tr>
+<tr class="odd">
+<td>M05軸中心</td>
+<td>−0.2 / 164.9 / 164.6</td>
+<td>0 / +1 / 0</td>
+<td>J4から 0 / 0.0600 / 0、fixed</td>
+</tr>
+</tbody>
+</table>
+<p>J2→J3中心間距離109.3066 mm（前方14.8 mm/上方108.3 mm）、J3→J4は90.1
+mm、J4→M05は60.0
+mm。印刷部品全長や爪先位置と混同しない。取り付け姿勢はSTEP世界配置と保存軸に織り込み済み。別資料の
+<code>zero_rotation_xyz_deg</code> を再適用すると二重回転になる。</p>
+<table>
+<thead>
+<tr class="header">
+<th>印刷部品</th>
+<th>役割</th>
+<th>保存world外接箱 x/y/z（mm、概数）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P03</td>
+<td>肩リンク</td>
+<td>44.0 / 46.5 / 107.05</td>
+</tr>
+<tr class="even">
+<td>P04</td>
+<td>延長リンク</td>
+<td>46.0 / 114.85 / 31.75</td>
+</tr>
+<tr class="odd">
+<td>P05</td>
+<td>ID4→ID5支持リンク</td>
+<td>46.0 / 83.5 / 45.5</td>
+</tr>
+</tbody>
+</table>
+<p>外接箱は保存向きのCAD寸法。穴径・造形誤差・締結成立はこの値だけでは判断できない。現物の全締結箇所の径/長さ/数量は未検査。設計一覧は<a
+href="FASTENER_BOM.md">FASTENER_BOM.md</a>、旧版とV2の差は<a
+href="gripper-assembly-20261003/PHOTO_VERSION.md">組立資料</a>。</p>
+<h2 id="別置きの爪とカメラホルダー">別置きの爪とカメラホルダー</h2>
+<figure>
+<img src="images/current-arm-20261004/gripper-old.jpeg"
+alt="別置きグリッパ。細い旧C7系爪が有力。" />
+<figcaption
+aria-hidden="true">別置きグリッパ。細い旧C7系爪が有力。</figcaption>
+</figure>
+<p>旧C7爪接触板は設計前後長12.1 mm、C9 J28は28.0
+mm・三角リブあり、最新低配置V2は48.0 mm（C9先端+20
+mm）。写真はC7系が有力。<a
+href="gripper-assembly-20261003/MANUAL.md">V2マニュアル</a>を現物C7の完成外観・パッド寸法の証拠には使わない。</p>
+<figure>
+<img src="images/current-arm-20261004/camera-long-old.jpeg"
+alt="D405と長い旧ホルダー。机上の向きを装着時俯角と読み替えない。" />
+<figcaption
+aria-hidden="true">D405と長い旧ホルダー。机上の向きを装着時俯角と読み替えない。</figcaption>
+</figure>
+<p>R5の長い支柱・外側ナット開口に近い。65°長尺版/75°短縮版の確定には印刷ファイルまたは面角・寸法の確認が必要。最新30°低配置版とは区別。R5設計のD405固定は<strong>M3×6
+mm、2本、座金なし</strong>。長さは頭を除く。写真の実板厚/ねじ長を測った値ではない。<a
+href="CAMERA_MOUNT_ID5_D405_R5.md">R5仕様</a>、<a
+href="../temp/photo-version-check_20261003/REPORT_ja.md">写真/CAD照合</a></p>
+<h2 id="スタンバイ電源offの実記録">スタンバイ・電源OFFの実記録</h2>
+<figure>
+<img src="images/current-arm-20261004/standby-actual.jpg"
+alt="13:01頃の実スタンバイ試行。前腕が概ね前方、末端支持部が下向き。" />
+<figcaption
+aria-hidden="true">13:01頃の実スタンバイ試行。前腕が概ね前方、末端支持部が下向き。</figcaption>
+</figure>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>状態</th>
+<th style="text-align: right;">ID1</th>
+<th style="text-align: right;">ID2</th>
+<th style="text-align: right;">ID3</th>
+<th style="text-align: right;">ID4</th>
+<th style="text-align: right;">ID5</th>
+<th>証拠の意味</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>13:01:06 スタンバイREAD</td>
+<td style="text-align: right;">2064</td>
+<td style="text-align: right;">3115</td>
+<td style="text-align: right;">1969</td>
+<td style="text-align: right;">1721</td>
+<td style="text-align: right;">2059</td>
+<td>2/3/4トルクON、1/5OFF。世界角はVLMの概略判断</td>
+</tr>
+<tr class="even">
+<td>13:02:44 元姿勢へ復帰・脱力</td>
+<td style="text-align: right;">2064</td>
+<td style="text-align: right;">3118</td>
+<td style="text-align: right;">1159</td>
+<td style="text-align: right;">2050</td>
+<td style="text-align: right;">2059</td>
+<td>全OFFをREAD照合、RAM復元、通信終了</td>
+</tr>
+<tr class="odd">
+<td>13:03:12〜22 独立READ</td>
+<td style="text-align: right;">span0</td>
+<td style="text-align: right;">span1</td>
+<td style="text-align: right;">span0</td>
+<td style="text-align: right;">span1</td>
+<td style="text-align: right;">span0</td>
+<td>200frames/20Hz、欠測0、全OFF。短時間で大きな移動なし</td>
+</tr>
+<tr class="even">
+<td>13:06 ユーザー電源OFF</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>ユーザー報告。以下は報告後の画像</td>
+</tr>
+</tbody>
+</table>
+<p>count列は過去の観測値で、再実行用goalではない。スタンバイはID1/ID5の当時位置を中立に採用、ID2現在近傍、ID3前腕を前方、ID4末端を概ね30°下向きという意図。厳密な世界角は測定していない。</p>
+<figure>
+<img src="images/current-arm-20261004/power-off-actual.jpg"
+alt="電源OFF報告後の保存画像。畳み姿勢付近を保持。" />
+<figcaption
+aria-hidden="true">電源OFF報告後の保存画像。畳み姿勢付近を保持。</figcaption>
+</figure>
+<p>電源OFF基準は空中スタンバイから元の安定した畳み姿勢へ戻す方針で記録した。クッション上面約5
+mmという申告はあるが、支持荷重経路・将来の静止安定性は未検証。電源OFF後の通信なし。<a
+href="evidence/STANDBY_20261004.md">保存した作業記録</a></p>
+<h2 id="urdffk表示モデル">URDF・FK表示モデル</h2>
+<p>4回転関節＋固定tool
+frame。R3原本は6モーター/7印刷部品/217末端要素。現物構成へ合わせM06/P06/P07を除外し、M01〜M05・P01〜P05の<strong>180末端要素、うち55
+surface-only要素</strong>を10表示meshに保持。solid数だけで数えない。PG3、D405、実ケーブルは含まない。</p>
+<p>実URDFをMuJoCo3.13.0へ直接importし、保存MJCFに照明・非接触の机・tool
+siteを追加。URDFで <code>discardvisual=false</code> /
+<code>fusestatic=false</code> を明示して表示mesh/固定tool
+frameを保持。<a
+href="https://mujoco.readthedocs.io/en/3.13.0/modeling.html#urdf-extensions">公式URDF拡張</a>、<a
+href="https://mujoco.readthedocs.io/en/3.13.0/XMLreference.html#compiler">compiler</a></p>
+<p>tool位置はM05軸中心。<strong>爪先/TCPではない</strong>。向きはtool
+frameの+Y。緑の線は中心から前方45
+mmの表示補助で、線の端を手先座標に用いない。色・机は表示設定で、写真の材質再現ではない。</p>
+<figure>
+<img src="images/current-arm-20261004/cad-standby-side.png"
+alt="FK例の側面。前腕を前方、末端軸を30°下へ向けたデモ。" />
+<figcaption
+aria-hidden="true">FK例の側面。前腕を前方、末端軸を30°下へ向けたデモ。</figcaption>
+</figure>
+<figure>
+<img src="images/current-arm-20261004/cad-standby-iso.png"
+alt="同じ角度の斜め視点。緑の線で末端方向を確認。" />
+<figcaption
+aria-hidden="true">同じ角度の斜め視点。緑の線で末端方向を確認。</figcaption>
+</figure>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>FK例</th>
+<th>J1/J2/J3/J4（°、CADゼロ基準）</th>
+<th>M05中心 x/y/z（mm）</th>
+<th style="text-align: right;">世界ピッチ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CAD保存姿勢</td>
+<td>0 / 0 / 0 / 0</td>
+<td>−0.20 / 164.90 / 164.60</td>
+<td style="text-align: right;">0°</td>
+</tr>
+<tr class="even">
+<td>前方・下向き</td>
+<td>0 / −20 / −20 / −30</td>
+<td>−0.20 / 118.93 / 133.13</td>
+<td style="text-align: right;">−30°</td>
+</tr>
+<tr class="odd">
+<td>旋回を含む</td>
+<td>20 / −10 / 15 / −20</td>
+<td>−47.11 / 128.86 / 208.83</td>
+<td style="text-align: right;">+5°</td>
+</tr>
+</tbody>
+</table>
+<p>これらはデモ例で、実スタンバイcountの変換角ではない。内部m/rad、UIはmm/degree。<code>mj_forward</code>
+で配置し、<code>mj_step</code>
+やactuatorを使わない。補間最大0.5°/frame、目標20Hz。停止で古い目標を消費し、次の明示入力まで移動表示を再開しない。</p>
+<p>元MJCF・独立XML/NumPy
+FK・変換後MuJoCoを5姿勢で比較。最大変換差3.33×10⁻¹⁶、10 compiled
+meshのworld外接箱差2.69×10⁻⁹
+m。meshは原OBJとSHA一致。誤った2°の入力を検出する負例、hash改変/非有限/範囲外拒否も検査。<a
+href="../outputs/urdf-fk-r3-20261004-r2/verification.json">実出力検証</a>、<a
+href="../outputs/urdf-fk-r3-20261004-r2/robot.urdf">URDF</a>、<a
+href="../simulation/urdf_fk/README.md">実行手順</a></p>
+<h2 id="可動域未確定の制約">可動域・未確定の制約</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>範囲/検証</th>
+<th>状態</th>
+<th>適用範囲</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FK UI範囲</td>
+<td>J1±40°、J2±40°、J3±60°、J4±60°</td>
+<td>小さなデモの表示範囲。実機許容範囲ではない</td>
+</tr>
+<tr class="even">
+<td>R3受領時6軸調査</td>
+<td>1314有限姿勢、36干渉、全体PASSではない</td>
+<td>他の5軸を保存角にした単軸188例等を含む。全組合せ/連続経路の証明ではない</td>
+</tr>
+<tr class="odd">
+<td>R3旧条件 <code>q3+q4≥−90°</code></td>
+<td>調査由来の候補条件</td>
+<td>条件だけで全相手の干渉を除外できない。実countへ直接適用しない</td>
+</tr>
+<tr class="even">
+<td>現行bare CAD干渉の再検証</td>
+<td><code>ERROR_INPUT_BOOLEAN_CONTROL</code></td>
+<td>独立Boolean対照失敗が残る。FK成功でPASSへ変更しない</td>
+</tr>
+<tr class="odd">
+<td>新URDF collision</td>
+<td>なし、<code>collision_certified=false</code></td>
+<td>visual meshをcollision meshとして認証していない</td>
+</tr>
+<tr class="even">
+<td>質量/重心/慣性/effort/velocity</td>
+<td>コンパイル用仮値</td>
+<td>重力保持/落下/加速度/トルクの検証には使えない</td>
+</tr>
+<tr class="odd">
+<td>ケーブル/造形誤差/柔軟性</td>
+<td>モデル外</td>
+<td>引張り/巻込み、PLAクリープ、外力/対象物重量は未評価</td>
+</tr>
+<tr class="even">
+<td>絶対校正/実可動域</td>
+<td>未確定</td>
+<td>概略写真姿勢と差分動作確認は絶対角校正の代用ではない</td>
+</tr>
+</tbody>
+</table>
+<p><a
+href="../outputs/arm-current-audit-20261003/r3-evidence/motion_full.json">R3有限調査</a>。FK一致は同じ配置の再現検証で、自己干渉しないことや給電OFFで落ちないことの認証ではない。</p>
+<h2 id="制御コード参照時の注意">制御コード参照時の注意</h2>
+<p>旧fork <code>dynamixel.py@f29f33b</code> はOperating
+Modeの1byte欄へ2byteを書く経路、電圧144/温度146の扱いのずれ、読み取りに見える操作がTorque書込みを伴う経路がある。XL430のPresent
+Loadは電流mAではなく、mode5を対応モードと仮定できない。<a
+href="https://github.com/yuki-inaho/low_cost_robot/blob/f29f33b3b99320b3ad35171ec08897bede459fbb/low_cost_robot/dynamixel.py">固定コード</a>、<a
+href="https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/#control-table-of-ram-area">公式control
+table</a></p>
+<p>FKツールはSDK・シリアル・live
+bridgeをimportせず、制御wrapperを呼ばない。最新ユーザー指定によりIKは今回取り下げている。</p>
+<h2 id="保存と再現">保存と再現</h2>
+<p><a href="../specs/urdf_fk_r3.json">仕様JSON</a>、<a
+href="../simulation/urdf_fk/model.py">変換/独立FK</a>、<a
+href="../simulation/urdf_fk/demo.py">描画</a>、<a
+href="../simulation/urdf_fk/server.py">browser server</a>、<a
+href="../skills/urdf-mujoco-fk/SKILL.md">再利用スキル</a>。</p>
+<p>写真は原本を加工せずコピー。<a
+href="images/current-arm-20261004/MANIFEST.json">画像MANIFEST</a>に原本パス・SHA256・byte数を保存。保存メタデータ/姿勢要約と元記録SHAは<a
+href="evidence/current-arm-20261004.json">証拠JSON</a>。HTMLはこのMarkdownからpandocで生成する。</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rtk</span> proxy env MUJOCO_GL=egl uv run <span class="at">--no-sync</span> python <span class="at">-m</span> simulation.urdf_fk.demo <span class="at">--output</span> outputs/urdf-fk-r3-new-run</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">rtk</span> proxy env MUJOCO_GL=egl uv run <span class="at">--no-sync</span> python <span class="at">-m</span> simulation.urdf_fk.server <span class="at">--output</span> outputs/urdf-fk-r3-20261004-r2 <span class="at">--port</span> 18104</span></code></pre></div>
+<p>生成は新run名を指定。既存出力/referencesを上書きしない。現行状態とモデル候補の仕様を保存したもので、印刷・荷重運用・再通電の指示書ではない。</p>
+</body>
+</html>

@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "decision": "D14: user-defined folded D405-mounted neutral; 20 camera poses",
+  "device": "/dev/serial/by-id/usb-BestTechnology_E148_E148-if00-port0",
+  "reference_counts": [
+    2102,
+    3473,
+    1147,
+    3398,
+    1951
+  ],
+  "reference_report": "reports/status_20261004T182752_071177+0900.json",
+  "neutral_definition": "Folded arm; D405 stable above motor group; user decision, not absolute CAD zero",
+  "capture_camera": "External D435 serial 922612070196; mounted D405 USB disconnected",
+  "profiles": {
+    "velocity": 6,
+    "acceleration": 1,
+    "pwm": 350,
+    "hold_seconds": 2.5
+  },
+  "collision_status": "Photo review required between poses; no full collision certification",
+  "poses": [
+    {
+      "name": "pose_01",
+      "delta_deg": [
+        0,
+        0,
+        10,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pose_02",
+      "delta_deg": [
+        0,
+        0,
+        20,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pose_03",
+      "delta_deg": [
+        0,
+        0,
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pose_04",
+      "delta_deg": [
+        0,
+        0,
+        30,
+        -5,
+        0
+      ]
+    },
+    {
+      "name": "pose_05",
+      "delta_deg": [
+        0,
+        0,
+        30,
+        5,
+        0
+      ]
+    },
+    {
+      "name": "pose_06",
+      "delta_deg": [
+        -15,
+        0,
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pose_07",
+      "delta_deg": [
+        -30,
+        0,
+        30,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pose_08",
+      "delta_deg": [
+        -30,
+        0,
+        30,
+        -5,
+        0
+      ]
+    },
+    {
+      "name": "pose_09",
+      "delta_deg": [
+        -30,
+        0,
+        20,
+        -10,
+        0
+      ]
+    },
+    {
+      "name": "pose_10",
+      "delta_deg": [
+        -15,
+        0,
+        20,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pose_11",
+      "delta_deg": [
+        0,
+        0,
+        20,
+        5,
+        0
+      ]
+    },
+    {
+      "name": "pose_12",
+      "delta_deg": [
+        15,
+        0,
+        20,
+        5,
+        0
+      ]
+    },
+    {
+      "name": "pose_13",
+      "delta_deg": [
+        30,
+        0,
+        20,
+        5,
+        0
+      ]
+    },
+    {
+      "name": "pose_14",
+      "delta_deg": [
+        30,
+        0,
+        20,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pose_15",
+      "delta_deg": [
+        30,
+        0,
+        30,
+        -5,
+        0
+      ]
+    },
+    {
+      "name": "pose_16",
+      "delta_deg": [
+        15,
+        0,
+        30,
+        -10,
+        0
+      ]
+    },
+    {
+      "name": "pose_17",
+      "delta_deg": [
+        0,
+        0,
+        30,
+        -10,
+        0
+      ]
+    },
+    {
+      "name": "pose_18",
+      "delta_deg": [
+        0,
+        0,
+        20,
+        -10,
+        0
+      ]
+    },
+    {
+      "name": "pose_19",
+      "delta_deg": [
+        0,
+        0,
+        10,
+        -5,
+        0
+      ]
+    },
+    {
+      "name": "pose_20",
+      "delta_deg": [
+        0,
+        0,
+        10,
+        5,
+        0
+      ]
+    }
+  ]
+}

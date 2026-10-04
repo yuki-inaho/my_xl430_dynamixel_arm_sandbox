@@ -1,0 +1,4589 @@
+{
+  "schema_version": 1,
+  "accepted_pose_count": 20,
+  "neutral_count": 2,
+  "source_plan": "plan.json",
+  "records": [
+    {
+      "name": "neutral",
+      "metadata": {
+        "captured_at": "2026-10-04T18:27:24.172796+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106043845.5178,
+        "frameset_frame_number": 9563,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8821516927083334
+      },
+      "pose": {
+        "name": "camera_mounted_neutral",
+        "reference_counts": [
+          2102,
+          3473,
+          1147,
+          3398,
+          1951
+        ],
+        "definition": "Folded arm; D405 stable above motor group; user decision, not absolute CAD zero",
+        "camera_capture": "capture-20261004-182723-972962",
+        "robot_read": "status_20261004T182752_071177+0900.json",
+        "synchronized": false,
+        "reason": "Robot READ followed image by about 28 seconds; stable OFF pose, distinct timestamps retained",
+        "mounted_camera": "D405, USB disconnected",
+        "capture_camera": "D435 external"
+      },
+      "relative_directory": "neutral",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_01",
+      "metadata": {
+        "captured_at": "2026-10-04T18:31:38.110816+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106297759.6794,
+        "frameset_frame_number": 17180,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8776226128472222
+      },
+      "pose": {
+        "name": "pose_01",
+        "positions": [
+          2102,
+          3473,
+          1248,
+          3398,
+          1951
+        ],
+        "at": 1791106277.0327265,
+        "delta_deg": [
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2102,
+          3473,
+          1261,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:31:38.110816+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:31:37.818+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2102,
+            3473,
+            1248,
+            3398,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:31:38.137+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2102,
+            3473,
+            1248,
+            3398,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "VLM actual RGB: arm/base in frame, fixed-focus edges visible, holder separated; low-light noise retained"
+      },
+      "relative_directory": "pose_01",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_02",
+      "metadata": {
+        "captured_at": "2026-10-04T18:32:14.075767+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106333627.57,
+        "frameset_frame_number": 18256,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8604340277777778
+      },
+      "pose": {
+        "name": "pose_02",
+        "positions": [
+          2102,
+          3473,
+          1359,
+          3398,
+          1951
+        ],
+        "at": 1791106333.6546142,
+        "delta_deg": [
+          0,
+          0,
+          20,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2102,
+          3473,
+          1375,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:32:14.075767+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:32:13.767+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2102,
+            3473,
+            1359,
+            3398,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:32:14.083+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2102,
+            3473,
+            1359,
+            3398,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_02",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_03",
+      "metadata": {
+        "captured_at": "2026-10-04T18:32:35.090820+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106354662.1858,
+        "frameset_frame_number": 18887,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8610297309027778
+      },
+      "pose": {
+        "name": "pose_03",
+        "positions": [
+          2102,
+          3473,
+          1473,
+          3398,
+          1951
+        ],
+        "at": 1791106354.7175698,
+        "delta_deg": [
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2102,
+          3473,
+          1488,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:32:35.090820+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:32:34.851+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2102,
+            3473,
+            1473,
+            3398,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:32:35.098+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2102,
+            3473,
+            1473,
+            3398,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_03",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_04",
+      "metadata": {
+        "captured_at": "2026-10-04T18:34:17.261607+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106456934.8342,
+        "frameset_frame_number": 21955,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8607161458333333
+      },
+      "pose": {
+        "name": "pose_04",
+        "positions": [
+          2102,
+          3473,
+          1314,
+          3392,
+          1951
+        ],
+        "at": 1791106456.8605144,
+        "delta_deg": [
+          0,
+          0,
+          15,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2102,
+          3473,
+          1318,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:34:17.261607+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:34:17.049+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2102,
+            3473,
+            1314,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:34:17.289+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2102,
+            3473,
+            1314,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_04",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_05",
+      "metadata": {
+        "captured_at": "2026-10-04T18:34:30.453168+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106470135.4353,
+        "frameset_frame_number": 22351,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8795399305555556
+      },
+      "pose": {
+        "name": "pose_05",
+        "positions": [
+          1937,
+          3473,
+          1314,
+          3392,
+          1951
+        ],
+        "at": 1791106470.1147206,
+        "delta_deg": [
+          -15,
+          0,
+          15,
+          0,
+          0
+        ],
+        "goal_counts": [
+          1931,
+          3473,
+          1318,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:34:30.453168+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:34:30.224+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1937,
+            3473,
+            1314,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:34:30.463+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1937,
+            3473,
+            1314,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_05",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_06",
+      "metadata": {
+        "captured_at": "2026-10-04T18:34:42.244859+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106481903.8845,
+        "frameset_frame_number": 22704,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8731076388888889
+      },
+      "pose": {
+        "name": "pose_06",
+        "positions": [
+          1937,
+          3473,
+          1257,
+          3392,
+          1951
+        ],
+        "at": 1791106481.9155178,
+        "delta_deg": [
+          -15,
+          0,
+          10,
+          0,
+          0
+        ],
+        "goal_counts": [
+          1931,
+          3473,
+          1261,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:34:42.244859+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:34:42.036+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1937,
+            3473,
+            1257,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:34:42.280+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1937,
+            3473,
+            1257,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_06",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_07",
+      "metadata": {
+        "captured_at": "2026-10-04T18:34:54.870743+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106494503.5256,
+        "frameset_frame_number": 23082,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8778678385416666
+      },
+      "pose": {
+        "name": "pose_07",
+        "positions": [
+          1766,
+          3473,
+          1257,
+          3392,
+          1951
+        ],
+        "at": 1791106494.4985063,
+        "delta_deg": [
+          -30,
+          0,
+          10,
+          0,
+          0
+        ],
+        "goal_counts": [
+          1761,
+          3473,
+          1261,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:34:54.870743+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:34:54.608+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1766,
+            3473,
+            1257,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:34:54.928+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1766,
+            3473,
+            1257,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_07",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_08",
+      "metadata": {
+        "captured_at": "2026-10-04T18:35:05.870838+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106505504.0386,
+        "frameset_frame_number": 23412,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8838552517361111
+      },
+      "pose": {
+        "name": "pose_08",
+        "positions": [
+          1766,
+          3473,
+          1302,
+          3392,
+          1951
+        ],
+        "at": 1791106505.5326338,
+        "delta_deg": [
+          -30,
+          0,
+          15,
+          0,
+          0
+        ],
+        "goal_counts": [
+          1761,
+          3473,
+          1318,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:35:05.870838+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:35:05.642+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1765,
+            3473,
+            1303,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:35:05.881+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1766,
+            3473,
+            1303,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_08",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_09",
+      "metadata": {
+        "captured_at": "2026-10-04T18:35:15.829202+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106515471.477,
+        "frameset_frame_number": 23711,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8767762586805555
+      },
+      "pose": {
+        "name": "pose_09",
+        "positions": [
+          1766,
+          3473,
+          1360,
+          3392,
+          1951
+        ],
+        "at": 1791106515.5449536,
+        "delta_deg": [
+          -30,
+          0,
+          20,
+          0,
+          0
+        ],
+        "goal_counts": [
+          1761,
+          3473,
+          1375,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:35:15.829202+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:35:15.574+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1766,
+            3473,
+            1360,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:35:15.894+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1766,
+            3473,
+            1360,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_09",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_10",
+      "metadata": {
+        "captured_at": "2026-10-04T18:35:38.469337+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106538172.5935,
+        "frameset_frame_number": 24392,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8794368489583333
+      },
+      "pose": {
+        "name": "pose_10",
+        "positions": [
+          1766,
+          3473,
+          1472,
+          3392,
+          1951
+        ],
+        "at": 1791106538.2207267,
+        "delta_deg": [
+          -30,
+          0,
+          30,
+          0,
+          0
+        ],
+        "goal_counts": [
+          1761,
+          3473,
+          1488,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:35:38.469337+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:35:38.250+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1766,
+            3473,
+            1473,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:35:38.489+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1766,
+            3473,
+            1473,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_10",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_11",
+      "metadata": {
+        "captured_at": "2026-10-04T18:35:50.153948+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106549807.1633,
+        "frameset_frame_number": 24741,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8746321614583333
+      },
+      "pose": {
+        "name": "pose_11",
+        "positions": [
+          1925,
+          3473,
+          1473,
+          3392,
+          1951
+        ],
+        "at": 1791106549.9093785,
+        "delta_deg": [
+          -15,
+          0,
+          30,
+          0,
+          0
+        ],
+        "goal_counts": [
+          1931,
+          3473,
+          1488,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:35:50.153948+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:35:49.938+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1925,
+            3473,
+            1472,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:35:50.178+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1925,
+            3473,
+            1473,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_11",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_12",
+      "metadata": {
+        "captured_at": "2026-10-04T18:36:02.162349+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106561840.792,
+        "frameset_frame_number": 25102,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8773285590277777
+      },
+      "pose": {
+        "name": "pose_12",
+        "positions": [
+          1925,
+          3473,
+          1371,
+          3392,
+          1951
+        ],
+        "at": 1791106561.8223696,
+        "delta_deg": [
+          -15,
+          0,
+          20,
+          0,
+          0
+        ],
+        "goal_counts": [
+          1931,
+          3473,
+          1375,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:36:02.162349+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:36:01.931+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1925,
+            3473,
+            1371,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:36:02.170+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            1925,
+            3473,
+            1371,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_12",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_13",
+      "metadata": {
+        "captured_at": "2026-10-04T18:36:16.163924+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106575908.378,
+        "frameset_frame_number": 25524,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8601953125
+      },
+      "pose": {
+        "name": "pose_13",
+        "positions": [
+          2261,
+          3473,
+          1368,
+          3392,
+          1951
+        ],
+        "at": 1791106575.8104045,
+        "delta_deg": [
+          15,
+          0,
+          20,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2273,
+          3473,
+          1375,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:36:16.163924+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:36:15.921+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2261,
+            3473,
+            1368,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:36:16.159+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2261,
+            3473,
+            1368,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_13",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_14",
+      "metadata": {
+        "captured_at": "2026-10-04T18:36:26.557688+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106586275.2952,
+        "frameset_frame_number": 25835,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.861064453125
+      },
+      "pose": {
+        "name": "pose_14",
+        "positions": [
+          2261,
+          3473,
+          1473,
+          3392,
+          1951
+        ],
+        "at": 1791106586.237528,
+        "delta_deg": [
+          15,
+          0,
+          30,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2273,
+          3473,
+          1488,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:36:26.557688+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:36:26.347+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2261,
+            3473,
+            1473,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:36:26.586+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2261,
+            3473,
+            1473,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_14",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_15",
+      "metadata": {
+        "captured_at": "2026-10-04T18:36:38.017498+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106597742.6133,
+        "frameset_frame_number": 26179,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8601052517361111
+      },
+      "pose": {
+        "name": "pose_15",
+        "positions": [
+          2433,
+          3473,
+          1473,
+          3392,
+          1951
+        ],
+        "at": 1791106597.7682009,
+        "delta_deg": [
+          30,
+          0,
+          30,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2443,
+          3473,
+          1488,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:36:38.017498+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:36:37.796+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2433,
+            3473,
+            1473,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:36:38.036+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2433,
+            3473,
+            1473,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_15",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_16",
+      "metadata": {
+        "captured_at": "2026-10-04T18:36:51.757883+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106611443.3052,
+        "frameset_frame_number": 26590,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8576302083333334
+      },
+      "pose": {
+        "name": "pose_16",
+        "positions": [
+          2433,
+          3473,
+          1371,
+          3392,
+          1951
+        ],
+        "at": 1791106611.532622,
+        "delta_deg": [
+          30,
+          0,
+          20,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2443,
+          3473,
+          1375,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:36:51.757883+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:36:51.482+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2433,
+            3473,
+            1371,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:36:51.801+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2433,
+            3473,
+            1371,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_16",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_17",
+      "metadata": {
+        "captured_at": "2026-10-04T18:37:01.922339+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106621644.181,
+        "frameset_frame_number": 26896,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8587727864583333
+      },
+      "pose": {
+        "name": "pose_17",
+        "positions": [
+          2433,
+          3473,
+          1314,
+          3392,
+          1951
+        ],
+        "at": 1791106621.6240668,
+        "delta_deg": [
+          30,
+          0,
+          15,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2443,
+          3473,
+          1318,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:37:01.922339+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:37:01.733+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2433,
+            3473,
+            1314,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:37:01.972+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2433,
+            3473,
+            1313,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_17",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_18",
+      "metadata": {
+        "captured_at": "2026-10-04T18:37:11.362552+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106631077.788,
+        "frameset_frame_number": 27179,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8601822916666667
+      },
+      "pose": {
+        "name": "pose_18",
+        "positions": [
+          2433,
+          3473,
+          1257,
+          3392,
+          1951
+        ],
+        "at": 1791106631.1575718,
+        "delta_deg": [
+          30,
+          0,
+          10,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2443,
+          3473,
+          1261,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:37:11.362552+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:37:11.107+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2433,
+            3473,
+            1257,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:37:11.346+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2433,
+            3473,
+            1257,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_18",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_19",
+      "metadata": {
+        "captured_at": "2026-10-04T18:37:22.320999+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106642011.7747,
+        "frameset_frame_number": 27507,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8599142795138889
+      },
+      "pose": {
+        "name": "pose_19",
+        "positions": [
+          2284,
+          3473,
+          1257,
+          3392,
+          1951
+        ],
+        "at": 1791106642.0479305,
+        "delta_deg": [
+          15,
+          0,
+          10,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2273,
+          3473,
+          1261,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:37:22.320999+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:37:22.077+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2284,
+            3473,
+            1257,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:37:22.316+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2284,
+            3473,
+            1257,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, visible arm/camera pose, sharp link edges with low-light grain; no visible contact or taut cable"
+      },
+      "relative_directory": "pose_19",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "pose_20",
+      "metadata": {
+        "captured_at": "2026-10-04T18:37:31.942740+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106651478.9446,
+        "frameset_frame_number": 27791,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8575173611111111
+      },
+      "pose": {
+        "name": "pose_20",
+        "positions": [
+          2284,
+          3473,
+          1302,
+          3392,
+          1951
+        ],
+        "at": 1791106651.5810792,
+        "delta_deg": [
+          15,
+          0,
+          15,
+          0,
+          0
+        ],
+        "goal_counts": [
+          2273,
+          3473,
+          1318,
+          3398,
+          1951
+        ],
+        "hold_seconds": 2.5,
+        "active_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "camera_capture": "2026-10-04T18:37:31.942740+09:00",
+        "telemetry_before": {
+          "at": "2026-10-04T18:37:31.690+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2284,
+            3473,
+            1302,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "telemetry_after": {
+          "at": "2026-10-04T18:37:31.945+09:00",
+          "kind": "sample",
+          "stage": "moving",
+          "positions": [
+            2284,
+            3473,
+            1302,
+            3392,
+            1951
+          ],
+          "torque": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true
+          }
+        },
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "Actual RGB reviewed: stable base, whole arm and mounted D405 in frame; no visible contact or taut cable; low-light grain"
+      },
+      "relative_directory": "pose_20",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    },
+    {
+      "name": "neutral-final",
+      "metadata": {
+        "captured_at": "2026-10-04T18:38:38.223220+09:00",
+        "device": {
+          "name": "Intel RealSense D435",
+          "serial": "922612070196",
+          "firmware": "5.17.3.10",
+          "usb_type": "3.2"
+        },
+        "requested_serial": "922612070196",
+        "depth_scale_m_per_count": 0.0010000000474974513,
+        "intrinsics": {
+          "color": {
+            "width": 1280,
+            "height": 720,
+            "fx": 925.4581298828125,
+            "fy": 925.7662963867188,
+            "ppx": 645.314453125,
+            "ppy": 360.0555419921875,
+            "model": "distortion.inverse_brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "depth": {
+            "width": 1280,
+            "height": 720,
+            "fx": 634.2400512695312,
+            "fy": 634.2400512695312,
+            "ppx": 638.5535888671875,
+            "ppy": 361.5152282714844,
+            "model": "distortion.brown_conrady",
+            "coeffs": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "depth_to_color": {
+          "rotation_sdk_column_major": [
+            0.9999555945396423,
+            0.00693002063781023,
+            -0.006390753202140331,
+            -0.0069179171696305275,
+            0.999974250793457,
+            0.0019140492659062147,
+            0.006403853185474873,
+            -0.0018697535851970315,
+            0.9999777674674988
+          ],
+          "translation_m": [
+            0.014853975735604763,
+            0.00012355681974440813,
+            0.0003696228377521038
+          ]
+        },
+        "alignment_target": "color",
+        "color_storage": "BGR encoded by OpenCV to PNG",
+        "frameset_timestamp_ms": 1791106717882.699,
+        "frameset_frame_number": 29783,
+        "per_stream_timestamps": null,
+        "fps": 30,
+        "robot_observation": null,
+        "streams": [
+          {
+            "stream": "stream.depth",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 1,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.infrared",
+            "index": 2,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          },
+          {
+            "stream": "stream.color",
+            "index": 0,
+            "fps": 30,
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "shapes": {
+          "color": [
+            720,
+            1280,
+            3
+          ],
+          "depth": [
+            720,
+            1280
+          ],
+          "aligned_depth": [
+            720,
+            1280
+          ],
+          "ir_left": [
+            720,
+            1280
+          ],
+          "ir_right": [
+            720,
+            1280
+          ]
+        },
+        "depth_dtype": "uint16",
+        "aligned_depth_valid_fraction": 0.8791569010416667
+      },
+      "pose": {
+        "name": "camera_mounted_neutral_final",
+        "positions": [
+          2112,
+          3473,
+          1153,
+          3392,
+          1951
+        ],
+        "reference_counts": [
+          2102,
+          3473,
+          1147,
+          3398,
+          1951
+        ],
+        "all_torque_off": true,
+        "ram_restored": true,
+        "robot_read": "status_20261004T183841_888418+0900.json",
+        "hardware_synchronized": false,
+        "accepted": true,
+        "review": "VLM whole folded arm/D405 stable above motor group; independent three-sample READ all OFF/error0/velocity0"
+      },
+      "relative_directory": "neutral-final",
+      "files": [
+        "color.png",
+        "depth.png",
+        "aligned_depth.png",
+        "ir_left.png",
+        "ir_right.png",
+        "depth_preview.png",
+        "calibration.toml"
+      ]
+    }
+  ],
+  "capture_camera": "D435 external 1280x720 profiles @30fps",
+  "mounted_camera": "D405 USB disconnected",
+  "quality": "Fixed focus; low-light grain. No denoising of source PNG.",
+  "physical_calibration": false,
+  "hardware_synchronized": false
+}

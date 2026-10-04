@@ -204,7 +204,7 @@ FULL = {
     "operating_mode": 3, "drive_mode": 0, "homing_offset": 0, "min_position_limit": 0,
     "max_position_limit": 4095, "goal_pwm": 885, "profile_velocity": 0,
     "profile_acceleration": 0, "torque_enable": 0, "hardware_error_status": 0,
-    "status_return_level": 2,
+    "status_return_level": 2, "secondary_id": 255,
 }
 
 
@@ -785,16 +785,8 @@ def test_summary_json_is_written_next_to_the_log(tmp_path):
 
 
 def cad_record(tmp_path, **changes):
-    sources = {}
-    for name in ("manifest.json", "joints.json"):
-        source = tmp_path / name
-        source.write_text(name)
-        sources[str(source)] = hashlib.sha256(source.read_bytes()).hexdigest()
-    record = {"kind": "cad_derivation", "motor_id": 3, "opening_count_sign": 1,
-              "folded_count": 1153,
-              "folded_read": {"log": "x.jsonl", "sha256": "a" * 64, "frames": 200,
-                              "min": 1153, "max": 1153, "folded_count": 1153},
-              "sources": sources, "derivation": {"opening_count_sign": 1}}
+    from test_id3_direction import direction_record
+    record = direction_record(tmp_path)
     record.update(changes)
     return record
 

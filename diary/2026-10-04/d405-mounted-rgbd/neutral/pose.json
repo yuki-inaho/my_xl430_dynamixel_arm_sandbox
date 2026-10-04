@@ -1,0 +1,17 @@
+{
+  "name": "camera_mounted_neutral",
+  "reference_counts": [
+    2102,
+    3473,
+    1147,
+    3398,
+    1951
+  ],
+  "definition": "Folded arm; D405 stable above motor group; user decision, not absolute CAD zero",
+  "camera_capture": "capture-20261004-182723-972962",
+  "robot_read": "status_20261004T182752_071177+0900.json",
+  "synchronized": false,
+  "reason": "Robot READ followed image by about 28 seconds; stable OFF pose, distinct timestamps retained",
+  "mounted_camera": "D405, USB disconnected",
+  "capture_camera": "D435 external"
+}

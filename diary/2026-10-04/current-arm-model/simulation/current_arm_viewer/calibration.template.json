@@ -1,0 +1,12 @@
+{
+  "physical_order_verified": false,
+  "calibration_verified": false,
+  "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "joints": [
+    {"role": "J1", "motor_id": null, "zero_count": null, "sign": null},
+    {"role": "J2", "motor_id": null, "zero_count": null, "sign": null},
+    {"role": "J3", "motor_id": null, "zero_count": null, "sign": null},
+    {"role": "J4", "motor_id": null, "zero_count": null, "sign": null},
+    {"role": "PG3", "motor_id": null, "zero_count": null, "sign": null, "theta_at_zero_deg": null}
+  ]
+}

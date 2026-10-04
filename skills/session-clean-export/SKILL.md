@@ -16,7 +16,10 @@ a diary record.
 - Codex: `~/.codex/sessions/YYYY/MM/DD/rollout-*-<thread-id>.jsonl`.
 
 The current session keeps growing; the script snapshots complete lines first, so the bundle
-ends a few records before the final reply. Say so when reporting.
+ends a few records before the final reply. Say so when reporting. A forked session file may
+contain only the current branch plus a history pointer. Inspect that pointer and state the
+covered branch/cutoff; do not claim the ancestor conversation was reconstructed unless those
+source files were separately located, exported and checked.
 
 ## Export
 
@@ -25,15 +28,17 @@ python skills/session-clean-export/scripts/bundle_clean_json.py \
   --session <session.jsonl> --output diary/<date>_<agent>_session_<id>_clean.json --name <name>
 ```
 
-The script runs `agent-jsonl-compact` with faithful defaults (no truncation) and bundles
+The script runs `agent-jsonl-compact --channel both --no-dedup` without truncation and bundles
 `summary`, the normalized `events`, and `supplemental_events`:
 
 - Claude Code messages typed while a turn was running are stored only as `queue-operation`
   enqueue records and are not in the normalized events; they become `mid_turn_user_message`.
   Background task notifications use the same queue and become `queued_system_notification`.
 - Codex code-mode `custom_tool_call` / `custom_tool_call_output` records are kept verbatim.
-- For new Codex rollouts whose normalized output is mostly `item_completed`/`reasoning`, run
-  the extractor with `--channel api` (see the reader skill); adjust the script call if needed.
+- Both Codex terminal and API channels are retained; API users are `api_user` events.
+  Repeated user instructions are preserved. The script checks source/output user counts
+  separately for each channel and refuses to export if coverage differs. Claude tool-result
+  records are not mistaken for direct user text; queued user/system messages stay separate.
 
 Secret-looking strings (GitHub/Anthropic/OpenAI/AWS/Slack tokens, bearer tokens) are replaced
 with `[REDACTED:<type>]` and counted in `redactions`; private key material aborts the export.

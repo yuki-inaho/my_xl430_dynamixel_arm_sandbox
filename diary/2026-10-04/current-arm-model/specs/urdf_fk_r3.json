@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "simulation_only": true,
+  "configuration": "R3 bare arm; C7 and camera uninstalled",
+  "source_scene": "outputs/current-arm-mujoco-20261003/scene.xml",
+  "source_provenance": "outputs/current-arm-mujoco-20261003/model-provenance.json",
+  "source_scene_sha256": "8d5d2cde0b15eb4ebd606a3830ef5d0e3e15fec982e96afe9872e8b907830b73",
+  "source_provenance_sha256": "8375e073297aab2bdeb007f25f9ab32c45da52a3115aa056bfdf87ff7d5322bb",
+  "cad_file": "references/arm-r3/arm_XL430_R3.step",
+  "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "joints_file": "references/arm-r3/joints.json",
+  "joints_sha256": "988890dd93df387ce22f027c10f9e7f3e4f7ac1841e010f18fd7aec47eebf7a7",
+  "joint_names": [
+    "cad_j1",
+    "cad_j2",
+    "cad_j3",
+    "cad_j4"
+  ],
+  "body_names": [
+    "arm_link_1",
+    "arm_link_2",
+    "arm_link_3",
+    "arm_link_4"
+  ],
+  "visual_group": 0,
+  "expected_meshes": 10,
+  "expected_occurrences": 180,
+  "expected_sheet_occurrences": 55,
+  "tool_body": "arm_link_4",
+  "tool_offset_m": [
+    0,
+    0.06,
+    0
+  ],
+  "tool_definition": "M05 output-axis center, CAD saved frame; no gripper TCP",
+  "units": {
+    "length": "m",
+    "angle": "rad"
+  },
+  "demo_ranges_deg": [
+    [
+      -40,
+      40
+    ],
+    [
+      -40,
+      40
+    ],
+    [
+      -60,
+      60
+    ],
+    [
+      -60,
+      60
+    ]
+  ],
+  "range_status": "demonstration search box, not verified physical limits",
+  "seed_deg": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "validation": {
+    "fk_tolerance_m": 1e-9,
+    "geometry_tolerance_m": 2e-7,
+    "poses_deg": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        -20,
+        25,
+        -30
+      ],
+      [
+        -25,
+        15,
+        -35,
+        40
+      ],
+      [
+        40,
+        40,
+        60,
+        60
+      ],
+      [
+        -40,
+        -40,
+        -60,
+        -60
+      ]
+    ],
+    "negative_joint_offset_deg": 2
+  },
+  "hardware_targets": null,
+  "collision_certified": false,
+  "dynamic_values_are_placeholders": true,
+  "poses": [
+    {
+      "name": "cad_zero",
+      "label": "CAD保存姿勢",
+      "angles_deg": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "standby_example",
+      "label": "前方・下向きの例",
+      "angles_deg": [
+        0,
+        -20,
+        -20,
+        -30
+      ]
+    },
+    {
+      "name": "yaw_example",
+      "label": "旋回を含む例",
+      "angles_deg": [
+        20,
+        -10,
+        15,
+        -20
+      ]
+    }
+  ],
+  "display": {
+    "fps": 20,
+    "max_frame_step_deg": 0.5
+  },
+  "task_change": "2026-10-04 13:56 JST: user requested FK only, IK cancelled for now."
+}
