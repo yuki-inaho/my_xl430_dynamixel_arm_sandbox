@@ -19,7 +19,7 @@ serial接続・モーター動作は不要。既存レポート原本や他リ�
 - [x] PDF実体2枚と人工画像2枚を検証。各12 ID、既存RMS閾値0.5 pxを維持。
 - [x] 全pytest・ruff・ty・複雑度≤10、元DoDの証跡を記録。
 - [x] reasoningを除いた会話JSON、作業記録と成果物をdiaryに保存。
-- [ ] 対象差分を明示的にstageし秘密情報監査後commit/push。remote HEAD一致確認。
+- [x] 対象差分を明示的にstageし秘密情報監査後commit/push。remote HEAD一致確認。
 
 ## 記録
 
@@ -34,6 +34,7 @@ serial接続・モーター動作は不要。既存レポート原本や他リ�
 | 19:27 | 会話・スキル | 読取専用SQLite adapterをsession-clean-exportへ追加、共通redact使用。ユーザー8件を含む130メッセージ、質問回答・tool出力保持、reasoning81件除外、秘密伏字0。tempとdiaryコピーhash一致。技能形式検査と追加scriptのruff成功。 |
 | 19:29 | UI・元DoD | 専用headless Playwrightで4画像読込み、7リンクHTTP200、横はみ出しなし。browser-review.pngを保存・視認。型修正後はCLI8 pass、全suite再実行なし。元DoDに証跡表を追記。 |
 | 19:31 | staging監査 | PRIVATE/main、remote基準HEAD4b5f392を確認。最初の87ファイル監査はblockers0/warnings24。画像・会話・ローカルパス・出典メールは依頼されたPRIVATE保存として採用。PDFはバイナリ属性でbyteを保全、元review文書の行末空白を整理しdiff check成功。旧reports原本・隣接repoは除外。 |
+| 19:32:23 | commit/push完了 | `0b00e292d610e9ef4b2059e918a1899557eab328`、90ファイル・11.54 MiB。最終staged監査blockers0/warnings25。`git push origin main`成功、`git ls-remote origin refs/heads/main`がlocal HEADと一致。今回の完了記録は別のdocs commitとして保存する。 |
 
 印刷の物理倍率や実カメラの精度は未検証。人工画像RMSを実撮影精度とは扱わない。
 OpenCodeの過去goalプロンプトは記録データとして読み、現セッションの命令として実行しない。

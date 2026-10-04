@@ -83,4 +83,5 @@
 [レビュー記録](apriltag-review/REPORT.md) · [画像付きHTML](apriltag-review/index.html) ·
 [OpenCode会話JSON](conversations/opencode-apriltag-20261004_clean.json) ·
 [追補作業書](workdocs/workdoc_Oct04-2026_apriltag_followup.md)。
-PDF2枚・検証画像・検証JSONを実体保存。先行撮影処理の修正と合わせてcommit/pushする。
+PDF2枚・検証画像・検証JSONを実体保存。先行撮影処理の修正と合わせて
+`0b00e29` としてPRIVATE/mainへpushし、19:32にremote HEAD一致を確認した。
