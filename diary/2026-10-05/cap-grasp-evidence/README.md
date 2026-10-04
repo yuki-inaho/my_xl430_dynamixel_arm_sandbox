@@ -14,3 +14,5 @@
 物理支持は未確認。支えた実状態をユーザーが確認した後、fresh identity/alias/profile/goalを照合してD19用の `scripts/cap_supported_release.py` へ進みます。通常photo CLIは今回のjaw310/ID2窓に適合しません。D19入口は既存release算法を再利用し、全OFFまでpark/設定復元を拒否します。`--support-confirmed --execute` は現物の重さを支えた実状態の確認後だけ指定します。READ-only watcherの現在の実所有者を確認し、その所有者だけ終了してserialを明け、最後の `return-output395-once/events.jsonl` を `--resume-log` に使います。絶対ゼロ点・物理ID対応・全可動域衝突の認定は未完了です。
 
 [03:00の現物再確認](continuation-audit-0259/RECOVERY_BLOCKER_AUDIT.json)と二眼RGB-Dを追加しました。これは保持状態の撮影で、キャップ把持の証拠ではありません。
+
+[現在の停止監査](CURRENT_BLOCKER_AUDIT.md)に3goalターン継続の条件、全DoDの未達と再開手順を記録しています。[03:25の二眼再確認](final-blocker-audit-0324/captures.json)でもcapは箱上です。HTMLは合計80画像、途中の23停止/終了記録を保全。最新の会話snapshotと復元情報は [CONVERSATION_EXPORT](../CONVERSATION_EXPORT.md) を参照してください。

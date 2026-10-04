@@ -1,11 +1,11 @@
 {
-  "source": "continuation-audit-0259/watch-frame-0308.json",
+  "source": "final-blocker-audit-0324/holding-watch-031726.jsonl",
   "frame": {
-    "sequence": 1736,
-    "started_at": "2026-10-05T03:09:41.232+09:00",
-    "finished_at": "2026-10-05T03:09:41.266+09:00",
-    "monotonic_ns": 130545413647458,
-    "duration_ms": 34.206689,
+    "sequence": 1770,
+    "started_at": "2026-10-05T03:32:27.767+09:00",
+    "finished_at": "2026-10-05T03:32:27.800+09:00",
+    "monotonic_ns": 131911948343216,
+    "duration_ms": 33.492918,
     "requested_rate_hz": 2.0,
     "deadline_missed": false,
     "read_mode": "sync",
@@ -22,7 +22,7 @@
         "temperature_c": 38,
         "moving": false,
         "moving_status": 1,
-        "tick_ms": 10382,
+        "tick_ms": 470,
         "device_alert": false,
         "faults": []
       },
@@ -38,7 +38,7 @@
         "temperature_c": 48,
         "moving": false,
         "moving_status": 49,
-        "tick_ms": 10196,
+        "tick_ms": 284,
         "device_alert": false,
         "faults": []
       },
@@ -54,7 +54,7 @@
         "temperature_c": 44,
         "moving": false,
         "moving_status": 1,
-        "tick_ms": 10157,
+        "tick_ms": 242,
         "device_alert": false,
         "faults": []
       },
@@ -70,7 +70,7 @@
         "temperature_c": 46,
         "moving": false,
         "moving_status": 1,
-        "tick_ms": 10183,
+        "tick_ms": 270,
         "device_alert": false,
         "faults": []
       },
@@ -86,7 +86,7 @@
         "temperature_c": 37,
         "moving": false,
         "moving_status": 1,
-        "tick_ms": 10410,
+        "tick_ms": 502,
         "device_alert": false,
         "faults": []
       }
@@ -97,5 +97,9 @@
   "torque_off": false,
   "supply_off": false,
   "support_verified": false,
-  "awaiting_physical_support": true
+  "awaiting_physical_support": true,
+  "blocked_audit_consecutive_goal_turns": 3,
+  "supported_release_readonly_preflight_verified": true,
+  "read_only_watch_ended": true,
+  "port_closed": true
 }
