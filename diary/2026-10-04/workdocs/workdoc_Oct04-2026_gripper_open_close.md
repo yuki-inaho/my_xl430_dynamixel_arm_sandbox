@@ -107,7 +107,7 @@ abs(load)>300（初回200）、temperature>=55℃、voltage<80/>140（0.1V単位
 - [x] 🖐 **操作**: スキルを更新し、作業書・日誌・clean.json archiveを日付ディレクトリへ保存する。
 - [x] 🔎 **確認**: manifestとpublish auditを更新し、関連ファイルだけをstageする。
 - [x] 🧪 **テスト**: diff --checkを実行し、保存証拠と秘密情報監査の実結果を記録する。
-- [ ] 🛠 **エラー時対処**: blockerなしでcommit/push、remote一致確認。競合はforceせず記録する。
+- [x] 🛠 **エラー時対処**: blockerなしでcommit/push、remote一致確認。競合はforceせず記録する。
 
 ## 4. 使用コマンド
 
@@ -126,7 +126,7 @@ rtk proxy git push origin main
 - [x] TR-1/2: fresh全台identity/alias/設定とID5だけのWRITE記録、最小境界テスト成功。
 - [x] TR-3: 実際に開・閉へ動き、二眼のclosed/small-open/open/reclosedの証拠実体を保存。
 - [x] TR-2/3: ID5 OFFとRAM復元、ID1〜4不変をfinal READで確認。
-- [ ] TR-4: レビュー済みHTML・仕様・スキル・会話archive・日誌を保存しcommit/push一致確認。
+- [x] TR-4: レビュー済みHTML・仕様・スキル・会話archive・日誌を保存しcommit/push一致確認。
 
 ## 7. 作業記録
 
@@ -215,6 +215,18 @@ PRIVATE/mainと元remote HEAD2b3185bの一致、最大staged25MB、監査blocker
 手順7テスト完了：全staged diff --checkは元vendor/results/STEPの空白によりexit2。
 原本を変えず、保守対象835pathsはPASS。最終audit block0、clean復元SHA一致、画像/params保存済み。
 この区別はREVIEWにも記録し、全diff PASSとはしていない。
+2026-10-04 23:56:37以降：手順7対処完了。860cafedb4b2ec3c2726ea194a49e6801ec64a30を
+PRIVATE mainへ通常push、git ls-remoteとlocal HEAD同値。競合なし、force未使用。
+実機全OFFのまま、camera owner18108/18109は終了・port closure確認。
+DoD TR-4完了：全関連成果物のcommit/pushとremote一致を確認。本完了記録も次の小commitへ保存する。
+
+## 9. 完了分析
+
+本作業の実際の開閉と二眼状態撮影、ID5限定WRITE、最終OFF/RAM復元、日誌/技能/仕様と
+PRIVATE保存まで完了。40°goal、初期2067への厳密復帰、全機械可動域、把持力・絶対位相、
+holder65/75°同定は未達/未検証のまま。未達を試行結果へ残し、DoDの開閉画像とは区別した。
+新視点は旧ROI/seedに対応させず、消灯後のcrop/ノイズも保全。camera停止failureの修正は
+camera-onlyで1回確認し、motorを動かして再検証していない。新しいユーザー回答待ちはない。
 
 ## 8. 設計判断・レビュー
 
