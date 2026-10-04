@@ -1,0 +1,32 @@
+{
+  "verified": true,
+  "anchor_sha256": "cb1e263034dc5d5bb553b601c1cb87e6e55958b6b648dcf4c59a0d12b979f11a",
+  "checks": "source/hash/session/100frames/5seconds/allOFF/allspan0/targetsNULL/executeFALSE",
+  "motors": [
+    {
+      "id": 1,
+      "count": 2062,
+      "span": 0
+    },
+    {
+      "id": 2,
+      "count": 3354,
+      "span": 0
+    },
+    {
+      "id": 3,
+      "count": 1154,
+      "span": 0
+    },
+    {
+      "id": 4,
+      "count": 2058,
+      "span": 0
+    },
+    {
+      "id": 5,
+      "count": 2059,
+      "span": 0
+    }
+  ]
+}

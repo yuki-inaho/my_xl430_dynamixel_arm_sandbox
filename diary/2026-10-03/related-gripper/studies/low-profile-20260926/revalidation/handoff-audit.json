@@ -1,0 +1,152 @@
+{
+  "scope": "Audit of the handoff evidence; not a live Onshape session or a new Pixi/OCCT8 run",
+  "checked_at": "2026-09-26T11:33:15Z",
+  "source_commit": "bba1f4e0762b35f84ebe8d3cfaaf41180e453831",
+  "D6": {
+    "status": "PASS_ARCHIVED_EVIDENCE",
+    "ui_logs": 35,
+    "archived_direct_calls": 0,
+    "archived_counter_start": 526,
+    "archived_counter_end": 526,
+    "api_exceptions": [],
+    "source_scan_hits": [],
+    "this_session_onshape_api_calls": 0,
+    "this_session_onshape_ui_actions": 0,
+    "live_counter_checked": false,
+    "annual_remaining_calls": "UNKNOWN",
+    "counter_source": "API-USAGE.md and reports/final-quality.json; no live counter file in ZIP",
+    "limits_reference": "https://onshape-public.github.io/docs/auth/limits/",
+    "limits_checked_online": true,
+    "visual_review": {
+      "onshape-v2-repaired.png": "LOADING_ONLY_NOT_FINAL_EVIDENCE",
+      "onshape-v2-final-ready.png": "Rendered V2, 12 instances, 13 mates; archived image, not current session"
+    }
+  },
+  "D7": {
+    "status": "PASS_ARCHIVED_EVIDENCE",
+    "converter_commit": "1b2cea31c56b875bf98c1d65084781322f5fc835",
+    "remote_commit_checked_via_github_connector": true,
+    "lock_url": "https://raw.githubusercontent.com/yuki-inaho/urdf_from_step/1b2cea31c56b875bf98c1d65084781322f5fc835/pixi.lock",
+    "remote_lock_read_via_github_connector": true,
+    "official_release_url": "https://github.com/Open-Cascade-SAS/OCCT/releases/tag/V8.0.1",
+    "official_latest_checked_online": "V8.0.1",
+    "occt_commit": "b8f597c677811d1f9f4d8a97f5ae2825c0353a42",
+    "archived_runtime": {
+      "converter": "0.2.0",
+      "pythonocc": "8.0.1",
+      "python": "3.12.14",
+      "occt": "8.0.1",
+      "occt_build": "all_hbfeb9d6_201",
+      "loaded_kernel": [
+        "temp/intake_d405_20260926/converter/.pixi/envs/default/lib/libTKernel.so.8.0.1"
+      ]
+    },
+    "archived_small_step_tests": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "archived_converter_plus_fk_tests": {
+      "tests": 17,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "archived_cad_tests": {
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "this_session_pixi_install": "NOT_RUN_PIXI_UNAVAILABLE",
+    "this_session_occt8_conversion": "NOT_RUN",
+    "wheel_artifact_bundled": false,
+    "external_source_download": "git clone failed: DNS resolution unavailable; connector read works",
+    "original_R5_input_in_zip": false
+  },
+  "evidence": [
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/API-USAGE.md",
+      "sha256": "9a89129fa637a6d239915695125a40d6a3d6dbe26bf338b5ae6fc4d6b54ace8e",
+      "bytes": 14709
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/CONVERTER.md",
+      "sha256": "fcefb26740c53f08d806f18009ee0e962f22f62afaf2831a50b74517daf496c1",
+      "bytes": 7812
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/reports/final-quality.json",
+      "sha256": "b83143396bb69d4c953e3db13581e1fe2d05d3598f1a50a62b1955d7911496ab",
+      "bytes": 1825
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/reports/converter-runtime.json",
+      "sha256": "7cafe608d0640c26d7d036b7ebb496be91cd09df1cb9cfe0d3f4e475e0b132e1",
+      "bytes": 276
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/reports/converter-build.log",
+      "sha256": "9c5b31a5670aac93844b49f019a96fc280e8dff0c37f2df76a8c90f8aeaf5d4f",
+      "bytes": 181
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/reports/converter-wheel-intake.json",
+      "sha256": "d7c79e04fdcd749e1872c51e829c87ae53f53b8ddd082c529e741ccb696515f9",
+      "bytes": 213143
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/reports/converter-tests.xml",
+      "sha256": "6d1ea781329cf46b45cfbb82990562d8e729b335c3dd4381b6e3aaf0d5abd169",
+      "bytes": 1721
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/reports/final-converter-tests.xml",
+      "sha256": "07ebfd17552d268cb2ca3d65b6e6749cf6e60e4653b3c8ba03b7178e32998165",
+      "bytes": 2901
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/reports/final-cad-tests.xml",
+      "sha256": "82277b9115dfb63423e7d09655306d4d60e7fd91ce28b08e2e5fbd86b8ed331f",
+      "bytes": 2688
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/reports/converter-v2-convert.log",
+      "sha256": "e6ab06f3be3e79febe6a0514d95234c6275dcad5c9c2eaedd8de8f73a3a8fa79",
+      "bytes": 729
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/CAD/final-version.step",
+      "sha256": "9f58c947753e9229b30939da23ce4c87c1cc85eeb39372518de4ffb98991b93f",
+      "bytes": 10592665
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/robot/model/robot.urdf",
+      "sha256": "ed3031ef6d79f53a2b09110997f06aacaff781d705c3142c770ad196807c4ab2",
+      "bytes": 11389
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/robot/model/conversion.json",
+      "sha256": "70f01463e6ffcb8848156e0ecca6b853935419df6ecac4f5d135dc32390d2216",
+      "bytes": 227155
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/robot/validation.json",
+      "sha256": "3229c6f521f6b6fad910eb9dfa7739c7a1fc33625b31c6505b0dad5089ba35c6",
+      "bytes": 21237
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/robot/converter-config.json",
+      "sha256": "76cdecbfc3eb5a52302689e0dae9413267c2af7e63d308d18bad3ea291c811e1",
+      "bytes": 18808
+    },
+    {
+      "path": "studies/low-profile-20260926/outputs/low-profile-250g/images/onshape-v2-final-ready.png",
+      "sha256": "3051ec0410a98abe2f09dbbc694db02004e573080016dcbc87e93d0cb26eb795",
+      "bytes": 276109
+    }
+  ],
+  "physical_fabrication_approved": false,
+  "followup": "Revalidate the actual model with strengthened controls; retain historical audit separately."
+}

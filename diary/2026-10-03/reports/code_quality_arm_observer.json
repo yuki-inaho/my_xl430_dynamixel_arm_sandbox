@@ -1,0 +1,926 @@
+{
+  "maximum_allowed_complexity": 10,
+  "maximum_observed_complexity": 10,
+  "complexity": [
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "validate_header",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "validate_unicast",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "validate_sync",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "validate_packet",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "port_owners",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "open_bus",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "fault_message",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "read_registers",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "ReadOnlyViolation",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "ReadOnlyPort",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "writePort",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "writePort",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "build_parser",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "print_ports",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "run_scan",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "run_metadata",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "run_status",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "run_watch",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "dispatch",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "main",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "SnapshotCapture",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "emit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "emit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "WatchSink",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "emit",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "emit",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "symbol": "validate_ids",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "symbol": "validate_config",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "symbol": "load_config",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "symbol": "validate_polling",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "symbol": "schema_for",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "symbol": "dataclass_schema",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "symbol": "refine_integer_ranges",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "symbol": "stream_schema",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "configuration_findings",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "telemetry_findings",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "position_findings",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "unique_findings",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "inspect_findings",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "frame_lines",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "BusConfig",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "JointRole",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "ArmConfig",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "role",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "role",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "Fault",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "Identity",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "RegisterValue",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "RegisterBatch",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "value",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "value",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "MotorMetadata",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "value",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "value",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "MotorTelemetry",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "complete",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "voltage_v",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "velocity_rpm",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "estimated_load_percent",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "complete",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "voltage_v",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "velocity_rpm",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "estimated_load_percent",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "TelemetryFrame",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "MetadataEvent",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "FrameEvent",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "StreamSummary",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "EndEvent",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "Finding",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "InspectionReport",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/numerics.py",
+      "symbol": "joint_positions_radians",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/numerics.py",
+      "symbol": "velocities_radians_per_second",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "read_metadata",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "read_motor_metadata",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "discover",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "read_frame",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "observe",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "within_limit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "PollOptions",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "__post_init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "__post_init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "Cadence",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "wait",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "advance",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "wait",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "advance",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "Counters",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "add",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "summary",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "add",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "summary",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "encode",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "report_stem",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "render_markdown",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "save_report",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "ReportPaths",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "JsonlSink",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "emit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "emit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "timestamp",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "decode_block",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "optional_bool",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "decode_telemetry",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "Reader",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "identity",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "registers",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "telemetry",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "identity",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "registers",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "telemetry",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "ReadReply",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "Receipt",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "Block",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "ReceiptPacket",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "getProtocolVersion",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "syncReadTx",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "readRx",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "getProtocolVersion",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "syncReadTx",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "readRx",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "SyncGroup",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "SdkReader",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "identity",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "registers",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "_prepare_groups",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "_sync_block",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "telemetry",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "identity",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "registers",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "_prepare_groups",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "_sync_block",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "telemetry",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "Register",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "decode",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "memory",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "decode",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "memory",
+      "complexity": 2,
+      "rank": "A"
+    }
+  ],
+  "maintainability": [
+    {
+      "file": "src/arm_observer/__init__.py",
+      "maintainability_index": 100.0
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "maintainability_index": 31.11926641616351
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "maintainability_index": 28.705504210196917
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "maintainability_index": 46.22245108069279
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "maintainability_index": 41.357668073082024
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "maintainability_index": 43.110193746063146
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "maintainability_index": 27.697182144122426
+    },
+    {
+      "file": "src/arm_observer/numerics.py",
+      "maintainability_index": 57.6541879884168
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "maintainability_index": 26.68215248974786
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "maintainability_index": 45.52858098319186
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "maintainability_index": 33.696654483934964
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "maintainability_index": 52.69570329664935
+    }
+  ]
+}

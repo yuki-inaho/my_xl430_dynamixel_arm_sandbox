@@ -1,0 +1,28 @@
+{
+  "revision": "R3",
+  "scope": "CAD self-interference on modelled bodies, nominal geometry only",
+  "static_passed": true,
+  "static_external_interference_count": 0,
+  "supplier_internal_overlaps_separate": 168,
+  "single_axis_pose_count": 188,
+  "single_axis_failed_count": 0,
+  "all_pose_count": 1314,
+  "all_pose_failed_count": 36,
+  "combined_pose_count": 1125,
+  "combined_passed_count": 1089,
+  "fold_rule": "q3+q4 >= -90 deg; screening only, actual CAD calculation still required",
+  "fold_rule_filtered_grid_count": 1080,
+  "fold_rule_filtered_grid_failed_count": 0,
+  "continuous_motion_certified": false,
+  "full_motor_range_or_all_combinations_accepted": false,
+  "manufacturing_approved": false,
+  "part_geometry_checks_passed": true,
+  "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "limitations": [
+    "Only supplied geometry: additional attachment fasteners, cables, fixtures and environment are not checked",
+    "Tangent contact is not volumetric interference; no clearance/tolerance warranty",
+    "Finite pose checks do not prove continuous paths",
+    "No strength, torque or physical fit acceptance",
+    "Each supplied motor reference is a rigid case-level collision group; internal gears/horn motion is not independently simulated"
+  ]
+}

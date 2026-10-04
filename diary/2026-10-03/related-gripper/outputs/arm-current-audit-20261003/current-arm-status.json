@@ -1,0 +1,32 @@
+{
+  "audit_date": "2026-10-03",
+  "configuration": {
+    "arm": "R3-like, visually inferred",
+    "jaws": "C7-like, user-relayed independent photo comparison",
+    "camera_holder": "long D405 R5-like; 65deg versus compact75 unresolved",
+    "combined_gripper_camera_arm_assembly_observed": false,
+    "design_motor_count": 5,
+    "independent_wrist_roll_required": false,
+    "design_id5_role": "PG3 gripper drive"
+  },
+  "physical_id_mapping_verified": false,
+  "cad_zero_encoder_counts": null,
+  "physical_rotation_signs": null,
+  "physical_collision_free_joint_limits_deg": null,
+  "physical_collision_free_count_limits": null,
+  "continuous_path_verified": false,
+  "profile_velocity_values": null,
+  "profile_acceleration_values": null,
+  "watchdog_setting": null,
+  "nominal_cad_check_status": "ERROR_INPUT_BOOLEAN_CONTROL",
+  "legacy_range_evidence_status": "HISTORICAL_FINITE_SAMPLES_NOT_PHYSICAL_LIMITS",
+  "legacy_proxy_replay_status": "COLLISION_REPRODUCED_MODEL_DOES_NOT_MATCH_CURRENT_ARM",
+  "legacy_controller_status": "CONFIRMED_DEFECTS_OFFLINE_NO_SOURCE_MODIFICATION",
+  "hardware_access_performed": false,
+  "release": {
+    "fabrication": false,
+    "hardware_write": false,
+    "energize": false,
+    "operate": false
+  }
+}

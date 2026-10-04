@@ -1,0 +1,109 @@
+{
+  "purpose": "Offline R6 source-change regression. No hardware accessed.",
+  "before": {
+    "badge": "試験入力 · 校正済み",
+    "can_render": true,
+    "simulated": true,
+    "render_fps": 20,
+    "frame_width": 1060
+  },
+  "after": {
+    "badge": "実機姿勢 · 更新保留",
+    "live": "READ live・未校正 · 40 ms前",
+    "frameWidth": 1060,
+    "state": {
+      "angles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "theta": 90,
+      "variant": "r5_65",
+      "gripper": true,
+      "camera": true,
+      "animate": false,
+      "azimuth": 225,
+      "elevation": -25,
+      "distance": 0.64,
+      "focus": "arm",
+      "source": "telemetry",
+      "frame_seq": 2345,
+      "render_fps": 19.9,
+      "frame_time": 1791078194.1435044,
+      "error": "実機データが欠測・未校正です。描画は最後の姿勢を保持しています。",
+      "telemetry": {
+        "configured": true,
+        "status": "READ live・未校正",
+        "motors": [
+          {
+            "motor_id": 1,
+            "position_counts": 1000,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 2,
+            "position_counts": 1000,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 3,
+            "position_counts": 1000,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 4,
+            "position_counts": 1000,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 5,
+            "position_counts": 1000,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "device_alert": false,
+            "faults": []
+          }
+        ],
+        "fresh": true,
+        "can_render": false,
+        "session_id": "delivery-review-synthetic",
+        "state": "running",
+        "port_closed": false,
+        "summary": null,
+        "calibration_invalid": false,
+        "simulated": false,
+        "sequence": 2250,
+        "age_seconds": 0.038114070892333984
+      },
+      "live_available": true,
+      "direction_observation": {
+        "before": null,
+        "result": null,
+        "saved_path": null
+      },
+      "calibration": {
+        "verified": false,
+        "status": "Calibration source differs from the connected READ source",
+        "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+        "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/robot-source-review-20261004/calibration-test/calibration_20261004T104233342563.json"
+      },
+      "gap_mm": 15.99,
+      "mujoco_version": "3.13.0",
+      "model_geoms": 65
+    }
+  }
+}
+

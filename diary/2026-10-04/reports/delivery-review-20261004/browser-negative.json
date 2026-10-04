@@ -1,0 +1,261 @@
+{
+  "metadataChanged": {
+    "angles": [
+      11.25,
+      5.625,
+      0,
+      0
+    ],
+    "theta": 101.25,
+    "variant": "compact_75",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 225,
+    "elevation": -20,
+    "distance": 0.23,
+    "focus": "gripper",
+    "source": "telemetry",
+    "frame_seq": 7656,
+    "render_fps": 19.9,
+    "frame_time": 1791072809.7602534,
+    "error": "実機データが欠測・未校正です。描画は最後の姿勢を保持しています。",
+    "telemetry": {
+      "configured": true,
+      "status": "校正条件が変わりました。ID・基準・方向を再確認してください",
+      "motors": [
+        {
+          "motor_id": 1,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "position_counts": 936,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": true,
+      "can_render": false,
+      "session_id": "delivery-review-synthetic",
+      "state": "running",
+      "port_closed": false,
+      "summary": null,
+      "calibration_invalid": true,
+      "simulated": true,
+      "sequence": 7326,
+      "age_seconds": 0.03609108924865723
+    },
+    "live_available": true,
+    "direction_observation": {
+      "before": null,
+      "result": {
+        "before": {
+          "motor_id": 3,
+          "position_counts": 1153,
+          "finished_at": "2026-10-04T00:11:11.748010+00:00",
+          "sequence": 4699,
+          "mode": 3,
+          "session_id": "delivery-review-synthetic",
+          "context_fingerprint": "ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e",
+          "simulated": true,
+          "physical_confirmed": true
+        },
+        "after": {
+          "motor_id": 3,
+          "position_counts": 1267,
+          "finished_at": "2026-10-04T00:11:12.063641+00:00",
+          "sequence": 4705,
+          "mode": 3,
+          "session_id": "delivery-review-synthetic",
+          "context_fingerprint": "ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e",
+          "simulated": true,
+          "physical_confirmed": true
+        },
+        "delta_counts": 114,
+        "degrees_signed": 10.01953125,
+        "opening_count_sign": 1,
+        "physical_change_confirmed": true,
+        "physical_change_reported": "opening",
+        "scope_note": "opening_count_sign is the encoder count direction during the user-reported opening; it is not a CAD calibration sign"
+      },
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/delivery-review-20261004/direction-observations/synthetic/observation_20261004T091112109617.json"
+    },
+    "calibration": {
+      "verified": false,
+      "status": "校正条件が変わりました。ID・基準・方向を再確認してください",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/delivery-review-20261004/calibration-test/calibration_20261004T091329614025.json"
+    },
+    "gap_mm": 10.91,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 7656
+  },
+  "metadataRestored": {
+    "angles": [
+      11.25,
+      5.625,
+      0,
+      0
+    ],
+    "theta": 101.25,
+    "variant": "compact_75",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 225,
+    "elevation": -20,
+    "distance": 0.23,
+    "focus": "gripper",
+    "source": "telemetry",
+    "frame_seq": 7656,
+    "render_fps": 19.9,
+    "frame_time": 1791072809.7602534,
+    "error": "実機データが欠測・未校正です。描画は最後の姿勢を保持しています。",
+    "telemetry": {
+      "configured": true,
+      "status": "校正条件が変わりました。ID・基準・方向を再確認してください",
+      "motors": [
+        {
+          "motor_id": 1,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "position_counts": 936,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": true,
+      "can_render": false,
+      "session_id": "delivery-review-synthetic",
+      "state": "running",
+      "port_closed": false,
+      "summary": null,
+      "calibration_invalid": true,
+      "simulated": true,
+      "sequence": 7326,
+      "age_seconds": 0.03609108924865723
+    },
+    "live_available": true,
+    "direction_observation": {
+      "before": null,
+      "result": {
+        "before": {
+          "motor_id": 3,
+          "position_counts": 1153,
+          "finished_at": "2026-10-04T00:11:11.748010+00:00",
+          "sequence": 4699,
+          "mode": 3,
+          "session_id": "delivery-review-synthetic",
+          "context_fingerprint": "ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e",
+          "simulated": true,
+          "physical_confirmed": true
+        },
+        "after": {
+          "motor_id": 3,
+          "position_counts": 1267,
+          "finished_at": "2026-10-04T00:11:12.063641+00:00",
+          "sequence": 4705,
+          "mode": 3,
+          "session_id": "delivery-review-synthetic",
+          "context_fingerprint": "ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e",
+          "simulated": true,
+          "physical_confirmed": true
+        },
+        "delta_counts": 114,
+        "degrees_signed": 10.01953125,
+        "opening_count_sign": 1,
+        "physical_change_confirmed": true,
+        "physical_change_reported": "opening",
+        "scope_note": "opening_count_sign is the encoder count direction during the user-reported opening; it is not a CAD calibration sign"
+      },
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/delivery-review-20261004/direction-observations/synthetic/observation_20261004T091112109617.json"
+    },
+    "calibration": {
+      "verified": false,
+      "status": "校正条件が変わりました。ID・基準・方向を再確認してください",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/delivery-review-20261004/calibration-test/calibration_20261004T091329614025.json"
+    },
+    "gap_mm": 10.91,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 7656
+  },
+  "duplicate": {
+    "status": 400,
+    "body": {
+      "error": "Physical change confirmation required"
+    }
+  },
+  "openedGap": 48.9,
+  "closedGap": 0.93,
+  "mobile": {
+    "scroll": 390,
+    "client": 390,
+    "image": 1060
+  }
+}

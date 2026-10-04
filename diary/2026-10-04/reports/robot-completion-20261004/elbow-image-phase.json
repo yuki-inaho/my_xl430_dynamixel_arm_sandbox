@@ -1,0 +1,46 @@
+{
+  "method": "VLM axis-centre picks plus orthographic two-image displacement ratio",
+  "pnp_used": false,
+  "synthetic_controls": "three known phases and two degenerate inputs PASS",
+  "actual_delta_deg": 30.234375,
+  "image_x_centres_px": {
+    "elbow": 1151,
+    "wrist_before": 1038,
+    "wrist_open": 882
+  },
+  "forearm_pitch_before_deg_under_assumptions": -71.63243538177107,
+  "q2_if_upper_arm_is_world_vertical_deg": -7.781691376705938,
+  "q3_under_both_assumptions_deg": -79.41412675847701,
+  "assumptions": [
+    "approximately orthographic camera over this motion",
+    "image X perpendicular to world gravity",
+    "observed upper arm world vertical for the q2/q3 hypothesis",
+    "observed forearm selects the -90..90 degree phase branch"
+  ],
+  "limitations": [
+    "perspective/systematic gravity alignment error not bounded",
+    "VLM centre picks are approximate",
+    "neither ID4 absolute reference nor other count signs are measured"
+  ],
+  "calibration_verified": false,
+  "hardware_targets": null,
+  "total_angular_uncertainty_deg": null,
+  "sources": [
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3-30/validation.json",
+      "sha256": "5924ed1c24e5a63a35c837790175f37780f55e8fadac78f8181637cc5ec0075f"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3-30/frame-before.jpg",
+      "sha256": "2104e91cd4082107bc189033f525ff5ce80c0ab89bbe5a2c5c37465256c0ccef"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3-30/frame-open.jpg",
+      "sha256": "50106bb16f41d20e8612faef9c4a458f738b13d5b2f26c3b1d705c3cf1683fcc"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3-30/frame-return.jpg",
+      "sha256": "d15c4e318e95f6516c856a67cab2e2623987cf8a73714375fbd9c23944fd1c85"
+    }
+  ]
+}

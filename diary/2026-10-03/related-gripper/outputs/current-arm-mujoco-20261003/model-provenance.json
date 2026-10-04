@@ -1,0 +1,2065 @@
+{
+  "source_cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "c7_source_sha256": "c20f0dd65fa1338ba3d42c9424990937bd161b491b5a937e429a84ccf4bb25d0",
+  "cadquery": "2.7.0",
+  "selected_arm_occurrences": 180,
+  "sheet_arm_occurrences": 55,
+  "inventory": [
+    {
+      "mesh": "M01",
+      "entries": [
+        {
+          "name": "M01_ref00",
+          "vertices": 25584,
+          "triangles": 27206,
+          "solids": 2
+        },
+        {
+          "name": "M01_ref01",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref02",
+          "vertices": 5144,
+          "triangles": 8022,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref03",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref04",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref05",
+          "vertices": 656,
+          "triangles": 610,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref06",
+          "vertices": 2124,
+          "triangles": 1982,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref07",
+          "vertices": 8694,
+          "triangles": 9248,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref08",
+          "vertices": 3611,
+          "triangles": 3742,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref09",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref10",
+          "vertices": 2292,
+          "triangles": 2454,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref11",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref12",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref13",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref14",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref15",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref16",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref17",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref18",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref19",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref20",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref21",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref22",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref23",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref24",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref25",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M01_ref26",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref27",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref28",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref29",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref30",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref31",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref32",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref33",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M01_ref34",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "M02",
+      "entries": [
+        {
+          "name": "M02_ref00",
+          "vertices": 25584,
+          "triangles": 27206,
+          "solids": 2
+        },
+        {
+          "name": "M02_ref01",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref02",
+          "vertices": 5144,
+          "triangles": 8022,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref03",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref04",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref05",
+          "vertices": 656,
+          "triangles": 610,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref06",
+          "vertices": 2124,
+          "triangles": 1982,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref07",
+          "vertices": 8694,
+          "triangles": 9248,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref08",
+          "vertices": 3611,
+          "triangles": 3742,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref09",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref10",
+          "vertices": 2292,
+          "triangles": 2454,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref11",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref12",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref13",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref14",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref15",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref16",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref17",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref18",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref19",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref20",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref21",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref22",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref23",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref24",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref25",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M02_ref26",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref27",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref28",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref29",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref30",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref31",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref32",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref33",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M02_ref34",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "M03",
+      "entries": [
+        {
+          "name": "M03_ref00",
+          "vertices": 25584,
+          "triangles": 27206,
+          "solids": 2
+        },
+        {
+          "name": "M03_ref01",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref02",
+          "vertices": 5144,
+          "triangles": 8022,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref03",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref04",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref05",
+          "vertices": 656,
+          "triangles": 610,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref06",
+          "vertices": 2124,
+          "triangles": 1982,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref07",
+          "vertices": 8694,
+          "triangles": 9248,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref08",
+          "vertices": 3611,
+          "triangles": 3742,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref09",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref10",
+          "vertices": 2292,
+          "triangles": 2454,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref11",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref12",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref13",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref14",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref15",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref16",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref17",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref18",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref19",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref20",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref21",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref22",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref23",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref24",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref25",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M03_ref26",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref27",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref28",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref29",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref30",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref31",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref32",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref33",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M03_ref34",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "M04",
+      "entries": [
+        {
+          "name": "M04_ref00",
+          "vertices": 25584,
+          "triangles": 27206,
+          "solids": 2
+        },
+        {
+          "name": "M04_ref01",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref02",
+          "vertices": 5144,
+          "triangles": 8022,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref03",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref04",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref05",
+          "vertices": 656,
+          "triangles": 610,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref06",
+          "vertices": 2124,
+          "triangles": 1982,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref07",
+          "vertices": 8694,
+          "triangles": 9248,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref08",
+          "vertices": 3611,
+          "triangles": 3742,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref09",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref10",
+          "vertices": 2292,
+          "triangles": 2454,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref11",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref12",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref13",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref14",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref15",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref16",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref17",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref18",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref19",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref20",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref21",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref22",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref23",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref24",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref25",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M04_ref26",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref27",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref28",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref29",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref30",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref31",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref32",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref33",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M04_ref34",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "M05",
+      "entries": [
+        {
+          "name": "M05_ref00",
+          "vertices": 25584,
+          "triangles": 27206,
+          "solids": 2
+        },
+        {
+          "name": "M05_ref01",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref02",
+          "vertices": 5144,
+          "triangles": 8022,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref03",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref04",
+          "vertices": 300,
+          "triangles": 196,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref05",
+          "vertices": 656,
+          "triangles": 610,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref06",
+          "vertices": 2124,
+          "triangles": 1982,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref07",
+          "vertices": 8694,
+          "triangles": 9248,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref08",
+          "vertices": 3611,
+          "triangles": 3742,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref09",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref10",
+          "vertices": 2292,
+          "triangles": 2454,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref11",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref12",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref13",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref14",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref15",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref16",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref17",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref18",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref19",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref20",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref21",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref22",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref23",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref24",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref25",
+          "vertices": 422,
+          "triangles": 420,
+          "solids": 0
+        },
+        {
+          "name": "M05_ref26",
+          "vertices": 1926,
+          "triangles": 2142,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref27",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref28",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref29",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref30",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref31",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref32",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref33",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        },
+        {
+          "name": "M05_ref34",
+          "vertices": 1646,
+          "triangles": 1840,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "P01_base",
+      "entries": [
+        {
+          "name": "P01_base",
+          "vertices": 8874,
+          "triangles": 9406,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "P02_yaw_carrier",
+      "entries": [
+        {
+          "name": "P02_yaw_carrier",
+          "vertices": 6838,
+          "triangles": 7740,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "P03_shoulder_XL430",
+      "entries": [
+        {
+          "name": "P03_shoulder_XL430",
+          "vertices": 11221,
+          "triangles": 12640,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "P04_extension_XL430",
+      "entries": [
+        {
+          "name": "P04_extension_XL430",
+          "vertices": 6680,
+          "triangles": 6676,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "P05_wrist_XL430",
+      "entries": [
+        {
+          "name": "P05_wrist_XL430",
+          "vertices": 8392,
+          "triangles": 8388,
+          "solids": 1
+        }
+      ],
+      "display_group": 0
+    },
+    {
+      "mesh": "c7_fixed_printed",
+      "entries": [
+        {
+          "name": "frame",
+          "vertices": 4454,
+          "triangles": 4668,
+          "solids": 1
+        },
+        {
+          "name": "cap_U",
+          "vertices": 1308,
+          "triangles": 1292,
+          "solids": 1
+        },
+        {
+          "name": "cap_D",
+          "vertices": 1308,
+          "triangles": 1292,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_fixed_fastener",
+      "entries": [
+        {
+          "name": "cap_-37.5_-24.5_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "cap_-37.5_-24.5_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "cap_-37.5_-24.5_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "cap_-37.5_24.5_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "cap_-37.5_24.5_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "cap_-37.5_24.5_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "cap_37.5_-24.5_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "cap_37.5_-24.5_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "cap_37.5_-24.5_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "cap_37.5_24.5_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "cap_37.5_24.5_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "cap_37.5_24.5_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "case_tapper_-11",
+          "vertices": 796,
+          "triangles": 944,
+          "solids": 1
+        },
+        {
+          "name": "case_tapper_11",
+          "vertices": 796,
+          "triangles": 944,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_drive_printed",
+      "entries": [
+        {
+          "name": "crank",
+          "vertices": 5296,
+          "triangles": 5250,
+          "solids": 1
+        },
+        {
+          "name": "horn_spacer",
+          "vertices": 2532,
+          "triangles": 2536,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_drive_fastener",
+      "entries": [
+        {
+          "name": "pivot_drive_R_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "pivot_drive_R_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "pivot_drive_R_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "pivot_drive_L_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "pivot_drive_L_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "pivot_drive_L_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "horn_bolt_0",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "horn_bolt_1",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "horn_bolt_2",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "horn_bolt_3",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_R_printed",
+      "entries": [
+        {
+          "name": "carriage_R",
+          "vertices": 2296,
+          "triangles": 2200,
+          "solids": 1
+        },
+        {
+          "name": "finger_R",
+          "vertices": 1820,
+          "triangles": 1768,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_R_pad",
+      "entries": [
+        {
+          "name": "pad_R",
+          "vertices": 24,
+          "triangles": 12,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_R_fastener",
+      "entries": [
+        {
+          "name": "pivot_carriage_R_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "pivot_carriage_R_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "pivot_carriage_R_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "finger_R_-14_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "finger_R_-14_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "finger_R_-14_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "finger_R_14_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "finger_R_14_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "finger_R_14_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_link_R_printed",
+      "entries": [
+        {
+          "name": "link_R",
+          "vertices": 1656,
+          "triangles": 1636,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_L_printed",
+      "entries": [
+        {
+          "name": "carriage_L",
+          "vertices": 2296,
+          "triangles": 2200,
+          "solids": 1
+        },
+        {
+          "name": "finger_L",
+          "vertices": 1820,
+          "triangles": 1768,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_L_pad",
+      "entries": [
+        {
+          "name": "pad_L",
+          "vertices": 24,
+          "triangles": 12,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_L_fastener",
+      "entries": [
+        {
+          "name": "pivot_carriage_L_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "pivot_carriage_L_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "pivot_carriage_L_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "finger_L_-14_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "finger_L_-14_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "finger_L_-14_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        },
+        {
+          "name": "finger_L_14_washer",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        },
+        {
+          "name": "finger_L_14_bolt",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        },
+        {
+          "name": "finger_L_14_nut",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "c7_link_L_printed",
+      "entries": [
+        {
+          "name": "link_L",
+          "vertices": 1656,
+          "triangles": 1636,
+          "solids": 1
+        }
+      ],
+      "display_group": 1
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE",
+      "entries": [
+        {
+          "name": "CAM5_BASE",
+          "vertices": 5768,
+          "triangles": 5692,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_D405_CARRIER",
+      "entries": [
+        {
+          "name": "CAM5_D405_CARRIER",
+          "vertices": 4756,
+          "triangles": 4724,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE_WASHER_0",
+      "entries": [
+        {
+          "name": "CAM5_BASE_WASHER_0",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE_TAP_0",
+      "entries": [
+        {
+          "name": "CAM5_BASE_TAP_0",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE_WASHER_1",
+      "entries": [
+        {
+          "name": "CAM5_BASE_WASHER_1",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE_TAP_1",
+      "entries": [
+        {
+          "name": "CAM5_BASE_TAP_1",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE_WASHER_2",
+      "entries": [
+        {
+          "name": "CAM5_BASE_WASHER_2",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE_TAP_2",
+      "entries": [
+        {
+          "name": "CAM5_BASE_TAP_2",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE_WASHER_3",
+      "entries": [
+        {
+          "name": "CAM5_BASE_WASHER_3",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_BASE_TAP_3",
+      "entries": [
+        {
+          "name": "CAM5_BASE_TAP_3",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_TIE_WASHER_0",
+      "entries": [
+        {
+          "name": "CAM5_TIE_WASHER_0",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_TIE_BOLT_0",
+      "entries": [
+        {
+          "name": "CAM5_TIE_BOLT_0",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_TIE_NUT_0",
+      "entries": [
+        {
+          "name": "CAM5_TIE_NUT_0",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_TIE_WASHER_1",
+      "entries": [
+        {
+          "name": "CAM5_TIE_WASHER_1",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_TIE_BOLT_1",
+      "entries": [
+        {
+          "name": "CAM5_TIE_BOLT_1",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_TIE_NUT_1",
+      "entries": [
+        {
+          "name": "CAM5_TIE_NUT_1",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_D405_SCREW_0",
+      "entries": [
+        {
+          "name": "CAM5_D405_SCREW_0",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_D405_SCREW_1",
+      "entries": [
+        {
+          "name": "CAM5_D405_SCREW_1",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_D405_BODY",
+      "entries": [
+        {
+          "name": "CAM5_D405_BODY",
+          "vertices": 1308,
+          "triangles": 1284,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_D405_USB_PLUG",
+      "entries": [
+        {
+          "name": "CAM5_D405_USB_PLUG",
+          "vertices": 24,
+          "triangles": 12,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "r5_65_CAM5_D405_USB_CABLE_STUB",
+      "entries": [
+        {
+          "name": "CAM5_D405_USB_CABLE_STUB",
+          "vertices": 422,
+          "triangles": 416,
+          "solids": 1
+        }
+      ],
+      "display_group": 2
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE",
+      "entries": [
+        {
+          "name": "CAM5_BASE",
+          "vertices": 5800,
+          "triangles": 5718,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_D405_CARRIER",
+      "entries": [
+        {
+          "name": "CAM5_D405_CARRIER",
+          "vertices": 4756,
+          "triangles": 4724,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE_WASHER_0",
+      "entries": [
+        {
+          "name": "CAM5_BASE_WASHER_0",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE_TAP_0",
+      "entries": [
+        {
+          "name": "CAM5_BASE_TAP_0",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE_WASHER_1",
+      "entries": [
+        {
+          "name": "CAM5_BASE_WASHER_1",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE_TAP_1",
+      "entries": [
+        {
+          "name": "CAM5_BASE_TAP_1",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE_WASHER_2",
+      "entries": [
+        {
+          "name": "CAM5_BASE_WASHER_2",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE_TAP_2",
+      "entries": [
+        {
+          "name": "CAM5_BASE_TAP_2",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE_WASHER_3",
+      "entries": [
+        {
+          "name": "CAM5_BASE_WASHER_3",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_BASE_TAP_3",
+      "entries": [
+        {
+          "name": "CAM5_BASE_TAP_3",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_TIE_WASHER_0",
+      "entries": [
+        {
+          "name": "CAM5_TIE_WASHER_0",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_TIE_BOLT_0",
+      "entries": [
+        {
+          "name": "CAM5_TIE_BOLT_0",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_TIE_NUT_0",
+      "entries": [
+        {
+          "name": "CAM5_TIE_NUT_0",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_TIE_WASHER_1",
+      "entries": [
+        {
+          "name": "CAM5_TIE_WASHER_1",
+          "vertices": 844,
+          "triangles": 840,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_TIE_BOLT_1",
+      "entries": [
+        {
+          "name": "CAM5_TIE_BOLT_1",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_TIE_NUT_1",
+      "entries": [
+        {
+          "name": "CAM5_TIE_NUT_1",
+          "vertices": 458,
+          "triangles": 444,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_D405_SCREW_0",
+      "entries": [
+        {
+          "name": "CAM5_D405_SCREW_0",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_D405_SCREW_1",
+      "entries": [
+        {
+          "name": "CAM5_D405_SCREW_1",
+          "vertices": 880,
+          "triangles": 860,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_D405_BODY",
+      "entries": [
+        {
+          "name": "CAM5_D405_BODY",
+          "vertices": 1308,
+          "triangles": 1284,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_D405_USB_PLUG",
+      "entries": [
+        {
+          "name": "CAM5_D405_USB_PLUG",
+          "vertices": 24,
+          "triangles": 12,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    },
+    {
+      "mesh": "compact_75_CAM5_D405_USB_CABLE_STUB",
+      "entries": [
+        {
+          "name": "CAM5_D405_USB_CABLE_STUB",
+          "vertices": 422,
+          "triangles": 416,
+          "solids": 1
+        }
+      ],
+      "display_group": 3
+    }
+  ],
+  "configuration": "R3 bare arm + C7 + selectable nominal R5_65/compact75",
+  "physical_match": "inferred; camera angle unresolved; no actual joint readout",
+  "qpos_semantics": "4 CAD relative arm angles + gripper construction delta(theta-90) + two passive sliders",
+  "kinematic_view_only": true,
+  "collision_certified": false,
+  "dynamic_values_are_placeholders": true,
+  "no_hardware_access": true,
+  "motor_internal_reference_parts_render_rigidly": true,
+  "real_cables_absent": true,
+  "mesh_tessellation_mm": 0.12
+}

@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "name": "POWER_OFF_SUPPORTED_CURRENT_REFERENCE",
+  "created_at": "2026-10-04T11:18:16.093963+09:00",
+  "status": "ENCODER_REFERENCE_ONLY_SUPPORT_NOT_VERIFIED",
+  "simulated": false,
+  "acquisition_id": "633c6ebf-3025-4e86-8edc-1b829ba71ce5",
+  "read_started_at": "2026-10-04T11:03:38.771+09:00",
+  "read_finished_at": "2026-10-04T11:03:43.753+09:00",
+  "summary": {
+    "frames": 100,
+    "incomplete_frames": 0,
+    "deadline_misses": 0,
+    "elapsed_seconds": 5.000171654,
+    "achieved_rate_hz": 19.999785246750417,
+    "interrupted": false,
+    "port_closed": true
+  },
+  "encoder_coordinate_metadata": {
+    "metadata": [
+      {
+        "motor_id": 1,
+        "identity": {
+          "motor_id": 1,
+          "model_number": 1060,
+          "firmware_version": 43,
+          "observed_at": "2026-10-04T11:03:38.164+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "base_rotation",
+        "registers": [
+          {
+            "name": "id",
+            "address": 7,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 1,
+            "value": 1,
+            "device_alert": false
+          },
+          {
+            "name": "baud_rate",
+            "address": 8,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "protocol_type",
+            "address": 13,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 2,
+            "value": 2,
+            "device_alert": false
+          },
+          {
+            "name": "operating_mode",
+            "address": 11,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "drive_mode",
+            "address": 10,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          },
+          {
+            "name": "homing_offset",
+            "address": 20,
+            "size": 4,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          }
+        ],
+        "faults": [],
+        "skipped_registers": []
+      },
+      {
+        "motor_id": 2,
+        "identity": {
+          "motor_id": 2,
+          "model_number": 1060,
+          "firmware_version": 42,
+          "observed_at": "2026-10-04T11:03:38.292+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "shoulder",
+        "registers": [
+          {
+            "name": "id",
+            "address": 7,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 2,
+            "value": 2,
+            "device_alert": false
+          },
+          {
+            "name": "baud_rate",
+            "address": 8,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "protocol_type",
+            "address": 13,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 2,
+            "value": 2,
+            "device_alert": false
+          },
+          {
+            "name": "operating_mode",
+            "address": 11,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "drive_mode",
+            "address": 10,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          },
+          {
+            "name": "homing_offset",
+            "address": 20,
+            "size": 4,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          }
+        ],
+        "faults": [],
+        "skipped_registers": []
+      },
+      {
+        "motor_id": 3,
+        "identity": {
+          "motor_id": 3,
+          "model_number": 1060,
+          "firmware_version": 42,
+          "observed_at": "2026-10-04T11:03:38.419+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "elbow",
+        "registers": [
+          {
+            "name": "id",
+            "address": 7,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "baud_rate",
+            "address": 8,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "protocol_type",
+            "address": 13,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 2,
+            "value": 2,
+            "device_alert": false
+          },
+          {
+            "name": "operating_mode",
+            "address": 11,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "drive_mode",
+            "address": 10,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          },
+          {
+            "name": "homing_offset",
+            "address": 20,
+            "size": 4,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          }
+        ],
+        "faults": [],
+        "skipped_registers": []
+      },
+      {
+        "motor_id": 4,
+        "identity": {
+          "motor_id": 4,
+          "model_number": 1060,
+          "firmware_version": 42,
+          "observed_at": "2026-10-04T11:03:38.547+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "wrist",
+        "registers": [
+          {
+            "name": "id",
+            "address": 7,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 4,
+            "value": 4,
+            "device_alert": false
+          },
+          {
+            "name": "baud_rate",
+            "address": 8,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "protocol_type",
+            "address": 13,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 2,
+            "value": 2,
+            "device_alert": false
+          },
+          {
+            "name": "operating_mode",
+            "address": 11,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "drive_mode",
+            "address": 10,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          },
+          {
+            "name": "homing_offset",
+            "address": 20,
+            "size": 4,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          }
+        ],
+        "faults": [],
+        "skipped_registers": []
+      },
+      {
+        "motor_id": 5,
+        "identity": {
+          "motor_id": 5,
+          "model_number": 1060,
+          "firmware_version": 43,
+          "observed_at": "2026-10-04T11:03:38.675+09:00",
+          "device_error": 0,
+          "faults": []
+        },
+        "proposed_role": "gripper_open_close",
+        "registers": [
+          {
+            "name": "id",
+            "address": 7,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 5,
+            "value": 5,
+            "device_alert": false
+          },
+          {
+            "name": "baud_rate",
+            "address": 8,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "protocol_type",
+            "address": 13,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 2,
+            "value": 2,
+            "device_alert": false
+          },
+          {
+            "name": "operating_mode",
+            "address": 11,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 3,
+            "value": 3,
+            "device_alert": false
+          },
+          {
+            "name": "drive_mode",
+            "address": 10,
+            "size": 1,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          },
+          {
+            "name": "homing_offset",
+            "address": 20,
+            "size": 4,
+            "memory": "EEPROM",
+            "raw": 0,
+            "value": 0,
+            "device_alert": false
+          }
+        ],
+        "faults": [],
+        "skipped_registers": []
+      }
+    ],
+    "config": {
+      "bus": {
+        "device": "/dev/serial/by-id/usb-BestTechnology_E148_E148-if00-port0",
+        "baudrate": 1000000,
+        "protocol": 2.0,
+        "expected_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "roles": [
+        {
+          "motor_id": 1,
+          "name": "base_rotation"
+        },
+        {
+          "motor_id": 2,
+          "name": "shoulder"
+        },
+        {
+          "motor_id": 3,
+          "name": "elbow"
+        },
+        {
+          "motor_id": 4,
+          "name": "wrist"
+        },
+        {
+          "motor_id": 5,
+          "name": "gripper_open_close"
+        }
+      ],
+      "physical_order_verified": false
+    },
+    "observed_at": "2026-10-04T11:03:38.771+09:00",
+    "kind": "metadata",
+    "schema_version": 2,
+    "simulated": false,
+    "acquisition_id": "633c6ebf-3025-4e86-8edc-1b829ba71ce5"
+  },
+  "motor_references": [
+    {
+      "motor_id": 1,
+      "reference_count": 2062,
+      "min_count": 2062,
+      "max_count": 2062,
+      "span_count": 0,
+      "samples": 100,
+      "torque_off_all_samples": true,
+      "cad_angle_deg": null,
+      "neutral_verified": false
+    },
+    {
+      "motor_id": 2,
+      "reference_count": 3354,
+      "min_count": 3354,
+      "max_count": 3354,
+      "span_count": 0,
+      "samples": 100,
+      "torque_off_all_samples": true,
+      "cad_angle_deg": null,
+      "neutral_verified": false
+    },
+    {
+      "motor_id": 3,
+      "reference_count": 1154,
+      "min_count": 1154,
+      "max_count": 1154,
+      "span_count": 0,
+      "samples": 100,
+      "torque_off_all_samples": true,
+      "cad_angle_deg": null,
+      "neutral_verified": false
+    },
+    {
+      "motor_id": 4,
+      "reference_count": 2058,
+      "min_count": 2058,
+      "max_count": 2058,
+      "span_count": 0,
+      "samples": 100,
+      "torque_off_all_samples": true,
+      "cad_angle_deg": null,
+      "neutral_verified": false
+    },
+    {
+      "motor_id": 5,
+      "reference_count": 2059,
+      "min_count": 2059,
+      "max_count": 2059,
+      "span_count": 0,
+      "samples": 100,
+      "torque_off_all_samples": true,
+      "cad_angle_deg": null,
+      "neutral_verified": false
+    }
+  ],
+  "support": {
+    "user_report": "current pose stable; cushion about 5 mm high in front",
+    "contact_points_world_m": null,
+    "load_path_verified": false,
+    "power_supply_off_verified": false
+  },
+  "calibration": null,
+  "motion_target_counts": null,
+  "return_path_verified": false,
+  "execute_allowed": false,
+  "sources": [
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/post-motion-read.jsonl",
+      "sha256": "0aaa0b655e641d9df6018f67591b44ff1db07f75144394153a7c622b90ea07a6"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/standby-position-20261004/current-photo.jpeg",
+      "sha256": "190a1d7c2f72543b814a5d5195235e1b3d02c139521bcc5281aea3af4f89f5ba"
+    }
+  ]
+}

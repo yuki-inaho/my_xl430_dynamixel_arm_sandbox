@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "kind": "Packaging rehearsal; final archive is rebuilt after logging this check",
+  "archive_bytes": 98848189,
+  "archive_sha256": "a860f948be12546c2d9a31529699d29896307230853f8c45774aed2439778fe7",
+  "zstd_test_exit": 0,
+  "extract_exit": 0,
+  "manifest_before": {
+    "status": "PASS",
+    "files_expected": 1592,
+    "files_found": 1592,
+    "errors": [],
+    "note": "Integrity only, not a signature or fabrication approval; runtime caches ignored"
+  },
+  "manifest_after": {
+    "status": "PASS",
+    "files_expected": 1592,
+    "files_found": 1592,
+    "errors": [],
+    "note": "Integrity only, not a signature or fabrication approval; runtime caches ignored"
+  },
+  "relocation_tests": 52,
+  "relocation_tests_failures": 0,
+  "fresh_step_replay_cases": 11,
+  "fresh_step_occurrences": 2882,
+  "replayed_pose_report_identical_sha256": "429c474bb708ad5aa065add2fd6ed090bf492a1d827b28376ec9ac2a7d11314b",
+  "replayed_pose_report_identical": true,
+  "changed_file_negative_exit": 1,
+  "unlisted_file_negative_exit": 1,
+  "model_validated": "studies/low-profile-20260926/outputs/low-profile-250g/robot/model",
+  "original_result_report_untouched": true,
+  "limitations": "Same installed environment at a different filesystem location, not a clean dependency install or a new OCCT8 conversion."
+}

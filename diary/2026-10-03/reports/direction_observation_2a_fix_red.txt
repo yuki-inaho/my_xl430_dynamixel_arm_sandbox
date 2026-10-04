@@ -1,0 +1,306 @@
+
+==================================== ERRORS ====================================
+_____________ ERROR collecting tests/test_direction_observation.py _____________
+tests/test_direction_observation.py:217: in <module>
+    @pytest.mark.parametrize("delta", [1, -1, 3, direction.MIN_DIRECTION_COUNTS - 1,
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AttributeError: module 'simulation.current_arm_viewer.direction_observation' has no attribute 'MIN_DIRECTION_COUNTS'
+=========================== short test summary info ============================
+ERROR tests/test_direction_observation.py - AttributeError: module 'simulatio...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.76s
+..................FFFFFFFFFFFFF...FF..                                   [100%]
+=================================== FAILURES ===================================
+_____________ test_baseline_is_consumed_after_a_saved_observation ______________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-30/test_baseline_is_consumed_afte0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x77d097b44c80>
+
+    def test_baseline_is_consumed_after_a_saved_observation(tmp_path, monkeypatch):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        app.bridge.data = later(1267, 2)
+        app.live_action("/api/direction/after", {"physical_change_confirmed": True})
+>       assert app.direction_start is None
+E       AssertionError: assert DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T13:48:19.089495+00:00', sequence=1, mode=3, ...hetic-session', context_fingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True) is None
+E        +  where DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T13:48:19.089495+00:00', sequence=1, mode=3, ...hetic-session', context_fingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True) = <simulation.current_arm_viewer.server.Viewer object at 0x77d097b44c50>.direction_start
+
+tests/test_direction_observation.py:143: AssertionError
+_______________ test_failed_before_clears_the_previous_baseline ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-30/test_failed_before_clears_the_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x77d097b47890>
+
+    def test_failed_before_clears_the_previous_baseline(tmp_path, monkeypatch):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        with pytest.raises(ValueError):
+            app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": False})
+>       assert app.direction_start is None
+E       AssertionError: assert DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T13:48:19.132845+00:00', sequence=1, mode=3, ...hetic-session', context_fingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True) is None
+E        +  where DirectionSample(motor_id=3, position_counts=1153, finished_at='2026-10-03T13:48:19.132845+00:00', sequence=1, mode=3, ...hetic-session', context_fingerprint='ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e', simulated=True) = <simulation.current_arm_viewer.server.Viewer object at 0x77d097b478f0>.direction_start
+
+tests/test_direction_observation.py:157: AssertionError
+____________ test_failed_after_keeps_baseline_for_a_confirmed_retry ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-30/test_failed_after_keeps_baseli0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x77d097b47dd0>
+
+    def test_failed_after_keeps_baseline_for_a_confirmed_retry(tmp_path, monkeypatch):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        app.bridge.data = later(1267, 2)
+        with pytest.raises(ValueError, match="開いた変化"):
+>           app.live_action("/api/direction/after", {"physical_change_confirmed": False})
+
+tests/test_direction_observation.py:170: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+simulation/current_arm_viewer/server.py:285: in live_action
+    return self.observe_direction(path, payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+simulation/current_arm_viewer/server.py:332: in observe_direction
+    observed = direction_observation.compare(
+simulation/current_arm_viewer/direction_observation.py:66: in compare
+    after = capture(snapshot, before.motor_id, physical_change_confirmed, model_dir)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+snapshot = {'error': None, 'frame': {'frame': {'finished_at': '2026-10-03T13:48:19.140454+00:00', 'motors': [{'device_alert': Fal...t', 'value': 0}]}], 'observed_at': '2026-10-03T13:48:19.140454+00:00', 'schema_version': 2}, 'port_closed': False, ...}
+motor_id = 3, physical_confirmed = False
+model_dir = PosixPath('/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003')
+
+    def capture(snapshot, motor_id, physical_confirmed, model_dir):
+        if physical_confirmed is not True:
+>           raise ValueError("現物の位置・関節を先に確認してください")
+E           ValueError: 現物の位置・関節を先に確認してください
+
+simulation/current_arm_viewer/direction_observation.py:43: ValueError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-30/test_failed_after_keeps_baseli0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x77d097b47dd0>
+
+    def test_failed_after_keeps_baseline_for_a_confirmed_retry(tmp_path, monkeypatch):
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        app.bridge.data = later(1267, 2)
+>       with pytest.raises(ValueError, match="開いた変化"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: '開いた変化'
+E        Input: '現物の位置・関節を先に確認してください'
+
+tests/test_direction_observation.py:169: AssertionError
+____________________ test_baseline_race_writes_no_evidence _____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-30/test_baseline_race_writes_no_e0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x77d097b47b00>
+
+    def test_baseline_race_writes_no_evidence(tmp_path, monkeypatch):
+        from simulation.current_arm_viewer import server
+        app = observation_app(tmp_path, monkeypatch, later(1153, 1))
+        app.live_action("/api/direction/before", {"motor_id": 3, "physical_confirmed": True})
+        original = server.direction_observation.compare
+    
+        def racing_compare(*args):
+            result = original(*args)
+            app.direction_start = first(1100)
+            return result
+    
+        monkeypatch.setattr(server.direction_observation, "compare", racing_compare)
+        app.bridge.data = later(1267, 2)
+        with pytest.raises(ValueError, match="Baseline changed"):
+            app.live_action("/api/direction/after", {"physical_change_confirmed": True})
+>       assert saved_files(tmp_path) == []
+E       AssertionError: assert [PosixPath('/...190463.json')] == []
+E         
+E         Left contains one more item: PosixPath('/tmp/pytest-of-inaho-omen/pytest-30/test_baseline_race_writes_no_e0/synthetic/observation_20261003T224819190463.json')
+E         Use -v to get more diff
+
+tests/test_direction_observation.py:191: AssertionError
+_______________ test_existing_evidence_file_is_never_overwritten _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-30/test_existing_evidence_file_is0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x77d097b45d90>
+
+    def test_existing_evidence_file_is_never_overwritten(tmp_path, monkeypatch):
+        from simulation.current_arm_viewer import server
+>       monkeypatch.setattr(server, "evidence_name", lambda: "observation_fixed.json")
+E       AttributeError: <module 'simulation.current_arm_viewer.server' from '/home/inaho-omen/Project/3d-printed-dynamixel-gripper/simulation/current_arm_viewer/server.py'> has no attribute 'evidence_name'
+
+tests/test_direction_observation.py:196: AttributeError
+____________________ test_missing_snapshot_is_a_value_error ____________________
+
+    def test_missing_snapshot_is_a_value_error():
+        with pytest.raises(ValueError, match="READ未接続"):
+>           direction.capture(None, 3, True, MODEL_DIR)
+
+tests/test_direction_observation.py:214: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+simulation/current_arm_viewer/direction_observation.py:45: in capture
+    frame, motors, metadata = live_input.validated_snapshot(snapshot)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+snapshot = None
+
+    def validated_snapshot(snapshot):
+>       if (snapshot.get("state") != "running" or snapshot.get("port_closed") is not False
+            ^^^^^^^^^^^^
+            or not isinstance(snapshot.get("session_id"), str) or not snapshot["session_id"]
+            or snapshot.get("error")):
+E           AttributeError: 'NoneType' object has no attribute 'get'
+
+simulation/current_arm_viewer/live_input.py:77: AttributeError
+______________ test_jitter_or_ambiguous_change_is_undetermined[1] ______________
+
+delta = 1
+
+    @pytest.mark.parametrize("delta", [1, -1, 3, direction.MIN_DIRECTION_COUNTS - 1,
+                                       -(direction.MIN_DIRECTION_COUNTS - 1),
+                                       direction.MAX_DIRECTION_COUNTS, 2047])
+    def test_jitter_or_ambiguous_change_is_undetermined(delta):
+>       with pytest.raises(ValueError, match="未確定"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_direction_observation.py:221: Failed
+_____________ test_jitter_or_ambiguous_change_is_undetermined[-1] ______________
+
+delta = -1
+
+    @pytest.mark.parametrize("delta", [1, -1, 3, direction.MIN_DIRECTION_COUNTS - 1,
+                                       -(direction.MIN_DIRECTION_COUNTS - 1),
+                                       direction.MAX_DIRECTION_COUNTS, 2047])
+    def test_jitter_or_ambiguous_change_is_undetermined(delta):
+>       with pytest.raises(ValueError, match="未確定"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_direction_observation.py:221: Failed
+______________ test_jitter_or_ambiguous_change_is_undetermined[3] ______________
+
+delta = 3
+
+    @pytest.mark.parametrize("delta", [1, -1, 3, direction.MIN_DIRECTION_COUNTS - 1,
+                                       -(direction.MIN_DIRECTION_COUNTS - 1),
+                                       direction.MAX_DIRECTION_COUNTS, 2047])
+    def test_jitter_or_ambiguous_change_is_undetermined(delta):
+>       with pytest.raises(ValueError, match="未確定"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_direction_observation.py:221: Failed
+_____________ test_jitter_or_ambiguous_change_is_undetermined[19] ______________
+
+delta = 19
+
+    @pytest.mark.parametrize("delta", [1, -1, 3, direction.MIN_DIRECTION_COUNTS - 1,
+                                       -(direction.MIN_DIRECTION_COUNTS - 1),
+                                       direction.MAX_DIRECTION_COUNTS, 2047])
+    def test_jitter_or_ambiguous_change_is_undetermined(delta):
+>       with pytest.raises(ValueError, match="未確定"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_direction_observation.py:221: Failed
+_____________ test_jitter_or_ambiguous_change_is_undetermined[-19] _____________
+
+delta = -19
+
+    @pytest.mark.parametrize("delta", [1, -1, 3, direction.MIN_DIRECTION_COUNTS - 1,
+                                       -(direction.MIN_DIRECTION_COUNTS - 1),
+                                       direction.MAX_DIRECTION_COUNTS, 2047])
+    def test_jitter_or_ambiguous_change_is_undetermined(delta):
+>       with pytest.raises(ValueError, match="未確定"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_direction_observation.py:221: Failed
+____________ test_jitter_or_ambiguous_change_is_undetermined[1024] _____________
+
+delta = 1024
+
+    @pytest.mark.parametrize("delta", [1, -1, 3, direction.MIN_DIRECTION_COUNTS - 1,
+                                       -(direction.MIN_DIRECTION_COUNTS - 1),
+                                       direction.MAX_DIRECTION_COUNTS, 2047])
+    def test_jitter_or_ambiguous_change_is_undetermined(delta):
+>       with pytest.raises(ValueError, match="未確定"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_direction_observation.py:221: Failed
+____________ test_jitter_or_ambiguous_change_is_undetermined[2047] _____________
+
+delta = 2047
+
+    @pytest.mark.parametrize("delta", [1, -1, 3, direction.MIN_DIRECTION_COUNTS - 1,
+                                       -(direction.MIN_DIRECTION_COUNTS - 1),
+                                       direction.MAX_DIRECTION_COUNTS, 2047])
+    def test_jitter_or_ambiguous_change_is_undetermined(delta):
+>       with pytest.raises(ValueError, match="未確定"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_direction_observation.py:221: Failed
+_________________ test_unconfirmed_opening_has_its_own_message _________________
+
+    def test_unconfirmed_opening_has_its_own_message():
+        with pytest.raises(ValueError, match="開いた変化"):
+>           direction.compare(first(), later(1267), False, MODEL_DIR)
+
+tests/test_direction_observation.py:235: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+simulation/current_arm_viewer/direction_observation.py:66: in compare
+    after = capture(snapshot, before.motor_id, physical_change_confirmed, model_dir)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+snapshot = {'error': None, 'frame': {'frame': {'finished_at': '2026-10-03T13:48:19.338802+00:00', 'motors': [{'device_alert': Fal...t', 'value': 0}]}], 'observed_at': '2026-10-03T13:48:19.338802+00:00', 'schema_version': 2}, 'port_closed': False, ...}
+motor_id = 3, physical_confirmed = False
+model_dir = PosixPath('/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003')
+
+    def capture(snapshot, motor_id, physical_confirmed, model_dir):
+        if physical_confirmed is not True:
+>           raise ValueError("現物の位置・関節を先に確認してください")
+E           ValueError: 現物の位置・関節を先に確認してください
+
+simulation/current_arm_viewer/direction_observation.py:43: ValueError
+
+During handling of the above exception, another exception occurred:
+
+    def test_unconfirmed_opening_has_its_own_message():
+>       with pytest.raises(ValueError, match="開いた変化"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E        Regex: '開いた変化'
+E        Input: '現物の位置・関節を先に確認してください'
+
+tests/test_direction_observation.py:234: AssertionError
+______________ test_evidence_records_both_confirmations_and_scope ______________
+
+    def test_evidence_records_both_confirmations_and_scope():
+        record = asdict(direction.compare(first(), later(1267), True, MODEL_DIR))
+>       assert record["before"]["physical_confirmed"] is True
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'physical_confirmed'
+
+tests/test_direction_observation.py:240: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_direction_observation.py::test_baseline_is_consumed_after_a_saved_observation
+FAILED tests/test_direction_observation.py::test_failed_before_clears_the_previous_baseline
+FAILED tests/test_direction_observation.py::test_failed_after_keeps_baseline_for_a_confirmed_retry
+FAILED tests/test_direction_observation.py::test_baseline_race_writes_no_evidence
+FAILED tests/test_direction_observation.py::test_existing_evidence_file_is_never_overwritten
+FAILED tests/test_direction_observation.py::test_missing_snapshot_is_a_value_error
+FAILED tests/test_direction_observation.py::test_jitter_or_ambiguous_change_is_undetermined[1]
+FAILED tests/test_direction_observation.py::test_jitter_or_ambiguous_change_is_undetermined[-1]
+FAILED tests/test_direction_observation.py::test_jitter_or_ambiguous_change_is_undetermined[3]
+FAILED tests/test_direction_observation.py::test_jitter_or_ambiguous_change_is_undetermined[19]
+FAILED tests/test_direction_observation.py::test_jitter_or_ambiguous_change_is_undetermined[-19]
+FAILED tests/test_direction_observation.py::test_jitter_or_ambiguous_change_is_undetermined[1024]
+FAILED tests/test_direction_observation.py::test_jitter_or_ambiguous_change_is_undetermined[2047]
+FAILED tests/test_direction_observation.py::test_unconfirmed_opening_has_its_own_message
+FAILED tests/test_direction_observation.py::test_evidence_records_both_confirmations_and_scope
+15 failed, 23 passed in 0.80s

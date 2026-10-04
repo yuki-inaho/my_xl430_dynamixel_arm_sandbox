@@ -1,0 +1,43 @@
+{
+  "status": "partial_physical_evidence_not_executable_calibration",
+  "calibration_verified": false,
+  "end_effector": "bare",
+  "theta_at_zero_deg": null,
+  "physical_roles_user_confirmed": {"1": "base_yaw", "2": "shoulder", "3": "elbow", "4": "wrist", "5": "jaw_drive"},
+  "user_confirmed_neutral_counts": {"1": 2062, "5": 2059},
+  "neutral_source": "User decision D7; preserve confirmed reference instead of re-zeroing after base relocation",
+  "id3_relative_observation": {
+    "opening_count_sign": 1,
+    "start_count": 1154,
+    "opened_count": 1498,
+    "return_count": 1156,
+    "actual_opening_degrees": 30.234375,
+    "cad_direction_evidence": "camera-id3-30/reconnected-direction.json",
+    "validation": "camera-id3-30/validation.json",
+    "validation_sha256": "5924ed1c24e5a63a35c837790175f37780f55e8fadac78f8181637cc5ec0075f",
+    "vlm_observation": "Elbow case stays fixed; wrist moves left/up in the opening image, then returns to folded pose"
+  },
+  "post_read": {
+    "path": "camera-id3-30/post-read.jsonl",
+    "sha256": "41050619ac2e1b6ce5aaedc2689a7a7f851ce5505191e63ba2bbc890191612e6",
+    "acquisition_id": "8658ab03-dc45-4ec5-855f-372aea709967",
+    "complete_frames": 100,
+    "excluded_fault_frames": 0,
+    "all_torques_off": true,
+    "port_closed": true
+  },
+  "absolute_cad_zero_counts": {"1": 2062, "2": null, "3": null, "4": null, "5": null},
+  "unresolved": [
+    "ID2/3/4 absolute CAD angles: visual hypothesis is not a measured zero",
+    "Physical count-to-CAD signs of ID1/2/4 and ID5 drive reference remain to be verified",
+    "Current support point and gravity load path after base relocation",
+    "Collision validation and complete standby/power-off transition"
+  ],
+  "manual_visual_hypothesis": {
+    "angles_deg": [0, -5, -80, 0],
+    "source": "VLM photo comparison, displayed manually in MuJoCo",
+    "calibration": false,
+    "hardware_target": false
+  },
+  "hardware_targets": null
+}

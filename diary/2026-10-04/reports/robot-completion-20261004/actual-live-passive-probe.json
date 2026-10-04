@@ -1,0 +1,796 @@
+{
+  "captured_at": "2026-10-04T11:31:29.586434+09:00",
+  "actions": [
+    "GET /api/state",
+    "GET /api/status",
+    "GET /api/state"
+  ],
+  "first": {
+    "angles": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "theta": 90.0,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 225.0,
+    "elevation": -25.0,
+    "distance": 0.64,
+    "focus": "arm",
+    "source": "manual",
+    "frame_seq": 21,
+    "render_fps": 20.8,
+    "frame_time": 1791081089.368087,
+    "error": null,
+    "telemetry": {
+      "configured": true,
+      "status": "READ未接続・停止中",
+      "motors": [
+        {
+          "motor_id": 1,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 2062,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 91,
+          "temperature_c": 36,
+          "moving": false,
+          "moving_status": 1,
+          "tick_ms": 19195,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 3354,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 91,
+          "temperature_c": 37,
+          "moving": false,
+          "moving_status": 1,
+          "tick_ms": 19102,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 1154,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 90,
+          "temperature_c": 35,
+          "moving": false,
+          "moving_status": 49,
+          "tick_ms": 18957,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 2058,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 90,
+          "temperature_c": 36,
+          "moving": false,
+          "moving_status": 1,
+          "tick_ms": 19019,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 2059,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 90,
+          "temperature_c": 35,
+          "moving": false,
+          "moving_status": 1,
+          "tick_ms": 19321,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": false,
+      "can_render": false,
+      "session_id": "df0c8a21-79ce-40a8-a5c8-588af46666dd",
+      "state": "stopped",
+      "port_closed": true,
+      "summary": {
+        "frames": 200,
+        "incomplete_frames": 0,
+        "deadline_misses": 0,
+        "elapsed_seconds": 10.000090517,
+        "achieved_rate_hz": 19.99981316556447,
+        "interrupted": false,
+        "port_closed": true
+      },
+      "calibration_invalid": false,
+      "simulated": false
+    },
+    "live_available": true,
+    "direction_observation": {
+      "before": null,
+      "result": null,
+      "saved_path": null
+    },
+    "calibration": {
+      "verified": false,
+      "status": "未校正",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb"
+    },
+    "gap_mm": 15.99,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65
+  },
+  "bridge": {
+    "state": "stopped",
+    "session_id": "df0c8a21-79ce-40a8-a5c8-588af46666dd",
+    "port_closed": true,
+    "metadata": {
+      "metadata": [
+        {
+          "motor_id": 1,
+          "identity": {
+            "motor_id": 1,
+            "model_number": 1060,
+            "firmware_version": 43,
+            "observed_at": "2026-10-04T11:15:26.331+09:00",
+            "device_error": 0,
+            "faults": []
+          },
+          "proposed_role": "base_rotation",
+          "registers": [
+            {
+              "name": "id",
+              "address": 7,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 1,
+              "value": 1,
+              "device_alert": false
+            },
+            {
+              "name": "baud_rate",
+              "address": 8,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "protocol_type",
+              "address": 13,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 2,
+              "value": 2,
+              "device_alert": false
+            },
+            {
+              "name": "operating_mode",
+              "address": 11,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "drive_mode",
+              "address": 10,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            },
+            {
+              "name": "homing_offset",
+              "address": 20,
+              "size": 4,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            }
+          ],
+          "faults": [],
+          "skipped_registers": []
+        },
+        {
+          "motor_id": 2,
+          "identity": {
+            "motor_id": 2,
+            "model_number": 1060,
+            "firmware_version": 42,
+            "observed_at": "2026-10-04T11:15:26.459+09:00",
+            "device_error": 0,
+            "faults": []
+          },
+          "proposed_role": "shoulder",
+          "registers": [
+            {
+              "name": "id",
+              "address": 7,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 2,
+              "value": 2,
+              "device_alert": false
+            },
+            {
+              "name": "baud_rate",
+              "address": 8,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "protocol_type",
+              "address": 13,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 2,
+              "value": 2,
+              "device_alert": false
+            },
+            {
+              "name": "operating_mode",
+              "address": 11,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "drive_mode",
+              "address": 10,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            },
+            {
+              "name": "homing_offset",
+              "address": 20,
+              "size": 4,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            }
+          ],
+          "faults": [],
+          "skipped_registers": []
+        },
+        {
+          "motor_id": 3,
+          "identity": {
+            "motor_id": 3,
+            "model_number": 1060,
+            "firmware_version": 42,
+            "observed_at": "2026-10-04T11:15:26.587+09:00",
+            "device_error": 0,
+            "faults": []
+          },
+          "proposed_role": "elbow",
+          "registers": [
+            {
+              "name": "id",
+              "address": 7,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "baud_rate",
+              "address": 8,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "protocol_type",
+              "address": 13,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 2,
+              "value": 2,
+              "device_alert": false
+            },
+            {
+              "name": "operating_mode",
+              "address": 11,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "drive_mode",
+              "address": 10,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            },
+            {
+              "name": "homing_offset",
+              "address": 20,
+              "size": 4,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            }
+          ],
+          "faults": [],
+          "skipped_registers": []
+        },
+        {
+          "motor_id": 4,
+          "identity": {
+            "motor_id": 4,
+            "model_number": 1060,
+            "firmware_version": 42,
+            "observed_at": "2026-10-04T11:15:26.714+09:00",
+            "device_error": 0,
+            "faults": []
+          },
+          "proposed_role": "wrist",
+          "registers": [
+            {
+              "name": "id",
+              "address": 7,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 4,
+              "value": 4,
+              "device_alert": false
+            },
+            {
+              "name": "baud_rate",
+              "address": 8,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "protocol_type",
+              "address": 13,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 2,
+              "value": 2,
+              "device_alert": false
+            },
+            {
+              "name": "operating_mode",
+              "address": 11,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "drive_mode",
+              "address": 10,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            },
+            {
+              "name": "homing_offset",
+              "address": 20,
+              "size": 4,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            }
+          ],
+          "faults": [],
+          "skipped_registers": []
+        },
+        {
+          "motor_id": 5,
+          "identity": {
+            "motor_id": 5,
+            "model_number": 1060,
+            "firmware_version": 43,
+            "observed_at": "2026-10-04T11:15:26.842+09:00",
+            "device_error": 0,
+            "faults": []
+          },
+          "proposed_role": "gripper_open_close",
+          "registers": [
+            {
+              "name": "id",
+              "address": 7,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 5,
+              "value": 5,
+              "device_alert": false
+            },
+            {
+              "name": "baud_rate",
+              "address": 8,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "protocol_type",
+              "address": 13,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 2,
+              "value": 2,
+              "device_alert": false
+            },
+            {
+              "name": "operating_mode",
+              "address": 11,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 3,
+              "value": 3,
+              "device_alert": false
+            },
+            {
+              "name": "drive_mode",
+              "address": 10,
+              "size": 1,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            },
+            {
+              "name": "homing_offset",
+              "address": 20,
+              "size": 4,
+              "memory": "EEPROM",
+              "raw": 0,
+              "value": 0,
+              "device_alert": false
+            }
+          ],
+          "faults": [],
+          "skipped_registers": []
+        }
+      ],
+      "config": {
+        "bus": {
+          "device": "/dev/serial/by-id/usb-BestTechnology_E148_E148-if00-port0",
+          "baudrate": 1000000,
+          "protocol": 2.0,
+          "expected_ids": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "roles": [
+          {
+            "motor_id": 1,
+            "name": "base_rotation"
+          },
+          {
+            "motor_id": 2,
+            "name": "shoulder"
+          },
+          {
+            "motor_id": 3,
+            "name": "elbow"
+          },
+          {
+            "motor_id": 4,
+            "name": "wrist"
+          },
+          {
+            "motor_id": 5,
+            "name": "gripper_open_close"
+          }
+        ],
+        "physical_order_verified": false
+      },
+      "observed_at": "2026-10-04T11:15:26.938+09:00",
+      "kind": "metadata",
+      "schema_version": 2,
+      "simulated": false,
+      "acquisition_id": "df0c8a21-79ce-40a8-a5c8-588af46666dd"
+    },
+    "frame": {
+      "frame": {
+        "sequence": 199,
+        "started_at": "2026-10-04T11:15:36.889+09:00",
+        "finished_at": "2026-10-04T11:15:36.919+09:00",
+        "monotonic_ns": 73301070595167,
+        "duration_ms": 30.331858,
+        "requested_rate_hz": 20.0,
+        "deadline_missed": false,
+        "read_mode": "sync",
+        "motors": [
+          {
+            "motor_id": 1,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2062,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 91,
+            "temperature_c": 36,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 19195,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 2,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 3354,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 91,
+            "temperature_c": 37,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 19102,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 3,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 1154,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 90,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 49,
+            "tick_ms": 18957,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 4,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2058,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 90,
+            "temperature_c": 36,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 19019,
+            "device_alert": false,
+            "faults": []
+          },
+          {
+            "motor_id": 5,
+            "torque_enabled": false,
+            "hardware_error": 0,
+            "position_counts": 2059,
+            "velocity_raw": 0,
+            "pwm_raw": 0,
+            "load_raw": 0,
+            "voltage_raw": 90,
+            "temperature_c": 35,
+            "moving": false,
+            "moving_status": 1,
+            "tick_ms": 19321,
+            "device_alert": false,
+            "faults": []
+          }
+        ]
+      },
+      "kind": "frame",
+      "schema_version": 2
+    },
+    "summary": {
+      "frames": 200,
+      "incomplete_frames": 0,
+      "deadline_misses": 0,
+      "elapsed_seconds": 10.000090517,
+      "achieved_rate_hz": 19.99981316556447,
+      "interrupted": false,
+      "port_closed": true
+    },
+    "log_path": "reports/robot-completion-20261004/live/live_20261004T111525_781146+0900.jsonl",
+    "error": null,
+    "simulated": false
+  },
+  "second": {
+    "angles": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "theta": 90.0,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 225.0,
+    "elevation": -25.0,
+    "distance": 0.64,
+    "focus": "arm",
+    "source": "manual",
+    "frame_seq": 25,
+    "render_fps": 20.6,
+    "frame_time": 1791081089.5699728,
+    "error": null,
+    "telemetry": {
+      "configured": true,
+      "status": "READ未接続・停止中",
+      "motors": [
+        {
+          "motor_id": 1,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 2062,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 91,
+          "temperature_c": 36,
+          "moving": false,
+          "moving_status": 1,
+          "tick_ms": 19195,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 3354,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 91,
+          "temperature_c": 37,
+          "moving": false,
+          "moving_status": 1,
+          "tick_ms": 19102,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 1154,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 90,
+          "temperature_c": 35,
+          "moving": false,
+          "moving_status": 49,
+          "tick_ms": 18957,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 2058,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 90,
+          "temperature_c": 36,
+          "moving": false,
+          "moving_status": 1,
+          "tick_ms": 19019,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "position_counts": 2059,
+          "velocity_raw": 0,
+          "pwm_raw": 0,
+          "load_raw": 0,
+          "voltage_raw": 90,
+          "temperature_c": 35,
+          "moving": false,
+          "moving_status": 1,
+          "tick_ms": 19321,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": false,
+      "can_render": false,
+      "session_id": "df0c8a21-79ce-40a8-a5c8-588af46666dd",
+      "state": "stopped",
+      "port_closed": true,
+      "summary": {
+        "frames": 200,
+        "incomplete_frames": 0,
+        "deadline_misses": 0,
+        "elapsed_seconds": 10.000090517,
+        "achieved_rate_hz": 19.99981316556447,
+        "interrupted": false,
+        "port_closed": true
+      },
+      "calibration_invalid": false,
+      "simulated": false
+    },
+    "live_available": true,
+    "direction_observation": {
+      "before": null,
+      "result": null,
+      "saved_path": null
+    },
+    "calibration": {
+      "verified": false,
+      "status": "未校正",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb"
+    },
+    "gap_mm": 15.99,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65
+  },
+  "frames_progressed": true,
+  "render_error": null,
+  "physical_calibration_proven": false
+}

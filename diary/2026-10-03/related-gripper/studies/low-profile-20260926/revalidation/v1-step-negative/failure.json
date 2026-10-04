@@ -1,0 +1,6 @@
+{
+  "status": "FAIL",
+  "error_type": "ValidationError",
+  "error": "small_gripper_drive/jaw_l: rigid members move differently (rotation_rad=0.0, translation_mm=5.16416212733822)",
+  "note": "Partial inventories are evidence of an incomplete/failed run, not a successful replay"
+}

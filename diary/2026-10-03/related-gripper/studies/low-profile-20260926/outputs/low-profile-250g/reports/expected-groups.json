@@ -1,0 +1,1078 @@
+{
+  "purpose": "Expected membership after UI update; not evidence of actual membership",
+  "expected_total_bodies": 262,
+  "groups": {
+    "base_link": [
+      {
+        "name": "ARM_M01_ref00",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref00",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref01",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref02",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref03",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref04",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref05",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref06",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref07",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref08",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref09",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref10",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref11",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref12",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref13",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref14",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref15",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref16",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref17",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref18",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref19",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref20",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref21",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref22",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref23",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref24",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref25",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M01_ref26",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref27",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref28",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref29",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref30",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref31",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref32",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref33",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M01_ref34",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_P01_base",
+        "body_type": "solid"
+      }
+    ],
+    "shoulder_yaw": [
+      {
+        "name": "ARM_M02_ref00",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref00",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref01",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref02",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref03",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref04",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref05",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref06",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref07",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref08",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref09",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref10",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref11",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref12",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref13",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref14",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref15",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref16",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref17",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref18",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref19",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref20",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref21",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref22",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref23",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref24",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref25",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M02_ref26",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref27",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref28",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref29",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref30",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref31",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref32",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref33",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M02_ref34",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_P02_yaw_carrier",
+        "body_type": "solid"
+      }
+    ],
+    "upper_arm": [
+      {
+        "name": "ARM_M03_ref00",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref00",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref01",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref02",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref03",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref04",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref05",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref06",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref07",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref08",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref09",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref10",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref11",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref12",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref13",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref14",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref15",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref16",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref17",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref18",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref19",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref20",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref21",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref22",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref23",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref24",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref25",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M03_ref26",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref27",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref28",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref29",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref30",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref31",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref32",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref33",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M03_ref34",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_P03_shoulder_XL430",
+        "body_type": "solid"
+      }
+    ],
+    "forearm": [
+      {
+        "name": "ARM_M04_ref00",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref00",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref01",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref02",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref03",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref04",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref05",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref06",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref07",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref08",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref09",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref10",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref11",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref12",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref13",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref14",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref15",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref16",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref17",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref18",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref19",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref20",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref21",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref22",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref23",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref24",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref25",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M04_ref26",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref27",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref28",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref29",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref30",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref31",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref32",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref33",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M04_ref34",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_P04_extension_XL430",
+        "body_type": "solid"
+      }
+    ],
+    "wrist": [
+      {
+        "name": "ARM_M05_ref01",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref02",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref03",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref04",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref05",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref06",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref07",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref08",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref09",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref10",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref11",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref12",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref13",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref14",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref15",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref16",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref17",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref18",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref19",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref20",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref21",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref22",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref23",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref24",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref25",
+        "body_type": "sheet"
+      },
+      {
+        "name": "ARM_M05_ref26",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref27",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref28",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref29",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref30",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref31",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref32",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref33",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_M05_ref34",
+        "body_type": "solid"
+      },
+      {
+        "name": "ARM_P05_wrist_XL430",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_frame",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_U",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_D",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_XL430_fixed",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_XL430_fixed",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_-37.5_-24.5_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_-37.5_-24.5_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_-37.5_-24.5_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_-37.5_24.5_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_-37.5_24.5_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_-37.5_24.5_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_37.5_-24.5_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_37.5_-24.5_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_37.5_-24.5_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_37.5_24.5_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_37.5_24.5_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_cap_37.5_24.5_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_case_tapper_-11",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_case_tapper_11",
+        "body_type": "solid"
+      }
+    ],
+    "gripper_crank": [
+      {
+        "name": "PG3_crank",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_horn_spacer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_XL430_horn",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_drive_R_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_drive_R_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_drive_R_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_drive_L_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_drive_L_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_drive_L_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_horn_bolt_0",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_horn_bolt_1",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_horn_bolt_2",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_horn_bolt_3",
+        "body_type": "solid"
+      }
+    ],
+    "jaw_l": [
+      {
+        "name": "PG3_carriage_L",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_L",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pad_L",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_carriage_L_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_carriage_L_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_carriage_L_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_L_-14_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_L_-14_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_L_-14_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_L_14_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_L_14_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_L_14_nut",
+        "body_type": "solid"
+      }
+    ],
+    "jaw_r": [
+      {
+        "name": "PG3_carriage_R",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_R",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pad_R",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_carriage_R_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_carriage_R_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_pivot_carriage_R_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_R_-14_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_R_-14_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_R_-14_nut",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_R_14_washer",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_R_14_bolt",
+        "body_type": "solid"
+      },
+      {
+        "name": "PG3_finger_R_14_nut",
+        "body_type": "solid"
+      }
+    ],
+    "coupler_l": [
+      {
+        "name": "PG3_link_L",
+        "body_type": "solid"
+      }
+    ],
+    "coupler_r": [
+      {
+        "name": "PG3_link_R",
+        "body_type": "solid"
+      }
+    ],
+    "camera_mount": [
+      {
+        "name": "CAM5_BASE",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_D405_CARRIER",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_BASE_WASHER_0",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_BASE_TAP_0",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_BASE_WASHER_1",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_BASE_TAP_1",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_BASE_WASHER_2",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_BASE_TAP_2",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_BASE_WASHER_3",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_BASE_TAP_3",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_TIE_WASHER_0",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_TIE_BOLT_0",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_TIE_NUT_0",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_TIE_WASHER_1",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_TIE_BOLT_1",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_TIE_NUT_1",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_D405_SCREW_0",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_D405_SCREW_1",
+        "body_type": "solid"
+      }
+    ],
+    "camera_body": [
+      {
+        "name": "CAM5_D405_BODY",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_D405_USB_PLUG",
+        "body_type": "solid"
+      },
+      {
+        "name": "CAM5_D405_USB_CABLE_STUB",
+        "body_type": "solid"
+      }
+    ]
+  }
+}

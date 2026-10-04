@@ -1,0 +1,3217 @@
+{
+  "counts": {
+    "PASS": 518,
+    "ERROR": 2,
+    "UNKNOWN": 2,
+    "FAIL": 2
+  },
+  "pairs": [
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "000:ARM_M01_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "001:ARM_M01_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "002:ARM_M01_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "003:ARM_M01_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "004:ARM_M01_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "005:ARM_P01_base",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "006:ARM_M01_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "007:ARM_M01_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "008:ARM_M01_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "009:ARM_M01_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "010:ARM_M01_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "011:ARM_M01_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "012:ARM_M01_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "013:ARM_M01_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "014:ARM_M01_ref07",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "015:ARM_M01_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "016:ARM_M01_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "017:ARM_M01_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "018:ARM_M01_ref06",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "019:ARM_M01_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "020:ARM_M01_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "021:ARM_M01_ref05",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "022:ARM_M01_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "023:ARM_M01_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "024:ARM_M01_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "025:ARM_M01_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "026:ARM_M01_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "027:ARM_M01_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "028:ARM_M01_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "029:ARM_M01_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "030:ARM_M01_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "031:ARM_M01_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "032:ARM_M01_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "033:ARM_M01_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "034:ARM_M01_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "035:ARM_M01_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "036:ARM_M01_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "037:CAM5_TIE_BOLT_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "038:CAM5_BASE_WASHER_3",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "039:CAM5_D405_CARRIER",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "040:CAM5_TIE_NUT_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "041:CAM5_BASE_TAP_3",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "042:CAM5_BASE_WASHER_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "043:CAM5_TIE_WASHER_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "044:CAM5_TIE_WASHER_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "045:CAM5_BASE_TAP_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "046:CAM5_TIE_BOLT_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "047:CAM5_BASE_WASHER_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "048:CAM5_TIE_NUT_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "049:CAM5_BASE_TAP_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "050:CAM5_D405_SCREW_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "051:CAM5_BASE_WASHER_2",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "052:CAM5_D405_SCREW_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "053:CAM5_BASE_TAP_2",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "054:CAM5_BASE",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "055:ARM_M04_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "056:ARM_M04_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "057:ARM_M04_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "058:ARM_M04_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "059:ARM_M04_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "060:ARM_M04_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "061:ARM_M04_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "062:ARM_M04_ref05",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "063:ARM_M04_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "064:ARM_M04_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "065:ARM_M04_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "066:ARM_M04_ref06",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "067:ARM_M04_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "068:ARM_M04_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "069:ARM_M04_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "070:ARM_M04_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "071:ARM_P04_extension_XL430",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "072:ARM_M04_ref07",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "073:ARM_M04_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "074:ARM_M04_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "075:ARM_M04_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "076:ARM_M04_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "077:ARM_M04_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "078:ARM_M04_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "079:ARM_M04_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "080:ARM_M04_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "081:ARM_M04_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "082:ARM_M04_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "083:ARM_M04_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "084:ARM_M04_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "085:ARM_M04_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "086:ARM_M04_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "087:ARM_M04_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "088:ARM_M04_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "089:ARM_M04_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "090:ARM_M04_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "091:ARM_M04_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "092:ARM_M03_ref07",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "093:ARM_M03_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "094:ARM_M03_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "095:ARM_M03_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "096:ARM_M03_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "097:ARM_M03_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "098:ARM_M03_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "099:ARM_M03_ref06",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "100:ARM_M03_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "101:ARM_M03_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "102:ARM_P03_shoulder_XL430",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "103:ARM_M03_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "104:ARM_M03_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "105:ARM_M03_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "106:ARM_M03_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "107:ARM_M03_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "108:ARM_M03_ref05",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "109:ARM_M03_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "110:ARM_M03_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "111:ARM_M03_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "112:ARM_M03_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "113:ARM_M03_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "114:ARM_M03_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "115:ARM_M03_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "116:ARM_M03_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "117:ARM_M03_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "118:ARM_M03_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "119:ARM_M03_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "120:ARM_M03_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "121:ARM_M03_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "122:ARM_M03_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "123:ARM_M03_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "124:ARM_M03_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "125:ARM_M03_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "126:ARM_M03_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "127:ARM_M03_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "128:ARM_M03_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "129:ARM_M05_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "130:ARM_P05_wrist_XL430",
+      "distance_mm": 0.3499999999999943,
+      "status": "PASS",
+      "reason": "solid_distance_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "131:PG3_cap_-37.5_24.5_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "132:ARM_M05_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "133:PG3_frame",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "134:PG3_cap_-37.5_24.5_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "135:ARM_M05_ref07",
+      "distance_mm": 1.5205140074679924,
+      "status": "PASS",
+      "reason": "solid_distance_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "136:ARM_M05_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "137:ARM_M05_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "138:ARM_M05_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "139:PG3_cap_-37.5_-24.5_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "140:ARM_M05_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "141:ARM_M05_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "142:PG3_case_tapper_-11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "143:PG3_XL430_fixed",
+      "distance_mm": 0.0,
+      "status": "ERROR",
+      "reason": "operand_self_boolean_control_failed",
+      "enclosed_operands": [
+        "143:PG3_XL430_fixed"
+      ],
+      "conservative_intersection_mm3": 256.31000360999957
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "144:PG3_cap_-37.5_-24.5_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "145:ARM_M05_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "146:PG3_cap_37.5_24.5_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "147:ARM_M05_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "148:ARM_M05_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "149:ARM_M05_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "150:PG3_XL430_fixed",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "151:PG3_cap_-37.5_-24.5_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "152:ARM_M05_ref05",
+      "distance_mm": 0.0,
+      "status": "UNKNOWN",
+      "reason": "non_solid_overlap"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "153:PG3_cap_37.5_24.5_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "154:ARM_M05_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "155:ARM_M05_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "156:ARM_M05_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "157:ARM_M05_ref06",
+      "distance_mm": 0.0,
+      "status": "FAIL",
+      "reason": "solid_intersection",
+      "volume_mm3": 29.434246593337363,
+      "intersection_bounds_mm": [
+        6.949999900000001,
+        149.2499999,
+        173.9499999,
+        13.950000099999968,
+        153.0500001,
+        183.45000009999998
+      ]
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "158:ARM_M05_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "159:ARM_M05_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "160:ARM_M05_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "161:ARM_M05_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "162:PG3_cap_U",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "163:PG3_cap_-37.5_24.5_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "164:ARM_M05_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "165:ARM_M05_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "166:PG3_cap_D",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "167:PG3_cap_37.5_-24.5_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "168:ARM_M05_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "169:ARM_M05_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "170:PG3_cap_37.5_-24.5_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "171:ARM_M05_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "172:ARM_M05_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "173:PG3_cap_37.5_-24.5_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "174:ARM_M05_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "175:ARM_M05_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "176:PG3_cap_37.5_24.5_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "177:ARM_M05_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "178:ARM_M05_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "179:PG3_case_tapper_11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "180:ARM_M05_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "181:ARM_M05_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "182:ARM_M05_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "183:PG3_link_L",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "184:PG3_link_R",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "185:PG3_pivot_drive_R_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "186:PG3_pivot_drive_R_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "187:PG3_horn_bolt_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "188:PG3_crank",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "189:PG3_pivot_drive_L_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "190:PG3_horn_bolt_2",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "191:PG3_horn_bolt_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "192:PG3_horn_spacer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "193:PG3_pivot_drive_L_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "194:PG3_horn_bolt_3",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "195:PG3_pivot_drive_L_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "196:PG3_XL430_horn",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "197:PG3_pivot_drive_R_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "198:PG3_carriage_R",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "199:PG3_finger_R_14_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "200:PG3_pivot_carriage_R_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "201:PG3_finger_R_14_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "202:PG3_finger_R_-14_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "203:PG3_finger_R",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "204:PG3_pivot_carriage_R_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "205:PG3_finger_R_14_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "206:PG3_finger_R_-14_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "207:PG3_pad_R",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "208:PG3_pivot_carriage_R_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "209:PG3_finger_R_-14_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "210:CAM5_D405_BODY",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "211:CAM5_D405_USB_PLUG",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "212:CAM5_D405_USB_CABLE_STUB",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "213:ARM_M02_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "214:ARM_M02_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "215:ARM_M02_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "216:ARM_M02_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "217:ARM_P02_yaw_carrier",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "218:ARM_M02_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "219:ARM_M02_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "220:ARM_M02_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "221:ARM_M02_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "222:ARM_M02_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "223:ARM_M02_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "224:ARM_M02_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "225:ARM_M02_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "226:ARM_M02_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "227:ARM_M02_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "228:ARM_M02_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "229:ARM_M02_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "230:ARM_M02_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "231:ARM_M02_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "232:ARM_M02_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "233:ARM_M02_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "234:ARM_M02_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "235:ARM_M02_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "236:ARM_M02_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "237:ARM_M02_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "238:ARM_M02_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "239:ARM_M02_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "240:ARM_M02_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "241:ARM_M02_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "242:ARM_M02_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "243:ARM_M02_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "244:ARM_M02_ref05",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "245:ARM_M02_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "246:ARM_M02_ref06",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "247:ARM_M02_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "248:ARM_M02_ref07",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "249:ARM_M02_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "250:PG3_finger_L_14_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "251:PG3_pad_L",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "252:PG3_pivot_carriage_L_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "253:PG3_finger_L_14_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "254:PG3_finger_L_-14_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "255:PG3_finger_L_-14_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "256:PG3_carriage_L",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "257:PG3_pivot_carriage_L_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "258:PG3_finger_L_14_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "259:PG3_finger_L",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "260:PG3_pivot_carriage_L_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_0",
+      "b": "261:PG3_finger_L_-14_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "000:ARM_M01_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "001:ARM_M01_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "002:ARM_M01_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "003:ARM_M01_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "004:ARM_M01_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "005:ARM_P01_base",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "006:ARM_M01_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "007:ARM_M01_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "008:ARM_M01_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "009:ARM_M01_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "010:ARM_M01_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "011:ARM_M01_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "012:ARM_M01_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "013:ARM_M01_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "014:ARM_M01_ref07",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "015:ARM_M01_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "016:ARM_M01_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "017:ARM_M01_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "018:ARM_M01_ref06",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "019:ARM_M01_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "020:ARM_M01_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "021:ARM_M01_ref05",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "022:ARM_M01_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "023:ARM_M01_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "024:ARM_M01_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "025:ARM_M01_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "026:ARM_M01_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "027:ARM_M01_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "028:ARM_M01_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "029:ARM_M01_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "030:ARM_M01_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "031:ARM_M01_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "032:ARM_M01_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "033:ARM_M01_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "034:ARM_M01_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "035:ARM_M01_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "036:ARM_M01_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "037:CAM5_TIE_BOLT_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "038:CAM5_BASE_WASHER_3",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "039:CAM5_D405_CARRIER",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "040:CAM5_TIE_NUT_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "041:CAM5_BASE_TAP_3",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "042:CAM5_BASE_WASHER_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "043:CAM5_TIE_WASHER_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "044:CAM5_TIE_WASHER_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "045:CAM5_BASE_TAP_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "046:CAM5_TIE_BOLT_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "047:CAM5_BASE_WASHER_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "048:CAM5_TIE_NUT_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "049:CAM5_BASE_TAP_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "050:CAM5_D405_SCREW_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "051:CAM5_BASE_WASHER_2",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "052:CAM5_D405_SCREW_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "053:CAM5_BASE_TAP_2",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "054:CAM5_BASE",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "055:ARM_M04_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "056:ARM_M04_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "057:ARM_M04_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "058:ARM_M04_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "059:ARM_M04_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "060:ARM_M04_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "061:ARM_M04_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "062:ARM_M04_ref05",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "063:ARM_M04_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "064:ARM_M04_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "065:ARM_M04_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "066:ARM_M04_ref06",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "067:ARM_M04_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "068:ARM_M04_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "069:ARM_M04_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "070:ARM_M04_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "071:ARM_P04_extension_XL430",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "072:ARM_M04_ref07",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "073:ARM_M04_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "074:ARM_M04_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "075:ARM_M04_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "076:ARM_M04_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "077:ARM_M04_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "078:ARM_M04_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "079:ARM_M04_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "080:ARM_M04_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "081:ARM_M04_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "082:ARM_M04_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "083:ARM_M04_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "084:ARM_M04_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "085:ARM_M04_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "086:ARM_M04_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "087:ARM_M04_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "088:ARM_M04_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "089:ARM_M04_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "090:ARM_M04_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "091:ARM_M04_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "092:ARM_M03_ref07",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "093:ARM_M03_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "094:ARM_M03_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "095:ARM_M03_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "096:ARM_M03_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "097:ARM_M03_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "098:ARM_M03_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "099:ARM_M03_ref06",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "100:ARM_M03_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "101:ARM_M03_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "102:ARM_P03_shoulder_XL430",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "103:ARM_M03_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "104:ARM_M03_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "105:ARM_M03_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "106:ARM_M03_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "107:ARM_M03_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "108:ARM_M03_ref05",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "109:ARM_M03_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "110:ARM_M03_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "111:ARM_M03_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "112:ARM_M03_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "113:ARM_M03_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "114:ARM_M03_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "115:ARM_M03_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "116:ARM_M03_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "117:ARM_M03_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "118:ARM_M03_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "119:ARM_M03_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "120:ARM_M03_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "121:ARM_M03_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "122:ARM_M03_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "123:ARM_M03_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "124:ARM_M03_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "125:ARM_M03_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "126:ARM_M03_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "127:ARM_M03_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "128:ARM_M03_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "129:ARM_M05_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "130:ARM_P05_wrist_XL430",
+      "distance_mm": 0.3499999999999943,
+      "status": "PASS",
+      "reason": "solid_distance_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "131:PG3_cap_-37.5_24.5_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "132:ARM_M05_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "133:PG3_frame",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "134:PG3_cap_-37.5_24.5_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "135:ARM_M05_ref07",
+      "distance_mm": 1.5205140074679535,
+      "status": "PASS",
+      "reason": "solid_distance_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "136:ARM_M05_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "137:ARM_M05_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "138:ARM_M05_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "139:PG3_cap_-37.5_-24.5_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "140:ARM_M05_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "141:ARM_M05_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "142:PG3_case_tapper_-11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "143:PG3_XL430_fixed",
+      "distance_mm": 0.0,
+      "status": "ERROR",
+      "reason": "operand_self_boolean_control_failed",
+      "enclosed_operands": [
+        "143:PG3_XL430_fixed"
+      ],
+      "conservative_intersection_mm3": 256.31000360964117
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "144:PG3_cap_-37.5_-24.5_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "145:ARM_M05_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "146:PG3_cap_37.5_24.5_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "147:ARM_M05_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "148:ARM_M05_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "149:ARM_M05_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "150:PG3_XL430_fixed",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "151:PG3_cap_-37.5_-24.5_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "152:ARM_M05_ref05",
+      "distance_mm": 0.0,
+      "status": "UNKNOWN",
+      "reason": "non_solid_overlap"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "153:PG3_cap_37.5_24.5_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "154:ARM_M05_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "155:ARM_M05_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "156:ARM_M05_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "157:ARM_M05_ref06",
+      "distance_mm": 0.0,
+      "status": "FAIL",
+      "reason": "solid_intersection",
+      "volume_mm3": 29.4352103335559,
+      "intersection_bounds_mm": [
+        -14.350000100000033,
+        149.2499999,
+        173.9499999,
+        -7.349999899999998,
+        153.0500001,
+        183.45000009999998
+      ]
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "158:ARM_M05_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "159:ARM_M05_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "160:ARM_M05_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "161:ARM_M05_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "162:PG3_cap_U",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "163:PG3_cap_-37.5_24.5_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "164:ARM_M05_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "165:ARM_M05_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "166:PG3_cap_D",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "167:PG3_cap_37.5_-24.5_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "168:ARM_M05_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "169:ARM_M05_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "170:PG3_cap_37.5_-24.5_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "171:ARM_M05_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "172:ARM_M05_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "173:PG3_cap_37.5_-24.5_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "174:ARM_M05_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "175:ARM_M05_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "176:PG3_cap_37.5_24.5_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "177:ARM_M05_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "178:ARM_M05_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "179:PG3_case_tapper_11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "180:ARM_M05_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "181:ARM_M05_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "182:ARM_M05_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "183:PG3_link_L",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "184:PG3_link_R",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "185:PG3_pivot_drive_R_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "186:PG3_pivot_drive_R_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "187:PG3_horn_bolt_0",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "188:PG3_crank",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "189:PG3_pivot_drive_L_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "190:PG3_horn_bolt_2",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "191:PG3_horn_bolt_1",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "192:PG3_horn_spacer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "193:PG3_pivot_drive_L_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "194:PG3_horn_bolt_3",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "195:PG3_pivot_drive_L_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "196:PG3_XL430_horn",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "197:PG3_pivot_drive_R_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "198:PG3_carriage_R",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "199:PG3_finger_R_14_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "200:PG3_pivot_carriage_R_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "201:PG3_finger_R_14_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "202:PG3_finger_R_-14_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "203:PG3_finger_R",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "204:PG3_pivot_carriage_R_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "205:PG3_finger_R_14_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "206:PG3_finger_R_-14_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "207:PG3_pad_R",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "208:PG3_pivot_carriage_R_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "209:PG3_finger_R_-14_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "210:CAM5_D405_BODY",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "211:CAM5_D405_USB_PLUG",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "212:CAM5_D405_USB_CABLE_STUB",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "213:ARM_M02_ref27",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "214:ARM_M02_ref28",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "215:ARM_M02_ref11",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "216:ARM_M02_ref29",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "217:ARM_P02_yaw_carrier",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "218:ARM_M02_ref12",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "219:ARM_M02_ref30",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "220:ARM_M02_ref26",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "221:ARM_M02_ref13",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "222:ARM_M02_ref31",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "223:ARM_M02_ref24",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "224:ARM_M02_ref14",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "225:ARM_M02_ref10",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "226:ARM_M02_ref32",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "227:ARM_M02_ref25",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "228:ARM_M02_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "229:ARM_M02_ref15",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "230:ARM_M02_ref08",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "231:ARM_M02_ref00",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "232:ARM_M02_ref16",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "233:ARM_M02_ref09",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "234:ARM_M02_ref01",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "235:ARM_M02_ref17",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "236:ARM_M02_ref33",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "237:ARM_M02_ref02",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "238:ARM_M02_ref18",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "239:ARM_M02_ref34",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "240:ARM_M02_ref03",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "241:ARM_M02_ref19",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "242:ARM_M02_ref04",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "243:ARM_M02_ref20",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "244:ARM_M02_ref05",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "245:ARM_M02_ref21",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "246:ARM_M02_ref06",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "247:ARM_M02_ref22",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "248:ARM_M02_ref07",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "249:ARM_M02_ref23",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "250:PG3_finger_L_14_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "251:PG3_pad_L",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "252:PG3_pivot_carriage_L_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "253:PG3_finger_L_14_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "254:PG3_finger_L_-14_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "255:PG3_finger_L_-14_nut",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "256:PG3_carriage_L",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "257:PG3_pivot_carriage_L_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "258:PG3_finger_L_14_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "259:PG3_finger_L",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "260:PG3_pivot_carriage_L_bolt",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    },
+    {
+      "a": "PLUG_WINDOW_ONLY_1",
+      "b": "261:PG3_finger_L_-14_washer",
+      "status": "PASS",
+      "reason": "bbox_separated"
+    }
+  ],
+  "operand_controls": {
+    "PLUG_WINDOW_ONLY_0": {
+      "self_cut_mm3": 0,
+      "self_common_mm3": 657.0200000000018,
+      "volume_mm3": 657.0200000000018,
+      "passed": true
+    },
+    "143:PG3_XL430_fixed": {
+      "self_cut_mm3": 39862.95009471144,
+      "self_common_mm3": 0,
+      "volume_mm3": 39838.66055056398,
+      "passed": false
+    },
+    "157:ARM_M05_ref06": {
+      "self_cut_mm3": 0,
+      "self_common_mm3": 362.57810100216426,
+      "volume_mm3": 362.57810100216426,
+      "passed": true
+    },
+    "PLUG_WINDOW_ONLY_1": {
+      "self_cut_mm3": 0,
+      "self_common_mm3": 657.0200000000019,
+      "volume_mm3": 657.0200000000019,
+      "passed": true
+    }
+  },
+  "contact_adjudication": "No overlap is automatically accepted as a thread or fit."
+}

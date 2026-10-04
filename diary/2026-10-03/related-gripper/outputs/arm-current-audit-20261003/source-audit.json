@@ -1,0 +1,183 @@
+{
+  "low_cost_robot": {
+    "head": "f29f33b3b99320b3ad35171ec08897bede459fbb",
+    "branch": "fix/cadre-geometry-review-20260918",
+    "feature_head": "ecdc3e6d7424d93718e24388e5ee9654d8e9d348",
+    "feature_date": "2026-06-14T13:34:03+09:00",
+    "branches": "feature/all-xl430-arm                             ecdc3e6 [origin/feature/all-xl430-arm] docs: add 3d print checklist\n* fix/cadre-geometry-review-20260918                f29f33b [origin/fix/cadre-geometry-review-20260918] chore(repo): keep temp/ and slicer result.json out of version control\n  main                                              b4a1d57 [origin/main] feat: add cad-reverse-parametric skill + headless simulation verifier\n  remotes/origin/HEAD                               -> origin/main\n  remotes/origin/feature/all-xl430-arm              ecdc3e6 docs: add 3d print checklist\n  remotes/origin/fix/cadre-geometry-review-20260918 f29f33b chore(repo): keep temp/ and slicer result.json out of version control\n  remotes/origin/main                               b4a1d57 feat: add cad-reverse-parametric skill + headless simulation verifier",
+    "working_status": "?? skills/cad-reverse-parametric/studies/xl430_lowcost/intent/hn11_m2_idler.yaml\n?? skills/cad-reverse-parametric/studies/xl430_lowcost/parts/hn11_m2_idler.py\n?? skills/cad-reverse-parametric/studies/xl430_lowcost/validate_hn11_replacement.py\n?? skills/cad-reverse-parametric/tests/test_hn11_replacement.py",
+    "original_cad_history": "965a66d 2024-05-23T20:30:36-07:00 add extra axis to arm design files\nac6088b 2024-03-23T14:01:48-07:00 add stl files",
+    "branch_cad_vs_current": ""
+  },
+  "inputs": [
+    {
+      "path": "/home/inaho-omen/Project/low_cost_robot/skills/cad-reverse-parametric/outputs/parts/shoulder_to_elbow_xl430.step",
+      "member": null,
+      "sha256": "3f3d7d73eac49346149fc898fa5b9ed270fa84bc434a1e84dd6c118d00c1c758",
+      "bounds_mm": [
+        -21.75,
+        -16.0,
+        -16.0,
+        21.75,
+        136.3,
+        16.0
+      ],
+      "solids": 3,
+      "valid": true
+    },
+    {
+      "path": "/home/inaho-omen/Project/low_cost_robot/skills/cad-reverse-parametric/outputs/parts/elbow_to_wrist_xl430.step",
+      "member": null,
+      "sha256": "f80f5b3132ee5842dbcaef4040a8d5bfcf1eb86e8435df9d32496b297381d6da",
+      "bounds_mm": [
+        0.0,
+        0.0,
+        -1e-07,
+        37.5,
+        42.0,
+        39.0000001
+      ],
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "path": "/home/inaho-omen/Project/low_cost_robot/skills/cad-reverse-parametric/outputs/parts/elbow_to_wrist_extension_xl430.step",
+      "member": null,
+      "sha256": "0472aef2f166496f2b6f94574ea1ce99cca9e8fce639bad73fc5a7e769c0a619",
+      "bounds_mm": [
+        -17.5000001,
+        -73.04577530648,
+        -1.0000000097144514e-07,
+        17.5000001,
+        17.054385448389,
+        23.0000001
+      ],
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/arm-r3/arm_XL430_R3.step",
+      "member": "P03_shoulder_XL430",
+      "sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "bounds_mm": [
+        -22.2000001,
+        -20.45,
+        43.299999899999996,
+        21.800000100000002,
+        26.05,
+        150.35
+      ],
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/arm-r3/arm_XL430_R3.step",
+      "member": "P04_extension_XL430",
+      "sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "bounds_mm": [
+        -23.2,
+        1.3000000000000007,
+        146.35,
+        22.8,
+        116.15,
+        178.1
+      ],
+      "solids": 1,
+      "valid": true
+    },
+    {
+      "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/references/arm-r3/P05_wrist_XL430.step",
+      "member": null,
+      "sha256": "7bbbb927b75b656a0c0662b1617eff3731d8892f235e9c85c832996af4615d42",
+      "bounds_mm": [
+        -23.2,
+        91.4,
+        151.1,
+        22.8,
+        174.9,
+        196.6
+      ],
+      "solids": 1,
+      "valid": true
+    }
+  ],
+  "images": [
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/images/feature_shoulder.png",
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/images/feature_wrist_bracket.png",
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/images/feature_extension.png",
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/images/r3_shoulder.png",
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/images/r3_extension.png",
+    "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/images/r3_wrist.png"
+  ],
+  "r3_archive": {
+    "path": "/home/inaho-omen/Downloads/XL430_collision_R3_20260919.zip",
+    "sha256": "59555ef4011b80ab2d9367a9ab9def62925f6991658a6a256dfdf8911aa734b9",
+    "entries": 80
+  },
+  "r3_evidence": [
+    {
+      "archive_member": "XL430_collision_R3_20260919/WORKDOC_ja.md",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/WORKDOC_ja.md",
+      "sha256": "42eaec13b29d00b6c2986b3599b1ffaedc145295a158e6c66936452db2c3e7a9"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/reports/motion_full.json",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/motion_full.json",
+      "sha256": "555312a40a0cca73aa9a9637d3a457073847954f32621a8a1abfc49bc6021604"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/reports/poses_all.csv",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/poses_all.csv",
+      "sha256": "c6869cd135ce6a8bbbee31bc29ee9b890a3010aafd4898e599e6feb20191e9e3"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/reports/poses_rejected.csv",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/poses_rejected.csv",
+      "sha256": "7eeb68254c32386c192b035947312fd0a42b8203222e41e61da9408e33d2ec65"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/reports/summary.json",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/summary.json",
+      "sha256": "40a137a937580f782d396c5d40fdbac01d41124eff4837307495092b762dc13f"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/requirements.txt",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/requirements.txt",
+      "sha256": "6f6ac6c23fa03d7bf6a19782534755d86c5ed9a4ba6410a00fcc1490a6799b86"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/source/build.py",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/build.py",
+      "sha256": "98aa1985da24c75a8119ff4314340ab04c8b0e2258de7716c028fa1a86b1a888"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/source/check.py",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/check.py",
+      "sha256": "4684523e52918eec5e4783df4ce700f5bb62664cce62306a9cb65a951ae7f82c"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/source/check_pose.py",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/check_pose.py",
+      "sha256": "a55246a44a71c9d70622f782f40856b610eecd18685d0596ab215c4ec7e92453"
+    },
+    {
+      "archive_member": "XL430_collision_R3_20260919/source/motion.py",
+      "output": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/arm-current-audit-20261003/r3-evidence/motion.py",
+      "sha256": "c0dde2452cade2d32ff2c5fae8fd461aa43468f80894840726629a127c44a007"
+    }
+  ],
+  "photos": [
+    {
+      "path": "/home/inaho-omen/Pictures/1888e231-325b-418e-98ae-6c22d27de5d0.jpeg",
+      "sha256": "d384d2bb43d3dd2579b4dcb2c3d9f3473277aae62ef912bb6ee66f79db878552"
+    },
+    {
+      "path": "/home/inaho-omen/Pictures/2ddc64b8-5f81-4700-96b3-8c76d2ba9f82.jpeg",
+      "sha256": "c0cc17842e305eb61663710804883ee046791b53648218564ce4a12e9bed6251"
+    },
+    {
+      "path": "/home/inaho-omen/Pictures/397595be-d993-4ee8-a447-036ff3046646.jpeg",
+      "sha256": "25116057f385d311baa2ff1ad74aa8c79e5bae6a26584a73259e331c8873aa66"
+    }
+  ]
+}

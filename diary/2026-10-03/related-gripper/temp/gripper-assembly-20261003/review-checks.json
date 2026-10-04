@@ -1,0 +1,105 @@
+{
+  "cad_counts": {
+    "B1": 4,
+    "B2": 2,
+    "B3": 2,
+    "B4": 4,
+    "B5": 4,
+    "B6": 2,
+    "N1": 12,
+    "W1": 8,
+    "W2": 4
+  },
+  "manual_new_item_totals": {
+    "B1": 4,
+    "B2": 2,
+    "B3": 2,
+    "B4": 4,
+    "B5": 4,
+    "B6": 2,
+    "N1": 12,
+    "W1": 8,
+    "W2": 4
+  },
+  "appendix_item_counts": {
+    "B1": 4,
+    "B2": 2,
+    "B3": 2,
+    "B4": 4,
+    "B5": 4,
+    "B6": 2,
+    "N1": 12,
+    "W1": 8,
+    "W2": 4
+  },
+  "steps": [
+    {
+      "step": "1",
+      "new_items": {
+        "N1": 0
+      }
+    },
+    {
+      "step": "2",
+      "new_items": {
+        "B6": 2,
+        "N1": 0
+      }
+    },
+    {
+      "step": "3",
+      "new_items": {
+        "B1": 4,
+        "N1": 2
+      }
+    },
+    {
+      "step": "4",
+      "new_items": {
+        "N1": 6
+      }
+    },
+    {
+      "step": "5",
+      "new_items": {
+        "N1": 0
+      }
+    },
+    {
+      "step": "6",
+      "new_items": {
+        "B2": 2,
+        "B3": 2,
+        "N1": 0,
+        "W2": 4
+      }
+    },
+    {
+      "step": "7",
+      "new_items": {
+        "B4": 4,
+        "N1": 4,
+        "W1": 4
+      }
+    },
+    {
+      "step": "8",
+      "new_items": {
+        "B5": 4,
+        "N1": 0,
+        "W1": 4
+      }
+    },
+    {
+      "step": "9・10",
+      "new_items": {
+        "N1": 0
+      }
+    }
+  ],
+  "unique_images": 15,
+  "image_references": 16,
+  "cad_sha256": "9f58c947753e9229b30939da23ce4c87c1cc85eeb39372518de4ffb98991b93f",
+  "quantity_reconciliation": "PASS",
+  "physical_assembly_verified": false
+}

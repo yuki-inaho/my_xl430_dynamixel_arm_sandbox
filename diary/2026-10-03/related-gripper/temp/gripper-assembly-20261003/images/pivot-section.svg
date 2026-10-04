@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="500" viewBox="0 0 1080 500">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#17485f" stroke-width="2"/></marker></defs>
+<rect width="1080" height="500" fill="#f3f6f8"/>
+<g font-family="Noto Sans CJK JP,sans-serif" fill="#203644">
+<text x="30" y="42" font-size="25" font-weight="bold">手順6｜支点の構造（断面模式図・実寸ではない）</text>
+<text x="30" y="76" font-size="18">左＝本体の背面・ナット側 ／ 右＝爪側・ねじ頭側</text>
+<path d="M880 116 H735" stroke="#17485f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="690" y="98" font-size="18">ボルトの名目挿入向き</text>
+<rect x="275" y="145" width="175" height="190" fill="#cbd5de" stroke="#203644" stroke-width="2"/>
+<rect x="450" y="202" width="180" height="76" fill="#cbd5de" stroke="#203644" stroke-width="2"/>
+<rect x="483" y="156" width="122" height="35" fill="#e58024" stroke="#203644" stroke-width="2"/>
+<rect x="483" y="289" width="122" height="35" fill="#e58024" stroke="#203644" stroke-width="2"/>
+<rect x="630" y="152" width="22" height="176" fill="#4c9bb7" stroke="#203644" stroke-width="2"/>
+<rect x="230" y="185" width="45" height="110" fill="#9b84c9" stroke="#203644" stroke-width="2"/>
+<rect x="222" y="226" width="430" height="28" fill="#6e8190" stroke="#203644" stroke-width="2"/>
+<rect x="652" y="200" width="47" height="80" fill="#6e8190" stroke="#203644" stroke-width="2"/>
+<path d="M210 137 L250 182 M380 368 L375 335 M532 136 L540 155 M580 360 L550 278 M681 344 L643 328 M805 243 L700 242" stroke="#17485f" stroke-width="2" fill="none"/>
+<text x="145" y="128" font-size="19">N1：M2ナット</text>
+<text x="270" y="397" font-size="19">本体（クランク／スライダ）</text>
+<text x="477" y="127" font-size="19">リンクの断面</text>
+<text x="507" y="388" font-size="19">印刷肩</text>
+<text x="638" y="375" font-size="19">W2：大径座金</text>
+<text x="780" y="233" font-size="19">B2またはB3</text>
+<text x="780" y="262" font-size="17">M2×8／M2×10</text>
+<text x="30" y="444" font-size="21" font-weight="bold">座金は肩の端面に座る。リンクを座金と本体で挟み込まない。</text>
+<text x="30" y="477" font-size="17">リンクは肩の周りで回る構造。実隙間・締付トルク・ナット保持・挿入経路は別途確認。</text>
+</g></svg>

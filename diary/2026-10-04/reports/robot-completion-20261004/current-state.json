@@ -1,0 +1,121 @@
+{
+  "actual_hardware_read": true,
+  "simulated": false,
+  "acquisition_id": "5a1f74bb-2bc9-4f18-9212-645f393306b0",
+  "last_read_at": "2026-10-04T10:54:41.366+09:00",
+  "summary": {
+    "frames": 100,
+    "incomplete_frames": 0,
+    "deadline_misses": 0,
+    "elapsed_seconds": 5.000118015,
+    "achieved_rate_hz": 19.999651670713234,
+    "interrupted": false,
+    "port_closed": true
+  },
+  "motors": [
+    {
+      "id": 1,
+      "count": 2062,
+      "min": 2062,
+      "max": 2062,
+      "torque": false,
+      "model": 1060,
+      "firmware": 43,
+      "settings": {
+        "id": 1,
+        "secondary_id": 255,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "homing_offset": 0,
+        "profile_acceleration": 0,
+        "profile_velocity": 0,
+        "goal_pwm": 885,
+        "present_position": 2062
+      }
+    },
+    {
+      "id": 2,
+      "count": 3354,
+      "min": 3354,
+      "max": 3354,
+      "torque": false,
+      "model": 1060,
+      "firmware": 42,
+      "settings": {
+        "id": 2,
+        "secondary_id": 255,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "homing_offset": 0,
+        "profile_acceleration": 0,
+        "profile_velocity": 0,
+        "goal_pwm": 885,
+        "present_position": 3354
+      }
+    },
+    {
+      "id": 3,
+      "count": 1154,
+      "min": 1153,
+      "max": 1154,
+      "torque": false,
+      "model": 1060,
+      "firmware": 42,
+      "settings": {
+        "id": 3,
+        "secondary_id": 255,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "homing_offset": 0,
+        "profile_acceleration": 0,
+        "profile_velocity": 0,
+        "goal_pwm": 885,
+        "present_position": 1154
+      }
+    },
+    {
+      "id": 4,
+      "count": 2058,
+      "min": 2058,
+      "max": 2058,
+      "torque": false,
+      "model": 1060,
+      "firmware": 42,
+      "settings": {
+        "id": 4,
+        "secondary_id": 255,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "homing_offset": 0,
+        "profile_acceleration": 0,
+        "profile_velocity": 0,
+        "goal_pwm": 885,
+        "present_position": 2058
+      }
+    },
+    {
+      "id": 5,
+      "count": 2059,
+      "min": 2059,
+      "max": 2059,
+      "torque": false,
+      "model": 1060,
+      "firmware": 43,
+      "settings": {
+        "id": 5,
+        "secondary_id": 255,
+        "drive_mode": 0,
+        "operating_mode": 3,
+        "homing_offset": 0,
+        "profile_acceleration": 0,
+        "profile_velocity": 0,
+        "goal_pwm": 885,
+        "present_position": 2059
+      }
+    }
+  ],
+  "sources": {
+    "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/current-hardware-read.jsonl": "bb31a378b5c37fe49e79dd54954b7e70d3c855fed85486280060d9c503aaede3",
+    "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/current-metadata.json": "c995f2baecaa02aa03c59d07119220a8c39808b0604fa62a1be6e98d0c6fcfb1"
+  }
+}

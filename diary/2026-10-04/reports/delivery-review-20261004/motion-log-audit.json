@@ -1,0 +1,308 @@
+{
+  "id3_motion_20261004T001621_347275+0900.jsonl": {
+    "sha256": "0c4f74d13a88999c7baf19b1b88981419757ccdecedd285333f71f7693a92656",
+    "records": 179,
+    "outcome": {
+      "kind": "outcome",
+      "t": 8.8093,
+      "at": "2026-10-04T00:16:30.900+09:00",
+      "status": "settled_off_target",
+      "reason": "settled -19 counts from the target",
+      "target": 1267,
+      "final_error_counts": -19,
+      "start_counts": 1153,
+      "torque_on_counts": 1153,
+      "sign": 1,
+      "return_error_counts": 1,
+      "torque_off_confirmed": true,
+      "release_problems": [],
+      "interrupted": false
+    },
+    "opened_min": 1153,
+    "opened_max": 1248,
+    "actual_degrees": 8.349609375,
+    "other_max_delta": {
+      "1": 0,
+      "2": 0,
+      "4": 0,
+      "5": 0
+    },
+    "write_registers": [
+      "goal_position",
+      "goal_pwm",
+      "profile_acceleration",
+      "profile_velocity",
+      "torque"
+    ],
+    "write_sequence": [
+      [
+        "profile_acceleration",
+        1
+      ],
+      [
+        "profile_velocity",
+        5
+      ],
+      [
+        "goal_pwm",
+        350
+      ],
+      [
+        "goal_position",
+        1153
+      ],
+      [
+        "torque",
+        1
+      ],
+      [
+        "goal_position",
+        1267
+      ],
+      [
+        "goal_position",
+        1153
+      ],
+      [
+        "torque",
+        0
+      ],
+      [
+        "goal_position",
+        1154
+      ],
+      [
+        "goal_pwm",
+        885
+      ],
+      [
+        "profile_velocity",
+        0
+      ],
+      [
+        "profile_acceleration",
+        0
+      ]
+    ],
+    "stages": [
+      {
+        "kind": "converged",
+        "t": 3.9209,
+        "at": "2026-10-04T00:16:26.012+09:00",
+        "stage": "open",
+        "position": 1248,
+        "error": -19,
+        "samples": 58,
+        "elapsed_s": 2.971,
+        "achieved_hz": 19.19
+      },
+      {
+        "kind": "converged",
+        "t": 8.6488,
+        "at": "2026-10-04T00:16:30.740+09:00",
+        "stage": "return",
+        "position": 1154,
+        "error": 1,
+        "samples": 53,
+        "elapsed_s": 2.696,
+        "achieved_hz": 19.29
+      }
+    ],
+    "missed_samples": 1,
+    "id3_pwm_abs_max": 170,
+    "closed": true,
+    "release": {
+      "kind": "released",
+      "t": 8.8092,
+      "at": "2026-10-04T00:16:30.900+09:00",
+      "torque_off_confirmed": true,
+      "problems": [],
+      "final_torque": {
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false
+      }
+    }
+  },
+  "id3_motion_20261004T002034_318712+0900.jsonl": {
+    "sha256": "b90aa91ebaa077af54112dc8779d951f378516132daaddc789b7a07c0dd2797d",
+    "records": 212,
+    "outcome": {
+      "kind": "outcome",
+      "t": 10.4139,
+      "at": "2026-10-04T00:20:45.623+09:00",
+      "status": "converged",
+      "reason": "",
+      "target": 1268,
+      "final_error_counts": -4,
+      "start_counts": 1154,
+      "torque_on_counts": 1154,
+      "sign": 1,
+      "return_error_counts": 0,
+      "correction_counts": 20,
+      "torque_off_confirmed": true,
+      "release_problems": [],
+      "interrupted": false
+    },
+    "opened_min": 1153,
+    "opened_max": 1264,
+    "actual_degrees": 9.66796875,
+    "other_max_delta": {
+      "1": 0,
+      "2": 0,
+      "4": 1,
+      "5": 0
+    },
+    "write_registers": [
+      "goal_position",
+      "goal_pwm",
+      "profile_acceleration",
+      "profile_velocity",
+      "torque"
+    ],
+    "write_sequence": [
+      [
+        "profile_acceleration",
+        1
+      ],
+      [
+        "profile_velocity",
+        5
+      ],
+      [
+        "goal_pwm",
+        350
+      ],
+      [
+        "goal_position",
+        1154
+      ],
+      [
+        "torque",
+        1
+      ],
+      [
+        "goal_position",
+        1268
+      ],
+      [
+        "goal_position",
+        1288
+      ],
+      [
+        "goal_position",
+        1154
+      ],
+      [
+        "torque",
+        0
+      ],
+      [
+        "goal_position",
+        1154
+      ],
+      [
+        "goal_pwm",
+        885
+      ],
+      [
+        "profile_velocity",
+        0
+      ],
+      [
+        "profile_acceleration",
+        0
+      ]
+    ],
+    "stages": [
+      {
+        "kind": "converged",
+        "t": 3.8331,
+        "at": "2026-10-04T00:20:39.042+09:00",
+        "stage": "open",
+        "position": 1248,
+        "error": -20,
+        "samples": 54,
+        "elapsed_s": 2.842,
+        "achieved_hz": 18.65
+      },
+      {
+        "kind": "converged",
+        "t": 5.3507,
+        "at": "2026-10-04T00:20:40.560+09:00",
+        "stage": "correct",
+        "position": 1264,
+        "error": -24,
+        "samples": 30,
+        "elapsed_s": 1.502,
+        "achieved_hz": 19.3
+      },
+      {
+        "kind": "converged",
+        "t": 10.2691,
+        "at": "2026-10-04T00:20:45.478+09:00",
+        "stage": "return",
+        "position": 1154,
+        "error": 0,
+        "samples": 58,
+        "elapsed_s": 2.903,
+        "achieved_hz": 19.64
+      }
+    ],
+    "missed_samples": 1,
+    "id3_pwm_abs_max": 350,
+    "closed": true,
+    "release": {
+      "kind": "released",
+      "t": 10.4137,
+      "at": "2026-10-04T00:20:45.623+09:00",
+      "torque_off_confirmed": true,
+      "problems": [],
+      "final_torque": {
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false
+      }
+    }
+  },
+  "live_20261003T234141_004377+0900.jsonl": {
+    "sha256": "b3f66a77590c02cc4f7d2d17d3bd2a61a6de23e7fd2de1a08ad1ad1c9ff25972",
+    "summary": {
+      "frames": 189,
+      "incomplete_frames": 1,
+      "deadline_misses": 3,
+      "elapsed_seconds": 10.000098854,
+      "achieved_rate_hz": 18.90160728923779,
+      "interrupted": false,
+      "port_closed": true
+    },
+    "id3_known_counts": [
+      1153
+    ],
+    "torque_on_known": false
+  },
+  "live_20261004T002126_286881+0900.jsonl": {
+    "sha256": "5a2ed0ceacd49505f2dd398dac04cddea4609590d2905a5180e0aea07dae9353",
+    "summary": {
+      "frames": 159,
+      "incomplete_frames": 3,
+      "deadline_misses": 23,
+      "elapsed_seconds": 10.003151597,
+      "achieved_rate_hz": 15.877926455952162,
+      "interrupted": false,
+      "port_closed": true
+    },
+    "id3_known_counts": [
+      1154
+    ],
+    "torque_on_known": false
+  },
+  "current_file_hashes": {
+    "reports/id3_direction_cad_20261003T234303.json": "c2f3e4243c8cf1ffe47972f15b90d48612111b814c048af008b0693878c3abd5",
+    "src/arm_observer/id3_motion.py": "ee0a8494573fa5a755138a2edcc7222f56039b0c09cf543e2536f8c1ca06fe91"
+  }
+}

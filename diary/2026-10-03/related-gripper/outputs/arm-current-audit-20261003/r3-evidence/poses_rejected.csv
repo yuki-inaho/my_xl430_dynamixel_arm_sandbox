@@ -1,0 +1,37 @@
+family,q1_deg,q2_deg,q3_deg,q4_deg,q5_deg,q6_deg,passed,interfering_pairs
+combined_grid,0,-20,-60,-60,-90,0,False,M01 / M06;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,-20,-60,-60,-90,25,False,M01 / M06;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,-20,-60,-60,-90,50,False,M01 / M06;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,-20,-60,-60,0,0,False,M01 / P06_fixed_gripper_XL430;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,-20,-60,-60,0,25,False,M01 / P06_fixed_gripper_XL430;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,-20,-60,-60,0,50,False,M01 / P06_fixed_gripper_XL430;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,-20,-60,-60,90,0,False,M01 / M06;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,-20,-60,-60,90,25,False,M01 / M06;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,-20,-60,-60,90,50,False,M01 / M06;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,-90,0,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,-90,25,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,-90,50,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,0,0,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,0,25,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,0,50,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,90,0,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,90,25,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,0,-60,-60,90,50,False,M01 / M06;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,20,-60,-60,-90,0,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,20,-60,-60,-90,25,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,20,-60,-60,-90,50,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,20,-60,-60,0,0,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,20,-60,-60,0,25,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,20,-60,-60,0,50,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,20,-60,-60,90,0,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;M01 / P07_moving_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430;P01_base / P07_moving_gripper_XL430
+combined_grid,0,20,-60,-60,90,25,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;M01 / P07_moving_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430;P01_base / P07_moving_gripper_XL430
+combined_grid,0,20,-60,-60,90,50,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;M01 / P07_moving_gripper_XL430;P01_base / M06;P01_base / P06_fixed_gripper_XL430;P01_base / P07_moving_gripper_XL430
+combined_grid,0,40,-60,-60,-90,0,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,40,-60,-60,-90,25,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,40,-60,-60,-90,50,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,40,-60,-60,0,0,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430;P01_base / P07_moving_gripper_XL430
+combined_grid,0,40,-60,-60,0,25,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430;P01_base / P07_moving_gripper_XL430
+combined_grid,0,40,-60,-60,0,50,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430;P01_base / P07_moving_gripper_XL430
+combined_grid,0,40,-60,-60,90,0,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,40,-60,-60,90,25,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430
+combined_grid,0,40,-60,-60,90,50,False,M01 / M05;M01 / M06;M01 / P05_wrist_XL430;M01 / P06_fixed_gripper_XL430;P01_base / M05;P01_base / M06;P01_base / P05_wrist_XL430;P01_base / P06_fixed_gripper_XL430

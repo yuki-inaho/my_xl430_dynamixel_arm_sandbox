@@ -1,0 +1,69 @@
+{
+ "schema": "agent-conversation-clean-bundle/v1",
+ "created_at": "2026-10-04T08:59:13+09:00",
+ "source": {
+  "session": "temp/review_codex_fixture.jsonl",
+  "sha256": "c917376bdae9b85c011b45ad790fb5c65cd67cd2ad9af6dade246ed2628d5ff2",
+  "bytes": 24306,
+  "records": 2
+ },
+ "extractor": {
+  "name": "agent-jsonl-compact",
+  "defaults": "faithful (no truncation)"
+ },
+ "summary": {
+  "channel": "terminal",
+  "format": "codex",
+  "goals": [],
+  "input": "/tmp/tmpzzfm9_59/session.snapshot.jsonl",
+  "input_bytes": 24306,
+  "kept_events": 1,
+  "kept_kind_counts": {
+   "session": 1
+  },
+  "kind_counts_all": {
+   "api_user": 1,
+   "session": 1
+  },
+  "models": [],
+  "raw_type_counts": {
+   "response_item/message": 1,
+   "session_meta": 1
+  },
+  "session_info": {
+   "cli_version": "0.160.0",
+   "cwd": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper",
+   "forked_from_id": "01a10074-144c-7533-9b62-356427e7f92a",
+   "id": "01a10159-a252-7e72-b112-cf34f1a05dce",
+   "originator": "codex-tui"
+  },
+  "total_lines": 2
+ },
+ "events": [
+  {
+   "cli_version": "0.160.0",
+   "cwd": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper",
+   "forked_from_id": "01a10074-144c-7533-9b62-356427e7f92a",
+   "id": "01a10159-a252-7e72-b112-cf34f1a05dce",
+   "kind": "session",
+   "originator": "codex-tui",
+   "ts": "2026-10-03T10:40:14.089Z"
+  }
+ ],
+ "supplemental_events": [],
+ "coverage_notes": [
+  "Normalized events come from agent-jsonl-compact with faithful defaults.",
+  "supplemental_events hold records the extractor skips (mid-turn user messages for Claude Code, code-mode tool records for Codex).",
+  "Encrypted or omitted reasoning is not recoverable.",
+  "The snapshot holds complete lines only; later records are outside the cutoff.",
+  "Contains conversation text and local paths; review before sharing."
+ ],
+ "redactions": {
+  "github_token": 0,
+  "anthropic_key": 0,
+  "openai_key": 0,
+  "aws_access_key": 0,
+  "slack_token": 0,
+  "bearer_token": 0
+ }
+}

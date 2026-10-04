@@ -1,0 +1,831 @@
+{
+  "generated_at_jst": "2026-10-03T19:50:42+0900",
+  "input_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "script_sha256": "1dabc0ea4d8751a580944dc43f19c83c333cb99fad7b0aea743203f026ed5247",
+  "cadquery_version": "2.7.0",
+  "configuration": "R3 P01-P05 plus M01-M05; no camera, PG3, M06, P06 or P07",
+  "photo_match": "visual inference only; user tentatively recalled all-xl430-arm",
+  "selected_occurrences": 180,
+  "selected_physical_units": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "P01_base",
+    "P02_yaw_carrier",
+    "P03_shoulder_XL430",
+    "P04_extension_XL430",
+    "P05_wrist_XL430"
+  ],
+  "absent_units_by_declared_configuration": [
+    "M06",
+    "P06_fixed_gripper_XL430",
+    "P07_moving_gripper_XL430"
+  ],
+  "pair_count_per_pose": 45,
+  "tolerance_mm3": 0.0001,
+  "sheet_occurrences_included_in_groups": [
+    "M01_ref01",
+    "M01_ref05",
+    "M01_ref09",
+    "M01_ref11",
+    "M01_ref13",
+    "M01_ref15",
+    "M01_ref17",
+    "M01_ref19",
+    "M01_ref21",
+    "M01_ref23",
+    "M01_ref25",
+    "M02_ref01",
+    "M02_ref05",
+    "M02_ref09",
+    "M02_ref11",
+    "M02_ref13",
+    "M02_ref15",
+    "M02_ref17",
+    "M02_ref19",
+    "M02_ref21",
+    "M02_ref23",
+    "M02_ref25",
+    "M03_ref01",
+    "M03_ref05",
+    "M03_ref09",
+    "M03_ref11",
+    "M03_ref13",
+    "M03_ref15",
+    "M03_ref17",
+    "M03_ref19",
+    "M03_ref21",
+    "M03_ref23",
+    "M03_ref25",
+    "M04_ref01",
+    "M04_ref05",
+    "M04_ref09",
+    "M04_ref11",
+    "M04_ref13",
+    "M04_ref15",
+    "M04_ref17",
+    "M04_ref19",
+    "M04_ref21",
+    "M04_ref23",
+    "M04_ref25",
+    "M05_ref01",
+    "M05_ref05",
+    "M05_ref09",
+    "M05_ref11",
+    "M05_ref13",
+    "M05_ref15",
+    "M05_ref17",
+    "M05_ref19",
+    "M05_ref21",
+    "M05_ref23",
+    "M05_ref25"
+  ],
+  "sheet_volume_is_not_obstacle_clearance": true,
+  "input_controls": [
+    {
+      "name": "M01_ref00",
+      "expected_mm3": 41065.05839762165,
+      "common_mm3": 53.06927781146441,
+      "passed": false
+    },
+    {
+      "name": "M01_ref02",
+      "expected_mm3": 72.63104913907377,
+      "common_mm3": 0,
+      "passed": false
+    },
+    {
+      "name": "M01_ref03",
+      "expected_mm3": 107.02993882067292,
+      "common_mm3": 107.02993882067292,
+      "passed": true
+    },
+    {
+      "name": "M01_ref04",
+      "expected_mm3": 107.02993882064261,
+      "common_mm3": 107.02993882064261,
+      "passed": true
+    },
+    {
+      "name": "M01_ref06",
+      "expected_mm3": 362.5778230558522,
+      "common_mm3": 362.5778230558522,
+      "passed": true
+    },
+    {
+      "name": "M01_ref07",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M01_ref08",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M01_ref10",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M01_ref12",
+      "expected_mm3": 57.73718548529107,
+      "common_mm3": 57.73718548529107,
+      "passed": true
+    },
+    {
+      "name": "M01_ref14",
+      "expected_mm3": 57.737185485287206,
+      "common_mm3": 57.737185485287206,
+      "passed": true
+    },
+    {
+      "name": "M01_ref16",
+      "expected_mm3": 57.73718548529766,
+      "common_mm3": 57.73718548529766,
+      "passed": true
+    },
+    {
+      "name": "M01_ref18",
+      "expected_mm3": 57.73718548530151,
+      "common_mm3": 57.73718548530151,
+      "passed": true
+    },
+    {
+      "name": "M01_ref20",
+      "expected_mm3": 57.73718548528759,
+      "common_mm3": 57.73718548528759,
+      "passed": true
+    },
+    {
+      "name": "M01_ref22",
+      "expected_mm3": 57.73718548529108,
+      "common_mm3": 57.73718548529108,
+      "passed": true
+    },
+    {
+      "name": "M01_ref24",
+      "expected_mm3": 57.73718548529804,
+      "common_mm3": 57.73718548529804,
+      "passed": true
+    },
+    {
+      "name": "M01_ref26",
+      "expected_mm3": 57.737185485301524,
+      "common_mm3": 57.737185485301524,
+      "passed": true
+    },
+    {
+      "name": "M01_ref27",
+      "expected_mm3": 97.90115604598438,
+      "common_mm3": 97.90115604598438,
+      "passed": true
+    },
+    {
+      "name": "M01_ref28",
+      "expected_mm3": 97.90115604602305,
+      "common_mm3": 97.90115604602305,
+      "passed": true
+    },
+    {
+      "name": "M01_ref29",
+      "expected_mm3": 97.90115604591334,
+      "common_mm3": 97.90115604591334,
+      "passed": true
+    },
+    {
+      "name": "M01_ref30",
+      "expected_mm3": 97.90115604599406,
+      "common_mm3": 97.90115604599406,
+      "passed": true
+    },
+    {
+      "name": "M01_ref31",
+      "expected_mm3": 97.90115604603464,
+      "common_mm3": 97.90115604603464,
+      "passed": true
+    },
+    {
+      "name": "M01_ref32",
+      "expected_mm3": 97.9011560460419,
+      "common_mm3": 97.9011560460419,
+      "passed": true
+    },
+    {
+      "name": "M01_ref33",
+      "expected_mm3": 97.90115604608471,
+      "common_mm3": 97.90115604608471,
+      "passed": true
+    },
+    {
+      "name": "M01_ref34",
+      "expected_mm3": 97.90115604608243,
+      "common_mm3": 97.90115604608243,
+      "passed": true
+    },
+    {
+      "name": "M02_ref00",
+      "expected_mm3": 41065.058397621666,
+      "common_mm3": 53.069277811464396,
+      "passed": false
+    },
+    {
+      "name": "M02_ref02",
+      "expected_mm3": 72.6310491390738,
+      "common_mm3": 0,
+      "passed": false
+    },
+    {
+      "name": "M02_ref03",
+      "expected_mm3": 107.02993882067291,
+      "common_mm3": 107.02993882067291,
+      "passed": true
+    },
+    {
+      "name": "M02_ref04",
+      "expected_mm3": 107.02993882064261,
+      "common_mm3": 107.02993882064261,
+      "passed": true
+    },
+    {
+      "name": "M02_ref06",
+      "expected_mm3": 362.5778230558524,
+      "common_mm3": 362.5778230558524,
+      "passed": true
+    },
+    {
+      "name": "M02_ref07",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M02_ref08",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M02_ref10",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M02_ref12",
+      "expected_mm3": 57.73718548529111,
+      "common_mm3": 57.73718548529111,
+      "passed": true
+    },
+    {
+      "name": "M02_ref14",
+      "expected_mm3": 57.73718548528721,
+      "common_mm3": 57.73718548528721,
+      "passed": true
+    },
+    {
+      "name": "M02_ref16",
+      "expected_mm3": 57.73718548529767,
+      "common_mm3": 57.73718548529767,
+      "passed": true
+    },
+    {
+      "name": "M02_ref18",
+      "expected_mm3": 57.737185485301524,
+      "common_mm3": 57.737185485301524,
+      "passed": true
+    },
+    {
+      "name": "M02_ref20",
+      "expected_mm3": 57.73718548528759,
+      "common_mm3": 57.73718548528759,
+      "passed": true
+    },
+    {
+      "name": "M02_ref22",
+      "expected_mm3": 57.73718548529112,
+      "common_mm3": 57.73718548529112,
+      "passed": true
+    },
+    {
+      "name": "M02_ref24",
+      "expected_mm3": 57.73718548529805,
+      "common_mm3": 57.73718548529805,
+      "passed": true
+    },
+    {
+      "name": "M02_ref26",
+      "expected_mm3": 57.73718548530153,
+      "common_mm3": 57.73718548530153,
+      "passed": true
+    },
+    {
+      "name": "M02_ref27",
+      "expected_mm3": 97.90115604598444,
+      "common_mm3": 97.90115604598444,
+      "passed": true
+    },
+    {
+      "name": "M02_ref28",
+      "expected_mm3": 97.90115604602309,
+      "common_mm3": 97.90115604602309,
+      "passed": true
+    },
+    {
+      "name": "M02_ref29",
+      "expected_mm3": 97.90115604591334,
+      "common_mm3": 97.90115604591334,
+      "passed": true
+    },
+    {
+      "name": "M02_ref30",
+      "expected_mm3": 97.90115604599406,
+      "common_mm3": 97.90115604599406,
+      "passed": true
+    },
+    {
+      "name": "M02_ref31",
+      "expected_mm3": 97.90115604603467,
+      "common_mm3": 97.90115604603467,
+      "passed": true
+    },
+    {
+      "name": "M02_ref32",
+      "expected_mm3": 97.90115604604188,
+      "common_mm3": 97.90115604604188,
+      "passed": true
+    },
+    {
+      "name": "M02_ref33",
+      "expected_mm3": 97.90115604608464,
+      "common_mm3": 97.90115604608464,
+      "passed": true
+    },
+    {
+      "name": "M02_ref34",
+      "expected_mm3": 97.90115604608243,
+      "common_mm3": 97.90115604608243,
+      "passed": true
+    },
+    {
+      "name": "M03_ref00",
+      "expected_mm3": 41065.05839762166,
+      "common_mm3": 53.06927781146442,
+      "passed": false
+    },
+    {
+      "name": "M03_ref02",
+      "expected_mm3": 72.63104913907385,
+      "common_mm3": 0,
+      "passed": false
+    },
+    {
+      "name": "M03_ref03",
+      "expected_mm3": 107.02993882067273,
+      "common_mm3": 107.02993882067273,
+      "passed": true
+    },
+    {
+      "name": "M03_ref04",
+      "expected_mm3": 107.02993882064244,
+      "common_mm3": 107.02993882064244,
+      "passed": true
+    },
+    {
+      "name": "M03_ref06",
+      "expected_mm3": 362.5778230558524,
+      "common_mm3": 362.5778230558524,
+      "passed": true
+    },
+    {
+      "name": "M03_ref07",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M03_ref08",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M03_ref10",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M03_ref12",
+      "expected_mm3": 57.73718548529103,
+      "common_mm3": 57.73718548529103,
+      "passed": true
+    },
+    {
+      "name": "M03_ref14",
+      "expected_mm3": 57.73718548528717,
+      "common_mm3": 57.73718548528717,
+      "passed": true
+    },
+    {
+      "name": "M03_ref16",
+      "expected_mm3": 57.73718548529763,
+      "common_mm3": 57.73718548529763,
+      "passed": true
+    },
+    {
+      "name": "M03_ref18",
+      "expected_mm3": 57.73718548530148,
+      "common_mm3": 57.73718548530148,
+      "passed": true
+    },
+    {
+      "name": "M03_ref20",
+      "expected_mm3": 57.73718548528755,
+      "common_mm3": 57.73718548528755,
+      "passed": true
+    },
+    {
+      "name": "M03_ref22",
+      "expected_mm3": 57.73718548529104,
+      "common_mm3": 57.73718548529104,
+      "passed": true
+    },
+    {
+      "name": "M03_ref24",
+      "expected_mm3": 57.73718548529798,
+      "common_mm3": 57.73718548529798,
+      "passed": true
+    },
+    {
+      "name": "M03_ref26",
+      "expected_mm3": 57.73718548530147,
+      "common_mm3": 57.73718548530147,
+      "passed": true
+    },
+    {
+      "name": "M03_ref27",
+      "expected_mm3": 97.90115604598448,
+      "common_mm3": 97.90115604598448,
+      "passed": true
+    },
+    {
+      "name": "M03_ref28",
+      "expected_mm3": 97.90115604602302,
+      "common_mm3": 97.90115604602302,
+      "passed": true
+    },
+    {
+      "name": "M03_ref29",
+      "expected_mm3": 97.90115604591344,
+      "common_mm3": 97.90115604591344,
+      "passed": true
+    },
+    {
+      "name": "M03_ref30",
+      "expected_mm3": 97.90115604599406,
+      "common_mm3": 97.90115604599406,
+      "passed": true
+    },
+    {
+      "name": "M03_ref31",
+      "expected_mm3": 97.9011560460346,
+      "common_mm3": 97.9011560460346,
+      "passed": true
+    },
+    {
+      "name": "M03_ref32",
+      "expected_mm3": 97.90115604604196,
+      "common_mm3": 97.90115604604196,
+      "passed": true
+    },
+    {
+      "name": "M03_ref33",
+      "expected_mm3": 97.90115604608465,
+      "common_mm3": 97.90115604608465,
+      "passed": true
+    },
+    {
+      "name": "M03_ref34",
+      "expected_mm3": 97.90115604608242,
+      "common_mm3": 97.90115604608242,
+      "passed": true
+    },
+    {
+      "name": "M04_ref00",
+      "expected_mm3": 41065.058397621644,
+      "common_mm3": 53.06927781146442,
+      "passed": false
+    },
+    {
+      "name": "M04_ref02",
+      "expected_mm3": 72.6310491390739,
+      "common_mm3": 0,
+      "passed": false
+    },
+    {
+      "name": "M04_ref03",
+      "expected_mm3": 107.02993882067273,
+      "common_mm3": 107.02993882067273,
+      "passed": true
+    },
+    {
+      "name": "M04_ref04",
+      "expected_mm3": 107.02993882064243,
+      "common_mm3": 107.02993882064243,
+      "passed": true
+    },
+    {
+      "name": "M04_ref06",
+      "expected_mm3": 362.57782305585243,
+      "common_mm3": 362.57782305585243,
+      "passed": true
+    },
+    {
+      "name": "M04_ref07",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M04_ref08",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M04_ref10",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M04_ref12",
+      "expected_mm3": 57.737185485291015,
+      "common_mm3": 57.737185485291015,
+      "passed": true
+    },
+    {
+      "name": "M04_ref14",
+      "expected_mm3": 57.737185485287156,
+      "common_mm3": 57.737185485287156,
+      "passed": true
+    },
+    {
+      "name": "M04_ref16",
+      "expected_mm3": 57.73718548529762,
+      "common_mm3": 57.73718548529762,
+      "passed": true
+    },
+    {
+      "name": "M04_ref18",
+      "expected_mm3": 57.73718548530148,
+      "common_mm3": 57.73718548530148,
+      "passed": true
+    },
+    {
+      "name": "M04_ref20",
+      "expected_mm3": 57.73718548528753,
+      "common_mm3": 57.73718548528753,
+      "passed": true
+    },
+    {
+      "name": "M04_ref22",
+      "expected_mm3": 57.73718548529106,
+      "common_mm3": 57.73718548529106,
+      "passed": true
+    },
+    {
+      "name": "M04_ref24",
+      "expected_mm3": 57.73718548529798,
+      "common_mm3": 57.73718548529798,
+      "passed": true
+    },
+    {
+      "name": "M04_ref26",
+      "expected_mm3": 57.73718548530147,
+      "common_mm3": 57.73718548530147,
+      "passed": true
+    },
+    {
+      "name": "M04_ref27",
+      "expected_mm3": 97.90115604598444,
+      "common_mm3": 97.90115604598444,
+      "passed": true
+    },
+    {
+      "name": "M04_ref28",
+      "expected_mm3": 97.90115604602305,
+      "common_mm3": 97.90115604602305,
+      "passed": true
+    },
+    {
+      "name": "M04_ref29",
+      "expected_mm3": 97.90115604591341,
+      "common_mm3": 97.90115604591341,
+      "passed": true
+    },
+    {
+      "name": "M04_ref30",
+      "expected_mm3": 97.90115604599404,
+      "common_mm3": 97.90115604599404,
+      "passed": true
+    },
+    {
+      "name": "M04_ref31",
+      "expected_mm3": 97.90115604603461,
+      "common_mm3": 97.90115604603461,
+      "passed": true
+    },
+    {
+      "name": "M04_ref32",
+      "expected_mm3": 97.90115604604196,
+      "common_mm3": 97.90115604604196,
+      "passed": true
+    },
+    {
+      "name": "M04_ref33",
+      "expected_mm3": 97.90115604608462,
+      "common_mm3": 97.90115604608462,
+      "passed": true
+    },
+    {
+      "name": "M04_ref34",
+      "expected_mm3": 97.90115604608243,
+      "common_mm3": 97.90115604608243,
+      "passed": true
+    },
+    {
+      "name": "M05_ref00",
+      "expected_mm3": 41065.058397621666,
+      "common_mm3": 53.069277811464346,
+      "passed": false
+    },
+    {
+      "name": "M05_ref02",
+      "expected_mm3": 72.63104913907384,
+      "common_mm3": 0,
+      "passed": false
+    },
+    {
+      "name": "M05_ref03",
+      "expected_mm3": 107.0299388206729,
+      "common_mm3": 107.0299388206729,
+      "passed": true
+    },
+    {
+      "name": "M05_ref04",
+      "expected_mm3": 107.02993882064258,
+      "common_mm3": 107.02993882064258,
+      "passed": true
+    },
+    {
+      "name": "M05_ref06",
+      "expected_mm3": 362.5778230558519,
+      "common_mm3": 362.5778230558519,
+      "passed": true
+    },
+    {
+      "name": "M05_ref07",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M05_ref08",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M05_ref10",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "M05_ref12",
+      "expected_mm3": 57.73718548529107,
+      "common_mm3": 57.73718548529107,
+      "passed": true
+    },
+    {
+      "name": "M05_ref14",
+      "expected_mm3": 57.73718548528721,
+      "common_mm3": 57.73718548528721,
+      "passed": true
+    },
+    {
+      "name": "M05_ref16",
+      "expected_mm3": 57.73718548529768,
+      "common_mm3": 57.73718548529768,
+      "passed": true
+    },
+    {
+      "name": "M05_ref18",
+      "expected_mm3": 57.737185485301545,
+      "common_mm3": 57.737185485301545,
+      "passed": true
+    },
+    {
+      "name": "M05_ref20",
+      "expected_mm3": 57.7371854852877,
+      "common_mm3": 57.7371854852877,
+      "passed": true
+    },
+    {
+      "name": "M05_ref22",
+      "expected_mm3": 57.737185485291185,
+      "common_mm3": 57.737185485291185,
+      "passed": true
+    },
+    {
+      "name": "M05_ref24",
+      "expected_mm3": 57.737185485298085,
+      "common_mm3": 57.737185485298085,
+      "passed": true
+    },
+    {
+      "name": "M05_ref26",
+      "expected_mm3": 57.73718548530156,
+      "common_mm3": 57.73718548530156,
+      "passed": true
+    },
+    {
+      "name": "M05_ref27",
+      "expected_mm3": 97.90115604598442,
+      "common_mm3": 97.90115604598442,
+      "passed": true
+    },
+    {
+      "name": "M05_ref28",
+      "expected_mm3": 97.90115604602319,
+      "common_mm3": 97.90115604602319,
+      "passed": true
+    },
+    {
+      "name": "M05_ref29",
+      "expected_mm3": 97.90115604591342,
+      "common_mm3": 97.90115604591342,
+      "passed": true
+    },
+    {
+      "name": "M05_ref30",
+      "expected_mm3": 97.90115604599409,
+      "common_mm3": 97.90115604599409,
+      "passed": true
+    },
+    {
+      "name": "M05_ref31",
+      "expected_mm3": 97.9011560460347,
+      "common_mm3": 97.9011560460347,
+      "passed": true
+    },
+    {
+      "name": "M05_ref32",
+      "expected_mm3": 97.9011560460419,
+      "common_mm3": 97.9011560460419,
+      "passed": true
+    },
+    {
+      "name": "M05_ref33",
+      "expected_mm3": 97.90115604608457,
+      "common_mm3": 97.90115604608457,
+      "passed": true
+    },
+    {
+      "name": "M05_ref34",
+      "expected_mm3": 97.9011560460824,
+      "common_mm3": 97.9011560460824,
+      "passed": true
+    },
+    {
+      "name": "P01_base",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "P02_yaw_carrier",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "P03_shoulder_XL430",
+      "passed": false,
+      "error": "invalid COMMON result"
+    },
+    {
+      "name": "P04_extension_XL430",
+      "expected_mm3": 19357.76834843852,
+      "common_mm3": 19357.76834843852,
+      "passed": true
+    },
+    {
+      "name": "P05_wrist_XL430",
+      "expected_mm3": 22757.436053699945,
+      "common_mm3": 22757.436053699945,
+      "passed": true
+    }
+  ],
+  "simple_controls": {
+    "separated_mm3": 0,
+    "penetrating_mm3": 499.9999999999999,
+    "passed": true
+  },
+  "input_controls_passed": false,
+  "physical_collision_free_limits_confirmed": false,
+  "continuous_path_confirmed": false,
+  "complete": false,
+  "elapsed_seconds": 110.30102410299878,
+  "status": "ERROR_INPUT_BOOLEAN_CONTROL"
+}

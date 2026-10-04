@@ -1,0 +1,117 @@
+{
+  "physical_order_verified": true,
+  "baseline_verified": true,
+  "directions_verified": true,
+  "calibration_verified": true,
+  "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "joints": [
+    {
+      "role": "J1",
+      "motor_id": 1,
+      "zero_count": 1000,
+      "sign": 1
+    },
+    {
+      "role": "J2",
+      "motor_id": 2,
+      "zero_count": 1000,
+      "sign": -1
+    },
+    {
+      "role": "J3",
+      "motor_id": 3,
+      "zero_count": 1000,
+      "sign": 1
+    },
+    {
+      "role": "J4",
+      "motor_id": 4,
+      "zero_count": 1000,
+      "sign": -1
+    },
+    {
+      "role": "PG3",
+      "motor_id": 5,
+      "zero_count": 1000,
+      "sign": 1,
+      "theta_at_zero_deg": 90
+    }
+  ],
+  "context": {
+    "session_id": "synthetic-session",
+    "model_signature": "519e1e4549758abed981c90da0793dba758343c0a88200f12bbdd60b3c5786a4",
+    "motors": [
+      {
+        "motor_id": 1,
+        "model": 1060,
+        "firmware": 43,
+        "registers": {
+          "id": 1,
+          "baud_rate": 3,
+          "protocol_type": 2,
+          "operating_mode": 3,
+          "drive_mode": 0,
+          "homing_offset": 0
+        },
+        "torque_enabled": false
+      },
+      {
+        "motor_id": 2,
+        "model": 1060,
+        "firmware": 43,
+        "registers": {
+          "id": 2,
+          "baud_rate": 3,
+          "protocol_type": 2,
+          "operating_mode": 3,
+          "drive_mode": 0,
+          "homing_offset": 0
+        },
+        "torque_enabled": false
+      },
+      {
+        "motor_id": 3,
+        "model": 1060,
+        "firmware": 43,
+        "registers": {
+          "id": 3,
+          "baud_rate": 3,
+          "protocol_type": 2,
+          "operating_mode": 3,
+          "drive_mode": 0,
+          "homing_offset": 0
+        },
+        "torque_enabled": false
+      },
+      {
+        "motor_id": 4,
+        "model": 1060,
+        "firmware": 43,
+        "registers": {
+          "id": 4,
+          "baud_rate": 3,
+          "protocol_type": 2,
+          "operating_mode": 3,
+          "drive_mode": 0,
+          "homing_offset": 0
+        },
+        "torque_enabled": false
+      },
+      {
+        "motor_id": 5,
+        "model": 1060,
+        "firmware": 43,
+        "registers": {
+          "id": 5,
+          "baud_rate": 3,
+          "protocol_type": 2,
+          "operating_mode": 3,
+          "drive_mode": 0,
+          "homing_offset": 0
+        },
+        "torque_enabled": false
+      }
+    ]
+  },
+  "simulated": true
+}

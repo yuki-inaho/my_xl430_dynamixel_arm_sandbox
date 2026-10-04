@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-26T12:33:20.420249+00:00",
+  "status": "PASS_REVIEWED_CANDIDATE_INTAKE",
+  "fabrication_approved": false,
+  "repository_base_commit": "19a9e7e1fb82b51924dfee0277c36620bbc4f0fb",
+  "branch": "integrate/d405-low-profile-review-20260926",
+  "source_archives": [
+    {
+      "name": "3d-printed-dynamixel-gripper-codex-onshape-low-profile-d405.zip",
+      "sha256": "82bd57c40d98b8340fbde40f4d895987ce17eb252153d8aa71f81d71769b27c9"
+    },
+    {
+      "name": "gripper-d405-improved-20260926.tar.zst",
+      "sha256": "838723c50a17e289cec7e71ed55087350d30ebcc34a5190b9afbfe7bfde57892"
+    }
+  ],
+  "input_bundle_integrity": {
+    "status": "PASS",
+    "files": 1599,
+    "path_traversal_or_special_members": 0
+  },
+  "D6": {
+    "status": "PASS_ARCHIVED_EVIDENCE_AUDIT",
+    "ui_logs": 35,
+    "this_session_onshape_ui_actions": 0,
+    "this_session_direct_onshape_api_calls": 0,
+    "live_account_quota_checked": false,
+    "live_counter_checked": false
+  },
+  "D7": {
+    "status": "PASS_FRESH_LOCKED_BUILD_AND_CONVERSION",
+    "converter_commit": "1b2cea31c56b875bf98c1d65084781322f5fc835",
+    "pixi_lock_sha256": "7cb3d44b41a3bcdddd88a3d19525bafeef086f93a2ebddbd1b5252072c2e5576",
+    "pixi_install_locked": true,
+    "occt_source_compiled": false,
+    "wheel_built_and_installed": true,
+    "isolated_wheel_conversion": true,
+    "wheel_filename": "urdf_from_step-0.2.0-py3-none-any.whl",
+    "wheel_sha256": "7bf5698d8f068ff4877d79130eec9ed0c076b97c03ec3c58d34d92101e8dc635",
+    "installed_runtime": {
+      "module": "temp/intake_d405_20260926/converter/.pixi/envs/default/lib/python3.12/site-packages/urdf_from_step/__init__.py",
+      "versions": {
+        "converter": "0.2.0",
+        "pythonocc": "8.0.1",
+        "python": "3.12.14",
+        "occt": "8.0.1",
+        "occt_build": "all_hbfeb9d6_201",
+        "loaded_kernel": [
+          "temp/intake_d405_20260926/converter/.pixi/envs/default/lib/libTKernel.so.8.0.1"
+        ]
+      }
+    },
+    "input_step_sha256": "9f58c947753e9229b30939da23ce4c87c1cc85eeb39372518de4ffb98991b93f",
+    "urdf_config_and_twelve_meshes_byte_identical": true
+  },
+  "tests": {
+    "converter": {
+      "tests": 13,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "seconds": 2.287
+    },
+    "robot": {
+      "tests": 52,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "seconds": 8.299
+    },
+    "cad": {
+      "tests": 20,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "seconds": 27.769
+    }
+  },
+  "independent_step_replay": {
+    "cases": 11,
+    "occurrences_per_case": 262,
+    "with_baseline": 3144,
+    "runtime": {
+      "python": "3.12.12",
+      "cadquery": "2.7.0",
+      "cadquery-ocp": "7.8.1.1.post1",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1"
+    }
+  },
+  "kinematics": {
+    "status": "PASS_KINEMATIC_ONLY",
+    "sampled_configurations": 441,
+    "native_pose_cases": 11,
+    "max_closure_error_m": 3.469446951953614e-17,
+    "native_max_translation_m": 8.784880096336909e-09,
+    "native_max_rotation_rad": 5.3371044601806986e-08,
+    "thresholds": {
+      "pose_translation_m": 2e-05,
+      "pose_rotation_rad": 2e-05,
+      "closure_m": 1e-06,
+      "structure_serialization": 1e-09
+    }
+  },
+  "saved_geometry_preservation": "PASS",
+  "source_references_unchanged": true,
+  "privacy": {
+    "source_archives_preserved_ignored": true,
+    "text_paths_and_xml_hostnames_sanitized": true,
+    "browser_screenshots_and_embedded_manuals_and_archives_git_ignored": true,
+    "historical_hashes_describe_original_evidence": true
+  },
+  "quality_report": "quality.json",
+  "limitations": [
+    "D6 is an archive audit, not a live Onshape inspection",
+    "No full-repository regression run",
+    "Whole-repository formatter still flags 19 unchanged baseline files",
+    "No fresh 23-pose collision sweep or exhaustive candidate search",
+    "Existing eight contact/clearance failures retained",
+    "Assembled base tool access and 720p distance failures retained",
+    "Material, fastening, creep, load, cable and camera calibration remain unverified"
+  ],
+  "hardware_actions": 0,
+  "committed": false,
+  "pushed": false
+}

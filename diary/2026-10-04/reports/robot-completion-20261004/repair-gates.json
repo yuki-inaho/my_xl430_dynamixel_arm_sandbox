@@ -1,0 +1,131 @@
+[
+  {
+    "name": "python-tests",
+    "cwd": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox",
+    "command": [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "-q",
+      "--tb=short"
+    ],
+    "started": "2026-10-04T10:49:23.125395+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/python-tests.txt"
+  },
+  {
+    "name": "ruff",
+    "cwd": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox",
+    "command": [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "src",
+      "tests",
+      "scripts",
+      "skills/session-clean-export/scripts"
+    ],
+    "started": "2026-10-04T10:49:37.491451+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/ruff.txt"
+  },
+  {
+    "name": "types",
+    "cwd": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox",
+    "command": [
+      "uv",
+      "run",
+      "--no-sync",
+      "ty",
+      "check"
+    ],
+    "started": "2026-10-04T10:49:37.518181+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/types.txt"
+  },
+  {
+    "name": "complexity",
+    "cwd": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox",
+    "command": [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "scripts/check_quality.py"
+    ],
+    "started": "2026-10-04T10:49:37.758451+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/complexity.txt"
+  },
+  {
+    "name": "rust-tests",
+    "cwd": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/rust/arm-observer-contract",
+    "command": [
+      "cargo",
+      "test"
+    ],
+    "started": "2026-10-04T10:49:38.126470+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/rust-tests.txt"
+  },
+  {
+    "name": "rust-clippy",
+    "cwd": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/rust/arm-observer-contract",
+    "command": [
+      "cargo",
+      "clippy",
+      "--",
+      "-D",
+      "warnings"
+    ],
+    "started": "2026-10-04T10:49:38.500868+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/rust-clippy.txt"
+  },
+  {
+    "name": "viewer-tests",
+    "cwd": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper",
+    "command": [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "tests/test_current_arm_source.py",
+      "tests/test_current_arm_live.py",
+      "tests/test_current_arm_viewer.py",
+      "tests/test_direction_observation.py",
+      "-q",
+      "--tb=short"
+    ],
+    "started": "2026-10-04T10:49:38.762814+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/viewer-tests.txt"
+  },
+  {
+    "name": "sandbox-diff",
+    "cwd": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "started": "2026-10-04T10:50:02.914860+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/sandbox-diff.txt"
+  },
+  {
+    "name": "viewer-diff",
+    "cwd": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "started": "2026-10-04T10:50:02.945236+09:00",
+    "exit_code": 0,
+    "output": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/viewer-diff.txt"
+  }
+]

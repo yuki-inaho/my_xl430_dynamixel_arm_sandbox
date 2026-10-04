@@ -1,0 +1,143 @@
+........................................................................ [ 55%]
+.......................................FFF..........FFFF.                [100%]
+=================================== FAILURES ===================================
+________________ test_bad_cad_derivation_is_rejected[changes9] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-65/test_bad_cad_derivation_is_rej9')
+changes = {'sources': {'/nonexistent/manifest.json': 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'}}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+        {"sources": {"/nonexistent/manifest.json": "b" * 64}},
+        {"sources": ["not-a-hash"]},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_id3_motion.py:793: Failed
+________________ test_bad_cad_derivation_is_rejected[changes10] ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-65/test_bad_cad_derivation_is_rej10')
+changes = {'sources': ['not-a-hash']}
+
+    @pytest.mark.parametrize("changes", [
+        {"motor_id": 2}, {"opening_count_sign": 0}, {"opening_count_sign": True},
+        {"folded_count": 1153.0}, {"sources": {}}, {"derivation": {"opening_count_sign": -1}},
+        {"folded_read": {"frames": 0, "folded_count": 1153}},
+        {"folded_read": {"frames": 200, "folded_count": 1100}},
+        {"kind": "guess"},
+        {"sources": {"/nonexistent/manifest.json": "b" * 64}},
+        {"sources": ["not-a-hash"]},
+    ])
+    def test_bad_cad_derivation_is_rejected(tmp_path, changes):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_id3_motion.py:793: Failed
+__________________ test_cad_source_hash_mismatch_is_rejected ___________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-65/test_cad_source_hash_mismatch_0')
+
+    def test_cad_source_hash_mismatch_is_rejected(tmp_path):
+        record = cad_record(tmp_path)
+        first = next(iter(record["sources"]))
+        Path(first).write_text("changed")
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_id3_motion.py:801: Failed
+_______________ test_stop_request_mid_run_aborts_through_release _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-65/test_stop_request_mid_run_abor0')
+
+    def test_stop_request_mid_run_aborts_through_release(tmp_path):
+        arm = FakeArm()
+        evidence = motion.load_evidence(write_evidence(tmp_path, evidence_record()))
+        clock = FakeClock()
+>       outcome = motion.run_motion(FakeReader(arm), FakeActuator(arm), evidence, lambda e: None,
+                                    clock.monotonic, clock.sleep, lambda: arm.reads >= 15)
+E       TypeError: run_motion() takes 6 positional arguments but 7 were given
+
+tests/test_id3_motion.py:873: TypeError
+____________ test_deferred_signals_only_record_and_restore_handlers ____________
+
+    def test_deferred_signals_only_record_and_restore_handlers():
+        before = {sig: signal.getsignal(sig) for sig in (signal.SIGINT, signal.SIGTERM, signal.SIGHUP)}
+>       with motion.deferred_signals() as flag:
+             ^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'arm_observer.id3_motion' has no attribute 'deferred_signals'
+
+tests/test_id3_motion.py:881: AttributeError
+__ test_final_sync_contradiction_marks_torque_unconfirmed_and_skips_restores ___
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-65/test_final_sync_contradiction_0')
+
+    def test_final_sync_contradiction_marks_torque_unconfirmed_and_skips_restores(tmp_path):
+        arm = FakeArm()
+        arm.sync_torque_lie = True
+        outcome, _ = run(tmp_path, arm)
+>       assert outcome.torque_off_confirmed is False
+E       assert True is False
+E        +  where True = Outcome(status='converged', reason='', target=1267, final_error_counts=0, start_counts=1153, torque_on_counts=1153, si...s=("final torque states not all OFF: {'1': False, '2': False, '3': True, '4': False, '5': False}",), interrupted=False).torque_off_confirmed
+
+tests/test_id3_motion.py:892: AssertionError
+______________ test_verdict_is_reported_before_summary_and_stdout ______________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-65/test_verdict_is_reported_befor0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x762ff8be3e10>
+capsys = <_pytest.capture.CaptureFixture object at 0x762ff8b74ec0>
+
+    def test_verdict_is_reported_before_summary_and_stdout(tmp_path, monkeypatch, capsys):
+        from contextlib import contextmanager
+        arm = FakeArm()
+        arm.torque_write_fails = True
+        arm.fail_write = ("goal_position", 1267)
+    
+        @contextmanager
+        def fake_bus(device, baudrate):
+            yield object(), object()
+    
+        monkeypatch.setattr(motion, "open_motion_bus", fake_bus)
+        monkeypatch.setattr(motion, "SdkReader", lambda port, packet: FakeReader(arm))
+        monkeypatch.setattr(motion, "Id3Actuator", lambda port, packet: FakeActuator(arm))
+    
+        def broken_summary(path, outcome):
+            raise OSError(28, "No space left on device")
+    
+        monkeypatch.setattr(motion, "write_summary", broken_summary)
+        evidence = motion.load_evidence(write_evidence(tmp_path, evidence_record()))
+>       code = motion.execute("dev", 1000000, evidence, tmp_path / "out")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_id3_motion.py:917: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/arm_observer/id3_motion.py:714: in execute
+    summary = write_summary(path, outcome)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-65/test_verdict_is_reported_befor0/out/id3_motion_20261003T235523_457184+0900.jsonl')
+outcome = Outcome(status='aborted', reason='MotionAbort: write failed: goal_position', target=None, final_error_counts=None, sta...d', "final torque states not all OFF: {'1': False, '2': False, '3': True, '4': False, '5': False}"), interrupted=False)
+
+    def broken_summary(path, outcome):
+>       raise OSError(28, "No space left on device")
+E       OSError: [Errno 28] No space left on device
+
+tests/test_id3_motion.py:913: OSError
+=========================== short test summary info ============================
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes9]
+FAILED tests/test_id3_motion.py::test_bad_cad_derivation_is_rejected[changes10]
+FAILED tests/test_id3_motion.py::test_cad_source_hash_mismatch_is_rejected - ...
+FAILED tests/test_id3_motion.py::test_stop_request_mid_run_aborts_through_release
+FAILED tests/test_id3_motion.py::test_deferred_signals_only_record_and_restore_handlers
+FAILED tests/test_id3_motion.py::test_final_sync_contradiction_marks_torque_unconfirmed_and_skips_restores
+FAILED tests/test_id3_motion.py::test_verdict_is_reported_before_summary_and_stdout
+7 failed, 122 passed in 1.88s

@@ -1,0 +1,20 @@
+{
+  "overlap": [
+    {
+      "a": "a",
+      "b": "b",
+      "volume_mm3": 499.9999999999999,
+      "type": "volume"
+    }
+  ],
+  "separate": [],
+  "surface_unknown": [
+    {
+      "a": "a",
+      "b": "b",
+      "gap_mm": 0.0,
+      "type": "surface_bbox_unresolved"
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,55 @@
+{
+  "did": "7b85d8922959cbe564b6e0cb",
+  "wid": "caa6accdf3e72dd480cecc37",
+  "ps": "db005ae7987bcf2e80144a0a",
+  "asm": "b5bea8ca20a5c3ab2e2caa48",
+  "body_count": 262,
+  "body_types": {
+    "solid": 207,
+    "sheet": 55
+  },
+  "public_fields": {
+    "public": true,
+    "publicLinkable": false
+  },
+  "old_versions": [
+    {
+      "id": "ae35692c1bac9a669a258f75",
+      "name": "Start"
+    },
+    {
+      "id": "c8fbb106fae1c07e14a8536b",
+      "name": "V1 independent STEP import reference"
+    },
+    {
+      "id": "64249f2de6a8cce71fff923f",
+      "name": "V2 independent rebuild - motion and interference verified"
+    }
+  ],
+  "source_sha256": "f7cd3b6d61363c328c9a26cd582d2eff2893cbee408143b11e9178c99498c065",
+  "verified_version": {
+    "id": "32664265918984b8b6cebbd8",
+    "name": "V1 compact candidate - static interference and measure",
+    "documentId": "7b85d8922959cbe564b6e0cb",
+    "microversion": "738febbf6f637ab3a4a67db1"
+  },
+  "native_validation": {
+    "assembly_kind": "static, all 12 instances fixed",
+    "interference_pairs": 6,
+    "inherited_wrist_mount_pairs": 4,
+    "inherited_camera_mount_pairs": 2,
+    "measure": {
+      "entity": "carrier straight edge within camera_mount",
+      "length_mm": 57.0,
+      "whole_plate_width_mm": 63.0,
+      "edge_not_overall_width": true
+    },
+    "warning": "More than one part is fixed",
+    "headless": true,
+    "screenshots": [
+      "onshape-05-interference.png",
+      "onshape-06-headless.png",
+      "onshape-07-measure.png"
+    ]
+  }
+}

@@ -1,0 +1,971 @@
+{
+  "schema_version": 1,
+  "robot_name": "low_cost_robot_d405_low_profile",
+  "root": "base_link",
+  "length_unit": "m",
+  "linear_deflection_mm": 0.1,
+  "angular_deflection_rad": 0.1,
+  "limitations": "Kinematic study: effort/velocity zero are unset placeholders, no dynamics ratings or inertials.",
+  "links": {
+    "base_link": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "ARM_M01_ref00",
+        "ARM_M01_ref01",
+        "ARM_M01_ref02",
+        "ARM_M01_ref03",
+        "ARM_M01_ref04",
+        "ARM_M01_ref05",
+        "ARM_M01_ref06",
+        "ARM_M01_ref07",
+        "ARM_M01_ref08",
+        "ARM_M01_ref09",
+        "ARM_M01_ref10",
+        "ARM_M01_ref11",
+        "ARM_M01_ref12",
+        "ARM_M01_ref13",
+        "ARM_M01_ref14",
+        "ARM_M01_ref15",
+        "ARM_M01_ref16",
+        "ARM_M01_ref17",
+        "ARM_M01_ref18",
+        "ARM_M01_ref19",
+        "ARM_M01_ref20",
+        "ARM_M01_ref21",
+        "ARM_M01_ref22",
+        "ARM_M01_ref23",
+        "ARM_M01_ref24",
+        "ARM_M01_ref25",
+        "ARM_M01_ref26",
+        "ARM_M01_ref27",
+        "ARM_M01_ref28",
+        "ARM_M01_ref29",
+        "ARM_M01_ref30",
+        "ARM_M01_ref31",
+        "ARM_M01_ref32",
+        "ARM_M01_ref33",
+        "ARM_M01_ref34",
+        "ARM_P01_base"
+      ],
+      "expected_occurrences": 37
+    },
+    "shoulder_yaw": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.02
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "ARM_M02_ref00",
+        "ARM_M02_ref01",
+        "ARM_M02_ref02",
+        "ARM_M02_ref03",
+        "ARM_M02_ref04",
+        "ARM_M02_ref05",
+        "ARM_M02_ref06",
+        "ARM_M02_ref07",
+        "ARM_M02_ref08",
+        "ARM_M02_ref09",
+        "ARM_M02_ref10",
+        "ARM_M02_ref11",
+        "ARM_M02_ref12",
+        "ARM_M02_ref13",
+        "ARM_M02_ref14",
+        "ARM_M02_ref15",
+        "ARM_M02_ref16",
+        "ARM_M02_ref17",
+        "ARM_M02_ref18",
+        "ARM_M02_ref19",
+        "ARM_M02_ref20",
+        "ARM_M02_ref21",
+        "ARM_M02_ref22",
+        "ARM_M02_ref23",
+        "ARM_M02_ref24",
+        "ARM_M02_ref25",
+        "ARM_M02_ref26",
+        "ARM_M02_ref27",
+        "ARM_M02_ref28",
+        "ARM_M02_ref29",
+        "ARM_M02_ref30",
+        "ARM_M02_ref31",
+        "ARM_M02_ref32",
+        "ARM_M02_ref33",
+        "ARM_M02_ref34",
+        "ARM_P02_yaw_carrier"
+      ],
+      "expected_occurrences": 37
+    },
+    "upper_arm": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.056299999999999996
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "ARM_M03_ref00",
+        "ARM_M03_ref01",
+        "ARM_M03_ref02",
+        "ARM_M03_ref03",
+        "ARM_M03_ref04",
+        "ARM_M03_ref05",
+        "ARM_M03_ref06",
+        "ARM_M03_ref07",
+        "ARM_M03_ref08",
+        "ARM_M03_ref09",
+        "ARM_M03_ref10",
+        "ARM_M03_ref11",
+        "ARM_M03_ref12",
+        "ARM_M03_ref13",
+        "ARM_M03_ref14",
+        "ARM_M03_ref15",
+        "ARM_M03_ref16",
+        "ARM_M03_ref17",
+        "ARM_M03_ref18",
+        "ARM_M03_ref19",
+        "ARM_M03_ref20",
+        "ARM_M03_ref21",
+        "ARM_M03_ref22",
+        "ARM_M03_ref23",
+        "ARM_M03_ref24",
+        "ARM_M03_ref25",
+        "ARM_M03_ref26",
+        "ARM_M03_ref27",
+        "ARM_M03_ref28",
+        "ARM_M03_ref29",
+        "ARM_M03_ref30",
+        "ARM_M03_ref31",
+        "ARM_M03_ref32",
+        "ARM_M03_ref33",
+        "ARM_M03_ref34",
+        "ARM_P03_shoulder_XL430"
+      ],
+      "expected_occurrences": 37
+    },
+    "forearm": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0148
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "ARM_M04_ref00",
+        "ARM_M04_ref01",
+        "ARM_M04_ref02",
+        "ARM_M04_ref03",
+        "ARM_M04_ref04",
+        "ARM_M04_ref05",
+        "ARM_M04_ref06",
+        "ARM_M04_ref07",
+        "ARM_M04_ref08",
+        "ARM_M04_ref09",
+        "ARM_M04_ref10",
+        "ARM_M04_ref11",
+        "ARM_M04_ref12",
+        "ARM_M04_ref13",
+        "ARM_M04_ref14",
+        "ARM_M04_ref15",
+        "ARM_M04_ref16",
+        "ARM_M04_ref17",
+        "ARM_M04_ref18",
+        "ARM_M04_ref19",
+        "ARM_M04_ref20",
+        "ARM_M04_ref21",
+        "ARM_M04_ref22",
+        "ARM_M04_ref23",
+        "ARM_M04_ref24",
+        "ARM_M04_ref25",
+        "ARM_M04_ref26",
+        "ARM_M04_ref27",
+        "ARM_M04_ref28",
+        "ARM_M04_ref29",
+        "ARM_M04_ref30",
+        "ARM_M04_ref31",
+        "ARM_M04_ref32",
+        "ARM_M04_ref33",
+        "ARM_M04_ref34",
+        "ARM_P04_extension_XL430"
+      ],
+      "expected_occurrences": 37
+    },
+    "wrist": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.10490000000000001
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "ARM_M05_ref01",
+        "ARM_M05_ref02",
+        "ARM_M05_ref03",
+        "ARM_M05_ref04",
+        "ARM_M05_ref05",
+        "ARM_M05_ref06",
+        "ARM_M05_ref07",
+        "ARM_M05_ref08",
+        "ARM_M05_ref09",
+        "ARM_M05_ref10",
+        "ARM_M05_ref11",
+        "ARM_M05_ref12",
+        "ARM_M05_ref13",
+        "ARM_M05_ref14",
+        "ARM_M05_ref15",
+        "ARM_M05_ref16",
+        "ARM_M05_ref17",
+        "ARM_M05_ref18",
+        "ARM_M05_ref19",
+        "ARM_M05_ref20",
+        "ARM_M05_ref21",
+        "ARM_M05_ref22",
+        "ARM_M05_ref23",
+        "ARM_M05_ref24",
+        "ARM_M05_ref25",
+        "ARM_M05_ref26",
+        "ARM_M05_ref27",
+        "ARM_M05_ref28",
+        "ARM_M05_ref29",
+        "ARM_M05_ref30",
+        "ARM_M05_ref31",
+        "ARM_M05_ref32",
+        "ARM_M05_ref33",
+        "ARM_M05_ref34",
+        "ARM_P05_wrist_XL430",
+        "PG3_XL430_fixed",
+        "PG3_cap_-37.5_-24.5_bolt",
+        "PG3_cap_-37.5_-24.5_nut",
+        "PG3_cap_-37.5_-24.5_washer",
+        "PG3_cap_-37.5_24.5_bolt",
+        "PG3_cap_-37.5_24.5_nut",
+        "PG3_cap_-37.5_24.5_washer",
+        "PG3_cap_37.5_-24.5_bolt",
+        "PG3_cap_37.5_-24.5_nut",
+        "PG3_cap_37.5_-24.5_washer",
+        "PG3_cap_37.5_24.5_bolt",
+        "PG3_cap_37.5_24.5_nut",
+        "PG3_cap_37.5_24.5_washer",
+        "PG3_cap_D",
+        "PG3_cap_U",
+        "PG3_case_tapper_-11",
+        "PG3_case_tapper_11",
+        "PG3_frame"
+      ],
+      "expected_occurrences": 54
+    },
+    "gripper_crank": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.16490000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "PG3_XL430_horn",
+        "PG3_crank",
+        "PG3_horn_bolt_0",
+        "PG3_horn_bolt_1",
+        "PG3_horn_bolt_2",
+        "PG3_horn_bolt_3",
+        "PG3_horn_spacer",
+        "PG3_pivot_drive_L_bolt",
+        "PG3_pivot_drive_L_nut",
+        "PG3_pivot_drive_L_washer",
+        "PG3_pivot_drive_R_bolt",
+        "PG3_pivot_drive_R_nut",
+        "PG3_pivot_drive_R_washer"
+      ],
+      "expected_occurrences": 13
+    },
+    "jaw_l": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.16490000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "PG3_carriage_L",
+        "PG3_finger_L",
+        "PG3_finger_L_-14_bolt",
+        "PG3_finger_L_-14_nut",
+        "PG3_finger_L_-14_washer",
+        "PG3_finger_L_14_bolt",
+        "PG3_finger_L_14_nut",
+        "PG3_finger_L_14_washer",
+        "PG3_pad_L",
+        "PG3_pivot_carriage_L_bolt",
+        "PG3_pivot_carriage_L_nut",
+        "PG3_pivot_carriage_L_washer"
+      ],
+      "expected_occurrences": 12
+    },
+    "jaw_r": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.16490000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "PG3_carriage_R",
+        "PG3_finger_R",
+        "PG3_finger_R_-14_bolt",
+        "PG3_finger_R_-14_nut",
+        "PG3_finger_R_-14_washer",
+        "PG3_finger_R_14_bolt",
+        "PG3_finger_R_14_nut",
+        "PG3_finger_R_14_washer",
+        "PG3_pad_R",
+        "PG3_pivot_carriage_R_bolt",
+        "PG3_pivot_carriage_R_nut",
+        "PG3_pivot_carriage_R_washer"
+      ],
+      "expected_occurrences": 12
+    },
+    "coupler_l": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.16490000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.17859999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "PG3_link_L"
+      ],
+      "expected_occurrences": 1
+    },
+    "coupler_r": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.16490000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.15059999999999998
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "PG3_link_R"
+      ],
+      "expected_occurrences": 1
+    },
+    "camera_mount": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.16490000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.19985
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "CAM5_BASE",
+        "CAM5_BASE_TAP_0",
+        "CAM5_BASE_TAP_1",
+        "CAM5_BASE_TAP_2",
+        "CAM5_BASE_TAP_3",
+        "CAM5_BASE_WASHER_0",
+        "CAM5_BASE_WASHER_1",
+        "CAM5_BASE_WASHER_2",
+        "CAM5_BASE_WASHER_3",
+        "CAM5_D405_CARRIER",
+        "CAM5_D405_SCREW_0",
+        "CAM5_D405_SCREW_1",
+        "CAM5_TIE_BOLT_0",
+        "CAM5_TIE_BOLT_1",
+        "CAM5_TIE_NUT_0",
+        "CAM5_TIE_NUT_1",
+        "CAM5_TIE_WASHER_0",
+        "CAM5_TIE_WASHER_1"
+      ],
+      "expected_occurrences": 18
+    },
+    "camera_body": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0002
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.165
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.235
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [
+        "CAM5_D405_BODY",
+        "CAM5_D405_USB_CABLE_STUB",
+        "CAM5_D405_USB_PLUG"
+      ],
+      "expected_occurrences": 3
+    },
+    "closing_left_1": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.019693588689617927
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.19290000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [],
+      "expected_occurrences": 0
+    },
+    "closing_left_2": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.019693588689617927
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.19290000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [],
+      "expected_occurrences": 0
+    },
+    "closing_right_1": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.019293588689617926
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.19290000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [],
+      "expected_occurrences": 0
+    },
+    "closing_right_2": {
+      "frame_m": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.019293588689617926
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.19290000000000002
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.1646
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parts": [],
+      "expected_occurrences": 0
+    }
+  },
+  "joints": [
+    {
+      "name": "joint1_yaw",
+      "parent": "base_link",
+      "child": "shoulder_yaw",
+      "type": "revolute",
+      "axis": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "limit": {
+        "lower": -3.141592653589793,
+        "upper": 3.141592653589793,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "joint2_shoulder",
+      "parent": "shoulder_yaw",
+      "child": "upper_arm",
+      "type": "revolute",
+      "axis": [
+        1.0,
+        -0.0,
+        -2.220446049250313e-16
+      ],
+      "limit": {
+        "lower": -3.141592653589793,
+        "upper": 3.141592653589793,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "joint3_elbow",
+      "parent": "upper_arm",
+      "child": "forearm",
+      "type": "revolute",
+      "axis": [
+        -1.0,
+        -0.0,
+        -2.220446049250313e-16
+      ],
+      "limit": {
+        "lower": -3.141592653589793,
+        "upper": 3.141592653589793,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "joint4_wrist",
+      "parent": "forearm",
+      "child": "wrist",
+      "type": "revolute",
+      "axis": [
+        -1.0,
+        -0.0,
+        -2.220446049250313e-16
+      ],
+      "limit": {
+        "lower": -1.7802358370342162,
+        "upper": 2.1642082724729685,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "gripper_drive",
+      "parent": "wrist",
+      "child": "gripper_crank",
+      "type": "revolute",
+      "axis": [
+        -0.0,
+        -1.0,
+        -2.220446049250313e-16
+      ],
+      "limit": {
+        "lower": -0.7853981633974483,
+        "upper": 1.1344640137963142,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "jaw_left",
+      "parent": "wrist",
+      "child": "jaw_l",
+      "type": "prismatic",
+      "axis": [
+        -1.0,
+        -0.0,
+        -2.220446049250313e-16
+      ],
+      "limit": {
+        "lower": -0.007529872517154143,
+        "upper": 0.016453980543899453,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "jaw_right",
+      "parent": "wrist",
+      "child": "jaw_r",
+      "type": "prismatic",
+      "axis": [
+        -1.0,
+        -0.0,
+        -2.220446049250313e-16
+      ],
+      "limit": {
+        "lower": -0.016453980543899453,
+        "upper": 0.007529872517154143,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "coupler_left",
+      "parent": "gripper_crank",
+      "child": "coupler_l",
+      "type": "revolute",
+      "axis": [
+        -0.0,
+        -1.0,
+        -2.220446049250313e-16
+      ],
+      "limit": {
+        "lower": -3.141592653589793,
+        "upper": 3.141592653589793,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "coupler_right",
+      "parent": "gripper_crank",
+      "child": "coupler_r",
+      "type": "revolute",
+      "axis": [
+        -0.0,
+        -1.0,
+        -2.220446049250313e-16
+      ],
+      "limit": {
+        "lower": -3.141592653589793,
+        "upper": 3.141592653589793,
+        "effort": 0,
+        "velocity": 0
+      }
+    },
+    {
+      "name": "camera_mount_fixed",
+      "parent": "wrist",
+      "child": "camera_mount",
+      "type": "fixed"
+    },
+    {
+      "name": "camera_body_fixed",
+      "parent": "camera_mount",
+      "child": "camera_body",
+      "type": "fixed"
+    },
+    {
+      "name": "closing_left_1_fixed",
+      "parent": "coupler_l",
+      "child": "closing_left_1",
+      "type": "fixed"
+    },
+    {
+      "name": "closing_left_2_fixed",
+      "parent": "jaw_l",
+      "child": "closing_left_2",
+      "type": "fixed"
+    },
+    {
+      "name": "closing_right_1_fixed",
+      "parent": "coupler_r",
+      "child": "closing_right_1",
+      "type": "fixed"
+    },
+    {
+      "name": "closing_right_2_fixed",
+      "parent": "jaw_r",
+      "child": "closing_right_2",
+      "type": "fixed"
+    }
+  ],
+  "loop_constraints": [
+    {
+      "name": "closing_left",
+      "type": "coincident_points",
+      "links": [
+        "closing_left_1",
+        "closing_left_2"
+      ],
+      "coupling": "pg3_states.py"
+    },
+    {
+      "name": "closing_right",
+      "type": "coincident_points",
+      "links": [
+        "closing_right_1",
+        "closing_right_2"
+      ],
+      "coupling": "pg3_states.py"
+    }
+  ]
+}

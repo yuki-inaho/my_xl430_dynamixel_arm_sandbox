@@ -1,0 +1,46 @@
+{
+  "state": {
+    "angles": [
+      0,
+      -30,
+      -30,
+      -30
+    ],
+    "theta": 90,
+    "variant": "r5_65",
+    "gripper": false,
+    "camera": false,
+    "animate": false,
+    "azimuth": 0,
+    "elevation": -8,
+    "distance": 0.55,
+    "focus": "arm",
+    "source": "manual",
+    "frame_seq": 802,
+    "render_fps": 20,
+    "frame_time": 1791074444.8965273,
+    "error": null,
+    "telemetry": {
+      "configured": false,
+      "status": "未接続",
+      "motors": []
+    },
+    "live_available": false,
+    "direction_observation": {
+      "before": null,
+      "result": null,
+      "saved_path": null
+    },
+    "calibration": {
+      "verified": false,
+      "status": "未校正",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb"
+    },
+    "gap_mm": 15.99,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 802
+  },
+  "liveStartDisabled": true,
+  "decoded": 1060
+}

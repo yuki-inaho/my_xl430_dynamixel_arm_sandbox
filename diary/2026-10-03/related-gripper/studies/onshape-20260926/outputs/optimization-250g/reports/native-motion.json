@@ -1,0 +1,246 @@
+{
+  "project": {
+    "did": "7b85d8922959cbe564b6e0cb",
+    "wid": "caa6accdf3e72dd480cecc37",
+    "ps": "db005ae7987bcf2e80144a0a",
+    "asm": "848ae15cd82797bd99cdc330"
+  },
+  "cases": [
+    {
+      "case": "zero",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.0
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": -8.881784197001252e-16,
+        "gripper_drive": -8.881784197001252e-16
+      },
+      "max_requested_value_error_rad": 8.881784197001252e-16,
+      "max_occurrence_matrix_change": 8.475858903622683e-15
+    },
+    {
+      "case": "small_joint1_yaw",
+      "expected_rad": {
+        "joint1_yaw": 0.17453292519943295,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.0
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.1745329251994327,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": -8.881784197001252e-16,
+        "joint4_wrist": -8.881784197001252e-16,
+        "gripper_drive": -2.6645352591003757e-15
+      },
+      "max_requested_value_error_rad": 2.6645352591003757e-15,
+      "max_occurrence_matrix_change": 0.17364817766693175
+    },
+    {
+      "case": "small_joint2_shoulder",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.17453292519943295,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.0
+      },
+      "achieved_rad": {
+        "joint1_yaw": -1.3322676295501878e-14,
+        "joint2_shoulder": 0.1745329251994361,
+        "joint3_elbow": -3.552713678800501e-15,
+        "joint4_wrist": -1.687538997430238e-14,
+        "gripper_drive": -3.907985046680551e-14
+      },
+      "max_requested_value_error_rad": 3.907985046680551e-14,
+      "max_occurrence_matrix_change": 0.17364817766695406
+    },
+    {
+      "case": "small_joint3_elbow",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.17453292519943295,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.0
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.1745329251994329,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.0
+      },
+      "max_requested_value_error_rad": 5.551115123125783e-17,
+      "max_occurrence_matrix_change": 0.1736481776669317
+    },
+    {
+      "case": "small_joint4_wrist",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.17453292519943295,
+        "gripper_drive": 0.0
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.1745329251994327,
+        "gripper_drive": -1.2434497875801753e-14
+      },
+      "max_requested_value_error_rad": 1.2434497875801753e-14,
+      "max_occurrence_matrix_change": 0.173648177666933
+    },
+    {
+      "case": "small_gripper_drive",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.17453292519943295
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.1745329251994331
+      },
+      "max_requested_value_error_rad": 1.3877787807814457e-16,
+      "max_occurrence_matrix_change": 0.17364817766693047
+    },
+    {
+      "case": "wrist_lower",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": -1.8500490071139892,
+        "gripper_drive": 0.0
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": -1.8500490071139892,
+        "gripper_drive": 0.0
+      },
+      "max_requested_value_error_rad": 0.0,
+      "max_occurrence_matrix_change": 1.2756373558170016
+    },
+    {
+      "case": "wrist_upper",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 2.4085543677521746,
+        "gripper_drive": 0.0
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 2.4085543677521746,
+        "gripper_drive": -1.7763568394002505e-15
+      },
+      "max_requested_value_error_rad": 1.7763568394002505e-15,
+      "max_occurrence_matrix_change": 1.743144825477449
+    },
+    {
+      "case": "gripper_open",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 1.1344640137963142
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 1.1344640137963142
+      },
+      "max_requested_value_error_rad": 0.0,
+      "max_occurrence_matrix_change": 0.906307787036679
+    },
+    {
+      "case": "gripper_closed",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": -0.7853981633974483
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": -0.7853981633974483
+      },
+      "max_requested_value_error_rad": 0.0,
+      "max_occurrence_matrix_change": 0.7071067811865535
+    },
+    {
+      "case": "restored_mid",
+      "expected_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.0
+      },
+      "achieved_rad": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 0.0
+      },
+      "max_requested_value_error_rad": 0.0,
+      "max_occurrence_matrix_change": 4.4998726966838376e-15
+    }
+  ],
+  "status": "PASS_NATIVE_SAMPLED_MOTION",
+  "continuous_collision_proof": false,
+  "method": "Reset to zero before each case; waypoints <=10deg; verify every achieved value",
+  "transition_count": 91,
+  "max_transition_error_rad": 2.2406559302056398e-13,
+  "native_ui": {
+    "animation": {
+      "start_deg": 0,
+      "end_deg": 20,
+      "steps": 21,
+      "observed_current_deg": [
+        3.81,
+        15.238
+      ],
+      "screenshot_stopped_deg": 5.714,
+      "screenshot": "images/onshape-08-animate.png"
+    },
+    "interference": {
+      "scope_instances": 12,
+      "pose": "all arm joints zero, gripper theta90deg",
+      "pairs": 6,
+      "wrist_camera_mount": 4,
+      "camera_body_camera_mount": 2,
+      "screenshot": "images/onshape-09-motion-interference.png"
+    }
+  },
+  "restored_after_ui_max_matrix_error": 4.4998726966838376e-15
+}

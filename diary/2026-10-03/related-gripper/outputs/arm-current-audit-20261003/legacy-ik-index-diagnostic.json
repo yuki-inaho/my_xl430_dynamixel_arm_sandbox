@@ -1,0 +1,58 @@
+{
+  "mujoco_version": "3.9.0",
+  "model": "/home/inaho-omen/Project/low_cost_robot/temp/sim_xl430proxy/scene_xl430proxy.xml",
+  "model_sha256": "0ab877a93f2a3c26e04b3890402990b201b810e4297e515295cd30452d85d6ce",
+  "no_hardware_or_mj_step": true,
+  "samples": [
+    {
+      "body_name": "joint4",
+      "body_id": 5,
+      "geom_at_same_numeric_index": "xl430proxy_joint3",
+      "body_xpos_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "body_xipos_m": [
+        0.004273344345368412,
+        0.14551968259900017,
+        0.1636405943765648
+      ],
+      "wrong_geom_xpos_at_body_index_m": [
+        -0.0143,
+        0.0838,
+        0.1635
+      ],
+      "attached_geom_ids": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "body_name": "joint5",
+      "body_id": 7,
+      "geom_at_same_numeric_index": "joint4",
+      "body_xpos_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "body_xipos_m": [
+        -0.007572877398297441,
+        0.1609406494622586,
+        0.16309964708699312
+      ],
+      "wrong_geom_xpos_at_body_index_m": [
+        0.014343801774458768,
+        0.15774992088802758,
+        0.1639896934231431
+      ],
+      "attached_geom_ids": [
+        10,
+        11
+      ]
+    }
+  ],
+  "default_end_effector_error": "\"Invalid name 'end_effector'. Valid names: ['base_link', 'box', 'joint1', 'joint2', 'joint3', 'joint4', 'joint4-pad', 'joint5', 'joint5-pad', 'world']\""
+}

@@ -1,0 +1,382 @@
+{
+  "captured_at": "2026-10-03T11:25:31.799594+00:00",
+  "files": [
+    {
+      "path": "references/arm-r3/arm_XL430_R3.step",
+      "sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "bytes": 6001108
+    },
+    {
+      "path": "references/arm-r3/joints.json",
+      "sha256": "988890dd93df387ce22f027c10f9e7f3e4f7ac1841e010f18fd7aec47eebf7a7",
+      "bytes": 1314
+    },
+    {
+      "path": "references/arm-r3/manifest.json",
+      "sha256": "d2fa5203e88d36589c3083a1649467522f275b91f12e9c6040a95e8fc1188d21",
+      "bytes": 67606
+    },
+    {
+      "path": "references/pg3-c9/PG3_C92_J28/reference/C7/source/design.py",
+      "sha256": "c20f0dd65fa1338ba3d42c9424990937bd161b491b5a937e429a84ccf4bb25d0",
+      "bytes": 11832
+    },
+    {
+      "path": "gripper_design/camera_overhead_d405_r5.py",
+      "sha256": "dde08cf48a5ad8458d24ce5926128a1cf1058fa68452a791bae38b172d7cb7f9",
+      "bytes": 12602
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/scene.xml",
+      "sha256": "8d5d2cde0b15eb4ebd606a3830ef5d0e3e15fec982e96afe9872e8b907830b73",
+      "bytes": 18751
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/model-provenance.json",
+      "sha256": "8375e073297aab2bdeb007f25f9ab32c45da52a3115aa056bfdf87ff7d5322bb",
+      "bytes": 44093
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_link_R_printed.obj",
+      "sha256": "7e56e5832d7a29e0589c419b478e8ab5c7e0fe6fe6b32d6567b3a38e8bf1187d",
+      "bytes": 95610
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_TIE_WASHER_0.obj",
+      "sha256": "148260e08e72984005d3350f51704d6c430030ea3014a7337e08bd8da391f0d3",
+      "bytes": 53143
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_drive_printed.obj",
+      "sha256": "d89a8a22815659a18b5610fc097215f4a3b1e7748588b5d80fcdea04fe15a506",
+      "bytes": 467231
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_R_fastener.obj",
+      "sha256": "1886b7756be18cd764f532e7b96333603389ab1f6da8f984c19488c5f1913140",
+      "bytes": 376953
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/M01.obj",
+      "sha256": "32f7ca3c6a32b35124b238f622270e163578d31661069bf67fcbcacdcbca6d2d",
+      "bytes": 5281841
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/P01_base.obj",
+      "sha256": "e4ac720b45876831fbfb5acbf1f43b38dec2f0ab5e7e2ed1f85b305ab2d38328",
+      "bytes": 616827
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/P04_extension_XL430.obj",
+      "sha256": "ea8c9630450bf381ddc1a6b05e23ccbebe918eab7366309d4f71816783ad741e",
+      "bytes": 398468
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_fixed_fastener.obj",
+      "sha256": "9972066111786671cff86c3b5303885a1d9c0ac5b6d7c94c6a9e0c2e0c897175",
+      "bytes": 604978
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_L_printed.obj",
+      "sha256": "5884ae11e899981d5635e1ef39597a219b8c15d7a884f223c4afaee85d1d7cdc",
+      "bytes": 242051
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_D405_CARRIER.obj",
+      "sha256": "2013df9b538b17d26975105d5d0f92a937c30ef846808bbc9ff3722abb9d3d0a",
+      "bytes": 309011
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_TAP_3.obj",
+      "sha256": "d3d0be24417e54733b063999d08d0a5cc7afe51727bf3dbeb62602b104f08d17",
+      "bytes": 48463
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_R_printed.obj",
+      "sha256": "2b2d37c7b8ad831ef1b156e23203764d6e53b365c77821344866c75d2ca75942",
+      "bytes": 237935
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_BOLT_1.obj",
+      "sha256": "7bf824752362cf5fad4b709c5e8beec442327770f343a69cf9ae691b6f03e21d",
+      "bytes": 54514
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_D405_BODY.obj",
+      "sha256": "793d3bd70fee8c416a09fb40cb413683b02ca2a5db66a3b69c61cd04b17211af",
+      "bytes": 82486
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_L_pad.obj",
+      "sha256": "1dc1d3be7726578cfbc7e3ec8cf4f3b5a94e721120ba27d1b84dfdeb42481976",
+      "bytes": 922
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_TAP_2.obj",
+      "sha256": "58a3a3b1df3816048ddc6dd448d731b1211d4d04db2d065f0bac423f0b13f68d",
+      "bytes": 48463
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_WASHER_0.obj",
+      "sha256": "1a3601d62da6108fc51ec2ba0c57b69749b1d8f6382ae2c743fe7b9015572f07",
+      "bytes": 47874
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_fixed_printed.obj",
+      "sha256": "a9ca6c4e6365fced77f3a3f5445dc8c4a643ff18440ed4b953d8359b66e491e2",
+      "bytes": 408761
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_WASHER_3.obj",
+      "sha256": "334758034988f697302d028ed10062aedc7c14dde8218e6e6547c505ddab3158",
+      "bytes": 47022
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_BOLT_0.obj",
+      "sha256": "3fce07159a7d89c91373a828ec5ccd64babd44940506a268d2dff1d0b0892c30",
+      "bytes": 55394
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_WASHER_1.obj",
+      "sha256": "574ff63d78a2027cb941925eb659b25a95836416026cc3dbf93eef1c6d090c0f",
+      "bytes": 52272
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_TIE_BOLT_0.obj",
+      "sha256": "86e2487db940f4fc46a52496872e9a617ddb01ebd4ddb666dda38b5528719205",
+      "bytes": 55387
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/M02.obj",
+      "sha256": "14e48b383cb38c605ecfe5af93ec4aff8a618bce2cbd76f13b7f2846b6b23b02",
+      "bytes": 5249577
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE_WASHER_2.obj",
+      "sha256": "cd74e54c73762d70bc6dcd75e2ea7d932362c7d3f8d59f5409fcd0c3e14d6a7b",
+      "bytes": 47022
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_L_fastener.obj",
+      "sha256": "f1194b0bec6651f6f936e32448a6e9e4825be419ef534a2d3fd3dd268d4f5e7a",
+      "bytes": 383395
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_WASHER_0.obj",
+      "sha256": "aefb0758e29d7c4a36e424bf0dc9340a810578638ff51226121ea1b5dcfadbf0",
+      "bytes": 53122
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE_TAP_0.obj",
+      "sha256": "0c7220e0f1a8acbc00adc86d8ed49f6840137e76f8a3e97700ddb8aeec51160f",
+      "bytes": 49343
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/P02_yaw_carrier.obj",
+      "sha256": "f33e3663be8ac004df9dacb681eeb7f94778db55a8528f236b258d2e7631b479",
+      "bytes": 418344
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE_WASHER_1.obj",
+      "sha256": "11b4cd165ce6a22a2552f97b998dd5c71d11fac24fccf4ce72de3465c6111398",
+      "bytes": 47874
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_D405_USB_CABLE_STUB.obj",
+      "sha256": "4245e0bb06abca96d36d064ff28fa1e60e8aa474f6b07a970539177c49cfca14",
+      "bytes": 22434
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_TIE_NUT_1.obj",
+      "sha256": "8f4076455e4dea5ac6d23fef01505cc8555516a6f6de502b64f8e6f485e8f392",
+      "bytes": 28516
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_D405_SCREW_0.obj",
+      "sha256": "3ae773fc8cece08890f098192781e0351b6a4383ed37d9de1e92f0dea6c100dc",
+      "bytes": 55591
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_D405_SCREW_1.obj",
+      "sha256": "c937eb14c2be732d49d96edf33a767c73eff839e57511ccd92ec743dd76d42d4",
+      "bytes": 54767
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_TIE_BOLT_1.obj",
+      "sha256": "dfc7ea2997c37bad06e5bd9a74b4ca2a0ded824125bc49b36a02ff6d2fdae611",
+      "bytes": 54507
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_USB_PLUG.obj",
+      "sha256": "fc2184db8020dd84092106f6171db860d0d088cfa507db02b2cee366ee222d8a",
+      "bytes": 1084
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_USB_CABLE_STUB.obj",
+      "sha256": "c110ce275e407ff7844981aaea867e5395d34d5aa68d7f69b74a685fb7df892a",
+      "bytes": 22294
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_D405_USB_PLUG.obj",
+      "sha256": "bb7f553670fda6762ed1302e7b0b11fff8a7d6ac7e6777b17293f99e92fe91f3",
+      "bytes": 1091
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_drive_fastener.obj",
+      "sha256": "60e5d1f703ebe0e096b2aa29a33cddc131910195ffed4b2d5ebe0e13a9fda72b",
+      "bytes": 467829
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE_TAP_1.obj",
+      "sha256": "4413d06ef831f188f33628d50b27a5049bd26936ecd8d26e023dcf1f27af9516",
+      "bytes": 49343
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/M04.obj",
+      "sha256": "32a3e3879e803ef7d21fe33219294c4658468f0d238fed55eab777c45248bfb0",
+      "bytes": 5227857
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE.obj",
+      "sha256": "81bc2380a7cbb51e4d8ef76a0984264000b235446514c60b34bcd48b0d831c42",
+      "bytes": 351667
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_CARRIER.obj",
+      "sha256": "398795ce75b231e2bb67321bb9683a3382bbc8985aa1001652d884b21ff4e448",
+      "bytes": 308650
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_R_pad.obj",
+      "sha256": "75032ca8f162db85a4609c74158f147222aca22e7ba0ba03b04ddda09e224586",
+      "bytes": 898
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_TIE_NUT_0.obj",
+      "sha256": "7e88f8ad380e7d171a094fcfdadf1d72b99cf2405c486458ac9fba97da36e52e",
+      "bytes": 28974
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_SCREW_1.obj",
+      "sha256": "4a5869ad15e41d6e8c179c2ced044144facabcd95b93ef9e574728b3ca35d018",
+      "bytes": 54806
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_BODY.obj",
+      "sha256": "43a5499ab08061bcc453d14a6c4cfc6bc8c1297b1762cbabfcf5c94d8c5207a4",
+      "bytes": 82225
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/c7_link_L_printed.obj",
+      "sha256": "e47e0b5acd29692cc239aaa19a4ba1c3deca6dab6b20450bfc635e445dfff443",
+      "bytes": 95639
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_NUT_1.obj",
+      "sha256": "ed0ab4f0dd47cf5c275dfdcd05386f2863964682fb98c82ade2b9b2439fdbe58",
+      "bytes": 28287
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE_TAP_3.obj",
+      "sha256": "d3d0be24417e54733b063999d08d0a5cc7afe51727bf3dbeb62602b104f08d17",
+      "bytes": 48463
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE_WASHER_3.obj",
+      "sha256": "334758034988f697302d028ed10062aedc7c14dde8218e6e6547c505ddab3158",
+      "bytes": 47022
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE.obj",
+      "sha256": "224bdfbc1740e60541ee397dd0d05070a9707ae72da8b7bce8c29b7b101820d8",
+      "bytes": 349284
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_WASHER_2.obj",
+      "sha256": "cd74e54c73762d70bc6dcd75e2ea7d932362c7d3f8d59f5409fcd0c3e14d6a7b",
+      "bytes": 47022
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE_TAP_2.obj",
+      "sha256": "58a3a3b1df3816048ddc6dd448d731b1211d4d04db2d065f0bac423f0b13f68d",
+      "bytes": 48463
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/P03_shoulder_XL430.obj",
+      "sha256": "c017300d342f62fb8cdca7359a59412073f0afcc610c4d0fa123347726cefadc",
+      "bytes": 703540
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_TIE_WASHER_1.obj",
+      "sha256": "cf750dbe62fd4e83dd20545456bfadf77944f4e2fa9a1c0a376a7d563a9d9c23",
+      "bytes": 52293
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/M03.obj",
+      "sha256": "b1b729adad0ef7a0186a5db0b64a2f722ab26c3c399bbb7b61bfc6457d706b2b",
+      "bytes": 5132693
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_TAP_0.obj",
+      "sha256": "0c7220e0f1a8acbc00adc86d8ed49f6840137e76f8a3e97700ddb8aeec51160f",
+      "bytes": 49343
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_WASHER_1.obj",
+      "sha256": "11b4cd165ce6a22a2552f97b998dd5c71d11fac24fccf4ce72de3465c6111398",
+      "bytes": 47874
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_TIE_NUT_0.obj",
+      "sha256": "e5ec044d2af87f54c99f2261e13fd6c88bc621fb091fadd7efc1d596ad5b4e00",
+      "bytes": 28745
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_D405_SCREW_0.obj",
+      "sha256": "93df43c2c9f4668ad7c2f95f6ea16844dddc8958374dc48d2bedb984d3f74525",
+      "bytes": 55630
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/compact_75_CAM5_BASE_WASHER_0.obj",
+      "sha256": "1a3601d62da6108fc51ec2ba0c57b69749b1d8f6382ae2c743fe7b9015572f07",
+      "bytes": 47874
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/M05.obj",
+      "sha256": "aa50e12a49da3d274eea1659c382eeb9db53f07def5f7e1ffe4fc6f398f1a8c2",
+      "bytes": 5262622
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/r5_65_CAM5_BASE_TAP_1.obj",
+      "sha256": "4413d06ef831f188f33628d50b27a5049bd26936ecd8d26e023dcf1f27af9516",
+      "bytes": 49343
+    },
+    {
+      "path": "outputs/current-arm-mujoco-20261003/meshes/P05_wrist_XL430.obj",
+      "sha256": "dc33ef0914bf5aa8b21ba92f35403367b27b80ca9fd0a5bf979ceecfd5088666",
+      "bytes": 496991
+    },
+    {
+      "path": "simulation/current_arm_viewer/build_model.py",
+      "sha256": "71252d2d5780a485a314a19d78c160c3cd083bdda777f2511d84555e0c35dc31",
+      "bytes": 9529
+    },
+    {
+      "path": "simulation/current_arm_viewer/server.py",
+      "sha256": "bdf8729e0363cc26bbec9355c28de4eff035e67a38325baf3388cc6b599ef047",
+      "bytes": 17586
+    },
+    {
+      "path": "simulation/current_arm_viewer/index.html",
+      "sha256": "79947647cbdb43156ecbcf390576b6f4f3be0c27e445d1775dfc70070c593825",
+      "bytes": 11714
+    },
+    {
+      "path": "tests/test_current_arm_viewer.py",
+      "sha256": "00bfe3ad4a887a6e81b8b069ed39d9923ed3674f5960a5561b44abebfdbd014b",
+      "bytes": 8383
+    }
+  ],
+  "inputs_unchanged": true,
+  "hardware_access": false
+}

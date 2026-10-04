@@ -1,0 +1,330 @@
+{
+  "status": "PASS_KINEMATIC_ONLY",
+  "links": 16,
+  "joints": 15,
+  "actuated_joints": 5,
+  "passive_joints": 4,
+  "fixed_joints": 6,
+  "mesh_links": 12,
+  "sampled_configurations": 441,
+  "max_closure_error_m": 2.3076457301700162e-07,
+  "native_pose_cases": 11,
+  "native_max_matrix_error": 8.550800259894006e-06,
+  "native_pose_results": [
+    {
+      "case": "zero",
+      "max_matrix_error": 7.3464297096845125e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.307179586713567e-08,
+        "upper_arm": 2.0680144597441521e-07,
+        "forearm": 7.34641724832647e-06,
+        "wrist": 7.346410205916232e-06,
+        "gripper_crank": 7.346429699309999e-06,
+        "coupler_l": 7.3464297096845125e-06,
+        "coupler_r": 7.346429694304454e-06,
+        "jaw_l": 7.346417245904921e-06,
+        "jaw_r": 7.346417245904921e-06,
+        "camera_mount": 7.34641020450203e-06,
+        "camera_body": 7.34641020450203e-06
+      }
+    },
+    {
+      "case": "small_joint1_yaw",
+      "max_matrix_error": 8.550800259894006e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 4.6079103191770564e-07,
+        "upper_arm": 4.6079103196840876e-07,
+        "forearm": 7.807201345741242e-06,
+        "wrist": 8.156378549705169e-06,
+        "gripper_crank": 8.550800252190712e-06,
+        "coupler_l": 8.550800259894006e-06,
+        "coupler_r": 8.550800246142058e-06,
+        "jaw_l": 7.807201345697993e-06,
+        "jaw_r": 7.807201345697993e-06,
+        "camera_mount": 8.156378548312452e-06,
+        "camera_body": 8.156378548312452e-06
+      }
+    },
+    {
+      "case": "small_joint2_shoulder",
+      "max_matrix_error": 7.751397005733824e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.30717958670546e-08,
+        "upper_arm": 6.378455470211606e-07,
+        "forearm": 7.751396999471397e-06,
+        "wrist": 7.751396999532524e-06,
+        "gripper_crank": 7.751396922320023e-06,
+        "coupler_l": 7.751397005733824e-06,
+        "coupler_r": 7.7513969920752e-06,
+        "jaw_l": 7.751396999546983e-06,
+        "jaw_r": 7.751396999554047e-06,
+        "camera_mount": 7.751396999546983e-06,
+        "camera_body": 7.751396999546983e-06
+      }
+    },
+    {
+      "case": "small_joint3_elbow",
+      "max_matrix_error": 7.751413222162535e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.30717958670546e-08,
+        "upper_arm": 2.0680144597653346e-07,
+        "forearm": 7.75140393415567e-06,
+        "wrist": 7.751393450122921e-06,
+        "gripper_crank": 7.751413204329354e-06,
+        "coupler_l": 7.751413222162535e-06,
+        "coupler_r": 7.751413207059176e-06,
+        "jaw_l": 7.751403934165085e-06,
+        "jaw_r": 7.751403934165085e-06,
+        "camera_mount": 7.751393450150324e-06,
+        "camera_body": 7.751393450139254e-06
+      }
+    },
+    {
+      "case": "small_joint4_wrist",
+      "max_matrix_error": 7.75141321598654e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.30717958670546e-08,
+        "upper_arm": 2.0680144597653346e-07,
+        "forearm": 7.346417248417041e-06,
+        "wrist": 7.751393450010916e-06,
+        "gripper_crank": 7.751413204231105e-06,
+        "coupler_l": 7.751413200381674e-06,
+        "coupler_r": 7.75141321598654e-06,
+        "jaw_l": 7.751403933732976e-06,
+        "jaw_r": 7.751403933732976e-06,
+        "camera_mount": 7.751393450015658e-06,
+        "camera_body": 7.751393450025075e-06
+      }
+    },
+    {
+      "case": "small_gripper_drive",
+      "max_matrix_error": 7.375023952683878e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.30717958670546e-08,
+        "upper_arm": 2.0680144597653346e-07,
+        "forearm": 7.346417248417041e-06,
+        "wrist": 7.346410206754485e-06,
+        "gripper_crank": 7.2906110287669815e-06,
+        "coupler_l": 7.375023952683878e-06,
+        "coupler_r": 7.375023952683878e-06,
+        "jaw_l": 7.346417248263591e-06,
+        "jaw_r": 7.346417248390499e-06,
+        "camera_mount": 7.3464102067304715e-06,
+        "camera_body": 7.346410206761405e-06
+      }
+    },
+    {
+      "case": "wrist_lower",
+      "max_matrix_error": 7.346417248295498e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.30717958670546e-08,
+        "upper_arm": 2.0680144597309112e-07,
+        "forearm": 7.346417248295498e-06,
+        "wrist": 2.7994804961361428e-06,
+        "gripper_crank": 7.061831143295727e-06,
+        "coupler_l": 7.061831143795327e-06,
+        "coupler_r": 7.061831144739017e-06,
+        "jaw_l": 2.799479912640809e-06,
+        "jaw_r": 2.799479912640809e-06,
+        "camera_mount": 2.799480496084327e-06,
+        "camera_body": 2.7994804964134e-06
+      }
+    },
+    {
+      "case": "wrist_upper",
+      "max_matrix_error": 7.346417248295498e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.30717958670546e-08,
+        "upper_arm": 2.0680144597309112e-07,
+        "forearm": 7.346417248295498e-06,
+        "wrist": 5.111453499859766e-06,
+        "gripper_crank": 5.459481362768415e-06,
+        "coupler_l": 5.459481336678174e-06,
+        "coupler_r": 5.459481360214902e-06,
+        "jaw_l": 5.1114534998625405e-06,
+        "jaw_r": 5.1114534998625405e-06,
+        "camera_mount": 5.111453499867067e-06,
+        "camera_body": 5.11145349986971e-06
+      }
+    },
+    {
+      "case": "gripper_open",
+      "max_matrix_error": 8.061652632448763e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.307179586704506e-08,
+        "upper_arm": 2.0680144597309112e-07,
+        "forearm": 7.3464172482955005e-06,
+        "wrist": 7.346410206817942e-06,
+        "gripper_crank": 6.65813938960369e-06,
+        "coupler_l": 8.061652632448763e-06,
+        "coupler_r": 8.061652632448763e-06,
+        "jaw_l": 7.346417248356756e-06,
+        "jaw_r": 7.346417248356756e-06,
+        "camera_mount": 7.346410206818846e-06,
+        "camera_body": 7.346410207181184e-06
+      }
+    },
+    {
+      "case": "gripper_closed",
+      "max_matrix_error": 8.146924678084422e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.307179586704506e-08,
+        "upper_arm": 2.0680144597309112e-07,
+        "forearm": 7.3464172482955005e-06,
+        "wrist": 7.346410206817942e-06,
+        "gripper_crank": 8.146924678084422e-06,
+        "coupler_l": 7.795967384486167e-06,
+        "coupler_r": 7.795967384486167e-06,
+        "jaw_l": 7.346417248356756e-06,
+        "jaw_r": 7.346417248356756e-06,
+        "camera_mount": 7.346410206818846e-06,
+        "camera_body": 7.346410207181184e-06
+      }
+    },
+    {
+      "case": "restored_mid",
+      "max_matrix_error": 7.346429705489086e-06,
+      "per_link_error": {
+        "base_link": 0.0,
+        "shoulder_yaw": 5.307179586704506e-08,
+        "upper_arm": 2.0680144597309112e-07,
+        "forearm": 7.3464172482955005e-06,
+        "wrist": 7.346410206817942e-06,
+        "gripper_crank": 7.346429701016969e-06,
+        "coupler_l": 7.346429696768631e-06,
+        "coupler_r": 7.346429705489086e-06,
+        "jaw_l": 7.346417248356756e-06,
+        "jaw_r": 7.346417248356756e-06,
+        "camera_mount": 7.346410206818846e-06,
+        "camera_body": 7.346410207181184e-06
+      }
+    }
+  ],
+  "max_zero_pose_matrix_error": 7.346429700989214e-06,
+  "bounds_m": [
+    [
+      -0.06650000065565109,
+      -0.06800000369548798,
+      -6.396792817664476e-17
+    ],
+    [
+      0.06650000065565109,
+      0.22560090560037857,
+      0.28255119048486005
+    ]
+  ],
+  "meshes": {
+    "base_link": {
+      "triangles": 21038,
+      "path": "assets/base_link.stl"
+    },
+    "shoulder_yaw": {
+      "triangles": 20486,
+      "path": "assets/shoulder_yaw.stl"
+    },
+    "upper_arm": {
+      "triangles": 21502,
+      "path": "assets/upper_arm.stl"
+    },
+    "forearm": {
+      "triangles": 20694,
+      "path": "assets/forearm.stl"
+    },
+    "wrist": {
+      "triangles": 24374,
+      "path": "assets/wrist.stl"
+    },
+    "gripper_crank": {
+      "triangles": 14518,
+      "path": "assets/gripper_crank.stl"
+    },
+    "coupler_l": {
+      "triangles": 1132,
+      "path": "assets/coupler_l.stl"
+    },
+    "coupler_r": {
+      "triangles": 1132,
+      "path": "assets/coupler_r.stl"
+    },
+    "jaw_l": {
+      "triangles": 6982,
+      "path": "assets/jaw_l.stl"
+    },
+    "jaw_r": {
+      "triangles": 6982,
+      "path": "assets/jaw_r.stl"
+    },
+    "camera_mount": {
+      "triangles": 16258,
+      "path": "assets/camera_mount.stl"
+    },
+    "camera_body": {
+      "triangles": 1180,
+      "path": "assets/camera_body.stl"
+    }
+  },
+  "samples": [
+    {
+      "theta_deg": 25.0,
+      "opening_mm": 48.895138467034755,
+      "joint_positions": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": 1.1344640137963142,
+        "jaw_left": 0.01645398054389945,
+        "jaw_right": -0.01645398054389945,
+        "coupler_left": -1.5081952617621623,
+        "coupler_right": -1.5081952617621623
+      }
+    },
+    {
+      "theta_deg": 90.0,
+      "opening_mm": 15.987177379235852,
+      "joint_positions": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": -0.0,
+        "jaw_left": 0.0,
+        "jaw_right": -0.0,
+        "coupler_left": 0.0,
+        "coupler_right": 0.0
+      }
+    },
+    {
+      "theta_deg": 135.0,
+      "opening_mm": 0.927432344927567,
+      "joint_positions": {
+        "joint1_yaw": 0.0,
+        "joint2_shoulder": 0.0,
+        "joint3_elbow": 0.0,
+        "joint4_wrist": 0.0,
+        "gripper_drive": -0.7853981633974483,
+        "jaw_left": -0.007529872517154142,
+        "jaw_right": 0.007529872517154142,
+        "coupler_left": 0.5877452041538196,
+        "coupler_right": 0.5877452041538196
+      }
+    }
+  ],
+  "limitations": [
+    "No measured mass/inertia or effort/velocity limits",
+    "No hardware homing/calibration",
+    "Nonlinear coupling supplied by pg3_states.py, not encoded as URDF mimic",
+    "No whole-arm continuous collision validation",
+    "Motor M01-M04 visuals retain unsplit supplier bodies"
+  ]
+}

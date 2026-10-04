@@ -1,0 +1,92 @@
+{
+  "steps": 10,
+  "images": [
+    {
+      "src": "images/09-complete-oblique.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/02-frame-front.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/02-frame-oblique.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/03-crank-front.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/03-crank-oblique.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/04-carriage-front.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/04-nuts-back-back.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/05-links-front.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/06-links-front.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/06-links-oblique.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/pivot-section.svg",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/07-caps-front.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/08-fingers-oblique.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/08-fingers-opposite.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/09-complete-oblique.png",
+      "loaded": true,
+      "clickable": true
+    },
+    {
+      "src": "images/09-complete-opposite.png",
+      "loaded": true,
+      "clickable": true
+    }
+  ],
+  "horizontalOverflow": false,
+  "artifact_sha256": {
+    "MANUAL.md": "76ede3b667060305274b3fcde15346be05c5955d6d55fd0c601e4056bcf930a9",
+    "MANUAL.html": "9dfe22ad9c13c8474b536c8fa39e13bfad751da4a5e5e1921ceaab8b753b11d1",
+    "MANUAL.pdf": "89c0ac79e72623565e924aa3d977dd7be6820402b1a227773e8f040f6c97f74a"
+  },
+  "physicalAssemblyVerified": false
+}

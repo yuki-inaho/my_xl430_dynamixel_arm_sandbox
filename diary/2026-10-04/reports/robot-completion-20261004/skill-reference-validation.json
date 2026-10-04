@@ -1,0 +1,27 @@
+{
+  "local_links_valid": true,
+  "checked": [
+    {
+      "skill": "bounded-servo-motion",
+      "link": "references/lessons.md",
+      "target": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/skills/bounded-servo-motion/references/lessons.md"
+    },
+    {
+      "skill": "robot-live-calibration",
+      "link": "references/verification-matrix.md",
+      "target": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/skills/robot-live-calibration/references/verification-matrix.md"
+    },
+    {
+      "skill": "robot-live-calibration",
+      "link": "scripts/probe_live_viewer.py",
+      "target": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/skills/robot-live-calibration/scripts/probe_live_viewer.py"
+    },
+    {
+      "skill": "robot-park-pose-definition",
+      "link": "references/r3-lessons.md",
+      "target": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/skills/robot-park-pose-definition/references/r3-lessons.md"
+    }
+  ],
+  "probe_entrypoint_exists": true,
+  "hardware_commands_repeated": false
+}

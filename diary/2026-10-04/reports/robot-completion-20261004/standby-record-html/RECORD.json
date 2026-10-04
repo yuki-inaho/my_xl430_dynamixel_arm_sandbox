@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-10-04T13:10:21+09:00",
+  "scope": "saved-artifact audit; no hardware access",
+  "checks": {
+    "all_200_post_frames": true,
+    "all_post_torque_off": true,
+    "all_post_healthy": true,
+    "post_span_at_most_one": true,
+    "post_closed": true,
+    "write_ids_only_2_3_4": true,
+    "write_register_names_only_allowed": true,
+    "forward_and_return_stages_recorded": true,
+    "actual_elbow_opened_over_700_counts": true,
+    "actual_wrist_down_over_250_counts": true,
+    "return_near_original_baseline": true,
+    "released_final_event": true,
+    "first_deadline_failure_preserved": true
+  },
+  "all_checks_pass": true,
+  "baseline_counts": [
+    2064,
+    3128,
+    1156,
+    2058,
+    2059
+  ],
+  "standby_counts_observed_130106": [
+    2064,
+    3115,
+    1969,
+    1721,
+    2059
+  ],
+  "post_off_counts": [
+    2064,
+    3118,
+    1159,
+    2050,
+    2059
+  ],
+  "post_spans": {
+    "1": 0,
+    "2": 1,
+    "3": 0,
+    "4": 1,
+    "5": 0
+  },
+  "post_summary": {
+    "frames": 200,
+    "incomplete_frames": 0,
+    "deadline_misses": 0,
+    "elapsed_seconds": 10.000110572,
+    "achieved_rate_hz": 19.999642834519175,
+    "interrupted": false,
+    "port_closed": true
+  },
+  "power_off": {
+    "user_report": "電源きりました",
+    "recorded_at_local": "2026-10-04T13:06",
+    "exact_switch_time": null,
+    "supply_measurement": null,
+    "camera_frames": [
+      "power-off-0001.jpg",
+      "power-off-0002.jpg",
+      "power-off-0003.jpg"
+    ],
+    "visual_review": "元の畳み姿勢付近を保持。原画像をVLMで確認。",
+    "support_load_path_verified": false
+  },
+  "absolute_calibration_verified": false,
+  "collision_certification": "UNKNOWN; original Boolean controls ERROR",
+  "quality": {
+    "python_tests": 291,
+    "ruff": "PASS",
+    "ty": "PASS",
+    "max_complexity": 10,
+    "skill_validation": "PASS"
+  },
+  "execution_code_hash_captured_before_run": false,
+  "current_source_sha256": "affc6a8e22047e9ef7cf0b9dbffbc969664a3eabfad5c3ebf38a4de47145e062",
+  "code_scope_note": "signal/logging stop improvements were tested offline after motion"
+}

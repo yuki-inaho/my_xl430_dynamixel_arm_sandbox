@@ -1,0 +1,54 @@
+{
+  "no_sdk_import_or_serial_access": true,
+  "source_sha256": "6680deb84f3b5d2fdaad2a7b8383dd38e210406a99035f936d443df8aefd6c82",
+  "robot_source_sha256": "a29e0332d3b79d5891cb20dda865f1ac4f39c59a6826bf88e9b72977e07803f2",
+  "script_sha256": "05c239869b37879cc61813acf585cc2c54e76d02d963389924c998ea535ac92e",
+  "mode_write": {
+    "operation": "WRITE",
+    "size": 2,
+    "id": 1,
+    "address": 11,
+    "data": 3
+  },
+  "voltage_address": 145,
+  "current_named_address": 126,
+  "operating_modes": {
+    "VELOCITY": 1,
+    "POSITION": 3,
+    "CURRENT_CONTROLLED_POSITION": 5,
+    "PWM": 16,
+    "UNKNOWN": -1
+  },
+  "baudrate_4m_code": 6,
+  "signed32_at_0x80000000": 2147483648,
+  "signed32_at_0xffffffff": -1,
+  "read_home_offset_calls": [
+    {
+      "operation": "WRITE",
+      "size": 1,
+      "id": 1,
+      "address": 64,
+      "data": 0
+    },
+    {
+      "operation": "READ",
+      "size": 4,
+      "id": 1,
+      "address": 20
+    },
+    {
+      "operation": "WRITE",
+      "size": 1,
+      "id": 1,
+      "address": 64,
+      "data": 1
+    }
+  ],
+  "read_home_offset_result": 123,
+  "hardware_alert_0x80_accepted": true,
+  "goal_write_failure_ignored": true,
+  "failed_sync_read_returned": [
+    987
+  ],
+  "failed_sync_read_message": "failed to read position"
+}

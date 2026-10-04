@@ -1,0 +1,98 @@
+{
+  "ruff_check": {
+    "status": "PASS"
+  },
+  "imported_sources_format": {
+    "status": "PASS"
+  },
+  "whole_repository_format": {
+    "status": "FAIL_EXISTING_UNCHANGED_FILES",
+    "count": 19,
+    "files": [
+      {
+        "path": "camera_jig/id5_corner_validate.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "gripper_design/camera_overhead_d405_r5.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "gripper_design/camera_overhead_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/build_camera_overhead_d405_r5.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/build_camera_overhead_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/camera_view_d405_r5.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/camera_view_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/continuous_camera_clearance_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/id4_sweep_d405_r5.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/service_camera_overhead_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/step_cache.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/validate_camera_overhead_d405_r5.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "scripts/validate_camera_overhead_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "tests/test_camera_jig_id5_corner.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "tests/test_camera_overhead_d405_r5.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "tests/test_camera_overhead_geometry_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "tests/test_camera_overhead_optics_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "tests/test_camera_overhead_r4.py",
+        "unchanged_from_main": true
+      },
+      {
+        "path": "tests/test_step_cache.py",
+        "unchanged_from_main": true
+      }
+    ]
+  },
+  "git_diff_check": {
+    "status": "PASS_TEMPORARY_INDEX"
+  },
+  "privacy_scan": {
+    "status": "PASS_NO_KNOWN_PRIVATE_PATH_OR_TOKEN_MATCH",
+    "ui_images_embedded_manuals_archives_ignored": true
+  },
+  "full_repository_pytest": "NOT_RUN"
+}

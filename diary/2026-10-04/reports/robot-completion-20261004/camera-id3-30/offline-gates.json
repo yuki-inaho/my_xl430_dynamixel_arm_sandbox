@@ -1,0 +1,14 @@
+{
+  "scope": "User D9: fixed ID3 10/30 degree plans, ID2 read-only",
+  "pytest": {"passed": 270, "seconds": 14.07, "exit_code": 0},
+  "ruff": {"exit_code": 0},
+  "ty": {"exit_code": 0},
+  "complexity": {"observed": 10, "allowed": 10, "exit_code": 0},
+  "rust_tests": {"passed": 3, "exit_code": 0},
+  "rust_clippy": {"exit_code": 0},
+  "diff_check": {"exit_code": 0},
+  "dry_run": {"folded_counts": 1154, "target_estimate": 1495,
+              "open_counts": 341, "envelope": [1139, 1530], "port_closed": true},
+  "executed": false,
+  "blocker": "Camera enumerates but no packets; MJPEG and YUYV probes time out"
+}

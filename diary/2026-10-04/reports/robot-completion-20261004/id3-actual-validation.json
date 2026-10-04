@@ -1,0 +1,58 @@
+{
+  "verdict": "PASS",
+  "checks": {
+    "converged_exit0": true,
+    "opening_error_within5": true,
+    "opening_requested114counts": true,
+    "opening_sign_positive": true,
+    "returned_within5": true,
+    "others_still": true,
+    "id3_torque_on_during_follow_and_hold": true,
+    "all_other_torques_off": true,
+    "held_about_two_seconds": true,
+    "all_final_torque_off": true,
+    "no_release_problem": true,
+    "all_five_routes_verified": true,
+    "no_secondary_alias": true,
+    "ram_restore_readback": true,
+    "post_ram_matches_original": true,
+    "post_near_start": true,
+    "pre_near_start": true,
+    "port_closed": true
+  },
+  "actual_hardware_run": true,
+  "start_count": 1154,
+  "opened_count": 1264,
+  "degrees_moved": 9.66796875,
+  "other_max_delta": {
+    "1": 0,
+    "2": 0,
+    "4": 0,
+    "5": 0
+  },
+  "pre": {
+    "log": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/current-hardware-read.jsonl",
+    "sha256": "bb31a378b5c37fe49e79dd54954b7e70d3c855fed85486280060d9c503aaede3",
+    "frames": 100,
+    "excluded_fault_frames": 0,
+    "acquisition_id": "5a1f74bb-2bc9-4f18-9212-645f393306b0",
+    "min": 1153,
+    "max": 1154,
+    "folded_count": 1154
+  },
+  "post": {
+    "log": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/post-motion-read.jsonl",
+    "sha256": "0aaa0b655e641d9df6018f67591b44ff1db07f75144394153a7c622b90ea07a6",
+    "frames": 100,
+    "excluded_fault_frames": 0,
+    "acquisition_id": "633c6ebf-3025-4e86-8edc-1b829ba71ce5",
+    "min": 1154,
+    "max": 1154,
+    "folded_count": 1154
+  },
+  "sources": {
+    "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/id3-execution-result.json": "23993387aafe3d1ade1a288904fd56a96a68961ad6f5497725baba457aef5043",
+    "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/id3_motion_20261004T110113_133165+0900.jsonl": "fa571d49ee1576839ecbd03d16d1422a157760ed9325852a133fa1eb47748ac3",
+    "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/post-motion-metadata.json": "c69f3ab61a4686d81929e91a01d17adc08db5b65384ed625aa4361a74bd84abf"
+  }
+}

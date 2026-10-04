@@ -1,0 +1,88 @@
+{
+  "final_step": "studies/low-profile-20260926/outputs/low-profile-250g/CAD/final-version.step",
+  "sha256": "9f58c947753e9229b30939da23ce4c87c1cc85eeb39372518de4ffb98991b93f",
+  "part": "ARM_P05_wrist_XL430",
+  "nominal_slots_mm": {
+    "width": 3.0,
+    "total_height": 8.0,
+    "end_radius": 1.5
+  },
+  "probes": [
+    {
+      "point_mm": [
+        16.05,
+        151.0,
+        176.2
+      ],
+      "old_inside_material": true,
+      "latest_inside_material": false
+    },
+    {
+      "point_mm": [
+        16.05,
+        151.0,
+        178.7
+      ],
+      "old_inside_material": true,
+      "latest_inside_material": false
+    },
+    {
+      "point_mm": [
+        16.05,
+        151.0,
+        181.2
+      ],
+      "old_inside_material": true,
+      "latest_inside_material": false
+    },
+    {
+      "point_mm": [
+        -16.45,
+        151.0,
+        176.2
+      ],
+      "old_inside_material": true,
+      "latest_inside_material": false
+    },
+    {
+      "point_mm": [
+        -16.45,
+        151.0,
+        178.7
+      ],
+      "old_inside_material": true,
+      "latest_inside_material": false
+    },
+    {
+      "point_mm": [
+        -16.45,
+        151.0,
+        181.2
+      ],
+      "old_inside_material": true,
+      "latest_inside_material": false
+    }
+  ],
+  "adjacent_material_controls": [
+    {
+      "point_mm": [
+        16.05,
+        155.0,
+        178.7
+      ],
+      "old_inside_material": true,
+      "latest_inside_material": true
+    },
+    {
+      "point_mm": [
+        -16.45,
+        155.0,
+        178.7
+      ],
+      "old_inside_material": true,
+      "latest_inside_material": true
+    }
+  ],
+  "volume_removed_mm3": 176.54866776564086,
+  "actual_cable_or_connector_fit_verified": false
+}

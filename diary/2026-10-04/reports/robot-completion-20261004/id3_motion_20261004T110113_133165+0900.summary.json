@@ -1,0 +1,15 @@
+{
+  "log": "reports/robot-completion-20261004/id3_motion_20261004T110113_133165+0900.jsonl",
+  "status": "converged",
+  "reason": "",
+  "target": 1268,
+  "final_error_counts": -4,
+  "start_counts": 1154,
+  "torque_on_counts": 1154,
+  "sign": 1,
+  "return_error_counts": 0,
+  "correction_counts": 20,
+  "torque_off_confirmed": true,
+  "release_problems": [],
+  "interrupted": false
+}

@@ -1,0 +1,15 @@
+{
+  "json_valid": 7,
+  "missing_links": [],
+  "manual_only_preview": "PASS",
+  "hardware_targets": null,
+  "analysis_script_sha256": {
+    "evaluate_arm_park_pose.py": "df70fae7305eba290c439eca5bb28f67ca3fda067516086d0f056d975707515d",
+    "render_arm_park_examples.py": "d26aa5261a1d89a160e9a953c5a12ef6c463a2a5a296344c07edd5b1f4dd3b69",
+    "start_manual_preview.py": "7643033f4ad5859e79201a0e51ddf5a74250549d3750cfa7ba2c583804ff5c62"
+  },
+  "ruff": "PASS",
+  "maintained_ty": "PASS",
+  "skill_format": "PASS",
+  "self_review_rounds": 5
+}

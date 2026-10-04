@@ -1,0 +1,86 @@
+{
+  "verdict": "PASS",
+  "checks": {
+    "converged_exit0": true,
+    "request114counts": true,
+    "opening_error_within5": true,
+    "return_error_within5": true,
+    "opening_sign_positive": true,
+    "all_other_ids_within_existing20": true,
+    "id3_torque_on_all_active_samples": true,
+    "other_torques_off_all_samples": true,
+    "hold_about2seconds": true,
+    "five_routes_no_alias": true,
+    "final_all5_off": true,
+    "no_restore_or_release_problem": true,
+    "three_ram_readbacks_match": true,
+    "closed_result_and_event": true,
+    "pre_near_start": true,
+    "post_near_start": true
+  },
+  "other_max_delta_counts": {
+    "1": 0,
+    "2": 1,
+    "4": 1,
+    "5": 0
+  },
+  "start_count": 1152,
+  "opened_count": 1265,
+  "opened_delta_deg": 9.931640625,
+  "pre": {
+    "log": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/pre-read.jsonl",
+    "sha256": "7ff63858984cc40488a281a88f58cf8af2ebf681a87336afeebcb25481ece373",
+    "frames": 100,
+    "excluded_fault_frames": 0,
+    "acquisition_id": "5afa2c81-76dd-4310-b4f2-f9c110233612",
+    "min": 1152,
+    "max": 1152,
+    "folded_count": 1152
+  },
+  "post": {
+    "log": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/post-read.jsonl",
+    "sha256": "c77bf92b91160805627594cdbe859fdb8dd8d6cdfbe931881b929961defdefdf",
+    "frames": 100,
+    "excluded_fault_frames": 0,
+    "acquisition_id": "a46f81da-2c15-49e5-afa8-8f6dbad75169",
+    "min": 1154,
+    "max": 1154,
+    "folded_count": 1154
+  },
+  "visual_review": "VLM directly inspected before/open/return frames: elbow opening and return visible; shoulder/elbow case axes remain fixed",
+  "absolute_cad_calibration": null,
+  "sources": [
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/execution-result.json",
+      "sha256": "c637826375c451362ffa8cfef1b76dd8ba831865bb443f95c23ec044b4c44c9e"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/id3_motion_20261004T121506_533123+0900.jsonl",
+      "sha256": "e1f0efe6ee3925d04297663a74463146486174f305f1a67c3e6566a1a25a142a"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/pre-read.jsonl",
+      "sha256": "7ff63858984cc40488a281a88f58cf8af2ebf681a87336afeebcb25481ece373"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/post-read.jsonl",
+      "sha256": "c77bf92b91160805627594cdbe859fdb8dd8d6cdfbe931881b929961defdefdf"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/actual-motion.mkv",
+      "sha256": "ed6776878168a96b5efec0a0cac0d741c02bd5d36cfe7f6b72e497a1b2ff7d65"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/frame-before.jpg",
+      "sha256": "a851b28745cec4bc09df65e02ecba447eb03ceb1fce494ee355b677f03206799"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/frame-open.jpg",
+      "sha256": "b976189b1022bbbb99b155d183a741e7cc7ddc81d8c080718bbe7a9ea82d33d2"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/camera-id3/frame-return.jpg",
+      "sha256": "30b56c84af3a925d7bf34cafaec26b9d910bf060b300c6629b71fbf75eff3997"
+    }
+  ]
+}

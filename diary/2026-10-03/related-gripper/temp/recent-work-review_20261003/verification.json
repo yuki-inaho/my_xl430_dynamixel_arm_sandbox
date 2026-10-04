@@ -1,0 +1,78 @@
+{
+  "clean_json_files": [
+    {
+      "file": "claude_code_0b891917-c2aa-4eef-9022-6e2c4183202a_clean.json",
+      "bytes": 1910335,
+      "sha256": "2eeafa09243d4f70741fed9f8815652a66207fe50aa3023bc7ec8a6d7db2711d",
+      "event_count": 1387,
+      "timestamp_window": "PASS",
+      "count_check": "PASS",
+      "source_hash": "PASS"
+    },
+    {
+      "file": "codex_019e686d-0cbb-7f52-9c53-33bd5b53573d_clean.json",
+      "bytes": 4549819,
+      "sha256": "23800e3f08ae2e45b3a287e869f7e69686506733d0b9724f851b27c3aaedc918",
+      "event_count": 1337,
+      "timestamp_window": "PASS",
+      "count_check": "PASS",
+      "source_hash": "PASS"
+    },
+    {
+      "file": "codex_019eb98a-eff0-7bb1-ab4b-d49bed4e487a_clean.json",
+      "bytes": 88290806,
+      "sha256": "adaf721462caaaa46b1a75f303b4f69d5b3132850f0f142a1650af1a2c2beda6",
+      "event_count": 15011,
+      "timestamp_window": "PASS",
+      "count_check": "PASS",
+      "source_hash": "PASS"
+    },
+    {
+      "file": "codex_01a0daf1-5f35-77d3-8bde-8c2083f4a7e2_clean.json",
+      "bytes": 4316590,
+      "sha256": "8554f854151a01bc185e0bd0afd51935bd93794ae75ce441db00f99dc9800581",
+      "event_count": 3452,
+      "timestamp_window": "PASS",
+      "count_check": "PASS",
+      "source_hash": "PASS"
+    },
+    {
+      "file": "codex_01a0db03-03f0-7ee2-86eb-190be07bc5a6_clean.json",
+      "bytes": 42700507,
+      "sha256": "8f5b9be38ecd4ff6bc8c30745f77d6f2e68c312cfb45c3b37e625ba7fe5cc3c5",
+      "event_count": 8832,
+      "timestamp_window": "PASS",
+      "count_check": "PASS",
+      "source_hash": "PASS"
+    },
+    {
+      "file": "codex_saved_20260919_cad_activity_clean.json",
+      "bytes": 48701,
+      "sha256": "4cdea931f173a5dda87c2c4a394f4b770e323fd19fd5f64cf5cd84422f7ca51e",
+      "event_count": 80,
+      "timestamp_window": "PASS",
+      "count_check": "PASS",
+      "source_hash": "PASS"
+    },
+    {
+      "file": "opencode_ses_f230d9c31ffeosnKOd9eGp9t4V_clean.json",
+      "bytes": 2541802,
+      "sha256": "37fd1ce05d5ae460d783c21b16d82b05698478477f76ce877e061c372a0a1933",
+      "event_count": 458,
+      "timestamp_window": "PASS",
+      "count_check": "PASS",
+      "source_hash": "not stored for read-only SQLite export"
+    },
+    {
+      "file": "opencode_ses_f48290b12fferauv0CBfrZC3SD_clean.json",
+      "bytes": 2296634,
+      "sha256": "14dcc3b5948b40e9f1f71c21732443c60606e969a903a7f385e87d19f9a091ee",
+      "event_count": 330,
+      "timestamp_window": "PASS",
+      "count_check": "PASS",
+      "source_hash": "not stored for read-only SQLite export"
+    }
+  ],
+  "index_matches_files": true,
+  "check_scope": "JSON parse, event counts, period, native source SHA. Historical engineering tests were not rerun."
+}

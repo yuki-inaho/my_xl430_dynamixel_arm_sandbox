@@ -1,0 +1,1212 @@
+{
+  "status": "PASS_CURRENT_EXPORT_PROVENANCE_WITH_TESSELLATION_DIFFERENCES",
+  "unchanged_non_camera_occurrences": 236,
+  "max_volume_delta_mm3": 4.656612873077393e-10,
+  "max_bounds_delta_mm": 1.7763568394002505e-15,
+  "roundtrip_thresholds": {
+    "volume_mm3": 0.01,
+    "bounds_mm": 0.0001
+  },
+  "camera_frame_world_m": [
+    -0.00020134735370625932,
+    0.18500038370794397,
+    0.24999996072238126
+  ],
+  "wrist_limits_rad": [
+    -1.85005,
+    2.40855
+  ],
+  "hashes_verified": true,
+  "source_version": {
+    "id": "e21cffef1877c8f91d2b03f8",
+    "name": "V2 compact motion validated - URDF source",
+    "documentId": "7b85d8922959cbe564b6e0cb",
+    "microversion": "e7baeb3009f84778b54556dc",
+    "assembly_id": "848ae15cd82797bd99cdc330",
+    "url": "https://cad.onshape.com/documents/7b85d8922959cbe564b6e0cb/v/e21cffef1877c8f91d2b03f8/e/848ae15cd82797bd99cdc330"
+  },
+  "strict_old_mesh_identity": "FAIL retained in mesh-vertex-diagnostic.json and mesh-surface-diagnostic.json",
+  "rationale": "Exporter meshes are authentic current-version output. optimize.py reuses original non-CAM5 BReps; STEP roundtrip uses the existing volume/bounds gate. Mesh identity to an older tessellation is not a requirement for current export provenance. Sampled bidirectional triangle distances were 0.35 and 0.71 micrometres for forearm/wrist; this is not proof of exact surface identity.",
+  "occurrences": [
+    {
+      "name": "ARM_M01_ref00",
+      "volume_delta_mm3": 4.5838532969355583e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref01",
+      "volume_delta_mm3": 1.439559582649963e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref02",
+      "volume_delta_mm3": 1.0416556506243069e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref03",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref04",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref05",
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref06",
+      "volume_delta_mm3": 2.0463630789890885e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref07",
+      "volume_delta_mm3": 2.9820057534379885e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref08",
+      "volume_delta_mm3": 3.126388037344441e-12,
+      "bounds_delta_mm": 8.881784197001252e-16
+    },
+    {
+      "name": "ARM_M01_ref09",
+      "volume_delta_mm3": 1.311661890213145e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref10",
+      "volume_delta_mm3": 1.7266188478970435e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref11",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref12",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref13",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref14",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref15",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref16",
+      "volume_delta_mm3": 4.177991286269389e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref17",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref18",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref19",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref20",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref21",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref22",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref23",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref24",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref25",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref26",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref27",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref28",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref29",
+      "volume_delta_mm3": 2.842170943040401e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref30",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref31",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref32",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref33",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M01_ref34",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref00",
+      "volume_delta_mm3": 4.511093720793724e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref01",
+      "volume_delta_mm3": 1.439559582649963e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref02",
+      "volume_delta_mm3": 1.0416556506243069e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref03",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref04",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref05",
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref06",
+      "volume_delta_mm3": 9.094947017729282e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref07",
+      "volume_delta_mm3": 2.97859514830634e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref08",
+      "volume_delta_mm3": 4.945377440890297e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref09",
+      "volume_delta_mm3": 1.311661890213145e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref10",
+      "volume_delta_mm3": 1.7266188478970435e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref11",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref12",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref13",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref14",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref15",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref16",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref17",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref18",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref19",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref20",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref21",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref22",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref23",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref24",
+      "volume_delta_mm3": 4.18509671362699e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref25",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref26",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref27",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref28",
+      "volume_delta_mm3": 1.4210854715202004e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref29",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref30",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref31",
+      "volume_delta_mm3": 1.4210854715202004e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref32",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref33",
+      "volume_delta_mm3": 1.4210854715202004e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M02_ref34",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref00",
+      "volume_delta_mm3": 4.656612873077393e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref01",
+      "volume_delta_mm3": 1.439559582649963e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref02",
+      "volume_delta_mm3": 1.0388134796812665e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref03",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref04",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref05",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref06",
+      "volume_delta_mm3": 1.8189894035458565e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref07",
+      "volume_delta_mm3": 2.979732016683556e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref08",
+      "volume_delta_mm3": 6.45172804070171e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref09",
+      "volume_delta_mm3": 1.311661890213145e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref10",
+      "volume_delta_mm3": 1.7337242752546445e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref11",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref12",
+      "volume_delta_mm3": 4.177991286269389e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref13",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref14",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref15",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref16",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref17",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref18",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref19",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref20",
+      "volume_delta_mm3": 4.18509671362699e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref21",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref22",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref23",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref24",
+      "volume_delta_mm3": 4.18509671362699e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref25",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref26",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref27",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref28",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref29",
+      "volume_delta_mm3": 2.842170943040401e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref30",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref31",
+      "volume_delta_mm3": 2.842170943040401e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref32",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref33",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M03_ref34",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref00",
+      "volume_delta_mm3": 4.2928149923682213e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref01",
+      "volume_delta_mm3": 1.439559582649963e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref02",
+      "volume_delta_mm3": 1.0473399925103877e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref03",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref04",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref05",
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref06",
+      "volume_delta_mm3": 1.7053025658242404e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref07",
+      "volume_delta_mm3": 2.985416358569637e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref08",
+      "volume_delta_mm3": 6.59383658785373e-12,
+      "bounds_delta_mm": 1.7763568394002505e-15
+    },
+    {
+      "name": "ARM_M04_ref09",
+      "volume_delta_mm3": 1.311661890213145e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref10",
+      "volume_delta_mm3": 1.7266188478970435e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref11",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref12",
+      "volume_delta_mm3": 4.177991286269389e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref13",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref14",
+      "volume_delta_mm3": 4.177991286269389e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref15",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref16",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref17",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref18",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref19",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref20",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref21",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref22",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref23",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref24",
+      "volume_delta_mm3": 4.192202140984591e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref25",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref26",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref27",
+      "volume_delta_mm3": 1.4210854715202004e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref28",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref29",
+      "volume_delta_mm3": 2.842170943040401e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref30",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref31",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref32",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref33",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M04_ref34",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref01",
+      "volume_delta_mm3": 1.439559582649963e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref02",
+      "volume_delta_mm3": 1.0416556506243069e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref03",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref04",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref05",
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref06",
+      "volume_delta_mm3": 1.9895196601282805e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref07",
+      "volume_delta_mm3": 2.9808688850607723e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref08",
+      "volume_delta_mm3": 3.609557097661309e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref09",
+      "volume_delta_mm3": 1.311661890213145e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref10",
+      "volume_delta_mm3": 1.7337242752546445e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref11",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref12",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref13",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref14",
+      "volume_delta_mm3": 4.206412995699793e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref15",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref16",
+      "volume_delta_mm3": 4.206412995699793e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref17",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref18",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref19",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref20",
+      "volume_delta_mm3": 4.18509671362699e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref21",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref22",
+      "volume_delta_mm3": 4.18509671362699e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref23",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref24",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref25",
+      "volume_delta_mm3": 2.6261659513693303e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref26",
+      "volume_delta_mm3": 4.199307568342192e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref27",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref28",
+      "volume_delta_mm3": 2.842170943040401e-14,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref29",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref30",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref31",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref32",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref33",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_M05_ref34",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_P01_base",
+      "volume_delta_mm3": 4.6202330850064754e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_P02_yaw_carrier",
+      "volume_delta_mm3": 2.837623469531536e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_P03_shoulder_XL430",
+      "volume_delta_mm3": 1.382431946694851e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_P04_extension_XL430",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "ARM_P05_wrist_XL430",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_XL430_fixed",
+      "volume_delta_mm3": 4.220055416226387e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_XL430_horn",
+      "volume_delta_mm3": 2.241904439870268e-10,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_-37.5_-24.5_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_-37.5_-24.5_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_-37.5_-24.5_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_-37.5_24.5_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_-37.5_24.5_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_-37.5_24.5_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_37.5_-24.5_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_37.5_-24.5_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_37.5_-24.5_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_37.5_24.5_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_37.5_24.5_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_37.5_24.5_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_D",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_cap_U",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_carriage_L",
+      "volume_delta_mm3": 6.730260793119669e-11,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_carriage_R",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_case_tapper_-11",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_case_tapper_11",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_crank",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_L",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_L_-14_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_L_-14_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_L_-14_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_L_14_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_L_14_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_L_14_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_R",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_R_-14_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_R_-14_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_R_-14_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_R_14_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_R_14_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_finger_R_14_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_frame",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_horn_bolt_0",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_horn_bolt_1",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_horn_bolt_2",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_horn_bolt_3",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_horn_spacer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_link_L",
+      "volume_delta_mm3": 3.524291969370097e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_link_R",
+      "volume_delta_mm3": 3.410605131648481e-12,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pad_L",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pad_R",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_carriage_L_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_carriage_L_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_carriage_L_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_carriage_R_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_carriage_R_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_carriage_R_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_drive_L_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_drive_L_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_drive_L_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_drive_R_bolt",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_drive_R_nut",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    },
+    {
+      "name": "PG3_pivot_drive_R_washer",
+      "volume_delta_mm3": 0.0,
+      "bounds_delta_mm": 0.0
+    }
+  ]
+}

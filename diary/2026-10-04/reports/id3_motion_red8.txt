@@ -1,0 +1,103 @@
+........................................................................ [ 52%]
+.............................................................FFFF        [100%]
+=================================== FAILURES ===================================
+________________ test_cli_execute_never_reopens_a_signal_window ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-81/test_cli_execute_never_reopens0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7141b2159370>
+keep_handlers = None
+
+    def test_cli_execute_never_reopens_a_signal_window(tmp_path, monkeypatch, keep_handlers):
+        arm = FakeArm()
+        code = motion.main(fake_cli(tmp_path, monkeypatch, arm))
+        assert code == 0
+        # Late signals after the verdict are only recorded; the process exits with that code.
+>       assert isinstance(signal.getsignal(signal.SIGINT), motion.StopFlag)
+E       AssertionError: assert False
+E        +  where False = isinstance(<built-in function default_int_handler>, <class 'arm_observer.id3_motion.StopFlag'>)
+E        +    where <built-in function default_int_handler> = <function getsignal at 0x7141d2fd6340>(<Signals.SIGINT: 2>)
+E        +      where <function getsignal at 0x7141d2fd6340> = signal.getsignal
+E        +      and   <Signals.SIGINT: 2> = signal.SIGINT
+E        +    and   <class 'arm_observer.id3_motion.StopFlag'> = motion.StopFlag
+
+tests/test_id3_motion.py:1003: AssertionError
+----------------------------- Captured stdout call -----------------------------
+{"log": "/tmp/pytest-of-inaho-omen/pytest-81/test_cli_execute_never_reopens0/out/id3_motion_20261004T011633_263822+0900.jsonl", "summary": "/tmp/pytest-of-inaho-omen/pytest-81/test_cli_execute_never_reopens0/out/id3_motion_20261004T011633_263822+0900.summary.json", "status": "converged", "reason": "", "target": 1267, "final_error_counts": 0, "start_counts": 1153, "torque_on_counts": 1153, "sign": 1, "return_error_counts": 0, "correction_counts": 0, "torque_off_confirmed": true, "release_problems": [], "interrupted": false, "port_closed": true, "exit_code": 0}
+___________________ test_log_close_failure_keeps_the_verdict ___________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-81/test_log_close_failure_keeps_t0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7141b215ae00>
+keep_handlers = None
+
+    def test_log_close_failure_keeps_the_verdict(tmp_path, monkeypatch, keep_handlers):
+        arm = FakeArm()
+        arm.torque_write_fails = True
+        arm.fail_write = ("goal_position", 1267)
+    
+        class FailingClose:
+            def __init__(self, path):
+                self.file = path.open("x", encoding="utf-8")
+    
+            def write(self, text):
+                return self.file.write(text)
+    
+            def flush(self):
+                self.file.flush()
+    
+            def close(self):
+                self.file.close()
+                raise OSError(28, "No space left on device")
+    
+>       monkeypatch.setattr(motion, "open_log", FailingClose)
+E       AttributeError: <module 'arm_observer.id3_motion' from '/home/inaho-omen/Project/my_dynamixel_arm_sandbox/src/arm_observer/id3_motion.py'> has no attribute 'open_log'
+
+tests/test_id3_motion.py:1026: AttributeError
+____________________ test_broken_stdout_keeps_the_exit_code ____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-81/test_broken_stdout_keeps_the_e0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7141b2040550>
+keep_handlers = None
+
+    def test_broken_stdout_keeps_the_exit_code(tmp_path, monkeypatch, keep_handlers):
+        import sys as system
+    
+        class Broken:
+            def write(self, text):
+                raise BrokenPipeError(32, "Broken pipe")
+    
+            def flush(self):
+                raise BrokenPipeError(32, "Broken pipe")
+    
+        monkeypatch.setattr(system, "stdout", Broken())
+        assert motion.main(fake_cli(tmp_path, monkeypatch, FakeArm())) == 0
+>       assert not isinstance(system.stdout, Broken)  # replaced so the exit flush cannot fail
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: assert not True
+E        +  where True = isinstance(<test_id3_motion.test_broken_stdout_keeps_the_exit_code.<locals>.Broken object at 0x7141b20fb230>, <class 'test_id3_motion.test_broken_stdout_keeps_the_exit_code.<locals>.Broken'>)
+E        +    where <test_id3_motion.test_broken_stdout_keeps_the_exit_code.<locals>.Broken object at 0x7141b20fb230> = <module 'sys' (built-in)>.stdout
+
+tests/test_id3_motion.py:1042: AssertionError
+________________ test_stop_before_the_first_write_sends_nothing ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-81/test_stop_before_the_first_wri0')
+
+    def test_stop_before_the_first_write_sends_nothing(tmp_path):
+        arm = FakeArm()
+        evidence = motion.load_evidence(write_evidence(tmp_path, evidence_record()))
+        clock = FakeClock()
+        outcome = motion.run_motion(FakeReader(arm), FakeActuator(arm), evidence, lambda e: None,
+                                    clock.monotonic, clock.sleep, lambda: arm.reads >= 5)
+        assert outcome.interrupted is True
+>       assert written(arm) == []
+E       AssertionError: assert [('profile_ac...que', 0), ...] == []
+E         
+E         Left contains 10 more items, first extra item: ('profile_acceleration', 1)
+E         Use -v to get more diff
+
+tests/test_id3_motion.py:1052: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_id3_motion.py::test_cli_execute_never_reopens_a_signal_window
+FAILED tests/test_id3_motion.py::test_log_close_failure_keeps_the_verdict - A...
+FAILED tests/test_id3_motion.py::test_broken_stdout_keeps_the_exit_code - Ass...
+FAILED tests/test_id3_motion.py::test_stop_before_the_first_write_sends_nothing
+4 failed, 133 passed in 11.98s

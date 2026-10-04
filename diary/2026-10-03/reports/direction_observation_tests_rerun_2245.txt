@@ -1,0 +1,2 @@
+command: cd ~/Project/3d-printed-dynamixel-gripper && rtk proxy env MUJOCO_GL=egl uv run --no-sync pytest -q tests/test_current_arm_viewer.py tests/test_current_arm_live.py tests/test_direction_observation.py
+result 2026-10-03 22:45:34 JST+0900: 72 passed in 29.39s (rerun by Claude)

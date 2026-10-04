@@ -1,0 +1,28 @@
+{
+  "source": "Current hardware READ and explicit user requests; no inferred zero calibration.",
+  "read": "reports/robot-completion-20261004/current-state.json",
+  "cad_source": "G/references/arm-r3",
+  "roles": {
+    "1": "base/neutral requested",
+    "2": "shoulder/current-ish requested",
+    "3": "elbow fully folded/user-confirmed opening requested",
+    "4": "wrist/ID5 mount down30 requested",
+    "5": "jaw drive/neutral requested"
+  },
+  "zero_counts": null,
+  "absolute_joint_angles": null,
+  "opening_count_sign_id3": 1,
+  "opening_sign_source": "independent fixed R3 CAD + explicit hardware READ",
+  "user_decision_D7": {
+    "current_ID1_is_neutral": true,
+    "current_ID5_is_neutral": true,
+    "gripper_absent": true,
+    "D405_holder_absent": true,
+    "baseline_alignment_requested": "automatic; not manual repositioning",
+    "reference_counts_from_closed_actual_READ": {"1": 2062, "5": 2059},
+    "partial_references_are_not_whole_arm_calibration": true
+  },
+  "awaiting_user": ["availability of external angle observations or assembly count/angle record"],
+  "photo_angles_are_only_projection_examples": true,
+  "live_display_range_note": "J3 manual display range +/-60 may not cover physical folded pose; assess after calibration. Display ranges are not motor safety limits."
+}

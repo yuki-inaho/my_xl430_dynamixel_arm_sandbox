@@ -1,0 +1,513 @@
+[
+  {
+    "stage": "02-frame",
+    "view": "front",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 541.0739376578179,
+        "y": 401.64783434832106,
+        "name": "PG3_frame"
+      },
+      {
+        "x": 598.768744457956,
+        "y": 359.61546337038806,
+        "name": "PG3_case_tapper_-11"
+      },
+      {
+        "x": 483.3134836655609,
+        "y": 359.61546337038806,
+        "name": "PG3_case_tapper_11"
+      }
+    ],
+    "title": "手順2｜本体枠・ケース固定（適合確認待ち）"
+  },
+  {
+    "stage": "02-frame",
+    "view": "oblique",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 475.1143740431222,
+        "y": 366.85837083445693,
+        "name": "PG3_frame"
+      },
+      {
+        "x": 502.61979470349587,
+        "y": 320.74240138692653,
+        "name": "PG3_case_tapper_-11"
+      },
+      {
+        "x": 424.8642285720135,
+        "y": 341.12874675040086,
+        "name": "PG3_case_tapper_11"
+      }
+    ],
+    "title": "手順2｜本体枠・ケース固定（適合確認待ち）"
+  },
+  {
+    "stage": "04-carriage",
+    "view": "front",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 645.8710886328917,
+        "y": 401.72962591384504,
+        "name": "PG3_carriage_L"
+      },
+      {
+        "x": 436.35852664930945,
+        "y": 401.72962591384504,
+        "name": "PG3_carriage_R"
+      }
+    ],
+    "title": "手順4｜裸の左右スライダ"
+  },
+  {
+    "stage": "04-carriage",
+    "view": "oblique",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 552.4509592277395,
+        "y": 355.3942597591191,
+        "name": "PG3_carriage_L"
+      },
+      {
+        "x": 419.7470269058257,
+        "y": 395.6675356002286,
+        "name": "PG3_carriage_R"
+      }
+    ],
+    "title": "手順4｜裸の左右スライダ"
+  },
+  {
+    "stage": "05-links",
+    "view": "front",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 595.9975155226646,
+        "y": 362.3559670452615,
+        "name": "PG3_link_L"
+      },
+      {
+        "x": 486.25407497033274,
+        "y": 441.1472327294746,
+        "name": "PG3_link_R"
+      }
+    ],
+    "title": "手順5｜左右リンクを肩に掛ける"
+  },
+  {
+    "stage": "05-links",
+    "view": "oblique",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 526.794228402522,
+        "y": 338.3485889109317,
+        "name": "PG3_link_L"
+      },
+      {
+        "x": 459.3853179874513,
+        "y": 415.5507448124205,
+        "name": "PG3_link_R"
+      }
+    ],
+    "title": "手順5｜左右リンクを肩に掛ける"
+  },
+  {
+    "stage": "09-complete",
+    "view": "oblique",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 650.8447682040547,
+        "y": 429.86022724681396,
+        "name": "PG3_pad_L"
+      }
+    ],
+    "title": "手順9｜内側の把持面へパッド"
+  },
+  {
+    "stage": "09-complete",
+    "view": "opposite",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 430.56206749672754,
+        "y": 430.42602495379884,
+        "name": "PG3_pad_R"
+      }
+    ],
+    "title": "手順9｜内側の把持面へパッド"
+  },
+  {
+    "stage": "04-nuts-back",
+    "view": "back",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 377.3773686320294,
+        "y": 402.80300700558405,
+        "name": "PG3_pivot_carriage_L_nut"
+      },
+      {
+        "x": 320.5960550667999,
+        "y": 521.0459525442296,
+        "name": "PG3_finger_L_14_nut"
+      },
+      {
+        "x": 320.5960550667999,
+        "y": 284.7065002011762,
+        "name": "PG3_finger_L_-14_nut"
+      },
+      {
+        "x": 699.3195771117713,
+        "y": 402.80300700558405,
+        "name": "PG3_pivot_carriage_R_nut"
+      },
+      {
+        "x": 756.0276702624545,
+        "y": 521.0459525442296,
+        "name": "PG3_finger_R_14_nut"
+      },
+      {
+        "x": 756.0276702624545,
+        "y": 284.7065002011762,
+        "name": "PG3_finger_R_-14_nut"
+      }
+    ],
+    "title": "手順4｜ナット位置の背面確認図"
+  },
+  {
+    "stage": "03-crank",
+    "view": "front",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 541.1058169925734,
+        "y": 401.71159707457514,
+        "name": "PG3_crank",
+        "anchor": "part bounding-box center"
+      },
+      {
+        "x": 541.094163697269,
+        "y": 445.4613696202307,
+        "name": "PG3_horn_bolt_0",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 541.094163697269,
+        "y": 357.9282425344242,
+        "name": "PG3_horn_bolt_1",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 584.8607265879996,
+        "y": 401.6948060773274,
+        "name": "PG3_horn_bolt_2",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 497.3276008065384,
+        "y": 401.6948060773274,
+        "name": "PG3_horn_bolt_3",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      }
+    ],
+    "title": "手順3｜スペーサー・クランク"
+  },
+  {
+    "stage": "03-crank",
+    "view": "oblique",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 486.53418310734344,
+        "y": 372.7913496541088,
+        "name": "PG3_crank",
+        "anchor": "part bounding-box center"
+      },
+      {
+        "x": 483.34586136201085,
+        "y": 401.80315996753416,
+        "name": "PG3_horn_bolt_0",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 481.4122886514815,
+        "y": 338.4248484659507,
+        "name": "PG3_horn_bolt_1",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 509.8072691470963,
+        "y": 362.4610655410485,
+        "name": "PG3_horn_bolt_2",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 453.6996008348477,
+        "y": 379.21362107020246,
+        "name": "PG3_horn_bolt_3",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      }
+    ],
+    "title": "手順3｜スペーサー・クランク"
+  },
+  {
+    "stage": "06-links",
+    "view": "front",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 428.9084859934193,
+        "y": 401.8030477562909,
+        "name": "PG3_pivot_carriage_R_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 653.3809553800968,
+        "y": 401.8030477562909,
+        "name": "PG3_pivot_carriage_L_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 541.1515190736318,
+        "y": 482.4162204198607,
+        "name": "PG3_pivot_drive_R_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 541.1515190736318,
+        "y": 321.2034924572416,
+        "name": "PG3_pivot_drive_L_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      }
+    ],
+    "title": "手順6｜4支点の抜け止め"
+  },
+  {
+    "stage": "06-links",
+    "view": "oblique",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 429.0743456435524,
+        "y": 403.9225846240563,
+        "name": "PG3_pivot_carriage_R_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 567.7648239712983,
+        "y": 360.6302388258359,
+        "name": "PG3_pivot_carriage_L_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 503.5018532949743,
+        "y": 436.07812133210734,
+        "name": "PG3_pivot_drive_R_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 501.22901374917336,
+        "y": 322.572069873292,
+        "name": "PG3_pivot_drive_L_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      }
+    ],
+    "title": "手順6｜4支点の抜け止め"
+  },
+  {
+    "stage": "07-caps",
+    "view": "front",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 752.9052641876087,
+        "y": 263.39449892278157,
+        "name": "PG3_cap_-37.5_-24.5_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 329.34039999258545,
+        "y": 263.39449892278157,
+        "name": "PG3_cap_37.5_-24.5_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 752.9052641876087,
+        "y": 540.1235435301968,
+        "name": "PG3_cap_-37.5_24.5_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 329.34039999258545,
+        "y": 540.1235435301968,
+        "name": "PG3_cap_37.5_24.5_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      }
+    ],
+    "title": "手順7｜上下押さえ"
+  },
+  {
+    "stage": "07-caps",
+    "view": "oblique",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 617.867618693911,
+        "y": 245.54439867437273,
+        "name": "PG3_cap_-37.5_-24.5_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 334.12323136688633,
+        "y": 308.22884013526766,
+        "name": "PG3_cap_37.5_-24.5_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 610.8559292426696,
+        "y": 426.8308213966643,
+        "name": "PG3_cap_-37.5_24.5_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 356.9522577892544,
+        "y": 524.5218324308373,
+        "name": "PG3_cap_37.5_24.5_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      }
+    ],
+    "title": "手順7｜上下押さえ"
+  },
+  {
+    "stage": "08-fingers",
+    "view": "oblique",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 422.50748617767795,
+        "y": 481.2743321611804,
+        "name": "PG3_finger_R_14_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 414.37107095407947,
+        "y": 358.17960506709727,
+        "name": "PG3_finger_R_-14_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      }
+    ],
+    "title": "手順8｜左右の延長爪（V2）"
+  },
+  {
+    "stage": "08-fingers",
+    "view": "opposite",
+    "rect": {
+      "x": 360,
+      "y": 176,
+      "width": 1080,
+      "height": 799
+    },
+    "points": [
+      {
+        "x": 659.1066973984001,
+        "y": 481.87276407400157,
+        "name": "PG3_finger_L_14_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      },
+      {
+        "x": 667.3659718849393,
+        "y": 358.6542343220402,
+        "name": "PG3_finger_L_-14_bolt",
+        "anchor": "head center: modeled 2mm head at +Y end"
+      }
+    ],
+    "title": "手順8｜左右の延長爪（V2）"
+  }
+]

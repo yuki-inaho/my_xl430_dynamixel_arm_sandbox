@@ -1,0 +1,13 @@
+
+running 3 tests
+test tests::python_stream_events_round_trip ... ok
+test tests::python_fixture_preserves_signed_values_and_unknowns ... ok
+test tests::unknown_schema_version_is_rejected ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

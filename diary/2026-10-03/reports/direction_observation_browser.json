@@ -1,0 +1,20 @@
+{
+  "input": "synthetic only; no hardware writes",
+  "captured_at": "2026-10-03T12:59:37.527Z",
+  "playwright_exit_code": 0,
+  "before": {"motor_id": 3, "position_counts": 1153, "sequence": 56, "session_id": "synthetic-session", "simulated": true},
+  "after": {"motor_id": 3, "position_counts": 1267, "sequence": 60, "session_id": "synthetic-session", "simulated": true},
+  "delta_counts": 114,
+  "degrees_signed": 10.01953125,
+  "opening_count_sign": 1,
+  "physical_change_reported": "opening",
+  "physical_change_confirmed": true,
+  "calibration_verified_after": false,
+  "viewer_source_after": "manual",
+  "viewer_angles_after": [0, 0, 0, 0],
+  "unconfirmed_before_refusal": "現物の位置・関節を先に確認してください",
+  "console_error": "Expected negative control: HTTP 400 /api/direction/before when physical confirmation is absent",
+  "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/direction-observations/synthetic/observation_20261003T215937362901.json",
+  "screenshot": "direction_observation_browser.png",
+  "scope": "Condensed evidence from completed Playwright result; does not establish hardware direction or CAD calibration"
+}

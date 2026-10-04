@@ -1,0 +1,36 @@
+{
+  "initial_result": "countの増減の方向は未確定です。",
+  "after_before": {
+    "baseline": "保存した位置：ID3 / 1153 count / 2026-10-03T14:03:40.580395+00:00",
+    "result": "開いた位置の記録待ち：countの増減の方向は未確定です。",
+    "message": "記録しました。",
+    "opened_checked": false
+  },
+  "after_after": {
+    "result": "試験観測：ID3 / 1153 → 1267 count / 差 +114（10.02°） / 肘を開くとcountが増える。JSON保存済み。CADの符号は別に確認してください。",
+    "message": "記録しました。",
+    "folded_checked": false,
+    "opened_checked": false,
+    "after_disabled": true,
+    "state_before": null,
+    "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/current-arm-mujoco-20261003/direction-observations/synthetic/observation_20261003T230342258307.json",
+    "delta": 114,
+    "calibration_verified": false,
+    "source": "manual"
+  },
+  "reuse_after": {
+    "status": 400,
+    "body": "{\"error\": \"先に畳んだ位置を記録してください\"}"
+  },
+  "jitter": {
+    "message": "差分3 countでは増減の方向は未確定です（20以上1024未満が必要）",
+    "result": "開いた位置の記録待ち：countの増減の方向は未確定です。",
+    "opened_checked": false,
+    "folded_checked": false,
+    "baseline_kept": true,
+    "after_enabled_for_retry": true
+  },
+  "captured_by": "Claude headless playwright-cli session claude-2a-direction-check2 (after fix2 restart)",
+  "target": "http://127.0.0.1:8087 + 8086 synthetic fixture",
+  "input": "synthetic only; no serial, no motor writes"
+}

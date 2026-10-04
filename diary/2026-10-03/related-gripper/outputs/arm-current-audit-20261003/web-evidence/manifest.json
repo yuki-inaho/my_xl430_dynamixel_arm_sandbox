@@ -1,0 +1,79 @@
+{
+  "retrieved_utc": "2026-10-03T10:56:11.243777+00:00",
+  "script_sha256": "f36f750035534e11e5127d222a02070464d2efc438b24fda0f54a5651d7e0e25",
+  "projects": [
+    {
+      "repo": "yuki-inaho/low_cost_robot",
+      "default_branch": "main",
+      "sha": "b4a1d5732c822ce916422a261a4e516846ddaf1c",
+      "commit_date": "2026-06-11T13:32:39Z",
+      "fork": true,
+      "parent": "AlexanderKoch-Koch/low_cost_robot",
+      "files": [
+        {
+          "path": "README.md",
+          "saved": "outputs/arm-current-audit-20261003/web-evidence/low_cost_robot/README.md",
+          "sha256": "0265132f6569c0c4ec03289d15c016d2ee180b8814cca2e2ac278e9c915d2b4a",
+          "url": "https://github.com/yuki-inaho/low_cost_robot/blob/b4a1d5732c822ce916422a261a4e516846ddaf1c/README.md"
+        }
+      ]
+    },
+    {
+      "repo": "huggingface/lerobot",
+      "default_branch": "main",
+      "sha": "ff71cae1ae2d09fd035553c35da65888ed6c8304",
+      "commit_date": "2026-10-02T13:56:33Z",
+      "fork": false,
+      "parent": null,
+      "files": [
+        {
+          "path": "src/lerobot/robots/koch_follower/koch_follower.py",
+          "saved": "outputs/arm-current-audit-20261003/web-evidence/lerobot/src/lerobot/robots/koch_follower/koch_follower.py",
+          "sha256": "928f6b5f4bef228ca9895f6664a9f4707f8b488b8e3d2e9dd6b060b0c43e1ae8",
+          "url": "https://github.com/huggingface/lerobot/blob/ff71cae1ae2d09fd035553c35da65888ed6c8304/src/lerobot/robots/koch_follower/koch_follower.py"
+        },
+        {
+          "path": "src/lerobot/robots/koch_follower/config_koch_follower.py",
+          "saved": "outputs/arm-current-audit-20261003/web-evidence/lerobot/src/lerobot/robots/koch_follower/config_koch_follower.py",
+          "sha256": "cf0fee4174c7a52527bd54ac696c48989d3856cb27a48049d18eca6393b880b0",
+          "url": "https://github.com/huggingface/lerobot/blob/ff71cae1ae2d09fd035553c35da65888ed6c8304/src/lerobot/robots/koch_follower/config_koch_follower.py"
+        },
+        {
+          "path": "src/lerobot/motors/dynamixel/tables.py",
+          "saved": "outputs/arm-current-audit-20261003/web-evidence/lerobot/src/lerobot/motors/dynamixel/tables.py",
+          "sha256": "683b400f6199415df32beae1146a662015b6d4ad90bc6af3bdf8ddc8222324b9",
+          "url": "https://github.com/huggingface/lerobot/blob/ff71cae1ae2d09fd035553c35da65888ed6c8304/src/lerobot/motors/dynamixel/tables.py"
+        },
+        {
+          "path": "src/lerobot/robots/utils.py",
+          "saved": "outputs/arm-current-audit-20261003/web-evidence/lerobot/src/lerobot/robots/utils.py",
+          "sha256": "bd74646bb4b59c62b037cad860731984cce902ef9acb5b7f594d44b6d96f71c2",
+          "url": "https://github.com/huggingface/lerobot/blob/ff71cae1ae2d09fd035553c35da65888ed6c8304/src/lerobot/robots/utils.py"
+        }
+      ]
+    },
+    {
+      "repo": "ROBOTIS-GIT/DynamixelSDK",
+      "default_branch": "main",
+      "sha": "f838bc90f72fcf5b9c279432d6e12fc24969daa8",
+      "commit_date": "2026-09-14T03:17:22Z",
+      "fork": false,
+      "parent": null,
+      "files": [
+        {
+          "path": "python/src/dynamixel_sdk/protocol2_packet_handler.py",
+          "saved": "outputs/arm-current-audit-20261003/web-evidence/DynamixelSDK/python/src/dynamixel_sdk/protocol2_packet_handler.py",
+          "sha256": "b67d515ec5c89c73ac9096e463253e1fb4e95f47f7a67bb598c709921ef97f3d",
+          "url": "https://github.com/ROBOTIS-GIT/DynamixelSDK/blob/f838bc90f72fcf5b9c279432d6e12fc24969daa8/python/src/dynamixel_sdk/protocol2_packet_handler.py"
+        }
+      ]
+    }
+  ],
+  "documentation_urls": [
+    "https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/",
+    "https://emanual.robotis.com/docs/en/dxl/protocol2/#status-packet",
+    "https://docs.robotis.com/docs/software/dynamixel_sdk/api_reference/python/python_packethandler/",
+    "https://moveit.picknik.ai/main/doc/examples/planning_scene/planning_scene_tutorial.html",
+    "https://moveit.picknik.ai/main/doc/api/python_api/_autosummary/moveit.core.planning_scene.html"
+  ]
+}

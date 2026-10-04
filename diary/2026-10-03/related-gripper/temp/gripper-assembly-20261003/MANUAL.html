@@ -1,0 +1,187 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><link rel="icon" href="data:,"><title>PG3 グリッパ組み立てマニュアル — 10手順</title><style>body{font-family:"Noto Sans CJK JP",sans-serif;color:#24343d;background:#eef1f2;margin:0;font-size:16px;line-height:1.75}main{max-width:1080px;margin:28px auto;padding:36px;background:white}h1{font-size:30px}h2{border-top:3px solid #285e63;padding-top:20px;margin-top:44px;break-before:page;break-after:avoid}h2:first-of-type{break-before:auto}h3{color:#285e63;break-after:avoid}table{border-collapse:collapse;width:100%;font-size:14px;margin:18px 0}th,td{border:1px solid #c8d2d6;text-align:left;padding:8px}th{background:#e7efee}figure{margin:20px 0}img{width:100%;object-fit:contain}figcaption{font-size:13px;color:#56676d}code{font-family:monospace;overflow-wrap:anywhere;background:#eef1f2;padding:2px 4px}.item{margin:5px 0}a{color:#186979}nav{padding:15px;background:#e7efee;border-radius:6px;margin-bottom:24px}nav a{display:inline-block;padding:3px 8px}@page{size:A4;margin:14mm}@media print{body{background:white;font-size:10pt}main{max-width:none;margin:0;padding:0}nav{display:none}h1{font-size:22pt}h2{font-size:17pt;margin-top:0}table{font-size:9pt}figure,tr{break-inside:avoid}table{break-inside:auto}thead{display:table-header-group}img{max-height:none}figcaption{font-size:9pt}}table.fasteners{table-layout:fixed}table.fasteners th:nth-child(1){width:6%}table.fasteners th:nth-child(2){width:19%}table.fasteners th:nth-child(3){width:19%}table.fasteners th:nth-child(4){width:21%}table.fasteners th:nth-child(5){width:8%}table.fasteners th:nth-child(6){width:27%}table.fasteners th:first-child,table.fasteners td:first-child{white-space:nowrap}@media print{table.ledger{break-inside:avoid}table.fasteners th,table.fasteners td{padding:6px}}</style><main><nav>工程へ移動：<a href="#materials">部品表</a><a href="#step-1">1</a><a href="#step-2">2</a><a href="#step-3">3</a><a href="#step-4">4</a><a href="#step-5">5</a><a href="#step-6">6</a><a href="#step-7">7</a><a href="#step-8">8</a><a href="#step-9">9</a><a href="#step-10">10</a><a href="#fastener-list">巻末の必要数一覧</a><a href="MANUAL.pdf">PDF</a><a href="REVIEW.md">レビュー記録</a><br>画像をクリックすると原寸表示できます。</nav><h1>PG3 グリッパ組み立てマニュアル</h1>
+<p><strong>10手順／グリッパ単体1台分／2026-10-03／実物確認前のドラフト</strong></p>
+<p>低背型V2（爪+20 mm）のグリッパが対象です。カメラ、アーム、P05の取り付けは含めません。ID5のXL430-W250-T 1台で開閉します。対象CADのSHAは同梱の <code>review-checks.json</code> に記録しています。</p>
+<p><strong>実物写真との版照合（10/3追記）：</strong> 提供されたグリッパ写真は、細い接触板の旧C7が有力です。本書のV2とは爪・スライダ・パッドの形状が異なる可能性があります。写真の爪に本書の完成形状やパッド寸法をそのまま適用せず、爪板の前後長を照合してください（C7：12.1 mm、C9：28.0 mm、V2：48.0 mm、いずれも設計値）。C7からC9への改訂は爪2個とスライダ2個の交換です。照合概要は <a href="PHOTO_VERSION.md">実物写真との版照合</a> に記録しました。</p>
+<p><strong>現時点で実物組立を承認する手順書ではありません。</strong> ケース固定ねじ、実ねじのかかり、締付トルク、印刷公差、ナットの保持方法が未確定です。工程2のケース固定は確認待ち。図はCADの取り付け位置を工程順に表示したもので、部品の挿入経路や実工具の操作を実証した写真ではありません。</p>
+<p><strong>P05の配線窓（10/3改善）：</strong> 保存V2の3×8 mmから、別候補では左右各5.5×10.2 mm・四隅R0.5 mmへ拡大しています。ねじ穴と実ケース座面は保持。直径1.9 mmの仮線に対するP05側の余裕は0.55→1.65 mmです。EHR-3公称筐体9.5×3.8 mmを縦向きに通す窓単体の検査は、モーター取り付け前の状態で最小0.35 mmの隙間があります。モーター装着後の直線コネクタアクセスは後カバーに当たるので合格ではありません。内部90度曲げ・後カバー側0.25 mmの仮経路、配線済みモーターの挿入・実ハーネス・印刷公差は未確認です。P05の内幅28.5 mmとケース公称幅の一致も組付け合格を意味しません。<a href="../../studies/p05-cable-20261003/README.md">P05改善候補の詳細</a> を参照してください。本書のグリッパ部分は元V2と同形状です。</p>
+<p><figure><a href="images/09-complete-oblique.png" target="_blank"><img src="images/09-complete-oblique.png" alt="完成配置のグリッパ。内側のパッドを強調。アーム・カメラは非表示。"></a><figcaption>完成配置のグリッパ。内側のパッドを強調。アーム・カメラは非表示。</figcaption></figure></p>
+<h2 id="materials">最初に用意するもの</h2>
+<h3>図の読み方と呼び名</h3>
+<table><thead><tr><th>図・呼び名</th><th>意味</th></tr></thead><tbody>
+<tr><td>正面図</td><td>爪側から奥を見る。穴位置とねじ本数を確認</td></tr>
+<tr><td>斜視図</td><td>奥行きを確認。奥側が隠れる場合は反対側図へ</td></tr>
+<tr><td>背面図</td><td>モーター側から見る。ナットの受け位置を確認</td></tr>
+<tr><td>橙色</td><td>この工程で追加する部品。色だけでなく名前・B番号も確認</td></tr>
+<tr><td>ホーン</td><td>モーターの出力軸に付く円形の取付部品</td></tr>
+<tr><td>クランク</td><td>ホーンと一緒に回り、左右リンクを動かす中央部品</td></tr>
+<tr><td>スライダ／carriage</td><td>枠の中を左右へ動き、爪を支える部品</td></tr>
+<tr><td>印刷肩</td><td>支点にある段付きの突起。リンクの穴がここに掛かる</td></tr>
+</tbody></table>
+<p>組立の流れ：部品確認 → 枠の固定確認 → スペーサー・クランク → 裸のスライダ・ナット → リンク → 4支点抜け止め → 上下押さえ → 左右爪 → パッド → 点検。<strong>爪と押さえを先に付けると、支点・ナットの作業がしにくくなるため、この順で計画します。</strong></p>
+<h3>印刷部品：9種類・11個</h3>
+<table><thead><tr><th>呼び名</th><th>CAD名</th><th>数量</th></tr></thead><tbody>
+<tr><td>本体枠</td><td>PG3_frame</td><td>1</td></tr>
+<tr><td>上下押さえ</td><td>PG3_cap_U / PG3_cap_D</td><td>各1、計2</td></tr>
+<tr><td>左右スライダ</td><td>PG3_carriage_L / PG3_carriage_R</td><td>各1、計2</td></tr>
+<tr><td>左右の爪（V2、+20 mm）</td><td>PG3_finger_L / PG3_finger_R</td><td>各1、計2</td></tr>
+<tr><td>クランク</td><td>PG3_crank</td><td>1</td></tr>
+<tr><td>左右リンク</td><td>PG3_link_L / PG3_link_R</td><td>各1、計2</td></tr>
+<tr><td>ホーンスペーサー</td><td>PG3_horn_spacer</td><td>1</td></tr>
+</tbody></table>
+<p>爪は <code>studies/low-profile-20260926/outputs/low-profile-250g/CAD/PG3_finger_L.step</code> と右側の同名ファイルを参照します。旧C9の短い爪と混同しないでください。上記数量は設計の部品構成で、印刷条件や製作リリースを指定するものではありません。</p>
+<h3>ねじ・ナット・座金：1台分</h3>
+<p><strong>ねじ表記の読み方：</strong> M2×6は「ねじ径2 mm、長さ6 mm」です。六角穴付きボルトの長さは、頭の下面から先端までを測り、頭は含みません。各手順にも径・長さ・本数を明記しています。</p>
+<table><thead><tr><th>記号</th><th>規格・寸法（mm）</th><th>数量</th><th>使う手順・用途</th></tr></thead><tbody>
+<tr><td>B1</td><td>M2×6 六角穴付き</td><td>4</td><td>3：クランク→ホーン</td></tr>
+<tr><td>B2</td><td>M2×8 六角穴付き</td><td>2</td><td>6：リンク→スライダ支点</td></tr>
+<tr><td>B3</td><td>M2×10 六角穴付き</td><td>2</td><td>6：リンク→クランク支点</td></tr>
+<tr><td>B4</td><td>M2×12 六角穴付き</td><td>4</td><td>7：上下押さえ</td></tr>
+<tr><td>B5</td><td>M2×16 六角穴付き</td><td>4</td><td>8：左右の爪</td></tr>
+<tr><td>B6</td><td>M2.6皿タッピング、CAD全長5（頭を含む）</td><td>2</td><td>2：枠→ケース。<strong>実物適合未確定</strong></td></tr>
+<tr><td>N1</td><td>M2ナット、二面幅4・厚さ1.6</td><td>12</td><td>支点4・押さえ4・爪4</td></tr>
+<tr><td>W1</td><td>通常座金、外径5・内径2.2・厚さ0.3</td><td>8</td><td>押さえ4・爪4</td></tr>
+<tr><td>W2</td><td>大径座金、外径7・内径2.2・厚さ0.5</td><td>4</td><td>支点4。W1への置換不可</td></tr>
+</tbody></table>
+<p><strong>合計：ねじ18本（通常のM2ボルト16本＋ケース用候補2本）、M2ナット12個、座金12枚。</strong> カメラ用M3、アーム用ねじ、モーター内部ねじは含みません。数量は表示中のV2 CADの部品名で再集計済み。実ねじの山・材質・品番はこの集計では確定していません。</p>
+<p>M2六角穴のCAD寸法は1.5 mm。1.5 mm六角レンチを工具候補とし、実際のねじ頭に合うことを確認します。B6の頭に合う工具、ナット対向保持用工具、必要な締付トルクは未確定です。M2ボルトの長さは頭を含まない長さ、B6のモデル全長は皿頭を含む長さなので、測り方を混同しないでください。</p>
+<p>その他：XL430-W250-Tと出力ホーンを1組、28×20×1 mmのパッドを2枚。パッドの1 mmは接着層込み。材料・接着剤は未選定です。CADの <code>PG3_XL430_fixed</code> が複数表示要素になっていても、物理モーターは1台です。</p>
+<h3>工程別の新規投入数（同じナットを二重に数えない）</h3>
+<table class="ledger"><thead><tr><th>手順</th><th>新しく投入するねじ</th><th>新しく入れるN1</th><th>新しく入れる座金</th></tr></thead><tbody>
+<tr><td>1</td><td>なし</td><td>0</td><td>なし</td></tr>
+<tr><td>2</td><td>B6候補×2。適合確認待ち</td><td>0</td><td>なし</td></tr>
+<tr><td>3</td><td>B1×4</td><td>2（クランク支点用）</td><td>なし</td></tr>
+<tr><td>4</td><td>なし</td><td>6（スライダ支点2＋爪用4）</td><td>なし</td></tr>
+<tr><td>5</td><td>なし</td><td>0</td><td>なし</td></tr>
+<tr><td>6</td><td>B2×2＋B3×2</td><td>0（先に入れた4個を使用）</td><td>W2×4</td></tr>
+<tr><td>7</td><td>B4×4</td><td>4</td><td>W1×4</td></tr>
+<tr><td>8</td><td>B5×4</td><td>0（先に入れた4個を使用）</td><td>W1×4</td></tr>
+<tr><td>9・10</td><td>なし</td><td>0</td><td>なし</td></tr>
+<tr><td>合計</td><td>18本、うちB6候補2本</td><td>12</td><td>W1×8＋W2×4＝12</td></tr>
+</tbody></table>
+<h2 id="step-1">手順1／部品と向きを確認する</h2>
+<p><strong>使うねじ：なし。</strong></p>
+<p class="item">• 本体枠、押さえ2個、スライダ2個、爪2個、クランク、リンク2個、スペーサーを並べます。</p>
+<p class="item">• 左右の品名はCADのL/Rに合わせます。見ている方向で左右が変わるため、画像だけでL/Rを判断しません。</p>
+<p class="item">• 本書の正面図は爪側からモーターへ向かって見る図です。この視点では画面左がCADのR、画面右がCADのLです。斜視では奥行きも確認します。</p>
+<p class="item">• U/Dは部品名です。この固定版では <code>PG3_cap_U</code> が図の下、<code>PG3_cap_D</code> が図の上に配置されています。品名のUを画面の上と読み替えません。</p>
+<p class="item">• 爪の把持面を内側へ向けます。スライダの上下の延長シューは中央を向く配置です。</p>
+<p class="item">• 穴のつぶれ、摺動面の突起、割れを点検します。合わない穴をこのマニュアルの判断だけで拡大しません。</p>
+<p><strong>確認：</strong> V2の延長爪が左右1個ずつあり、ねじを長さ別に分けられていること。</p>
+<h2 id="step-2">手順2／本体枠とID5ケースの固定を確認する【確認待ち】</h2>
+<p><strong>使用候補：B6＝ねじ径2.6 mm、頭込みCAD全長5 mm、2本。本体枠×1、ID5モーター×1。ナット・座金なし。</strong></p>
+<p>B6の長さ5 mmは皿頭を含むモデル全長です。実物に使うねじの規格・長さは確認待ちです。</p>
+<p><figure><a href="images/02-frame-front.png" target="_blank"><img src="images/02-frame-front.png" alt="正面：本体枠とケース固定候補2本。橙色がこの工程の部品。"></a><figcaption>正面：本体枠とケース固定候補2本。橙色がこの工程の部品。</figcaption></figure></p>
+<p>枠を出力ホーン側に配置する設計です。CADでは <code>PG3_case_tapper_-11</code> と <code>PG3_case_tapper_11</code> の2本を使います。ただし、このM2.6皿タッピング全長5のモデルを、そのまま購入品や実ケースの前ぶたねじに置き換えてよいとは確認できていません。</p>
+<p><strong>ここは実物への取り付けを進める前の停止点です。</strong> 相手がケースの下穴か、既存ケースねじの交換位置かを実物と図面で特定し、ねじ種類・頭の座り・有効深さ・底付き・ケース締結の維持を確認します。前ぶたの元ねじは別資料ではFHS M2.5×10であり、B6を同じねじと扱いません。未確認のねじをねじ込まないでください。</p>
+<p>以降の図と手順は、この固定が成立した場合の組立計画です。ケース固定が完了した記録を意味しません。</p>
+<p><figure><a href="images/02-frame-oblique.png" target="_blank"><img src="images/02-frame-oblique.png" alt="斜視：枠がモーターの出力側に来る位置関係。"></a><figcaption>斜視：枠がモーターの出力側に来る位置関係。</figcaption></figure></p>
+<h2 id="step-3">手順3／ホーンスペーサーとクランクを配置する</h2>
+<p><strong>使用：B1＝ねじ径2 mm（M2）、長さ6 mm、4本。クランク×1、スペーサー×1。支点用N1×2を先に用意。座金なし。</strong></p>
+<p>ボルトの長さは6 mmです。頭の下面から先端までの長さで、頭は含みません。</p>
+<p><figure><a href="images/03-crank-front.png" target="_blank"><img src="images/03-crank-front.png" alt="正面：B1の4本を固定版CAD上の位置へ指示。"></a><figcaption>正面：B1の4本を固定版CAD上の位置へ指示。</figcaption></figure></p>
+<p class="item">• クランク側の左右支点ナット2個は、背面へアクセスできる段階で受け位置に用意します。後で保持できなくなる配置を避けます。</p>
+<p class="item">• 出力ホーン→ホーンスペーサー→クランクの順に、4穴を合わせます。</p>
+<p class="item">• 図の手前から見た重なり順は「ねじ頭 → クランク → スペーサー → ホーン → モーター」です。スペーサーは正面図ではクランクの背後に隠れます。</p>
+<p class="item">• B1を4本、クランク側からホーン側へ通す設計です。穴の合わない位置へ無理に締め込みません。</p>
+<p class="item">• ホーンとクランクの相対位置を写真で残します。CADの中間姿勢をモーターの絶対角とみなさず、サーボ軸を無理に手回ししません。</p>
+<p><strong>確認：</strong> ホーンへのねじ込み深さと底付き、実ねじ山の適合、スペーサーの座りを実物で確認すること。メーカー資料を基にした既存台帳ではホーンの最大深さは3.5 mmですが、必要な最小かかりや締付トルクは未確定です。</p>
+<p><figure><a href="images/03-crank-oblique.png" target="_blank"><img src="images/03-crank-oblique.png" alt="斜視：クランクとモーター側の奥行き。スペーサーは背後。"></a><figcaption>斜視：クランクとモーター側の奥行き。スペーサーは背後。</figcaption></figure></p>
+<h2 id="step-4">手順4／左右スライダと捕捉ナットを配置する</h2>
+<p><strong>使用：左右スライダ各1。N1＝M2ナット、厚さ1.6 mm、6個（スライダ支点2＋爪固定4）。この手順で新しく使うボルト・座金なし。</strong></p>
+<p><figure><a href="images/04-carriage-front.png" target="_blank"><img src="images/04-carriage-front.png" alt="正面：Rが画面左、Lが画面右。裸のスライダを強調。"></a><figcaption>正面：Rが画面左、Lが画面右。裸のスライダを強調。</figcaption></figure></p>
+<p class="item">• 左右スライダの支点用ナットを1個ずつ、爪固定用ナットを2個ずつ受け位置に入れる計画です。</p>
+<p class="item">• 正面図の奥がナット側です。背面図では見ている方向が逆になるので、Lが画面左・Rが画面右になります。ナットの受け位置と向きを背面から確認します。</p>
+<p class="item">• 爪をまだ付けず、スライダを枠の前方から収めます。</p>
+<p class="item">• 内側のシューが中央を向き、左右が逆になっていないことをCADと照合します。</p>
+<p><strong>確認：</strong> ナットが受け位置に入り、工具で対向保持できること。既存検証では支点ナットの保持を補助するベンチ治具候補がありますが、実保持・組付けは未確認です。接着でナットを固定する方法は本書では指定しません。</p>
+<p><figure><a href="images/04-nuts-back-back.png" target="_blank"><img src="images/04-nuts-back-back.png" alt="背面：ナット6個の位置。枠・モーター等は説明のため非表示。"></a><figcaption>背面：ナット6個の位置。枠・モーター等は説明のため非表示。</figcaption></figure></p>
+<h2 id="step-5">手順5／左右リンクを印刷肩に掛ける</h2>
+<p><strong>使用：リンクL/R各1。この手順で新しく使うねじなし。</strong></p>
+<p><figure><a href="images/05-links-front.png" target="_blank"><img src="images/05-links-front.png" alt="正面：抜け止めを付ける前の左右リンク。"></a><figcaption>正面：抜け止めを付ける前の左右リンク。</figcaption></figure></p>
+<p class="item">• 左リンクを左側のクランク支点とスライダ支点、右リンクを右側の2支点に配置します。</p>
+<p class="item">• リンクの大きい穴は、ねじ軸だけで支える穴ではなく、印刷された肩に掛ける構造です。</p>
+<p class="item">• 指先の爪や上下押さえはまだ付けません。支点の背面へアクセスできる状態を保ちます。</p>
+<p><strong>確認：</strong> 4箇所ともリンクが肩に掛かり、左右の部品がCADと同じ組み合わせになっていること。次の手順の図は抜け止めまで配置した状態です。</p>
+<h2 id="step-6">手順6／4支点の抜け止めを取り付ける</h2>
+<p><strong>使用：B3＝ねじ径2 mm、長さ10 mm、2本。B2＝ねじ径2 mm、長さ8 mm、2本。W2＝厚さ0.5 mmの大径座金、4枚。N1は手順3・4で用意した計4個を使用。</strong></p>
+<p>クランク側のボルトは長さ10 mm、スライダ側は長さ8 mmです。どちらも頭を除く長さです。</p>
+<p><figure><a href="images/06-links-front.png" target="_blank"><img src="images/06-links-front.png" alt="正面：外側のスライダ支点はB2、中央のクランク支点はB3。"></a><figcaption>正面：外側のスライダ支点はB2、中央のクランク支点はB3。</figcaption></figure></p>
+<table><thead><tr><th>支点</th><th>ねじ径</th><th>長さ（頭を除く）</th><th>左右それぞれの組み合わせ</th><th>合計</th></tr></thead><tbody>
+<tr><td>クランク→リンク</td><td>2 mm（M2）</td><td>10 mm</td><td>B3＋大径座金W2＋M2ナット</td><td>各1組、計2組</td></tr>
+<tr><td>スライダ→リンク</td><td>2 mm（M2）</td><td>8 mm</td><td>B2＋大径座金W2＋M2ナット</td><td>各1組、計2組</td></tr>
+</tbody></table>
+<p>ねじ頭→大径座金→印刷肩の端面→本体側のナット、という荷重の受け方を狙った構造です。リンクは肩の周りで回り、大径座金が抜け止めになります。座金でリンク自体を挟み込んで固定しません。</p>
+<p><strong>ねじの名目向き：</strong> 正面図の手前（爪側）から奥（モーター側）へ。ナットは奥側の本体にあります。模式図の矢印は軸の向きを説明し、実際の工具・部品が通る挿入経路を保証するものではありません。</p>
+<p><strong>確認：</strong> 座金が肩に座り、リンクを締め付けていないこと。W2を小さいW1に置き換えないこと。規定トルク、ねじの実かかり、ナットの対向保持、締結後の回転自由度は実物確認が必要です。「回るまでねじを緩めて放置する」を完了条件にしません。</p>
+<p><figure><a href="images/06-links-oblique.png" target="_blank"><img src="images/06-links-oblique.png" alt="斜視：抜け止め座金と印刷肩の奥行きを確認。"></a><figcaption>斜視：抜け止め座金と印刷肩の奥行きを確認。</figcaption></figure></p>
+<p><figure><a href="images/pivot-section.svg" target="_blank"><img src="images/pivot-section.svg" alt="支点の断面模式図。肩と座金で抜け止めし、リンクを挟み込まない。"></a><figcaption>支点の断面模式図。肩と座金で抜け止めし、リンクを挟み込まない。</figcaption></figure></p>
+<h2 id="step-7">手順7／上下押さえを固定する</h2>
+<p><strong>使用：B4＝ねじ径2 mm（M2）、長さ12 mm、4本。N1＝厚さ1.6 mmのM2ナット、4個。W1＝厚さ0.3 mmの通常座金、4枚。押さえU/D各1。</strong></p>
+<p>ボルトの長さは12 mmです。頭は含みません。上の押さえに2本、下の押さえに2本使います。</p>
+<p><figure><a href="images/07-caps-front.png" target="_blank"><img src="images/07-caps-front.png" alt="正面：上2本・下2本。品名U/Dと画面上の上下は異なる。"></a><figcaption>正面：上2本・下2本。品名U/Dと画面上の上下は異なる。</figcaption></figure></p>
+<p class="item">• 本体枠の上下に押さえを1個ずつ配置します。</p>
+<p class="item">• 各押さえをM2×12の2本で固定する設計です。4本それぞれに通常座金W1を1枚、ナットN1を1個使います。</p>
+<p class="item">• ねじ頭→W1→押さえ→枠→ナットの位置関係をCADと照合します。</p>
+<p class="item">• 固定版の正面図で、上の押さえはCAD名 <code>PG3_cap_D</code>、下は <code>PG3_cap_U</code>。各2本のB4で計4本です。</p>
+<p><strong>確認：</strong> 押さえが正しく座った状態でスライダが拘束されないこと。引っ掛かりを、ねじを未締結のままにすることで解消した扱いにしません。締付トルク・造形公差は未確定です。</p>
+<h2 id="step-8">手順8／左右の延長爪を固定する</h2>
+<p><strong>使用：B5＝ねじ径2 mm（M2）、長さ16 mm、4本。W1＝厚さ0.3 mmの通常座金、4枚。N1は手順4で用意した爪固定用4個を使用。V2の爪L/R各1。</strong></p>
+<p>ボルトの長さは16 mmです。頭は含みません。右爪の根元に2本、左爪の根元に2本使います。</p>
+<p><figure><a href="images/08-fingers-oblique.png" target="_blank"><img src="images/08-fingers-oblique.png" alt="斜視：延長爪の根元に各2本。延長した先端へは移さない。"></a><figcaption>斜視：延長爪の根元に各2本。延長した先端へは移さない。</figcaption></figure></p>
+<p class="item">• 把持面が互いに向き合うように左右の爪を置きます。</p>
+<p class="item">• 各爪の根元にM2×16を2本、通常座金W1を2枚使います。</p>
+<p class="item">• ねじ頭→W1→爪の取付腕→スライダ側の捕捉ナットの配置です。</p>
+<p class="item">• 各図の引出線は見えている側のねじ頭に合わせています。Rを確認してから反対側図でLを確認し、各2本・合計4本を照合します。</p>
+<p class="item">• 4本の穴位置は延長前の根元位置を維持します。+20 mmの先端側に穴を移しません。</p>
+<p><strong>確認：</strong> V2の延長爪を使い、左右のナットが空回りせず、爪の根元が浮いていないこと。爪先のたわみ・強度・250 g保持はこの組立図では確認できません。</p>
+<p><figure><a href="images/08-fingers-opposite.png" target="_blank"><img src="images/08-fingers-opposite.png" alt="反対側の斜視：L爪の根元2本。隠れるねじは別視点で確認。"></a><figcaption>反対側の斜視：L爪の根元2本。隠れるねじは別視点で確認。</figcaption></figure></p>
+<h2 id="step-9">手順9／左右パッドを貼る</h2>
+<p><strong>使用：28×20×1 mmのパッド×2。新しいねじなし。</strong></p>
+<p><figure><a href="images/09-complete-oblique.png" target="_blank"><img src="images/09-complete-oblique.png" alt="斜視：内側のパッド位置と左右の品名。"></a><figcaption>斜視：内側のパッド位置と左右の品名。</figcaption></figure></p>
+<p class="item">• 左右の内側の把持面へパッドを1枚ずつ配置します。厚さ1 mmは接着層を含みます。</p>
+<p class="item">• C9の配置基準は爪先端から1 mm内側、高さ方向中央です。V2ではパッドも爪の延長と同じ+20 mmだけ前へ移動しています。</p>
+<p class="item">• 先端へねじを追加せず、左右のパッド位置をCADと照合します。</p>
+<p><strong>確認：</strong> 左右で厚さ・位置が揃い、開閉部へ接着剤が入らないこと。シート材・接着剤・保持性能は未選定／未確認です。</p>
+<p><figure><a href="images/09-complete-opposite.png" target="_blank"><img src="images/09-complete-opposite.png" alt="反対側の斜視：Rの内側パッド。各図では見えている側だけに引出線を付ける。"></a><figcaption>反対側の斜視：Rの内側パッド。各図では見えている側だけに引出線を付ける。</figcaption></figure></p>
+<h2 id="step-10">手順10／締結・動き・残数を点検する</h2>
+<p><strong>新しいねじなし。通電・シリアル操作・モーター指令は本書の範囲外です。</strong></p>
+<table><thead><tr><th>点検項目</th><th>記録すること</th></tr></thead><tbody>
+<tr><td>数量</td><td>B1 4本、B2 2本、B3 2本、B4 4本、B5 4本、B6候補2本。ナット12・座金12</td></tr>
+<tr><td>ケース固定</td><td>工程2の適合確認結果。未確定なら組立完了としない</td></tr>
+<tr><td>4支点</td><td>肩・W2・ナットの座り、リンクの回転拘束、実ねじのかかり</td></tr>
+<tr><td>案内と爪</td><td>押さえ締結後の拘束、左右の配置、亀裂、根元の浮き</td></tr>
+<tr><td>ホーン</td><td>ねじの底付き、スペーサー、クランクとの相対位置の写真</td></tr>
+<tr><td>パッド</td><td>左右位置と接着層込みの厚さ</td></tr>
+<tr><td>未確認</td><td>締付トルク、材料、印刷条件、摩擦、保持力、繰返し耐久、実開閉端</td></tr>
+</tbody></table>
+<p>モーターを無理に手回ししません。CADの25〜135°は機構の相対角で、サーボへ送る絶対指令角ではありません。開閉や荷重試験の手順は、実物の固定・ねじ・公差を確認した後、別途定めます。</p>
+<h2>根拠とこの版の確認範囲</h2>
+<p class="item">• 対象CAD：<code>studies/low-profile-20260926/outputs/low-profile-250g/CAD/final-version.step</code>。記録SHA256：<code>9f58c947753e9229b30939da23ce4c87c1cc85eeb39372518de4ffb98991b93f</code>。</p>
+<p class="item">• 数量の再集計：同じSTEPを読んだChili3Dの部品名。<a href="cad-inventory.json">cad-inventory.json</a>に保存。寸法は部品表の設計値で、実ねじの計測ではありません。</p>
+<p class="item">• ねじ規格：<code>docs/FASTENER_BOM.md</code> §1、<code>specs/pg3_candidate_bom.yaml</code>のPG3部分。旧P06・旧カメラの項目は本書へ取り込みません。</p>
+<p class="item">• 組立順・肩・座金：<code>references/pg3-c9/PG3_C92_J28/docs/ASSEMBLY_AND_ACCEPTANCE_ja.md</code>、同<code>reference/C7/source/design.py</code>、<code>scripts/review_pg3_pivot_stacks.py</code>。</p>
+<p class="item">• V2変更：<code>studies/low-profile-20260926/work/low-profile/design.py</code>、同studyの<code>SERVICE.md</code>と<code>HANDOFF.md</code>。爪先・パッドの延長で根元締結位置は保持されています。</p>
+<p class="item">• ケース固定の未確定事項：<code>docs/PG3_ID5_ONLY_DESIGN.md</code> §1・4。旧<code>docs/ASSEMBLY_AND_CALIBRATION.md</code>は別方式を含むため、このPG3の組立順の根拠には使っていません。</p>
+<p>この版では部品の表示切り替えと画像保存だけを行い、CAD形状、原本、部品の位置、ハードウェアを変更していません。実組立の挿入経路と対向保持を通した工程検証は未実施です。</p>
+<p>自己レビューの記録：<a href="REVIEW.md">5回のレビューと改善</a>。この作成手順のスキル：<code>skills/cad-assembly-manual/SKILL.md</code>。</p>
+<h2 id="fastener-list">巻末／ねじ・ナット・座金の必要数（1台分）</h2>
+<p>グリッパ単体1台分の一覧です。予備分は含みません。工程をまたいで使う同じナットは1個として数えています。寸法の単位はmmです。</p>
+<table class="ledger fasteners"><thead><tr><th>記号</th><th>部品</th><th>ねじ径・その他寸法（mm）</th><th>長さ・厚さ（mm）</th><th>必要数</th><th>取り付け箇所</th></tr></thead><tbody>
+<tr><td>B1</td><td>六角穴付きボルト</td><td>M2</td><td>長さ6（頭を除く）</td><td>4本</td><td>クランク→ホーン</td></tr>
+<tr><td>B2</td><td>六角穴付きボルト</td><td>M2</td><td>長さ8（頭を除く）</td><td>2本</td><td>左右スライダ側の支点</td></tr>
+<tr><td>B3</td><td>六角穴付きボルト</td><td>M2</td><td>長さ10（頭を除く）</td><td>2本</td><td>左右クランク側の支点</td></tr>
+<tr><td>B4</td><td>六角穴付きボルト</td><td>M2</td><td>長さ12（頭を除く）</td><td>4本</td><td>上下押さえ、各2本</td></tr>
+<tr><td>B5</td><td>六角穴付きボルト</td><td>M2</td><td>長さ16（頭を除く）</td><td>4本</td><td>左右爪の根元、各2本</td></tr>
+<tr><td>B6</td><td>ケース固定ねじ候補</td><td>M2.6皿タッピング</td><td>CAD全長5（皿頭込み）</td><td>2本</td><td>枠→ID5ケース。実物適合は確認待ち</td></tr>
+<tr><td>N1</td><td>六角ナット</td><td>M2、二面幅4</td><td>厚さ1.6</td><td>12個</td><td>支点4・上下押さえ4・爪4</td></tr>
+<tr><td>W1</td><td>通常座金</td><td>外径5・内径2.2</td><td>厚さ0.3</td><td>8枚</td><td>上下押さえ4・爪4</td></tr>
+<tr><td>W2</td><td>大径座金</td><td>外径7・内径2.2</td><td>厚さ0.5</td><td>4枚</td><td>支点4。W1に置き換えない</td></tr>
+<tr><td>P1</td><td>把持面パッド</td><td>幅28・長さ20</td><td>厚さ1（接着層込み）</td><td>2枚</td><td>左右爪の内側、各1枚</td></tr>
+</tbody></table>
+<table><thead><tr><th>区分</th><th>合計</th></tr></thead><tbody>
+<tr><td>ねじ</td><td>18本（M2ボルト16本＋B6候補2本）</td></tr>
+<tr><td>ナット</td><td>M2 ×12個</td></tr>
+<tr><td>座金</td><td>12枚（通常8枚＋大径4枚）</td></tr>
+<tr><td>パッド</td><td>2枚</td></tr>
+</tbody></table>
+<p>B6は実ケースの穴・座面・ねじ種類との適合が未確定です。M2ボルトは頭を含まない長さ、B6候補のCAD全長は皿頭を含む長さです。実ねじの品番・材質・締付トルクとパッド材料は未確定。カメラ・アームのねじはこの表に含みません。</p></main></html>

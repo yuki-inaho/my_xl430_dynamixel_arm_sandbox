@@ -1,0 +1,263 @@
+{
+  "opposite_sign_with_unchanged_authentic_cad_hashes": {
+    "accepted": true,
+    "evidence": {
+      "path": "/tmp/tmp5y2bwr6z/opposite-sign.json",
+      "sha256": "fb60bc3e234aa2ca5b2dd728391ff610e0e7f0f2e6eb39cbde4ff9e8d18e93cc",
+      "sign": -1,
+      "folded_count": 1153,
+      "kind": "cad_derivation"
+    }
+  },
+  "non_cad_source_missing_read_log": {
+    "accepted": true,
+    "evidence": {
+      "path": "/tmp/tmp5y2bwr6z/opposite-sign.json",
+      "sha256": "6d4bc99602a67e312a9b50085b6788cf745e1a7c6e874ffe8fd9ad1ef6ae4ba2",
+      "sign": -1,
+      "folded_count": 1153,
+      "kind": "cad_derivation"
+    }
+  },
+  "return_20_counts_short": {
+    "outcome": {
+      "status": "converged",
+      "reason": "",
+      "target": 1267,
+      "final_error_counts": 0,
+      "start_counts": 1153,
+      "torque_on_counts": 1153,
+      "sign": 1,
+      "return_error_counts": 20,
+      "correction_counts": 0,
+      "torque_off_confirmed": true,
+      "release_problems": [],
+      "interrupted": false
+    },
+    "exit_code": 0,
+    "write_sequence": [
+      [
+        "profile_acceleration",
+        1
+      ],
+      [
+        "profile_velocity",
+        5
+      ],
+      [
+        "goal_pwm",
+        350
+      ],
+      [
+        "goal_position",
+        1153
+      ],
+      [
+        "torque",
+        1
+      ],
+      [
+        "goal_position",
+        1267
+      ],
+      [
+        "goal_position",
+        1153
+      ],
+      [
+        "torque",
+        0
+      ],
+      [
+        "goal_position",
+        1173
+      ],
+      [
+        "goal_pwm",
+        885
+      ],
+      [
+        "profile_velocity",
+        0
+      ],
+      [
+        "profile_acceleration",
+        0
+      ]
+    ],
+    "event_counts": {
+      "sample": 105,
+      "missed_sample": 0,
+      "abort": 0,
+      "released": 1
+    }
+  },
+  "restore_velocity_failed": {
+    "outcome": {
+      "status": "converged",
+      "reason": "",
+      "target": 1267,
+      "final_error_counts": 0,
+      "start_counts": 1153,
+      "torque_on_counts": 1153,
+      "sign": 1,
+      "return_error_counts": 0,
+      "correction_counts": 0,
+      "torque_off_confirmed": true,
+      "release_problems": [
+        "profile_velocity=0: MotionAbort: write failed: profile_velocity"
+      ],
+      "interrupted": false
+    },
+    "exit_code": 0,
+    "write_sequence": [
+      [
+        "profile_acceleration",
+        1
+      ],
+      [
+        "profile_velocity",
+        5
+      ],
+      [
+        "goal_pwm",
+        350
+      ],
+      [
+        "goal_position",
+        1153
+      ],
+      [
+        "torque",
+        1
+      ],
+      [
+        "goal_position",
+        1267
+      ],
+      [
+        "goal_position",
+        1153
+      ],
+      [
+        "torque",
+        0
+      ],
+      [
+        "goal_position",
+        1153
+      ],
+      [
+        "goal_pwm",
+        885
+      ],
+      [
+        "profile_acceleration",
+        0
+      ]
+    ],
+    "event_counts": {
+      "sample": 107,
+      "missed_sample": 0,
+      "abort": 0,
+      "released": 1
+    }
+  },
+  "hold_with_id3_torque_off": {
+    "returned_without_abort": true,
+    "elapsed_s": 2.000000000000001,
+    "sample_count": 40,
+    "all_id3_torque_off": true
+  },
+  "other_motor_secondary_id_3": {
+    "outcome": {
+      "status": "aborted",
+      "reason": "MotionAbort: ID1 torque turned ON",
+      "target": null,
+      "final_error_counts": null,
+      "start_counts": null,
+      "torque_on_counts": null,
+      "sign": 1,
+      "return_error_counts": null,
+      "correction_counts": 0,
+      "torque_off_confirmed": true,
+      "release_problems": [],
+      "interrupted": false
+    },
+    "physical_id1_writes": [
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 108,
+        "value": 1
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 112,
+        "value": 5
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 100,
+        "value": 350
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 116,
+        "value": 1153
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 64,
+        "value": 1
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 64,
+        "value": 0
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 116,
+        "value": 1153
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 100,
+        "value": 885
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 112,
+        "value": 0
+      },
+      {
+        "physical_motor": 1,
+        "packet_id": 3,
+        "address": 108,
+        "value": 0
+      }
+    ],
+    "id1_was_torque_enabled": true,
+    "outbound_primary_ids": [
+      3
+    ]
+  },
+  "derive_accepts_simulated_alerted_log": {
+    "log": "/tmp/tmp5y2bwr6z/synthetic.jsonl",
+    "sha256": "19426a723836124f11be3fe0e3131fa9ea9713ecd7a1bc1487730d48d34817a9",
+    "frames": 50,
+    "excluded_fault_frames": 0,
+    "min": 1153,
+    "max": 1153,
+    "folded_count": 1153
+  }
+}

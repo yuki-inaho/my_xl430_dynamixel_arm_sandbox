@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-10-03T11:49:11.120Z",
+  "url": "http://127.0.0.1:8084/",
+  "title": "現状候補アーム · MuJoCo",
+  "heading": "現状候補アーム · MuJoCo",
+  "before": {
+    "angles": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "theta": 90,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 135,
+    "elevation": -25,
+    "distance": 0.64,
+    "focus": "arm",
+    "source": "manual",
+    "frame_seq": 29630,
+    "render_fps": 19.9,
+    "frame_time": 1791028150.7968926,
+    "error": null,
+    "telemetry": {
+      "configured": false,
+      "status": "未接続",
+      "motors": []
+    },
+    "gap_mm": 15.99,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 29630
+  },
+  "after": {
+    "angles": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "theta": 90,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 135,
+    "elevation": -25,
+    "distance": 0.64,
+    "focus": "arm",
+    "source": "manual",
+    "frame_seq": 29636,
+    "render_fps": 19.9,
+    "frame_time": 1791028151.1061013,
+    "error": null,
+    "telemetry": {
+      "configured": false,
+      "status": "未接続",
+      "motors": []
+    },
+    "gap_mm": 15.99,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 29636
+  },
+  "image_width": 1060,
+  "image_height": 760,
+  "notice": "姿勢表示用モデル。実機の初期姿勢・ID対応・ゼロ点は未校正です。表示範囲は安全な可動域を保証しません。"
+}

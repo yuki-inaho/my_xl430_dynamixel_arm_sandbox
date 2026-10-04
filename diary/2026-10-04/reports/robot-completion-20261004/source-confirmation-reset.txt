@@ -1,0 +1,11 @@
+### Result
+{"checks":[false,false,false,false],"message":"現物の対応・基準・方向と適用を確認してください"}
+### Ran Playwright code
+```js
+await (async page => {
+ await page.waitForFunction(()=>['confirm-order','confirm-baseline','confirm-directions','confirm-calibration'].every(id=>!document.getElementById(id).checked));
+ await page.locator('#apply-calibration').click();
+ return await page.evaluate(()=>({checks:['confirm-order','confirm-baseline','confirm-directions','confirm-calibration'].map(id=>document.getElementById(id).checked),
+ message:document.getElementById('cal-message').textContent}));
+})(page);
+```

@@ -1,0 +1,47 @@
+{
+  "head": "6e1c16bc6cac672cfe82c932cd7318dacc709256",
+  "clean_file": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/diary/2026-10-04_claude_session_c1ea256b_clean.json",
+  "source_prefix_sha256": "607c43e20aab0d348a7788b6ef03933445191e8a4d425df1ba340f987a3b150c",
+  "recorded_sha256": "607c43e20aab0d348a7788b6ef03933445191e8a4d425df1ba340f987a3b150c",
+  "hash_matches": true,
+  "raw_records": 2096,
+  "recorded_records": 2096,
+  "normal_kind_counts": {
+    "session": 1,
+    "user": 37,
+    "tool_call": 251,
+    "tool_output": 250,
+    "assistant": 59,
+    "thinking": 106
+  },
+  "supplemental_kind_counts": {
+    "mid_turn_user_message": 6,
+    "queued_system_notification": 34
+  },
+  "queue_enqueues_raw": 40,
+  "raw_first_timestamp": null,
+  "raw_last_timestamp": "2026-10-03T23:29:17.306Z",
+  "tracked_files": 483,
+  "groups": {
+    ".gitignore": 1,
+    "AGENTS.md": 1,
+    "HANDOFF.md": 1,
+    "README.md": 1,
+    "config": 1,
+    "contracts": 1,
+    "diary": 7,
+    "docs": 2,
+    "pyproject.toml": 1,
+    "reports": 84,
+    "rust": 4,
+    "scripts": 5,
+    "skills": 177,
+    "src": 16,
+    "tests": 9,
+    "upstream": 171,
+    "uv.lock": 1
+  },
+  "git_remote": "https://github.com/yuki-inaho/my_xl430_dynamixel_arm_sandbox.git",
+  "private": true,
+  "remote_main": "6e1c16bc6cac672cfe82c932cd7318dacc709256"
+}

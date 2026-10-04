@@ -1,0 +1,76 @@
+{
+  "source_step": "../CAD/Robot_250g_compact_D405.step",
+  "source_sha256": "f7cd3b6d61363c328c9a26cd582d2eff2893cbee408143b11e9178c99498c065",
+  "onshape_version": {
+    "id": "e21cffef1877c8f91d2b03f8",
+    "name": "V2 compact motion validated - URDF source",
+    "documentId": "7b85d8922959cbe564b6e0cb",
+    "microversion": "e7baeb3009f84778b54556dc",
+    "assembly_id": "848ae15cd82797bd99cdc330",
+    "url": "https://cad.onshape.com/documents/7b85d8922959cbe564b6e0cb/v/e21cffef1877c8f91d2b03f8/e/848ae15cd82797bd99cdc330"
+  },
+  "exporter_version": "1.8.3",
+  "raw_urdf_sha256": "cd38af49ea29e2358029846f52766f571a0f2b7154c4b91989b2c418babf129b",
+  "portable_urdf_sha256": "8a9c1e3545e3ca2ec346eab232908040f28ddf0a3c55dceb534ed9a167b65fd8",
+  "kinematic_only": true,
+  "meshes": {
+    "base_link.stl": {
+      "bytes": 1051984,
+      "sha256": "19ba1d4a3efb1c60f11f50ef3f64e30fba22d13bbbadd44975fa1f9afa7a6da3"
+    },
+    "camera_body.stl": {
+      "bytes": 59084,
+      "sha256": "74dadca922b967a936339ca60cd844e91435cee07f383605a50fbb38661021e2"
+    },
+    "camera_mount.stl": {
+      "bytes": 812984,
+      "sha256": "3c625f9add1f29d7499f575256e1fb42b313423d157bac36c030b10d4f90bea1"
+    },
+    "coupler_l.stl": {
+      "bytes": 56684,
+      "sha256": "7ea4a42246f65b96400a9c2b95c8bef81dbe04ba38eefd6c329d0d470bdc25f6"
+    },
+    "coupler_r.stl": {
+      "bytes": 56684,
+      "sha256": "ec8f9c5a59d2dce104a62d2f079e647d40d83f587cee9a0f3ba6ac46281bb9d7"
+    },
+    "forearm.stl": {
+      "bytes": 1034784,
+      "sha256": "1448394ba0a2081a57020488e0c2b6bea286b4fb57fbc3a9bda55c35764ea0f0"
+    },
+    "gripper_crank.stl": {
+      "bytes": 725984,
+      "sha256": "d192140b1a829450fcfb17524432f1bfe398471aebb7138211a5a619addf7524"
+    },
+    "jaw_l.stl": {
+      "bytes": 349184,
+      "sha256": "c4dcae4727bf4da6b4725e1c1c8257c2db54f630fea6832fe74d6c10ba8d1c53"
+    },
+    "jaw_r.stl": {
+      "bytes": 349184,
+      "sha256": "f3a493c88a60c34433a7aadb6e0ec128cd85a15bd84c3d6721dfea370f0a4781"
+    },
+    "shoulder_yaw.stl": {
+      "bytes": 1024384,
+      "sha256": "dc3f081b4d00d868cc267d83eb485847e0823f6a64eaec73e9fa69344a526149"
+    },
+    "upper_arm.stl": {
+      "bytes": 1075184,
+      "sha256": "5c51ee1a3a0a2dfab5b81e46d949aebd33b88571c02d1114aad39ca2f1339457"
+    },
+    "wrist.stl": {
+      "bytes": 1218784,
+      "sha256": "02de5d2263aac81875493743831629210b03e82ad25a5254caf1c948e837f7a4"
+    }
+  },
+  "camera_glass_center_mm": [
+    -0.2,
+    185,
+    250
+  ],
+  "wrist_export_limits_deg": [
+    -106,
+    138
+  ],
+  "raw_export_reused_from_old": false
+}

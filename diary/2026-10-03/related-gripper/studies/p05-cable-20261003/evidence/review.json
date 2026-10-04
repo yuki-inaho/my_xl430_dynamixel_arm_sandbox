@@ -1,0 +1,263 @@
+{
+  "source": "studies/low-profile-20260926/outputs/low-profile-250g/CAD/final-version.step",
+  "source_sha256": "9f58c947753e9229b30939da23ce4c87c1cc85eeb39372518de4ffb98991b93f",
+  "source_onshape_version": "f6162b4adc88af9d07f1194a",
+  "source_onshape_url": "https://cad.onshape.com/documents/29e8557c76e89bcf64f50566/v/f6162b4adc88af9d07f1194a/e/d5415bf725ba822741b01703",
+  "operation": "replace only P05 geometry in copied XCAF; original V2 unchanged",
+  "replacement_product_name": "ARM_P05_wrist_XL430",
+  "units": "mm",
+  "window_spec": {
+    "width_mm": 5.5,
+    "height_mm": 10.2,
+    "corner_radius_mm": 0.5,
+    "centre_y_mm": 151.15,
+    "centre_z_mm": 178.7
+  },
+  "source_window_mm": [
+    3,
+    8
+  ],
+  "occurrences": 262,
+  "unchanged_signature_count": 261,
+  "excluded_occurrences": [],
+  "occurrence_check": {
+    "identities_equal": true,
+    "max_placement_matrix_delta": 2.77555756156524e-16
+  },
+  "P05_bounds_mm": [
+    -23.20000000000001,
+    91.4,
+    151.1,
+    22.800000000000004,
+    174.9,
+    196.6
+  ],
+  "removed_volume_mm3": 270.5345175425658,
+  "outside_mask_loss_mm3": 0,
+  "protected_loss_mm3": 0,
+  "case_seats": [
+    {
+      "x_mm": -14.45,
+      "before_mm2": 942.005045915216,
+      "after_mm2": 942.005045915216,
+      "lost_mm2": 0,
+      "added_mm2": 0,
+      "normal_dot": -1.0,
+      "passed": true
+    },
+    {
+      "x_mm": 14.05,
+      "before_mm2": 942.0050459151619,
+      "after_mm2": 942.0050459151616,
+      "lost_mm2": 0,
+      "added_mm2": 0,
+      "normal_dot": -1.0,
+      "passed": true
+    }
+  ],
+  "boolean_controls": {
+    "source": {
+      "valid": true,
+      "self_cut_mm3": 0,
+      "self_common_mm3": 22580.887385934304,
+      "own_volume_mm3": 22580.887385934304,
+      "passed": true
+    },
+    "candidate": {
+      "valid": true,
+      "self_cut_mm3": 0,
+      "self_common_mm3": 22310.352868391747,
+      "own_volume_mm3": 22310.352868391747,
+      "passed": true
+    },
+    "saved_assembly_P05": {
+      "valid": true,
+      "self_cut_mm3": 0,
+      "self_common_mm3": 22310.352868393344,
+      "own_volume_mm3": 22310.352868393344,
+      "passed": true
+    },
+    "saved_standalone_P05": {
+      "valid": true,
+      "self_cut_mm3": 0,
+      "self_common_mm3": 22310.352868393344,
+      "own_volume_mm3": 22310.352868393344,
+      "passed": true
+    }
+  },
+  "mesh_checks": {
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 1,
+    "volume_positive": true,
+    "linear_tessellation_mm": 0.12,
+    "angular_tessellation": 0.18
+  },
+  "contacts_counts": {
+    "PASS": 1841,
+    "ERROR": 1,
+    "UNKNOWN": 6
+  },
+  "contacts_nonpass": [
+    {
+      "a": "130:ARM_P05_wrist_XL430",
+      "b": "088:ARM_M04_ref00",
+      "distance_mm": 0.0,
+      "status": "ERROR",
+      "reason": "operand_self_boolean_control_failed",
+      "enclosed_operands": [
+        "088:ARM_M04_ref00"
+      ],
+      "conservative_intersection_mm3": 829.6110331416525
+    },
+    {
+      "a": "WIRE_ASSUMED_port3_0",
+      "b": "152:ARM_M05_ref05",
+      "distance_mm": 0.0,
+      "status": "UNKNOWN",
+      "reason": "non_solid_overlap"
+    },
+    {
+      "a": "WIRE_ASSUMED_port3_1",
+      "b": "152:ARM_M05_ref05",
+      "distance_mm": 0.0,
+      "status": "UNKNOWN",
+      "reason": "non_solid_overlap"
+    },
+    {
+      "a": "WIRE_ASSUMED_port3_2",
+      "b": "152:ARM_M05_ref05",
+      "distance_mm": 0.0,
+      "status": "UNKNOWN",
+      "reason": "non_solid_overlap"
+    },
+    {
+      "a": "WIRE_ASSUMED_port4_0",
+      "b": "152:ARM_M05_ref05",
+      "distance_mm": 0.0,
+      "status": "UNKNOWN",
+      "reason": "non_solid_overlap"
+    },
+    {
+      "a": "WIRE_ASSUMED_port4_1",
+      "b": "152:ARM_M05_ref05",
+      "distance_mm": 0.0,
+      "status": "UNKNOWN",
+      "reason": "non_solid_overlap"
+    },
+    {
+      "a": "WIRE_ASSUMED_port4_2",
+      "b": "152:ARM_M05_ref05",
+      "distance_mm": 0.0,
+      "status": "UNKNOWN",
+      "reason": "non_solid_overlap"
+    }
+  ],
+  "wire_sidewall_clearance_mm": 1.6500000000000057,
+  "wire_cover_clearance_mm": 0.25,
+  "plug_window_only_before_motor_installation": {
+    "counts": {
+      "FAIL": 2,
+      "PASS": 2
+    },
+    "pairs": [
+      {
+        "a": "PLUG_WINDOW_ONLY_0",
+        "b": "old_P05",
+        "distance_mm": 0.0,
+        "status": "FAIL",
+        "reason": "solid_intersection",
+        "volume_mm3": 56.125666117692234,
+        "intersection_bounds_mm": [
+          14.049999999999969,
+          149.25,
+          173.95,
+          18.04999999999997,
+          153.05,
+          183.45
+        ]
+      },
+      {
+        "a": "PLUG_WINDOW_ONLY_0",
+        "b": "new_P05",
+        "distance_mm": 0.3499999999999943,
+        "status": "PASS",
+        "reason": "solid_distance_separated"
+      },
+      {
+        "a": "PLUG_WINDOW_ONLY_1",
+        "b": "old_P05",
+        "distance_mm": 0.0,
+        "status": "FAIL",
+        "reason": "solid_intersection",
+        "volume_mm3": 56.12566611769232,
+        "intersection_bounds_mm": [
+          -18.450000000000035,
+          149.25,
+          173.95,
+          -14.45000000000003,
+          153.05,
+          183.45
+        ]
+      },
+      {
+        "a": "PLUG_WINDOW_ONLY_1",
+        "b": "new_P05",
+        "distance_mm": 0.3499999999999943,
+        "status": "PASS",
+        "reason": "solid_distance_separated"
+      }
+    ],
+    "operand_controls": {
+      "PLUG_WINDOW_ONLY_0": {
+        "self_cut_mm3": 0,
+        "self_common_mm3": 657.0200000000018,
+        "volume_mm3": 657.0200000000018,
+        "passed": true
+      },
+      "old_P05": {
+        "self_cut_mm3": 0,
+        "self_common_mm3": 22580.887385934304,
+        "volume_mm3": 22580.887385934304,
+        "passed": true
+      },
+      "PLUG_WINDOW_ONLY_1": {
+        "self_cut_mm3": 0,
+        "self_common_mm3": 657.0200000000019,
+        "volume_mm3": 657.0200000000019,
+        "passed": true
+      }
+    },
+    "contact_adjudication": "No overlap is automatically accepted as a thread or fit."
+  },
+  "plug_straight_access_with_motor_installed_counts": {
+    "PASS": 518,
+    "ERROR": 2,
+    "UNKNOWN": 2,
+    "FAIL": 2
+  },
+  "limits": [
+    "OD1.9 mm, bend centreline R1.2 mm and PCB-to-wire-exit8.7 mm are assumptions",
+    "Internal 90-degree bend followed by straight sideways exit; not straight rear exit",
+    "EHR-3 nominal housing9.5x3.8 is a window passage diagnostic before motor insertion",
+    "The saved-motor plug corridor remains a separate diagnostic, not an accepted installation path",
+    "Printed fit, bend allowance, strain relief, prewired motor insertion, fastening and strength unknown",
+    "Unchanged signatures are not full material-set Boolean equivalence for defective supplier B-reps",
+    "No Onshape document update, URDF regeneration or whole-arm cable sweep in this local candidate"
+  ],
+  "runtime": {
+    "cadquery": "2.7.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "trimesh": "5.1.0"
+  },
+  "physical_assembly_verified": false,
+  "fabrication_approved": false,
+  "outputs_sha256": {
+    "contacts.json": "bd56423518f18522eaab9d15c048d21ae65f1f0f4c39466f2f43fc93f4f23f58",
+    "V2_P05_CABLE_CLEARANCE_CANDIDATE.step": "8833b4ab59d6defea7d1dd9c76297bdaa257993c15503d4f4adfe67494e11cab",
+    "unchanged-occurrences.json": "a8f0ea0bd710b6816072254b589ee9179a11e4994dd1c37b9aab5c13d90cd08e",
+    "plug-with-motor-diagnostic.json": "1a520c7ccd053c627da981972a33d7df165fce34e7e7e893e4934bd7f8dcaeda",
+    "P05_CABLE_CLEARANCE_CANDIDATE.stl": "da5f34d1c3d9665ee065c087aabec7284b407cedbdf2b1a3398d9dd2b88bbec5",
+    "P05_CABLE_CLEARANCE_CANDIDATE.step": "1dd40167830d3f7040db6efb58a5b3e6b213648acc43c1ee8fec4a12780ae4ab"
+  }
+}

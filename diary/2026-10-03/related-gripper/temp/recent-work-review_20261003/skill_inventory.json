@@ -1,0 +1,320 @@
+[
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/cad-reverse-parametric/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/cad-reverse-parametric/SKILL.md",
+    "sha256": "573d6f6f04c59b43385e37aafe7dbfcad24cd112e3081ecb86eb96d305b80c77",
+    "reference_documents": 12,
+    "local_links": [
+      {
+        "target": "references/add-on-fixtures.md",
+        "exists": true
+      },
+      {
+        "target": "references/geometry-review.md",
+        "exists": true
+      },
+      {
+        "target": "references/assembly-serviceability.md",
+        "exists": true
+      },
+      {
+        "target": "references/add-on-fixtures.md",
+        "exists": true
+      },
+      {
+        "target": "references/chili3d_viewing.md",
+        "exists": true
+      },
+      {
+        "target": "references/step-to-slicer.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/fdm-plate-layout/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/fdm-plate-layout/SKILL.md",
+    "sha256": "40adb44510f429ef8a72443942f24d574fe4d58f3ee5a1f7774f3dd851f343b7",
+    "reference_documents": 1,
+    "local_links": []
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/onshape-robot-workflow/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/onshape-robot-workflow/SKILL.md",
+    "sha256": "630dd2b80a69d71a65e4f414b8dadeeae73cc5c8a3a22ac53714161cad76236f",
+    "reference_documents": 5,
+    "local_links": [
+      {
+        "target": "references/validation.md",
+        "exists": true
+      },
+      {
+        "target": "references/ui-first-step-pixi.md",
+        "exists": true
+      },
+      {
+        "target": "references/api-and-export.md",
+        "exists": true
+      },
+      {
+        "target": "references/compact-camera-and-headless.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/playwright-cli/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/playwright-cli/SKILL.md",
+    "sha256": "8d3a2765127a6f982db8478deab1301bea55adda81009764eb23201f6fee8fcf",
+    "reference_documents": 8,
+    "local_links": [
+      {
+        "target": ".playwright-cli/page-2026-02-14T19-22-42-679Z.yml",
+        "exists": false
+      },
+      {
+        "target": "references/session-management.md",
+        "exists": true
+      },
+      {
+        "target": "references/running-code.md#file-chooser-ownership",
+        "exists": true
+      },
+      {
+        "target": "references/request-mocking.md",
+        "exists": true
+      },
+      {
+        "target": "references/running-code.md",
+        "exists": true
+      },
+      {
+        "target": "references/session-management.md",
+        "exists": true
+      },
+      {
+        "target": "references/storage-state.md",
+        "exists": true
+      },
+      {
+        "target": "references/test-generation.md",
+        "exists": true
+      },
+      {
+        "target": "references/tracing.md",
+        "exists": true
+      },
+      {
+        "target": "references/video-recording.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/review-written-workdoc/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/review-written-workdoc/SKILL.md",
+    "sha256": "5641b9bbdee8fbda795ade1ba9a5362104053f88b15cc0a64131202557593885",
+    "reference_documents": 3,
+    "local_links": []
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/start-work-with-docs/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/start-work-with-docs/SKILL.md",
+    "sha256": "cc8b5ef1ab093e8061ce96f571ed6c7f983b5e9b6d16c855190f6889db753bef",
+    "reference_documents": 2,
+    "local_links": []
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/write-workdoc-uv/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/write-workdoc-uv/SKILL.md",
+    "sha256": "79fea44d8ddd7b33eee491d6c4e5a82341c6aaa0ea72b3a0c12ffcc78e7b45c7",
+    "reference_documents": 3,
+    "local_links": []
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/.codex/skills/cad-reverse-parametric/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/cad-reverse-parametric/SKILL.md",
+    "sha256": "573d6f6f04c59b43385e37aafe7dbfcad24cd112e3081ecb86eb96d305b80c77",
+    "reference_documents": 12,
+    "local_links": [
+      {
+        "target": "references/add-on-fixtures.md",
+        "exists": true
+      },
+      {
+        "target": "references/geometry-review.md",
+        "exists": true
+      },
+      {
+        "target": "references/assembly-serviceability.md",
+        "exists": true
+      },
+      {
+        "target": "references/add-on-fixtures.md",
+        "exists": true
+      },
+      {
+        "target": "references/chili3d_viewing.md",
+        "exists": true
+      },
+      {
+        "target": "references/step-to-slicer.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/.codex/skills/fdm-plate-layout/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/fdm-plate-layout/SKILL.md",
+    "sha256": "40adb44510f429ef8a72443942f24d574fe4d58f3ee5a1f7774f3dd851f343b7",
+    "reference_documents": 1,
+    "local_links": []
+  },
+  {
+    "repo": "3d-printed-dynamixel-gripper",
+    "path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/.codex/skills/playwright-cli/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/skills/playwright-cli/SKILL.md",
+    "sha256": "8d3a2765127a6f982db8478deab1301bea55adda81009764eb23201f6fee8fcf",
+    "reference_documents": 8,
+    "local_links": [
+      {
+        "target": ".playwright-cli/page-2026-02-14T19-22-42-679Z.yml",
+        "exists": false
+      },
+      {
+        "target": "references/session-management.md",
+        "exists": true
+      },
+      {
+        "target": "references/running-code.md#file-chooser-ownership",
+        "exists": true
+      },
+      {
+        "target": "references/request-mocking.md",
+        "exists": true
+      },
+      {
+        "target": "references/running-code.md",
+        "exists": true
+      },
+      {
+        "target": "references/session-management.md",
+        "exists": true
+      },
+      {
+        "target": "references/storage-state.md",
+        "exists": true
+      },
+      {
+        "target": "references/test-generation.md",
+        "exists": true
+      },
+      {
+        "target": "references/tracing.md",
+        "exists": true
+      },
+      {
+        "target": "references/video-recording.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "repo": "low_cost_robot",
+    "path": "/home/inaho-omen/Project/low_cost_robot/skills/cad-reverse-parametric/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/low_cost_robot/skills/cad-reverse-parametric/SKILL.md",
+    "sha256": "74a0d29a5515adf37666d1b2070f8bb19b23108fbedd297903d5fe00768246b3",
+    "reference_documents": 27,
+    "local_links": []
+  },
+  {
+    "repo": "low_cost_robot",
+    "path": "/home/inaho-omen/Project/low_cost_robot/skills/claude-tmux-review-bridge/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/low_cost_robot/skills/claude-tmux-review-bridge/SKILL.md",
+    "sha256": "306aaac52914b8c2a2cb5dc9cd8e2e225a5d100b9c7f25f5a567a77da0451ee5",
+    "reference_documents": 3,
+    "local_links": []
+  },
+  {
+    "repo": "low_cost_robot",
+    "path": "/home/inaho-omen/Project/low_cost_robot/skills/playwright-cli/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/low_cost_robot/skills/playwright-cli/SKILL.md",
+    "sha256": "8d3a2765127a6f982db8478deab1301bea55adda81009764eb23201f6fee8fcf",
+    "reference_documents": 8,
+    "local_links": [
+      {
+        "target": ".playwright-cli/page-2026-02-14T19-22-42-679Z.yml",
+        "exists": false
+      },
+      {
+        "target": "references/session-management.md",
+        "exists": true
+      },
+      {
+        "target": "references/running-code.md#file-chooser-ownership",
+        "exists": true
+      },
+      {
+        "target": "references/request-mocking.md",
+        "exists": true
+      },
+      {
+        "target": "references/running-code.md",
+        "exists": true
+      },
+      {
+        "target": "references/session-management.md",
+        "exists": true
+      },
+      {
+        "target": "references/storage-state.md",
+        "exists": true
+      },
+      {
+        "target": "references/test-generation.md",
+        "exists": true
+      },
+      {
+        "target": "references/tracing.md",
+        "exists": true
+      },
+      {
+        "target": "references/video-recording.md",
+        "exists": true
+      }
+    ]
+  },
+  {
+    "repo": "low_cost_robot",
+    "path": "/home/inaho-omen/Project/low_cost_robot/skills/print-cad-validation/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/low_cost_robot/skills/print-cad-validation/SKILL.md",
+    "sha256": "a15f9cbbe7532c47b1474d43410d061973cc5b2454f847fbcd3d0f21cbf94ae3",
+    "reference_documents": 2,
+    "local_links": []
+  },
+  {
+    "repo": "low_cost_robot",
+    "path": "/home/inaho-omen/Project/low_cost_robot/.codex/skills/cad-reverse-parametric/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/low_cost_robot/skills/cad-reverse-parametric/SKILL.md",
+    "sha256": "74a0d29a5515adf37666d1b2070f8bb19b23108fbedd297903d5fe00768246b3",
+    "reference_documents": 27,
+    "local_links": []
+  },
+  {
+    "repo": "low_cost_robot",
+    "path": "/home/inaho-omen/Project/low_cost_robot/.codex/skills/claude-tmux-review-bridge/SKILL.md",
+    "resolved_path": "/home/inaho-omen/Project/low_cost_robot/.codex/skills/claude-tmux-review-bridge/SKILL.md",
+    "sha256": "306aaac52914b8c2a2cb5dc9cd8e2e225a5d100b9c7f25f5a567a77da0451ee5",
+    "reference_documents": 3,
+    "local_links": []
+  }
+]

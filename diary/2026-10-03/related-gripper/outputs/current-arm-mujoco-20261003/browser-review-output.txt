@@ -1,0 +1,109 @@
+### Result
+{"initial":{"angles":[0,0,0,0],"theta":90,"variant":"r5_65","gripper":true,"camera":true,"animate":false,"azimuth":135,"elevation":-25,"distance":0.64,"focus":"arm","source":"manual","frame_seq":69,"render_fps":20.2,"frame_time":1791026668.9464087,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":15.99,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":69,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"open":{"state":{"angles":[0,0,0,0],"theta":25,"variant":"r5_65","gripper":true,"camera":true,"animate":false,"azimuth":225,"elevation":-20,"distance":0.23,"focus":"gripper","source":"manual","frame_seq":76,"render_fps":20.2,"frame_time":1791026669.2970195,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":48.9,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":76,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"image_sha256":"63e220bea6b745e6574262caf2f81dd0ed3f70cba23073449c2fb03c7b969f7c"},"closed":{"state":{"angles":[0,0,0,0],"theta":135,"variant":"r5_65","gripper":true,"camera":true,"animate":false,"azimuth":225,"elevation":-20,"distance":0.23,"focus":"gripper","source":"manual","frame_seq":80,"render_fps":20.2,"frame_time":1791026669.4969747,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":0.93,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":80,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"image_sha256":"684fb2f68b66673dbec8a68443ae6c1834a34d2c5d56db17bd113f22ee961ccf"},"variant":{"state":{"angles":[0,0,0,0],"theta":135,"variant":"compact_75","gripper":true,"camera":true,"animate":false,"azimuth":225,"elevation":-20,"distance":0.23,"focus":"gripper","source":"manual","frame_seq":88,"render_fps":20.1,"frame_time":1791026669.8992841,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":0.93,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":88,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"image_sha256":"5e18e29e3c1e6b2b6d6943f3ff54b667b93cb56fd955960de9f189d75b1213ad"},"bare_arm":{"angles":[0,0,0,0],"theta":135,"variant":"compact_75","gripper":false,"camera":false,"animate":false,"azimuth":225,"elevation":-20,"distance":0.23,"focus":"gripper","source":"manual","frame_seq":91,"render_fps":20.1,"frame_time":1791026670.0488522,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":0.93,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":91,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"joint_endpoint":{"angles":[180,0,0,0],"theta":135,"variant":"r5_65","gripper":true,"camera":true,"animate":false,"azimuth":225,"elevation":-20,"distance":0.23,"focus":"gripper","source":"manual","frame_seq":95,"render_fps":20.1,"frame_time":1791026670.2477446,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":0.93,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":95,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"animation":{"angles":[7.0568936898186205,9.523952407232393,-3.8868478917502527,-10.244141063811762],"theta":92.34956395718258,"variant":"r5_65","gripper":true,"camera":true,"animate":true,"azimuth":135,"elevation":-25,"distance":0.64,"focus":"arm","source":"manual","frame_seq":112,"render_fps":20.1,"frame_time":1791026671.1013987,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":14.86,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":112,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"orbit_zoom":{"angles":[6.586088819730329,9.375795285078688,-4.4745711354582065,-10.621920676953916],"theta":91.52565543452808,"variant":"r5_65","gripper":true,"camera":true,"animate":false,"azimuth":122,"elevation":-80,"distance":0.5676290794989808,"focus":"arm","source":"manual","frame_seq":133,"render_fps":20.1,"frame_time":1791026672.1556945,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":15.25,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":133,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"mobile":{"angles":[0,0,0,0],"theta":90,"variant":"r5_65","gripper":true,"camera":true,"animate":false,"azimuth":135,"elevation":-25,"distance":0.64,"focus":"arm","source":"manual","frame_seq":136,"render_fps":20.1,"frame_time":1791026672.303076,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":15.99,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":136,"image_width":1060,"image_height":760,"document_width":390,"viewport_width":390},"final":{"angles":[0,0,0,0],"theta":90,"variant":"r5_65","gripper":true,"camera":true,"animate":false,"azimuth":135,"elevation":-25,"distance":0.64,"focus":"arm","source":"manual","frame_seq":138,"render_fps":20.1,"frame_time":1791026672.4056678,"error":null,"telemetry":{"configured":false,"status":"未接続","motors":[]},"gap_mm":15.99,"mujoco_version":"3.13.0","model_geoms":65,"displayed_frame_seq":138,"image_width":1060,"image_height":760,"document_width":1440,"viewport_width":1440},"page_errors":[]}
+### Ran Playwright code
+```js
+await (async page => {
+  const errors = [];
+  page.on('pageerror', error => errors.push(String(error)));
+  const out = 'outputs/current-arm-mujoco-20261003/';
+  const state = () => page.evaluate(() => ({...window.viewerState,
+    image_width: document.querySelector('#frame').naturalWidth,
+    image_height: document.querySelector('#frame').naturalHeight,
+    document_width: document.documentElement.scrollWidth, viewport_width: innerWidth}));
+  const hash = () => page.evaluate(async () => {
+    const bytes = await (await fetch('/frame.jpg')).arrayBuffer();
+    return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)))
+      .map(b => b.toString(16).padStart(2,'0')).join('');
+  });
+  const verify = (condition, message) => { if (!condition) throw Error(message); };
+  await page.reload();
+  await page.waitForFunction(() => window.viewerState?.frame_seq &&
+    document.querySelector('#frame').naturalWidth === 1060);
+  await page.setViewportSize({width:1440,height:1000});
+  await page.locator('#reset').click();
+  await page.locator('#focus-arm').click();
+  await page.waitForFunction(() => window.viewerState.theta === 90 &&
+    window.viewerState.angles.every(x => x === 0) && window.viewerState.focus === 'arm' &&
+    window.viewerState.azimuth === 135 && Math.abs(window.viewerState.gap_mm-15.99)<.02);
+  const review = {initial:await state()};
+  await page.screenshot({path:out+'viewer-full.png'});
+
+  await page.locator('#focus-gripper').click();
+  await page.locator('#theta').focus();
+  await page.keyboard.press('Home');
+  await page.waitForFunction(() => window.viewerState.theta === 25 && window.viewerState.gap_mm > 48);
+  review.open = {state:await state(),image_sha256:await hash()};
+  await page.screenshot({path:out+'viewer-gripper-open.png'});
+  await page.keyboard.press('End');
+  await page.waitForFunction(() => window.viewerState.theta === 135 && window.viewerState.gap_mm < 1.5);
+  review.closed = {state:await state(),image_sha256:await hash()};
+  verify(review.open.image_sha256 !== review.closed.image_sha256,'Opening must change rendered geometry');
+  await page.screenshot({path:out+'viewer-gripper-closed.png'});
+
+  const r5 = await hash();
+  await page.locator('#variant').selectOption('compact_75');
+  await page.waitForFunction(() => window.viewerState.variant === 'compact_75');
+  const seq = (await state()).frame_seq;
+  await page.waitForFunction(n => window.viewerState.frame_seq > n+2,seq);
+  review.variant = {state:await state(),image_sha256:await hash()};
+  verify(review.variant.image_sha256 !== r5,'Holder variants must render differently');
+  await page.locator('#camera').uncheck();
+  await page.waitForFunction(() => !window.viewerState.camera);
+  await page.locator('#gripper').uncheck();
+  await page.waitForFunction(() => !window.viewerState.gripper);
+  review.bare_arm = await state();
+  await page.locator('#camera').check();
+  await page.locator('#gripper').check();
+  await page.locator('#variant').selectOption('r5_65');
+
+  await page.locator('#j0').focus();
+  await page.keyboard.press('End');
+  await page.waitForFunction(() => window.viewerState.angles[0] === 180);
+  review.joint_endpoint = await state();
+  await page.locator('#reset').click();
+  await page.locator('#focus-arm').click();
+  const before = (await state()).frame_seq;
+  await page.locator('#animate').click();
+  await page.waitForFunction(n => window.viewerState.animate && window.viewerState.frame_seq > n+15 &&
+    window.viewerState.angles.some(x => Math.abs(x) > 1),before);
+  review.animation = await state();
+  await page.locator('#animate').click();
+  await page.waitForFunction(() => !window.viewerState.animate);
+  const paused = await state();
+  await page.waitForFunction(n => window.viewerState.frame_seq > n+10,paused.frame_seq);
+  verify(JSON.stringify((await state()).angles) === JSON.stringify(paused.angles),'Pause must hold pose');
+
+  await page.getByRole('button',{name:'上から',exact:true}).click();
+  await page.waitForFunction(() => window.viewerState.elevation === -89);
+  const box = await page.locator('#viewport').boundingBox();
+  await page.mouse.move(box.x+box.width/2,box.y+box.height/2);
+  await page.mouse.down();
+  await page.mouse.move(box.x+box.width/2+80,box.y+box.height/2-30,{steps:5});
+  await page.mouse.up();
+  await page.waitForFunction(() => window.viewerState.azimuth > 110);
+  const distance = (await state()).distance;
+  await page.mouse.wheel(0,-120);
+  await page.waitForFunction(d => window.viewerState.distance < d,distance);
+  review.orbit_zoom = await state();
+  verify(await page.locator('#source option[value=telemetry]').isDisabled(),
+    'Uncalibrated real input must remain unavailable');
+
+  await page.locator('#reset').click();
+  await page.locator('#focus-arm').click();
+  await page.waitForFunction(() => window.viewerState.theta === 90 &&
+    window.viewerState.angles.every(x => x === 0) && window.viewerState.azimuth === 135);
+  await page.setViewportSize({width:390,height:844});
+  review.mobile = await state();
+  verify(review.mobile.document_width <= review.mobile.viewport_width,'Mobile page overflows horizontally');
+  await page.screenshot({path:out+'viewer-mobile.png',fullPage:true});
+  await page.setViewportSize({width:1440,height:1000});
+  await page.waitForFunction(() => window.viewerState.theta === 90 && window.viewerState.focus === 'arm');
+  review.final = await state();
+  review.page_errors = errors;
+  verify(errors.length === 0,'Browser JS errors');
+  verify(!review.final.error && review.final.render_fps >= 10,'Live render health');
+  await page.screenshot({path:out+'viewer-full.png'});
+  return review;
+}
+)(page);
+```

@@ -1,0 +1,1324 @@
+{
+  "fov_h_deg": 84,
+  "size": [
+    848,
+    480
+  ],
+  "real_intrinsics_verified": false,
+  "physical_strength_verified": false,
+  "cases": [
+    {
+      "variant": "R5",
+      "case": "open_empty",
+      "side": "left",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 14619,
+          "visible_fraction": 0.9949380942608934,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 19428,
+          "visible_fraction": 0.9961910644430718,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_open_empty_left.png"
+    },
+    {
+      "variant": "R5",
+      "case": "open_empty",
+      "side": "right",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 19428,
+          "visible_fraction": 0.9961910644430718,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 14619,
+          "visible_fraction": 0.9949380942608934,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_open_empty_right.png"
+    },
+    {
+      "variant": "compact",
+      "case": "open_empty",
+      "side": "left",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 16416,
+          "visible_fraction": 0.9609527290448343,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 21195,
+          "visible_fraction": 0.9717386175984902,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_open_empty_left.png"
+    },
+    {
+      "variant": "compact",
+      "case": "open_empty",
+      "side": "right",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 21195,
+          "visible_fraction": 0.9686718565699457,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 16416,
+          "visible_fraction": 0.9629020467836257,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_open_empty_right.png"
+    },
+    {
+      "variant": "R5",
+      "case": "mid_empty",
+      "side": "left",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 10481,
+          "visible_fraction": 0.9884553000667875,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 15021,
+          "visible_fraction": 0.9952067106051528,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_mid_empty_left.png"
+    },
+    {
+      "variant": "R5",
+      "case": "mid_empty",
+      "side": "right",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 15021,
+          "visible_fraction": 0.9952067106051528,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 10481,
+          "visible_fraction": 0.9884553000667875,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_mid_empty_right.png"
+    },
+    {
+      "variant": "compact",
+      "case": "mid_empty",
+      "side": "left",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 12347,
+          "visible_fraction": 0.9182797440673848,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 16809,
+          "visible_fraction": 0.9618656672020941,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_mid_empty_left.png"
+    },
+    {
+      "variant": "compact",
+      "case": "mid_empty",
+      "side": "right",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 16809,
+          "visible_fraction": 0.9443155452436195,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 12347,
+          "visible_fraction": 0.9317243054993116,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_mid_empty_right.png"
+    },
+    {
+      "variant": "R5",
+      "case": "closed_empty",
+      "side": "left",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 10491,
+          "visible_fraction": 0.9858926699075398,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 13046,
+          "visible_fraction": 0.9240380193162655,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_closed_empty_left.png"
+    },
+    {
+      "variant": "R5",
+      "case": "closed_empty",
+      "side": "right",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 13046,
+          "visible_fraction": 0.9240380193162655,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 10491,
+          "visible_fraction": 0.9858926699075398,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_closed_empty_right.png"
+    },
+    {
+      "variant": "compact",
+      "case": "closed_empty",
+      "side": "left",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 12290,
+          "visible_fraction": 0.9140764849471115,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 14873,
+          "visible_fraction": 0.8624352854165266,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_closed_empty_left.png"
+    },
+    {
+      "variant": "compact",
+      "case": "closed_empty",
+      "side": "right",
+      "metrics": {
+        "jaw_L": {
+          "projected_pixels": 14873,
+          "visible_fraction": 0.8838835473677134,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 12288,
+          "visible_fraction": 0.8828938802083334,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_closed_empty_right.png"
+    },
+    {
+      "variant": "R5",
+      "case": "cube_10_grasp",
+      "side": "left",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 3221,
+          "visible_fraction": 0.9220738900962434,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 88.23629068493601,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 10342,
+          "visible_fraction": 0.9874298975053181,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 14236,
+          "visible_fraction": 0.9405029502669289,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_cube_10_grasp_left.png"
+    },
+    {
+      "variant": "R5",
+      "case": "cube_10_grasp",
+      "side": "right",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 3221,
+          "visible_fraction": 0.9220738900962434,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 88.23629068493601,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 14236,
+          "visible_fraction": 0.9433829727451531,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 10342,
+          "visible_fraction": 0.9874298975053181,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_cube_10_grasp_right.png"
+    },
+    {
+      "variant": "compact",
+      "case": "cube_10_grasp",
+      "side": "left",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 3471,
+          "visible_fraction": 0.9155862863728033,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 87.7273849431631,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 12155,
+          "visible_fraction": 0.9152612093788565,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 16019,
+          "visible_fraction": 0.870653598851364,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_cube_10_grasp_left.png"
+    },
+    {
+      "variant": "compact",
+      "case": "cube_10_grasp",
+      "side": "right",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 3471,
+          "visible_fraction": 0.9155862863728033,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 87.7273849431631,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 16019,
+          "visible_fraction": 0.893751170485049,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 12155,
+          "visible_fraction": 0.9229946524064171,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_cube_10_grasp_right.png"
+    },
+    {
+      "variant": "R5",
+      "case": "cube_20_grasp",
+      "side": "left",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 13253,
+          "visible_fraction": 1.0,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 81.59166044104926,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 10853,
+          "visible_fraction": 0.9766884732332074,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 15551,
+          "visible_fraction": 0.8472767024628641,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_cube_20_grasp_left.png"
+    },
+    {
+      "variant": "R5",
+      "case": "cube_20_grasp",
+      "side": "right",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 13253,
+          "visible_fraction": 1.0,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 81.59166044104926,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 15551,
+          "visible_fraction": 0.8472767024628641,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 10853,
+          "visible_fraction": 0.9766884732332074,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_cube_20_grasp_right.png"
+    },
+    {
+      "variant": "compact",
+      "case": "cube_20_grasp",
+      "side": "left",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 14281,
+          "visible_fraction": 1.0,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 81.60366058620515,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 12724,
+          "visible_fraction": 0.9089908833700094,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 17335,
+          "visible_fraction": 0.828843380444188,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_cube_20_grasp_left.png"
+    },
+    {
+      "variant": "compact",
+      "case": "cube_20_grasp",
+      "side": "right",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 14281,
+          "visible_fraction": 1.0,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 81.60366058620515,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 17335,
+          "visible_fraction": 0.8084222670897029,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 12724,
+          "visible_fraction": 0.9232159698208111,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_cube_20_grasp_right.png"
+    },
+    {
+      "variant": "R5",
+      "case": "cube_30_grasp",
+      "side": "left",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 31573,
+          "visible_fraction": 1.0,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 74.94703019716252,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 12148,
+          "visible_fraction": 0.8966084952255515,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 16847,
+          "visible_fraction": 0.7016085950020775,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_cube_30_grasp_left.png"
+    },
+    {
+      "variant": "R5",
+      "case": "cube_30_grasp",
+      "side": "right",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 31573,
+          "visible_fraction": 1.0,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 74.94703019716252,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 16847,
+          "visible_fraction": 0.7016085950020775,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 12148,
+          "visible_fraction": 0.8966084952255515,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 71.87637594701572,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/R5_cube_30_grasp_right.png"
+    },
+    {
+      "variant": "compact",
+      "case": "cube_30_grasp",
+      "side": "left",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 34291,
+          "visible_fraction": 0.990930564871249,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 75.47993622924722,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 13981,
+          "visible_fraction": 0.8504398826979472,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 18625,
+          "visible_fraction": 0.6956241610738255,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_cube_30_grasp_left.png"
+    },
+    {
+      "variant": "compact",
+      "case": "cube_30_grasp",
+      "side": "right",
+      "metrics": {
+        "cube": {
+          "projected_pixels": 34291,
+          "visible_fraction": 0.9909888892129131,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 75.47993622924722,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_L": {
+          "projected_pixels": 18625,
+          "visible_fraction": 0.6781744966442953,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        },
+        "jaw_R": {
+          "projected_pixels": 13981,
+          "visible_fraction": 0.8630999213217939,
+          "touches_border": false,
+          "vertex_fraction_in_frame": 1.0,
+          "min_depth_mm": 72.40268691007975,
+          "depth_480p": true,
+          "depth_720p": false
+        }
+      },
+      "image": "images/compact_cube_30_grasp_right.png"
+    }
+  ],
+  "collisions": [
+    {
+      "variant": "R5",
+      "case": "open_empty",
+      "mount_to_arm": [
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "ARM_M05_ref23",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "ARM_M05_ref15",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "ARM_M05_ref25",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "ARM_M05_ref17",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        }
+      ],
+      "within_mount": [
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_0",
+          "volume_mm3": 5.089380098803906,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_1",
+          "volume_mm3": 5.089380098803906,
+          "type": "volume"
+        }
+      ]
+    },
+    {
+      "variant": "compact",
+      "case": "open_empty",
+      "mount_to_arm": [
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "ARM_M05_ref23",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "ARM_M05_ref15",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "ARM_M05_ref25",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "ARM_M05_ref17",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        }
+      ],
+      "within_mount": [
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_0",
+          "volume_mm3": 5.089380098868464,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_1",
+          "volume_mm3": 5.089380098868464,
+          "type": "volume"
+        }
+      ]
+    },
+    {
+      "variant": "R5",
+      "case": "mid_empty",
+      "mount_to_arm": [
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "ARM_M05_ref23",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "ARM_M05_ref15",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "ARM_M05_ref25",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "ARM_M05_ref17",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        }
+      ],
+      "within_mount": [
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_0",
+          "volume_mm3": 5.089380098803906,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_1",
+          "volume_mm3": 5.089380098803906,
+          "type": "volume"
+        }
+      ]
+    },
+    {
+      "variant": "compact",
+      "case": "mid_empty",
+      "mount_to_arm": [
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "ARM_M05_ref23",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "ARM_M05_ref15",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "ARM_M05_ref25",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "ARM_M05_ref17",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        }
+      ],
+      "within_mount": [
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_0",
+          "volume_mm3": 5.089380098868464,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_1",
+          "volume_mm3": 5.089380098868464,
+          "type": "volume"
+        }
+      ]
+    },
+    {
+      "variant": "R5",
+      "case": "closed_empty",
+      "mount_to_arm": [
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "ARM_M05_ref23",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "ARM_M05_ref15",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "ARM_M05_ref25",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "ARM_M05_ref17",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        }
+      ],
+      "within_mount": [
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_0",
+          "volume_mm3": 5.089380098803906,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_1",
+          "volume_mm3": 5.089380098803906,
+          "type": "volume"
+        }
+      ]
+    },
+    {
+      "variant": "compact",
+      "case": "closed_empty",
+      "mount_to_arm": [
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "ARM_M05_ref23",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_0",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "ARM_M05_ref15",
+          "gap_mm": 0.833090417606204,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_1",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.47388973810113,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "ARM_M05_ref25",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_2",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "ARM_M05_ref17",
+          "gap_mm": 0.8330904176062067,
+          "type": "surface_bbox_unresolved"
+        },
+        {
+          "a": "CAM5_BASE_TAP_3",
+          "b": "PG3_XL430_fixed",
+          "volume_mm3": 4.473889738101132,
+          "type": "volume"
+        }
+      ],
+      "within_mount": [
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_0",
+          "volume_mm3": 5.089380098868464,
+          "type": "volume"
+        },
+        {
+          "a": "CAM5_D405_BODY",
+          "b": "CAM5_D405_SCREW_1",
+          "volume_mm3": 5.089380098868464,
+          "type": "volume"
+        }
+      ]
+    }
+  ],
+  "mount_sweep": {
+    "R5": {
+      "free_interval_deg": [
+        -168,
+        110
+      ],
+      "negative_stop": {
+        "deg": -170,
+        "first_hit": {
+          "moving": "CAM5_D405_BODY",
+          "upstream": "ARM_P02_yaw_carrier",
+          "status": "collision_or_gap_below_0.3mm",
+          "volume_mm3": 56.85093700435536
+        }
+      },
+      "positive_stop": {
+        "deg": 112,
+        "first_hit": {
+          "moving": "CAM5_D405_CARRIER",
+          "upstream": "ARM_M03_ref00",
+          "status": "collision_or_gap_below_0.3mm",
+          "volume_mm3": 280.36104035273297
+        }
+      },
+      "hits_at_zero": [],
+      "combined_with_unchanged_arm_interval_deg": [
+        -138.0,
+        110
+      ]
+    },
+    "compact": {
+      "free_interval_deg": [
+        -174,
+        106
+      ],
+      "negative_stop": {
+        "deg": -176,
+        "first_hit": {
+          "moving": "CAM5_D405_BODY",
+          "upstream": "ARM_M02_ref00",
+          "status": "collision_or_gap_below_0.3mm",
+          "volume_mm3": 1.053483611345272
+        }
+      },
+      "positive_stop": {
+        "deg": 108,
+        "first_hit": {
+          "moving": "CAM5_D405_CARRIER",
+          "upstream": "ARM_M03_ref00",
+          "status": "collision_or_gap_below_0.3mm",
+          "volume_mm3": 388.4089474879785
+        }
+      },
+      "hits_at_zero": [],
+      "combined_with_unchanged_arm_interval_deg": [
+        -138.0,
+        106
+      ]
+    }
+  },
+  "sweep_step_deg": 2,
+  "continuous_proof": false,
+  "retained_arm_sweep_evidence": "./outputs/camera-mount-id5-overhead-d405-r5/reports/id4_sweep.json",
+  "limitations": [
+    "whole arm mass and material unknown",
+    "nominal fastener envelopes",
+    "no physical fatigue/creep/pullout tests",
+    "free cable omitted except stub",
+    "surface-only bounding-box overlap is unresolved, never declared clear by zero volume"
+  ],
+  "beam_sensitivity": {
+    "model": "illustrative equal-section cantilever only; height is proxy length, not FEA",
+    "width_mm": 16,
+    "height_mm": 8,
+    "load_N": 0.5687857,
+    "rows": [
+      {
+        "E_MPa": 500,
+        "R5_stress_deflection": [
+          0.30723015173249874,
+          0.43515134467172484
+        ],
+        "compact_stress_deflection": [
+          0.27561824223283987,
+          0.31417577844891725
+        ]
+      },
+      {
+        "E_MPa": 1000,
+        "R5_stress_deflection": [
+          0.30723015173249874,
+          0.21757567233586242
+        ],
+        "compact_stress_deflection": [
+          0.27561824223283987,
+          0.15708788922445863
+        ]
+      },
+      {
+        "E_MPa": 3000,
+        "R5_stress_deflection": [
+          0.30723015173249874,
+          0.07252522411195414
+        ],
+        "compact_stress_deflection": [
+          0.27561824223283987,
+          0.05236262974148621
+        ]
+      }
+    ]
+  },
+  "rejected_side_example": {
+    "id": "S_x40_y170_z240",
+    "own_mount_in_scene": false,
+    "images": [
+      {
+        "side": "left",
+        "path": "images/rejected_side_cube10_left.png",
+        "metrics": {
+          "cube": {
+            "projected_pixels": 3684,
+            "visible_fraction": 0.2983170466883822,
+            "touches_border": false
+          },
+          "jaw_L": {
+            "projected_pixels": 17772,
+            "visible_fraction": 0.4769862705379248,
+            "touches_border": false
+          },
+          "jaw_R": {
+            "projected_pixels": 16729,
+            "visible_fraction": 0.5000298882180645,
+            "touches_border": false
+          }
+        }
+      },
+      {
+        "side": "right",
+        "path": "images/rejected_side_cube10_right.png",
+        "metrics": {
+          "cube": {
+            "projected_pixels": 3709,
+            "visible_fraction": 0.09490428686977621,
+            "touches_border": false
+          },
+          "jaw_L": {
+            "projected_pixels": 19328,
+            "visible_fraction": 0.5970612582781457,
+            "touches_border": false
+          },
+          "jaw_R": {
+            "projected_pixels": 18158,
+            "visible_fraction": 0.6979843595109594,
+            "touches_border": false
+          }
+        }
+      }
+    ]
+  },
+  "source_sha256": "5a60d93b5feef6957bef5a0a732fd26d3b147f1e7e39917eb87cf5d28943dbf1",
+  "candidate_sha256": "f7cd3b6d61363c328c9a26cd582d2eff2893cbee408143b11e9178c99498c065",
+  "adjudication": {
+    "new_volume_collision_pairs": 0,
+    "inherited_volume_pairs_per_pose": 6,
+    "inherited_surface_bbox_unresolved_per_pose": 4,
+    "candidate_status": "comparative CAD candidate, not fabrication/strength approved",
+    "wrist_tradeoff_deg": 4,
+    "full_arm_mass_known": false,
+    "stereo_depth_real_test": false,
+    "old_arm_sweep_sha256": "3edb4bc5e4d8cfa53a01fcd27496cbd4492720938ed6b4d8dac4c01c8d2e7182"
+  }
+}

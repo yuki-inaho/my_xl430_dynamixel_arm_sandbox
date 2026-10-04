@@ -1,0 +1,89 @@
+{
+  "kernel": "8.0.1",
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "input_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+  "reader_sha256": "7fd878724ebc54c1f36d33f5ed5dee7b98a7bc1ec3113a0d2f22a3238cc834b4",
+  "script_sha256": "66d9a3583e10305236ce3a4af44c8fe45529bb38ae9334aa340581ea10157c0c",
+  "tolerance_mm3": 0.0001,
+  "no_healing_or_tolerance_change": true,
+  "scope": "Ten selected input controls; not a motion scan",
+  "records": [
+    {
+      "name": "M01_ref00",
+      "input_valid": true,
+      "expected_mm3": 41065.05839762165,
+      "common_valid": true,
+      "common_mm3": 53.06927781146441,
+      "passed": false
+    },
+    {
+      "name": "M01_ref02",
+      "input_valid": true,
+      "expected_mm3": 72.63104913907377,
+      "common_valid": true,
+      "common_mm3": 0.0,
+      "passed": false
+    },
+    {
+      "name": "M01_ref07",
+      "input_valid": true,
+      "expected_mm3": 672.7636183976966,
+      "passed": false,
+      "error": "invalid solid volume"
+    },
+    {
+      "name": "M01_ref08",
+      "input_valid": true,
+      "expected_mm3": 207.15648869063,
+      "passed": false,
+      "error": "invalid solid volume"
+    },
+    {
+      "name": "M01_ref10",
+      "input_valid": true,
+      "expected_mm3": 39.290521518046404,
+      "common_valid": false,
+      "common_mm3": 1.636246173744684,
+      "passed": false
+    },
+    {
+      "name": "P01_base",
+      "input_valid": true,
+      "expected_mm3": 21597.641374278894,
+      "passed": false,
+      "error": "invalid solid volume"
+    },
+    {
+      "name": "P02_yaw_carrier",
+      "input_valid": true,
+      "expected_mm3": 6744.920701881757,
+      "passed": false,
+      "error": "invalid solid volume"
+    },
+    {
+      "name": "P03_shoulder_XL430",
+      "input_valid": true,
+      "expected_mm3": 35199.15349534208,
+      "passed": false,
+      "error": "invalid solid volume"
+    },
+    {
+      "name": "P04_extension_XL430",
+      "input_valid": true,
+      "expected_mm3": 19357.76834843852,
+      "common_valid": true,
+      "common_mm3": 19357.76834843852,
+      "passed": true
+    },
+    {
+      "name": "P05_wrist_XL430",
+      "input_valid": true,
+      "expected_mm3": 22757.436053699945,
+      "common_valid": true,
+      "common_mm3": 22757.436053699945,
+      "passed": true
+    }
+  ],
+  "all_passed": false,
+  "elapsed_seconds": 13.353180324000277
+}

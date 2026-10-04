@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-04T11:00:48.405308+09:00",
+  "code_hashes": {
+    "src/arm_observer/id3_motion.py": "9dd39aca0827f224af15b935669bb8ca10a2504b5ab3923fab2f04fac078417a",
+    "src/arm_observer/id3_direction.py": "215f7301ceecc436a9f93ad9aca3eb2e369ef7b132074011b194558408e894e4",
+    "src/arm_observer/motion_guard.py": "3d731de2e405f7fc97fd98d43d574d1e82aca9e43607543959916800ae43f58b",
+    "src/arm_observer/bus.py": "8e860d39067205d3c1ef1516d584802f376284d7542c46ee4efcacd6cb346eea",
+    "src/arm_observer/reader.py": "ce9328d45cd6158d923d3e71becb4378c4910cbbea31b34c1b5f055d4cc73635",
+    "config/arm.toml": "e2e3129255d2295856a78a2a016facc2537c31b48599999817b4c871d129d500",
+    "docs/id3_motion_spec.md": "0699a3cc2649ac503c01dd26620597bc830b733698cb4b1169f517099b7c7ee2"
+  },
+  "gate_report": "reports/robot-completion-20261004/repair-gates.json",
+  "direction_evidence": "reports/robot-completion-20261004/id3-direction-current.json",
+  "authorization": "User ID3 elbow-opening instruction; original workdoc D1/D2 support/output-off; current goal explicitly through hardware DoD",
+  "start": "Current 100-frame all-OFF stable READ and new dry run"
+}

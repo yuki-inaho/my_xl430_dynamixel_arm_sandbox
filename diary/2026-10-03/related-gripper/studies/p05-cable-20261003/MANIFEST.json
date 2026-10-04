@@ -1,0 +1,33 @@
+{
+  "source_sha256": "9f58c947753e9229b30939da23ce4c87c1cc85eeb39372518de4ffb98991b93f",
+  "physical_assembly_verified": false,
+  "fabrication_approved": false,
+  "sha256": {
+    ".gitattributes": "2330b6872eadc6527755fdaebb498a865aec9ae6ab5d5b091f7bb0a1e3fa5338",
+    "CAD/P05_CABLE_CLEARANCE_CANDIDATE.step": "1dd40167830d3f7040db6efb58a5b3e6b213648acc43c1ee8fec4a12780ae4ab",
+    "CAD/P05_CABLE_CLEARANCE_CANDIDATE.stl": "da5f34d1c3d9665ee065c087aabec7284b407cedbdf2b1a3398d9dd2b88bbec5",
+    "CAD/V2_P05_CABLE_CLEARANCE_CANDIDATE.step": "8833b4ab59d6defea7d1dd9c76297bdaa257993c15503d4f4adfe67494e11cab",
+    "README.md": "a6f7103e21f9dc9eeb050bbc387f3e29ecea68fc287344d10f7c017a8703b62f",
+    "WORKLOG.md": "666574c770870144f5c022036b1c8829bb9352b3b4418d29906fbd0b94958b7f",
+    "evidence/browser-gripper-view-20261003.json": "b682fcfce3495f8c0906ad7361736b661665da93e5f570ebd42b376c3c6c0ec1",
+    "evidence/browser-p05-cable-check-20261003.json": "c056c6ababd1fcaf7ffd5c061164783772520aed8c49039e675c6a3638d627f6",
+    "evidence/contacts.json": "bd56423518f18522eaab9d15c048d21ae65f1f0f4c39466f2f43fc93f4f23f58",
+    "evidence/final-verification.json": "90d9145d03940c2ad8c5dfca084f3e75993bda5d7cf93713e6df001a5d4483d4",
+    "evidence/plug-with-motor-diagnostic.json": "1a520c7ccd053c627da981972a33d7df165fce34e7e7e893e4934bd7f8dcaeda",
+    "evidence/review.json": "f202500e5d40756166ca7b3d44a9089f3b2785840c16031d79fc73fd06e3ec5e",
+    "evidence/unchanged-occurrences.json": "a8f0ea0bd710b6816072254b589ee9179a11e4994dd1c37b9aab5c13d90cd08e",
+    "images/view-motor-left.png": "2da024b49f3c9dbf3db0142e9a0388e1b245bd92359879089862537cc38252db",
+    "images/view-motor-right.png": "f5633836c442b65a34d179cb670def05d4028e46c010e5dfe280b3175fa59e13",
+    "images/view-oblique.png": "f07df9a52c84d2fab8804333ef365dcc927109561c7018b550424f4da7d60bce",
+    "images/view-support.png": "df522ac5a48ace7841dbc6302d7a6d695eb261e2ba969cdce0aed5608df7f73d",
+    "images/view-y.png": "78a252d6142ea7d6103312940c2bc4c9dda92aeb78846b22cbaeb837f70e4534",
+    "images/view-z.png": "782b183d3b21dc09700a30b45bee8f2ffb44584fbf3b532ff58af0ac306efa10"
+  },
+  "generation_run": "outputs/p05-cable-clearance-20261003-r3",
+  "code_sha256": {
+    "gripper_design/p05_cable_clearance.py": "1bca2a4c195586cd6aeee3040c78283db0ea2d437a6eeac5a1b8ed52a8faf541",
+    "scripts/review_p05_cable_clearance.py": "d25f133c3542fb7d70573736f899fd44c9a0f51b0a40941ab5e1e7aa2d3e3530",
+    "tests/test_p05_cable_clearance.py": "8a0e128c63a6dca35347ab028c61d53a5e33aabf17096a0b3d2f3873c2a793f1",
+    "uv.lock": "8617682db97d453c5aa84f2e3c4705f9fc0284be5e4f04eaea66f268bd62e3c0"
+  }
+}

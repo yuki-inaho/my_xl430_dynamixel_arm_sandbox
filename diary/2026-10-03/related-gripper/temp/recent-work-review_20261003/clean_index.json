@@ -1,0 +1,168 @@
+{
+  "window_jst": [
+    "2026-09-03T00:00:00+09:00",
+    "2026-10-04T00:00:00+09:00"
+  ],
+  "records": [
+    {
+      "source": "/home/inaho-omen/.codex/sessions/2026/06/12/rollout-2026-06-12T10-55-50-019eb98a-eff0-7bb1-ab4b-d49bed4e487a.jsonl",
+      "status": "compacted",
+      "clean_json": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/recent-work-review_20261003/codex_019eb98a-eff0-7bb1-ab4b-d49bed4e487a_clean.json",
+      "events": 15011,
+      "first": "2026-09-21T08:39:33.635Z",
+      "last": "2026-09-24T05:57:54.934Z",
+      "kinds": {
+        "turn_start": 145,
+        "api_developer": 20,
+        "api_user": 213,
+        "item_completed": 2246,
+        "reasoning": 4257,
+        "api_assistant": 979,
+        "custom_tool_call": 3449,
+        "custom_tool_call_output": 3449,
+        "compacted": 39,
+        "turn_end": 122,
+        "turn_aborted": 23,
+        "goal": 9,
+        "tool_call": 30,
+        "tool_output": 30
+      },
+      "supplemental_events": 6898
+    },
+    {
+      "source": "/home/inaho-omen/.codex/sessions/2026/09/26/rollout-2026-09-26T08-40-46-01a0daf1-5d94-73c2-803c-b221022d8efd.jsonl",
+      "status": "excluded_unrelated_task",
+      "reason": "statusline-only copied session"
+    },
+    {
+      "source": "/home/inaho-omen/.codex/sessions/2026/09/26/rollout-2026-09-26T08-40-46-01a0daf1-5f35-77d3-8bde-8c2083f4a7e2.jsonl",
+      "status": "compacted",
+      "clean_json": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/recent-work-review_20261003/codex_01a0daf1-5f35-77d3-8bde-8c2083f4a7e2_clean.json",
+      "events": 3452,
+      "first": "2026-09-25T23:40:46.780Z",
+      "last": "2026-09-26T12:45:04.227Z",
+      "kinds": {
+        "turn_start": 57,
+        "item_completed": 1280,
+        "api_user": 65,
+        "turn_end": 56,
+        "api_assistant": 1178,
+        "goal": 2,
+        "compacted": 5,
+        "api_developer": 9,
+        "custom_tool_call": 188,
+        "custom_tool_call_output": 188,
+        "reasoning": 421,
+        "tool_call": 1,
+        "tool_output": 1,
+        "turn_aborted": 1
+      },
+      "supplemental_events": 376
+    },
+    {
+      "source": "/home/inaho-omen/.codex/sessions/2026/09/26/rollout-2026-09-26T09-00-03-01a0db03-03f0-7ee2-86eb-190be07bc5a6.jsonl",
+      "status": "compacted",
+      "clean_json": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/recent-work-review_20261003/codex_01a0db03-03f0-7ee2-86eb-190be07bc5a6_clean.json",
+      "events": 8832,
+      "first": "2026-09-26T00:00:04.152Z",
+      "last": "2026-09-30T03:41:09.907Z",
+      "kinds": {
+        "turn_start": 7,
+        "api_developer": 10,
+        "api_user": 27,
+        "item_completed": 3523,
+        "api_assistant": 542,
+        "custom_tool_call": 1016,
+        "command_execution_detail": 1647,
+        "custom_tool_call_output": 1016,
+        "reasoning": 1007,
+        "turn_end": 7,
+        "tool_call": 10,
+        "tool_output": 10,
+        "compacted": 10
+      },
+      "supplemental_events": 3679
+    },
+    {
+      "source": "/home/inaho-omen/.codex/sessions/2026/10/03/rollout-2026-10-03T15-29-29-01a10074-144c-7533-9b62-356427e7f92a.jsonl",
+      "status": "excluded_current_audit_session"
+    },
+    {
+      "source": "/home/inaho-omen/.claude/projects/-home-inaho-omen-Project-low-cost-robot/0b891917-c2aa-4eef-9022-6e2c4183202a.jsonl",
+      "status": "compacted",
+      "clean_json": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/recent-work-review_20261003/claude_code_0b891917-c2aa-4eef-9022-6e2c4183202a_clean.json",
+      "events": 1387,
+      "first": "2026-09-24T05:49:07.837Z",
+      "last": "2026-09-25T10:49:16.642Z",
+      "kinds": {
+        "user": 58,
+        "tool_call": 500,
+        "tool_output": 500,
+        "assistant": 135,
+        "thinking": 194
+      },
+      "supplemental_events": 0
+    },
+    {
+      "source": "/home/inaho-omen/.claude/projects/-home-inaho-omen-Project-low-cost-robot/cdf03f2c-582c-47dd-acbc-447d91220865.jsonl",
+      "status": "excluded_unrelated_task",
+      "reason": "Claude statusline configuration"
+    },
+    {
+      "source": "/home/inaho-omen/.codex/sessions/2026/05/27/rollout-2026-05-27T16-53-57-019e686d-0cbb-7f52-9c53-33bd5b53573d.jsonl",
+      "status": "compacted",
+      "clean_json": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/recent-work-review_20261003/codex_019e686d-0cbb-7f52-9c53-33bd5b53573d_clean.json",
+      "events": 1337,
+      "first": "2026-09-18T13:19:50.299Z",
+      "last": "2026-09-19T04:05:29.309Z",
+      "kinds": {
+        "turn_start": 12,
+        "api_developer": 11,
+        "api_user": 21,
+        "item_completed": 151,
+        "reasoning": 362,
+        "api_assistant": 92,
+        "tool_call": 34,
+        "tool_output": 34,
+        "turn_end": 9,
+        "compacted": 4,
+        "custom_tool_call": 302,
+        "custom_tool_call_output": 302,
+        "turn_aborted": 3
+      },
+      "supplemental_events": 604
+    },
+    {
+      "source": "/home/inaho-omen/.codex/sessions/2026/09/05/rollout-2026-09-05T16-44-16-01a07086-7984-79b3-bb84-2266cf6fa1ce.jsonl",
+      "status": "excluded_unrelated_task",
+      "reason": "KiCad task only mentioning low_cost_robot as a CAD-tool reference"
+    },
+    {
+      "source_session_id": "ses_f48290b12fferauv0CBfrZC3SD",
+      "status": "sqlite_read_only_export",
+      "clean_json": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/recent-work-review_20261003/opencode_ses_f48290b12fferauv0CBfrZC3SD_clean.json",
+      "events": 330,
+      "first": "2026-09-19T04:05:13.172000+00:00",
+      "last": "2026-09-19T10:32:19.267000+00:00"
+    },
+    {
+      "source_session_id": "ses_f2e8a0ee0ffeoHSAZsNimlOM6X",
+      "status": "excluded_unrelated_ssd_task",
+      "title": "500GB SSDの接続確認"
+    },
+    {
+      "source_session_id": "ses_f230d9c31ffeosnKOd9eGp9t4V",
+      "status": "sqlite_read_only_export",
+      "clean_json": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/recent-work-review_20261003/opencode_ses_f230d9c31ffeosnKOd9eGp9t4V_clean.json",
+      "events": 458,
+      "first": "2026-09-26T09:01:07.941000+00:00",
+      "last": "2026-09-26T12:44:21.082000+00:00"
+    },
+    {
+      "source": "/home/inaho-omen/Project/low_cost_robot/temp/session_extracts/2026-09-19_low_cost_robot_cad_activity/clean.json",
+      "status": "retained_existing_snapshot",
+      "clean_json": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/temp/recent-work-review_20261003/codex_saved_20260919_cad_activity_clean.json",
+      "events": 80
+    }
+  ]
+}

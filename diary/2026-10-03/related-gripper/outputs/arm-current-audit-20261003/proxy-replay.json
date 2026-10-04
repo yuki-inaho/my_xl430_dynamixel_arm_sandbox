@@ -1,0 +1,106 @@
+{
+  "model": "temp/sim_xl430proxy/scene_xl430proxy.xml",
+  "n_poses": 4,
+  "n_ok": 3,
+  "worst_self_interference_mm": 7.551,
+  "worst_track_err_rad": 0.082,
+  "thresholds": {
+    "penetration_mm": 2.0,
+    "tracking_rad": 0.2
+  },
+  "poses": [
+    {
+      "target": [
+        0,
+        0,
+        0,
+        0,
+        -1.209
+      ],
+      "finite": true,
+      "max_track_err_rad": 0.0038,
+      "reachable": true,
+      "self_interference_mm": 0.0,
+      "self_pair": null,
+      "no_self_collision": true,
+      "ok": true
+    },
+    {
+      "target": [
+        0,
+        0,
+        0.9425,
+        -0.9425,
+        -1.209
+      ],
+      "finite": true,
+      "max_track_err_rad": 0.01,
+      "reachable": true,
+      "self_interference_mm": 0.0,
+      "self_pair": null,
+      "no_self_collision": true,
+      "ok": true
+    },
+    {
+      "target": [
+        0,
+        0,
+        -0.9425,
+        -0.9425,
+        -1.209
+      ],
+      "finite": true,
+      "max_track_err_rad": 0.082,
+      "reachable": true,
+      "self_interference_mm": 7.551,
+      "self_pair": [
+        "xl430proxy_joint4",
+        "joint2"
+      ],
+      "no_self_collision": false,
+      "ok": false
+    },
+    {
+      "target": [
+        0,
+        0,
+        -0.9425,
+        0,
+        -1.209
+      ],
+      "finite": true,
+      "max_track_err_rad": 0.0248,
+      "reachable": true,
+      "self_interference_mm": 1.474,
+      "self_pair": [
+        "xl430proxy_joint4",
+        "joint2"
+      ],
+      "no_self_collision": true,
+      "ok": true
+    }
+  ],
+  "targets_ok": [
+    [
+      0,
+      0,
+      0,
+      0,
+      -1.209
+    ],
+    [
+      0,
+      0,
+      0.9425,
+      -0.9425,
+      -1.209
+    ],
+    [
+      0,
+      0,
+      -0.9425,
+      0,
+      -1.209
+    ]
+  ]
+}

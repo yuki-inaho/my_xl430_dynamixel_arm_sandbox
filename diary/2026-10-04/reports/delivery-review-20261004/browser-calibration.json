@@ -1,0 +1,323 @@
+{
+  "unconfirmed": "関節対応と基準角を校正する現物でIDを確認し、表示したCADのJ1〜J4が0°になる基準姿勢のカウント値と回転方向を入力します。任意の姿勢を0°として登録しないでください。CAD関節実機ID基準count方向J1選択+1−1J2選択+1−1J3選択+1−1J4選択+1−1PG3選択+1−1PG3の基準機構角 θ（25〜135°）基準のCAD姿勢を表示 現物のIDと関節の対応を確認した 現物が基準CAD姿勢と一致すると確認した一致を確認した現在値を取り込む 各関節の正負方向を現物で確認した この校正値を姿勢表示へ適用する校正を保存してlive表示未校正現物の対応・基準・方向と適用を確認してください校正JSONを保存保存済み校正を読み込む（確認し直して適用）",
+  "known": {
+    "angles": [
+      11.25,
+      5.625,
+      0,
+      0
+    ],
+    "theta": 101.25,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 225,
+    "elevation": -20,
+    "distance": 0.23,
+    "focus": "gripper",
+    "source": "telemetry",
+    "frame_seq": 4232,
+    "render_fps": 20,
+    "frame_time": 1791072638.1183805,
+    "error": null,
+    "telemetry": {
+      "configured": true,
+      "status": "READ live・校正済み",
+      "motors": [
+        {
+          "motor_id": 1,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "position_counts": 936,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": true,
+      "can_render": true,
+      "session_id": "delivery-review-synthetic",
+      "state": "running",
+      "port_closed": false,
+      "summary": null,
+      "calibration_invalid": false,
+      "simulated": true,
+      "sequence": 4057,
+      "age_seconds": 0.0127716064453125,
+      "angles": [
+        11.25,
+        5.625,
+        0,
+        0
+      ],
+      "theta": 101.25
+    },
+    "live_available": true,
+    "direction_observation": {
+      "before": null,
+      "result": null,
+      "saved_path": null
+    },
+    "calibration": {
+      "verified": true,
+      "status": "試験用校正",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/delivery-review-20261004/calibration-test/calibration_20261004T091038032345.json"
+    },
+    "gap_mm": 10.91,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 4232
+  },
+  "changed": {
+    "angles": [
+      11.25,
+      5.625,
+      0,
+      0
+    ],
+    "theta": 101.25,
+    "variant": "r5_65",
+    "gripper": true,
+    "camera": true,
+    "animate": false,
+    "azimuth": 225,
+    "elevation": -20,
+    "distance": 0.23,
+    "focus": "gripper",
+    "source": "telemetry",
+    "frame_seq": 4236,
+    "render_fps": 20,
+    "frame_time": 1791072638.3187628,
+    "error": null,
+    "telemetry": {
+      "configured": true,
+      "status": "READ live・校正済み",
+      "motors": [
+        {
+          "motor_id": 1,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 2,
+          "position_counts": 936,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 3,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 4,
+          "position_counts": 1000,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        },
+        {
+          "motor_id": 5,
+          "position_counts": 1128,
+          "torque_enabled": false,
+          "hardware_error": 0,
+          "device_alert": false,
+          "faults": []
+        }
+      ],
+      "fresh": true,
+      "can_render": true,
+      "session_id": "delivery-review-synthetic",
+      "state": "running",
+      "port_closed": false,
+      "summary": null,
+      "calibration_invalid": false,
+      "simulated": false,
+      "sequence": 4061,
+      "age_seconds": 0.0016827583312988281,
+      "angles": [
+        11.25,
+        5.625,
+        0,
+        0
+      ],
+      "theta": 101.25
+    },
+    "live_available": true,
+    "direction_observation": {
+      "before": null,
+      "result": null,
+      "saved_path": null
+    },
+    "calibration": {
+      "verified": true,
+      "status": "試験用校正",
+      "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+      "saved_path": "/home/inaho-omen/Project/3d-printed-dynamixel-gripper/outputs/delivery-review-20261004/calibration-test/calibration_20261004T091038032345.json"
+    },
+    "gap_mm": 10.91,
+    "mujoco_version": "3.13.0",
+    "model_geoms": 65,
+    "displayed_frame_seq": 4236
+  },
+  "badge": "実機READ · 校正済み",
+  "calibration": {
+    "physical_order_verified": true,
+    "baseline_verified": true,
+    "directions_verified": true,
+    "calibration_verified": true,
+    "cad_sha256": "3274fab5106793de65f86bb3391a660ff6d09eb55a9d8166e072e9d1bd4625cb",
+    "joints": [
+      {
+        "role": "J1",
+        "motor_id": 1,
+        "zero_count": 1000,
+        "sign": 1
+      },
+      {
+        "role": "J2",
+        "motor_id": 2,
+        "zero_count": 1000,
+        "sign": -1
+      },
+      {
+        "role": "J3",
+        "motor_id": 3,
+        "zero_count": 1000,
+        "sign": 1
+      },
+      {
+        "role": "J4",
+        "motor_id": 4,
+        "zero_count": 1000,
+        "sign": -1
+      },
+      {
+        "role": "PG3",
+        "motor_id": 5,
+        "zero_count": 1000,
+        "sign": 1,
+        "theta_at_zero_deg": 90
+      }
+    ],
+    "context": {
+      "session_id": "delivery-review-synthetic",
+      "model_signature": "519e1e4549758abed981c90da0793dba758343c0a88200f12bbdd60b3c5786a4",
+      "motors": [
+        {
+          "motor_id": 1,
+          "model": 1060,
+          "firmware": 43,
+          "registers": {
+            "id": 1,
+            "baud_rate": 3,
+            "protocol_type": 2,
+            "operating_mode": 3,
+            "drive_mode": 0,
+            "homing_offset": 0
+          },
+          "torque_enabled": false
+        },
+        {
+          "motor_id": 2,
+          "model": 1060,
+          "firmware": 43,
+          "registers": {
+            "id": 2,
+            "baud_rate": 3,
+            "protocol_type": 2,
+            "operating_mode": 3,
+            "drive_mode": 0,
+            "homing_offset": 0
+          },
+          "torque_enabled": false
+        },
+        {
+          "motor_id": 3,
+          "model": 1060,
+          "firmware": 43,
+          "registers": {
+            "id": 3,
+            "baud_rate": 3,
+            "protocol_type": 2,
+            "operating_mode": 3,
+            "drive_mode": 0,
+            "homing_offset": 0
+          },
+          "torque_enabled": false
+        },
+        {
+          "motor_id": 4,
+          "model": 1060,
+          "firmware": 43,
+          "registers": {
+            "id": 4,
+            "baud_rate": 3,
+            "protocol_type": 2,
+            "operating_mode": 3,
+            "drive_mode": 0,
+            "homing_offset": 0
+          },
+          "torque_enabled": false
+        },
+        {
+          "motor_id": 5,
+          "model": 1060,
+          "firmware": 43,
+          "registers": {
+            "id": 5,
+            "baud_rate": 3,
+            "protocol_type": 2,
+            "operating_mode": 3,
+            "drive_mode": 0,
+            "homing_offset": 0
+          },
+          "torque_enabled": false
+        }
+      ]
+    },
+    "simulated": true
+  }
+}

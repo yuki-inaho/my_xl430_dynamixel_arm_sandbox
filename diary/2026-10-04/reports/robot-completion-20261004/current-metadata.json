@@ -1,0 +1,2346 @@
+{
+  "metadata": [
+    {
+      "motor_id": 1,
+      "identity": {
+        "motor_id": 1,
+        "model_number": 1060,
+        "firmware_version": 43,
+        "observed_at": "2026-10-04T10:54:03.377+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "proposed_role": "base_rotation",
+      "registers": [
+        {
+          "name": "model_number",
+          "address": 0,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 1060,
+          "value": 1060,
+          "device_alert": false
+        },
+        {
+          "name": "model_information",
+          "address": 2,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "firmware_version",
+          "address": 6,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 43,
+          "value": 43,
+          "device_alert": false
+        },
+        {
+          "name": "id",
+          "address": 7,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 1,
+          "value": 1,
+          "device_alert": false
+        },
+        {
+          "name": "baud_rate",
+          "address": 8,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "return_delay_time",
+          "address": 9,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 250,
+          "value": 250,
+          "device_alert": false
+        },
+        {
+          "name": "drive_mode",
+          "address": 10,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "operating_mode",
+          "address": 11,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "secondary_id",
+          "address": 12,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 255,
+          "value": 255,
+          "device_alert": false
+        },
+        {
+          "name": "protocol_type",
+          "address": 13,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "homing_offset",
+          "address": 20,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_threshold",
+          "address": 24,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 10,
+          "value": 10,
+          "device_alert": false
+        },
+        {
+          "name": "temperature_limit",
+          "address": 31,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 72,
+          "value": 72,
+          "device_alert": false
+        },
+        {
+          "name": "max_voltage_limit",
+          "address": 32,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 140,
+          "value": 140,
+          "device_alert": false
+        },
+        {
+          "name": "min_voltage_limit",
+          "address": 34,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 60,
+          "value": 60,
+          "device_alert": false
+        },
+        {
+          "name": "pwm_limit",
+          "address": 36,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_limit",
+          "address": 44,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "max_position_limit",
+          "address": 48,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 4095,
+          "value": 4095,
+          "device_alert": false
+        },
+        {
+          "name": "min_position_limit",
+          "address": 52,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "shutdown",
+          "address": 63,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 52,
+          "value": 52,
+          "device_alert": false
+        },
+        {
+          "name": "torque_enable",
+          "address": 64,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "led",
+          "address": 65,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "status_return_level",
+          "address": 68,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "registered_instruction",
+          "address": 69,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "hardware_error_status",
+          "address": 70,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_i_gain",
+          "address": 76,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 1000,
+          "value": 1000,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_p_gain",
+          "address": 78,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 100,
+          "value": 100,
+          "device_alert": false
+        },
+        {
+          "name": "position_d_gain",
+          "address": 80,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 3600,
+          "value": 3600,
+          "device_alert": false
+        },
+        {
+          "name": "position_i_gain",
+          "address": 82,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_p_gain",
+          "address": 84,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 640,
+          "value": 640,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_2nd_gain",
+          "address": 88,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_1st_gain",
+          "address": 90,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "bus_watchdog",
+          "address": 98,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_pwm",
+          "address": 100,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "goal_velocity",
+          "address": 104,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "profile_acceleration",
+          "address": 108,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "profile_velocity",
+          "address": 112,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_position",
+          "address": 116,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2062,
+          "value": 2062,
+          "device_alert": false
+        },
+        {
+          "name": "realtime_tick",
+          "address": 120,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 4405,
+          "value": 4405,
+          "device_alert": false
+        },
+        {
+          "name": "moving",
+          "address": 122,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_status",
+          "address": 123,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 1,
+          "value": 1,
+          "device_alert": false
+        },
+        {
+          "name": "present_pwm",
+          "address": 124,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_load",
+          "address": 126,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_velocity",
+          "address": 128,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_position",
+          "address": 132,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2062,
+          "value": 2062,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_trajectory",
+          "address": 136,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_trajectory",
+          "address": 140,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2062,
+          "value": 2062,
+          "device_alert": false
+        },
+        {
+          "name": "present_input_voltage",
+          "address": 144,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 91,
+          "value": 91,
+          "device_alert": false
+        },
+        {
+          "name": "present_temperature",
+          "address": 146,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 36,
+          "value": 36,
+          "device_alert": false
+        }
+      ],
+      "faults": [],
+      "skipped_registers": [
+        "startup_configuration",
+        "backup_ready"
+      ]
+    },
+    {
+      "motor_id": 2,
+      "identity": {
+        "motor_id": 2,
+        "model_number": 1060,
+        "firmware_version": 42,
+        "observed_at": "2026-10-04T10:54:04.192+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "proposed_role": "shoulder",
+      "registers": [
+        {
+          "name": "model_number",
+          "address": 0,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 1060,
+          "value": 1060,
+          "device_alert": false
+        },
+        {
+          "name": "model_information",
+          "address": 2,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "firmware_version",
+          "address": 6,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 42,
+          "value": 42,
+          "device_alert": false
+        },
+        {
+          "name": "id",
+          "address": 7,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "baud_rate",
+          "address": 8,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "return_delay_time",
+          "address": 9,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 250,
+          "value": 250,
+          "device_alert": false
+        },
+        {
+          "name": "drive_mode",
+          "address": 10,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "operating_mode",
+          "address": 11,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "secondary_id",
+          "address": 12,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 255,
+          "value": 255,
+          "device_alert": false
+        },
+        {
+          "name": "protocol_type",
+          "address": 13,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "homing_offset",
+          "address": 20,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_threshold",
+          "address": 24,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 10,
+          "value": 10,
+          "device_alert": false
+        },
+        {
+          "name": "temperature_limit",
+          "address": 31,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 72,
+          "value": 72,
+          "device_alert": false
+        },
+        {
+          "name": "max_voltage_limit",
+          "address": 32,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 140,
+          "value": 140,
+          "device_alert": false
+        },
+        {
+          "name": "min_voltage_limit",
+          "address": 34,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 60,
+          "value": 60,
+          "device_alert": false
+        },
+        {
+          "name": "pwm_limit",
+          "address": 36,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_limit",
+          "address": 44,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "max_position_limit",
+          "address": 48,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 4095,
+          "value": 4095,
+          "device_alert": false
+        },
+        {
+          "name": "min_position_limit",
+          "address": 52,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "shutdown",
+          "address": 63,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 52,
+          "value": 52,
+          "device_alert": false
+        },
+        {
+          "name": "torque_enable",
+          "address": 64,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "led",
+          "address": 65,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "status_return_level",
+          "address": 68,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "registered_instruction",
+          "address": 69,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "hardware_error_status",
+          "address": 70,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_i_gain",
+          "address": 76,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 1000,
+          "value": 1000,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_p_gain",
+          "address": 78,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 100,
+          "value": 100,
+          "device_alert": false
+        },
+        {
+          "name": "position_d_gain",
+          "address": 80,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 3600,
+          "value": 3600,
+          "device_alert": false
+        },
+        {
+          "name": "position_i_gain",
+          "address": 82,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_p_gain",
+          "address": 84,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 640,
+          "value": 640,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_2nd_gain",
+          "address": 88,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_1st_gain",
+          "address": 90,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "bus_watchdog",
+          "address": 98,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_pwm",
+          "address": 100,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "goal_velocity",
+          "address": 104,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "profile_acceleration",
+          "address": 108,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "profile_velocity",
+          "address": 112,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_position",
+          "address": 116,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 3354,
+          "value": 3354,
+          "device_alert": false
+        },
+        {
+          "name": "realtime_tick",
+          "address": 120,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 5124,
+          "value": 5124,
+          "device_alert": false
+        },
+        {
+          "name": "moving",
+          "address": 122,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_status",
+          "address": 123,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 1,
+          "value": 1,
+          "device_alert": false
+        },
+        {
+          "name": "present_pwm",
+          "address": 124,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_load",
+          "address": 126,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_velocity",
+          "address": 128,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_position",
+          "address": 132,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 3354,
+          "value": 3354,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_trajectory",
+          "address": 136,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_trajectory",
+          "address": 140,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 3354,
+          "value": 3354,
+          "device_alert": false
+        },
+        {
+          "name": "present_input_voltage",
+          "address": 144,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 91,
+          "value": 91,
+          "device_alert": false
+        },
+        {
+          "name": "present_temperature",
+          "address": 146,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 36,
+          "value": 36,
+          "device_alert": false
+        }
+      ],
+      "faults": [],
+      "skipped_registers": [
+        "startup_configuration",
+        "backup_ready"
+      ]
+    },
+    {
+      "motor_id": 3,
+      "identity": {
+        "motor_id": 3,
+        "model_number": 1060,
+        "firmware_version": 42,
+        "observed_at": "2026-10-04T10:54:05.006+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "proposed_role": "elbow",
+      "registers": [
+        {
+          "name": "model_number",
+          "address": 0,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 1060,
+          "value": 1060,
+          "device_alert": false
+        },
+        {
+          "name": "model_information",
+          "address": 2,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "firmware_version",
+          "address": 6,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 42,
+          "value": 42,
+          "device_alert": false
+        },
+        {
+          "name": "id",
+          "address": 7,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "baud_rate",
+          "address": 8,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "return_delay_time",
+          "address": 9,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 250,
+          "value": 250,
+          "device_alert": false
+        },
+        {
+          "name": "drive_mode",
+          "address": 10,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "operating_mode",
+          "address": 11,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "secondary_id",
+          "address": 12,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 255,
+          "value": 255,
+          "device_alert": false
+        },
+        {
+          "name": "protocol_type",
+          "address": 13,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "homing_offset",
+          "address": 20,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_threshold",
+          "address": 24,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 10,
+          "value": 10,
+          "device_alert": false
+        },
+        {
+          "name": "temperature_limit",
+          "address": 31,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 72,
+          "value": 72,
+          "device_alert": false
+        },
+        {
+          "name": "max_voltage_limit",
+          "address": 32,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 140,
+          "value": 140,
+          "device_alert": false
+        },
+        {
+          "name": "min_voltage_limit",
+          "address": 34,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 60,
+          "value": 60,
+          "device_alert": false
+        },
+        {
+          "name": "pwm_limit",
+          "address": 36,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_limit",
+          "address": 44,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "max_position_limit",
+          "address": 48,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 4095,
+          "value": 4095,
+          "device_alert": false
+        },
+        {
+          "name": "min_position_limit",
+          "address": 52,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "shutdown",
+          "address": 63,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 52,
+          "value": 52,
+          "device_alert": false
+        },
+        {
+          "name": "torque_enable",
+          "address": 64,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "led",
+          "address": 65,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "status_return_level",
+          "address": 68,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "registered_instruction",
+          "address": 69,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "hardware_error_status",
+          "address": 70,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_i_gain",
+          "address": 76,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 1000,
+          "value": 1000,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_p_gain",
+          "address": 78,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 100,
+          "value": 100,
+          "device_alert": false
+        },
+        {
+          "name": "position_d_gain",
+          "address": 80,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 3600,
+          "value": 3600,
+          "device_alert": false
+        },
+        {
+          "name": "position_i_gain",
+          "address": 82,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_p_gain",
+          "address": 84,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 640,
+          "value": 640,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_2nd_gain",
+          "address": 88,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_1st_gain",
+          "address": 90,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "bus_watchdog",
+          "address": 98,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_pwm",
+          "address": 100,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "goal_velocity",
+          "address": 104,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "profile_acceleration",
+          "address": 108,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "profile_velocity",
+          "address": 112,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_position",
+          "address": 116,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 1154,
+          "value": 1154,
+          "device_alert": false
+        },
+        {
+          "name": "realtime_tick",
+          "address": 120,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 5798,
+          "value": 5798,
+          "device_alert": false
+        },
+        {
+          "name": "moving",
+          "address": 122,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_status",
+          "address": 123,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 49,
+          "value": 49,
+          "device_alert": false
+        },
+        {
+          "name": "present_pwm",
+          "address": 124,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_load",
+          "address": 126,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_velocity",
+          "address": 128,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_position",
+          "address": 132,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 1154,
+          "value": 1154,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_trajectory",
+          "address": 136,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_trajectory",
+          "address": 140,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 1154,
+          "value": 1154,
+          "device_alert": false
+        },
+        {
+          "name": "present_input_voltage",
+          "address": 144,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 90,
+          "value": 90,
+          "device_alert": false
+        },
+        {
+          "name": "present_temperature",
+          "address": 146,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 35,
+          "value": 35,
+          "device_alert": false
+        }
+      ],
+      "faults": [],
+      "skipped_registers": [
+        "startup_configuration",
+        "backup_ready"
+      ]
+    },
+    {
+      "motor_id": 4,
+      "identity": {
+        "motor_id": 4,
+        "model_number": 1060,
+        "firmware_version": 42,
+        "observed_at": "2026-10-04T10:54:05.820+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "proposed_role": "wrist",
+      "registers": [
+        {
+          "name": "model_number",
+          "address": 0,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 1060,
+          "value": 1060,
+          "device_alert": false
+        },
+        {
+          "name": "model_information",
+          "address": 2,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "firmware_version",
+          "address": 6,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 42,
+          "value": 42,
+          "device_alert": false
+        },
+        {
+          "name": "id",
+          "address": 7,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 4,
+          "value": 4,
+          "device_alert": false
+        },
+        {
+          "name": "baud_rate",
+          "address": 8,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "return_delay_time",
+          "address": 9,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 250,
+          "value": 250,
+          "device_alert": false
+        },
+        {
+          "name": "drive_mode",
+          "address": 10,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "operating_mode",
+          "address": 11,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "secondary_id",
+          "address": 12,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 255,
+          "value": 255,
+          "device_alert": false
+        },
+        {
+          "name": "protocol_type",
+          "address": 13,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "homing_offset",
+          "address": 20,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_threshold",
+          "address": 24,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 10,
+          "value": 10,
+          "device_alert": false
+        },
+        {
+          "name": "temperature_limit",
+          "address": 31,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 72,
+          "value": 72,
+          "device_alert": false
+        },
+        {
+          "name": "max_voltage_limit",
+          "address": 32,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 140,
+          "value": 140,
+          "device_alert": false
+        },
+        {
+          "name": "min_voltage_limit",
+          "address": 34,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 60,
+          "value": 60,
+          "device_alert": false
+        },
+        {
+          "name": "pwm_limit",
+          "address": 36,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_limit",
+          "address": 44,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "max_position_limit",
+          "address": 48,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 4095,
+          "value": 4095,
+          "device_alert": false
+        },
+        {
+          "name": "min_position_limit",
+          "address": 52,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "shutdown",
+          "address": 63,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 52,
+          "value": 52,
+          "device_alert": false
+        },
+        {
+          "name": "torque_enable",
+          "address": 64,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "led",
+          "address": 65,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "status_return_level",
+          "address": 68,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "registered_instruction",
+          "address": 69,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "hardware_error_status",
+          "address": 70,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_i_gain",
+          "address": 76,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 1000,
+          "value": 1000,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_p_gain",
+          "address": 78,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 100,
+          "value": 100,
+          "device_alert": false
+        },
+        {
+          "name": "position_d_gain",
+          "address": 80,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 3600,
+          "value": 3600,
+          "device_alert": false
+        },
+        {
+          "name": "position_i_gain",
+          "address": 82,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_p_gain",
+          "address": 84,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 640,
+          "value": 640,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_2nd_gain",
+          "address": 88,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_1st_gain",
+          "address": 90,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "bus_watchdog",
+          "address": 98,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_pwm",
+          "address": 100,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "goal_velocity",
+          "address": 104,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "profile_acceleration",
+          "address": 108,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "profile_velocity",
+          "address": 112,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_position",
+          "address": 116,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2058,
+          "value": 2058,
+          "device_alert": false
+        },
+        {
+          "name": "realtime_tick",
+          "address": 120,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 6672,
+          "value": 6672,
+          "device_alert": false
+        },
+        {
+          "name": "moving",
+          "address": 122,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_status",
+          "address": 123,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 1,
+          "value": 1,
+          "device_alert": false
+        },
+        {
+          "name": "present_pwm",
+          "address": 124,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_load",
+          "address": 126,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_velocity",
+          "address": 128,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_position",
+          "address": 132,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2058,
+          "value": 2058,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_trajectory",
+          "address": 136,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_trajectory",
+          "address": 140,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2058,
+          "value": 2058,
+          "device_alert": false
+        },
+        {
+          "name": "present_input_voltage",
+          "address": 144,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 90,
+          "value": 90,
+          "device_alert": false
+        },
+        {
+          "name": "present_temperature",
+          "address": 146,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 36,
+          "value": 36,
+          "device_alert": false
+        }
+      ],
+      "faults": [],
+      "skipped_registers": [
+        "startup_configuration",
+        "backup_ready"
+      ]
+    },
+    {
+      "motor_id": 5,
+      "identity": {
+        "motor_id": 5,
+        "model_number": 1060,
+        "firmware_version": 43,
+        "observed_at": "2026-10-04T10:54:06.635+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "proposed_role": "gripper_open_close",
+      "registers": [
+        {
+          "name": "model_number",
+          "address": 0,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 1060,
+          "value": 1060,
+          "device_alert": false
+        },
+        {
+          "name": "model_information",
+          "address": 2,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "firmware_version",
+          "address": 6,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 43,
+          "value": 43,
+          "device_alert": false
+        },
+        {
+          "name": "id",
+          "address": 7,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 5,
+          "value": 5,
+          "device_alert": false
+        },
+        {
+          "name": "baud_rate",
+          "address": 8,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "return_delay_time",
+          "address": 9,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 250,
+          "value": 250,
+          "device_alert": false
+        },
+        {
+          "name": "drive_mode",
+          "address": 10,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "operating_mode",
+          "address": 11,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "secondary_id",
+          "address": 12,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 255,
+          "value": 255,
+          "device_alert": false
+        },
+        {
+          "name": "protocol_type",
+          "address": 13,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "homing_offset",
+          "address": 20,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_threshold",
+          "address": 24,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 10,
+          "value": 10,
+          "device_alert": false
+        },
+        {
+          "name": "temperature_limit",
+          "address": 31,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 72,
+          "value": 72,
+          "device_alert": false
+        },
+        {
+          "name": "max_voltage_limit",
+          "address": 32,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 140,
+          "value": 140,
+          "device_alert": false
+        },
+        {
+          "name": "min_voltage_limit",
+          "address": 34,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 60,
+          "value": 60,
+          "device_alert": false
+        },
+        {
+          "name": "pwm_limit",
+          "address": 36,
+          "size": 2,
+          "memory": "EEPROM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_limit",
+          "address": 44,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "max_position_limit",
+          "address": 48,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 4095,
+          "value": 4095,
+          "device_alert": false
+        },
+        {
+          "name": "min_position_limit",
+          "address": 52,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "shutdown",
+          "address": 63,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 52,
+          "value": 52,
+          "device_alert": false
+        },
+        {
+          "name": "torque_enable",
+          "address": 64,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "led",
+          "address": 65,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "status_return_level",
+          "address": 68,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "registered_instruction",
+          "address": 69,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "hardware_error_status",
+          "address": 70,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_i_gain",
+          "address": 76,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 1000,
+          "value": 1000,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_p_gain",
+          "address": 78,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 100,
+          "value": 100,
+          "device_alert": false
+        },
+        {
+          "name": "position_d_gain",
+          "address": 80,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 3600,
+          "value": 3600,
+          "device_alert": false
+        },
+        {
+          "name": "position_i_gain",
+          "address": 82,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_p_gain",
+          "address": 84,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 640,
+          "value": 640,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_2nd_gain",
+          "address": 88,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "feedforward_1st_gain",
+          "address": 90,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "bus_watchdog",
+          "address": 98,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_pwm",
+          "address": 100,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 885,
+          "value": 885,
+          "device_alert": false
+        },
+        {
+          "name": "goal_velocity",
+          "address": 104,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 265,
+          "value": 265,
+          "device_alert": false
+        },
+        {
+          "name": "profile_acceleration",
+          "address": 108,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "profile_velocity",
+          "address": 112,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "goal_position",
+          "address": 116,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2059,
+          "value": 2059,
+          "device_alert": false
+        },
+        {
+          "name": "realtime_tick",
+          "address": 120,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 7785,
+          "value": 7785,
+          "device_alert": false
+        },
+        {
+          "name": "moving",
+          "address": 122,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "moving_status",
+          "address": 123,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 1,
+          "value": 1,
+          "device_alert": false
+        },
+        {
+          "name": "present_pwm",
+          "address": 124,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_load",
+          "address": 126,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_velocity",
+          "address": 128,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "present_position",
+          "address": 132,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2059,
+          "value": 2059,
+          "device_alert": false
+        },
+        {
+          "name": "velocity_trajectory",
+          "address": 136,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "position_trajectory",
+          "address": 140,
+          "size": 4,
+          "memory": "RAM",
+          "raw": 2059,
+          "value": 2059,
+          "device_alert": false
+        },
+        {
+          "name": "present_input_voltage",
+          "address": 144,
+          "size": 2,
+          "memory": "RAM",
+          "raw": 90,
+          "value": 90,
+          "device_alert": false
+        },
+        {
+          "name": "present_temperature",
+          "address": 146,
+          "size": 1,
+          "memory": "RAM",
+          "raw": 36,
+          "value": 36,
+          "device_alert": false
+        }
+      ],
+      "faults": [],
+      "skipped_registers": [
+        "startup_configuration",
+        "backup_ready"
+      ]
+    }
+  ],
+  "config": {
+    "bus": {
+      "device": "/dev/serial/by-id/usb-BestTechnology_E148_E148-if00-port0",
+      "baudrate": 1000000,
+      "protocol": 2.0,
+      "expected_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "roles": [
+      {
+        "motor_id": 1,
+        "name": "base_rotation"
+      },
+      {
+        "motor_id": 2,
+        "name": "shoulder"
+      },
+      {
+        "motor_id": 3,
+        "name": "elbow"
+      },
+      {
+        "motor_id": 4,
+        "name": "wrist"
+      },
+      {
+        "motor_id": 5,
+        "name": "gripper_open_close"
+      }
+    ],
+    "physical_order_verified": false
+  },
+  "observed_at": "2026-10-04T10:54:07.417+09:00",
+  "kind": "metadata",
+  "schema_version": 2,
+  "simulated": null,
+  "acquisition_id": null
+}

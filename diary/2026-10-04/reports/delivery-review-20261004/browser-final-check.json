@@ -1,0 +1,15 @@
+{
+  "duplicate": {
+    "status": 400,
+    "body": {
+      "error": "先に畳んだ位置を記録してください"
+    }
+  },
+  "metadataRecovery": {
+    "verified": false,
+    "status": "校正条件が変わりました。ID・基準・方向を再確認してください",
+    "canRender": false,
+    "fresh": true
+  },
+  "imageDecoded": 1060
+}

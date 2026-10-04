@@ -1,0 +1,113 @@
+{
+  "recorded_at": "2026-10-03T21:51:06.219058+09:00",
+  "source": {
+    "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/live_hardware_validation.json",
+    "sha256": "a9188b2225c95e15194788c4bc3834e30812de733baf2a8f1ec82b07c203d1bd"
+  },
+  "user_observations": {
+    "motor_id": 3,
+    "physical_joint": "elbow",
+    "initial_state": "fully folded",
+    "requested_direction": "open elbow",
+    "source": "user message and reply"
+  },
+  "saved_read": {
+    "timestamp": "2026-10-03T21:22:41.920+09:00",
+    "frames": 200,
+    "id3_count": 1153,
+    "torque": false,
+    "metadata": {
+      "motor_id": 3,
+      "identity": {
+        "motor_id": 3,
+        "model_number": 1060,
+        "firmware_version": 42,
+        "observed_at": "2026-10-03T21:22:41.536+09:00",
+        "device_error": 0,
+        "faults": []
+      },
+      "proposed_role": "elbow",
+      "registers": [
+        {
+          "name": "id",
+          "address": 7,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "baud_rate",
+          "address": 8,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "protocol_type",
+          "address": 13,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 2,
+          "value": 2,
+          "device_alert": false
+        },
+        {
+          "name": "operating_mode",
+          "address": 11,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 3,
+          "value": 3,
+          "device_alert": false
+        },
+        {
+          "name": "drive_mode",
+          "address": 10,
+          "size": 1,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        },
+        {
+          "name": "homing_offset",
+          "address": 20,
+          "size": 4,
+          "memory": "EEPROM",
+          "raw": 0,
+          "value": 0,
+          "device_alert": false
+        }
+      ],
+      "faults": [],
+      "skipped_registers": []
+    },
+    "port_closed": true,
+    "new_read_required_before_motion": true
+  },
+  "requested_motion": {
+    "degrees_about": 10,
+    "count_magnitude_quantized": 114,
+    "degrees_quantized": 10.01953125,
+    "motor_ids": [
+      3
+    ],
+    "low_speed": true,
+    "finite": true
+  },
+  "missing": [
+    "opening_direction_count_sign",
+    "physical_CAD_calibration",
+    "gravity_support_method",
+    "physical_power_stop_method",
+    "fresh_full_metadata_before_write"
+  ],
+  "motion_ready": false,
+  "motor_writes_executed": false,
+  "observer_transport_changes": false,
+  "old1153_is_not_a_hardcoded_motion_target": true
+}

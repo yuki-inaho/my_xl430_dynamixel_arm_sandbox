@@ -1,0 +1,18 @@
+{
+  "scope": "nominal visible mesh vertex extrema; not collision/contact/dynamic proof",
+  "minimum_non_base_mesh": {
+    "name": "P03_shoulder_XL430",
+    "z_m": 0.04349749556952283
+  },
+  "minimum_id5_c7_camera_mesh": {
+    "name": "c7_fixed_printed",
+    "z_m": 0.0953318963991522
+  },
+  "cushion_user_top_m": 0.005,
+  "hand_height_above_cushion_m": 0.09033189639915219,
+  "support_footprint_known": false,
+  "load_transfer_verified": false,
+  "standby_power_off_allowed": false,
+  "folded_example_accepted_as_current": false,
+  "folded_example_lowest_z_m": -0.048491876433782916
+}

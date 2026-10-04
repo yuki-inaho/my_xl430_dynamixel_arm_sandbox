@@ -1,0 +1,273 @@
+...................................................F.........F.......... [ 73%]
+...............FFFFF.FFFFF                                               [100%]
+=================================== FAILURES ===================================
+_________________ test_unusable_evidence_is_rejected[changes8] _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_unusable_evidence_is_reje8')
+changes = {'opening_count_sign': True}
+
+    @pytest.mark.parametrize(
+        "changes",
+        [
+            {"simulated": True},
+            {"motor_id": 2},
+            {"physical_change_confirmed": False},
+            {"physical_change_reported": "closing"},
+            {"delta_counts": 5, "opening_count_sign": 1},
+            {"delta_counts": 1500, "opening_count_sign": 1},
+            {"delta_counts": 114, "opening_count_sign": -1},
+            {"opening_count_sign": 0},
+            {"opening_count_sign": True},
+        ],
+    )
+    def test_unusable_evidence_is_rejected(tmp_path, changes):
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, evidence_record(**changes)))
+
+tests/test_id3_motion.py:191: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_unusable_evidence_is_reje8/observation.json')
+
+    def load_evidence(path: Path) -> Evidence:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+        sign, delta = record["opening_count_sign"], record["delta_counts"]
+        problem = sample_problem(record) or delta_problem(sign, delta)
+        if problem:
+            raise ValueError(problem)
+>       assert type(sign) is int and type(delta) is int
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError
+
+src/arm_observer/id3_motion.py:157: AssertionError
+______ test_preconditions_block_all_writes[<lambda>-status_return_level] _______
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_preconditions_block_all_w6')
+mutate = <function <lambda> at 0x7c26e0181d00>, reason = 'status_return_level'
+
+    @pytest.mark.parametrize(
+        "mutate,reason",
+        [
+            (lambda arm: arm.registers[3].update(operating_mode=4), "operating_mode"),
+            (lambda arm: arm.registers[3].update(drive_mode=1), "drive_mode"),
+            (lambda arm: arm.registers[3].update(homing_offset=5), "homing_offset"),
+            (lambda arm: arm.registers[3].update(max_position_limit=1200), "limit"),
+            (lambda arm: arm.registers[3].update(model_number=1190), "model"),
+            (lambda arm: arm.positions.update({3: 1200}), "folded"),
+        (lambda arm: arm.registers[3].update(status_return_level=1), "status_return_level"),
+        ],
+    )
+    def test_preconditions_block_all_writes(tmp_path, mutate, reason):
+        arm = FakeArm()
+        mutate(arm)
+        outcome, _ = run(tmp_path, arm)
+>       assert outcome.status == "refused"
+E       AssertionError: assert 'converged' == 'refused'
+E         
+E         - refused
+E         + converged
+
+tests/test_id3_motion.py:383: AssertionError
+____________ test_evidence_must_be_internally_consistent[<lambda>0] ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_evidence_must_be_internal0')
+mutate = <function <lambda> at 0x7c26e0182e80>
+
+    @pytest.mark.parametrize("mutate", [
+        lambda r: r["after"].update(position_counts=1040),        # recorded delta disagrees (-113)
+        lambda r: r["after"].update(session_id="other"),
+        lambda r: r["after"].update(context_fingerprint="other"),
+        lambda r: r["before"].update(position_counts=1153.0),
+        lambda r: r["after"].update(position_counts=None),
+    ])
+    def test_evidence_must_be_internally_consistent(tmp_path, mutate):
+        record = evidence_record()
+        mutate(record)
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_id3_motion.py:652: Failed
+____________ test_evidence_must_be_internally_consistent[<lambda>1] ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_evidence_must_be_internal1')
+mutate = <function <lambda> at 0x7c26e0182f20>
+
+    @pytest.mark.parametrize("mutate", [
+        lambda r: r["after"].update(position_counts=1040),        # recorded delta disagrees (-113)
+        lambda r: r["after"].update(session_id="other"),
+        lambda r: r["after"].update(context_fingerprint="other"),
+        lambda r: r["before"].update(position_counts=1153.0),
+        lambda r: r["after"].update(position_counts=None),
+    ])
+    def test_evidence_must_be_internally_consistent(tmp_path, mutate):
+        record = evidence_record()
+        mutate(record)
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_id3_motion.py:652: Failed
+____________ test_evidence_must_be_internally_consistent[<lambda>2] ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_evidence_must_be_internal2')
+mutate = <function <lambda> at 0x7c26e0182fc0>
+
+    @pytest.mark.parametrize("mutate", [
+        lambda r: r["after"].update(position_counts=1040),        # recorded delta disagrees (-113)
+        lambda r: r["after"].update(session_id="other"),
+        lambda r: r["after"].update(context_fingerprint="other"),
+        lambda r: r["before"].update(position_counts=1153.0),
+        lambda r: r["after"].update(position_counts=None),
+    ])
+    def test_evidence_must_be_internally_consistent(tmp_path, mutate):
+        record = evidence_record()
+        mutate(record)
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_id3_motion.py:652: Failed
+____________ test_evidence_must_be_internally_consistent[<lambda>3] ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_evidence_must_be_internal3')
+mutate = <function <lambda> at 0x7c26e0183060>
+
+    @pytest.mark.parametrize("mutate", [
+        lambda r: r["after"].update(position_counts=1040),        # recorded delta disagrees (-113)
+        lambda r: r["after"].update(session_id="other"),
+        lambda r: r["after"].update(context_fingerprint="other"),
+        lambda r: r["before"].update(position_counts=1153.0),
+        lambda r: r["after"].update(position_counts=None),
+    ])
+    def test_evidence_must_be_internally_consistent(tmp_path, mutate):
+        record = evidence_record()
+        mutate(record)
+        with pytest.raises(ValueError):
+>           motion.load_evidence(write_evidence(tmp_path, record))
+
+tests/test_id3_motion.py:653: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/arm_observer/id3_motion.py:159: in load_evidence
+    return Evidence(str(path), hashlib.sha256(raw).hexdigest(), sign, folded, delta)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+__beartype_get_violation = <function get_func_pith_violation at 0x7c26e04e36a0>
+__beartype_conf = BeartypeConf()
+__beartype_object_23773536 = <class 'NoneType'>
+__beartype_check_meta = <beartype._check.metadata.metacheck.BeartypeCheckMeta object at 0x7c26e021bc80>
+__beartype_func = <function Evidence.__init__ at 0x7c26e016c860>
+args = (<[AttributeError("'arm_observer.id3_motion.Evidence' object has no attribute 'path'") raised in repr()] Evidence obje...ust_be_internal3/observation.json', '9993955a4deb6977a26a20f99a73392775f53b61533a8a6b73c7fc4b3a80924c', 1, 1153.0, 114)
+kwargs = {}
+
+>   ???
+E   beartype.roar.BeartypeCallHintParamViolation: Method arm_observer.id3_motion.Evidence.__init__() parameter folded_count=1153.0 violates type hint <class 'int'>, as float 1153.0 not instance of int.
+
+<@beartype(arm_observer.id3_motion.Evidence.__init__) at 0x7c26e016c860>:83: BeartypeCallHintParamViolation
+____________ test_evidence_must_be_internally_consistent[<lambda>4] ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_evidence_must_be_internal4')
+mutate = <function <lambda> at 0x7c26e0183100>
+
+    @pytest.mark.parametrize("mutate", [
+        lambda r: r["after"].update(position_counts=1040),        # recorded delta disagrees (-113)
+        lambda r: r["after"].update(session_id="other"),
+        lambda r: r["after"].update(context_fingerprint="other"),
+        lambda r: r["before"].update(position_counts=1153.0),
+        lambda r: r["after"].update(position_counts=None),
+    ])
+    def test_evidence_must_be_internally_consistent(tmp_path, mutate):
+        record = evidence_record()
+        mutate(record)
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_id3_motion.py:652: Failed
+______________________ test_alerted_metadata_read_refuses ______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_alerted_metadata_read_ref0')
+
+    def test_alerted_metadata_read_refuses(tmp_path):
+        arm = FakeArm()
+        original = arm.registers_batch
+    
+        def alerted(motor_id, registers):
+            batch = original(motor_id, registers)
+            return RegisterBatch(tuple(r.__class__(r.name, r.address, r.size, r.memory, r.raw,
+                                                   r.value, True) for r in batch.readings), ())
+    
+        arm.registers_batch = alerted
+        outcome, _ = run(tmp_path, arm)
+>       assert outcome.status == "refused" and "alert" in outcome.reason
+E       AssertionError: assert ('converged' == 'refused'
+E         
+E         - refused
+E         + converged)
+
+tests/test_id3_motion.py:673: AssertionError
+_______________ test_release_records_final_torque_of_all_motors ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_release_records_final_tor0')
+
+    def test_release_records_final_torque_of_all_motors(tmp_path):
+        arm = FakeArm()
+        _, events = run(tmp_path, arm)
+        released = next(e for e in events if e["kind"] == "released")
+>       assert released["final_torque"] == {"1": False, "2": False, "3": False, "4": False,
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+                                            "5": False}
+E       KeyError: 'final_torque'
+
+tests/test_id3_motion.py:681: KeyError
+_________________________ test_stage_rates_are_logged __________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_stage_rates_are_logged0')
+
+    def test_stage_rates_are_logged(tmp_path):
+        _, events = run(tmp_path, FakeArm())
+        opened = next(e for e in events if e["kind"] == "converged" and e["stage"] == "open")
+>       assert opened["samples"] >= motion.STABLE_SAMPLES and opened["achieved_hz"] > 0
+               ^^^^^^^^^^^^^^^^^
+E       KeyError: 'samples'
+
+tests/test_id3_motion.py:688: KeyError
+__________________ test_termination_signals_become_interrupts __________________
+
+    def test_termination_signals_become_interrupts():
+        import os
+        import signal
+        before = signal.getsignal(signal.SIGTERM)
+        with pytest.raises(KeyboardInterrupt):
+>           with motion.termination_as_interrupt():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AttributeError: module 'arm_observer.id3_motion' has no attribute 'termination_as_interrupt'
+
+tests/test_id3_motion.py:696: AttributeError
+_________________ test_summary_json_is_written_next_to_the_log _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-inaho-omen/pytest-51/test_summary_json_is_written_n0')
+
+    def test_summary_json_is_written_next_to_the_log(tmp_path):
+        outcome = motion.Outcome("converged", "", 1267, 0, 1153, 1153, 1, True)
+>       path = motion.write_summary(tmp_path / "id3_motion_x.jsonl", outcome)
+               ^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: module 'arm_observer.id3_motion' has no attribute 'write_summary'
+
+tests/test_id3_motion.py:703: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_id3_motion.py::test_unusable_evidence_is_rejected[changes8]
+FAILED tests/test_id3_motion.py::test_preconditions_block_all_writes[<lambda>-status_return_level]
+FAILED tests/test_id3_motion.py::test_evidence_must_be_internally_consistent[<lambda>0]
+FAILED tests/test_id3_motion.py::test_evidence_must_be_internally_consistent[<lambda>1]
+FAILED tests/test_id3_motion.py::test_evidence_must_be_internally_consistent[<lambda>2]
+FAILED tests/test_id3_motion.py::test_evidence_must_be_internally_consistent[<lambda>3]
+FAILED tests/test_id3_motion.py::test_evidence_must_be_internally_consistent[<lambda>4]
+FAILED tests/test_id3_motion.py::test_alerted_metadata_read_refuses - Asserti...
+FAILED tests/test_id3_motion.py::test_release_records_final_torque_of_all_motors
+FAILED tests/test_id3_motion.py::test_stage_rates_are_logged - KeyError: 'sam...
+FAILED tests/test_id3_motion.py::test_termination_signals_become_interrupts
+FAILED tests/test_id3_motion.py::test_summary_json_is_written_next_to_the_log
+12 failed, 86 passed in 1.07s

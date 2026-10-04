@@ -1,0 +1,10 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><link rel="icon" href="data:,"><title>アーム姿勢の比較 · MuJoCo</title>
+<style>body{font:16px/1.6 sans-serif;background:#eef2f5;color:#20343d;margin:24px}h1{font-size:26px}main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}section{background:white;border-radius:12px;padding:18px}img{width:100%;max-height:540px;object-fit:contain}h2{font-size:20px}.note{background:#fff0d2;padding:14px;border-radius:9px}@media(max-width:800px){main{grid-template-columns:1fr}}</style>
+<h1>アーム姿勢の定義と写真比較</h1>
+<p class="note">MuJoCoによる運動学表示です。角度は検討例で、実機の校正値や指令値ではありません。電源OFFはユーザー指定の「今の安定した折り畳み姿勢」を基準にします。支持・衝突・無通電安定は未検証です。</p>
+<main>
+<section><h2>現状写真：電源OFFの基準</h2><img src="current-photo.jpeg" alt="ユーザー提供の現在の折り畳み姿勢"><p>裸アームに見えます。C7爪・D405ホルダーは見えていません。クッションへの荷重経路は写真だけでは確定できません。</p></section>
+<section><h2>写真の形に近づけたCAD例</h2><img src="photo_shape_approximation-side.png" alt="MuJoCoで生成した折り畳み裸アームの検討例"><p>q=[0,−30,−75,+25]°。2D写真からの仮定で、現在角の復元ではありません。方向・ゼロ点・姿勢は未校正です。</p></section>
+<section><h2>スタンバイ候補：側面</h2><img src="standby_bare_example-side.png" alt="水平前腕と30度下向きID5の裸アーム候補"><p>q=[0,−30,−30,−30]°。前腕を世界前へ水平に、ID5支持軸を30°下向き。肩−30°は例で、実機では校正済みの現在肩角を維持します。</p></section>
+<section><h2>スタンバイ候補：斜め</h2><img src="standby_bare_example-iso.png" alt="スタンバイ裸アームの斜め表示"><p>standbyは通電待機用。ここからそのまま電源OFFへは切り替えません。実機target countsは未設定です。</p></section>
+</main></html>

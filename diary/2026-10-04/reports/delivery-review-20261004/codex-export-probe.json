@@ -1,0 +1,8 @@
+{
+  "input_api_user_records": 1,
+  "output_event_kinds": {
+    "session": 1
+  },
+  "extractor_channel": "terminal",
+  "output_user_messages": 0
+}

@@ -1,0 +1,44 @@
+{
+  "forearm": {
+    "max_bidirectional_surface_sample_distance_m": [
+      3.4832871633035264e-07,
+      3.197827336986769e-07
+    ],
+    "method": "closest triangle in mm, convert distance back to m; all vertices and triangle centroids",
+    "worst": {
+      "point_mm": [
+        -15.270651939014593,
+        95.19585718711217,
+        172.7615942557653
+      ],
+      "target_point_mm": [
+        -15.270354336639514,
+        95.19585718546274,
+        172.7614772351555
+      ],
+      "target_triangle": 11833
+    },
+    "pass": false
+  },
+  "wrist": {
+    "max_bidirectional_surface_sample_distance_m": [
+      6.509344779331146e-07,
+      7.093484668370263e-07
+    ],
+    "method": "closest triangle in mm, convert distance back to m; all vertices and triangle centroids",
+    "worst": {
+      "point_mm": [
+        12.388257930676142,
+        152.3709495862325,
+        174.2167870203654
+      ],
+      "target_point_mm": [
+        12.388920328363675,
+        152.37069580571526,
+        174.21678702447738
+      ],
+      "target_triangle": 815
+    },
+    "pass": false
+  }
+}

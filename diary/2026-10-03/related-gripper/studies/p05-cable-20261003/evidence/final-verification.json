@@ -1,0 +1,110 @@
+{
+  "targeted_pytest": {
+    "passed": 23,
+    "seconds": 29.03,
+    "modules": [
+      "tests/test_p05_cable_relief.py",
+      "tests/test_p05_cable_clearance.py"
+    ]
+  },
+  "full_suite_run": false,
+  "ruff_check": "PASS",
+  "ruff_format_check": "PASS",
+  "skill_format_validation": "PASS",
+  "source_sha_unchanged": true,
+  "published_cad_hashes_match_generated_artifacts": true,
+  "both_cad_browser_hashes_match": true,
+  "manual_render_hashes_match": true,
+  "markdown_links_exist": true,
+  "pdf_pages": 22,
+  "published_manual_browser": {
+    "steps": 10,
+    "image_references": 16,
+    "images_loaded": true,
+    "horizontal_overflow": false,
+    "links": [
+      {
+        "path": "/docs/gripper-assembly-20261003/MANUAL.pdf",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/REVIEW.md",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/PHOTO_VERSION.md",
+        "status": 200
+      },
+      {
+        "path": "/studies/p05-cable-20261003/README.md",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/09-complete-oblique.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/02-frame-front.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/02-frame-oblique.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/03-crank-front.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/03-crank-oblique.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/04-carriage-front.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/04-nuts-back-back.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/05-links-front.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/06-links-front.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/06-links-oblique.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/pivot-section.svg",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/07-caps-front.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/08-fingers-oblique.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/08-fingers-opposite.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/images/09-complete-opposite.png",
+        "status": 200
+      },
+      {
+        "path": "/docs/gripper-assembly-20261003/cad-inventory.json",
+        "status": 200
+      }
+    ]
+  },
+  "physical_assembly_verified": false,
+  "fabrication_approved": false
+}

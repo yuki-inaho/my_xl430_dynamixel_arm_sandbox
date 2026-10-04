@@ -1,0 +1,189 @@
+[
+  {
+    "name": "joint1_yaw",
+    "a": "base_link",
+    "b": "shoulder_yaw",
+    "xyz": [
+      0,
+      0,
+      20
+    ],
+    "axis": "Z",
+    "rot": 0,
+    "type": "REVOLUTE"
+  },
+  {
+    "name": "joint2_shoulder",
+    "a": "shoulder_yaw",
+    "b": "upper_arm",
+    "xyz": [
+      -0.2,
+      0,
+      56.3
+    ],
+    "axis": "Y",
+    "rot": -90,
+    "type": "REVOLUTE"
+  },
+  {
+    "name": "joint3_elbow",
+    "a": "upper_arm",
+    "b": "forearm",
+    "xyz": [
+      -0.2,
+      14.8,
+      164.6
+    ],
+    "axis": "Y",
+    "rot": 90,
+    "type": "REVOLUTE"
+  },
+  {
+    "name": "joint4_wrist",
+    "a": "forearm",
+    "b": "wrist",
+    "xyz": [
+      -0.2,
+      104.9,
+      164.6
+    ],
+    "axis": "Y",
+    "rot": 90,
+    "type": "REVOLUTE",
+    "limits": [
+      -106,
+      138
+    ]
+  },
+  {
+    "name": "gripper_drive",
+    "a": "wrist",
+    "b": "gripper_crank",
+    "xyz": [
+      -0.2,
+      164.9,
+      164.6
+    ],
+    "axis": "X",
+    "rot": -90,
+    "type": "REVOLUTE",
+    "limits": [
+      -45,
+      65
+    ]
+  },
+  {
+    "name": "jaw_left",
+    "a": "wrist",
+    "b": "jaw_l",
+    "xyz": [
+      -0.2,
+      164.9,
+      164.6
+    ],
+    "axis": "Y",
+    "rot": 90,
+    "type": "SLIDER",
+    "limits": [
+      -7.529872517154143,
+      16.45398054389945
+    ]
+  },
+  {
+    "name": "jaw_right",
+    "a": "wrist",
+    "b": "jaw_r",
+    "xyz": [
+      -0.2,
+      164.9,
+      164.6
+    ],
+    "axis": "Y",
+    "rot": 90,
+    "type": "SLIDER",
+    "limits": [
+      -16.45398054389945,
+      7.529872517154143
+    ]
+  },
+  {
+    "name": "coupler_left",
+    "a": "gripper_crank",
+    "b": "coupler_l",
+    "xyz": [
+      -0.2,
+      164.9,
+      178.6
+    ],
+    "axis": "X",
+    "rot": -90,
+    "type": "REVOLUTE"
+  },
+  {
+    "name": "coupler_right",
+    "a": "gripper_crank",
+    "b": "coupler_r",
+    "xyz": [
+      -0.2,
+      164.9,
+      150.6
+    ],
+    "axis": "X",
+    "rot": -90,
+    "type": "REVOLUTE"
+  },
+  {
+    "name": "camera_mount_fixed",
+    "a": "wrist",
+    "b": "camera_mount",
+    "xyz": [
+      -0.2,
+      164.9,
+      199.85
+    ],
+    "axis": "Z",
+    "rot": 0,
+    "type": "FASTENED"
+  },
+  {
+    "name": "camera_body_fixed",
+    "a": "camera_mount",
+    "b": "camera_body",
+    "xyz": [
+      -0.2,
+      185,
+      250
+    ],
+    "axis": "Z",
+    "rot": 0,
+    "type": "FASTENED"
+  },
+  {
+    "name": "closing_left",
+    "a": "coupler_l",
+    "b": "jaw_l",
+    "xyz": [
+      -19.693588689617926,
+      192.9,
+      164.6
+    ],
+    "axis": "X",
+    "rot": -90,
+    "type": "BALL",
+    "closing": true
+  },
+  {
+    "name": "closing_right",
+    "a": "coupler_r",
+    "b": "jaw_r",
+    "xyz": [
+      19.293588689617927,
+      192.9,
+      164.6
+    ],
+    "axis": "X",
+    "rot": -90,
+    "type": "BALL",
+    "closing": true
+  }
+]

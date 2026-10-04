@@ -1,0 +1,1336 @@
+{
+  "base_link": [
+    {
+      "source_name": "ARM_M01_ref00",
+      "part_id": "JFD",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref00",
+      "part_id": "JFH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref01",
+      "part_id": "JFL",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref02",
+      "part_id": "JFP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref03",
+      "part_id": "JFT",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref04",
+      "part_id": "JFX",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref05",
+      "part_id": "JFb",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref06",
+      "part_id": "JFf",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref07",
+      "part_id": "JFj",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref08",
+      "part_id": "JFn",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref09",
+      "part_id": "JFr",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref10",
+      "part_id": "JFv",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref11",
+      "part_id": "JFz",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref12",
+      "part_id": "JF3",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref13",
+      "part_id": "JF7",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref14",
+      "part_id": "JF/",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref15",
+      "part_id": "KFDB",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref16",
+      "part_id": "KFHB",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref17",
+      "part_id": "KFLB",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref18",
+      "part_id": "KFPB",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref19",
+      "part_id": "KFTB",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref20",
+      "part_id": "KFXB",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref21",
+      "part_id": "KFbB",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref22",
+      "part_id": "KFfB",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref23",
+      "part_id": "KFjB",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref24",
+      "part_id": "KFnB",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref25",
+      "part_id": "KFrB",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M01_ref26",
+      "part_id": "KFvB",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref27",
+      "part_id": "KFzB",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref28",
+      "part_id": "KF3B",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref29",
+      "part_id": "KF7B",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref30",
+      "part_id": "KF/B",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref31",
+      "part_id": "KFDC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref32",
+      "part_id": "KFHC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref33",
+      "part_id": "KFLC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M01_ref34",
+      "part_id": "KFPC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_P01_base",
+      "part_id": "KFLL",
+      "body_type": "solid"
+    }
+  ],
+  "shoulder_yaw": [
+    {
+      "source_name": "ARM_M02_ref00",
+      "part_id": "KFTC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref00",
+      "part_id": "KFXC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref01",
+      "part_id": "KFbC",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref02",
+      "part_id": "KFfC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref03",
+      "part_id": "KFjC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref04",
+      "part_id": "KFnC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref05",
+      "part_id": "KFrC",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref06",
+      "part_id": "KFvC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref07",
+      "part_id": "KFzC",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref08",
+      "part_id": "KF3C",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref09",
+      "part_id": "KF7C",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref10",
+      "part_id": "KF/C",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref11",
+      "part_id": "KFDD",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref12",
+      "part_id": "KFHD",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref13",
+      "part_id": "KFLD",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref14",
+      "part_id": "KFPD",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref15",
+      "part_id": "KFTD",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref16",
+      "part_id": "KFXD",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref17",
+      "part_id": "KFbD",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref18",
+      "part_id": "KFfD",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref19",
+      "part_id": "KFjD",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref20",
+      "part_id": "KFnD",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref21",
+      "part_id": "KFrD",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref22",
+      "part_id": "KFvD",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref23",
+      "part_id": "KFzD",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref24",
+      "part_id": "KF3D",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref25",
+      "part_id": "KF7D",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M02_ref26",
+      "part_id": "KF/D",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref27",
+      "part_id": "KFDE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref28",
+      "part_id": "KFHE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref29",
+      "part_id": "KFLE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref30",
+      "part_id": "KFPE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref31",
+      "part_id": "KFTE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref32",
+      "part_id": "KFXE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref33",
+      "part_id": "KFbE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M02_ref34",
+      "part_id": "KFfE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_P02_yaw_carrier",
+      "part_id": "KFPL",
+      "body_type": "solid"
+    }
+  ],
+  "upper_arm": [
+    {
+      "source_name": "ARM_M03_ref00",
+      "part_id": "KFjE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref00",
+      "part_id": "KFnE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref01",
+      "part_id": "KFrE",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref02",
+      "part_id": "KFvE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref03",
+      "part_id": "KFzE",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref04",
+      "part_id": "KF3E",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref05",
+      "part_id": "KF7E",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref06",
+      "part_id": "KF/E",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref07",
+      "part_id": "KFDF",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref08",
+      "part_id": "KFHF",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref09",
+      "part_id": "KFLF",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref10",
+      "part_id": "KFPF",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref11",
+      "part_id": "KFTF",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref12",
+      "part_id": "KFXF",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref13",
+      "part_id": "KFbF",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref14",
+      "part_id": "KFfF",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref15",
+      "part_id": "KFjF",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref16",
+      "part_id": "KFnF",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref17",
+      "part_id": "KFrF",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref18",
+      "part_id": "KFvF",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref19",
+      "part_id": "KFzF",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref20",
+      "part_id": "KF3F",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref21",
+      "part_id": "KF7F",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref22",
+      "part_id": "KF/F",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref23",
+      "part_id": "KFDG",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref24",
+      "part_id": "KFHG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref25",
+      "part_id": "KFLG",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M03_ref26",
+      "part_id": "KFPG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref27",
+      "part_id": "KFTG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref28",
+      "part_id": "KFXG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref29",
+      "part_id": "KFbG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref30",
+      "part_id": "KFfG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref31",
+      "part_id": "KFjG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref32",
+      "part_id": "KFnG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref33",
+      "part_id": "KFrG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M03_ref34",
+      "part_id": "KFvG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_P03_shoulder_XL430",
+      "part_id": "KFTL",
+      "body_type": "solid"
+    }
+  ],
+  "forearm": [
+    {
+      "source_name": "ARM_M04_ref00",
+      "part_id": "KFzG",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref00",
+      "part_id": "KF3G",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref01",
+      "part_id": "KF7G",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref02",
+      "part_id": "KF/G",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref03",
+      "part_id": "KFDH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref04",
+      "part_id": "KFHH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref05",
+      "part_id": "KFLH",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref06",
+      "part_id": "KFPH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref07",
+      "part_id": "KFTH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref08",
+      "part_id": "KFXH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref09",
+      "part_id": "KFbH",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref10",
+      "part_id": "KFfH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref11",
+      "part_id": "KFjH",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref12",
+      "part_id": "KFnH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref13",
+      "part_id": "KFrH",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref14",
+      "part_id": "KFvH",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref15",
+      "part_id": "KFzH",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref16",
+      "part_id": "KF3H",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref17",
+      "part_id": "KF7H",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref18",
+      "part_id": "KF/H",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref19",
+      "part_id": "KFDI",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref20",
+      "part_id": "KFHI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref21",
+      "part_id": "KFLI",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref22",
+      "part_id": "KFPI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref23",
+      "part_id": "KFTI",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref24",
+      "part_id": "KFXI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref25",
+      "part_id": "KFbI",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M04_ref26",
+      "part_id": "KFfI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref27",
+      "part_id": "KFjI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref28",
+      "part_id": "KFnI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref29",
+      "part_id": "KFrI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref30",
+      "part_id": "KFvI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref31",
+      "part_id": "KFzI",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref32",
+      "part_id": "KF3I",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref33",
+      "part_id": "KF7I",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M04_ref34",
+      "part_id": "KF/I",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_P04_extension_XL430",
+      "part_id": "KFXL",
+      "body_type": "solid"
+    }
+  ],
+  "wrist": [
+    {
+      "source_name": "ARM_M05_ref01",
+      "part_id": "KFDJ",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref02",
+      "part_id": "KFHJ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref03",
+      "part_id": "KFLJ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref04",
+      "part_id": "KFPJ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref05",
+      "part_id": "KFTJ",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref06",
+      "part_id": "KFXJ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref07",
+      "part_id": "KFbJ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref08",
+      "part_id": "KFfJ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref09",
+      "part_id": "KFjJ",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref10",
+      "part_id": "KFnJ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref11",
+      "part_id": "KFrJ",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref12",
+      "part_id": "KFvJ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref13",
+      "part_id": "KFzJ",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref14",
+      "part_id": "KF3J",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref15",
+      "part_id": "KF7J",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref16",
+      "part_id": "KF/J",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref17",
+      "part_id": "KFDK",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref18",
+      "part_id": "KFHK",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref19",
+      "part_id": "KFLK",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref20",
+      "part_id": "KFPK",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref21",
+      "part_id": "KFTK",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref22",
+      "part_id": "KFXK",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref23",
+      "part_id": "KFbK",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref24",
+      "part_id": "KFfK",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref25",
+      "part_id": "KFjK",
+      "body_type": "sheet"
+    },
+    {
+      "source_name": "ARM_M05_ref26",
+      "part_id": "KFnK",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref27",
+      "part_id": "KFrK",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref28",
+      "part_id": "KFvK",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref29",
+      "part_id": "KFzK",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref30",
+      "part_id": "KF3K",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref31",
+      "part_id": "KF7K",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref32",
+      "part_id": "KF/K",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref33",
+      "part_id": "KFDL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_M05_ref34",
+      "part_id": "KFHL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "ARM_P05_wrist_XL430",
+      "part_id": "KFbL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_frame",
+      "part_id": "KFfL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_U",
+      "part_id": "KFjL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_D",
+      "part_id": "KFnL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_XL430_fixed",
+      "part_id": "KFTM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_XL430_fixed",
+      "part_id": "KFXM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_-37.5_-24.5_washer",
+      "part_id": "KFPN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_-37.5_-24.5_bolt",
+      "part_id": "KFTN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_-37.5_-24.5_nut",
+      "part_id": "KFXN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_-37.5_24.5_washer",
+      "part_id": "KFbN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_-37.5_24.5_bolt",
+      "part_id": "KFfN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_-37.5_24.5_nut",
+      "part_id": "KFjN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_37.5_-24.5_washer",
+      "part_id": "KFnN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_37.5_-24.5_bolt",
+      "part_id": "KFrN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_37.5_-24.5_nut",
+      "part_id": "KFvN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_37.5_24.5_washer",
+      "part_id": "KFzN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_37.5_24.5_bolt",
+      "part_id": "KF3N",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_cap_37.5_24.5_nut",
+      "part_id": "KF7N",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_case_tapper_-11",
+      "part_id": "KF/O",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_case_tapper_11",
+      "part_id": "KFDP",
+      "body_type": "solid"
+    }
+  ],
+  "gripper_crank": [
+    {
+      "source_name": "PG3_crank",
+      "part_id": "KFrL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_horn_spacer",
+      "part_id": "KFvL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_XL430_horn",
+      "part_id": "KFbM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_drive_R_washer",
+      "part_id": "KFfM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_drive_R_bolt",
+      "part_id": "KFjM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_drive_R_nut",
+      "part_id": "KFnM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_drive_L_washer",
+      "part_id": "KFrM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_drive_L_bolt",
+      "part_id": "KFvM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_drive_L_nut",
+      "part_id": "KFzM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_horn_bolt_0",
+      "part_id": "KFvO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_horn_bolt_1",
+      "part_id": "KFzO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_horn_bolt_2",
+      "part_id": "KF3O",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_horn_bolt_3",
+      "part_id": "KF7O",
+      "body_type": "solid"
+    }
+  ],
+  "jaw_l": [
+    {
+      "source_name": "PG3_carriage_L",
+      "part_id": "KFDM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_L",
+      "part_id": "KFHM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pad_L",
+      "part_id": "KFLM",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_carriage_L_washer",
+      "part_id": "KFDN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_carriage_L_bolt",
+      "part_id": "KFHN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_carriage_L_nut",
+      "part_id": "KFLN",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_L_-14_washer",
+      "part_id": "KFXO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_L_-14_bolt",
+      "part_id": "KFbO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_L_-14_nut",
+      "part_id": "KFfO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_L_14_washer",
+      "part_id": "KFjO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_L_14_bolt",
+      "part_id": "KFnO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_L_14_nut",
+      "part_id": "KFrO",
+      "body_type": "solid"
+    }
+  ],
+  "jaw_r": [
+    {
+      "source_name": "PG3_carriage_R",
+      "part_id": "KFzL",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_R",
+      "part_id": "KF3L",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pad_R",
+      "part_id": "KF7L",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_carriage_R_washer",
+      "part_id": "KF3M",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_carriage_R_bolt",
+      "part_id": "KF7M",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_pivot_carriage_R_nut",
+      "part_id": "KF/M",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_R_-14_washer",
+      "part_id": "KF/N",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_R_-14_bolt",
+      "part_id": "KFDO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_R_-14_nut",
+      "part_id": "KFHO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_R_14_washer",
+      "part_id": "KFLO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_R_14_bolt",
+      "part_id": "KFPO",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "PG3_finger_R_14_nut",
+      "part_id": "KFTO",
+      "body_type": "solid"
+    }
+  ],
+  "coupler_l": [
+    {
+      "source_name": "PG3_link_L",
+      "part_id": "KFPM",
+      "body_type": "solid"
+    }
+  ],
+  "coupler_r": [
+    {
+      "source_name": "PG3_link_R",
+      "part_id": "KF/L",
+      "body_type": "solid"
+    }
+  ],
+  "camera_mount": [
+    {
+      "source_name": "CAM5_BASE",
+      "part_id": "KFHP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_D405_CARRIER",
+      "part_id": "KFLP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_BASE_WASHER_0",
+      "part_id": "KFPP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_BASE_TAP_0",
+      "part_id": "KFTP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_BASE_WASHER_1",
+      "part_id": "KFXP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_BASE_TAP_1",
+      "part_id": "KFbP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_BASE_WASHER_2",
+      "part_id": "KFfP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_BASE_TAP_2",
+      "part_id": "KFjP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_BASE_WASHER_3",
+      "part_id": "KFnP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_BASE_TAP_3",
+      "part_id": "KFrP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_TIE_WASHER_0",
+      "part_id": "KFvP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_TIE_BOLT_0",
+      "part_id": "KFzP",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_TIE_NUT_0",
+      "part_id": "KF3P",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_TIE_WASHER_1",
+      "part_id": "KF7P",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_TIE_BOLT_1",
+      "part_id": "KF/P",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_TIE_NUT_1",
+      "part_id": "KFDQ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_D405_SCREW_0",
+      "part_id": "KFHQ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_D405_SCREW_1",
+      "part_id": "KFLQ",
+      "body_type": "solid"
+    }
+  ],
+  "camera_body": [
+    {
+      "source_name": "CAM5_D405_BODY",
+      "part_id": "KFPQ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_D405_USB_PLUG",
+      "part_id": "KFTQ",
+      "body_type": "solid"
+    },
+    {
+      "source_name": "CAM5_D405_USB_CABLE_STUB",
+      "part_id": "KFXQ",
+      "body_type": "solid"
+    }
+  ]
+}

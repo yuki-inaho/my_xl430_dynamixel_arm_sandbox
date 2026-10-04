@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-10-04T11:53:07.561326+09:00",
+  "status": "IMAGE_ACQUIRED_READ_HEALTHY_PHYSICAL_CALIBRATION_PENDING",
+  "camera_device": "/dev/v4l/by-id/usb-Sonix_Technology_Co.__Ltd._USB_Live_camera_SN0001-video-index0",
+  "image_mtime": "2026-10-04T11:51:28.208642+09:00",
+  "images_are_after_user_camera_adjustment": true,
+  "usb_reconnected_since_previous_session": true,
+  "simulated": false,
+  "acquisition_id": "9a75480d-6790-4540-9e72-a38dc078c49c",
+  "read_first_started_at": "2026-10-04T11:51:25.330+09:00",
+  "read_last_finished_at": "2026-10-04T11:51:30.312+09:00",
+  "summary": {
+    "frames": 100,
+    "incomplete_frames": 0,
+    "deadline_misses": 0,
+    "elapsed_seconds": 5.000073899,
+    "achieved_rate_hz": 19.999599369641558,
+    "interrupted": false,
+    "port_closed": true
+  },
+  "motors": [
+    {
+      "id": 1,
+      "min_count": 2064,
+      "max_count": 2064,
+      "last_count": 2064
+    },
+    {
+      "id": 2,
+      "min_count": 3129,
+      "max_count": 3130,
+      "last_count": 3130
+    },
+    {
+      "id": 3,
+      "min_count": 1152,
+      "max_count": 1152,
+      "last_count": 1152
+    },
+    {
+      "id": 4,
+      "min_count": 2058,
+      "max_count": 2059,
+      "last_count": 2058
+    },
+    {
+      "id": 5,
+      "min_count": 2059,
+      "max_count": 2059,
+      "last_count": 2059
+    }
+  ],
+  "all_torque_off": true,
+  "all_fault_free": true,
+  "visual_observation": {
+    "shoulder_elbow_wrist_visible": true,
+    "base_rotation_axis_occluded": true,
+    "desk_visible": true,
+    "focus": "clearer_than_initial_capture",
+    "camera_angle": "oblique_from_above",
+    "intrinsics_calibrated": false,
+    "perspective_corrected": false
+  },
+  "cad_calibration": null,
+  "motion_allowed": false,
+  "sources": [
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/usb-camera-1145/reconnected-read-1151.jsonl",
+      "sha256": "041390f4c30287202571406a83afe6f615e12400aa78b6f37b0068adae79edd2"
+    },
+    {
+      "path": "/home/inaho-omen/Project/my_dynamixel_arm_sandbox/reports/robot-completion-20261004/usb-camera-1145/adjusted-camera-1151.jpg",
+      "sha256": "8a1d0a6f6d3152d2511d454f4aca270968003645c6bf37e775d4420efc1d45f8"
+    }
+  ]
+}

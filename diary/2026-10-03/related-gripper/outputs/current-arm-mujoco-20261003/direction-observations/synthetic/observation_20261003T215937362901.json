@@ -1,0 +1,27 @@
+{
+  "before": {
+    "motor_id": 3,
+    "position_counts": 1153,
+    "finished_at": "2026-10-03T12:59:37.093070+00:00",
+    "sequence": 56,
+    "mode": 3,
+    "session_id": "synthetic-session",
+    "context_fingerprint": "ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e",
+    "simulated": true
+  },
+  "after": {
+    "motor_id": 3,
+    "position_counts": 1267,
+    "finished_at": "2026-10-03T12:59:37.306731+00:00",
+    "sequence": 60,
+    "mode": 3,
+    "session_id": "synthetic-session",
+    "context_fingerprint": "ba6c0b20d39e37868a272ee01cda03e7fd2b72ddf55160c04cd71bc4291bda2e",
+    "simulated": true
+  },
+  "delta_counts": 114,
+  "degrees_signed": 10.01953125,
+  "opening_count_sign": 1,
+  "physical_change_reported": "opening",
+  "physical_change_confirmed": true
+}
