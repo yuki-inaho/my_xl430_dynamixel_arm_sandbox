@@ -162,7 +162,15 @@ uv/rtk使用。justfileなし。動作は `uv run --no-sync python temp/pose_cap
 - [x] 新ニュートラルへ戻して脱力・設定復元を実READで確認する。停止時は現位置保持であり、無支持の自動OFFは行わない。
 
 完了記録：18:37:58に基準へ到達[2112,3473,1153,3392,1951]、既定20count誤差内。18:38:01全5台OFFを読戻し、脱力後10sample移動20count以内。18:38:02にPWM885/PV0/PA0を各台復元・読戻しし正常終了0、port閉鎖。18:38:41の独立READ3sampleも全OFF/速度0/error0、34〜37℃、[2112〜2113,3473,1153,3392,1951]で安定。neutral-finalへRGB-Dを保存、原画像でも折り畳み・カメラ上部の姿勢を確認した。電源装置OUTPUTは操作していない。
-- [ ] 写真一覧・スキル・日誌・作業書を更新し、private sandboxへ明示パスをcommit/push、remote一致を確認する。
+- [x] 写真一覧・スキル・日誌・作業書を更新し、private sandboxへ明示パスをcommit/push、remote一致を確認する。
+
+完了記録：2026-10-04 18:45:15 JST。private mainへ41eb5f8をpush成功、
+git ls-remoteとローカルHEADが41eb5f81f8e15b46b33fc8fa9c30b026bc84c92cで一致。
+新章13の5項目/今回DoD完了。開始/終了neutralと20uniqueの原画像・parameter・READ・
+HTML/PNG、固定D405モデル/ソース、スキル改善を保存した。
+既存tempのUSB20枚撮り直しは途中までの過去作業であり、今回のD435 20枚とは別。
+旧動画と未追跡reportsはローカル保持、PUBLIC gripperへのpushはしていない。
+末尾空行のdiff検査失敗はpush前に修正、git diff HEAD^ --check終了0を再確認した。
 
 push準備記録：HTML22組/44画像をPlaywright decode確認、gallery-browser.png保存。
 元画像/params/ログとモデル関連source/仕様/29mesh出力をPRIVATE diaryへコピー。

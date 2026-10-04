@@ -35,4 +35,7 @@ Gitコピー：diary/2026-10-04/d405-mounted-rgbd/。
 元gripperはPUBLICなので現物写真/記録を公開せず、既存PRIVATE sandboxへ保存する。
 元gripper working treeのuntrackedファイルはそのまま残す。公開側へのpushは行わない。
 2本の既存大容量動画は今回のGit保存対象に含めず、ローカルに保持する。
-push結果は完了後に作業書へ追記する。
+18:45:15 JST、41eb5f8をPRIVATE mainへpush成功。独立ls-remoteとlocal HEAD一致。
+末尾空行のstaged diff失敗をcommit前に停止しなかったため、push前に修正して
+全変更diff検査を再確認した。作業書第13章5項目/今回DoD完了を記録する。
+この完了記録の追記は小さい別commitで送る。
