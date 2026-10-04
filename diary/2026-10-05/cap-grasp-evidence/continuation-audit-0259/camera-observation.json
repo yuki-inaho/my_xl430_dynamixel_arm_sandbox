@@ -1,0 +1,302 @@
+{
+  "at": "2026-10-05T03:00:26.172220+09:00",
+  "motor_write": false,
+  "captures": [
+    {
+      "camera": "d435",
+      "status": {
+        "serial": "922612070196",
+        "fps": 30,
+        "size": [
+          1280,
+          720
+        ],
+        "acquisition_rate_hz": 23.007864643739318,
+        "frameset_frame_number": 265966,
+        "received_at": "2026-10-05T03:00:25.491383+09:00",
+        "age_seconds": 0.035382934991503134,
+        "depth_valid_fraction": 0.791572265625,
+        "robot_observation": null
+      },
+      "receipt": {
+        "path": "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/d435/capture-20261005-030025-633340",
+        "metadata": {
+          "captured_at": "2026-10-05T03:00:25.797177+09:00",
+          "host_frame_received_at": "2026-10-05T03:00:25.581788+09:00",
+          "device": {
+            "name": "Intel RealSense D435",
+            "serial": "922612070196",
+            "firmware": "5.17.3.10",
+            "usb_type": "3.2"
+          },
+          "requested_serial": "922612070196",
+          "depth_scale_m_per_count": 0.0010000000474974513,
+          "intrinsics": {
+            "color": {
+              "width": 1280,
+              "height": 720,
+              "fx": 925.4581298828125,
+              "fy": 925.7662963867188,
+              "ppx": 645.314453125,
+              "ppy": 360.0555419921875,
+              "model": "distortion.inverse_brown_conrady",
+              "coeffs": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "depth": {
+              "width": 1280,
+              "height": 720,
+              "fx": 634.2400512695312,
+              "fy": 634.2400512695312,
+              "ppx": 638.5535888671875,
+              "ppy": 361.5152282714844,
+              "model": "distortion.brown_conrady",
+              "coeffs": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "depth_to_color": {
+            "rotation_sdk_column_major": [
+              0.9999555945396423,
+              0.00693002063781023,
+              -0.006390753202140331,
+              -0.0069179171696305275,
+              0.999974250793457,
+              0.0019140492659062147,
+              0.006403853185474873,
+              -0.0018697535851970315,
+              0.9999777674674988
+            ],
+            "translation_m": [
+              0.014853975735604763,
+              0.00012355681974440813,
+              0.0003696228377521038
+            ]
+          },
+          "alignment_target": "color",
+          "color_storage": "BGR encoded by OpenCV to PNG",
+          "frameset_timestamp_ms": 1791136825511.859,
+          "frameset_frame_number": 265969,
+          "per_stream_timestamps": null,
+          "fps": 30,
+          "robot_observation": null,
+          "streams": [
+            {
+              "stream": "stream.depth",
+              "index": 0,
+              "fps": 30,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "stream": "stream.infrared",
+              "index": 1,
+              "fps": 30,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "stream": "stream.infrared",
+              "index": 2,
+              "fps": 30,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "stream": "stream.color",
+              "index": 0,
+              "fps": 30,
+              "width": 1280,
+              "height": 720
+            }
+          ],
+          "shapes": {
+            "color": [
+              720,
+              1280,
+              3
+            ],
+            "depth": [
+              720,
+              1280
+            ],
+            "aligned_depth": [
+              720,
+              1280
+            ],
+            "ir_left": [
+              720,
+              1280
+            ],
+            "ir_right": [
+              720,
+              1280
+            ]
+          },
+          "depth_dtype": "uint16",
+          "aligned_depth_valid_fraction": 0.7895692274305556
+        }
+      },
+      "requested_at_unix_s": 1791136825.558828,
+      "finished_at_unix_s": 1791136825.892097
+    },
+    {
+      "camera": "d405",
+      "status": {
+        "serial": "230322272284",
+        "fps": 30,
+        "size": [
+          1280,
+          720
+        ],
+        "acquisition_rate_hz": 19.91795834790969,
+        "frameset_frame_number": 265972,
+        "received_at": "2026-10-05T03:00:25.796047+09:00",
+        "age_seconds": 0.05084226401231717,
+        "depth_valid_fraction": 0.3740625,
+        "robot_observation": null
+      },
+      "receipt": {
+        "path": "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/d405/capture-20261005-030025-955946",
+        "metadata": {
+          "captured_at": "2026-10-05T03:00:26.101643+09:00",
+          "host_frame_received_at": "2026-10-05T03:00:25.913009+09:00",
+          "device": {
+            "name": "Intel RealSense D405",
+            "serial": "230322272284",
+            "firmware": "5.17.0.10",
+            "usb_type": "3.2"
+          },
+          "requested_serial": "230322272284",
+          "depth_scale_m_per_count": 9.999999747378752e-05,
+          "intrinsics": {
+            "color": {
+              "width": 1280,
+              "height": 720,
+              "fx": 653.0734252929688,
+              "fy": 651.2503662109375,
+              "ppx": 635.7214965820312,
+              "ppy": 362.7729187011719,
+              "model": "distortion.inverse_brown_conrady",
+              "coeffs": [
+                -0.05370735749602318,
+                0.060372427105903625,
+                0.0005643789190798998,
+                0.001482103019952774,
+                -0.020219191908836365
+              ]
+            },
+            "depth": {
+              "width": 1280,
+              "height": 720,
+              "fx": 643.3300170898438,
+              "fy": 643.3300170898438,
+              "ppx": 643.2753295898438,
+              "ppy": 362.85235595703125,
+              "model": "distortion.brown_conrady",
+              "coeffs": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "depth_to_color": {
+            "rotation_sdk_column_major": [
+              0.9999949336051941,
+              -0.00015938088472466916,
+              -0.0031870936509221792,
+              0.00016096944455057383,
+              0.9999998807907104,
+              0.0004981878446415067,
+              0.003187013790011406,
+              -0.0004986983258277178,
+              0.9999948143959045
+            ],
+            "translation_m": [
+              -5.217440411797725e-05,
+              -3.0970772058935836e-05,
+              2.384900471952278e-05
+            ]
+          },
+          "alignment_target": "color",
+          "color_storage": "BGR encoded by OpenCV to PNG",
+          "frameset_timestamp_ms": 1791136825849.4155,
+          "frameset_frame_number": 265975,
+          "per_stream_timestamps": null,
+          "fps": 30,
+          "robot_observation": null,
+          "streams": [
+            {
+              "stream": "stream.depth",
+              "index": 0,
+              "fps": 30,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "stream": "stream.color",
+              "index": 0,
+              "fps": 30,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "stream": "stream.infrared",
+              "index": 1,
+              "fps": 30,
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "stream": "stream.infrared",
+              "index": 2,
+              "fps": 30,
+              "width": 1280,
+              "height": 720
+            }
+          ],
+          "shapes": {
+            "color": [
+              720,
+              1280,
+              3
+            ],
+            "depth": [
+              720,
+              1280
+            ],
+            "aligned_depth": [
+              720,
+              1280
+            ],
+            "ir_left": [
+              720,
+              1280
+            ],
+            "ir_right": [
+              720,
+              1280
+            ]
+          },
+          "depth_dtype": "uint16",
+          "aligned_depth_valid_fraction": 0.36730794270833333
+        }
+      },
+      "requested_at_unix_s": 1791136825.893617,
+      "finished_at_unix_s": 1791136826.1721816
+    }
+  ]
+}

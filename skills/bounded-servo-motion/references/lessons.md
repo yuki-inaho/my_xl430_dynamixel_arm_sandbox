@@ -178,3 +178,13 @@ Each was reproduced offline, fixed test-first, and is now covered by tests.
   binding cause or as permission to keep increasing output. If physical support is unknown,
   report the live torque state and obtain support before release; read-only monitoring cannot
   provide gravity support or safely switch the supply off.
+- Reuse the release algorithm, not an incompatible session controller: a gripper's held
+  PWM and a displaced arm's windows still need fresh verification. A recovery-only goal
+  restriction may wrongly reject parking the actual sagged count after confirmed OFF.
+  Use a release-specific controller matching the recorded family; reject torque ON and
+  park/restoration until all axes are confirmed OFF. Keep the old CLI default unchanged.
+- Post-stop setting restoration is still evidence: the recorded D19 log has five valid
+  park writes followed by ID2 PWM350 restoration. An exact-five-tail loader rejects that
+  valid pattern. Handle only the explicitly recorded restore in its scoped adapter, retain
+  the strict park validator, and verify the live settings before any release. Do not discard
+  arbitrary trailing faults/writes or relabel incomplete evidence as complete.

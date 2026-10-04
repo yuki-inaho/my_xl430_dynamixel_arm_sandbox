@@ -104,3 +104,59 @@ def test_return_only_output_revision_is_id2_scoped_and_restores_off(monkeypatch,
                    for mid, address, value in port.ser.writes())
     assert all(port.ser.torque(mid) == 0 for mid in range(1, 6))
     assert all(c.read(mid, ("goal_pwm",))["goal_pwm"] == 885 for mid in range(1, 6))
+
+
+def test_mounted_gripper_supported_release_accepts_held_pwm_and_parks_sag_after_off(
+    monkeypatch, tmp_path
+):
+    monkeypatch.syspath_prepend(str(Path(__file__).resolve().parents[1] / "scripts"))
+    from cap_grasp_stages import WideRecoveryController
+    from cap_supported_release import SupportedGripperReleaseController, load_supported_plan
+
+    from arm_observer.photo_session import load_previous_plan
+    from arm_observer.photo_supported_release import release_supported
+
+    serial = EmuSerial(positions=(2021, 3537, 1133, 3390, 2091), step=12)
+    port = StandbyPort("offline-emulator")
+    port.ser = serial
+    port.is_open, port.baudrate, port.tx_time_per_byte = True, 1000000, 0.01
+    clock, events = FakeClock(), []
+    c = WideRecoveryController(port, PacketHandler(2), events.append,
+                               clock.monotonic, clock.sleep)
+    c.prepare_photo()
+    c.enable_photo()
+    c.move_photo((2021, 3537, 1133, 3380, 2091))
+    c.move_photo((1509, 2852, 1133, 3380, 2091))
+    c.freeze("return failure")
+    c.write(2, "pwm", 350)  # Real final log restores output after the five park writes.
+    # Current observed count can differ from the retained raw supporting goal.
+    serial.motors[4].step = lambda _: None  # Model the observed stationary load sag.
+    put(serial.motors[4].t, 132, 4, 3372)
+    source = tmp_path / "held.jsonl"
+    source.write_text("\n".join(json.dumps(e) for e in events) + "\n")
+    releasing = SupportedGripperReleaseController(
+        port, PacketHandler(2), events.append, clock.monotonic, clock.sleep
+    )
+    old = len(serial.writes())
+    with pytest.raises(RuntimeError, match="Interrupted five-motor"):
+        load_previous_plan(source, held=True)
+    invalid = tmp_path / "wrong-output.jsonl"
+    bad_events = [json.loads(line) for line in source.read_text().splitlines()]
+    bad_events[-1]["value"] = 395
+    invalid.write_text("\n".join(json.dumps(e) for e in bad_events) + "\n")
+    with pytest.raises(RuntimeError, match="Interrupted five-motor"):
+        load_supported_plan(invalid, held=True)
+    releasing.prepare_photo(load_supported_plan(source, held=True))
+    assert len(serial.writes()) == old  # Fresh preparation is READ-only.
+    with pytest.raises(MotionViolation, match="cannot enable torque"):
+        releasing.write(1, "torque", 1)
+    with pytest.raises(MotionViolation, match="All-five OFF"):
+        releasing.write(4, "goal", 3372)
+    assert len(serial.writes()) == old
+    release_supported(releasing, support_confirmed=True)
+    writes = serial.writes()[old:]
+    assert writes[:5] == [(mid, 64, 0) for mid in reversed(range(1, 6))]
+    assert (4, 116, 3372) in writes[5:]
+    assert all(serial.torque(mid) == 0 for mid in range(1, 6))
+    assert all(releasing.read(mid, ("goal_pwm",))["goal_pwm"] == 885
+               for mid in range(1, 6))

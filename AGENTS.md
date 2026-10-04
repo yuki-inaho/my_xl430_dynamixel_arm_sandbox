@@ -218,3 +218,10 @@ No further increase or repeat of the failed route is authorized by that decision
 The last observed state holds all five axes ON, not OFF; use CURRENT_STATE.json's
 timestamp and fresh reads. Physical support remains unverified. Confirm actual support
 before the existing supported-release procedure; no grasp or safe return has been achieved.
+
+D19 support-release preparation: scripts/cap_supported_release.py reuses the existing
+all-OFF-first release algorithm with the recorded D19 PWM/window family. It refuses
+torque ON and goal/profile writes while any axis remains enabled. The ordinary CLI's
+PhotoController default is unchanged. Actual external weight support must be confirmed
+before --support-confirmed --execute; an encoder snapshot or candidate table plane is
+not that confirmation. No repeat motion/395 trial is authorized by this release path.

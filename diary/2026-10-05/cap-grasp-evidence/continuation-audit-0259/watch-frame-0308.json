@@ -1,5 +1,5 @@
 {
-  "source": "continuation-audit-0259/watch-frame-0308.json",
+  "source": "/home/inaho-omen/data/xl430-arm/2026-10-05/cap-grasp-evidence/holding-watch-025457.jsonl",
   "frame": {
     "sequence": 1736,
     "started_at": "2026-10-05T03:09:41.232+09:00",
@@ -91,11 +91,5 @@
         "faults": []
       }
     ]
-  },
-  "cap_grasp_achieved": false,
-  "returned_to_original": false,
-  "torque_off": false,
-  "supply_off": false,
-  "support_verified": false,
-  "awaiting_physical_support": true
+  }
 }

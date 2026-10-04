@@ -11,4 +11,6 @@
 
 各撮影ディレクトリにはcolor.png、生/整列深度、IR、metadata.json、calibration.toml、robot-before-capture.jsonがあります。二眼はホスト時刻/前後READで対応し、ハード同期ではありません。元のカメラ保存データは ~/data/xl430-arm/2026-10-05/cap-grasp-evidence 以下。JSONLと実画像が根拠であり、ファイル名のnominal角を達成角とみなしません。
 
-物理支持は未確認。支えた実状態をユーザーが確認した後、fresh identity/alias/profile/goalを照合して既存supported-release経路へ進みます。絶対ゼロ点・物理ID対応・全可動域衝突の認定は未完了です。
+物理支持は未確認。支えた実状態をユーザーが確認した後、fresh identity/alias/profile/goalを照合してD19用の `scripts/cap_supported_release.py` へ進みます。通常photo CLIは今回のjaw310/ID2窓に適合しません。D19入口は既存release算法を再利用し、全OFFまでpark/設定復元を拒否します。`--support-confirmed --execute` は現物の重さを支えた実状態の確認後だけ指定します。READ-only watcherの現在の実所有者を確認し、その所有者だけ終了してserialを明け、最後の `return-output395-once/events.jsonl` を `--resume-log` に使います。絶対ゼロ点・物理ID対応・全可動域衝突の認定は未完了です。
+
+[03:00の現物再確認](continuation-audit-0259/RECOVERY_BLOCKER_AUDIT.json)と二眼RGB-Dを追加しました。これは保持状態の撮影で、キャップ把持の証拠ではありません。

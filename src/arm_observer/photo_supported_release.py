@@ -40,7 +40,7 @@ def off_motor(controller, mid):
     raise RuntimeError(f"ID{mid} OFF unconfirmed; RAM restoration skipped")
 
 
-def main():
+def main(controller_type=PhotoController, resume_loader=load_previous_plan):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--resume-log", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
@@ -58,14 +58,14 @@ def main():
 
     for signum in (signal.SIGINT, signal.SIGTERM, signal.SIGHUP):
         signal.signal(signum, record_signal)
-    resume = load_previous_plan(args.resume_log, held=True)
+    resume = resume_loader(args.resume_log, held=True)
     args.output.mkdir(parents=True, exist_ok=False)
     with (args.output / "events.jsonl").open("x") as log:
         with open_standby_bus(photo_device(args.config, args.device)) as (
             port,
             packet,
         ):
-            controller = PhotoController(port, packet, partial(write_event, log))
+            controller = controller_type(port, packet, partial(write_event, log))
             controller.prepare_photo(resume)
             if args.execute:
                 release_supported(controller, support_confirmed=args.support_confirmed)
