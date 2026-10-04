@@ -328,8 +328,8 @@ class Controller:
         if any(abs(f[i] - prior[i]) > 20 for f in frames for i in range(5)):
             raise RuntimeError("Arm shifted after torque OFF")
 
-    def restore_ram(self) -> None:
-        for mid in ACTIVE:
+    def restore_ram(self, ids: tuple[int, ...] = ACTIVE) -> None:
+        for mid in ids:
             for name, register in (("pwm", "goal_pwm"), ("velocity", "profile_velocity"),
                                    ("acceleration", "profile_acceleration")):
                 self.write(mid, name, self.saved[mid][register])

@@ -1,0 +1,201 @@
+{
+  "staged_files": 87,
+  "staged_bytes": 12093767,
+  "blockers": [],
+  "warnings": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 9243,
+      "blockers": [],
+      "warnings": [
+        "1 absolute home paths"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/apriltag-review/browser-review.png",
+      "bytes": 379464,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/apriltag-review/pdf-sheet-1.png",
+      "bytes": 36853,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/apriltag-review/pdf-sheet-2.png",
+      "bytes": 38803,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/apriltag-review/verify-sheet-1/synthetic_scene.png",
+      "bytes": 916508,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/apriltag-review/verify-sheet-2/synthetic_scene.png",
+      "bytes": 917902,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/WORKDOC.md",
+      "bytes": 6770,
+      "blockers": [],
+      "warnings": [
+        "1 absolute home paths"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/capture-20261004-190134-429382/aligned_depth.png",
+      "bytes": 674339,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/capture-20261004-190134-429382/color.png",
+      "bytes": 1365303,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/capture-20261004-190134-429382/depth.png",
+      "bytes": 664482,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/capture-20261004-190134-429382/depth_preview.png",
+      "bytes": 407044,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/capture-20261004-190134-429382/ir_left.png",
+      "bytes": 278029,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/capture-20261004-190134-429382/ir_right.png",
+      "bytes": 280683,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/live-browser.png",
+      "bytes": 654379,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/neutral/aligned_depth.png",
+      "bytes": 706056,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/neutral/color.png",
+      "bytes": 1287823,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/neutral/depth.png",
+      "bytes": 701427,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/neutral/depth_preview.png",
+      "bytes": 424386,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/neutral/ir_left.png",
+      "bytes": 300613,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/neutral/ir_right.png",
+      "bytes": 303445,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/capture-refactor/d405-usb-check/report-browser.png",
+      "bytes": 103816,
+      "blockers": [],
+      "warnings": [
+        "binary"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/conversations/opencode-apriltag-20261004_clean.json",
+      "bytes": 983474,
+      "blockers": [],
+      "warnings": [
+        "conversation export: review before publishing",
+        "e-mail addresses ['ebolson@umich.edu']",
+        "821 absolute home paths"
+      ]
+    },
+    {
+      "path": "diary/2026-10-04/workdocs/workdoc_Oct04-2026_apriltag_a4_sheet.md",
+      "bytes": 44351,
+      "blockers": [],
+      "warnings": [
+        "1 absolute home paths"
+      ]
+    },
+    {
+      "path": "src/arm_observer/apriltag/families.py",
+      "bytes": 4567,
+      "blockers": [],
+      "warnings": [
+        "e-mail addresses ['ebolson@umich.edu']"
+      ]
+    }
+  ]
+}

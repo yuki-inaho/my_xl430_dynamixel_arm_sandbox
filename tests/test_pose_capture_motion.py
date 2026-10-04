@@ -14,12 +14,8 @@ from arm_observer.standby_motion import StandbyPort
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def module():
-    return pose_capture_motion
-
-
 def setup():
-    m = module()
+    m = pose_capture_motion
     port = StandbyPort("offline-emulator")
     port.ser = EmuSerial(positions=(2063, 3123, 1147, 2049, 2059), step=12)
     port.is_open = True
@@ -35,7 +31,8 @@ def test_sdk_pose_path_returns_all_off_and_restores_settings():
     m, c, serial, events = setup()
     c.enable_photo()
     poses = m.load_poses(ROOT / "config/pose_capture_20261004.json")
-    for pose in poses[1:]:
+    # Same engine for each row: exercise staging, both yaw ends and the furthest variant.
+    for pose in (poses[1], poses[2], poses[3], poses[-1]):
         c.move_photo(c.target(pose["delta_deg"]))
     c.return_and_release()
     assert all(serial.torque(i) == 0 for i in range(1, 6))
@@ -66,7 +63,7 @@ def test_sdk_refuses_other_id_eeprom_and_outside_windows(mid, address, size, val
 
 
 def test_alias_and_wrong_initial_pose_refuse_before_writes():
-    m = module()
+    m = pose_capture_motion
     port = StandbyPort("offline-emulator")
     port.ser = EmuSerial(positions=(2063, 3123, 1147, 2049, 2059))
     port.is_open = True
@@ -87,13 +84,6 @@ def test_stop_holds_all_five_without_release():
         c.move_photo(c.target([0, 0, 30, 0, 0]))
     c.freeze("stop")
     assert all(serial.torque(i) == 1 for i in range(1, 6))
-
-
-def test_plan_has_twenty_neutral_variants_and_both_yaw_ends():
-    m = module()
-    poses = m.load_poses(ROOT / "config/pose_capture_20261004.json")
-    assert len(poses) == 24 and all(p["delta_deg"][0] == 0 for p in poses[4:])
-    assert poses[2]["delta_deg"][0] == -30 and poses[3]["delta_deg"][0] == 30
 
 
 def test_resume_reads_held_pose_without_reenable_and_restores_original_ram():

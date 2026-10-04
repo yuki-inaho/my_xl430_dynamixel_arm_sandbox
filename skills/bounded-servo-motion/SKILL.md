@@ -95,10 +95,16 @@ and against another motor ID. A longer travel deadline must not loosen early-pro
 overshoot, return, torque or fault checks. For this example the explicit choices are 10/30°;
 this is a local authorization, not permission to copy those magnitudes to another robot.
 
-Use fake readers for logic, the real SDK over a serial-level emulator for transactions
-(`tests/xl430_emulator.py`), and adversarial reviews that inject signals at every tick, lost
-packets, ENOSPC and broken pipes. Run the project's quality gates. Then: owner check, dry run,
+Use fake readers for distinct logic failures and the real SDK over a serial-level emulator
+for transaction boundaries (`tests/xl430_emulator.py`). Reuse interruption, lost-packet,
+release and broken-output cases; add a regression only when it detects a different failure.
+Choose representative limits/stages instead of repeating the same path for every table row.
+Run the project's applicable quality gates once; repeat only affected failures or changed
+behavior. Then: owner check, dry run,
 hashes of the code that will run, execute once, read back with the monitor, validate, record.
 State plainly what was not checked (for example no visual confirmation when unattended).
 Software release does not cover SIGKILL, hangs or a lost USB link; powered-motion stop and
 gravity support are distinct requirements.
+
+For multi-pose photography, use [rgbd-arm-pose-capture](../rgbd-arm-pose-capture/SKILL.md).
+Its camera verification and saving steps do not expand a single-joint motion authorization.

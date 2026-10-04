@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AprilTag A4 PDF レビュー — 2026-10-04</title>
+<style>
+body{font:16px/1.7 system-ui,sans-serif;background:#edf1f5;color:#182330;margin:0}
+main{max-width:1240px;margin:auto;padding:24px}h1{font-size:26px}a{color:#174e91}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,350px),1fr));gap:24px}
+figure{margin:0;background:white;padding:16px;border:1px solid #ccd6df;border-radius:8px}
+img{display:block;width:100%;height:auto}figcaption{margin-bottom:12px}code{overflow-wrap:anywhere}
+</style><main>
+<h1>AprilTag A4 PDF レビュー</h1>
+<p>2026-10-04 · 指定：36h11、2枚、各3列×4行、タグ黒枠40 mm、100 mm参照バー。</p>
+<p>PDF実体から全24 IDを検出。人工画像は両シート最大RMS 0.3881 px（基準0.5 px）。
+印刷時は<strong>100%・実際のサイズ</strong>を選び、自動拡縮を無効にしてください。
+この表示画像を印刷せず、リンク先のPDFを使用してください。</p>
+<p><a href="REPORT.md">レビュー記録</a> · <a href="pdf_validation.json">PDF検査結果</a> ·
+<a href="../conversations/opencode-apriltag-20261004_clean.json">元会話</a></p>
+<h2>実PDFのラスタ表示（150 dpi）</h2>
+<div class="grid">
+<figure><figcaption><a href="apriltag_36h11_a4_sheet_1_ids_000-011.pdf">Sheet 1 PDF / ID 0–11</a></figcaption>
+<img src="pdf-sheet-1.png" alt="A4縦、タグ12個と100 mm参照バー、ID0から11"></figure>
+<figure><figcaption><a href="apriltag_36h11_a4_sheet_2_ids_012-023.pdf">Sheet 2 PDF / ID 12–23</a></figcaption>
+<img src="pdf-sheet-2.png" alt="A4縦、タグ12個と100 mm参照バー、ID12から23"></figure>
+</div><h2>人工入力：透視・ぼけ・ノイズ</h2>
+<div class="grid">
+<figure><figcaption><a href="verify-sheet-1/synthetic_verify.json">Sheet 1：12/12 ID、RMS 0.3881 px</a></figcaption>
+<img src="verify-sheet-1/synthetic_scene.png" alt="シート1の透視変換とぼけを加えた人工入力"></figure>
+<figure><figcaption><a href="verify-sheet-2/synthetic_verify.json">Sheet 2：12/12 ID、RMS 0.3881 px</a></figcaption>
+<img src="verify-sheet-2/synthetic_scene.png" alt="シート2の透視変換とぼけを加えた人工入力"></figure>
+</div><p>人工条件の精度結果です。実カメラ精度・実際の印刷倍率は別途測定が必要です。</p>
+</main></html>

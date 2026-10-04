@@ -1,6 +1,6 @@
 ---
 name: session-clean-export
-description: Export a Claude Code or Codex session JSONL as one reviewed `*_clean.json` bundle (faithful agent-jsonl-compact events plus the records the extractor skips, secret redaction, input hash) and place it where the user wants, for example under diary/. Use for "会話を*_clean.jsonで保存", "agent jsonスキルでclean.jsonを作成", handoff conversation exports.
+description: Export a Claude Code or Codex session JSONL, or a selected OpenCode SQLite conversation, as a reviewed `*_clean.json` bundle with user coverage, secret redaction and snapshot hash. Use for "会話を*_clean.jsonで保存", "agent jsonスキルでclean.jsonを作成", handoff conversation exports.
 ---
 
 # Session clean export
@@ -14,6 +14,26 @@ a diary record.
 - Claude Code: `~/.claude/projects/<cwd-slug>/<session-uuid>.jsonl`. The current session's
   uuid is the scratchpad or transcript directory name.
 - Codex: `~/.codex/sessions/YYYY/MM/DD/rollout-*-<thread-id>.jsonl`.
+- OpenCode: `~/.local/share/opencode/opencode.db`。タイトル、時刻、ツールの対象パスを
+  読取専用SQLで照合してsession IDを特定する。directoryだけでは対象projectを判別できない。
+
+## OpenCode SQLiteの場合
+
+`agent-jsonl-compact` はSQLiteや `opencode export` の単一JSONに対応しない。
+JSONLへの偽装やbinaryの成功扱いをせず、専用adapterを使用する。
+
+```bash
+python skills/session-clean-export/scripts/bundle_opencode_sqlite.py \
+  --database ~/.local/share/opencode/opencode.db --session-id <session-id> \
+  --output temp/<session-id>_clean.json
+```
+
+原本はmode=roで開き、単一transactionで選択sessionのtext/toolとmessage metadataを保存。
+質問ツールの選択回答や途中のユーザー発言も保持し、ユーザー件数を照合する。
+reasoning/step metadataは明示的に除外・計数し、JSONL bundleと異なるschemaを付ける。
+hashは選択snapshotを対象とし、DB全体のhashとは表記しない。秘密伏字処理は共通関数を使う。
+ツール失敗や未完了の最終messageも残し、完了回答がないログを完了済みと扱わない。
+実行後は件数・cutoff・選択回答を確認し、ユーザーが求めた保存先へ移す。
 
 The current session keeps growing; the script snapshots complete lines first, so the bundle
 ends a few records before the final reply. Say so when reporting. A forked session file may

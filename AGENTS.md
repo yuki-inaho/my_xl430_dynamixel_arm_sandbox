@@ -63,7 +63,7 @@ supporting goal for an axis whose true target did not change while other axes mo
 User decision D12 (2026-10-04, after the photo session): the user confirmed proceeding
 after being asked to support the weight of the elbow-to-tip arm. Release from the
 currently held, externally supported pose is authorized without completing the blocked
-fold. Use temp/release_photo_supported.py with the original five-motor holding log;
+fold. Use python -m arm_observer.photo_supported_release with the original holding log;
 verify live identities/profiles/holding goals, write only Torque OFF first and confirm
 all five OFF before parking current goals and restoring the saved RAM profiles/PWM.
 Do not attempt another fold or label the original baseline return successful. This
@@ -92,7 +92,7 @@ ID1 +/-30 degrees, ID2/5 held, ID3 opening 0..30 degrees, ID4 +/-10 degrees.
 Use config/camera_pose_capture_20261004.json and its smaller per-run windows.
 Preserve PV6/PA1/PWM350, 2.5s holds and all existing jump/progress/health guards.
 Review each real image before advancing. Return to this new stable neutral before
-release/restoration. Mounted D405 has no USB connection. Old plans remain unchanged.
+release/restoration. D405 had no USB connection then. Old plans remain unchanged.
 
 Check serial ownership before connecting. Leave DYNAMIXEL Wizard and unrelated
 processes running; if they own the port, stop the hardware inspection and report
@@ -120,3 +120,18 @@ request. Default watch is 20 Hz and ten seconds; metadata refresh is thirty seco
 Quality gates: `uv run pytest`, `uv run ruff check src tests scripts`,
 `uv run ty check`, `uv run scripts/check_quality.py`, and Cargo tests/Clippy in
 `rust/arm-observer-contract`. Prefix shell commands with `rtk proxy`.
+
+2026-10-04 review/camera update: shared photo commands/resume/evidence live in
+photo_session.py/photo_evidence.py. Old photo and supported-release CLIs accept
+--config/--device; transport stays fixed at Protocol2/1Mbps/IDs1..5. Camera native
+adapters are type-checked separately with ty --python in their existing capture/
+point-cloud environments, rather than installing those SDKs into the observer.
+Run the suite once after a refactor and repeat only affected failures/behavior changes.
+Rust contract is unchanged by photo-session fields, so no Cargo rerun is needed here.
+
+User then connected the wrist D405 USB cable. Camera-only verification and capture-
+skill organization are authorized; this review did not move the arm or access serial.
+D405 serial230322272284, USB3.2, RGB/depth/IR1280x720@30 verified. Preserve sensor-
+specific option support, nonzero RGB distortion and actual frame/encoder timestamps.
+Read skills/rgbd-arm-pose-capture/SKILL.md before the next pose shooting run; review
+the new cable/load and reacquire the reference before reusing motion targets.

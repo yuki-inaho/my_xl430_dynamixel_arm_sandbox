@@ -69,3 +69,18 @@
 - [workdoc_Oct04-2026_robot_completion.review.md](workdocs/workdoc_Oct04-2026_robot_completion.review.md)
 - [workdoc_Oct04-2026_standby_power_off.md](workdocs/workdoc_Oct04-2026_standby_power_off.md)
 - [workdoc_Oct04-2026_standby_power_off.review.md](workdocs/workdoc_Oct04-2026_standby_power_off.review.md)
+
+## 撮影処理レビューと手先D405の接続確認
+
+[画像付きレポート](capture-refactor/index.html) ·
+[レビュー記録](capture-refactor/REPORT.md) ·
+[作業書](capture-refactor/WORKDOC.md)。
+2026-10-04 18:47以降のコード/テスト整理と、接続したD405の実RGB-D取得を記録。
+今回の変更はユーザーの追加指示でcommit/push対象に含めた。ロボット通信・動作なし。
+
+## AprilTag作業の引継ぎレビュー
+
+[レビュー記録](apriltag-review/REPORT.md) · [画像付きHTML](apriltag-review/index.html) ·
+[OpenCode会話JSON](conversations/opencode-apriltag-20261004_clean.json) ·
+[追補作業書](workdocs/workdoc_Oct04-2026_apriltag_followup.md)。
+PDF2枚・検証画像・検証JSONを実体保存。先行撮影処理の修正と合わせてcommit/pushする。

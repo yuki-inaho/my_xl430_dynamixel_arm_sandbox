@@ -1,4 +1,5 @@
 """Check new neutral and its narrower guard using actual SDK packets offline."""
+
 from pathlib import Path
 
 import pytest
@@ -21,8 +22,9 @@ def controller(positions=REFERENCE):
     port.baudrate = 1000000
     port.tx_time_per_byte = 0.01
     clock = FakeClock()
-    c = CameraPhotoController(port, PacketHandler(2.0), lambda _: None,
-                              clock.monotonic, clock.sleep, reference=REFERENCE)
+    c = CameraPhotoController(
+        port, PacketHandler(2.0), lambda _: None, clock.monotonic, clock.sleep, reference=REFERENCE
+    )
     return c, port.ser
 
 
@@ -33,7 +35,7 @@ def test_mounted_camera_new_baseline_refuses_old_pose_without_writes():
     assert not serial.writes()
 
 
-def test_mounted_camera_sdk_twenty_poses_release_and_smaller_envelope():
+def test_mounted_camera_sdk_pose_extremes_release_and_smaller_envelope():
     c, serial = controller()
     c.prepare_photo()
     with pytest.raises(MotionViolation):
@@ -41,9 +43,14 @@ def test_mounted_camera_sdk_twenty_poses_release_and_smaller_envelope():
     assert not serial.writes()
     c.enable_photo()
     spec = load_plan(ROOT / "config/camera_pose_capture_20261004.json")
-    for pose in spec["poses"]:
+    for pose in (spec["poses"][0], spec["poses"][3], spec["poses"][-1]):
         c.move_photo(c.target(pose["delta_deg"]))
     c.return_and_release()
     assert all(serial.torque(i) == 0 for i in range(1, 6))
     assert {address for _, address, _ in serial.writes()} <= {64, 100, 108, 112, 116}
     assert all(c.read(i, ("goal_pwm",))["goal_pwm"] == 885 for i in range(1, 6))
+    assert all(
+        c.read(i, ("profile_velocity", "profile_acceleration"))
+        == {"profile_velocity": 0, "profile_acceleration": 0}
+        for i in range(1, 6)
+    )

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>撮影レビュー・D405接続確認 — 2026-10-04</title>
+<style>
+body{margin:0;background:#eef1f3;color:#19242c;font:16px/1.7 system-ui,sans-serif}
+main{max-width:1100px;margin:auto;padding:28px}h1{font-size:28px}
+section{background:white;padding:24px;margin:20px 0;border-radius:10px}
+table{border-collapse:collapse;width:100%}td,th{padding:9px;text-align:left;border-bottom:1px solid #ddd}
+.images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+figure{margin:0}img{width:100%;height:auto;display:block}a{color:#185b83}
+@media(max-width:650px){main{padding:14px}section{padding:16px}.images{grid-template-columns:1fr}}
+</style>
+<main>
+<h1>撮影レビュー・D405接続確認</h1>
+<p>2026年10月4日 · Codex単独作業。今回の確認はカメラ取得とコード整理です。</p>
+<section>
+<h2>コードと作業手順</h2>
+<p>旧写真とRGB-D撮影のコマンドループ、再開ログ、RAM復元を共通化しました。
+撮影済みデータは保持しています。ロボット通信・動作は行っていません。</p>
+<table>
+<tr><th>項目</th><th>結果</th></tr>
+<tr><td>検証対象テスト</td><td>314 → 283件。重複41件を削除し、保存境界等の検証10件を追加。</td></tr>
+<tr><td>最大循環的複雑度</td><td>39 → 10。上限10は維持。</td></tr>
+<tr><td>修正した保存不具合</td><td>古いready、時刻の混在、短いログの先頭欠落、撮影前後の観測不足。</td></tr>
+<tr><td>撮影の進め方</td><td>一枚で画質確認 → 撮影表 → 移動・2〜3秒保持 → 撮影・確認 → 次の姿勢。</td></tr>
+</table>
+</section>
+<section>
+<h2>手先D405の実取得</h2>
+<table>
+<tr><th>項目</th><th>実観測</th></tr>
+<tr><td>機種・serial</td><td>Intel RealSense D405 · 230322272284</td></tr>
+<tr><td>接続・ファームウェア</td><td>USB3.2 · 5.17.0.10</td></tr>
+<tr><td>SDKモード</td><td>RGB / Depth / IR左右：1280×720・30 FPS</td></tr>
+<tr><td>配信実測</td><td>15.76 Hz（整列・JPEGを含む）</td></tr>
+<tr><td>保存画像</td><td>2026-10-04 18:59:48 JST · uint16深度 · 有効率65.07%</td></tr>
+</table>
+<p>現在は室内と作業者が写っています。把持対象は画面内にありません。
+撮影バッチの前に、対象の距離・構図・対象領域の深度を確認します。</p>
+<div class="images">
+<figure><a href="d405-usb-check/neutral/color.png"><img src="d405-usb-check/neutral/color.png" alt="D405実RGB画像"></a><figcaption>RGB原画像。低照度ノイズあり。</figcaption></figure>
+<figure><a href="d405-usb-check/neutral/depth_preview.png"><img src="d405-usb-check/neutral/depth_preview.png" alt="D405整列深度プレビュー"></a><figcaption>整列深度の表示。黒は欠損。解析には原16bit深度を使用。</figcaption></figure>
+</div>
+<p><a href="d405-usb-check/neutral/metadata.json">実カメラパラメータ</a> ·
+<a href="d405-usb-check/neutral/calibration.toml">校正TOML</a> ·
+<a href="d405-usb-check/neutral/depth.png">原深度PNG</a></p>
+<p>D405のRGB歪み係数は非ゼロのため、現行pinhole点群exportは拒否します。
+RGB-D取得の確認と、点群変換の対応状況は分けて記録しています。</p>
+<figure><a href="d405-usb-check/live-browser.png"><img src="d405-usb-check/live-browser.png" alt="Playwrightで確認したD405の実ライブ表示"></a><figcaption>専用Playwrightで確認した実ライブ表示。</figcaption></figure>
+</section>
+<p>ライブ：<a href="http://127.0.0.1:18109/">D405 RGB-Dビューア</a> ·
+<a href="REPORT.md">詳細レビュー</a> · <a href="WORKDOC.md">作業書・記録</a></p>
+</main>
+</html>

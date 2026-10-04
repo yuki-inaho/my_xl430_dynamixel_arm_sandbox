@@ -1,0 +1,62 @@
+{
+  "dpi": 150,
+  "pixel_quantization_tolerance_mm": 0.33866666666666667,
+  "opencv": "4.14.0",
+  "physical_print_validated": false,
+  "sheets": [
+    {
+      "file": "apriltag_36h11_a4_sheet_1_ids_000-011.pdf",
+      "sha256": "d7fde02e934f671d860981f7bc38bafdb5468ad7587d127d763c2a54cc1144c1",
+      "mediabox_pt": [
+        595.2756,
+        841.8898
+      ],
+      "detected_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "detected_count": 12,
+      "tag_edge_min_mm": 39.96266408284505,
+      "tag_edge_max_mm": 40.132,
+      "reference_bar_raster_mm": 100.24533333333333,
+      "passed": true
+    },
+    {
+      "file": "apriltag_36h11_a4_sheet_2_ids_012-023.pdf",
+      "sha256": "7c26023e61d5b6b0db1e8fc877fe9b8da8e3f6900e80702c39cc163489c8406c",
+      "mediabox_pt": [
+        595.2756,
+        841.8898
+      ],
+      "detected_ids": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "detected_count": 12,
+      "tag_edge_min_mm": 39.96266408284505,
+      "tag_edge_max_mm": 40.132,
+      "reference_bar_raster_mm": 100.24533333333333,
+      "passed": true
+    }
+  ]
+}

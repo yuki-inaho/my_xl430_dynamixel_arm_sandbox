@@ -1,0 +1,2 @@
+# Generated PDF files contain a byte-addressed xref table; preserve their bytes.
+*.pdf binary

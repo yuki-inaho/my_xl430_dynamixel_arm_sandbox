@@ -45,3 +45,7 @@ remaining frames rather than embedding an entire continuous capture. Validate im
 loading, links, enlarged views and narrow-screen layout in a dedicated browser session.
 State the conversation-export cutoff and current branch, and preserve outstanding
 calibration/support checks. Do not continue physical movement during record-only work.
+
+For photographing settled positions, follow
+[rgbd-arm-pose-capture](../rgbd-arm-pose-capture/SKILL.md); reuse its acquisition/evidence
+steps rather than implementing a second motion or camera loop.

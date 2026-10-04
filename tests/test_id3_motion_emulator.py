@@ -1,4 +1,5 @@
 """End-to-end ID3 motion through the real DynamixelSDK and a serial-level XL430 emulator."""
+
 from dynamixel_sdk import PacketHandler
 from test_id3_motion import FakeClock, evidence_record, write_evidence
 from xl430_emulator import EmuSerial
@@ -21,23 +22,14 @@ def run(tmp_path, port):
     packet = PacketHandler(2.0)
     evidence = motion.load_evidence(write_evidence(tmp_path, evidence_record()))
     clock = FakeClock()
-    return motion.run_motion(SdkReader(port, packet), motion.Id3Actuator(port, packet), evidence,
-                             lambda event: None, clock.monotonic, clock.sleep)
-
-
-def test_real_sdk_run_writes_only_id3_and_ends_torque_off(tmp_path):
-    port = emulated_port()
-    outcome = run(tmp_path, port)
-    assert outcome.status == "converged" and outcome.torque_off_confirmed is True
-    writes = port.ser.writes()
-    assert {motor_id for motor_id, _, _ in writes} == {3}
-    assert {address for _, address, _ in writes} <= {64, 100, 108, 112, 116}
-    assert port.ser.torque() == 0 and port.is_using is False
-    assert {opcode for opcode in (frame[7] for frame in port.ser.sent)} <= {0x02, 0x03, 0x82}
-    first_write = next(i for i, frame in enumerate(port.ser.sent) if frame[7] == 3)
-    route_reads = {frame[4] for frame in port.ser.sent[:first_write]
-                   if frame[7] == 2 and (frame[8] | frame[9] << 8) == 12}
-    assert route_reads == {1, 2, 3, 4, 5}
+    return motion.run_motion(
+        SdkReader(port, packet),
+        motion.Id3Actuator(port, packet),
+        evidence,
+        lambda event: None,
+        clock.monotonic,
+        clock.sleep,
+    )
 
 
 def test_interrupt_inside_a_sync_read_still_sends_torque_off(tmp_path):

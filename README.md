@@ -108,6 +108,9 @@ uvの配布名は `my-dynamixel-arm-sandbox`、コマンド名は `arm-status` �
 rtk proxy uv run pytest
 rtk proxy uv run ruff check src tests scripts
 rtk proxy uv run ty check
+# カメラ/点群adapterは、それぞれの既存SDK環境でも型検査する。
+rtk proxy uv run ty check --python /path/to/realsense_capture_tool/.venv scripts/capture_realsense.py
+rtk proxy uv run ty check --python /path/to/rgbd_data_utility_tools/.venv scripts/export_rgbd_point_cloud.py
 rtk proxy uv run scripts/check_quality.py --output reports/code_quality_v2.json
 rtk proxy uv run scripts/export_contract.py
 rtk proxy cargo test --locked --manifest-path rust/arm-observer-contract/Cargo.toml
@@ -143,8 +146,25 @@ rtk proxy uv run arm-id3-open --evidence reports/id3_direction_cad_<ts>.json --e
 
 2026-10-04 00:20の実機結果は、1154→1264（目標1268、誤差−4 count）で収束し、もとの位置へ戻してTorque OFFを確認した（[日誌](diary/2026-10-04_id3-open-10deg.md)）。仕様と限界（SIGKILL・USB断ではトルクが残りうる）は [docs/id3_motion_spec.md](docs/id3_motion_spec.md)。ほかのモーターや動作へ流用しないこと（AGENTS.md）。
 
+## AprilTag A4グリッドシート生成と高精度認識（2026-10-04追加）
+
+`arm-tag-sheet` は AprilTag 36h11 のA4グリッドPDFを実寸ベクターで2枚生成する（Sheet 1: ID 0–11、Sheet 2: ID 12–23、3列×4行・タグ40 mm）。`generate` は `sheets.json` にSHA256つきで出力し、`verify` は合成画像（透視・ぼけ・ノイズ、seed固定）に対して `CORNER_REFINE_APRILTAG` 等の精度優先設定で検出し、ID別コーナーRMSをJSONに記録する。
+
+```bash
+rtk proxy uv run arm-tag-sheet generate --output-dir reports/tag-sheet-20261004
+rtk proxy uv run arm-tag-sheet verify --sheet-index 1 --output-dir reports/tag-sheet-20261004/verify-sheet-1 --rms-limit 0.5
+rtk proxy uv run arm-tag-sheet verify --sheet-index 2 --output-dir reports/tag-sheet-20261004/verify-sheet-2 --rms-limit 0.5
+rtk proxy uv run arm-tag-sheet detect --image <path> --output-json <path>
+```
+
+印刷は100%（実際のサイズ）で行い、用紙下部の100 mm参照バーを定規で確認する。詳細は [docs/tag_sheet.md](docs/tag_sheet.md)。
+
 ## Gitに含めないもの
+
 作業書（`temp/workdoc_*.md`）・作業用スクリプト・`.claude/`・`.codex/` は、ユーザーのグローバル設定
 `~/.config/git/ignore` により追跡しない（ローカル専用）。日誌や README の `temp/` へのリンクは、この
 作業マシン上の記録を指す。スキルの正本は `skills/`、仕様は `docs/`、検証スクリプトは `scripts/` にある。
 
+RGB-D撮影・接続済み手先D405の実profileと保存データは
+[RGB-D撮影](docs/RGBD_CAPTURE.md)、撮影時の再利用手順は
+[rgbd-arm-pose-capture](skills/rgbd-arm-pose-capture/SKILL.md)を参照。

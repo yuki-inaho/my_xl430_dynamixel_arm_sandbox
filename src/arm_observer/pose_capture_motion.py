@@ -3,12 +3,20 @@
 import argparse
 import json
 import math
-import signal
-import time
+from functools import partial
 from pathlib import Path
 
 from arm_observer.id3_motion import healthy, position
 from arm_observer.motion_guard import WriteEnvelope
+from arm_observer.photo_session import (
+    ARM_CONFIG,
+    load_previous_plan,
+    photo_device,
+    run_commands,
+    stop_handler,
+    validate_poses,
+    write_event,
+)
 from arm_observer.standby_motion import IDS, Controller, Plan, open_standby_bus
 
 
@@ -22,25 +30,10 @@ def load_poses(path):
     ) != (6, 1, 350, 2.5):
         raise ValueError("Only reviewed photo-session profiles are permitted")
     poses = data["poses"]
-    if len(poses) != 24 or len({p["name"] for p in poses}) != 24:
-        raise ValueError("24 unique photo poses required")
-    bounds = [(-30, 30), (-3, 3), (0, 78), (-36, 0), (-10, 10)]
-    for pose in poses:
-        values = pose["delta_deg"]
-        if len(values) != 5 or any(
-            type(v) is not int or not low <= v <= high for v, (low, high) in zip(values, bounds)
-        ):
-            raise ValueError("Pose outside reviewed delta bounds")
-    if poses[0]["delta_deg"] != [0] * 5 or poses[1]["delta_deg"] != [0, 0, 72, -30, 0]:
-        raise ValueError("Rest/standby definitions changed")
-    if poses[2]["delta_deg"] != [-30, 0, 72, -30, 0] or poses[3]["delta_deg"] != [
-        30,
-        0,
-        72,
-        -30,
-        0,
-    ]:
-        raise ValueError("Yaw definitions changed")
+    validate_poses(poses, 24, [(-30, 30), (-3, 3), (0, 78), (-36, 0), (-10, 10)])
+    expected = [[0] * 5, [0, 0, 72, -30, 0], [-30, 0, 72, -30, 0], [30, 0, 72, -30, 0]]
+    if [pose["delta_deg"] for pose in poses[:4]] != expected:
+        raise ValueError("Rest/standby/yaw definitions changed")
     if any(p["delta_deg"][0] for p in poses[4:]):
         raise ValueError("Twenty variants must keep ID1 neutral")
     return poses
@@ -77,29 +70,43 @@ class PhotoController(Controller):
         )
         return positions
 
-    def prepare_photo(self, resume=None, restart=None):
+    def prepare_photo(self, resume: dict | None = None, restart: dict | None = None):
         if resume is not None and restart is not None:
             raise ValueError("Resume and restart are mutually exclusive")
         if resume is not None:
             if resume.get("active_ids") != list(IDS):
                 raise RuntimeError("Wrong resume motor set")
             self.enabled = set(IDS)
-        names = (
-            "id",
-            "model_number",
-            "secondary_id",
-            "operating_mode",
-            "drive_mode",
-            "homing_offset",
-            "min_position_limit",
-            "max_position_limit",
-            "profile_acceleration",
-            "profile_velocity",
-            "goal_pwm",
-            "status_return_level",
-            "goal_position",
+        self.read_photo_settings()
+        observed = self.stable_start()
+        self.initial_positions = observed
+        previous = resume if resume is not None else restart
+        if previous is None:
+            self.plan = self.make_plan(observed)
+            self.goal = observed
+        else:
+            self.restore_session_snapshot(previous, observed, held=resume is not None)
+        self.configure_photo_envelopes(observed)
+        if self.plan is None:
+            raise RuntimeError("Fresh plan required")
+        self.hold_reference = observed
+        self.stage = "prepared"
+        self.event(
+            "plan",
+            baseline=self.plan.baseline,
+            active_ids=list(IDS),
+            route=self.saved,
+            calibration_verified=False,
+            profile_velocity=6,
+            hold_seconds=2.5,
+            resumed=resume is not None,
+            restarted_from_off=restart is not None,
+            initial_positions=observed,
         )
-        expected_base = {
+        return self.plan.baseline
+
+    def read_photo_settings(self):
+        expected = {
             "model_number": 1060,
             "secondary_id": 255,
             "operating_mode": 3,
@@ -107,57 +114,69 @@ class PhotoController(Controller):
             "homing_offset": 0,
             "status_return_level": 2,
         }
+        names = (
+            *expected,
+            "id",
+            "min_position_limit",
+            "max_position_limit",
+            "profile_acceleration",
+            "profile_velocity",
+            "goal_pwm",
+            "goal_position",
+        )
         for mid in IDS:
             saved = self.read(mid, names)
-            if saved["id"] != mid or any(saved[n] != value for n, value in expected_base.items()):
+            if saved["id"] != mid or any(saved[n] != value for n, value in expected.items()):
                 raise RuntimeError(f"ID{mid} identity/mode/direction/alias changed")
             self.saved[mid] = saved
-        observed = self.stable_start()
-        self.initial_positions = observed
-        if resume is None and restart is None:
-            self.plan = self.make_plan(observed)
-        elif restart is not None:
-            if restart.get("active_ids") != list(IDS):
-                raise RuntimeError("Wrong restart motor set")
-            self.plan = self.make_plan(tuple(restart["baseline"]))
-            original = {int(mid): value for mid, value in restart["route"].items()}
-            if set(original) != set(IDS):
-                raise RuntimeError("Incomplete original restart state")
-            for mid in IDS:
-                if any(self.saved[mid][key] != value for key, value in original[mid].items()
-                       if key != "goal_position"):
-                    raise RuntimeError("OFF motor configuration differs from original session")
-            self.saved = original
+
+    def restore_session_snapshot(self, previous, observed, *, held):
+        if previous.get("active_ids") != list(IDS):
+            raise RuntimeError("Wrong previous motor set")
+        self.plan = self.make_plan(tuple(previous["baseline"]))
+        original = {int(mid): value for mid, value in previous["route"].items()}
+        if set(original) != set(IDS):
+            raise RuntimeError("Incomplete original session state")
+        if held:
+            goals = {int(mid): value for mid, value in previous["holding_goals"].items()}
+            if set(goals) != set(IDS):
+                raise RuntimeError("Incomplete original holding goals")
+            self.check_held_snapshot(original, goals, observed)
+            self.goal = tuple(goals[mid] for mid in IDS)
         else:
-            self.plan = self.make_plan(tuple(resume["baseline"]))
-            original = {int(mid): value for mid, value in resume["route"].items()}
-            goals = {int(mid): value for mid, value in resume["holding_goals"].items()}
-            if set(original) != set(IDS) or set(goals) != set(IDS):
-                raise RuntimeError("Incomplete original resume state")
-            for mid in IDS:
-                saved = self.saved[mid]
-                if (
-                    saved["profile_acceleration"],
-                    saved["profile_velocity"],
-                    saved["goal_pwm"],
-                ) != (1, 6, 350):
-                    raise RuntimeError("Held profile changed")
-                if (
-                    original[mid]["profile_acceleration"],
-                    original[mid]["profile_velocity"],
-                    original[mid]["goal_pwm"],
-                ) != (0, 0, 885):
-                    raise RuntimeError("Original RAM snapshot differs from this session")
-                if any(saved[key] != original[mid][key] for key in expected_base):
-                    raise RuntimeError("Held motor configuration changed")
-                if any(
-                    saved[key] != original[mid][key]
-                    for key in ("min_position_limit", "max_position_limit")
-                ):
-                    raise RuntimeError("Held position limits changed")
-                if saved["goal_position"] != goals[mid] or abs(observed[mid - 1] - goals[mid]) > 20:
-                    raise RuntimeError("Held goal changed or pose drifted")
-            self.saved = original
+            self.check_off_snapshot(original)
+            self.goal = observed
+        self.saved = original
+
+    def check_off_snapshot(self, original):
+        for mid in IDS:
+            if any(
+                self.saved[mid][key] != value
+                for key, value in original[mid].items()
+                if key != "goal_position"
+            ):
+                raise RuntimeError("OFF motor configuration differs from original session")
+
+    def check_held_snapshot(self, original, goals, observed):
+        for mid in IDS:
+            if (
+                original[mid]["profile_acceleration"],
+                original[mid]["profile_velocity"],
+                original[mid]["goal_pwm"],
+            ) != (0, 0, 885):
+                raise RuntimeError("Original RAM snapshot differs from this session")
+            expected = dict(original[mid])
+            expected.update(
+                profile_acceleration=1, profile_velocity=6, goal_pwm=350, goal_position=goals[mid]
+            )
+            if self.saved[mid] != expected:
+                raise RuntimeError("Held profile/configuration/goal changed")
+            if abs(observed[mid - 1] - goals[mid]) > 20:
+                raise RuntimeError("Held pose drifted")
+
+    def configure_photo_envelopes(self, observed):
+        if self.plan is None:
+            raise RuntimeError("Fresh plan required")
         b = self.plan.baseline
         for mid, (low, high) in zip(IDS, self.window_offsets):
             low, high = b[mid - 1] + low, b[mid - 1] + high
@@ -179,24 +198,6 @@ class PhotoController(Controller):
             for mid in IDS
         ):
             raise RuntimeError("Observed pose outside original photo envelope")
-        self.goal = observed if restart is not None else (
-            b if resume is None else tuple(goals[mid] for mid in IDS)
-        )
-        self.hold_reference = observed
-        self.stage = "prepared"
-        self.event(
-            "plan",
-            baseline=b,
-            active_ids=list(IDS),
-            route=self.saved,
-            calibration_verified=False,
-            profile_velocity=6,
-            hold_seconds=2.5,
-            resumed=resume is not None,
-            restarted_from_off=restart is not None,
-            initial_positions=observed,
-        )
-        return b
 
     def target(self, degrees):
         if self.plan is None:
@@ -261,24 +262,32 @@ class PhotoController(Controller):
                 self.check_follow(mid, measured[mid - 1], origin[mid - 1], target[mid - 1], 0)
             recent = [*recent, measured][-10:]
             if elapsed >= 1:
-                previous = set(corrected)
-                self.compensate(recent, target, corrected)
-                for mid in corrected - previous:
-                    corrected_at[mid] = self.clock()
+                self.compensate_photo(recent, target, corrected, corrected_at)
             for mid in IDS:
                 age = self.clock() - corrected_at.get(mid, start)
                 self.check_follow(mid, measured[mid - 1], origin[mid - 1], target[mid - 1], age)
-            if len(recent) == 10 and all(
-                abs(measured[i] - target[i]) <= 20
-                and max(p[i] for p in recent) - min(p[i] for p in recent) <= 3
-                for i in range(5)
-            ):
+            if self.photo_settled(recent, target):
                 self.hold_reference = measured
+                self.stage = "holding_photo"
                 self.event("reached", target=target, positions=measured)
                 return
             if elapsed > 18:
                 raise RuntimeError("Photo waypoint deadline")
             self.sleep(0.05)
+
+    def compensate_photo(self, recent, target, corrected, corrected_at):
+        previous = set(corrected)
+        self.compensate(recent, target, corrected)
+        for mid in corrected - previous:
+            corrected_at[mid] = self.clock()
+
+    @staticmethod
+    def photo_settled(recent, target):
+        return len(recent) == 10 and all(
+            abs(recent[-1][i] - target[i]) <= 20
+            and max(p[i] for p in recent) - min(p[i] for p in recent) <= 3
+            for i in range(5)
+        )
 
     def hold(self, seconds=2.5):
         until = self.clock() + seconds
@@ -288,7 +297,7 @@ class PhotoController(Controller):
                 raise RuntimeError("Photo holding drift")
             self.sleep(0.05)
 
-    def return_and_release(self):
+    def return_to_baseline(self):
         if self.plan is None:
             raise RuntimeError("Fresh baseline missing")
         b = self.plan.baseline
@@ -301,6 +310,12 @@ class PhotoController(Controller):
             if degrees == 0 or self.sample()[2] > target[2] + 20:
                 self.move_photo(target)
         self.hold()
+
+    def return_and_release(self):
+        self.return_to_baseline()
+        if self.plan is None:
+            raise RuntimeError("Fresh baseline missing")
+        b = self.plan.baseline
         before = self.sample()
         if any(abs(p - t) > 20 for p, t in zip(before, b)):
             raise RuntimeError("Not back at stable baseline")
@@ -314,16 +329,10 @@ class PhotoController(Controller):
             if any(abs(p - t) > 20 for p, t in zip(measured, before)):
                 raise RuntimeError("Shift after release")
             self.sleep(0.05)
-        for mid in IDS:
-            for name, register in (
-                ("pwm", "goal_pwm"),
-                ("velocity", "profile_velocity"),
-                ("acceleration", "profile_acceleration"),
-            ):
-                self.write(mid, name, self.saved[mid][register])
-                if self.read(mid, (register,))[register] != self.saved[mid][register]:
-                    raise RuntimeError("RAM restore mismatch")
-        self.event("released_supported", positions=self.current, all_torque_off=True)
+        self.restore_ram(IDS)
+        self.event(
+            "released_supported", positions=self.current, all_torque_off=True, ram_restored=True
+        )
 
 
 def main():
@@ -331,107 +340,34 @@ def main():
     parser.add_argument("--plan", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--execute", action="store_true")
+    parser.add_argument("--config", type=Path, default=ARM_CONFIG)
+    parser.add_argument("--device")
     parser.add_argument("--resume-log", type=Path)
     parser.add_argument("--restart-from-off-log", type=Path)
     args = parser.parse_args()
     if args.resume_log and args.restart_from_off_log:
         parser.error("Resume and restart are mutually exclusive")
     poses = load_poses(args.plan)
-    lookup = {p["name"]: p for p in poses}
     args.output.mkdir(parents=True, exist_ok=False)
-    stopped = [False]
-
-    def stop(_s, _f):
-        stopped[0] = True
-
-    signal.signal(signal.SIGINT, stop)
-    signal.signal(signal.SIGTERM, stop)
+    stopped = stop_handler()
+    resume = load_previous_plan(args.resume_log, held=True) if args.resume_log else None
+    restart = load_previous_plan(args.restart_from_off_log) if args.restart_from_off_log else None
     with (args.output / "events.jsonl").open("x") as log:
-
-        def emit(event):
-            log.write(json.dumps(event, ensure_ascii=False) + "\n")
-            log.flush()
-            if event["kind"] != "sample":
-                print(json.dumps(event, ensure_ascii=False), flush=True)
-
-        with open_standby_bus("/dev/serial/by-id/usb-BestTechnology_E148_E148-if00-port0") as (
+        with open_standby_bus(photo_device(args.config, args.device)) as (
             port,
             packet,
         ):
-            controller = PhotoController(port, packet, emit, stop_requested=lambda: stopped[0])
-            resume = None
-            if args.resume_log:
-                events = [json.loads(line) for line in args.resume_log.read_text().splitlines()]
-                resume = next(e for e in events if e["kind"] == "plan")
-                last_stop = max(i for i, e in enumerate(events) if e["kind"] == "stop")
-                stop_event = events[last_stop]
-                if stop_event.get("enabled") != list(IDS):
-                    raise RuntimeError("Original stop did not hold five motors")
-                writes = events[last_stop + 1 :]
-                if len(writes) != 5 or any(
-                    e["kind"] != "write" or e["name"] != "goal" for e in writes
-                ):
-                    raise RuntimeError("Original holding writes incomplete")
-                resume["holding_goals"] = {e["motor_id"]: e["value"] for e in writes}
-            restart = None
-            if args.restart_from_off_log:
-                original_events = [json.loads(line) for line in
-                                   args.restart_from_off_log.read_text().splitlines()]
-                restart = next(e for e in original_events if e["kind"] == "plan")
+            controller = PhotoController(
+                port, packet, partial(write_event, log), stop_requested=stopped
+            )
             controller.prepare_photo(resume, restart)
             if not args.execute:
                 return 0
-            # An actual initial photo is a precondition, supplied by the operator script.
-            initial = args.output.parent / "photos/rest.jpg"
-            if not initial.is_file():
+            if not (args.output.parent / "photos/rest.jpg").is_file():
                 raise RuntimeError("Actual rest camera image required before enabling")
-            command = args.output / "command.txt"
-            try:
-                if resume is None:
-                    controller.enable_photo()
-                while not stopped[0]:
-                    if command.exists():
-                        action = command.read_text().strip()
-                        command.unlink()
-                        if action == "finish":
-                            controller.return_and_release()
-                            return 0
-                        if action == "stop":
-                            raise RuntimeError("Operator stop")
-                        if action.startswith("stage:"):
-                            delta = json.loads(action[6:])
-                            controller.move_photo(controller.target(delta))
-                            name = "transition"
-                        else:
-                            pose = lookup[action]
-                            controller.move_photo(controller.target(pose["delta_deg"]))
-                            name = pose["name"]
-                        controller.hold()
-                        record = {
-                            "name": name,
-                            "positions": controller.current,
-                            "at": time.time(),
-                            "hold_seconds": 2.5,
-                            "commanded_goal_counts": controller.goal,
-                            "settled_reference_counts": controller.hold_reference,
-                            "goal_error_counts": [
-                                p - t for p, t in zip(controller.current, controller.goal)
-                            ],
-                            "hold_drift_counts": [
-                                p - t for p, t in zip(controller.current, controller.hold_reference)
-                            ],
-                        }
-                        temp = args.output / "ready.tmp"
-                        temp.write_text(json.dumps(record))
-                        temp.replace(args.output / "ready.json")
-                        controller.event("photo_ready", **record)
-                    else:
-                        controller.hold(0.1)
-                raise RuntimeError("Signal stop")
-            except BaseException as exc:
-                controller.freeze(f"{type(exc).__name__}: {exc}")
-                return 2
-    return 0
+            return run_commands(
+                controller, poses, args.output, resume=resume is not None, allow_stage=True
+            )
 
 
 if __name__ == "__main__":

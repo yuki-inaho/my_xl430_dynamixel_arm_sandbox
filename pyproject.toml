@@ -10,12 +10,15 @@ dependencies = [
     "beartype>=0.22,<0.24",
     "jaxtyping>=0.3,<0.4",
     "numpy>=2,<3",
+    "reportlab>=4.4,<5",
+    "opencv-contrib-python-headless>=4.10,<5",
 ]
 
 [project.scripts]
 arm-status = "arm_observer.cli:main"
 arm-live = "arm_observer.live_http:main"
 arm-id3-open = "arm_observer.id3_motion:main"
+arm-tag-sheet = "arm_observer.apriltag.cli:main"
 
 [dependency-groups]
 dev = ["pytest>=8,<10", "ruff>=0.12,<1", "ty>=0.0.1,<1", "radon>=6,<7", "jsonschema>=4,<5"]
@@ -43,4 +46,5 @@ select = ["E", "F", "I", "UP"]
 
 [tool.ty.src]
 include = ["src", "scripts"]
-exclude = ["upstream", "skills/imported"]
+# These native-SDK adapters are checked separately in their actual existing environments.
+exclude = ["upstream", "skills/imported", "scripts/capture_realsense.py", "scripts/export_rgbd_point_cloud.py"]

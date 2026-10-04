@@ -1,0 +1,2782 @@
+{
+  "maximum_allowed_complexity": 10,
+  "maximum_observed_complexity": 10,
+  "complexity": [
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "validate_header",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "validate_unicast",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "validate_sync",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "validate_packet",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "port_owners",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "open_bus",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "fault_message",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "read_registers",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "ReadOnlyViolation",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "ReadOnlyPort",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "writePort",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "symbol": "writePort",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "symbol": "load_plan",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "symbol": "main",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "symbol": "CameraPlan",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "symbol": "CameraPhotoController",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "symbol": "make_plan",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "symbol": "make_plan",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "build_parser",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "print_ports",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "run_scan",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "run_metadata",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "run_status",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "run_watch",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "dispatch",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "main",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "SnapshotCapture",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "emit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "emit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "WatchSink",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "emit",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "symbol": "emit",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "symbol": "validate_ids",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "symbol": "validate_config",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "symbol": "load_config",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "symbol": "validate_polling",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "symbol": "schema_for",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "symbol": "dataclass_schema",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "symbol": "refine_integer_ranges",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "symbol": "stream_schema",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "configuration_findings",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "telemetry_findings",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "position_findings",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "unique_findings",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "inspect_findings",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "symbol": "frame_lines",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "sha256",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "bounds",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "link_holding_case",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "joint_named",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "cad_direction",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "exact_ids",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "check_identity",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "metadata_settings",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "metadata_context",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "check_hardware_fault",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "check_complete_motor",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "hardware_frame",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "check_record",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "read_records",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "completed_counts",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "folded_read",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "fixed_cad",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "validate_cad_record",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "symbol": "cad_problem",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "counts",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "sample_shape_problem",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "sample_source_problem",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "sample_problem",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "delta_problem",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "load_evidence",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "position",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "require_torque_on",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "healthy",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "sample_event",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "check_route_values",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "read_route",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "read_settings",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "envelope_for",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "start_frames",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "folded_start",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "prepare",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "envelope_event",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "plan_event",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "run_motion",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "exit_code",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "build_parser",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "dry_run",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "deferred_signals",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "termination_as_interrupt",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write_summary",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "say",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "report",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "open_log",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "execute",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "main",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "MotionAbort",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "MotionRefused",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "MissedSample",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "StopRequested",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "MovePlan",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__post_init__",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "open_counts",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "follow_timeout_s",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__post_init__",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "open_counts",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "follow_timeout_s",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "Evidence",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "Start",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "setting",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "setting",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "MotorRoute",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "Outcome",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "Release",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "Actuator",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "set_envelope",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "recover",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "set_envelope",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "recover",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "Id3Actuator",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "set_envelope",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "recover",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "set_envelope",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "recover",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "MotionLog",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "event",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "event",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "Tracker",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "check_others",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "check_id3",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "converged",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "update",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "check_others",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "check_id3",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "converged",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "update",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "Session",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "sample",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "safe_event",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "pace",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "follow",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "hold",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "torque_on_position",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "execute",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "correct",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "guarded_write",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "guarded_read",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "torque_off",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "park_goal",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "final_torque",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "release",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "sample",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "safe_event",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "pace",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "follow",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "hold",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "torque_on_position",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "execute",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "correct",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "guarded_write",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "guarded_read",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "torque_off",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "park_goal",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "final_torque",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "release",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "DryRunActuator",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "set_envelope",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "recover",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "set_envelope",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "recover",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "write",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "StopFlag",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__call__",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "requested",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "__call__",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "symbol": "requested",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "empty_summary",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "run_acquisition",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "LiveSnapshot",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "LiveMonitor",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "snapshot",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "start",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "stop",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "join",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "_receive",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "_record",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "_run",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "snapshot",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "start",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "stop",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "join",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "_receive",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "_record",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "symbol": "_run",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/live_http.py",
+      "symbol": "origin_allowed",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live_http.py",
+      "symbol": "status_bytes",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live_http.py",
+      "symbol": "handler_for",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/live_http.py",
+      "symbol": "main",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "BusConfig",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "JointRole",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "ArmConfig",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "role",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "role",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "Fault",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "Identity",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "RegisterValue",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "RegisterBatch",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "value",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "value",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "MotorMetadata",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "value",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "value",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "MotorTelemetry",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "complete",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "voltage_v",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "velocity_rpm",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "estimated_load_percent",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "complete",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "voltage_v",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "velocity_rpm",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "estimated_load_percent",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "TelemetryFrame",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "MetadataEvent",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "FrameEvent",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "StreamSummary",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "EndEvent",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "Finding",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "symbol": "InspectionReport",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "validate_write",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "validate_motion_packet",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "open_motion_bus",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "MotionViolation",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "WriteEnvelope",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "__post_init__",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "allows",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "__post_init__",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "allows",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "MotionPort",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "writePort",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "symbol": "writePort",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/numerics.py",
+      "symbol": "joint_positions_radians",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/numerics.py",
+      "symbol": "velocities_radians_per_second",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "read_metadata",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "read_motor_metadata",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "discover",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "read_frame",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "observe",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "within_limit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "stopped",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "PollOptions",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "__post_init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "__post_init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "Cadence",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "wait",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "advance",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "wait",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "advance",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "Counters",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "add",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "summary",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "add",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "symbol": "summary",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "encode",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "report_stem",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "render_markdown",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "save_report",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "ReportPaths",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "JsonlSink",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "emit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "symbol": "emit",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_evidence.py",
+      "symbol": "tail_events",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_evidence.py",
+      "symbol": "held_sample",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/photo_evidence.py",
+      "symbol": "check_ready",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_evidence.py",
+      "symbol": "check_sample",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/photo_evidence.py",
+      "symbol": "sample_time",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "photo_device",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "write_event",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "stop_handler",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "validate_poses",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "valid_delta",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "holding_write",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "load_previous_plan",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "holding_goals",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "run_commands",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "command_pose",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "symbol": "publish_ready",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_supported_release.py",
+      "symbol": "release_supported",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/photo_supported_release.py",
+      "symbol": "off_motor",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/photo_supported_release.py",
+      "symbol": "main",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "load_poses",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "main",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "PhotoController",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "make_plan",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "sample",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "prepare_photo",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "read_photo_settings",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "restore_session_snapshot",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "check_off_snapshot",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "check_held_snapshot",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "configure_photo_envelopes",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "target",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "enable_photo",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "move_photo",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "move_waypoint",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "compensate_photo",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "photo_settled",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "hold",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "return_to_baseline",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "return_and_release",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "make_plan",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "sample",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "prepare_photo",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "read_photo_settings",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "restore_session_snapshot",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "check_off_snapshot",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "check_held_snapshot",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "configure_photo_envelopes",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "target",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "enable_photo",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "move_photo",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "move_waypoint",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "compensate_photo",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "photo_settled",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "hold",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "return_to_baseline",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "symbol": "return_and_release",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "timestamp",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "decode_block",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "optional_bool",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "decode_telemetry",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "Reader",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "identity",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "registers",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "telemetry",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "identity",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "registers",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "telemetry",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "ReadReply",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "Receipt",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "Block",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "ReceiptPacket",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "getProtocolVersion",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "syncReadTx",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "readRx",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "getProtocolVersion",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "syncReadTx",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "readRx",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "SyncGroup",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "SdkReader",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "identity",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "registers",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "_prepare_groups",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "_sync_block",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "telemetry",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "identity",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "registers",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "_prepare_groups",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "_sync_block",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "symbol": "telemetry",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "Register",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "decode",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "memory",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "decode",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "symbol": "memory",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "open_standby_bus",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "load_resume",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "main",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "Plan",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "__post_init__",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "target",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "__post_init__",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "target",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "StandbyPort",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "writePort",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "writePort",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "Controller",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "event",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "read",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "sample",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "check_environment",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "prepare",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "check_resume_settings",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "stable_start",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "write",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "enable",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "start_or_resume",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "move",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "compensate",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "check_stage_origin",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "check_follow",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "settled",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "freeze",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "safe_event",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "release_supported",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "verify_release",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "restore_ram",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "__init__",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "event",
+      "complexity": 1,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "read",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "sample",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "check_environment",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "prepare",
+      "complexity": 10,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "check_resume_settings",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "stable_start",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "write",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "enable",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "start_or_resume",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "move",
+      "complexity": 9,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "compensate",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "check_stage_origin",
+      "complexity": 4,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "check_follow",
+      "complexity": 8,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "settled",
+      "complexity": 6,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "freeze",
+      "complexity": 3,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "safe_event",
+      "complexity": 2,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "release_supported",
+      "complexity": 7,
+      "rank": "B"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "verify_release",
+      "complexity": 5,
+      "rank": "A"
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "symbol": "restore_ram",
+      "complexity": 4,
+      "rank": "A"
+    }
+  ],
+  "maintainability": [
+    {
+      "file": "src/arm_observer/__init__.py",
+      "maintainability_index": 100.0
+    },
+    {
+      "file": "src/arm_observer/bus.py",
+      "maintainability_index": 31.11926641616351
+    },
+    {
+      "file": "src/arm_observer/camera_pose_capture.py",
+      "maintainability_index": 42.983686196677304
+    },
+    {
+      "file": "src/arm_observer/cli.py",
+      "maintainability_index": 28.316658917456408
+    },
+    {
+      "file": "src/arm_observer/configuration.py",
+      "maintainability_index": 46.22245108069279
+    },
+    {
+      "file": "src/arm_observer/contracts.py",
+      "maintainability_index": 40.970796141693334
+    },
+    {
+      "file": "src/arm_observer/diagnostics.py",
+      "maintainability_index": 43.110193746063146
+    },
+    {
+      "file": "src/arm_observer/id3_direction.py",
+      "maintainability_index": 27.658622638754743
+    },
+    {
+      "file": "src/arm_observer/id3_motion.py",
+      "maintainability_index": 0.0
+    },
+    {
+      "file": "src/arm_observer/live.py",
+      "maintainability_index": 43.47401679272849
+    },
+    {
+      "file": "src/arm_observer/live_http.py",
+      "maintainability_index": 41.177851480311205
+    },
+    {
+      "file": "src/arm_observer/models.py",
+      "maintainability_index": 27.313695193672654
+    },
+    {
+      "file": "src/arm_observer/motion_guard.py",
+      "maintainability_index": 52.53183409662826
+    },
+    {
+      "file": "src/arm_observer/numerics.py",
+      "maintainability_index": 57.6541879884168
+    },
+    {
+      "file": "src/arm_observer/observer.py",
+      "maintainability_index": 25.23994716545584
+    },
+    {
+      "file": "src/arm_observer/output.py",
+      "maintainability_index": 45.52858098319186
+    },
+    {
+      "file": "src/arm_observer/photo_evidence.py",
+      "maintainability_index": 52.874520891540804
+    },
+    {
+      "file": "src/arm_observer/photo_session.py",
+      "maintainability_index": 41.073720433208194
+    },
+    {
+      "file": "src/arm_observer/photo_supported_release.py",
+      "maintainability_index": 51.77683479057623
+    },
+    {
+      "file": "src/arm_observer/pose_capture_motion.py",
+      "maintainability_index": 12.457986624679672
+    },
+    {
+      "file": "src/arm_observer/reader.py",
+      "maintainability_index": 33.696654483934964
+    },
+    {
+      "file": "src/arm_observer/registers.py",
+      "maintainability_index": 52.69570329664935
+    },
+    {
+      "file": "src/arm_observer/standby_motion.py",
+      "maintainability_index": 3.9371506417358977
+    }
+  ]
+}

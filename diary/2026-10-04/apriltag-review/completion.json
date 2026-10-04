@@ -1,0 +1,28 @@
+{
+  "pytest": {
+    "passed": 340,
+    "seconds": 21.11
+  },
+  "post_typefix_cli": {
+    "passed": 8,
+    "seconds": 2.26
+  },
+  "ruff": "pass",
+  "ty": "pass",
+  "maximum_complexity": 10,
+  "git_diff_check": "pass",
+  "skill_format": "pass",
+  "sqlite_export": {
+    "messages": 130,
+    "user_messages": 8,
+    "tool_parts": 145,
+    "excluded_reasoning": 81,
+    "redactions": 0
+  },
+  "browser": {
+    "decoded_images": 4,
+    "links_http_200": 7,
+    "horizontal_overflow": false
+  },
+  "audit_note": "precommit_audit.json snapshots 87 files before adding attributes and audit evidence; blockers0/warnings24; private remote authorized. Final precommit audit rerun before commit."
+}

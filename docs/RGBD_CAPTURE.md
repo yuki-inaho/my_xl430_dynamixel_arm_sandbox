@@ -28,8 +28,8 @@ rtk proxy uv run --directory "$CAPTURE_PROJECT" --no-sync python "$SCRIPT_ROOT/s
   --capture-project "$CAPTURE_PROJECT" --serial CAMERA_SERIAL --output /path/to/data --serve-port 18107
 ```
 
-ライブは http://127.0.0.1:18107/ 。現在のデモの3Dリンクは出力親以下のcapture-01/point-cloud.htmlを開く。
-任意の保存フォルダにもexport後のHTMLを直接開ける。3Dは保存済みフレームの表示で、点群のライブ更新は実装していない。
+ライブは http://127.0.0.1:18107/ 。点群は任意の保存フォルダにexportしたHTMLを直接開く。
+3Dは保存済みフレームの表示で、点群のライブ更新は実装していない。
 RGB/深度表示はMJPEG連続配信。状態表示は1秒ごとに更新。取得モードはwidth/height/fps引数で指定する。実取得処理の速度はstatus.jsonのacquisition_rate_hzに示し、設定fpsとは区別する。終了はCtrl+C、SDK camera.close(hardware_reset=False)で解放。
 ほかの撮影アプリが同じカメラを使用中なら終了させず、そのアプリでの使用が終わってから開始する。
 
@@ -81,3 +81,48 @@ D405はアーム取付済み・USB未接続で、撮影は外部D435。
 再実行には新しい基準観測と取り付け/支持の確認が必要で、今回の固定count表を
 別の組立・別の机へそのまま流用しない。
 PRIVATE Git保存コピー：`diary/2026-10-04/d405-mounted-rgbd/`。
+
+## 手先D405のUSB接続確認（18:59追加）
+
+ユーザーがケーブルを接続したD405をSDKで確認。serial **230322272284**、
+FW **5.17.0.10**、USB **3.2**。RGB/Depth/左右IRすべて**1280×720・30fps**の
+実profileで取得した。外部D435（922612070196）とはシリアルで区別する。
+今回の取得はカメラのみ。ロボット通信・動作・トルク変更は行っていない。
+
+データ：`~/data/xl430-arm/2026-10-04/d405-usb-check/neutral/`。
+RGB、raw/整列uint16深度、左右IR、metadata、calibration、プレビューを保存。
+depth_scaleは**0.0000999999974738 m/count**、整列深度の非ゼロ率**65.07%**。
+SDK設定は30fps、整列/JPEGを含むブラウザ配信実測は**15.76 Hz**。
+`neutral`は撮影時のフォルダ名で、今回READしていない関節値の再確認を意味しない。
+
+RGBには作業者と室内が写っており、低照度ノイズがある。把持対象は画面内にない。
+撮影バッチを進める前に対象の距離・構図・対象領域の深度を確認する。
+D405の公式ideal rangeは7–50 cm：[RealSense D405](https://www.realsenseai.com/products/d405-series/)。
+今回の室内画像の生成だけでは、その近距離用途の品質を判定しない。
+
+`capture_realsense.py`は既存RealSenseDeviceのopen/grab/export/closeを再利用し、
+開始時のオプションだけSDK `supports`で確認して設定する。D405はemitter/laser非対応。
+再利用元の未コミット変更は書き換えていない。公式SDK：[librealsense](https://github.com/realsenseai/librealsense)。
+ライブは http://127.0.0.1:18109/ 。専用headless PlaywrightでRGB/深度の1280×720
+画像読込みと受信時刻の更新を確認し、`live-browser.png`を保存した。
+
+```bash
+# D405（既存の撮影用uv環境で起動）
+rtk proxy uv run --directory "$CAPTURE_PROJECT" --no-sync python "$SCRIPT_ROOT/scripts/capture_realsense.py" \
+  --capture-project "$CAPTURE_PROJECT" --serial 230322272284 \
+  --width 1280 --height 720 --fps 30 --output /path/to/new-data --serve-port 18109
+```
+
+D405のRGB内部パラメータには非ゼロのinverse Brown–Conrady係数がある。
+現行pinhole点群exporterはこのデータを拒否する。係数を消さず、SDK deprojection
+対応を別途行ってから点群化する。RGB-D保存と3D変換の対応状況は分けて扱う。
+
+撮影制御は旧USB写真/新RGB-DのCLIから同じ`photo_session.run_commands`を使う。
+`save_pose_rgbd.py --camera-url http://127.0.0.1:18109`で手先D405を選べる。
+保存処理は現行readyと全5台保持、fresh sample、停止/復帰済みでないことを確認する。
+`/capture`へ`not_before_unix_s`をPOSTし、前READ以降にPCが受信したframeを保存、
+さらに後READを取得して併記する。hardware同期ではなくhost時刻の前後観測。
+変更前から起動中のcamera/motion serverは新実装を使わないため、次回の実行前に
+その作業用processを正常終了して新しいrunとして開始する。
+
+汎用手順：[rgbd-arm-pose-capture](../skills/rgbd-arm-pose-capture/SKILL.md)。

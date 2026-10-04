@@ -1,0 +1,53 @@
+{
+  "family": "tag36h11",
+  "sheet_count": 2,
+  "columns": 3,
+  "rows": 4,
+  "tag_size_mm": 40.0,
+  "gap_mm": 10.0,
+  "margin_mm": 12.0,
+  "page_mm": {
+    "width": 210.0,
+    "height": 297.0
+  },
+  "sheets": [
+    {
+      "index": 1,
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "file": "apriltag_36h11_a4_sheet_1_ids_000-011.pdf",
+      "sha256": "d7fde02e934f671d860981f7bc38bafdb5468ad7587d127d763c2a54cc1144c1"
+    },
+    {
+      "index": 2,
+      "ids": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "file": "apriltag_36h11_a4_sheet_2_ids_012-023.pdf",
+      "sha256": "7c26023e61d5b6b0db1e8fc877fe9b8da8e3f6900e80702c39cc163489c8406c"
+    }
+  ]
+}
