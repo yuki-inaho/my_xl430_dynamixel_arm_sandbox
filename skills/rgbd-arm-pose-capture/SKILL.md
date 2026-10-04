@@ -9,6 +9,16 @@ Use existing acquisition and motion tools. Repository-specific commands and evid
 [RGB-D capture](../../docs/RGBD_CAPTURE.md). Resolve checkout paths, camera serial, output
 root and localhost port explicitly; do not embed another machine's paths in new scripts.
 
+For **manual reference-pose alignment / torque switching / single-frame capture**, use the
+[D405 pose GUI](../../docs/D405_POSE_GUI.md) instead of recreating a capture pipeline or an
+autonomous pose sequence. Reuse the camera owner and let one worker own serial. Require
+physical weight support for each manual torque switch; ON parks fresh current counts rather
+than loading a stored pose. Closing a GUI is not permission to release torque. Show missing
+telemetry as UNKNOWN. Camera-only capture must be a separate explicit action, preserving
+null counts and refusing promotion to a joint-pose reference. After communication faults,
+use an explicit connection recheck rather than silently rearming controls. Native UI tests
+can use xdotool while torque transitions are exercised with the existing SDK emulator.
+
 1. Separate **external observation camera** from **camera mounted on the arm**. Enumerate SDK
    devices and stream profiles; select by serial, then save the actual device, profiles and
    firmware. Connection of a new wrist cable changes the arm's load and cable envelope.

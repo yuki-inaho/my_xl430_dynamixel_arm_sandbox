@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "metadata": [
+      {
+        "motor_id": 1,
+        "identity": null,
+        "proposed_role": "base_rotation",
+        "registers": [],
+        "faults": [
+          {
+            "motor_id": 1,
+            "operation": "identity",
+            "comm_result": -3001,
+            "device_error": 0,
+            "message": "No PING response"
+          }
+        ],
+        "skipped_registers": []
+      },
+      {
+        "motor_id": 2,
+        "identity": null,
+        "proposed_role": "shoulder",
+        "registers": [],
+        "faults": [
+          {
+            "motor_id": 2,
+            "operation": "identity",
+            "comm_result": -3001,
+            "device_error": 0,
+            "message": "No PING response"
+          }
+        ],
+        "skipped_registers": []
+      },
+      {
+        "motor_id": 3,
+        "identity": null,
+        "proposed_role": "elbow",
+        "registers": [],
+        "faults": [
+          {
+            "motor_id": 3,
+            "operation": "identity",
+            "comm_result": -3001,
+            "device_error": 0,
+            "message": "No PING response"
+          }
+        ],
+        "skipped_registers": []
+      },
+      {
+        "motor_id": 4,
+        "identity": null,
+        "proposed_role": "wrist",
+        "registers": [],
+        "faults": [
+          {
+            "motor_id": 4,
+            "operation": "identity",
+            "comm_result": -3001,
+            "device_error": 0,
+            "message": "No PING response"
+          }
+        ],
+        "skipped_registers": []
+      },
+      {
+        "motor_id": 5,
+        "identity": null,
+        "proposed_role": "gripper_open_close",
+        "registers": [],
+        "faults": [
+          {
+            "motor_id": 5,
+            "operation": "identity",
+            "comm_result": -3001,
+            "device_error": 0,
+            "message": "No PING response"
+          }
+        ],
+        "skipped_registers": []
+      }
+    ],
+    "config": {
+      "bus": {
+        "device": "/dev/serial/by-id/usb-BestTechnology_E148_E148-if00-port0",
+        "baudrate": 1000000,
+        "protocol": 2.0,
+        "expected_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "roles": [
+        {
+          "motor_id": 1,
+          "name": "base_rotation"
+        },
+        {
+          "motor_id": 2,
+          "name": "shoulder"
+        },
+        {
+          "motor_id": 3,
+          "name": "elbow"
+        },
+        {
+          "motor_id": 4,
+          "name": "wrist"
+        },
+        {
+          "motor_id": 5,
+          "name": "gripper_open_close"
+        }
+      ],
+      "physical_order_verified": false
+    },
+    "observed_at": "2026-10-05T06:25:54.862+09:00",
+    "kind": "metadata",
+    "schema_version": 2,
+    "simulated": null,
+    "acquisition_id": null
+  },
+  "discovered": [],
+  "frames": [
+    {
+      "sequence": 0,
+      "started_at": "2026-10-05T06:25:54.862+09:00",
+      "finished_at": "2026-10-05T06:25:54.862+09:00",
+      "monotonic_ns": 142319043564165,
+      "duration_ms": 0.14177,
+      "requested_rate_hz": 4.0,
+      "deadline_missed": false,
+      "read_mode": "sync",
+      "motors": [
+        {
+          "motor_id": 1,
+          "torque_enabled": null,
+          "hardware_error": null,
+          "position_counts": null,
+          "velocity_raw": null,
+          "pwm_raw": null,
+          "load_raw": null,
+          "voltage_raw": null,
+          "temperature_c": null,
+          "moving": null,
+          "moving_status": null,
+          "tick_ms": null,
+          "device_alert": false,
+          "faults": [
+            {
+              "motor_id": 1,
+              "operation": "telemetry",
+              "comm_result": -9000,
+              "device_error": 0,
+              "message": "No eligible model or no fresh telemetry"
+            }
+          ]
+        },
+        {
+          "motor_id": 2,
+          "torque_enabled": null,
+          "hardware_error": null,
+          "position_counts": null,
+          "velocity_raw": null,
+          "pwm_raw": null,
+          "load_raw": null,
+          "voltage_raw": null,
+          "temperature_c": null,
+          "moving": null,
+          "moving_status": null,
+          "tick_ms": null,
+          "device_alert": false,
+          "faults": [
+            {
+              "motor_id": 2,
+              "operation": "telemetry",
+              "comm_result": -9000,
+              "device_error": 0,
+              "message": "No eligible model or no fresh telemetry"
+            }
+          ]
+        },
+        {
+          "motor_id": 3,
+          "torque_enabled": null,
+          "hardware_error": null,
+          "position_counts": null,
+          "velocity_raw": null,
+          "pwm_raw": null,
+          "load_raw": null,
+          "voltage_raw": null,
+          "temperature_c": null,
+          "moving": null,
+          "moving_status": null,
+          "tick_ms": null,
+          "device_alert": false,
+          "faults": [
+            {
+              "motor_id": 3,
+              "operation": "telemetry",
+              "comm_result": -9000,
+              "device_error": 0,
+              "message": "No eligible model or no fresh telemetry"
+            }
+          ]
+        },
+        {
+          "motor_id": 4,
+          "torque_enabled": null,
+          "hardware_error": null,
+          "position_counts": null,
+          "velocity_raw": null,
+          "pwm_raw": null,
+          "load_raw": null,
+          "voltage_raw": null,
+          "temperature_c": null,
+          "moving": null,
+          "moving_status": null,
+          "tick_ms": null,
+          "device_alert": false,
+          "faults": [
+            {
+              "motor_id": 4,
+              "operation": "telemetry",
+              "comm_result": -9000,
+              "device_error": 0,
+              "message": "No eligible model or no fresh telemetry"
+            }
+          ]
+        },
+        {
+          "motor_id": 5,
+          "torque_enabled": null,
+          "hardware_error": null,
+          "position_counts": null,
+          "velocity_raw": null,
+          "pwm_raw": null,
+          "load_raw": null,
+          "voltage_raw": null,
+          "temperature_c": null,
+          "moving": null,
+          "moving_status": null,
+          "tick_ms": null,
+          "device_alert": false,
+          "faults": [
+            {
+              "motor_id": 5,
+              "operation": "telemetry",
+              "comm_result": -9000,
+              "device_error": 0,
+              "message": "No eligible model or no fresh telemetry"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "motor_id": 1,
+      "level": "error",
+      "code": "metadata_incomplete",
+      "message": "Metadata contains communication or model errors"
+    },
+    {
+      "motor_id": 2,
+      "level": "error",
+      "code": "metadata_incomplete",
+      "message": "Metadata contains communication or model errors"
+    },
+    {
+      "motor_id": 3,
+      "level": "error",
+      "code": "metadata_incomplete",
+      "message": "Metadata contains communication or model errors"
+    },
+    {
+      "motor_id": 4,
+      "level": "error",
+      "code": "metadata_incomplete",
+      "message": "Metadata contains communication or model errors"
+    },
+    {
+      "motor_id": 5,
+      "level": "error",
+      "code": "metadata_incomplete",
+      "message": "Metadata contains communication or model errors"
+    },
+    {
+      "motor_id": 1,
+      "level": "error",
+      "code": "telemetry_incomplete",
+      "message": "Some telemetry values are unknown"
+    },
+    {
+      "motor_id": 2,
+      "level": "error",
+      "code": "telemetry_incomplete",
+      "message": "Some telemetry values are unknown"
+    },
+    {
+      "motor_id": 3,
+      "level": "error",
+      "code": "telemetry_incomplete",
+      "message": "Some telemetry values are unknown"
+    },
+    {
+      "motor_id": 4,
+      "level": "error",
+      "code": "telemetry_incomplete",
+      "message": "Some telemetry values are unknown"
+    },
+    {
+      "motor_id": 5,
+      "level": "error",
+      "code": "telemetry_incomplete",
+      "message": "Some telemetry values are unknown"
+    }
+  ],
+  "port_closed": true,
+  "schema_version": 2
+}

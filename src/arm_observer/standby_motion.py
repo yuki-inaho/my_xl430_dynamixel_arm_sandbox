@@ -69,11 +69,12 @@ class StandbyPort(PortHandler):
 
 
 @contextmanager
-def open_standby_bus(device: str) -> Iterator[tuple[StandbyPort, Protocol2PacketHandler]]:
+def open_standby_bus(device: str, *, port_factory=StandbyPort
+                     ) -> Iterator[tuple[StandbyPort, Protocol2PacketHandler]]:
     owners = port_owners(device)
     if owners:
         raise RuntimeError(f"Serial owner(s): {owners}")
-    port = StandbyPort(device)
+    port = port_factory(device)
     try:
         if not port.setBaudRate(1000000) or port.ser is None:
             raise RuntimeError("Cannot open 1 Mbps serial bus")

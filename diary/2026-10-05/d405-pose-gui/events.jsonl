@@ -1,0 +1,3 @@
+{"kind": "gui_fault", "operation": "poll", "error": "Incomplete motor telemetry; state is UNKNOWN"}
+{"kind": "gui_capture", "path": "/home/inaho-omen/data/xl430-arm/2026-10-05/pose-gui/session-063225-320051/capture-063314-693007/capture.json"}
+{"kind": "gui_closed", "port_closed": true, "torque_unchanged_on_exit": true}

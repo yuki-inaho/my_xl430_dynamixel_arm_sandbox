@@ -225,3 +225,19 @@ torque ON and goal/profile writes while any axis remains enabled. The ordinary C
 PhotoController default is unchanged. Actual external weight support must be confirmed
 before --support-confirmed --execute; an encoder snapshot or candidate table plane is
 not that confirmation. No repeat motion/395 trial is authorized by this release path.
+
+## D20: manual D405 pose GUI (2026-10-05)
+
+The user requested reference-pose display, manual torque ON/OFF and D405 capture.
+See docs/D405_POSE_GUI.md and temp/workdoc_Oct05-2026_d405_pose_gui.md (portable copy
+diary/2026-10-05/d405-pose-gui/WORKDOC.md). The separate pose_gui_control transport
+allows only one explicit current-count park / torque transaction at a time, plus
+downward PWM caps and PA1/PV6 on OFF axes before manual ON. Already-ON supporting
+goals are preserved. No reference-pose movement, EEPROM write or automatic OFF on
+GUI exit. Require actual weight support for each human torque switch. Default
+launch remains READ-only; --control enables manual buttons, not startup writes.
+The GUI exclusively owns serial while open; close it before another bus tool.
+06:25 READ verification found no PING responses from all five motors. Current
+power/torque state is unknown; do not extend the earlier ON snapshot into the present.
+Hardware ON/OFF was not tested. Explicit camera-only capture stores null counts
+and cannot become a joint-pose reference. Faults require explicit connection recheck.

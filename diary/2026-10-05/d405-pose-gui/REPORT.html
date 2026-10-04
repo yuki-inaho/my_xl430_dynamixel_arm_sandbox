@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><title>D405 姿勢GUI 確認記録</title>
+<style>body{max-width:1200px;margin:32px auto;padding:0 20px;font:17px/1.65 sans-serif;background:#f4f6f8;color:#172c3f}img{width:100%;height:auto;border:1px solid #bbc8d3}section{margin:28px 0}a{color:#12659a}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}code{overflow-wrap:anywhere}</style>
+<h1>D405 手本姿勢・トルク・RGB-D撮影GUI</h1>
+<p>2026-10-05 / Codex単独。Tkinterで実装し、xdotoolで実画面を操作。起動・終了時の実機WRITEは0件。</p>
+<p><strong>実機ON/OFFは未検証。</strong>06:25の独立READ検査はID1〜5全台No PING response。原因、電源、現在のtorque状態は未確定。実D405撮影は明示したカメラのみモードで行い、関節値はnullとして保存した。</p>
+<section><h2>手本と実D405ライブ・撮影結果</h2><img src="gui-final.png" alt="D435の折り畳み基準写真と実D405ライブ、UNKNOWN関節状態、撮影成功表示"></section>
+<section><h2>深度表示</h2><img src="gui-capture-depth.png" alt="xdotoolで切り替えた実D405深度プレビュー"></section>
+<section><h2>関節値不明の撮影を手本として登録しない</h2><img src="gui-unknown-reference-refused.png" alt="不明な関節姿勢を手本として登録しようとすると拒否する"></section>
+<section><h2>保存した実RGB-D</h2><div class="pair"><img src="rgbd-evidence/color.png" alt="保存したD405 RGB"><img src="rgbd-evidence/depth_preview.png" alt="保存したD405深度プレビュー"></div>
+<p>1280×720、raw depth uint16、depth scale約0.0001m/count。照明が弱く画像にノイズがある。撮影成功を把持成功・正解姿勢と扱わない。</p>
+<p><a href="rgbd-evidence/capture.json">撮影記録</a> / <a href="rgbd-evidence/metadata.json">カメラパラメータ</a> / <a href="rgbd-evidence/depth.png">raw depth</a> / <a href="rgbd-evidence/calibration.toml">calibration</a></p></section>
+<section><h2>制御検証と再利用</h2><p>SDKエミュレータ4ケースPASS、ruff/ty PASS。支持なし拒否、現在count park、既ONの支持目標維持、初期RAM設定からのPWM下方制限、alias拒否、撮影bracket/動作/古いframeを確認した。</p>
+<p><a href="WORKDOC.md">作業書</a> / <a href="../../../docs/D405_POSE_GUI.md">利用手順</a> / <a href="events.jsonl">実機READ・撮影・close記録</a></p>
+<p>データ原本: <code>~/data/xl430-arm/2026-10-05/pose-gui/session-063225-320051/</code>。GUIは電源/USB確認後「接続を再確認」、重さを支えてからトルクを手動切替する。</p></section>
+</html>
