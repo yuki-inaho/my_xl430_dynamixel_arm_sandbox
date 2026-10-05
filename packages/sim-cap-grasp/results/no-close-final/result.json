@@ -1,0 +1,75 @@
+{
+  "status": "FAILURE",
+  "reason_codes": [
+    "INSUFFICIENT_LIFT",
+    "NO_GRIP"
+  ],
+  "metrics": {
+    "approach_position_error_m": 7.5478923029631675e-06,
+    "approach_pitch_error_rad": 1.3405667648180854e-06,
+    "max_cap_bottom_clearance_m": 0.0,
+    "max_left_normal_force_N": 0.0,
+    "max_right_normal_force_N": 0.0,
+    "max_solver_iterations": 2,
+    "forbidden_contact_examples": [],
+    "joint_boundary_violations": [],
+    "samples": 13001,
+    "timestep_s": 0.001,
+    "simulated_duration_s": 12.999999999998234
+  },
+  "scene_registration": "nominal",
+  "observed_target_fidelity": "unverified",
+  "hardware_success": "not_tested",
+  "evaluation_contract": {
+    "schema_version": 1,
+    "source": "WORKDOC_SIM_GRASP.original.md fixed acceptance; frozen before judged trials",
+    "gravity_m_s2": [
+      0,
+      0,
+      -9.81
+    ],
+    "cap_bottom_clearance_m": 0.02,
+    "continuous_hold_s": 2.0,
+    "bilateral_contact_fraction_min": 0.8,
+    "grip_frame_center_drift_max_m": 0.005,
+    "approach_position_error_max_m": 0.002,
+    "pitch_target_rad": -0.8726646259971648,
+    "pitch_error_max_rad": 0.03490658503988659,
+    "pitch_status": "Fixed by saved reachability before judged trials",
+    "normal_force_epsilon_N": 1e-05,
+    "force_epsilon_basis": "Numerical contact activation floor, 0.068% of nominal cap weight. Counts force-bearing contacts, not zero-force margins.",
+    "forbidden_penetration_tolerance_m": 0.0001,
+    "joint_angle_boundary_tolerance_rad": 0.0001,
+    "joint_slide_boundary_tolerance_m": 1e-05,
+    "initial_support_height_tolerance_m": 0.0005,
+    "numeric_tolerance_basis": "Sub-mm contact softness at 1ms; tolerance is diagnostic numerical allowance, not relaxed task geometry. Any force-bearing forbidden pair is forbidden regardless of penetration.",
+    "hold_selection": "First continuous >=2.0-second clearance-and-no-support interval inside declared hold phase. Evaluate bilateral duration and drift over first 2.0 seconds of it, with physics-step samples.",
+    "drift_reference": "Cap center in grip frame at selected interval start; maximum Euclidean change across entire interval",
+    "cap_bottom": "Finite cylinder support extent: center_z-halfheight*abs(axis_z)-radius*sqrt(1-axis_z^2), including tilt",
+    "whole_trial_rules": [
+      "finite states/controls/forces",
+      "no solver warnings or iteration-budget exhaustion",
+      "strictly increasing time at declared timestep",
+      "no forbidden collision",
+      "no joint-boundary violation",
+      "no external applied forces",
+      "no cap attachment or runtime pose mutation"
+    ],
+    "status_values": [
+      "SUCCESS",
+      "FAILURE",
+      "BLOCKED"
+    ],
+    "reason_codes": [
+      "IK_FAILED",
+      "COLLISION",
+      "NO_GRIP",
+      "SLIP",
+      "INSUFFICIENT_LIFT",
+      "UNSTABLE",
+      "MODEL_INVALID",
+      "MISSING_CALIBRATION"
+    ]
+  },
+  "evaluation_contract_sha256": "9a36a4a8d77f66032dc3be4ebd1a44baaecfd6fa40b2770244696103bbb489bd"
+}

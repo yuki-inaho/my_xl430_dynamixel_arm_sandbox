@@ -1,0 +1,2103 @@
+{
+  "source": "results/review-repeat/states.npz",
+  "physics_dt_s": 0.001,
+  "render_fps": 10,
+  "frames": [
+    {
+      "view": "external",
+      "frame": 0,
+      "sample": 0,
+      "simulation_time": 0.0,
+      "phase": "settle",
+      "file": "media/nominal/external-0000.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 0,
+      "sample": 0,
+      "simulation_time": 0.0,
+      "phase": "settle",
+      "file": "media/nominal/wrist-0000.png"
+    },
+    {
+      "view": "external",
+      "frame": 1,
+      "sample": 100,
+      "simulation_time": 0.10000000000000007,
+      "phase": "settle",
+      "file": "media/nominal/external-0001.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 1,
+      "sample": 100,
+      "simulation_time": 0.10000000000000007,
+      "phase": "settle",
+      "file": "media/nominal/wrist-0001.png"
+    },
+    {
+      "view": "external",
+      "frame": 2,
+      "sample": 200,
+      "simulation_time": 0.20000000000000015,
+      "phase": "settle",
+      "file": "media/nominal/external-0002.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 2,
+      "sample": 200,
+      "simulation_time": 0.20000000000000015,
+      "phase": "settle",
+      "file": "media/nominal/wrist-0002.png"
+    },
+    {
+      "view": "external",
+      "frame": 3,
+      "sample": 300,
+      "simulation_time": 0.3000000000000002,
+      "phase": "settle",
+      "file": "media/nominal/external-0003.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 3,
+      "sample": 300,
+      "simulation_time": 0.3000000000000002,
+      "phase": "settle",
+      "file": "media/nominal/wrist-0003.png"
+    },
+    {
+      "view": "external",
+      "frame": 4,
+      "sample": 400,
+      "simulation_time": 0.4000000000000003,
+      "phase": "settle",
+      "file": "media/nominal/external-0004.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 4,
+      "sample": 400,
+      "simulation_time": 0.4000000000000003,
+      "phase": "settle",
+      "file": "media/nominal/wrist-0004.png"
+    },
+    {
+      "view": "external",
+      "frame": 5,
+      "sample": 500,
+      "simulation_time": 0.5000000000000003,
+      "phase": "approach",
+      "file": "media/nominal/external-0005.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 5,
+      "sample": 500,
+      "simulation_time": 0.5000000000000003,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0005.png"
+    },
+    {
+      "view": "external",
+      "frame": 6,
+      "sample": 600,
+      "simulation_time": 0.6000000000000004,
+      "phase": "approach",
+      "file": "media/nominal/external-0006.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 6,
+      "sample": 600,
+      "simulation_time": 0.6000000000000004,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0006.png"
+    },
+    {
+      "view": "external",
+      "frame": 7,
+      "sample": 700,
+      "simulation_time": 0.7000000000000005,
+      "phase": "approach",
+      "file": "media/nominal/external-0007.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 7,
+      "sample": 700,
+      "simulation_time": 0.7000000000000005,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0007.png"
+    },
+    {
+      "view": "external",
+      "frame": 8,
+      "sample": 800,
+      "simulation_time": 0.8000000000000006,
+      "phase": "approach",
+      "file": "media/nominal/external-0008.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 8,
+      "sample": 800,
+      "simulation_time": 0.8000000000000006,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0008.png"
+    },
+    {
+      "view": "external",
+      "frame": 9,
+      "sample": 900,
+      "simulation_time": 0.9000000000000007,
+      "phase": "approach",
+      "file": "media/nominal/external-0009.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 9,
+      "sample": 900,
+      "simulation_time": 0.9000000000000007,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0009.png"
+    },
+    {
+      "view": "external",
+      "frame": 10,
+      "sample": 1000,
+      "simulation_time": 1.0000000000000007,
+      "phase": "approach",
+      "file": "media/nominal/external-0010.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 10,
+      "sample": 1000,
+      "simulation_time": 1.0000000000000007,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0010.png"
+    },
+    {
+      "view": "external",
+      "frame": 11,
+      "sample": 1100,
+      "simulation_time": 1.0999999999999897,
+      "phase": "approach",
+      "file": "media/nominal/external-0011.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 11,
+      "sample": 1100,
+      "simulation_time": 1.0999999999999897,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0011.png"
+    },
+    {
+      "view": "external",
+      "frame": 12,
+      "sample": 1200,
+      "simulation_time": 1.1999999999999786,
+      "phase": "approach",
+      "file": "media/nominal/external-0012.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 12,
+      "sample": 1200,
+      "simulation_time": 1.1999999999999786,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0012.png"
+    },
+    {
+      "view": "external",
+      "frame": 13,
+      "sample": 1300,
+      "simulation_time": 1.2999999999999676,
+      "phase": "approach",
+      "file": "media/nominal/external-0013.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 13,
+      "sample": 1300,
+      "simulation_time": 1.2999999999999676,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0013.png"
+    },
+    {
+      "view": "external",
+      "frame": 14,
+      "sample": 1400,
+      "simulation_time": 1.3999999999999566,
+      "phase": "approach",
+      "file": "media/nominal/external-0014.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 14,
+      "sample": 1400,
+      "simulation_time": 1.3999999999999566,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0014.png"
+    },
+    {
+      "view": "external",
+      "frame": 15,
+      "sample": 1500,
+      "simulation_time": 1.4999999999999456,
+      "phase": "approach",
+      "file": "media/nominal/external-0015.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 15,
+      "sample": 1500,
+      "simulation_time": 1.4999999999999456,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0015.png"
+    },
+    {
+      "view": "external",
+      "frame": 16,
+      "sample": 1600,
+      "simulation_time": 1.5999999999999346,
+      "phase": "approach",
+      "file": "media/nominal/external-0016.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 16,
+      "sample": 1600,
+      "simulation_time": 1.5999999999999346,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0016.png"
+    },
+    {
+      "view": "external",
+      "frame": 17,
+      "sample": 1700,
+      "simulation_time": 1.6999999999999236,
+      "phase": "approach",
+      "file": "media/nominal/external-0017.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 17,
+      "sample": 1700,
+      "simulation_time": 1.6999999999999236,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0017.png"
+    },
+    {
+      "view": "external",
+      "frame": 18,
+      "sample": 1800,
+      "simulation_time": 1.7999999999999126,
+      "phase": "approach",
+      "file": "media/nominal/external-0018.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 18,
+      "sample": 1800,
+      "simulation_time": 1.7999999999999126,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0018.png"
+    },
+    {
+      "view": "external",
+      "frame": 19,
+      "sample": 1900,
+      "simulation_time": 1.8999999999999015,
+      "phase": "approach",
+      "file": "media/nominal/external-0019.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 19,
+      "sample": 1900,
+      "simulation_time": 1.8999999999999015,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0019.png"
+    },
+    {
+      "view": "external",
+      "frame": 20,
+      "sample": 2000,
+      "simulation_time": 1.9999999999998905,
+      "phase": "approach",
+      "file": "media/nominal/external-0020.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 20,
+      "sample": 2000,
+      "simulation_time": 1.9999999999998905,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0020.png"
+    },
+    {
+      "view": "external",
+      "frame": 21,
+      "sample": 2100,
+      "simulation_time": 2.0999999999998797,
+      "phase": "approach",
+      "file": "media/nominal/external-0021.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 21,
+      "sample": 2100,
+      "simulation_time": 2.0999999999998797,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0021.png"
+    },
+    {
+      "view": "external",
+      "frame": 22,
+      "sample": 2200,
+      "simulation_time": 2.1999999999998687,
+      "phase": "approach",
+      "file": "media/nominal/external-0022.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 22,
+      "sample": 2200,
+      "simulation_time": 2.1999999999998687,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0022.png"
+    },
+    {
+      "view": "external",
+      "frame": 23,
+      "sample": 2300,
+      "simulation_time": 2.2999999999998577,
+      "phase": "approach",
+      "file": "media/nominal/external-0023.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 23,
+      "sample": 2300,
+      "simulation_time": 2.2999999999998577,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0023.png"
+    },
+    {
+      "view": "external",
+      "frame": 24,
+      "sample": 2400,
+      "simulation_time": 2.3999999999998467,
+      "phase": "approach",
+      "file": "media/nominal/external-0024.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 24,
+      "sample": 2400,
+      "simulation_time": 2.3999999999998467,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0024.png"
+    },
+    {
+      "view": "external",
+      "frame": 25,
+      "sample": 2500,
+      "simulation_time": 2.4999999999998357,
+      "phase": "approach",
+      "file": "media/nominal/external-0025.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 25,
+      "sample": 2500,
+      "simulation_time": 2.4999999999998357,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0025.png"
+    },
+    {
+      "view": "external",
+      "frame": 26,
+      "sample": 2600,
+      "simulation_time": 2.5999999999998247,
+      "phase": "approach",
+      "file": "media/nominal/external-0026.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 26,
+      "sample": 2600,
+      "simulation_time": 2.5999999999998247,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0026.png"
+    },
+    {
+      "view": "external",
+      "frame": 27,
+      "sample": 2700,
+      "simulation_time": 2.6999999999998137,
+      "phase": "approach",
+      "file": "media/nominal/external-0027.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 27,
+      "sample": 2700,
+      "simulation_time": 2.6999999999998137,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0027.png"
+    },
+    {
+      "view": "external",
+      "frame": 28,
+      "sample": 2800,
+      "simulation_time": 2.7999999999998026,
+      "phase": "approach",
+      "file": "media/nominal/external-0028.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 28,
+      "sample": 2800,
+      "simulation_time": 2.7999999999998026,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0028.png"
+    },
+    {
+      "view": "external",
+      "frame": 29,
+      "sample": 2900,
+      "simulation_time": 2.8999999999997916,
+      "phase": "approach",
+      "file": "media/nominal/external-0029.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 29,
+      "sample": 2900,
+      "simulation_time": 2.8999999999997916,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0029.png"
+    },
+    {
+      "view": "external",
+      "frame": 30,
+      "sample": 3000,
+      "simulation_time": 2.9999999999997806,
+      "phase": "approach",
+      "file": "media/nominal/external-0030.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 30,
+      "sample": 3000,
+      "simulation_time": 2.9999999999997806,
+      "phase": "approach",
+      "file": "media/nominal/wrist-0030.png"
+    },
+    {
+      "view": "external",
+      "frame": 31,
+      "sample": 3100,
+      "simulation_time": 3.0999999999997696,
+      "phase": "alignment",
+      "file": "media/nominal/external-0031.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 31,
+      "sample": 3100,
+      "simulation_time": 3.0999999999997696,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0031.png"
+    },
+    {
+      "view": "external",
+      "frame": 32,
+      "sample": 3200,
+      "simulation_time": 3.1999999999997586,
+      "phase": "alignment",
+      "file": "media/nominal/external-0032.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 32,
+      "sample": 3200,
+      "simulation_time": 3.1999999999997586,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0032.png"
+    },
+    {
+      "view": "external",
+      "frame": 33,
+      "sample": 3300,
+      "simulation_time": 3.2999999999997476,
+      "phase": "alignment",
+      "file": "media/nominal/external-0033.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 33,
+      "sample": 3300,
+      "simulation_time": 3.2999999999997476,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0033.png"
+    },
+    {
+      "view": "external",
+      "frame": 34,
+      "sample": 3400,
+      "simulation_time": 3.3999999999997366,
+      "phase": "alignment",
+      "file": "media/nominal/external-0034.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 34,
+      "sample": 3400,
+      "simulation_time": 3.3999999999997366,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0034.png"
+    },
+    {
+      "view": "external",
+      "frame": 35,
+      "sample": 3500,
+      "simulation_time": 3.4999999999997256,
+      "phase": "alignment",
+      "file": "media/nominal/external-0035.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 35,
+      "sample": 3500,
+      "simulation_time": 3.4999999999997256,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0035.png"
+    },
+    {
+      "view": "external",
+      "frame": 36,
+      "sample": 3600,
+      "simulation_time": 3.5999999999997145,
+      "phase": "alignment",
+      "file": "media/nominal/external-0036.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 36,
+      "sample": 3600,
+      "simulation_time": 3.5999999999997145,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0036.png"
+    },
+    {
+      "view": "external",
+      "frame": 37,
+      "sample": 3700,
+      "simulation_time": 3.6999999999997035,
+      "phase": "alignment",
+      "file": "media/nominal/external-0037.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 37,
+      "sample": 3700,
+      "simulation_time": 3.6999999999997035,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0037.png"
+    },
+    {
+      "view": "external",
+      "frame": 38,
+      "sample": 3800,
+      "simulation_time": 3.7999999999996925,
+      "phase": "alignment",
+      "file": "media/nominal/external-0038.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 38,
+      "sample": 3800,
+      "simulation_time": 3.7999999999996925,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0038.png"
+    },
+    {
+      "view": "external",
+      "frame": 39,
+      "sample": 3900,
+      "simulation_time": 3.8999999999996815,
+      "phase": "alignment",
+      "file": "media/nominal/external-0039.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 39,
+      "sample": 3900,
+      "simulation_time": 3.8999999999996815,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0039.png"
+    },
+    {
+      "view": "external",
+      "frame": 40,
+      "sample": 4000,
+      "simulation_time": 3.9999999999996705,
+      "phase": "alignment",
+      "file": "media/nominal/external-0040.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 40,
+      "sample": 4000,
+      "simulation_time": 3.9999999999996705,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0040.png"
+    },
+    {
+      "view": "external",
+      "frame": 41,
+      "sample": 4100,
+      "simulation_time": 4.099999999999704,
+      "phase": "alignment",
+      "file": "media/nominal/external-0041.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 41,
+      "sample": 4100,
+      "simulation_time": 4.099999999999704,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0041.png"
+    },
+    {
+      "view": "external",
+      "frame": 42,
+      "sample": 4200,
+      "simulation_time": 4.199999999999737,
+      "phase": "alignment",
+      "file": "media/nominal/external-0042.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 42,
+      "sample": 4200,
+      "simulation_time": 4.199999999999737,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0042.png"
+    },
+    {
+      "view": "external",
+      "frame": 43,
+      "sample": 4300,
+      "simulation_time": 4.299999999999771,
+      "phase": "alignment",
+      "file": "media/nominal/external-0043.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 43,
+      "sample": 4300,
+      "simulation_time": 4.299999999999771,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0043.png"
+    },
+    {
+      "view": "external",
+      "frame": 44,
+      "sample": 4400,
+      "simulation_time": 4.399999999999804,
+      "phase": "alignment",
+      "file": "media/nominal/external-0044.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 44,
+      "sample": 4400,
+      "simulation_time": 4.399999999999804,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0044.png"
+    },
+    {
+      "view": "external",
+      "frame": 45,
+      "sample": 4500,
+      "simulation_time": 4.4999999999998375,
+      "phase": "alignment",
+      "file": "media/nominal/external-0045.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 45,
+      "sample": 4500,
+      "simulation_time": 4.4999999999998375,
+      "phase": "alignment",
+      "file": "media/nominal/wrist-0045.png"
+    },
+    {
+      "view": "external",
+      "frame": 46,
+      "sample": 4600,
+      "simulation_time": 4.599999999999871,
+      "phase": "close",
+      "file": "media/nominal/external-0046.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 46,
+      "sample": 4600,
+      "simulation_time": 4.599999999999871,
+      "phase": "close",
+      "file": "media/nominal/wrist-0046.png"
+    },
+    {
+      "view": "external",
+      "frame": 47,
+      "sample": 4700,
+      "simulation_time": 4.699999999999904,
+      "phase": "close",
+      "file": "media/nominal/external-0047.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 47,
+      "sample": 4700,
+      "simulation_time": 4.699999999999904,
+      "phase": "close",
+      "file": "media/nominal/wrist-0047.png"
+    },
+    {
+      "view": "external",
+      "frame": 48,
+      "sample": 4800,
+      "simulation_time": 4.799999999999938,
+      "phase": "close",
+      "file": "media/nominal/external-0048.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 48,
+      "sample": 4800,
+      "simulation_time": 4.799999999999938,
+      "phase": "close",
+      "file": "media/nominal/wrist-0048.png"
+    },
+    {
+      "view": "external",
+      "frame": 49,
+      "sample": 4900,
+      "simulation_time": 4.899999999999971,
+      "phase": "close",
+      "file": "media/nominal/external-0049.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 49,
+      "sample": 4900,
+      "simulation_time": 4.899999999999971,
+      "phase": "close",
+      "file": "media/nominal/wrist-0049.png"
+    },
+    {
+      "view": "external",
+      "frame": 50,
+      "sample": 5000,
+      "simulation_time": 5.000000000000004,
+      "phase": "close",
+      "file": "media/nominal/external-0050.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 50,
+      "sample": 5000,
+      "simulation_time": 5.000000000000004,
+      "phase": "close",
+      "file": "media/nominal/wrist-0050.png"
+    },
+    {
+      "view": "external",
+      "frame": 51,
+      "sample": 5100,
+      "simulation_time": 5.100000000000038,
+      "phase": "close",
+      "file": "media/nominal/external-0051.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 51,
+      "sample": 5100,
+      "simulation_time": 5.100000000000038,
+      "phase": "close",
+      "file": "media/nominal/wrist-0051.png"
+    },
+    {
+      "view": "external",
+      "frame": 52,
+      "sample": 5200,
+      "simulation_time": 5.200000000000071,
+      "phase": "close",
+      "file": "media/nominal/external-0052.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 52,
+      "sample": 5200,
+      "simulation_time": 5.200000000000071,
+      "phase": "close",
+      "file": "media/nominal/wrist-0052.png"
+    },
+    {
+      "view": "external",
+      "frame": 53,
+      "sample": 5300,
+      "simulation_time": 5.300000000000105,
+      "phase": "close",
+      "file": "media/nominal/external-0053.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 53,
+      "sample": 5300,
+      "simulation_time": 5.300000000000105,
+      "phase": "close",
+      "file": "media/nominal/wrist-0053.png"
+    },
+    {
+      "view": "external",
+      "frame": 54,
+      "sample": 5400,
+      "simulation_time": 5.400000000000138,
+      "phase": "close",
+      "file": "media/nominal/external-0054.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 54,
+      "sample": 5400,
+      "simulation_time": 5.400000000000138,
+      "phase": "close",
+      "file": "media/nominal/wrist-0054.png"
+    },
+    {
+      "view": "external",
+      "frame": 55,
+      "sample": 5500,
+      "simulation_time": 5.500000000000171,
+      "phase": "close",
+      "file": "media/nominal/external-0055.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 55,
+      "sample": 5500,
+      "simulation_time": 5.500000000000171,
+      "phase": "close",
+      "file": "media/nominal/wrist-0055.png"
+    },
+    {
+      "view": "external",
+      "frame": 56,
+      "sample": 5600,
+      "simulation_time": 5.600000000000205,
+      "phase": "close",
+      "file": "media/nominal/external-0056.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 56,
+      "sample": 5600,
+      "simulation_time": 5.600000000000205,
+      "phase": "close",
+      "file": "media/nominal/wrist-0056.png"
+    },
+    {
+      "view": "external",
+      "frame": 57,
+      "sample": 5700,
+      "simulation_time": 5.700000000000238,
+      "phase": "close",
+      "file": "media/nominal/external-0057.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 57,
+      "sample": 5700,
+      "simulation_time": 5.700000000000238,
+      "phase": "close",
+      "file": "media/nominal/wrist-0057.png"
+    },
+    {
+      "view": "external",
+      "frame": 58,
+      "sample": 5800,
+      "simulation_time": 5.800000000000272,
+      "phase": "close",
+      "file": "media/nominal/external-0058.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 58,
+      "sample": 5800,
+      "simulation_time": 5.800000000000272,
+      "phase": "close",
+      "file": "media/nominal/wrist-0058.png"
+    },
+    {
+      "view": "external",
+      "frame": 59,
+      "sample": 5900,
+      "simulation_time": 5.900000000000305,
+      "phase": "close",
+      "file": "media/nominal/external-0059.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 59,
+      "sample": 5900,
+      "simulation_time": 5.900000000000305,
+      "phase": "close",
+      "file": "media/nominal/wrist-0059.png"
+    },
+    {
+      "view": "external",
+      "frame": 60,
+      "sample": 6000,
+      "simulation_time": 6.000000000000338,
+      "phase": "close",
+      "file": "media/nominal/external-0060.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 60,
+      "sample": 6000,
+      "simulation_time": 6.000000000000338,
+      "phase": "close",
+      "file": "media/nominal/wrist-0060.png"
+    },
+    {
+      "view": "external",
+      "frame": 61,
+      "sample": 6100,
+      "simulation_time": 6.100000000000372,
+      "phase": "close",
+      "file": "media/nominal/external-0061.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 61,
+      "sample": 6100,
+      "simulation_time": 6.100000000000372,
+      "phase": "close",
+      "file": "media/nominal/wrist-0061.png"
+    },
+    {
+      "view": "external",
+      "frame": 62,
+      "sample": 6200,
+      "simulation_time": 6.200000000000405,
+      "phase": "close",
+      "file": "media/nominal/external-0062.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 62,
+      "sample": 6200,
+      "simulation_time": 6.200000000000405,
+      "phase": "close",
+      "file": "media/nominal/wrist-0062.png"
+    },
+    {
+      "view": "external",
+      "frame": 63,
+      "sample": 6300,
+      "simulation_time": 6.300000000000439,
+      "phase": "close",
+      "file": "media/nominal/external-0063.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 63,
+      "sample": 6300,
+      "simulation_time": 6.300000000000439,
+      "phase": "close",
+      "file": "media/nominal/wrist-0063.png"
+    },
+    {
+      "view": "external",
+      "frame": 64,
+      "sample": 6400,
+      "simulation_time": 6.400000000000472,
+      "phase": "close",
+      "file": "media/nominal/external-0064.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 64,
+      "sample": 6400,
+      "simulation_time": 6.400000000000472,
+      "phase": "close",
+      "file": "media/nominal/wrist-0064.png"
+    },
+    {
+      "view": "external",
+      "frame": 65,
+      "sample": 6500,
+      "simulation_time": 6.500000000000505,
+      "phase": "lift",
+      "file": "media/nominal/external-0065.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 65,
+      "sample": 6500,
+      "simulation_time": 6.500000000000505,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0065.png"
+    },
+    {
+      "view": "external",
+      "frame": 66,
+      "sample": 6600,
+      "simulation_time": 6.600000000000539,
+      "phase": "lift",
+      "file": "media/nominal/external-0066.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 66,
+      "sample": 6600,
+      "simulation_time": 6.600000000000539,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0066.png"
+    },
+    {
+      "view": "external",
+      "frame": 67,
+      "sample": 6700,
+      "simulation_time": 6.700000000000572,
+      "phase": "lift",
+      "file": "media/nominal/external-0067.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 67,
+      "sample": 6700,
+      "simulation_time": 6.700000000000572,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0067.png"
+    },
+    {
+      "view": "external",
+      "frame": 68,
+      "sample": 6800,
+      "simulation_time": 6.800000000000606,
+      "phase": "lift",
+      "file": "media/nominal/external-0068.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 68,
+      "sample": 6800,
+      "simulation_time": 6.800000000000606,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0068.png"
+    },
+    {
+      "view": "external",
+      "frame": 69,
+      "sample": 6900,
+      "simulation_time": 6.900000000000639,
+      "phase": "lift",
+      "file": "media/nominal/external-0069.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 69,
+      "sample": 6900,
+      "simulation_time": 6.900000000000639,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0069.png"
+    },
+    {
+      "view": "external",
+      "frame": 70,
+      "sample": 7000,
+      "simulation_time": 7.000000000000672,
+      "phase": "lift",
+      "file": "media/nominal/external-0070.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 70,
+      "sample": 7000,
+      "simulation_time": 7.000000000000672,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0070.png"
+    },
+    {
+      "view": "external",
+      "frame": 71,
+      "sample": 7100,
+      "simulation_time": 7.100000000000706,
+      "phase": "lift",
+      "file": "media/nominal/external-0071.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 71,
+      "sample": 7100,
+      "simulation_time": 7.100000000000706,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0071.png"
+    },
+    {
+      "view": "external",
+      "frame": 72,
+      "sample": 7200,
+      "simulation_time": 7.200000000000739,
+      "phase": "lift",
+      "file": "media/nominal/external-0072.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 72,
+      "sample": 7200,
+      "simulation_time": 7.200000000000739,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0072.png"
+    },
+    {
+      "view": "external",
+      "frame": 73,
+      "sample": 7300,
+      "simulation_time": 7.3000000000007725,
+      "phase": "lift",
+      "file": "media/nominal/external-0073.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 73,
+      "sample": 7300,
+      "simulation_time": 7.3000000000007725,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0073.png"
+    },
+    {
+      "view": "external",
+      "frame": 74,
+      "sample": 7400,
+      "simulation_time": 7.400000000000806,
+      "phase": "lift",
+      "file": "media/nominal/external-0074.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 74,
+      "sample": 7400,
+      "simulation_time": 7.400000000000806,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0074.png"
+    },
+    {
+      "view": "external",
+      "frame": 75,
+      "sample": 7500,
+      "simulation_time": 7.500000000000839,
+      "phase": "lift",
+      "file": "media/nominal/external-0075.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 75,
+      "sample": 7500,
+      "simulation_time": 7.500000000000839,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0075.png"
+    },
+    {
+      "view": "external",
+      "frame": 76,
+      "sample": 7600,
+      "simulation_time": 7.600000000000873,
+      "phase": "lift",
+      "file": "media/nominal/external-0076.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 76,
+      "sample": 7600,
+      "simulation_time": 7.600000000000873,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0076.png"
+    },
+    {
+      "view": "external",
+      "frame": 77,
+      "sample": 7700,
+      "simulation_time": 7.700000000000906,
+      "phase": "lift",
+      "file": "media/nominal/external-0077.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 77,
+      "sample": 7700,
+      "simulation_time": 7.700000000000906,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0077.png"
+    },
+    {
+      "view": "external",
+      "frame": 78,
+      "sample": 7800,
+      "simulation_time": 7.8000000000009395,
+      "phase": "lift",
+      "file": "media/nominal/external-0078.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 78,
+      "sample": 7800,
+      "simulation_time": 7.8000000000009395,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0078.png"
+    },
+    {
+      "view": "external",
+      "frame": 79,
+      "sample": 7900,
+      "simulation_time": 7.900000000000973,
+      "phase": "lift",
+      "file": "media/nominal/external-0079.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 79,
+      "sample": 7900,
+      "simulation_time": 7.900000000000973,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0079.png"
+    },
+    {
+      "view": "external",
+      "frame": 80,
+      "sample": 8000,
+      "simulation_time": 8.000000000001005,
+      "phase": "lift",
+      "file": "media/nominal/external-0080.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 80,
+      "sample": 8000,
+      "simulation_time": 8.000000000001005,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0080.png"
+    },
+    {
+      "view": "external",
+      "frame": 81,
+      "sample": 8100,
+      "simulation_time": 8.10000000000095,
+      "phase": "lift",
+      "file": "media/nominal/external-0081.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 81,
+      "sample": 8100,
+      "simulation_time": 8.10000000000095,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0081.png"
+    },
+    {
+      "view": "external",
+      "frame": 82,
+      "sample": 8200,
+      "simulation_time": 8.200000000000895,
+      "phase": "lift",
+      "file": "media/nominal/external-0082.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 82,
+      "sample": 8200,
+      "simulation_time": 8.200000000000895,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0082.png"
+    },
+    {
+      "view": "external",
+      "frame": 83,
+      "sample": 8300,
+      "simulation_time": 8.30000000000084,
+      "phase": "lift",
+      "file": "media/nominal/external-0083.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 83,
+      "sample": 8300,
+      "simulation_time": 8.30000000000084,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0083.png"
+    },
+    {
+      "view": "external",
+      "frame": 84,
+      "sample": 8400,
+      "simulation_time": 8.400000000000784,
+      "phase": "lift",
+      "file": "media/nominal/external-0084.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 84,
+      "sample": 8400,
+      "simulation_time": 8.400000000000784,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0084.png"
+    },
+    {
+      "view": "external",
+      "frame": 85,
+      "sample": 8500,
+      "simulation_time": 8.500000000000728,
+      "phase": "lift",
+      "file": "media/nominal/external-0085.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 85,
+      "sample": 8500,
+      "simulation_time": 8.500000000000728,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0085.png"
+    },
+    {
+      "view": "external",
+      "frame": 86,
+      "sample": 8600,
+      "simulation_time": 8.600000000000673,
+      "phase": "lift",
+      "file": "media/nominal/external-0086.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 86,
+      "sample": 8600,
+      "simulation_time": 8.600000000000673,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0086.png"
+    },
+    {
+      "view": "external",
+      "frame": 87,
+      "sample": 8700,
+      "simulation_time": 8.700000000000617,
+      "phase": "lift",
+      "file": "media/nominal/external-0087.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 87,
+      "sample": 8700,
+      "simulation_time": 8.700000000000617,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0087.png"
+    },
+    {
+      "view": "external",
+      "frame": 88,
+      "sample": 8800,
+      "simulation_time": 8.800000000000562,
+      "phase": "lift",
+      "file": "media/nominal/external-0088.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 88,
+      "sample": 8800,
+      "simulation_time": 8.800000000000562,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0088.png"
+    },
+    {
+      "view": "external",
+      "frame": 89,
+      "sample": 8900,
+      "simulation_time": 8.900000000000507,
+      "phase": "lift",
+      "file": "media/nominal/external-0089.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 89,
+      "sample": 8900,
+      "simulation_time": 8.900000000000507,
+      "phase": "lift",
+      "file": "media/nominal/wrist-0089.png"
+    },
+    {
+      "view": "external",
+      "frame": 90,
+      "sample": 9000,
+      "simulation_time": 9.000000000000451,
+      "phase": "hold",
+      "file": "media/nominal/external-0090.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 90,
+      "sample": 9000,
+      "simulation_time": 9.000000000000451,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0090.png"
+    },
+    {
+      "view": "external",
+      "frame": 91,
+      "sample": 9100,
+      "simulation_time": 9.100000000000396,
+      "phase": "hold",
+      "file": "media/nominal/external-0091.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 91,
+      "sample": 9100,
+      "simulation_time": 9.100000000000396,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0091.png"
+    },
+    {
+      "view": "external",
+      "frame": 92,
+      "sample": 9200,
+      "simulation_time": 9.20000000000034,
+      "phase": "hold",
+      "file": "media/nominal/external-0092.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 92,
+      "sample": 9200,
+      "simulation_time": 9.20000000000034,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0092.png"
+    },
+    {
+      "view": "external",
+      "frame": 93,
+      "sample": 9300,
+      "simulation_time": 9.300000000000285,
+      "phase": "hold",
+      "file": "media/nominal/external-0093.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 93,
+      "sample": 9300,
+      "simulation_time": 9.300000000000285,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0093.png"
+    },
+    {
+      "view": "external",
+      "frame": 94,
+      "sample": 9400,
+      "simulation_time": 9.40000000000023,
+      "phase": "hold",
+      "file": "media/nominal/external-0094.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 94,
+      "sample": 9400,
+      "simulation_time": 9.40000000000023,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0094.png"
+    },
+    {
+      "view": "external",
+      "frame": 95,
+      "sample": 9500,
+      "simulation_time": 9.500000000000174,
+      "phase": "hold",
+      "file": "media/nominal/external-0095.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 95,
+      "sample": 9500,
+      "simulation_time": 9.500000000000174,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0095.png"
+    },
+    {
+      "view": "external",
+      "frame": 96,
+      "sample": 9600,
+      "simulation_time": 9.600000000000119,
+      "phase": "hold",
+      "file": "media/nominal/external-0096.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 96,
+      "sample": 9600,
+      "simulation_time": 9.600000000000119,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0096.png"
+    },
+    {
+      "view": "external",
+      "frame": 97,
+      "sample": 9700,
+      "simulation_time": 9.700000000000063,
+      "phase": "hold",
+      "file": "media/nominal/external-0097.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 97,
+      "sample": 9700,
+      "simulation_time": 9.700000000000063,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0097.png"
+    },
+    {
+      "view": "external",
+      "frame": 98,
+      "sample": 9800,
+      "simulation_time": 9.800000000000008,
+      "phase": "hold",
+      "file": "media/nominal/external-0098.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 98,
+      "sample": 9800,
+      "simulation_time": 9.800000000000008,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0098.png"
+    },
+    {
+      "view": "external",
+      "frame": 99,
+      "sample": 9900,
+      "simulation_time": 9.899999999999952,
+      "phase": "hold",
+      "file": "media/nominal/external-0099.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 99,
+      "sample": 9900,
+      "simulation_time": 9.899999999999952,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0099.png"
+    },
+    {
+      "view": "external",
+      "frame": 100,
+      "sample": 10000,
+      "simulation_time": 9.999999999999897,
+      "phase": "hold",
+      "file": "media/nominal/external-0100.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 100,
+      "sample": 10000,
+      "simulation_time": 9.999999999999897,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0100.png"
+    },
+    {
+      "view": "external",
+      "frame": 101,
+      "sample": 10100,
+      "simulation_time": 10.099999999999842,
+      "phase": "hold",
+      "file": "media/nominal/external-0101.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 101,
+      "sample": 10100,
+      "simulation_time": 10.099999999999842,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0101.png"
+    },
+    {
+      "view": "external",
+      "frame": 102,
+      "sample": 10200,
+      "simulation_time": 10.199999999999786,
+      "phase": "hold",
+      "file": "media/nominal/external-0102.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 102,
+      "sample": 10200,
+      "simulation_time": 10.199999999999786,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0102.png"
+    },
+    {
+      "view": "external",
+      "frame": 103,
+      "sample": 10300,
+      "simulation_time": 10.29999999999973,
+      "phase": "hold",
+      "file": "media/nominal/external-0103.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 103,
+      "sample": 10300,
+      "simulation_time": 10.29999999999973,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0103.png"
+    },
+    {
+      "view": "external",
+      "frame": 104,
+      "sample": 10400,
+      "simulation_time": 10.399999999999675,
+      "phase": "hold",
+      "file": "media/nominal/external-0104.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 104,
+      "sample": 10400,
+      "simulation_time": 10.399999999999675,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0104.png"
+    },
+    {
+      "view": "external",
+      "frame": 105,
+      "sample": 10500,
+      "simulation_time": 10.49999999999962,
+      "phase": "hold",
+      "file": "media/nominal/external-0105.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 105,
+      "sample": 10500,
+      "simulation_time": 10.49999999999962,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0105.png"
+    },
+    {
+      "view": "external",
+      "frame": 106,
+      "sample": 10600,
+      "simulation_time": 10.599999999999564,
+      "phase": "hold",
+      "file": "media/nominal/external-0106.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 106,
+      "sample": 10600,
+      "simulation_time": 10.599999999999564,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0106.png"
+    },
+    {
+      "view": "external",
+      "frame": 107,
+      "sample": 10700,
+      "simulation_time": 10.699999999999509,
+      "phase": "hold",
+      "file": "media/nominal/external-0107.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 107,
+      "sample": 10700,
+      "simulation_time": 10.699999999999509,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0107.png"
+    },
+    {
+      "view": "external",
+      "frame": 108,
+      "sample": 10800,
+      "simulation_time": 10.799999999999454,
+      "phase": "hold",
+      "file": "media/nominal/external-0108.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 108,
+      "sample": 10800,
+      "simulation_time": 10.799999999999454,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0108.png"
+    },
+    {
+      "view": "external",
+      "frame": 109,
+      "sample": 10900,
+      "simulation_time": 10.899999999999398,
+      "phase": "hold",
+      "file": "media/nominal/external-0109.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 109,
+      "sample": 10900,
+      "simulation_time": 10.899999999999398,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0109.png"
+    },
+    {
+      "view": "external",
+      "frame": 110,
+      "sample": 11000,
+      "simulation_time": 10.999999999999343,
+      "phase": "hold",
+      "file": "media/nominal/external-0110.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 110,
+      "sample": 11000,
+      "simulation_time": 10.999999999999343,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0110.png"
+    },
+    {
+      "view": "external",
+      "frame": 111,
+      "sample": 11100,
+      "simulation_time": 11.099999999999287,
+      "phase": "hold",
+      "file": "media/nominal/external-0111.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 111,
+      "sample": 11100,
+      "simulation_time": 11.099999999999287,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0111.png"
+    },
+    {
+      "view": "external",
+      "frame": 112,
+      "sample": 11200,
+      "simulation_time": 11.199999999999232,
+      "phase": "hold",
+      "file": "media/nominal/external-0112.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 112,
+      "sample": 11200,
+      "simulation_time": 11.199999999999232,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0112.png"
+    },
+    {
+      "view": "external",
+      "frame": 113,
+      "sample": 11300,
+      "simulation_time": 11.299999999999176,
+      "phase": "hold",
+      "file": "media/nominal/external-0113.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 113,
+      "sample": 11300,
+      "simulation_time": 11.299999999999176,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0113.png"
+    },
+    {
+      "view": "external",
+      "frame": 114,
+      "sample": 11400,
+      "simulation_time": 11.399999999999121,
+      "phase": "hold",
+      "file": "media/nominal/external-0114.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 114,
+      "sample": 11400,
+      "simulation_time": 11.399999999999121,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0114.png"
+    },
+    {
+      "view": "external",
+      "frame": 115,
+      "sample": 11500,
+      "simulation_time": 11.499999999999066,
+      "phase": "hold",
+      "file": "media/nominal/external-0115.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 115,
+      "sample": 11500,
+      "simulation_time": 11.499999999999066,
+      "phase": "hold",
+      "file": "media/nominal/wrist-0115.png"
+    },
+    {
+      "view": "external",
+      "frame": 116,
+      "sample": 11600,
+      "simulation_time": 11.59999999999901,
+      "phase": "release",
+      "file": "media/nominal/external-0116.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 116,
+      "sample": 11600,
+      "simulation_time": 11.59999999999901,
+      "phase": "release",
+      "file": "media/nominal/wrist-0116.png"
+    },
+    {
+      "view": "external",
+      "frame": 117,
+      "sample": 11700,
+      "simulation_time": 11.699999999998955,
+      "phase": "release",
+      "file": "media/nominal/external-0117.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 117,
+      "sample": 11700,
+      "simulation_time": 11.699999999998955,
+      "phase": "release",
+      "file": "media/nominal/wrist-0117.png"
+    },
+    {
+      "view": "external",
+      "frame": 118,
+      "sample": 11800,
+      "simulation_time": 11.7999999999989,
+      "phase": "release",
+      "file": "media/nominal/external-0118.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 118,
+      "sample": 11800,
+      "simulation_time": 11.7999999999989,
+      "phase": "release",
+      "file": "media/nominal/wrist-0118.png"
+    },
+    {
+      "view": "external",
+      "frame": 119,
+      "sample": 11900,
+      "simulation_time": 11.899999999998844,
+      "phase": "release",
+      "file": "media/nominal/external-0119.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 119,
+      "sample": 11900,
+      "simulation_time": 11.899999999998844,
+      "phase": "release",
+      "file": "media/nominal/wrist-0119.png"
+    },
+    {
+      "view": "external",
+      "frame": 120,
+      "sample": 12000,
+      "simulation_time": 11.999999999998789,
+      "phase": "release",
+      "file": "media/nominal/external-0120.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 120,
+      "sample": 12000,
+      "simulation_time": 11.999999999998789,
+      "phase": "release",
+      "file": "media/nominal/wrist-0120.png"
+    },
+    {
+      "view": "external",
+      "frame": 121,
+      "sample": 12100,
+      "simulation_time": 12.099999999998733,
+      "phase": "release",
+      "file": "media/nominal/external-0121.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 121,
+      "sample": 12100,
+      "simulation_time": 12.099999999998733,
+      "phase": "release",
+      "file": "media/nominal/wrist-0121.png"
+    },
+    {
+      "view": "external",
+      "frame": 122,
+      "sample": 12200,
+      "simulation_time": 12.199999999998678,
+      "phase": "release",
+      "file": "media/nominal/external-0122.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 122,
+      "sample": 12200,
+      "simulation_time": 12.199999999998678,
+      "phase": "release",
+      "file": "media/nominal/wrist-0122.png"
+    },
+    {
+      "view": "external",
+      "frame": 123,
+      "sample": 12300,
+      "simulation_time": 12.299999999998622,
+      "phase": "release",
+      "file": "media/nominal/external-0123.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 123,
+      "sample": 12300,
+      "simulation_time": 12.299999999998622,
+      "phase": "release",
+      "file": "media/nominal/wrist-0123.png"
+    },
+    {
+      "view": "external",
+      "frame": 124,
+      "sample": 12400,
+      "simulation_time": 12.399999999998567,
+      "phase": "release",
+      "file": "media/nominal/external-0124.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 124,
+      "sample": 12400,
+      "simulation_time": 12.399999999998567,
+      "phase": "release",
+      "file": "media/nominal/wrist-0124.png"
+    },
+    {
+      "view": "external",
+      "frame": 125,
+      "sample": 12500,
+      "simulation_time": 12.499999999998511,
+      "phase": "release",
+      "file": "media/nominal/external-0125.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 125,
+      "sample": 12500,
+      "simulation_time": 12.499999999998511,
+      "phase": "release",
+      "file": "media/nominal/wrist-0125.png"
+    },
+    {
+      "view": "external",
+      "frame": 126,
+      "sample": 12600,
+      "simulation_time": 12.599999999998456,
+      "phase": "release",
+      "file": "media/nominal/external-0126.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 126,
+      "sample": 12600,
+      "simulation_time": 12.599999999998456,
+      "phase": "release",
+      "file": "media/nominal/wrist-0126.png"
+    },
+    {
+      "view": "external",
+      "frame": 127,
+      "sample": 12700,
+      "simulation_time": 12.6999999999984,
+      "phase": "release",
+      "file": "media/nominal/external-0127.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 127,
+      "sample": 12700,
+      "simulation_time": 12.6999999999984,
+      "phase": "release",
+      "file": "media/nominal/wrist-0127.png"
+    },
+    {
+      "view": "external",
+      "frame": 128,
+      "sample": 12800,
+      "simulation_time": 12.799999999998345,
+      "phase": "release",
+      "file": "media/nominal/external-0128.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 128,
+      "sample": 12800,
+      "simulation_time": 12.799999999998345,
+      "phase": "release",
+      "file": "media/nominal/wrist-0128.png"
+    },
+    {
+      "view": "external",
+      "frame": 129,
+      "sample": 12900,
+      "simulation_time": 12.89999999999829,
+      "phase": "release",
+      "file": "media/nominal/external-0129.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 129,
+      "sample": 12900,
+      "simulation_time": 12.89999999999829,
+      "phase": "release",
+      "file": "media/nominal/wrist-0129.png"
+    },
+    {
+      "view": "external",
+      "frame": 130,
+      "sample": 13000,
+      "simulation_time": 12.999999999998234,
+      "phase": "release",
+      "file": "media/nominal/external-0130.png"
+    },
+    {
+      "view": "wrist",
+      "frame": 130,
+      "sample": 13000,
+      "simulation_time": 12.999999999998234,
+      "phase": "release",
+      "file": "media/nominal/wrist-0130.png"
+    }
+  ]
+}

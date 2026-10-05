@@ -1,0 +1,22 @@
+{
+  "source_sha256": "2b2d37c7b8ad831ef1b156e23203764d6e53b365c77821344866c75d2ca75942",
+  "source_scale_to_m": 1.0,
+  "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+  "parts": 104,
+  "source_bounds_m": [
+    [
+      0.00899358868962,
+      -0.0217,
+      0.0198
+    ],
+    [
+      0.0290935886896,
+      0.0217,
+      0.0448
+    ]
+  ],
+  "source_watertight": false,
+  "proxy_vertex_to_source_vertex_max_m": 0.010270950170117454,
+  "proxy_vertex_to_source_vertex_p95_m": 0.003670476252047651,
+  "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+}

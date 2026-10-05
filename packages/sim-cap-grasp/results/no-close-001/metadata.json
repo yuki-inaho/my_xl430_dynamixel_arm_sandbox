@@ -1,0 +1,69 @@
+{
+  "seed": 0,
+  "friction": 0.7,
+  "cap_mass_kg": 0.0015,
+  "no_close": true,
+  "python": "3.12.14",
+  "mujoco": "3.13.0",
+  "numpy": "2.5.3",
+  "initial_support_plane_z_m": 0.05,
+  "initial_cap_center_m": [
+    0,
+    0.18,
+    0.0575
+  ],
+  "approach_target_position_m": [
+    0.0,
+    0.18,
+    0.0635
+  ],
+  "runtime_pose_writes": false,
+  "external_forces_applied": false,
+  "hardware_access": false,
+  "scene_registration": "nominal",
+  "calibration_verified": false,
+  "evaluation_contract_sha256": "9a36a4a8d77f66032dc3be4ebd1a44baaecfd6fa40b2770244696103bbb489bd",
+  "scene_xml_sha256": "576714643f4326a2a397d470c295a2a0927b8e33d6c0042793f51282ab296b5b",
+  "collision_policy_sha256": "1f078240f86db21e21eb4ef0ef4726a3ee5c82fe82ff7f464e1a60d3fa50d816",
+  "source_code_hashes": {
+    "verify_model.py": "570d93eb3343ee5e1dced738314cacd420bbe6dcf92ef47b769af967797f29ea",
+    "build_scene.py": "210da97b4ca2e859db86a704847e481ab6b235ac15e087a7fd238976cb2ddcca",
+    "validate_evaluator.py": "f80c8a06a758e3ab338a51d72f8ee928026fe3e4297bd944a0c8e0afefc8553f",
+    "run.py": "36f20bc7830f6aa381c62b3ec7bd632e368587eee11013b2f8c00ed16b167177",
+    "ik.py": "d382e2c271343c8e0ea9a32f35b9cce8674dfaa949588e08616c7cfccbd6f23b",
+    "review_evaluator_cases.py": "109cda6f5263a9030c0643312f2103c68f8e2e0ff7d72300ea162c9c6f882ea2",
+    "evaluate.py": "7c0aac0ea0d20c1e3b9a3a600aa2461cc8da7f39f98ec8ca479fd8cecc1764be",
+    "task_console.py": "68c4c316c4a6274ef6005d49e29a9c47df06db95950716b3bc51526a5ed1c610",
+    "inspect_geometry.py": "5919069554b9138f9244c370545220f4e4fc1d3ad76b82374250e9f406098a51"
+  },
+  "controller": {
+    "type": "bounded motor PD + model gravity/Coriolis bias feedforward on arm axes",
+    "arm_kp_Nm_per_rad": 60.0,
+    "arm_kd_Nm_s_per_rad": 2.0,
+    "jaw_kp_Nm_per_rad": 0.12,
+    "jaw_kd_Nm_s_per_rad": 0.003,
+    "arm_torque_bound_Nm": 1.0,
+    "jaw_torque_bound_Nm": 0.08
+  },
+  "wall_time_s": 2.403610667000976,
+  "stop_reason": {
+    "code": "COLLISION",
+    "time": 2.2479999999998634,
+    "contacts": [
+      [
+        "box",
+        "col_cot_R_0",
+        3.0399465335871394,
+        -4.872433654573571e-06
+      ],
+      [
+        "box",
+        "col_cot_R_0",
+        3.0748306834893633,
+        -6.536329239963112e-06
+      ]
+    ]
+  },
+  "exception": null,
+  "completed_samples": 2249
+}

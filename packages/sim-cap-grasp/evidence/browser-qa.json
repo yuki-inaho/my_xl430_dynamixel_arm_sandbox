@@ -1,0 +1,185 @@
+{
+  "images": [
+    {
+      "file": "media/nominal/external-0029.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/wrist-0029.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/external-0064.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/wrist-0064.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/external-0080.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/wrist-0080.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/external-0100.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/wrist-0100.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/external-0127.png",
+      "loaded": true
+    },
+    {
+      "file": "media/nominal/wrist-0127.png",
+      "loaded": true
+    },
+    {
+      "file": "media/timeseries.png",
+      "loaded": true
+    },
+    {
+      "file": "media/grasp-source-closeup.png",
+      "loaded": true
+    },
+    {
+      "file": "media/grasp-proxy-closeup.png",
+      "loaded": true
+    }
+  ],
+  "videos": [
+    {
+      "file": "media/nominal/external.mp4",
+      "readyState": 4,
+      "error": null,
+      "duration": 13.1
+    },
+    {
+      "file": "media/nominal/wrist.mp4",
+      "readyState": 4,
+      "error": null,
+      "duration": 13.1
+    },
+    {
+      "file": "media/negative/external.mp4",
+      "readyState": 4,
+      "error": null,
+      "duration": 13.1
+    },
+    {
+      "file": "media/negative/wrist.mp4",
+      "readyState": 4,
+      "error": null,
+      "duration": 13.1
+    }
+  ],
+  "links": [
+    {
+      "file": "raw-audit-review-repeat.json",
+      "status": 200
+    },
+    {
+      "file": "study-results.json",
+      "status": 200
+    },
+    {
+      "file": "result.json",
+      "status": 200
+    },
+    {
+      "file": "results/friction-high/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/friction-low/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/friction-stress/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/half-timestep/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/mass-high/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/mass-low/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/no-close-001/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/no-close-002/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/no-close-final/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/nominal-001/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/nominal-002/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/nominal-003/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/nominal-004/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/nominal-005/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/nominal-006/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/nominal-007/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/nominal-repeat/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/review-no-close/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/review-nominal/result.json",
+      "status": 200
+    },
+    {
+      "file": "results/review-repeat/result.json",
+      "status": 200
+    },
+    {
+      "file": "review-verification.json",
+      "status": 200
+    }
+  ],
+  "desktopOverflow": false,
+  "mobileOverflow": false,
+  "headed": false,
+  "known_console_issue": "favicon only: missing optional favicon returns404",
+  "pass": true
+}

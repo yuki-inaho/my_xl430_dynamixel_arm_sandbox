@@ -1,0 +1,23 @@
+{
+  "source_sha256": "aa50e12a49da3d274eea1659c382eeb9db53f07def5f7e1ffe4fc6f398f1a8c2",
+  "source_scale_to_m": 1.0,
+  "method": "Source-verified maincase box + two Y-axis horn cylinders; all source vertices covered, cylinder64 conservatively circumscribed",
+  "parts": 3,
+  "source_bounds_m": [
+    [
+      -0.01425,
+      0.04,
+      -0.01125
+    ],
+    [
+      0.01425,
+      0.0809,
+      0.03525
+    ]
+  ],
+  "proxy_directory": "decomposition/M05_v2",
+  "source_watertight": false,
+  "proxy_vertex_to_source_vertex_max_m": 0.004472135954994384,
+  "proxy_vertex_to_source_vertex_p95_m": 0.0019216945964069436,
+  "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+}

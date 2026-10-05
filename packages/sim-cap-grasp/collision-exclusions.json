@@ -1,0 +1,156 @@
+{
+  "scope": "Declared policy is not excluded-contact safety verification",
+  "same_group": "disabled: same rigid part/category",
+  "non_forbidden_pairs": [
+    {
+      "group1": 0,
+      "group2": 1,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 0,
+      "group2": 17,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 1,
+      "group2": 2,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 2,
+      "group2": 3,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 3,
+      "group2": 4,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 4,
+      "group2": 5,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 4,
+      "group2": 6,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 4,
+      "group2": 7,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 5,
+      "group2": 6,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 6,
+      "group2": 7,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 6,
+      "group2": 10,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 6,
+      "group2": 11,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 7,
+      "group2": 8,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 7,
+      "group2": 9,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 8,
+      "group2": 10,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 9,
+      "group2": 11,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 10,
+      "group2": 14,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 10,
+      "group2": 15,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 11,
+      "group2": 12,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 11,
+      "group2": 13,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 12,
+      "group2": 13,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 12,
+      "group2": 16,
+      "class": "left_right_grip",
+      "enabled": true
+    },
+    {
+      "group1": 14,
+      "group2": 15,
+      "class": "intentional_rigid_or_adjacent_joint_mount",
+      "enabled": false
+    },
+    {
+      "group1": 14,
+      "group2": 16,
+      "class": "left_right_grip",
+      "enabled": true
+    },
+    {
+      "group1": 16,
+      "group2": 17,
+      "class": "support_allowed_outside_hold",
+      "enabled": true
+    }
+  ]
+}

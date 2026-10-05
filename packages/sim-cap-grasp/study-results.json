@@ -1,0 +1,269 @@
+{
+  "nominal_run": "nominal-007",
+  "nominal_status": "SUCCESS",
+  "trials": [
+    {
+      "name": "nominal-repeat",
+      "friction": 0.7,
+      "mass_kg": 0.0015,
+      "no_close": false,
+      "timestep_s": 0.001,
+      "status": "SUCCESS",
+      "reason_codes": [],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029631675e-06,
+        "approach_pitch_error_rad": 1.3405667648180854e-06,
+        "max_cap_bottom_clearance_m": 0.038765029167924916,
+        "max_left_normal_force_N": 0.8678171554423588,
+        "max_right_normal_force_N": 0.8706886719551962,
+        "max_solver_iterations": 11,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 13001,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 12.999999999998234,
+        "hold_start_s": 9.000000000000451,
+        "hold_end_s": 10.999999999999343,
+        "hold_duration_s": 1.9999999999988916,
+        "hold_bottom_clearance_min_m": 0.03772301444366728,
+        "hold_bilateral_fraction": 0.998,
+        "hold_grip_frame_drift_max_m": 0.0007588062790882459,
+        "hold_support_contact_count": 0
+      }
+    },
+    {
+      "name": "no-close-final",
+      "friction": 0.7,
+      "mass_kg": 0.0015,
+      "no_close": true,
+      "timestep_s": 0.001,
+      "status": "FAILURE",
+      "reason_codes": [
+        "INSUFFICIENT_LIFT",
+        "NO_GRIP"
+      ],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029631675e-06,
+        "approach_pitch_error_rad": 1.3405667648180854e-06,
+        "max_cap_bottom_clearance_m": 0.0,
+        "max_left_normal_force_N": 0.0,
+        "max_right_normal_force_N": 0.0,
+        "max_solver_iterations": 2,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 13001,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 12.999999999998234
+      }
+    },
+    {
+      "name": "friction-low",
+      "friction": 0.15,
+      "mass_kg": 0.0015,
+      "no_close": false,
+      "timestep_s": 0.001,
+      "status": "FAILURE",
+      "reason_codes": [
+        "INSUFFICIENT_LIFT",
+        "SLIP"
+      ],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029631675e-06,
+        "approach_pitch_error_rad": 1.3405667648180854e-06,
+        "max_cap_bottom_clearance_m": 0.03861471201643686,
+        "max_left_normal_force_N": 0.6898125273227556,
+        "max_right_normal_force_N": 0.6930530086424767,
+        "max_solver_iterations": 15,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 10873,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 10.871999999999414
+      }
+    },
+    {
+      "name": "friction-high",
+      "friction": 1.0,
+      "mass_kg": 0.0015,
+      "no_close": false,
+      "timestep_s": 0.001,
+      "status": "SUCCESS",
+      "reason_codes": [],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029631675e-06,
+        "approach_pitch_error_rad": 1.3405667648180854e-06,
+        "max_cap_bottom_clearance_m": 0.038387872343140825,
+        "max_left_normal_force_N": 0.7014472213166036,
+        "max_right_normal_force_N": 0.7108272302309543,
+        "max_solver_iterations": 10,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 13001,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 12.999999999998234,
+        "hold_start_s": 9.000000000000451,
+        "hold_end_s": 10.999999999999343,
+        "hold_duration_s": 1.9999999999988916,
+        "hold_bottom_clearance_min_m": 0.03679487584276128,
+        "hold_bilateral_fraction": 1.0,
+        "hold_grip_frame_drift_max_m": 0.0010347889868739953,
+        "hold_support_contact_count": 0
+      }
+    },
+    {
+      "name": "mass-low",
+      "friction": 0.7,
+      "mass_kg": 0.00075,
+      "no_close": false,
+      "timestep_s": 0.001,
+      "status": "FAILURE",
+      "reason_codes": [
+        "SLIP"
+      ],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029631675e-06,
+        "approach_pitch_error_rad": 1.3405667648180854e-06,
+        "max_cap_bottom_clearance_m": 0.03791582330867681,
+        "max_left_normal_force_N": 0.6125166184988844,
+        "max_right_normal_force_N": 0.6148061937876403,
+        "max_solver_iterations": 9,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 11294,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 11.29299999999918,
+        "hold_start_s": 9.000000000000451,
+        "hold_end_s": 10.999999999999343,
+        "hold_duration_s": 1.9999999999988916,
+        "hold_bottom_clearance_min_m": 0.03584925096029434,
+        "hold_bilateral_fraction": 0.9995,
+        "hold_grip_frame_drift_max_m": 0.0019870394895418423,
+        "hold_support_contact_count": 0
+      }
+    },
+    {
+      "name": "mass-high",
+      "friction": 0.7,
+      "mass_kg": 0.003,
+      "no_close": false,
+      "timestep_s": 0.001,
+      "status": "SUCCESS",
+      "reason_codes": [],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029631675e-06,
+        "approach_pitch_error_rad": 1.3405667648180854e-06,
+        "max_cap_bottom_clearance_m": 0.03822850261472556,
+        "max_left_normal_force_N": 0.8516201378010582,
+        "max_right_normal_force_N": 0.9418861880611056,
+        "max_solver_iterations": 10,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 13001,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 12.999999999998234,
+        "hold_start_s": 9.000000000000451,
+        "hold_end_s": 10.999999999999343,
+        "hold_duration_s": 1.9999999999988916,
+        "hold_bottom_clearance_min_m": 0.0357957185824396,
+        "hold_bilateral_fraction": 0.9935,
+        "hold_grip_frame_drift_max_m": 0.0017564902574238078,
+        "hold_support_contact_count": 0
+      }
+    },
+    {
+      "name": "friction-stress",
+      "friction": 0.005,
+      "mass_kg": 0.0015,
+      "no_close": false,
+      "timestep_s": 0.001,
+      "status": "FAILURE",
+      "reason_codes": [
+        "INSUFFICIENT_LIFT",
+        "SLIP"
+      ],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029631675e-06,
+        "approach_pitch_error_rad": 1.3405667648180854e-06,
+        "max_cap_bottom_clearance_m": 1.9187505731703414e-05,
+        "max_left_normal_force_N": 0.16939375544138657,
+        "max_right_normal_force_N": 0.1602475848101692,
+        "max_solver_iterations": 11,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 6994,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 6.99300000000067
+      }
+    },
+    {
+      "name": "half-timestep",
+      "friction": 0.7,
+      "mass_kg": 0.0015,
+      "no_close": false,
+      "timestep_s": 0.0005,
+      "status": "SUCCESS",
+      "reason_codes": [],
+      "metrics": {
+        "approach_position_error_m": 7.547893077771239e-06,
+        "approach_pitch_error_rad": 1.3405790738607593e-06,
+        "max_cap_bottom_clearance_m": 0.03826673803810121,
+        "max_left_normal_force_N": 0.690150307776475,
+        "max_right_normal_force_N": 0.7893048739700698,
+        "max_solver_iterations": 11,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 26001,
+        "timestep_s": 0.0005,
+        "simulated_duration_s": 13.000000000004396,
+        "hold_start_s": 9.000499999999509,
+        "hold_end_s": 11.000500000001953,
+        "hold_duration_s": 2.0000000000024443,
+        "hold_bottom_clearance_min_m": 0.036435983045264075,
+        "hold_bilateral_fraction": 0.9965,
+        "hold_grip_frame_drift_max_m": 0.0014268946942771058,
+        "hold_support_contact_count": 0
+      }
+    }
+  ],
+  "deterministic_repeat": {
+    "same_seed": 0,
+    "compared_fields": [
+      "time",
+      "qpos",
+      "qvel",
+      "qacc",
+      "ctrl",
+      "cap_position",
+      "grip_position",
+      "left_force",
+      "right_force"
+    ],
+    "exact_equal": true,
+    "max_abs_differences": {
+      "time": 0.0,
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "qacc": 0.0,
+      "ctrl": 0.0,
+      "cap_position": 0.0,
+      "grip_position": 0.0,
+      "left_force": 0.0,
+      "right_force": 0.0
+    }
+  },
+  "release_included": true,
+  "all_failures_preserved": [
+    "friction-low",
+    "friction-stress",
+    "mass-low",
+    "no-close-001",
+    "no-close-002",
+    "no-close-final",
+    "nominal-001",
+    "nominal-002",
+    "nominal-003",
+    "nominal-004",
+    "nominal-005",
+    "nominal-006"
+  ]
+}

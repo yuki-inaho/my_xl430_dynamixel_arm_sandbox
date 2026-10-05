@@ -1,0 +1,165 @@
+{
+  "trial": "results/nominal-repeat",
+  "scene_sha256": "b52eaa8081556c50f5490f1b468516afbc7e2b6bb8b4be6dbdbb5626cac124b6",
+  "states_sha256": "a08abe4649b2af73a2529813dd44f010debe00d13307362ceee23463e6422914",
+  "contacts_sha256": "e6837f2bb3f76511ac0471eae48ca5e3f92fb52784c061d9b42d58d644c4c566",
+  "mujoco_version": "3.13.0",
+  "physics_parameters": {
+    "timestep": 0.001,
+    "impratio": 10.0,
+    "noslip_iterations": 0,
+    "cap_mass_kg": 0.0015,
+    "gravity": [
+      0.0,
+      0.0,
+      -9.81
+    ]
+  },
+  "errors": [],
+  "pass": true,
+  "metrics": {
+    "approach_position_error_m": 7.5478923029631675e-06,
+    "approach_pitch_error_rad": 1.3405667648180854e-06,
+    "raw_samples": 13001,
+    "fk_max_component_error": 0.0,
+    "maximum_bottom_clearance_m": 0.038765029167924916,
+    "hold_start_s": 9.000000000000451,
+    "hold_end_s": 10.999999999999343,
+    "hold_step_duration_s": 2.0,
+    "hold_observed_duration_s": 1.9999999999988916,
+    "hold_minimum_bottom_clearance_m": 0.03772301444366728,
+    "hold_bilateral_fraction": 0.998,
+    "hold_maximum_relative_drift_m": 0.0007588062790882459,
+    "hold_support_steps": 0,
+    "hold_left_normal_range_N": [
+      0.0,
+      0.6662135943337325
+    ],
+    "hold_right_normal_range_N": [
+      0.0,
+      0.662438547757022
+    ]
+  },
+  "forbidden_examples": [],
+  "sparse_force_checks": [
+    {
+      "sample": 9000,
+      "time": 9.000000000000451,
+      "max_cap_pair_normal_difference_N": 0.0,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.6080167241637606,
+        "cap_geom|col_cot_L_0": 0.6090686138908492
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.6080167241637606,
+        "cap_geom|col_cot_L_0": 0.6090686138908492
+      }
+    },
+    {
+      "sample": 9312,
+      "time": 9.312000000000278,
+      "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.6017226223695564,
+        "cap_geom|col_cot_L_0": 0.6011292888694717
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.6017226223695564,
+        "cap_geom|col_cot_L_0": 0.6011292888694718
+      }
+    },
+    {
+      "sample": 9625,
+      "time": 9.625000000000105,
+      "max_cap_pair_normal_difference_N": 0.0,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.5996206352314428,
+        "cap_geom|col_cot_L_0": 0.598947337701206
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.5996206352314428,
+        "cap_geom|col_cot_L_0": 0.598947337701206
+      }
+    },
+    {
+      "sample": 9937,
+      "time": 9.936999999999932,
+      "max_cap_pair_normal_difference_N": 2.220446049250313e-16,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.5974317619030974,
+        "cap_geom|col_cot_L_0": 0.5965839105768385
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.5974317619030973,
+        "cap_geom|col_cot_L_0": 0.5965839105768382
+      }
+    },
+    {
+      "sample": 10250,
+      "time": 10.249999999999758,
+      "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.5958905713344508,
+        "cap_geom|col_cot_L_0": 0.5951272689646561
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.5958905713344507,
+        "cap_geom|col_cot_L_0": 0.5951272689646561
+      }
+    },
+    {
+      "sample": 10562,
+      "time": 10.561999999999585,
+      "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.594391366825912,
+        "cap_geom|col_cot_L_0": 0.5936907625342577
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.5943913668259119,
+        "cap_geom|col_cot_L_0": 0.5936907625342578
+      }
+    },
+    {
+      "sample": 10875,
+      "time": 10.874999999999412,
+      "max_cap_pair_normal_difference_N": 3.3306690738754696e-16,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.5924687014186961,
+        "cap_geom|col_cot_L_0": 0.591981925820253
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.5924687014186958,
+        "cap_geom|col_cot_L_0": 0.5919819258202529
+      }
+    },
+    {
+      "sample": 11187,
+      "time": 11.186999999999239,
+      "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.5908716727574963,
+        "cap_geom|col_cot_L_0": 0.5904202658706351
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.5908716727574963,
+        "cap_geom|col_cot_L_0": 0.590420265870635
+      }
+    },
+    {
+      "sample": 11500,
+      "time": 11.499999999999066,
+      "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+      "recomputed": {
+        "cap_geom|col_cot_R_0": 0.5310840737604691,
+        "cap_geom|col_cot_L_0": 0.5281789908077034
+      },
+      "logged": {
+        "cap_geom|col_cot_R_0": 0.5310840737604691,
+        "cap_geom|col_cot_L_0": 0.5281789908077035
+      }
+    }
+  ],
+  "dynamics_reexecuted": false,
+  "scope": "Independent full raw-trajectory acceptance and model audit; genuine dynamics replay is a separate required experiment."
+}

@@ -1,0 +1,524 @@
+{
+  "archive_sha256": "4ca0c77a4a992037b559cee7768baa52d2557b23a540a5bc9d5fbf8c5b67b4f4",
+  "new_environment": true,
+  "frozen_lock": true,
+  "mujoco": "3.13.0",
+  "python": "3.12.12",
+  "genuine_dynamics_reexecution": true,
+  "hardware_access": false,
+  "scene_registration": "nominal",
+  "calibration_verified": false,
+  "comparisons": {
+    "nominal-repeat": {
+      "time": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "qpos": {
+        "bit_exact": false,
+        "max_absolute_difference": 0.2887937648970861
+      },
+      "qvel": {
+        "bit_exact": false,
+        "max_absolute_difference": 22.168642968844146
+      },
+      "qacc": {
+        "bit_exact": false,
+        "max_absolute_difference": 10050.1263970961
+      },
+      "ctrl": {
+        "bit_exact": false,
+        "max_absolute_difference": 4.1335150408950035e-05
+      },
+      "cap_position": {
+        "bit_exact": false,
+        "max_absolute_difference": 0.01961322713484434
+      },
+      "grip_position": {
+        "bit_exact": false,
+        "max_absolute_difference": 9.875253768119874e-05
+      },
+      "left_force": {
+        "bit_exact": false,
+        "max_absolute_difference": 0.6236958899171795
+      },
+      "right_force": {
+        "bit_exact": false,
+        "max_absolute_difference": 0.6686916150211164
+      }
+    },
+    "review-nominal": {
+      "time": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "qpos": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "qvel": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "qacc": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "ctrl": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "cap_position": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "grip_position": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "left_force": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "right_force": {
+        "bit_exact": true,
+        "max_absolute_difference": 0.0
+      }
+    }
+  },
+  "cross_environment_bit_exact": false,
+  "same_environment_bit_exact": true,
+  "initial_IK_max_differences_rad": {
+    "pregrasp_q": 3.885780586188048e-16,
+    "approach_q": 2.3592239273284576e-16,
+    "lift_q": 1.4988010832439613e-15,
+    "alignment_q": 2.3592239273284576e-16
+  },
+  "original_cap_max_difference_m_by_phase": {
+    "settle": 0.0,
+    "approach": 0.0,
+    "close": 0.000494215253085336,
+    "hold": 0.0019804485938204885,
+    "release": 0.01961322713484434
+  },
+  "interpretation": "Same XML and thresholds; re-solving IK changed targets by up to1.5e-15rad. Contact trajectories differ after closing. Attribution to initial rounding is plausible, not independently isolated; cross-platform numeric robustness is not established.",
+  "tests": {
+    "integrity_controls": "4 passed",
+    "wrong_mesh_digest": "rejected",
+    "raw_contact_gzip_roundtrip": "identical",
+    "interrupt_control": {
+      "exit_code": 1,
+      "status": "FAILURE",
+      "reason_codes": [
+        "IK_FAILED",
+        "INSUFFICIENT_LIFT",
+        "NO_GRIP",
+        "MODEL_INVALID"
+      ],
+      "normal_completion": false,
+      "samples_preserved": 12,
+      "exception_type": "KeyboardInterrupt"
+    }
+  },
+  "trials": {
+    "review-nominal": {
+      "status": "SUCCESS",
+      "reason_codes": [],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029625e-06,
+        "approach_pitch_error_rad": 1.3405667647070631e-06,
+        "max_cap_bottom_clearance_m": 0.03832107391752834,
+        "max_left_normal_force_N": 0.7055695800117903,
+        "max_right_normal_force_N": 0.8083180821529012,
+        "max_solver_iterations": 9,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 13001,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 12.999999999998234,
+        "hold_start_s": 9.000000000000451,
+        "hold_end_s": 10.999999999999343,
+        "hold_duration_s": 1.9999999999988916,
+        "hold_bottom_clearance_min_m": 0.036580983669516454,
+        "hold_bilateral_fraction": 0.9965,
+        "hold_grip_frame_drift_max_m": 0.0013850525064539744,
+        "hold_support_contact_count": 0
+      },
+      "scene_registration": "nominal",
+      "observed_target_fidelity": "unverified",
+      "hardware_success": "not_tested",
+      "evaluation_contract": {
+        "schema_version": 1,
+        "source": "WORKDOC_SIM_GRASP.original.md fixed acceptance; frozen before judged trials",
+        "gravity_m_s2": [
+          0,
+          0,
+          -9.81
+        ],
+        "cap_bottom_clearance_m": 0.02,
+        "continuous_hold_s": 2.0,
+        "bilateral_contact_fraction_min": 0.8,
+        "grip_frame_center_drift_max_m": 0.005,
+        "approach_position_error_max_m": 0.002,
+        "pitch_target_rad": -0.8726646259971648,
+        "pitch_error_max_rad": 0.03490658503988659,
+        "pitch_status": "Fixed by saved reachability before judged trials",
+        "normal_force_epsilon_N": 1e-05,
+        "force_epsilon_basis": "Numerical contact activation floor, 0.068% of nominal cap weight. Counts force-bearing contacts, not zero-force margins.",
+        "forbidden_penetration_tolerance_m": 0.0001,
+        "joint_angle_boundary_tolerance_rad": 0.0001,
+        "joint_slide_boundary_tolerance_m": 1e-05,
+        "initial_support_height_tolerance_m": 0.0005,
+        "numeric_tolerance_basis": "Sub-mm contact softness at 1ms; tolerance is diagnostic numerical allowance, not relaxed task geometry. Any force-bearing forbidden pair is forbidden regardless of penetration.",
+        "hold_selection": "First continuous >=2.0-second clearance-and-no-support interval inside declared hold phase. Evaluate bilateral duration and drift over first 2.0 seconds of it, with physics-step samples.",
+        "drift_reference": "Cap center in grip frame at selected interval start; maximum Euclidean change across entire interval",
+        "cap_bottom": "Finite cylinder support extent: center_z-halfheight*abs(axis_z)-radius*sqrt(1-axis_z^2), including tilt",
+        "whole_trial_rules": [
+          "finite states/controls/forces",
+          "no solver warnings or iteration-budget exhaustion",
+          "strictly increasing time at declared timestep",
+          "no forbidden collision",
+          "no joint-boundary violation",
+          "no external applied forces",
+          "no cap attachment or runtime pose mutation"
+        ],
+        "status_values": [
+          "SUCCESS",
+          "FAILURE",
+          "BLOCKED"
+        ],
+        "reason_codes": [
+          "IK_FAILED",
+          "COLLISION",
+          "NO_GRIP",
+          "SLIP",
+          "INSUFFICIENT_LIFT",
+          "UNSTABLE",
+          "MODEL_INVALID",
+          "MISSING_CALIBRATION"
+        ]
+      },
+      "evaluation_contract_sha256": "9a36a4a8d77f66032dc3be4ebd1a44baaecfd6fa40b2770244696103bbb489bd"
+    },
+    "review-repeat": {
+      "status": "SUCCESS",
+      "reason_codes": [],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029625e-06,
+        "approach_pitch_error_rad": 1.3405667647070631e-06,
+        "max_cap_bottom_clearance_m": 0.03832107391752834,
+        "max_left_normal_force_N": 0.7055695800117903,
+        "max_right_normal_force_N": 0.8083180821529012,
+        "max_solver_iterations": 9,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 13001,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 12.999999999998234,
+        "hold_start_s": 9.000000000000451,
+        "hold_end_s": 10.999999999999343,
+        "hold_duration_s": 1.9999999999988916,
+        "hold_bottom_clearance_min_m": 0.036580983669516454,
+        "hold_bilateral_fraction": 0.9965,
+        "hold_grip_frame_drift_max_m": 0.0013850525064539744,
+        "hold_support_contact_count": 0
+      },
+      "scene_registration": "nominal",
+      "observed_target_fidelity": "unverified",
+      "hardware_success": "not_tested",
+      "evaluation_contract": {
+        "schema_version": 1,
+        "source": "WORKDOC_SIM_GRASP.original.md fixed acceptance; frozen before judged trials",
+        "gravity_m_s2": [
+          0,
+          0,
+          -9.81
+        ],
+        "cap_bottom_clearance_m": 0.02,
+        "continuous_hold_s": 2.0,
+        "bilateral_contact_fraction_min": 0.8,
+        "grip_frame_center_drift_max_m": 0.005,
+        "approach_position_error_max_m": 0.002,
+        "pitch_target_rad": -0.8726646259971648,
+        "pitch_error_max_rad": 0.03490658503988659,
+        "pitch_status": "Fixed by saved reachability before judged trials",
+        "normal_force_epsilon_N": 1e-05,
+        "force_epsilon_basis": "Numerical contact activation floor, 0.068% of nominal cap weight. Counts force-bearing contacts, not zero-force margins.",
+        "forbidden_penetration_tolerance_m": 0.0001,
+        "joint_angle_boundary_tolerance_rad": 0.0001,
+        "joint_slide_boundary_tolerance_m": 1e-05,
+        "initial_support_height_tolerance_m": 0.0005,
+        "numeric_tolerance_basis": "Sub-mm contact softness at 1ms; tolerance is diagnostic numerical allowance, not relaxed task geometry. Any force-bearing forbidden pair is forbidden regardless of penetration.",
+        "hold_selection": "First continuous >=2.0-second clearance-and-no-support interval inside declared hold phase. Evaluate bilateral duration and drift over first 2.0 seconds of it, with physics-step samples.",
+        "drift_reference": "Cap center in grip frame at selected interval start; maximum Euclidean change across entire interval",
+        "cap_bottom": "Finite cylinder support extent: center_z-halfheight*abs(axis_z)-radius*sqrt(1-axis_z^2), including tilt",
+        "whole_trial_rules": [
+          "finite states/controls/forces",
+          "no solver warnings or iteration-budget exhaustion",
+          "strictly increasing time at declared timestep",
+          "no forbidden collision",
+          "no joint-boundary violation",
+          "no external applied forces",
+          "no cap attachment or runtime pose mutation"
+        ],
+        "status_values": [
+          "SUCCESS",
+          "FAILURE",
+          "BLOCKED"
+        ],
+        "reason_codes": [
+          "IK_FAILED",
+          "COLLISION",
+          "NO_GRIP",
+          "SLIP",
+          "INSUFFICIENT_LIFT",
+          "UNSTABLE",
+          "MODEL_INVALID",
+          "MISSING_CALIBRATION"
+        ]
+      },
+      "evaluation_contract_sha256": "9a36a4a8d77f66032dc3be4ebd1a44baaecfd6fa40b2770244696103bbb489bd"
+    },
+    "review-no-close": {
+      "status": "FAILURE",
+      "reason_codes": [
+        "INSUFFICIENT_LIFT",
+        "NO_GRIP"
+      ],
+      "metrics": {
+        "approach_position_error_m": 7.5478923029625e-06,
+        "approach_pitch_error_rad": 1.3405667647070631e-06,
+        "max_cap_bottom_clearance_m": 0.0,
+        "max_left_normal_force_N": 0.0,
+        "max_right_normal_force_N": 0.0,
+        "max_solver_iterations": 2,
+        "forbidden_contact_examples": [],
+        "joint_boundary_violations": [],
+        "samples": 13001,
+        "timestep_s": 0.001,
+        "simulated_duration_s": 12.999999999998234
+      },
+      "scene_registration": "nominal",
+      "observed_target_fidelity": "unverified",
+      "hardware_success": "not_tested",
+      "evaluation_contract": {
+        "schema_version": 1,
+        "source": "WORKDOC_SIM_GRASP.original.md fixed acceptance; frozen before judged trials",
+        "gravity_m_s2": [
+          0,
+          0,
+          -9.81
+        ],
+        "cap_bottom_clearance_m": 0.02,
+        "continuous_hold_s": 2.0,
+        "bilateral_contact_fraction_min": 0.8,
+        "grip_frame_center_drift_max_m": 0.005,
+        "approach_position_error_max_m": 0.002,
+        "pitch_target_rad": -0.8726646259971648,
+        "pitch_error_max_rad": 0.03490658503988659,
+        "pitch_status": "Fixed by saved reachability before judged trials",
+        "normal_force_epsilon_N": 1e-05,
+        "force_epsilon_basis": "Numerical contact activation floor, 0.068% of nominal cap weight. Counts force-bearing contacts, not zero-force margins.",
+        "forbidden_penetration_tolerance_m": 0.0001,
+        "joint_angle_boundary_tolerance_rad": 0.0001,
+        "joint_slide_boundary_tolerance_m": 1e-05,
+        "initial_support_height_tolerance_m": 0.0005,
+        "numeric_tolerance_basis": "Sub-mm contact softness at 1ms; tolerance is diagnostic numerical allowance, not relaxed task geometry. Any force-bearing forbidden pair is forbidden regardless of penetration.",
+        "hold_selection": "First continuous >=2.0-second clearance-and-no-support interval inside declared hold phase. Evaluate bilateral duration and drift over first 2.0 seconds of it, with physics-step samples.",
+        "drift_reference": "Cap center in grip frame at selected interval start; maximum Euclidean change across entire interval",
+        "cap_bottom": "Finite cylinder support extent: center_z-halfheight*abs(axis_z)-radius*sqrt(1-axis_z^2), including tilt",
+        "whole_trial_rules": [
+          "finite states/controls/forces",
+          "no solver warnings or iteration-budget exhaustion",
+          "strictly increasing time at declared timestep",
+          "no forbidden collision",
+          "no joint-boundary violation",
+          "no external applied forces",
+          "no cap attachment or runtime pose mutation"
+        ],
+        "status_values": [
+          "SUCCESS",
+          "FAILURE",
+          "BLOCKED"
+        ],
+        "reason_codes": [
+          "IK_FAILED",
+          "COLLISION",
+          "NO_GRIP",
+          "SLIP",
+          "INSUFFICIENT_LIFT",
+          "UNSTABLE",
+          "MODEL_INVALID",
+          "MISSING_CALIBRATION"
+        ]
+      },
+      "evaluation_contract_sha256": "9a36a4a8d77f66032dc3be4ebd1a44baaecfd6fa40b2770244696103bbb489bd"
+    }
+  },
+  "raw_audit": {
+    "trial": "results/review-repeat",
+    "scene_sha256": "b52eaa8081556c50f5490f1b468516afbc7e2b6bb8b4be6dbdbb5626cac124b6",
+    "states_sha256": "17b198f56f4d7e40b5a5f74d5370aedfc0a6b43b21fcb936d010291e268ff720",
+    "contacts_sha256": "b7c4169d05b348b0c48a5c8a58ef735f44f6c02a5c177e664e36a7f96821c5c1",
+    "contacts_file": "contacts.jsonl.gz",
+    "mujoco_version": "3.13.0",
+    "physics_parameters": {
+      "timestep": 0.001,
+      "impratio": 10.0,
+      "noslip_iterations": 0,
+      "cap_mass_kg": 0.0015,
+      "gravity": [
+        0.0,
+        0.0,
+        -9.81
+      ]
+    },
+    "errors": [],
+    "pass": true,
+    "metrics": {
+      "approach_position_error_m": 7.5478923029625e-06,
+      "approach_pitch_error_rad": 1.3405667647070631e-06,
+      "raw_samples": 13001,
+      "fk_max_component_error": 0.0,
+      "maximum_bottom_clearance_m": 0.03832107391752834,
+      "hold_start_s": 9.000000000000451,
+      "hold_end_s": 10.999999999999343,
+      "hold_step_duration_s": 2.0,
+      "hold_observed_duration_s": 1.9999999999988916,
+      "hold_minimum_bottom_clearance_m": 0.036580983669516454,
+      "hold_bilateral_fraction": 0.9965,
+      "hold_maximum_relative_drift_m": 0.0013850525064539744,
+      "hold_support_steps": 0,
+      "hold_left_normal_range_N": [
+        0.013946123502521538,
+        0.6138986276279025
+      ],
+      "hold_right_normal_range_N": [
+        0.0,
+        0.6243902669597843
+      ]
+    },
+    "forbidden_examples": [],
+    "sparse_force_checks": [
+      {
+        "sample": 9000,
+        "time": 9.000000000000451,
+        "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.5833410890230416,
+          "cap_geom|col_cot_L_0": 0.582837758608053
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.5833410890230415,
+          "cap_geom|col_cot_L_0": 0.582837758608053
+        }
+      },
+      {
+        "sample": 9312,
+        "time": 9.312000000000278,
+        "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.5792217219066236,
+          "cap_geom|col_cot_L_0": 0.576888658827328
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.5792217219066236,
+          "cap_geom|col_cot_L_0": 0.5768886588273279
+        }
+      },
+      {
+        "sample": 9625,
+        "time": 9.625000000000105,
+        "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.5735400906039334,
+          "cap_geom|col_cot_L_0": 0.5719355864857251
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.5735400906039335,
+          "cap_geom|col_cot_L_0": 0.5719355864857251
+        }
+      },
+      {
+        "sample": 9937,
+        "time": 9.936999999999932,
+        "max_cap_pair_normal_difference_N": 2.220446049250313e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.5687289420938726,
+          "cap_geom|col_cot_L_0": 0.5627639987027314
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.5687289420938724,
+          "cap_geom|col_cot_L_0": 0.5627639987027315
+        }
+      },
+      {
+        "sample": 10250,
+        "time": 10.249999999999758,
+        "max_cap_pair_normal_difference_N": 2.220446049250313e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.5647843659434746,
+          "cap_geom|col_cot_L_0": 0.5581928288533945
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.5647843659434744,
+          "cap_geom|col_cot_L_0": 0.5581928288533946
+        }
+      },
+      {
+        "sample": 10562,
+        "time": 10.561999999999585,
+        "max_cap_pair_normal_difference_N": 2.220446049250313e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.5575475038594356,
+          "cap_geom|col_cot_L_0": 0.5469010864440086
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.5575475038594354,
+          "cap_geom|col_cot_L_0": 0.5469010864440085
+        }
+      },
+      {
+        "sample": 10875,
+        "time": 10.874999999999412,
+        "max_cap_pair_normal_difference_N": 2.220446049250313e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.5794765357090335,
+          "cap_geom|col_cot_L_0": 0.5642834963335059
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.5794765357090332,
+          "cap_geom|col_cot_L_0": 0.5642834963335059
+        }
+      },
+      {
+        "sample": 11187,
+        "time": 11.186999999999239,
+        "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.5398164231754234,
+          "cap_geom|col_cot_L_0": 0.5184692811767414
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.5398164231754234,
+          "cap_geom|col_cot_L_0": 0.5184692811767415
+        }
+      },
+      {
+        "sample": 11500,
+        "time": 11.499999999999066,
+        "max_cap_pair_normal_difference_N": 1.1102230246251565e-16,
+        "recomputed": {
+          "cap_geom|col_cot_R_0": 0.49730724491196493,
+          "cap_geom|col_cot_L_0": 0.4805825162879039
+        },
+        "logged": {
+          "cap_geom|col_cot_R_0": 0.497307244911965,
+          "cap_geom|col_cot_L_0": 0.48058251628790377
+        }
+      }
+    ],
+    "dynamics_reexecuted": false,
+    "scope": "Independent full raw-trajectory acceptance and model audit; genuine dynamics replay is a separate required experiment."
+  }
+}

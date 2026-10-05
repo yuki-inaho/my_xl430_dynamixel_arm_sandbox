@@ -1,0 +1,22 @@
+{
+  "source_sha256": "14e48b383cb38c605ecfe5af93ec4aff8a618bce2cbd76f13b7f2846b6b23b02",
+  "source_scale_to_m": 1.0,
+  "method": "conservative case bounding box; minor horn/holes occupied",
+  "parts": 1,
+  "source_bounds_m": [
+    [
+      -0.0211,
+      -0.03525,
+      0.02205
+    ],
+    [
+      0.0198,
+      0.01125,
+      0.05055
+    ]
+  ],
+  "source_watertight": false,
+  "proxy_vertex_to_source_vertex_max_m": 0.004451123210333532,
+  "proxy_vertex_to_source_vertex_p95_m": 0.004451123210333531,
+  "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+}

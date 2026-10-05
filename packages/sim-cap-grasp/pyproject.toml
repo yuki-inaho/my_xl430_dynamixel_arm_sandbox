@@ -1,0 +1,23 @@
+[project]
+name = "sim-cap-grasp"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "mujoco==3.13.0",
+  "numpy==2.5.3",
+  "scipy==1.18.1",
+  "Pillow==12.3.0",
+  "trimesh==5.1.0",
+  "coacd==1.0.7",
+]
+
+[dependency-groups]
+dev = ["pytest==8.4.2", "ruff==0.16.8"]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["source_inputs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

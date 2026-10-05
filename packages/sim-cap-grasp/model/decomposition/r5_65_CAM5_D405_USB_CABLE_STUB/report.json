@@ -1,0 +1,22 @@
+{
+  "source_sha256": "c110ce275e407ff7844981aaea867e5395d34d5aa68d7f69b74a685fb7df892a",
+  "source_scale_to_m": 1.0,
+  "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+  "parts": 1,
+  "source_bounds_m": [
+    [
+      -0.062,
+      0.0830128827178,
+      0.10481440268
+    ],
+    [
+      -0.047,
+      0.0875120295313,
+      0.109313885152
+    ]
+  ],
+  "source_watertight": true,
+  "proxy_vertex_to_source_vertex_max_m": 0.0,
+  "proxy_vertex_to_source_vertex_p95_m": 0.0,
+  "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+}

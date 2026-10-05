@@ -1,0 +1,64 @@
+[
+  {
+    "trial": "review-repeat",
+    "label": "nominal",
+    "frames_per_view": 131,
+    "videos": [
+      "media/nominal/external.mp4",
+      "media/nominal/wrist.mp4"
+    ],
+    "keyframes": {
+      "approach": [
+        "media/nominal/external-0029.png",
+        "media/nominal/wrist-0029.png"
+      ],
+      "grasp": [
+        "media/nominal/external-0064.png",
+        "media/nominal/wrist-0064.png"
+      ],
+      "lift": [
+        "media/nominal/external-0080.png",
+        "media/nominal/wrist-0080.png"
+      ],
+      "hold": [
+        "media/nominal/external-0100.png",
+        "media/nominal/wrist-0100.png"
+      ],
+      "release": [
+        "media/nominal/external-0127.png",
+        "media/nominal/wrist-0127.png"
+      ]
+    }
+  },
+  {
+    "trial": "review-no-close",
+    "label": "negative",
+    "frames_per_view": 131,
+    "videos": [
+      "media/negative/external.mp4",
+      "media/negative/wrist.mp4"
+    ],
+    "keyframes": {
+      "approach": [
+        "media/negative/external-0029.png",
+        "media/negative/wrist-0029.png"
+      ],
+      "grasp": [
+        "media/negative/external-0064.png",
+        "media/negative/wrist-0064.png"
+      ],
+      "lift": [
+        "media/negative/external-0080.png",
+        "media/negative/wrist-0080.png"
+      ],
+      "hold": [
+        "media/negative/external-0100.png",
+        "media/negative/wrist-0100.png"
+      ],
+      "release": [
+        "media/negative/external-0127.png",
+        "media/negative/wrist-0127.png"
+      ]
+    }
+  }
+]

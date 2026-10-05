@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "scene_registration": "nominal",
+  "simulated": true,
+  "calibration_verified": false,
+  "hardware_success": "not_tested",
+  "observed_target_fidelity": "unverified_without_camera_to_base_extrinsics",
+  "observed": {
+    "source_model": "R3 four-joint arm; PG3 old C7 candidate; six asymmetric scanfit outer envelopes; D405 long R5 candidate",
+    "motor_roles": [
+      "ID1 yaw",
+      "ID2 shoulder",
+      "ID3 elbow",
+      "ID4 wrist pitch",
+      "ID5 jaw"
+    ],
+    "captures": {
+      "d405_counts": [
+        1865,
+        3486,
+        2210,
+        1134,
+        2095
+      ],
+      "d435_counts": [
+        1865,
+        3486,
+        2213,
+        1134,
+        2095
+      ],
+      "time_offset_s": 12.899173,
+      "synchronized": false
+    },
+    "visual": "White cap stands on motor box on same tabletop as arm base; latest arm is hand-supported/cropped; tips closed; images inspected directly.",
+    "servo_to_cad": "Uncalibrated zero, sign and mounting phase. Counts are not inserted as CAD qpos.",
+    "c7": {
+      "r_m": 0.014,
+      "L_m": 0.024,
+      "mesh_reference_theta_deg": 90,
+      "theta_design_range_deg": [
+        25,
+        135
+      ],
+      "slider_formula": "x = r*cos(theta) + sqrt(L^2-r^2*sin(theta)^2); R=x-x(90deg), L=-R"
+    },
+    "camera_variant": "65deg selected as nominal; 65 versus75 actual revision remains unknown.",
+    "source_viewer_limits": "gravity0/contactdisabled/noactuator/noequalities; passive sliders and two mocap links; not a dynamics model",
+    "scanfit": "cot_L/R,foam_L/R,band_L/R: six asymmetric outer occupancy shapes. Native STL/STEP millimetres CAD Z-up. GLB metres Y-up=(x,z,-y)/1000. No invented inner cores or separate unconfirmed pads."
+  },
+  "nominal": {
+    "cap": {
+      "radius_m": 0.014,
+      "height_m": 0.015,
+      "mass_kg": 0.0015,
+      "source": "Original workdoc candidate; all unmeasured",
+      "initial_center_m": [
+        0,
+        0.18,
+        0.0575
+      ]
+    },
+    "gravity_m_s2": [
+      0,
+      0,
+      -9.81
+    ],
+    "scene_geometry_status": "Fixed before model/IK: independent D435 raw-depth table/box analysis; no camera-to-base calibration.",
+    "softtip": {
+      "sliding_friction": 0.7,
+      "torsional_friction_m": 0.001,
+      "rolling_friction_m": 0.0001,
+      "contact_time_constant_s": 0.01,
+      "contact_damping_ratio": 1,
+      "mass_each_side_kg": 0.012,
+      "status": "Unmeasured nominal compliant contact, not a deformable or force-calibrated material model"
+    },
+    "arm_actuator_torque_bound_Nm": 1.0,
+    "jaw_actuator_torque_bound_Nm": 0.08,
+    "actuator_bound_basis": "ROBOTIS vendor stall1.5Nm@12V is momentary; use lower bounded nominal model, no claim of continuous rating or PWM conversion",
+    "vendor_motor_mass_kg": 0.0572,
+    "vendor_source": "https://emanual.robotis.com/docs/en/dxl/x/xl430-w250/",
+    "scan_aperture_reference_theta_deg": 90,
+    "scan_attachment": "Native frame datum aligns with C7 construction axes. Photo L (negativeX) attaches to C7 jaw_L, positiveX to jaw_R. Scan aperture angle is unknown; theta90 attachment is explicit nominal registration, unchanged source meshes.",
+    "joint_limits_deg": [
+      [
+        -180,
+        180
+      ],
+      [
+        -40,
+        40
+      ],
+      [
+        -180,
+        180
+      ],
+      [
+        -138,
+        128
+      ]
+    ],
+    "joint_limits_status": "Inherited viewer construction intervals, not verified hardware safety limits",
+    "box": {
+      "center_m": [
+        0,
+        0.18,
+        0.025
+      ],
+      "halfsize_m": [
+        0.032,
+        0.032,
+        0.025
+      ],
+      "top_m": 0.05,
+      "basis": "Independent D435 plane estimate49.3mm; base-to-cap observed table separation0.17–0.19m. 64mm footprint nominal from D405 image/depth. Base X/Y yaw not calibrated; nominal target along forward+Y."
+    },
+    "contact_solver": {
+      "solver": "Newton",
+      "cone": "elliptic",
+      "impratio": 10,
+      "noslip_iterations": 0,
+      "basis": "Official MuJoCo documents soft-contact slow slip even within friction cone; impratio increases tangential/normal impedance ratio without increasing physical coefficient. Diagnose at same geometry, mu0.7 and force bounds. Final half-timestep sensitivity required.",
+      "reference": "https://mujoco.readthedocs.io/en/stable/modeling.html#preventing-slip"
+    }
+  },
+  "design": {
+    "jaw": "One driven crank hinge plus two passive slider/rod loops; no runtime kinematic qpos/mocap placement. Exact C7 nonlinear closure transmits force through equality connect constraints.",
+    "geometry": "Unmodified visual mesh copies; collision decomposition/proxies stored separately with error report. Only one camera-holder variant active.",
+    "units": "SI metres, kilograms, seconds, radians; original CAD and scan units explicitly converted",
+    "camera": "Preserve each sensor's original depth/color K and nonzero RGB distortion; synthetic wrist camera is D405-equivalent nominal perspective, not calibrated real reprojection. No raw camera pixel/point is treated as base coordinates.",
+    "environment": "Dedicated runs/sim-cap-grasp Python3.12 uv environment; original source dependency environments unchanged",
+    "safety": "Offline simulation only, no serial/camera/live servers/hardware writes. Cap freejoint under gravity, no weld/mocap/external force/direct qpos writes after reset. Arm driven only through finite actuators."
+  }
+}

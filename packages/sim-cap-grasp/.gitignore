@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+evidence/*.log
+results/replayed-*/
+media/*/external-*.png
+media/*/wrist-*.png
+!media/*/*-0029.png
+!media/*/*-0064.png
+!media/*/*-0080.png
+!media/*/*-0100.png
+!media/*/*-0127.png

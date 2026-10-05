@@ -1,0 +1,179 @@
+<mujoco model="R3_C7_D405_candidate_state_viewer">
+  <compiler angle="radian" meshdir="meshes" autolimits="true" />
+  <option gravity="0 0 0" timestep="0.01" />
+  <visual>
+    <global offwidth="1100" offheight="800" />
+    <quality shadowsize="2048" offsamples="4" />
+    <headlight ambient="0.35 0.35 0.35" diffuse="0.6 0.6 0.6" specular="0.12 0.12 0.12" />
+  </visual>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.9 0.94 0.96" rgb2="0.98 0.99 1" width="256" height="1536" />
+    <mesh name="M01" file="M01.obj" inertia="shell" />
+    <mesh name="M02" file="M02.obj" inertia="shell" />
+    <mesh name="M03" file="M03.obj" inertia="shell" />
+    <mesh name="M04" file="M04.obj" inertia="shell" />
+    <mesh name="M05" file="M05.obj" inertia="shell" />
+    <mesh name="P01_base" file="P01_base.obj" inertia="shell" />
+    <mesh name="P02_yaw_carrier" file="P02_yaw_carrier.obj" inertia="shell" />
+    <mesh name="P03_shoulder_XL430" file="P03_shoulder_XL430.obj" inertia="shell" />
+    <mesh name="P04_extension_XL430" file="P04_extension_XL430.obj" inertia="shell" />
+    <mesh name="P05_wrist_XL430" file="P05_wrist_XL430.obj" inertia="shell" />
+    <mesh name="c7_fixed_printed" file="c7_fixed_printed.obj" inertia="shell" />
+    <mesh name="c7_fixed_fastener" file="c7_fixed_fastener.obj" inertia="shell" />
+    <mesh name="c7_drive_printed" file="c7_drive_printed.obj" inertia="shell" />
+    <mesh name="c7_drive_fastener" file="c7_drive_fastener.obj" inertia="shell" />
+    <mesh name="c7_R_printed" file="c7_R_printed.obj" inertia="shell" />
+    <mesh name="c7_R_pad" file="c7_R_pad.obj" inertia="shell" />
+    <mesh name="c7_R_fastener" file="c7_R_fastener.obj" inertia="shell" />
+    <mesh name="c7_link_R_printed" file="c7_link_R_printed.obj" inertia="shell" />
+    <mesh name="c7_L_printed" file="c7_L_printed.obj" inertia="shell" />
+    <mesh name="c7_L_pad" file="c7_L_pad.obj" inertia="shell" />
+    <mesh name="c7_L_fastener" file="c7_L_fastener.obj" inertia="shell" />
+    <mesh name="c7_link_L_printed" file="c7_link_L_printed.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE" file="r5_65_CAM5_BASE.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_D405_CARRIER" file="r5_65_CAM5_D405_CARRIER.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE_WASHER_0" file="r5_65_CAM5_BASE_WASHER_0.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE_TAP_0" file="r5_65_CAM5_BASE_TAP_0.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE_WASHER_1" file="r5_65_CAM5_BASE_WASHER_1.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE_TAP_1" file="r5_65_CAM5_BASE_TAP_1.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE_WASHER_2" file="r5_65_CAM5_BASE_WASHER_2.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE_TAP_2" file="r5_65_CAM5_BASE_TAP_2.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE_WASHER_3" file="r5_65_CAM5_BASE_WASHER_3.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_BASE_TAP_3" file="r5_65_CAM5_BASE_TAP_3.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_TIE_WASHER_0" file="r5_65_CAM5_TIE_WASHER_0.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_TIE_BOLT_0" file="r5_65_CAM5_TIE_BOLT_0.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_TIE_NUT_0" file="r5_65_CAM5_TIE_NUT_0.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_TIE_WASHER_1" file="r5_65_CAM5_TIE_WASHER_1.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_TIE_BOLT_1" file="r5_65_CAM5_TIE_BOLT_1.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_TIE_NUT_1" file="r5_65_CAM5_TIE_NUT_1.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_D405_SCREW_0" file="r5_65_CAM5_D405_SCREW_0.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_D405_SCREW_1" file="r5_65_CAM5_D405_SCREW_1.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_D405_BODY" file="r5_65_CAM5_D405_BODY.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_D405_USB_PLUG" file="r5_65_CAM5_D405_USB_PLUG.obj" inertia="shell" />
+    <mesh name="r5_65_CAM5_D405_USB_CABLE_STUB" file="r5_65_CAM5_D405_USB_CABLE_STUB.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE" file="compact_75_CAM5_BASE.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_D405_CARRIER" file="compact_75_CAM5_D405_CARRIER.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE_WASHER_0" file="compact_75_CAM5_BASE_WASHER_0.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE_TAP_0" file="compact_75_CAM5_BASE_TAP_0.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE_WASHER_1" file="compact_75_CAM5_BASE_WASHER_1.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE_TAP_1" file="compact_75_CAM5_BASE_TAP_1.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE_WASHER_2" file="compact_75_CAM5_BASE_WASHER_2.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE_TAP_2" file="compact_75_CAM5_BASE_TAP_2.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE_WASHER_3" file="compact_75_CAM5_BASE_WASHER_3.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_BASE_TAP_3" file="compact_75_CAM5_BASE_TAP_3.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_TIE_WASHER_0" file="compact_75_CAM5_TIE_WASHER_0.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_TIE_BOLT_0" file="compact_75_CAM5_TIE_BOLT_0.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_TIE_NUT_0" file="compact_75_CAM5_TIE_NUT_0.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_TIE_WASHER_1" file="compact_75_CAM5_TIE_WASHER_1.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_TIE_BOLT_1" file="compact_75_CAM5_TIE_BOLT_1.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_TIE_NUT_1" file="compact_75_CAM5_TIE_NUT_1.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_D405_SCREW_0" file="compact_75_CAM5_D405_SCREW_0.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_D405_SCREW_1" file="compact_75_CAM5_D405_SCREW_1.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_D405_BODY" file="compact_75_CAM5_D405_BODY.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_D405_USB_PLUG" file="compact_75_CAM5_D405_USB_PLUG.obj" inertia="shell" />
+    <mesh name="compact_75_CAM5_D405_USB_CABLE_STUB" file="compact_75_CAM5_D405_USB_CABLE_STUB.obj" inertia="shell" />
+  </asset>
+  <worldbody>
+    <light pos="0.3 0.1 0.7" dir="-0.2 0 -1" diffuse="0.35 0.35 0.35" />
+    <light pos="-0.4 0.3 0.4" dir="0.5 -0.2 -1" diffuse="0.25 0.25 0.25" />
+    <geom name="table_display" type="plane" size="1 1 0.02" rgba="0.78 0.82 0.84 1" contype="0" conaffinity="0" />
+    <body name="arm_link_1" pos="0 0 0.02">
+      <inertial pos="0 0 0" mass="0.1" diaginertia="0.001 0.001 0.001" />
+      <joint name="cad_j1" type="hinge" axis="0 0 1" limited="false" />
+      <body name="arm_link_2" pos="-0.0002 0 0.0363">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="0.001 0.001 0.001" />
+        <joint name="cad_j2" type="hinge" axis="-1 0 0" limited="false" />
+        <body name="arm_link_3" pos="0 0.0148 0.1083">
+          <inertial pos="0 0 0" mass="0.1" diaginertia="0.001 0.001 0.001" />
+          <joint name="cad_j3" type="hinge" axis="1 0 0" limited="false" />
+          <body name="arm_link_4" pos="0 0.0901 0">
+            <inertial pos="0 0 0" mass="0.1" diaginertia="0.001 0.001 0.001" />
+            <joint name="cad_j4" type="hinge" axis="1 0 0" limited="false" />
+            <geom name="M05" type="mesh" mesh="M05" rgba="0.68 0.71 0.73 1" group="0" contype="0" conaffinity="0" density="0" />
+            <geom name="P05_wrist_XL430" type="mesh" mesh="P05_wrist_XL430" rgba="0.92 0.93 0.9 1" group="0" contype="0" conaffinity="0" density="0" />
+            <body name="c7_fixed" pos="0 0.06 0" quat="0.707106781187 -0.707106781187 0 0">
+              <geom name="c7_fixed_printed" type="mesh" mesh="c7_fixed_printed" rgba="0.9 0.92 0.87 1" group="1" contype="0" conaffinity="0" density="0" />
+              <geom name="c7_fixed_fastener" type="mesh" mesh="c7_fixed_fastener" rgba="0.43 0.48 0.52 1" group="1" contype="0" conaffinity="0" density="0" />
+              <body name="c7_drive">
+                <inertial pos="0 0 0" mass="0.01" diaginertia="0.00001 0.00001 0.00001" />
+                <joint name="gripper_delta" type="hinge" axis="0 0 1" limited="false" />
+                <geom name="c7_drive_printed" type="mesh" mesh="c7_drive_printed" rgba="0.9 0.92 0.87 1" group="1" contype="0" conaffinity="0" density="0" />
+                <geom name="c7_drive_fastener" type="mesh" mesh="c7_drive_fastener" rgba="0.43 0.48 0.52 1" group="1" contype="0" conaffinity="0" density="0" />
+              </body>
+              <body name="c7_jaw_R">
+                <inertial pos="0 0 0" mass="0.01" diaginertia="0.00001 0.00001 0.00001" />
+                <joint name="slider_R" type="slide" axis="1 0 0" limited="false" />
+                <geom name="c7_R_printed" type="mesh" mesh="c7_R_printed" rgba="0.9 0.92 0.87 1" group="1" contype="0" conaffinity="0" density="0" />
+                <geom name="c7_R_pad" type="mesh" mesh="c7_R_pad" rgba="0.1 0.12 0.13 1" group="1" contype="0" conaffinity="0" density="0" />
+                <geom name="c7_R_fastener" type="mesh" mesh="c7_R_fastener" rgba="0.43 0.48 0.52 1" group="1" contype="0" conaffinity="0" density="0" />
+              </body>
+              <body name="c7_jaw_L">
+                <inertial pos="0 0 0" mass="0.01" diaginertia="0.00001 0.00001 0.00001" />
+                <joint name="slider_L" type="slide" axis="1 0 0" limited="false" />
+                <geom name="c7_L_printed" type="mesh" mesh="c7_L_printed" rgba="0.9 0.92 0.87 1" group="1" contype="0" conaffinity="0" density="0" />
+                <geom name="c7_L_pad" type="mesh" mesh="c7_L_pad" rgba="0.1 0.12 0.13 1" group="1" contype="0" conaffinity="0" density="0" />
+                <geom name="c7_L_fastener" type="mesh" mesh="c7_L_fastener" rgba="0.43 0.48 0.52 1" group="1" contype="0" conaffinity="0" density="0" />
+              </body>
+            </body>
+            <geom name="r5_65_CAM5_BASE" type="mesh" mesh="r5_65_CAM5_BASE" rgba="0.84 0.89 0.9 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_D405_CARRIER" type="mesh" mesh="r5_65_CAM5_D405_CARRIER" rgba="0.84 0.89 0.9 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_BASE_WASHER_0" type="mesh" mesh="r5_65_CAM5_BASE_WASHER_0" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_BASE_TAP_0" type="mesh" mesh="r5_65_CAM5_BASE_TAP_0" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_BASE_WASHER_1" type="mesh" mesh="r5_65_CAM5_BASE_WASHER_1" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_BASE_TAP_1" type="mesh" mesh="r5_65_CAM5_BASE_TAP_1" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_BASE_WASHER_2" type="mesh" mesh="r5_65_CAM5_BASE_WASHER_2" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_BASE_TAP_2" type="mesh" mesh="r5_65_CAM5_BASE_TAP_2" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_BASE_WASHER_3" type="mesh" mesh="r5_65_CAM5_BASE_WASHER_3" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_BASE_TAP_3" type="mesh" mesh="r5_65_CAM5_BASE_TAP_3" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_TIE_WASHER_0" type="mesh" mesh="r5_65_CAM5_TIE_WASHER_0" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_TIE_BOLT_0" type="mesh" mesh="r5_65_CAM5_TIE_BOLT_0" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_TIE_NUT_0" type="mesh" mesh="r5_65_CAM5_TIE_NUT_0" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_TIE_WASHER_1" type="mesh" mesh="r5_65_CAM5_TIE_WASHER_1" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_TIE_BOLT_1" type="mesh" mesh="r5_65_CAM5_TIE_BOLT_1" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_TIE_NUT_1" type="mesh" mesh="r5_65_CAM5_TIE_NUT_1" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_D405_SCREW_0" type="mesh" mesh="r5_65_CAM5_D405_SCREW_0" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_D405_SCREW_1" type="mesh" mesh="r5_65_CAM5_D405_SCREW_1" rgba="0.43 0.48 0.52 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_D405_BODY" type="mesh" mesh="r5_65_CAM5_D405_BODY" rgba="0.23 0.28 0.32 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_D405_USB_PLUG" type="mesh" mesh="r5_65_CAM5_D405_USB_PLUG" rgba="0.84 0.89 0.9 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="r5_65_CAM5_D405_USB_CABLE_STUB" type="mesh" mesh="r5_65_CAM5_D405_USB_CABLE_STUB" rgba="0.84 0.89 0.9 1" group="2" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE" type="mesh" mesh="compact_75_CAM5_BASE" rgba="0.84 0.89 0.9 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_D405_CARRIER" type="mesh" mesh="compact_75_CAM5_D405_CARRIER" rgba="0.84 0.89 0.9 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE_WASHER_0" type="mesh" mesh="compact_75_CAM5_BASE_WASHER_0" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE_TAP_0" type="mesh" mesh="compact_75_CAM5_BASE_TAP_0" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE_WASHER_1" type="mesh" mesh="compact_75_CAM5_BASE_WASHER_1" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE_TAP_1" type="mesh" mesh="compact_75_CAM5_BASE_TAP_1" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE_WASHER_2" type="mesh" mesh="compact_75_CAM5_BASE_WASHER_2" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE_TAP_2" type="mesh" mesh="compact_75_CAM5_BASE_TAP_2" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE_WASHER_3" type="mesh" mesh="compact_75_CAM5_BASE_WASHER_3" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_BASE_TAP_3" type="mesh" mesh="compact_75_CAM5_BASE_TAP_3" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_TIE_WASHER_0" type="mesh" mesh="compact_75_CAM5_TIE_WASHER_0" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_TIE_BOLT_0" type="mesh" mesh="compact_75_CAM5_TIE_BOLT_0" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_TIE_NUT_0" type="mesh" mesh="compact_75_CAM5_TIE_NUT_0" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_TIE_WASHER_1" type="mesh" mesh="compact_75_CAM5_TIE_WASHER_1" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_TIE_BOLT_1" type="mesh" mesh="compact_75_CAM5_TIE_BOLT_1" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_TIE_NUT_1" type="mesh" mesh="compact_75_CAM5_TIE_NUT_1" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_D405_SCREW_0" type="mesh" mesh="compact_75_CAM5_D405_SCREW_0" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_D405_SCREW_1" type="mesh" mesh="compact_75_CAM5_D405_SCREW_1" rgba="0.43 0.48 0.52 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_D405_BODY" type="mesh" mesh="compact_75_CAM5_D405_BODY" rgba="0.23 0.28 0.32 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_D405_USB_PLUG" type="mesh" mesh="compact_75_CAM5_D405_USB_PLUG" rgba="0.84 0.89 0.9 1" group="3" contype="0" conaffinity="0" density="0" />
+            <geom name="compact_75_CAM5_D405_USB_CABLE_STUB" type="mesh" mesh="compact_75_CAM5_D405_USB_CABLE_STUB" rgba="0.84 0.89 0.9 1" group="3" contype="0" conaffinity="0" density="0" />
+          </body>
+          <geom name="M04" type="mesh" mesh="M04" rgba="0.68 0.71 0.73 1" group="0" contype="0" conaffinity="0" density="0" />
+          <geom name="P04_extension_XL430" type="mesh" mesh="P04_extension_XL430" rgba="0.92 0.93 0.9 1" group="0" contype="0" conaffinity="0" density="0" />
+        </body>
+        <geom name="M03" type="mesh" mesh="M03" rgba="0.68 0.71 0.73 1" group="0" contype="0" conaffinity="0" density="0" />
+        <geom name="P03_shoulder_XL430" type="mesh" mesh="P03_shoulder_XL430" rgba="0.92 0.93 0.9 1" group="0" contype="0" conaffinity="0" density="0" />
+      </body>
+      <geom name="M02" type="mesh" mesh="M02" rgba="0.68 0.71 0.73 1" group="0" contype="0" conaffinity="0" density="0" />
+      <geom name="P02_yaw_carrier" type="mesh" mesh="P02_yaw_carrier" rgba="0.92 0.93 0.9 1" group="0" contype="0" conaffinity="0" density="0" />
+    </body>
+    <geom name="M01" type="mesh" mesh="M01" rgba="0.68 0.71 0.73 1" group="0" contype="0" conaffinity="0" density="0" />
+    <geom name="P01_base" type="mesh" mesh="P01_base" rgba="0.92 0.93 0.9 1" group="0" contype="0" conaffinity="0" density="0" />
+    <body name="c7_link_R" mocap="true">
+      <geom name="c7_link_R_printed" type="mesh" mesh="c7_link_R_printed" rgba="0.9 0.92 0.87 1" group="1" contype="0" conaffinity="0" density="0" />
+    </body>
+    <body name="c7_link_L" mocap="true">
+      <geom name="c7_link_L_printed" type="mesh" mesh="c7_link_L_printed" rgba="0.9 0.92 0.87 1" group="1" contype="0" conaffinity="0" density="0" />
+    </body>
+  </worldbody>
+</mujoco>

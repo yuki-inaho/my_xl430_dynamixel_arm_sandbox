@@ -1,0 +1,91 @@
+{
+  "tests": [
+    {
+      "arm_deg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "theta_deg": 90,
+      "source_geometry_pose_max_error": 1.734723475976807e-18,
+      "loop_anchor_error_m": 6.938893903907228e-18,
+      "jaw_constraint_rank": 4,
+      "jaw_effective_dof": 1,
+      "C7_design_pad_opening_m": 0.015987177379235856,
+      "pass": true
+    },
+    {
+      "arm_deg": [
+        15,
+        20,
+        -30,
+        40
+      ],
+      "theta_deg": 25,
+      "source_geometry_pose_max_error": 1.1102230246251565e-16,
+      "loop_anchor_error_m": 6.453171330633722e-15,
+      "jaw_constraint_rank": 4,
+      "jaw_effective_dof": 1,
+      "C7_design_pad_opening_m": 0.048895138467034756,
+      "pass": true
+    },
+    {
+      "arm_deg": [
+        -20,
+        -20,
+        60,
+        -70
+      ],
+      "theta_deg": 135,
+      "source_geometry_pose_max_error": 1.1102230246251565e-16,
+      "loop_anchor_error_m": 3.497202527569243e-15,
+      "jaw_constraint_rank": 4,
+      "jaw_effective_dof": 1,
+      "C7_design_pad_opening_m": 0.0009274323449275645,
+      "pass": true
+    },
+    {
+      "arm_deg": [
+        0,
+        10,
+        25,
+        -45
+      ],
+      "theta_deg": 55,
+      "source_geometry_pose_max_error": 2.220446049250313e-16,
+      "loop_anchor_error_m": 1.942890293094024e-15,
+      "jaw_constraint_rank": 4,
+      "jaw_effective_dof": 1,
+      "C7_design_pad_opening_m": 0.03522562496325037,
+      "pass": true
+    },
+    {
+      "arm_deg": [
+        25,
+        -25,
+        95,
+        -70
+      ],
+      "theta_deg": 110,
+      "source_geometry_pose_max_error": 1.1102230246251565e-16,
+      "loop_anchor_error_m": 5.342948306008566e-16,
+      "jaw_constraint_rank": 4,
+      "jaw_effective_dof": 1,
+      "C7_design_pad_opening_m": 0.007569551344377083,
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "total_mass_kg": 0.49750000000000005,
+  "cap_mass_kg": 0.0015,
+  "positive_moving_body_mass": true,
+  "all_finite_parameters": true,
+  "gravity": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "actuators": 5,
+  "mocap": 0
+}

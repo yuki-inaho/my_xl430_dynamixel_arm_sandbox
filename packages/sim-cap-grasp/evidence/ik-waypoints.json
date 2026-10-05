@@ -1,0 +1,2048 @@
+[
+  {
+    "segment": "approach",
+    "fraction": 0.0,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0985
+    ],
+    "q": [
+      -0.02055700292586309,
+      -0.06931553697455879,
+      0.37951673919125545,
+      -1.3214968848695958
+    ],
+    "weighted_error": 4.077406609675515e-08,
+    "position_error_m": 4.076086169473478e-08,
+    "pitch_error_rad": 1.7293383169914023e-08,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.03333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09733333333333334
+    ],
+    "q": [
+      -0.020557000603420528,
+      -0.07463386291425203,
+      0.35935420081266833,
+      -1.306655064090813
+    ],
+    "weighted_error": 1.0717697265057728e-05,
+    "position_error_m": 1.0716750404993817e-05,
+    "pitch_error_rad": 2.374366727897481e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.06666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09616666666666668
+    ],
+    "q": [
+      -0.020557000733881045,
+      -0.0796238376995617,
+      0.339755536644457,
+      -1.2920462813035867
+    ],
+    "weighted_error": 1.027916096675868e-05,
+    "position_error_m": 1.0278249857752547e-05,
+    "pitch_error_rad": 2.2809624031783216e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.1,
+    "target_m": [
+      0.0,
+      0.18,
+      0.095
+    ],
+    "q": [
+      -0.020557000824300606,
+      -0.08440715926349968,
+      0.3205032656380309,
+      -1.2775772658284639
+    ],
+    "weighted_error": 1.0016562810663656e-05,
+    "position_error_m": 1.0015681167549357e-05,
+    "pitch_error_rad": 2.2149297685958302e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.13333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09383333333333334
+    ],
+    "q": [
+      -0.02055700090932186,
+      -0.08898936215756882,
+      0.3015833944706603,
+      -1.2632395356979262
+    ],
+    "weighted_error": 9.77439880400214e-06,
+    "position_error_m": 9.773545077549482e-06,
+    "pitch_error_rad": 2.1530725323737343e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.16666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09266666666666667
+    ],
+    "q": [
+      -0.020557000989045286,
+      -0.0933768355254604,
+      0.28298031335693424,
+      -1.2490238701753045
+    ],
+    "weighted_error": 9.552971297540954e-06,
+    "position_error_m": 9.552144034734219e-06,
+    "pitch_error_rad": 2.095295745019321e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.2,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09150000000000001
+    ],
+    "q": [
+      -0.02055700106399182,
+      -0.09757535516534394,
+      0.2646797305905185,
+      -1.2349217529650707
+    ],
+    "weighted_error": 9.350352189744718e-06,
+    "position_error_m": 9.349550069628052e-06,
+    "pitch_error_rad": 2.0412120433910275e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.23333333333333334,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09033333333333333
+    ],
+    "q": [
+      -0.020557001134611747,
+      -0.10159016978595532,
+      0.24666848989450513,
+      -1.2209252761637517
+    ],
+    "weighted_error": 9.164875802082729e-06,
+    "position_error_m": 9.164097617416055e-06,
+    "pitch_error_rad": 1.990486126479673e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.26666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08916666666666667
+    ],
+    "q": [
+      -0.02055700120130177,
+      -0.10542605388979191,
+      0.2289344536391445,
+      -1.2070270763486441
+    ],
+    "weighted_error": 8.995069093702659e-06,
+    "position_error_m": 8.994313736273937e-06,
+    "pitch_error_rad": 1.9428225428441692e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.3,
+    "target_m": [
+      0.0,
+      0.18,
+      0.088
+    ],
+    "q": [
+      -0.020557001264412657,
+      -0.10908735407326296,
+      0.21146640069539663,
+      -1.1932202787258364
+    ],
+    "weighted_error": 8.839624420797796e-06,
+    "position_error_m": 8.838890868927982e-06,
+    "pitch_error_rad": 1.8979600120427875e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.3333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08683333333333335
+    ],
+    "q": [
+      -0.020557001324255697,
+      -0.11257802945579176,
+      0.1942539372478126,
+      -1.179498448367411
+    ],
+    "weighted_error": 8.697376442613889e-06,
+    "position_error_m": 8.696663750500466e-06,
+    "pitch_error_rad": 1.8556666416813528e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.36666666666666664,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08566666666666667
+    ],
+    "q": [
+      -0.020557001381108185,
+      -0.11590168712488085,
+      0.17728741861309316,
+      -1.1658555474710648
+    ],
+    "weighted_error": 8.567282811070818e-06,
+    "position_error_m": 8.566590099674317e-06,
+    "pitch_error_rad": 1.8157359260584371e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.4,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0845
+    ],
+    "q": [
+      -0.020557001435217794,
+      -0.119061613326972,
+      0.16055788045595842,
+      -1.1522858977634818
+    ],
+    "weighted_error": 8.448407931151662e-06,
+    "position_error_m": 8.447734380378151e-06,
+    "pitch_error_rad": 1.7779833866304886e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.43333333333333335,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08333333333333334
+    ],
+    "q": [
+      -0.020557001486806514,
+      -0.12206080101153169,
+      0.14405697806422801,
+      -1.1387841473166527
+    ],
+    "weighted_error": 8.33990924248471e-06,
+    "position_error_m": 8.339254084468932e-06,
+    "pitch_error_rad": 1.7422437281755523e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.4666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08216666666666667
+    ],
+    "q": [
+      -0.020557001536073857,
+      -0.12490197423628453,
+      0.1277769325646338,
+      -1.125345241166516
+    ],
+    "weighted_error": 8.241025574625565e-06,
+    "position_error_m": 8.240388087942485e-06,
+    "pitch_error_rad": 1.708368432828955e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.5,
+    "target_m": [
+      0.0,
+      0.18,
+      0.081
+    ],
+    "q": [
+      -0.020557001583199702,
+      -0.12758760986052928,
+      0.11171048313969718,
+      -1.1119643952210927
+    ],
+    "weighted_error": 8.151067218812104e-06,
+    "position_error_m": 8.15044672348469e-06,
+    "pitch_error_rad": 1.676223701507773e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.5333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07983333333333334
+    ],
+    "q": [
+      -0.020557001628346522,
+      -0.13011995688697137,
+      0.09585084445280394,
+      -1.0986370730256387
+    ],
+    "weighted_error": 8.069407427716644e-06,
+    "position_error_m": 8.068803280898244e-06,
+    "pitch_error_rad": 1.6456886986482289e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.5666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07866666666666666
+    ],
+    "q": [
+      -0.020557001671661447,
+      -0.13250105375775678,
+      0.08019166860953628,
+      -1.0853589650184983
+    ],
+    "weighted_error": 7.995475107188953e-06,
+    "position_error_m": 7.994886699425276e-06,
+    "pitch_error_rad": 1.6166540404149996e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.6,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07750000000000001
+    ],
+    "q": [
+      -0.020557001713278095,
+      -0.13473274386503675,
+      0.06472701108344553,
+      -1.0721259699661376
+    ],
+    "weighted_error": 7.928748509300181e-06,
+    "position_error_m": 7.928175261288004e-06,
+    "pitch_error_rad": 1.5890204906332528e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.6333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07633333333333334
+    ],
+    "q": [
+      -0.020557001753318007,
+      -0.13681668949866,
+      0.04945130011780613,
+      -1.0589341783114656
+    ],
+    "weighted_error": 7.868749767027247e-06,
+    "position_error_m": 7.868191126797121e-06,
+    "pitch_error_rad": 1.5626978348004528e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.6666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07516666666666667
+    ],
+    "q": [
+      -0.02055700179189196,
+      -0.13875438442210103,
+      0.03435930918448412,
+      -1.0457798572076495
+    ],
+    "weighted_error": 7.815040141473069e-06,
+    "position_error_m": 7.814495581937931e-06,
+    "pitch_error_rad": 1.53760389964841e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.7,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07400000000000001
+    ],
+    "q": [
+      -0.020557001829101102,
+      -0.14054716524128194,
+      0.0194461321394827,
+      -1.0326594370416295
+    ],
+    "weighted_error": 7.767215873261143e-06,
+    "position_error_m": 7.766684890078265e-06,
+    "pitch_error_rad": 1.5136637001589293e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.7333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07283333333333333
+    ],
+    "q": [
+      -0.020557001865038015,
+      -0.1421962217086952,
+      0.004707160763966017,
+      -1.0195694992785194
+    ],
+    "weighted_error": 7.724904549288734e-06,
+    "position_error_m": 7.724386658991432e-06,
+    "pitch_error_rad": 1.4908086933829168e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.7666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07166666666666667
+    ],
+    "q": [
+      -0.020557001899787476,
+      -0.14370260608641028,
+      -0.009861935578836946,
+      -1.0065067654808635
+    ],
+    "weighted_error": 7.687761908485592e-06,
+    "position_error_m": 7.687256646845919e-06,
+    "pitch_error_rad": 1.4689761254071956e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.8,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07050000000000001
+    ],
+    "q": [
+      -0.020557001933427292,
+      -0.14506724167560428,
+      -0.024265228405120264,
+      -0.993468087376105
+    ],
+    "weighted_error": 7.655469025043178e-06,
+    "position_error_m": 7.654975945633846e-06,
+    "pitch_error_rad": 1.4481084561479562e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.8333333333333334,
+    "target_m": [
+      0.0,
+      0.18,
+      0.06933333333333333
+    ],
+    "q": [
+      -0.020557001966028946,
+      -0.14629093060666243,
+      -0.03850654689453701,
+      -0.9804504378621439
+    ],
+    "weighted_error": 7.627729816030106e-06,
+    "position_error_m": 7.627248488956437e-06,
+    "pitch_error_rad": 1.4281528538662158e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.8666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.06816666666666667
+    ],
+    "q": [
+      -0.020557001997658243,
+      -0.1473743609722999,
+      -0.05258949317525344,
+      -0.9674509028549578
+    ],
+    "weighted_error": 7.604268828721251e-06,
+    "position_error_m": 7.603798839500286e-06,
+    "pitch_error_rad": 1.4090607466377136e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.9,
+    "target_m": [
+      0.0,
+      0.18,
+      0.067
+    ],
+    "q": [
+      -0.02055700202837569,
+      -0.14831811337623624,
+      -0.06651745626644558,
+      -0.9544666738943826
+    ],
+    "weighted_error": 7.584829270418856e-06,
+    "position_error_m": 7.584370218983244e-06,
+    "pitch_error_rad": 1.3907874271135157e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.9333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.06583333333333333
+    ],
+    "q": [
+      -0.020557002058237114,
+      -0.14912266696141002,
+      -0.08029362481569408,
+      -0.9414950414345806
+    ],
+    "weighted_error": 7.56917124794868e-06,
+    "position_error_m": 7.568722747758568e-06,
+    "pitch_error_rad": 1.3732916999131817e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 0.9666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.06466666666666666
+    ],
+    "q": [
+      -0.02055700208729398,
+      -0.1497884049743984,
+      -0.09392099875240356,
+      -0.9285333887547278
+    ],
+    "weighted_error": 7.557070191481001e-06,
+    "position_error_m": 7.556631868728194e-06,
+    "pitch_error_rad": 1.3565355682088052e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "approach",
+    "fraction": 1.0,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.02055700211559378,
+      -0.15031561991634132,
+      -0.10740239996422421,
+      -0.9155791864332365
+    ],
+    "weighted_error": 7.548315436629135e-06,
+    "position_error_m": 7.547886929519838e-06,
+    "pitch_error_rad": 1.340483954614946e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.0,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.03333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.06666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.1,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.13333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.16666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.2,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.816111891631891e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413170417927e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.23333333333333334,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.26666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.816111891631891e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413170417927e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.3,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.816111891589908e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.53841294837332e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.3333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.816111891631891e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413170417927e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.36666666666666664,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.816111891589908e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.53841294837332e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.4,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.43333333333333335,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.4666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.5,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.5333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.5666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.6,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.6333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.6666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.7,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.7333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.7666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.8,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.816111891631891e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413170417927e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.8333333333333334,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.816111891589908e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.53841294837332e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.8666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.9,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.9333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 0.9666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "alignment",
+    "fraction": 1.0,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.0,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0635
+    ],
+    "q": [
+      -0.020557000602662745,
+      -0.1502479933174794,
+      -0.10733330818113668,
+      -0.9155793015950944
+    ],
+    "weighted_error": 1.8161118916108994e-08,
+    "position_error_m": 1.815209925930778e-08,
+    "pitch_error_rad": 9.538413059395623e-09,
+    "iterations": 1,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.03333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.06483333333333333
+    ],
+    "q": [
+      -0.020557004830395124,
+      -0.1497260138345194,
+      -0.09201017332029096,
+      -0.9303789460784156
+    ],
+    "weighted_error": 9.884313128503724e-06,
+    "position_error_m": 9.883892140403507e-06,
+    "pitch_error_rad": 1.5204329775198033e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.06666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.06616666666666667
+    ],
+    "q": [
+      -0.020557004884059614,
+      -0.14893136027366172,
+      -0.07640051844795566,
+      -0.9451939195116563
+    ],
+    "weighted_error": 9.905045965554336e-06,
+    "position_error_m": 9.90461031117952e-06,
+    "pitch_error_rad": 1.5483112144609734e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.1,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0675
+    ],
+    "q": [
+      -0.020557004921658774,
+      -0.1479552273778682,
+      -0.06059532831576205,
+      -0.9600229550720396
+    ],
+    "weighted_error": 9.926445657074772e-06,
+    "position_error_m": 9.925998684625898e-06,
+    "pitch_error_rad": 1.5699872313312824e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.13333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.06883333333333334
+    ],
+    "q": [
+      -0.020557004960438944,
+      -0.14679704781361688,
+      -0.044590154999077196,
+      -0.9748699260619056
+    ],
+    "weighted_error": 9.954001992837066e-06,
+    "position_error_m": 9.953543238791213e-06,
+    "pitch_error_rad": 1.5927497988288408e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.16666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07016666666666667
+    ],
+    "q": [
+      -0.020557005000502674,
+      -0.14545603365782545,
+      -0.02838009453799492,
+      -0.9897389484420386
+    ],
+    "weighted_error": 9.988266170261164e-06,
+    "position_error_m": 9.987795151658226e-06,
+    "pitch_error_rad": 1.6166749566837169e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.2,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07150000000000001
+    ],
+    "q": [
+      -0.020557005041945794,
+      -0.14393121729980213,
+      -0.011959888131140045,
+      -1.0046343133323947
+    ],
+    "weighted_error": 1.0029727962371532e-05,
+    "position_error_m": 1.0029244177798673e-05,
+    "pitch_error_rad": 1.6418334322088057e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.23333333333333334,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07283333333333333
+    ],
+    "q": [
+      -0.020557005084873247,
+      -0.14222143996230774,
+      0.00467610314752763,
+      -1.0195605008041875
+    ],
+    "weighted_error": 1.0078917354613463e-05,
+    "position_error_m": 1.0078420282848858e-05,
+    "pitch_error_rad": 1.6683028126740496e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.26666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07416666666666667
+    ],
+    "q": [
+      -0.020557005129400396,
+      -0.14032533806138692,
+      0.02153392754138185,
+      -1.0345221954315045
+    ],
+    "weighted_error": 1.0136409586140003e-05,
+    "position_error_m": 1.0135898684555145e-05,
+    "pitch_error_rad": 1.6961684291549872e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.3,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0755
+    ],
+    "q": [
+      -0.020557005175654286,
+      -0.13824132812629533,
+      0.03862007509170326,
+      -1.049524303690885
+    ],
+    "weighted_error": 1.0202830730399614e-05,
+    "position_error_m": 1.0202305433119589e-05,
+    "pitch_error_rad": 1.7255242782399092e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.3333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07683333333333334
+    ],
+    "q": [
+      -0.02055700522377496,
+      -0.13596759007304846,
+      0.05594151385343007,
+      -1.064571973449563
+    ],
+    "weighted_error": 1.0278864083625297e-05,
+    "position_error_m": 1.0278323799401255e-05,
+    "pitch_error_rad": 1.7564740805164904e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.36666666666666664,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07816666666666666
+    ],
+    "q": [
+      -0.02055700527391714,
+      -0.13350204858999742,
+      0.07350573037073163,
+      -1.0796706158253895
+    ],
+    "weighted_error": 1.0365257519437396e-05,
+    "position_error_m": 1.0364701629175313e-05,
+    "pitch_error_rad": 1.7891325042596051e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.4,
+    "target_m": [
+      0.0,
+      0.18,
+      0.07950000000000002
+    ],
+    "q": [
+      -0.02055700532625202,
+      -0.1308423523532893,
+      0.09132077502684904,
+      -1.0948259297507246
+    ],
+    "weighted_error": 1.0462831984647887e-05,
+    "position_error_m": 1.0462259838530987e-05,
+    "pitch_error_rad": 1.8236265785231964e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.43333333333333335,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08083333333333334
+    ],
+    "q": [
+      -0.02055700538096957,
+      -0.12798585074150548,
+      0.1093953129901532,
+      -1.1100439296314837
+    ],
+    "weighted_error": 1.0572491362033824e-05,
+    "position_error_m": 1.0571902276159707e-05,
+    "pitch_error_rad": 1.8600973398230636e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.4666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08216666666666667
+    ],
+    "q": [
+      -0.020557005438281033,
+      -0.12492956765987044,
+      0.12773868160866805,
+      -1.1253309765639554
+    ],
+    "weighted_error": 1.0695233969725162e-05,
+    "position_error_m": 1.0694627222170259e-05,
+    "pitch_error_rad": 1.8987017478266923e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.5,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0835
+    ],
+    "q": [
+      -0.020557005498421876,
+      -0.12167017201303626,
+      0.1463609552631121,
+      -1.1406938136583795
+    ],
+    "weighted_error": 1.0832166031761674e-05,
+    "position_error_m": 1.083154085796311e-05,
+    "pitch_error_rad": 1.9396149336659008e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.5333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08483333333333334
+    ],
+    "q": [
+      -0.020557005561655413,
+      -0.11820394427822521,
+      0.16527301888131177,
+      -1.1561396061238631
+    ],
+    "weighted_error": 1.0984517534601898e-05,
+    "position_error_m": 1.0983873121932728e-05,
+    "pitch_error_rad": 1.9830328386039042e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.5666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08616666666666667
+    ],
+    "q": [
+      -0.0205570056282769,
+      -0.1145267385235252,
+      0.18448665155315425,
+      -1.1716759868985063
+    ],
+    "weighted_error": 1.1153660983555353e-05,
+    "position_error_m": 1.1152996464937054e-05,
+    "pitch_error_rad": 2.0291753378698374e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.6,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08750000000000001
+    ],
+    "q": [
+      -0.02055700569861859,
+      -0.11063393908409687,
+      0.20401462197690623,
+      -1.1873111087682244
+    ],
+    "weighted_error": 1.1341133707008183e-05,
+    "position_error_m": 1.1340448153380796e-05,
+    "pitch_error_rad": 2.0782899433635644e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.6333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.08883333333333333
+    ],
+    "q": [
+      -0.02055700577305557,
+      -0.1065204109451398,
+      0.22387079782967634,
+      -1.203053704115758
+    ],
+    "weighted_error": 1.1548664517841983e-05,
+    "position_error_m": 1.154795692927012e-05,
+    "pitch_error_rad": 2.1306562228984305e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.6666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09016666666666667
+    ],
+    "q": [
+      -0.02055700585201294,
+      -0.10218044267572932,
+      0.24407027160689487,
+      -1.218913153688689
+    ],
+    "weighted_error": 1.1778205766603109e-05,
+    "position_error_m": 1.177747506175005e-05,
+    "pitch_error_rad": 2.1865910999618876e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.7,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0915
+    ],
+    "q": [
+      -0.020557005935974395,
+      -0.09760768050008345,
+      0.2646295060443092,
+      -1.2348995660863078
+    ],
+    "weighted_error": 1.203197210094924e-05,
+    "position_error_m": 1.2031217104588482e-05,
+    "pitch_error_rad": 2.246455249599322e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.7333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09283333333333334
+    ],
+    "q": [
+      -0.020557006025492673,
+      -0.0927950517666045,
+      0.2855665029562273,
+      -1.251023870059143
+    ],
+    "weighted_error": 1.2312487627470368e-05,
+    "position_error_m": 1.231170705563289e-05,
+    "pitch_error_rad": 2.3106608536549444e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.7666666666666666,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09416666666666668
+    ],
+    "q": [
+      -0.02055700612120232,
+      -0.0877346756586182,
+      0.3069010002431326,
+      -1.2672979222178373
+    ],
+    "weighted_error": 1.2622643676338296e-05,
+    "position_error_m": 1.262183611858747e-05,
+    "pitch_error_rad": 2.3796810783016653e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.8,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09550000000000002
+    ],
+    "q": [
+      -0.020557006223835356,
+      -0.08241775845476515,
+      0.3286547030051169,
+      -1.2837346333953192
+    ],
+    "weighted_error": 1.2965770044849188e-05,
+    "position_error_m": 1.2964933943049616e-05,
+    "pitch_error_rad": 2.4540617277191146e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.8333333333333334,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09683333333333334
+    ],
+    "q": [
+      -0.020557006334240836,
+      -0.0768344699512385,
+      0.3508515562337838,
+      -1.3003481177465017
+    ],
+    "weighted_error": 1.3345723529480717e-05,
+    "position_error_m": 1.3344857152253912e-05,
+    "pitch_error_rad": 2.534435685208613e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.8666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.09816666666666668
+    ],
+    "q": [
+      -0.020557006453409164,
+      -0.07097379674610677,
+      0.37351806856886843,
+      -1.3171538697711949
+    ],
+    "weighted_error": 1.3766998822611549e-05,
+    "position_error_m": 1.3766100234447341e-05,
+    "pitch_error_rad": 2.621540945102474e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.9,
+    "target_m": [
+      0.0,
+      0.18,
+      0.0995
+    ],
+    "q": [
+      -0.02055700658250278,
+      -0.06482336687881284,
+      0.3966836992714353,
+      -1.3341689759040816
+    ],
+    "weighted_error": 1.4234868627972223e-05,
+    "position_error_m": 1.42339356516538e-05,
+    "pitch_error_rad": 2.7162433313687724e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.9333333333333333,
+    "target_m": [
+      0.0,
+      0.18,
+      0.10083333333333334
+    ],
+    "q": [
+      -0.02055700672289527,
+      -0.05836923870226013,
+      0.42038132413344353,
+      -1.3514123692674895
+    ],
+    "weighted_error": 1.4755562356128102e-05,
+    "position_error_m": 1.4754592526716985e-05,
+    "pitch_error_rad": 2.8195653788420927e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 0.9666666666666667,
+    "target_m": [
+      0.0,
+      0.18,
+      0.10216666666666668
+    ],
+    "q": [
+      -0.020557006876221577,
+      -0.05159564467704031,
+      0.4446478008753119,
+      -1.368905138826088
+    ],
+    "weighted_error": 1.5336496339219908e-05,
+    "position_error_m": 1.533548684726853e-05,
+    "pitch_error_rad": 2.932723428994422e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  },
+  {
+    "segment": "lift",
+    "fraction": 1.0,
+    "target_m": [
+      0.0,
+      0.18,
+      0.10350000000000001
+    ],
+    "q": [
+      -0.020557007044443232,
+      -0.044484677776536,
+      0.46952466121093817,
+      -1.3866709078088497
+    ],
+    "weighted_error": 1.598657371025403e-05,
+    "position_error_m": 1.5985521331119723e-05,
+    "pitch_error_rad": 3.0571757891895146e-06,
+    "iterations": 2,
+    "status": "SUCCESS",
+    "forbidden_count": 0,
+    "forbidden_contacts": []
+  }
+]

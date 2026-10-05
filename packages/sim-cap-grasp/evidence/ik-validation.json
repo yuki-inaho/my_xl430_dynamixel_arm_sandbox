@@ -1,0 +1,199 @@
+{
+  "algorithm": "MuJoCo mj_jacSite bounded DLS, 4 position/pitch tasks; no roll",
+  "position_tolerance_m": 0.002,
+  "pitch_tolerance_deg": 2,
+  "trials": [
+    {
+      "pitch_deg": -50.0,
+      "poses": [
+        {
+          "stage": "pregrasp",
+          "target_m": [
+            0.0,
+            0.18,
+            0.0985
+          ],
+          "q": [
+            -0.02055700292586309,
+            -0.06931553697455879,
+            0.37951673919125545,
+            -1.3214968848695958
+          ],
+          "weighted_error": 4.077406609675515e-08,
+          "position_error_m": 4.076086169473478e-08,
+          "pitch_error_rad": 1.7293383169914023e-08,
+          "iterations": 11,
+          "status": "SUCCESS",
+          "forbidden_contacts": [],
+          "forbidden_count": 0
+        },
+        {
+          "stage": "approach",
+          "target_m": [
+            0.0,
+            0.18,
+            0.0635
+          ],
+          "q": [
+            -0.020557000602662745,
+            -0.1502479933174794,
+            -0.10733330818113668,
+            -0.9155793015950944
+          ],
+          "weighted_error": 1.8161118916108994e-08,
+          "position_error_m": 1.815209925930778e-08,
+          "pitch_error_rad": 9.538413059395623e-09,
+          "iterations": 8,
+          "status": "SUCCESS",
+          "forbidden_contacts": [],
+          "forbidden_count": 0
+        },
+        {
+          "stage": "lift",
+          "target_m": [
+            0.0,
+            0.18,
+            0.10350000000000001
+          ],
+          "q": [
+            -0.02055699747663956,
+            -0.04431380382965169,
+            0.46983341464692274,
+            -1.3868117540563636
+          ],
+          "weighted_error": 9.936849029397053e-07,
+          "position_error_m": 9.936700937654221e-07,
+          "pitch_error_rad": 9.041737558668217e-08,
+          "iterations": 17,
+          "status": "SUCCESS",
+          "forbidden_contacts": [],
+          "forbidden_count": 0
+        }
+      ],
+      "feasible": true
+    }
+  ],
+  "FK_generated_tests": [
+    {
+      "q": [
+        -4.615855016344275e-11,
+        0.17453117078038527,
+        -0.34907016778313815,
+        0.261801980953737
+      ],
+      "weighted_error": 3.272462791245635e-07,
+      "position_error_m": 3.272412659940241e-07,
+      "pitch_error_rad": 3.0189363009469616e-08,
+      "iterations": 10,
+      "status": "SUCCESS"
+    },
+    {
+      "q": [
+        0.34906535616207846,
+        -0.26180068361768954,
+        0.698128983583594,
+        -0.6108637964151089
+      ],
+      "weighted_error": 1.2657572516323976e-07,
+      "position_error_m": 1.2656981428489923e-07,
+      "pitch_error_rad": 2.0387308730107637e-08,
+      "iterations": 6,
+      "status": "SUCCESS"
+    },
+    {
+      "q": [
+        -0.3490658755896574,
+        0.4363224402405075,
+        0.6981107224312003,
+        -1.2217192636699237
+      ],
+      "weighted_error": 7.376443341968517e-07,
+      "position_error_m": 7.376163343398829e-07,
+      "pitch_error_rad": 1.0711765041637734e-07,
+      "iterations": 5,
+      "status": "SUCCESS"
+    }
+  ],
+  "unreachable_test": {
+    "q": [
+      -0.4705383683297006,
+      0.6981217007977318,
+      1.5250366473355446,
+      -0.28929427971673705
+    ],
+    "weighted_error": 3.108963519830164,
+    "position_error_m": 3.108796171848799,
+    "pitch_error_rad": 0.5376206668210757,
+    "iterations": 180,
+    "status": "IK_FAILED"
+  },
+  "selected": {
+    "pitch_deg": -50.0,
+    "poses": [
+      {
+        "stage": "pregrasp",
+        "target_m": [
+          0.0,
+          0.18,
+          0.0985
+        ],
+        "q": [
+          -0.02055700292586309,
+          -0.06931553697455879,
+          0.37951673919125545,
+          -1.3214968848695958
+        ],
+        "weighted_error": 4.077406609675515e-08,
+        "position_error_m": 4.076086169473478e-08,
+        "pitch_error_rad": 1.7293383169914023e-08,
+        "iterations": 11,
+        "status": "SUCCESS",
+        "forbidden_contacts": [],
+        "forbidden_count": 0
+      },
+      {
+        "stage": "approach",
+        "target_m": [
+          0.0,
+          0.18,
+          0.0635
+        ],
+        "q": [
+          -0.020557000602662745,
+          -0.1502479933174794,
+          -0.10733330818113668,
+          -0.9155793015950944
+        ],
+        "weighted_error": 1.8161118916108994e-08,
+        "position_error_m": 1.815209925930778e-08,
+        "pitch_error_rad": 9.538413059395623e-09,
+        "iterations": 8,
+        "status": "SUCCESS",
+        "forbidden_contacts": [],
+        "forbidden_count": 0
+      },
+      {
+        "stage": "lift",
+        "target_m": [
+          0.0,
+          0.18,
+          0.10350000000000001
+        ],
+        "q": [
+          -0.02055699747663956,
+          -0.04431380382965169,
+          0.46983341464692274,
+          -1.3868117540563636
+        ],
+        "weighted_error": 9.936849029397053e-07,
+        "position_error_m": 9.936700937654221e-07,
+        "pitch_error_rad": 9.041737558668217e-08,
+        "iterations": 17,
+        "status": "SUCCESS",
+        "forbidden_contacts": [],
+        "forbidden_count": 0
+      }
+    ],
+    "feasible": true
+  }
+}

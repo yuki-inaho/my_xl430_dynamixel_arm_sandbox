@@ -1,0 +1,1038 @@
+{
+  "M01": {
+    "source_sha256": "32f7ca3c6a32b35124b238f622270e163578d31661069bf67fcbcacdcbca6d2d",
+    "source_scale_to_m": 1.0,
+    "method": "conservative case bounding box; minor horn/holes occupied",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.01425,
+        -0.03525,
+        0.0
+      ],
+      [
+        0.01425,
+        0.01125,
+        0.0409
+      ]
+    ],
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.004451123210333532,
+    "proxy_vertex_to_source_vertex_p95_m": 0.004451123210333532,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "P01_base": {
+    "source_sha256": "e4ac720b45876831fbfb5acbf1f43b38dec2f0ab5e7e2ed1f85b305ab2d38328",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 58,
+    "source_bounds_m": [
+      [
+        -0.0665,
+        -0.068,
+        4.82257137285e-14
+      ],
+      [
+        0.0665,
+        0.012,
+        0.00900000000005
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.009380109874058016,
+    "proxy_vertex_to_source_vertex_p95_m": 0.002582743688984345,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "M02": {
+    "source_sha256": "14e48b383cb38c605ecfe5af93ec4aff8a618bce2cbd76f13b7f2846b6b23b02",
+    "source_scale_to_m": 1.0,
+    "method": "conservative case bounding box; minor horn/holes occupied",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.0211,
+        -0.03525,
+        0.02205
+      ],
+      [
+        0.0198,
+        0.01125,
+        0.05055
+      ]
+    ],
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.004451123210333532,
+    "proxy_vertex_to_source_vertex_p95_m": 0.004451123210333531,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "P02_yaw_carrier": {
+    "source_sha256": "f33e3663be8ac004df9dacb681eeb7f94778db55a8528f236b258d2e7631b479",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 68,
+    "source_bounds_m": [
+      [
+        -0.02,
+        -0.03825,
+        0.019
+      ],
+      [
+        0.02,
+        0.01425,
+        0.0299
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.017514194622022063,
+    "proxy_vertex_to_source_vertex_p95_m": 0.004256583103959426,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "M03": {
+    "source_sha256": "b1b729adad0ef7a0186a5db0b64a2f722ab26c3c399bbb7b61bfc6457d706b2b",
+    "source_scale_to_m": 1.0,
+    "method": "conservative case bounding box; minor horn/holes occupied",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.02,
+        -0.02045,
+        0.09405
+      ],
+      [
+        0.0209,
+        0.02605,
+        0.12255
+      ]
+    ],
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.0044511232103335305,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0044511232103335305,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "P03_shoulder_XL430": {
+    "source_sha256": "c017300d342f62fb8cdca7359a59412073f0afcc610c4d0fa123347726cefadc",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 72,
+    "source_bounds_m": [
+      [
+        -0.022,
+        -0.02045,
+        -0.013
+      ],
+      [
+        0.022,
+        0.02605,
+        0.09405
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.012090616404583102,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0062981611993382725,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "M04": {
+    "source_sha256": "32a3e3879e803ef7d21fe33219294c4658468f0d238fed55eab777c45248bfb0",
+    "source_scale_to_m": 1.0,
+    "method": "conservative case bounding box; minor horn/holes occupied",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.02,
+        0.05485,
+        -0.01425
+      ],
+      [
+        0.0209,
+        0.10135,
+        0.01425
+      ]
+    ],
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.0044511232103335244,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0044511232103335244,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "P04_extension_XL430": {
+    "source_sha256": "ea8c9630450bf381ddc1a6b05e23ccbebe918eab7366309d4f71816783ad741e",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 42,
+    "source_bounds_m": [
+      [
+        -0.023,
+        -0.0134939882434,
+        -0.01825
+      ],
+      [
+        0.023,
+        0.10135,
+        0.0134991885315
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.019525525487136094,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0036349246234427188,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "M05": {
+    "source_sha256": "aa50e12a49da3d274eea1659c382eeb9db53f07def5f7e1ffe4fc6f398f1a8c2",
+    "source_scale_to_m": 1.0,
+    "method": "Source-verified maincase box + two Y-axis horn cylinders; all source vertices covered, cylinder64 conservatively circumscribed",
+    "parts": 3,
+    "source_bounds_m": [
+      [
+        -0.01425,
+        0.04,
+        -0.01125
+      ],
+      [
+        0.01425,
+        0.0809,
+        0.03525
+      ]
+    ],
+    "proxy_directory": "decomposition/M05_v2",
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.004472135954994384,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0019216945964069436,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "P05_wrist_XL430": {
+    "source_sha256": "dc33ef0914bf5aa8b21ba92f35403367b27b80ca9fd0a5bf979ceecfd5088666",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 73,
+    "source_bounds_m": [
+      [
+        -0.023,
+        -0.0134939882434,
+        -0.0134991885315
+      ],
+      [
+        0.023,
+        0.07,
+        0.032
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.014800750043996273,
+    "proxy_vertex_to_source_vertex_p95_m": 0.00785761078420028,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE": {
+    "source_sha256": "224bdfbc1740e60541ee397dd0d05070a9707ae72da8b7bce8c29b7b101820d8",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 101,
+    "source_bounds_m": [
+      [
+        -0.0307,
+        0.048,
+        0.03525
+      ],
+      [
+        0.0307,
+        0.0724103943226,
+        0.108596278223
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.02330778009800993,
+    "proxy_vertex_to_source_vertex_p95_m": 0.004922111552917822,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_D405_CARRIER": {
+    "source_sha256": "398795ce75b231e2bb67321bb9683a3382bbc8985aa1001652d884b21ff4e448",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 137,
+    "source_bounds_m": [
+      [
+        -0.0315,
+        0.0544063811089,
+        0.100989149511
+      ],
+      [
+        0.0315,
+        0.105037474656,
+        0.127435766794
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.01831328185496604,
+    "proxy_vertex_to_source_vertex_p95_m": 0.011949622732490485,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE_WASHER_0": {
+    "source_sha256": "1a3601d62da6108fc51ec2ba0c57b69749b1d8f6382ae2c743fe7b9015572f07",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.0109986572969,
+        0.0510003356946,
+        0.03725
+      ],
+      [
+        -0.005,
+        0.0569996643054,
+        0.03775
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE_TAP_0": {
+    "source_sha256": "0c7220e0f1a8acbc00adc86d8ed49f6840137e76f8a3e97700ddb8aeec51160f",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.0105988363239,
+        0.0514002909353,
+        0.03275
+      ],
+      [
+        -0.0054,
+        0.0565997090647,
+        0.03975
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE_WASHER_1": {
+    "source_sha256": "11b4cd165ce6a22a2552f97b998dd5c71d11fac24fccf4ce72de3465c6111398",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.0109986572969,
+        0.0630003356946,
+        0.03725
+      ],
+      [
+        -0.005,
+        0.0689996643054,
+        0.03775
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE_TAP_1": {
+    "source_sha256": "4413d06ef831f188f33628d50b27a5049bd26936ecd8d26e023dcf1f27af9516",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.0105988363239,
+        0.0634002909353,
+        0.03275
+      ],
+      [
+        -0.0054,
+        0.0685997090647,
+        0.03975
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE_WASHER_2": {
+    "source_sha256": "cd74e54c73762d70bc6dcd75e2ea7d932362c7d3f8d59f5409fcd0c3e14d6a7b",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.00500134270315,
+        0.0510003356946,
+        0.03725
+      ],
+      [
+        0.011,
+        0.0569996643054,
+        0.03775
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE_TAP_2": {
+    "source_sha256": "58a3a3b1df3816048ddc6dd448d731b1211d4d04db2d065f0bac423f0b13f68d",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.00540116367606,
+        0.0514002909353,
+        0.03275
+      ],
+      [
+        0.0106,
+        0.0565997090647,
+        0.03975
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE_WASHER_3": {
+    "source_sha256": "334758034988f697302d028ed10062aedc7c14dde8218e6e6547c505ddab3158",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.00500134270315,
+        0.0630003356946,
+        0.03725
+      ],
+      [
+        0.011,
+        0.0689996643054,
+        0.03775
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_BASE_TAP_3": {
+    "source_sha256": "d3d0be24417e54733b063999d08d0a5cc7afe51727bf3dbeb62602b104f08d17",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.00540116367606,
+        0.0634002909353,
+        0.03275
+      ],
+      [
+        0.0106,
+        0.0685997090647,
+        0.03975
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_TIE_WASHER_0": {
+    "source_sha256": "aefb0758e29d7c4a36e424bf0dc9340a810578638ff51226121ea1b5dcfadbf0",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.029998433513,
+        0.0600864275435,
+        0.107361564877
+      ],
+      [
+        -0.023,
+        0.0666411812842,
+        0.110772715571
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_TIE_BOLT_0": {
+    "source_sha256": "3fce07159a7d89c91373a828ec5ccd64babd44940506a268d2dff1d0b0892c30",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.0292487691888,
+        0.0594982275379,
+        0.0977841672687
+      ],
+      [
+        -0.02375,
+        0.0696888785486,
+        0.113174710703
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_TIE_NUT_0": {
+    "source_sha256": "e5ec044d2af87f54c99f2261e13fd6c88bc621fb091fadd7efc1d596ad5b4e00",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.0296754264805,
+        0.0644003204851,
+        0.0981621312932
+      ],
+      [
+        -0.0233245735195,
+        0.0703992971419,
+        0.102661670422
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_TIE_WASHER_1": {
+    "source_sha256": "574ff63d78a2027cb941925eb659b25a95836416026cc3dbf93eef1c6d090c0f",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.023001566487,
+        0.0600864275435,
+        0.107361564877
+      ],
+      [
+        0.03,
+        0.0666411812842,
+        0.110772715571
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_TIE_BOLT_1": {
+    "source_sha256": "7bf824752362cf5fad4b709c5e8beec442327770f343a69cf9ae691b6f03e21d",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.0237512308112,
+        0.0594982275379,
+        0.0977841672687
+      ],
+      [
+        0.02925,
+        0.0696888785486,
+        0.113174710703
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_TIE_NUT_1": {
+    "source_sha256": "ed0ab4f0dd47cf5c275dfdcd05386f2863964682fb98c82ade2b9b2439fdbe58",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.0233245735195,
+        0.0644003204851,
+        0.0981621312932
+      ],
+      [
+        0.0296754264805,
+        0.0703992971419,
+        0.102661670422
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_D405_SCREW_0": {
+    "source_sha256": "93df43c2c9f4668ad7c2f95f6ea16844dddc8958374dc48d2bedb984d3f74525",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.0127487691888,
+        0.0773520028842,
+        0.109913427832
+      ],
+      [
+        -0.00725,
+        0.0849616340058,
+        0.119844995996
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_D405_SCREW_1": {
+    "source_sha256": "4a5869ad15e41d6e8c179c2ced044144facabcd95b93ef9e574728b3ca35d018",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.00725123081122,
+        0.0773520028842,
+        0.109913427832
+      ],
+      [
+        0.01275,
+        0.0849616340058,
+        0.119844995996
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_D405_BODY": {
+    "source_sha256": "43a5499ab08061bcc453d14a6c4cfc6bc8c1297b1762cbabfcf5c94d8c5207a4",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.021,
+        0.0633473164522,
+        0.0835250165034
+      ],
+      [
+        0.021,
+        0.111132463528,
+        0.122120062598
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_D405_USB_PLUG": {
+    "source_sha256": "fc2184db8020dd84092106f6171db860d0d088cfa507db02b2cee366ee222d8a",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.047,
+        0.0754453290265,
+        0.0989402658343
+      ],
+      [
+        -0.021,
+        0.0950787440236,
+        0.115187854154
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "r5_65_CAM5_D405_USB_CABLE_STUB": {
+    "source_sha256": "c110ce275e407ff7844981aaea867e5395d34d5aa68d7f69b74a685fb7df892a",
+    "source_scale_to_m": 1.0,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.062,
+        0.0830128827178,
+        0.10481440268
+      ],
+      [
+        -0.047,
+        0.0875120295313,
+        0.109313885152
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_fixed_printed": {
+    "source_sha256": "a9ca6c4e6365fced77f3a3f5445dc8c4a643ff18440ed4b953d8359b66e491e2",
+    "source_scale_to_m": 1.0,
+    "method": "Base CoACD clipped to exact CAD source slabs; two independent cap-rail boxes at |Y|19..28mm,Z24.1..27.1mm preserve measured 0.5mm rod gap. Screw bores occupied.",
+    "parts": 66,
+    "source_bounds_m": [
+      [
+        -0.046,
+        -0.028,
+        0.017
+      ],
+      [
+        0.046,
+        0.028,
+        0.0271
+      ]
+    ],
+    "proxy_directory": "decomposition/c7_fixed_printed_v2",
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.016983829136151162,
+    "proxy_vertex_to_source_vertex_p95_m": 0.009712368970552606,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_fixed_fastener": {
+    "source_sha256": "9972066111786671cff86c3b5303885a1d9c0ac5b6d7c94c6a9e0c2e0c897175",
+    "source_scale_to_m": 1.0,
+    "method": "separate connected fasteners; convex hull per screw/washer, no inter-part bridge",
+    "parts": 14,
+    "source_bounds_m": [
+      [
+        -0.0399988810807,
+        -0.0269997202545,
+        0.01435
+      ],
+      [
+        0.04,
+        0.0269997202545,
+        0.0294
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_drive_printed": {
+    "source_sha256": "d89a8a22815659a18b5610fc097215f4a3b1e7748588b5d80fcdea04fe15a506",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 81,
+    "source_bounds_m": [
+      [
+        -0.0100954634115,
+        -0.0184980237643,
+        0.019
+      ],
+      [
+        0.0100954634115,
+        0.0185,
+        0.0298
+      ]
+    ],
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.002598650038407532,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0014031277791965611,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_drive_fastener": {
+    "source_sha256": "60e5d1f703ebe0e096b2aa29a33cddc131910195ffed4b2d5ebe0e13a9fda72b",
+    "source_scale_to_m": 1.0,
+    "method": "separate connected fasteners; convex hull per screw/washer, no inter-part bridge",
+    "parts": 10,
+    "source_bounds_m": [
+      [
+        -0.00989978739344,
+        -0.0174996083563,
+        0.0165
+      ],
+      [
+        0.00989978739344,
+        0.0174996083563,
+        0.0323
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_link_R_printed": {
+    "source_sha256": "7e56e5832d7a29e0589c419b478e8ab5c7e0fe6fe6b32d6567b3a38e8bf1187d",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 23,
+    "source_bounds_m": [
+      [
+        -0.00449994673849,
+        -0.0184984599722,
+        0.0263
+      ],
+      [
+        0.0239935126839,
+        0.00449885880109,
+        0.0295
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0019801112789444362,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0003507647704275649,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_link_L_printed": {
+    "source_sha256": "e47e0b5acd29692cc239aaa19a4ba1c3deca6dab6b20450bfc635e445dfff443",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 24,
+    "source_bounds_m": [
+      [
+        -0.0239935126839,
+        -0.00449885880109,
+        0.0263
+      ],
+      [
+        0.00449994673849,
+        0.0184984599722,
+        0.0295
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.004016645876414204,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0005805096948613792,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_R_printed": {
+    "source_sha256": "2b2d37c7b8ad831ef1b156e23203764d6e53b365c77821344866c75d2ca75942",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 104,
+    "source_bounds_m": [
+      [
+        0.00899358868962,
+        -0.0217,
+        0.0198
+      ],
+      [
+        0.0290935886896,
+        0.0217,
+        0.0448
+      ]
+    ],
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.010270950170117454,
+    "proxy_vertex_to_source_vertex_p95_m": 0.003670476252047651,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_R_fastener": {
+    "source_sha256": "1886b7756be18cd764f532e7b96333603389ab1f6da8f984c19488c5f1913140",
+    "source_scale_to_m": 1.0,
+    "method": "separate connected fasteners; convex hull per screw/washer, no inter-part bridge",
+    "parts": 9,
+    "source_bounds_m": [
+      [
+        0.0159951551766,
+        -0.0164997202545,
+        0.0203
+      ],
+      [
+        0.0282935886896,
+        0.0164997202545,
+        0.0383
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_L_printed": {
+    "source_sha256": "5884ae11e899981d5635e1ef39597a219b8c15d7a884f223c4afaee85d1d7cdc",
+    "source_scale_to_m": 1.0,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 120,
+    "source_bounds_m": [
+      [
+        -0.0290935886896,
+        -0.0217,
+        0.0198
+      ],
+      [
+        -0.00899358868962,
+        0.0217,
+        0.0448
+      ]
+    ],
+    "source_watertight": false,
+    "proxy_vertex_to_source_vertex_max_m": 0.008250124268866366,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0034615949343324813,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "c7_L_fastener": {
+    "source_sha256": "f1194b0bec6651f6f936e32448a6e9e4825be419ef534a2d3fd3dd268d4f5e7a",
+    "source_scale_to_m": 1.0,
+    "method": "separate connected fasteners; convex hull per screw/washer, no inter-part bridge",
+    "parts": 9,
+    "source_bounds_m": [
+      [
+        -0.0282924697703,
+        -0.0164997202545,
+        0.0203
+      ],
+      [
+        -0.0159935886896,
+        0.0164997202545,
+        0.0383
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "cot_L": {
+    "source_sha256": "46c6eebb99a38b983bd8a258b65e612067e38ac9d35141daaa798c72aaa43a22",
+    "source_scale_to_m": 0.001,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        -0.03235947418212891,
+        -0.011398125648498535,
+        0.06170000076293945
+      ],
+      [
+        -0.014278424263000489,
+        0.006211040019989014,
+        0.08742484283447266
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "foam_L": {
+    "source_sha256": "62e6c3c6808e48f941a53ff02efe81a7f65e3f82a7122aacbfa8a6b8644b096b",
+    "source_scale_to_m": 0.001,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 28,
+    "source_bounds_m": [
+      [
+        -0.03973280715942383,
+        -0.015100000381469726,
+        0.038799999237060546
+      ],
+      [
+        -0.01524672031402588,
+        0.014300000190734864,
+        0.06175
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.008763723066260649,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0030010943225544386,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "band_L": {
+    "source_sha256": "b981d9f1e84ce1d27cfdb65c008d02b0c48e273eb28affa11732c6bc5c8e86ec",
+    "source_scale_to_m": 0.001,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 18,
+    "source_bounds_m": [
+      [
+        -0.039022563934326175,
+        -0.019150384902954103,
+        0.03555600357055664
+      ],
+      [
+        -0.015458075523376465,
+        0.01915869140625,
+        0.04206222534179688
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0006266239619344628,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0004456635304048499,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "cot_R": {
+    "source_sha256": "971c4851d23b3221bfcace63bf991358c80afd2a3369bac92f5d2d9fd4d9f3d9",
+    "source_scale_to_m": 0.001,
+    "method": "convex outer envelope; small fastener bores/internal cavities not represented",
+    "parts": 1,
+    "source_bounds_m": [
+      [
+        0.0071608200073242185,
+        -0.013339119911193848,
+        0.06220000076293945
+      ],
+      [
+        0.024637006759643556,
+        0.007269519329071045,
+        0.08773312377929687
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "foam_R": {
+    "source_sha256": "33f6289d60709065bb176e74ca759ba0cfde3f556aca6d319f2b38f18a6633bb",
+    "source_scale_to_m": 0.001,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 90,
+    "source_bounds_m": [
+      [
+        0.007011438369750976,
+        -0.01575,
+        0.037900001525878906
+      ],
+      [
+        0.03475,
+        0.01375,
+        0.06225
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.01062662917507505,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0024314576857879565,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  },
+  "band_R": {
+    "source_sha256": "e393bb30bac32af6b34071e7851613a7f289b6a2fdf470b482ecb7df44f02a71",
+    "source_scale_to_m": 0.001,
+    "method": "CoACD concavity0.02 normalized; seed0; max48vertices/part",
+    "parts": 20,
+    "source_bounds_m": [
+      [
+        0.011259292602539063,
+        -0.019263782501220704,
+        0.03497574615478516
+      ],
+      [
+        0.03617666244506836,
+        0.018549331665039064,
+        0.04265770721435547
+      ]
+    ],
+    "source_watertight": true,
+    "proxy_vertex_to_source_vertex_max_m": 0.0006330794960646064,
+    "proxy_vertex_to_source_vertex_p95_m": 0.0004032739901223486,
+    "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+  }
+}

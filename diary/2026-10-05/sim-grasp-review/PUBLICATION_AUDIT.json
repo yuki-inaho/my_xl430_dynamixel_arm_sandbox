@@ -1,0 +1,13 @@
+{
+  "audit_mode": "staged public-artifacts; gzip text and NPZ strings decoded",
+  "first_scanned_files": 1702,
+  "blockers": 0,
+  "warning_count": 60,
+  "warning_review": "Only synthetic images/videos, hash-preserved meshes and numerical raw data; all individual files below50MiB",
+  "source_STL_headers_checked": 12,
+  "private_capture_conversation_archive": "excluded; local only",
+  "local_absolute_paths": "none found in published content",
+  "generated_OBJ_bytes": "Preserved exactly with package-specific binary Git attributes, not trimmed",
+  "git_author": "Public GitHub handle and noreply email; per-commit override, no global configuration change",
+  "additional_manifest_and_record": "scanned before commit"
+}

@@ -1,0 +1,23 @@
+{
+  "source_sha256": "a9ca6c4e6365fced77f3a3f5445dc8c4a643ff18440ed4b953d8359b66e491e2",
+  "source_scale_to_m": 1.0,
+  "method": "Base CoACD clipped to exact CAD source slabs; two independent cap-rail boxes at |Y|19..28mm,Z24.1..27.1mm preserve measured 0.5mm rod gap. Screw bores occupied.",
+  "parts": 66,
+  "source_bounds_m": [
+    [
+      -0.046,
+      -0.028,
+      0.017
+    ],
+    [
+      0.046,
+      0.028,
+      0.0271
+    ]
+  ],
+  "proxy_directory": "decomposition/c7_fixed_printed_v2",
+  "source_watertight": false,
+  "proxy_vertex_to_source_vertex_max_m": 0.016983829136151162,
+  "proxy_vertex_to_source_vertex_p95_m": 0.009712368970552606,
+  "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+}

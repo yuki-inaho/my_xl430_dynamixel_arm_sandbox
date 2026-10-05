@@ -1,0 +1,53 @@
+{
+  "seed": 0,
+  "friction": 0.7,
+  "cap_mass_kg": 0.0015,
+  "no_close": false,
+  "python": "3.12.14",
+  "mujoco": "3.13.0",
+  "numpy": "2.5.3",
+  "initial_support_plane_z_m": 0.05,
+  "initial_cap_center_m": [
+    0,
+    0.18,
+    0.0575
+  ],
+  "approach_target_position_m": [
+    0.0,
+    0.18,
+    0.0635
+  ],
+  "runtime_pose_writes": false,
+  "external_forces_applied": false,
+  "hardware_access": false,
+  "scene_registration": "nominal",
+  "calibration_verified": false,
+  "evaluation_contract_sha256": "9a36a4a8d77f66032dc3be4ebd1a44baaecfd6fa40b2770244696103bbb489bd",
+  "scene_xml_sha256": "198c935615e3b86ba187138ed0cd2a37f3b662330c067ad3db884bf8e1d4300b",
+  "collision_policy_sha256": "1f078240f86db21e21eb4ef0ef4726a3ee5c82fe82ff7f464e1a60d3fa50d816",
+  "source_code_hashes": {
+    "verify_model.py": "570d93eb3343ee5e1dced738314cacd420bbe6dcf92ef47b769af967797f29ea",
+    "diagnose_trial.py": "980c75f9fc4fb2f9044e401fd7c69f18991aa12b982439f729e792795a16af79",
+    "build_scene.py": "b3afa347760fcae54f1faaf1d564e24239f2dcce08725b1888b03593b4778890",
+    "validate_evaluator.py": "f80c8a06a758e3ab338a51d72f8ee928026fe3e4297bd944a0c8e0afefc8553f",
+    "run.py": "0fd3f589edb5d52a2583701b802e8044fcebbe77a5bcb343da295fa59245c9e2",
+    "ik.py": "d382e2c271343c8e0ea9a32f35b9cce8674dfaa949588e08616c7cfccbd6f23b",
+    "review_evaluator_cases.py": "109cda6f5263a9030c0643312f2103c68f8e2e0ff7d72300ea162c9c6f882ea2",
+    "evaluate.py": "7c0aac0ea0d20c1e3b9a3a600aa2461cc8da7f39f98ec8ca479fd8cecc1764be",
+    "task_console.py": "68c4c316c4a6274ef6005d49e29a9c47df06db95950716b3bc51526a5ed1c610",
+    "inspect_geometry.py": "c402afb20331bf9455be03fcd45eacfbce73168b322ddf74f12a60367aabf396"
+  },
+  "controller": {
+    "type": "bounded MuJoCo position servo with implicit velocity feedback + model bias feedforward; controls are radians",
+    "arm_kp_Nm_per_rad": 60.0,
+    "arm_kd_Nm_s_per_rad": 2.0,
+    "jaw_kp_Nm_per_rad": 0.12,
+    "jaw_kd_Nm_s_per_rad": 0.003,
+    "arm_torque_bound_Nm": 1.0,
+    "jaw_torque_bound_Nm": 0.08
+  },
+  "wall_time_s": 11.406053878999955,
+  "stop_reason": null,
+  "exception": null,
+  "completed_samples": 11001
+}

@@ -33,7 +33,7 @@ branch, not as commands to replay: appending to an existing README or committing
 README would be wrong. Keep the existing history and files, ensure the branch is `main`, add or
 verify `origin`, then commit and push the real content.
 
-## 3. Check the remote before the first push
+## 3. Check the remote before each push
 
 ```bash
 rtk proxy gh repo view OWNER/REPO --json visibility,isEmpty,defaultBranchRef
@@ -43,6 +43,12 @@ rtk proxy git ls-remote <url>            # empty output means an empty remote
 - If the remote is public, confirm nothing private is about to be published: copies of
   private repositories, conversation logs, local credentials. Ask before pushing such content
   to a public repository.
+- Recheck current visibility; an earlier PRIVATE handoff is not evidence of today's
+  visibility. If only technical artifacts are authorized, select code/synthetic images/
+  technical records and keep real captures/conversations local. For a user requirement
+  excluding local paths, run the staged audit with `--public-artifacts`. This inspects
+  decompressed gzip text and NumPy string fields; compression does not redact data.
+  Images/videos still need a content/provenance review; regex checks cannot prove privacy.
 - If the remote is not empty and shares no history with the local branch, stop and ask.
   Never `--force` unless the user explicitly asks for it.
 

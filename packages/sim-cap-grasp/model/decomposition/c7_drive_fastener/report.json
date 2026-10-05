@@ -1,0 +1,22 @@
+{
+  "source_sha256": "60e5d1f703ebe0e096b2aa29a33cddc131910195ffed4b2d5ebe0e13a9fda72b",
+  "source_scale_to_m": 1.0,
+  "method": "separate connected fasteners; convex hull per screw/washer, no inter-part bridge",
+  "parts": 10,
+  "source_bounds_m": [
+    [
+      -0.00989978739344,
+      -0.0174996083563,
+      0.0165
+    ],
+    [
+      0.00989978739344,
+      0.0174996083563,
+      0.0323
+    ]
+  ],
+  "source_watertight": true,
+  "proxy_vertex_to_source_vertex_max_m": 0.0,
+  "proxy_vertex_to_source_vertex_p95_m": 0.0,
+  "error_limitations": "Vertex sampling diagnostic, not certified surface error. Source visual/contact proxy comparison images supplied; mounting bores/minor features may be filled, large gaps decomposed."
+}
