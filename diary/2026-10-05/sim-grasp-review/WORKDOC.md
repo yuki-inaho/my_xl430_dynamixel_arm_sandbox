@@ -53,10 +53,10 @@
 - [x] 🛠 **エラー時対処**: file protocol拒否時はloopback HTTPのpreviewを使用。別sessionを閉じない。
 
 ### 手順5: 限定commitとpushを実行する（TR5）
-- [ ] 🖐 **操作**: 新package/公開技術記録/skillだけをstage、precommit監査、commit、nonforce push。
-- [ ] 🔎 **確認**: remote mainとHEAD一致、元archive/実写/会話raw/既存他作業をstageしていない。
-- [ ] 🧪 **テスト**: git diff --cached --check、staged audit、git ls-remote。公開データを追加する場合は明示回答を待つ。
-- [ ] 🛠 **エラー時対処**: remote先行ならfetchし今回の限定commitだけ通常rebaseして再検証、force pushしない。
+- [x] 🖐 **操作**: 新package/公開技術記録/skillだけをstage、precommit監査、commit、nonforce push。
+- [x] 🔎 **確認**: remote mainとHEAD一致、元archive/実写/会話raw/既存他作業をstageしていない。
+- [x] 🧪 **テスト**: git diff --cached --check、staged audit、git ls-remote。公開データを追加する場合は明示回答を待つ。
+- [x] 🛠 **エラー時対処**: remote先行ならfetchし今回の限定commitだけ通常rebaseして再検証、force pushしない。
 
 ## 4. コマンド参考
 `cd packages/sim-cap-grasp && uv sync --frozen && MUJOCO_GL=egl uv run --no-sync python run.py --seed 0 --output results/review-nominal`
@@ -64,12 +64,22 @@
 source/cacheの修正はbuild_scene.py、IKはik.py、実行はrun.py、判定はevaluate.py、証拠はreport.py。依存仕様はpackage pyproject/uv.lockを固定。
 
 ## 6. 完了の定義
-- [ ] TR1: 元全要求との初期/改善後判定を根拠付きで保存。
-- [ ] TR2/3: repoの実体から新環境mj_stepがSUCCESS、negativeがFAIL、repeat比較が存在。
-- [ ] TR3/4: 全失敗履歴はarchiveに保持、公開する選択rawと再現コード、二視点証拠、限界が存在。
-- [ ] TR4/5: 更新skillと作業記録、公開stage監査、commit/push/HEAD一致確認が存在。
+- [x] TR1: 元全要求との初期/改善後判定を根拠付きで保存。
+- [x] TR2/3: repoの実体から新環境mj_stepがSUCCESS、negativeがFAIL、repeat比較が存在。
+- [x] TR3/4: 全失敗履歴はarchiveに保持、公開する選択rawと再現コード、二視点証拠、限界が存在。
+- [x] TR4/5: 更新skillと作業記録、公開stage監査、commit/push/HEAD一致確認が存在。
 
 ## 7. 作業記録
+2026-10-05 20:10:57 JST+0900: 行動カウント40でリマインダー表示、0へreset。20チェック/4DoD全確認、コード2c1d8a4公開一致。最終追加変更はこの完了記録とレビューの2文書だけで、geometry/source/raw/media変更なし。
+2026-10-05 20:08:39 JST+0900: DoD TR4/5達成: skill2形式PASSと3publication controls、stage/private監査PASS、2c1d8a4のcommit/push/remote一致を確認。最終記録を次の小commitで保存する。
+2026-10-05 20:08:39 JST+0900: DoD TR3/4達成: 原archive無変更、全歴史的raw/失敗と新trialをgzip/numeric実体で公開、二視点/HTML/QA確認。物性/現物版/校正/除外接触は未確認。
+2026-10-05 20:08:39 JST+0900: DoD TR2/3達成: new env/固定lock/model/inputの実体、fresh SUCCESS/negative FAIL、同PC9系列完全一致と別環境差を公開。
+2026-10-05 20:08:39 JST+0900: DoD TR1達成: REVIEW.mdで全原TR1..5と8指摘、改善後根拠と残存限界を照合。
+2026-10-05 20:04:39 JST: 手順5対処完了: fetch後mainのahead/behind0/0、他featurebranch不変、force/rebase不要。既存camera2logsと他untrackedを残す。コード公開完了、以下DoD確認と完了記録のみ追加公開する。
+2026-10-05 20:04:39 JST: 手順5テスト完了: generatedOBJbytes不変のbinary属性後diff --check PASS、stage blocker0、1697公開packagefilesSHA一致。60警告は合成媒体/geometry/numeric largeとして承認scope内。remote再照合PASS。
+2026-10-05 20:04:39 JST: 手順5確認完了: ls-remote main=HEAD2c1d8a4、除外suffixがcommitになし。新raw producerのbuild/IK/run/evaluate4SHAが現codeに一致。reportはrun後に証憑修正された別工程。
+2026-10-05 20:04:39 JST: 手順5操作完了: commit2c1d8a48069e2f270e672eb026382fa60bbfdaf7を通常push。1705filesは明示scopeのみ、原archive/実写/会話/既存差分は除外。PUBLIC初期1702と追加3artifact監査blocker0。noreply著者をcommit限定指定。
+2026-10-05 19:56:59 JST: カウント40リマインダー後0へreset。限定stage1702files/264.46MiBをpublic-artifactsで点検、秘密/絶対path/opaque archive/conversation blocker0、警告60は合成binary/元mesh/数値raw大型。1696package実体hashと必須source全stage確認。git diff --checkは1260生成CoACD OBJ末尾空行を指摘。元geometry/cache hashを変えず保存するため、package限定.gitattributesで生成decomposition OBJをbinaryに指定し、再検査する。
 2026-10-05 19:52 JST: 手順4対処完了: supported loopback previewを使用、任意favicon404のみ。専用headless sessionと自分のHTTP serverのみ終了、他session不変。次は手順5操作。
 2026-10-05 19:52 JST: 手順4テスト完了: browser-qa.json PASS、2skills形式PASS、変更python lint/format PASS、gzip roundtripとfresh modelasset hash guardを確認。
 2026-10-05 19:52 JST: 手順4確認完了: 13画像/4動画/24links PASS、current hold画像目視。元と新trialを名前/比較JSONで分離。source/lock/model/inputs/rawの実体とstandalone CLIを確認。
@@ -90,7 +100,7 @@ source/cacheの修正はbuild_scene.py、IKはik.py、実行はrun.py、判定�
 
 ### 8.2 現況サマリ
 
-原作業書の名目成功は生状態とforceの独立監査で支持された。一方、入力fallback、stale cache、受動支持検査、中断記録、公開内容に改善が必要だった。改善版の新しい固定依存環境から実mj_stepを実行し、nominal/repeat SUCCESSとno-close FAILUREを確認した。元XML/閾値/meshはbytes一致だが、再IK丸め差と接触後の軌跡差があるためcross環境bit-exactは主張しない。歴史的感度失敗も残した。実機、外部校正、真の材料物性、全可動域の安全性は未確認のまま。解析・改善・合成証憑は完成、公開commit/pushは次手順。
+原作業書の名目成功は生状態とforceの独立監査で支持された。一方、入力fallback、stale cache、受動支持検査、中断記録、公開内容に改善が必要だった。改善版の新しい固定依存環境から実mj_stepを実行し、nominal/repeat SUCCESSとno-close FAILUREを確認した。元XML/閾値/meshはbytes一致だが、再IK丸め差と接触後の軌跡差があるためcross環境bit-exactは主張しない。歴史的感度失敗も残した。実機、外部校正、真の材料物性、全可動域の安全性は未確認のまま。解析・改善・合成証憑とコード公開は完成、commit2c1d8a4の通常pushとremote一致を確認済み。この完了記録を追加保存する。
 
 ### 8.3 ゴール要求分析との照合
 
@@ -100,7 +110,7 @@ source/cacheの修正はbuild_scene.py、IKはik.py、実行はrun.py、判定�
 |TR2|改善と可搬package|達成|source/lock/model/input/rawの実体、検証と4不良対照|原物性・proxy限界は残る|
 |TR3|新環境実再実行|達成|review-nominal/repeat SUCCESS、no-close FAILURE、raw audit PASS|cross環境軌跡は未一致として保存|
 |TR4|記録/証憑/skill|達成|REPORT.html、13画像/4動画、browser QA、2skills形式検証|available predecessor cleanのみlocal、現API raw会話はPCに未保存|
-|TR5|commit/push|未達|まだstage/commit/pushしていない|次手順で限定公開・HEAD確認|
+|TR5|commit/push|達成|commit2c1d8a4の通常push、remote=HEAD実確認|完了記録を追加保存|
 
 ### 8.4 完了の定義との照合
 
@@ -109,7 +119,7 @@ source/cacheの修正はbuild_scene.py、IKはik.py、実行はrun.py、判定�
 |元要求と改善判定|達成|原作業書/source/rawを読取り照合|REVIEW.md|unchecked課題を隠さない|
 |repo実体のfresh dynamics|達成|uv sync --frozen / run.py / audit_raw_trial.py|review-verification.json|同PCrepeat bit-exact、元別環境は不一致|
 |失敗保全と二視点証拠|達成|gzip roundtrip/HTML/Playwright|全results実体・browser-qa.json|実写/会話/元archiveはローカル|
-|skills/記録/監査/公開|一部達成|skill validate、変更scope lint/format|2skills PASS、公開前stage未実施|commit/push/HEAD確認が残る|
+|skills/記録/監査/公開|達成|skill validate、変更scope lint/format、stage audit、ls-remote|2skills PASS、blocker0、2c1d8a4公開一致|完了記録を追加保存|
 
 ### 8.5 実行した調査コマンドと結果
 
@@ -129,7 +139,7 @@ source/cacheの修正はbuild_scene.py、IKはik.py、実行はrun.py、判定�
 
 |区分|項目|現況|リスク|対応|
 |---|---|---|---|---|
-|未達|公開commit/push|次手順|公開が未完了|明示stage/監査/nonforce push|
+|達成|公開commit/push|2c1d8a4を通常pushし一致確認|今回のcommitに私的素材/絶対pathなし|この完了記録を小commitで保存|
 |未確認|実機/校正/真のsofttip物性|offlineのみ|simulation成功を現実成功へ外挿できない|別依頼で実測と新しい許可範囲を定義|
 |制約|adjacent/mount whole-body collision除外|policy原条件保持|除外面の物理接触を保証しない|collision-exclusions.jsonを公開、全可動域安全を主張しない|
 |制約|cross環境数値差|原と新軌跡不一致|seed/versionだけで完全一致を保証できない|差をphase別に記録、同PCrepeatとは区別|
@@ -138,11 +148,11 @@ source/cacheの修正はbuild_scene.py、IKはik.py、実行はrun.py、判定�
 
 ### 8.7 最終判定
 
-**判定:** 条件付き完了（解析・改善・名目再実行・証憑まで）。
+**判定:** 完了（今回の解析・改善・名目再実行・合成証憑・限定公開）。
 
-**理由:** 固定契約の名目SUCCESS/negative FAILURE、4対照、独立監査、二視点証拠が実体で確認できる。TR5の公開commit/pushは未実施であり完了としない。
+**理由:** 固定契約の名目SUCCESS/negative FAILURE、4対照、独立監査、二視点証拠が実体で確認できる。TR5は2c1d8a4の通常pushとremote HEAD一致で確認した。2026-10-05 20:08:39 JST+0900に20操作チェック/4DoDを全確認。実機・真の物性・全可動域・cross環境bit-exactは完成範囲に含めない。現API全文rawは取得できず、available predecessor exportはlocalだけに保持。
 
-**次アクション:** 手順5の限定stage、私的情報/絶対path/巨大archiveの監査、commit/pushとremote HEAD確認。
+**次アクション:** この完了記録のみ追加commit/pushし、最終remote HEADを確認する。再現コード/モデル/生ログの再実行は追加変更がないため繰り返さない。
 2026-10-05 19:43:20 JST: カウント40でリマインダー表示、0へreset。手順4操作中。改善版の全二視点映像生成完了。公開user決定を反映。再利用skill追加、git監査にgzip/NumPy文字列/絶対path拒否を追加。available predecessor sessionをagent-jsonl/bundleでlocal cleanへ出力(149events/56supplement、伏字0)。このreviewのAPI raw logはPC sessionsに存在せず、predecessor exportを現turn全文とは表記しない。
 2026-10-05 19:39:36 JST 手順3: 原state完全一致の分析assertが失敗。scene/契約bytes同一とIK丸め差・phase差を調査、同PC再現とcross環境差を分離。成功契約/物性変更なし。手順3完了。
 2026-10-05 19:39:36 JST 手順3: 4 integrity tests PASS、ruff check/format PASS(9files)、5pose FK/rank検証PASS、別script raw監査PASS、wrong mesh digest拒否とgzip roundtrip一致。

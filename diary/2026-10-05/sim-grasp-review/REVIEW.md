@@ -36,6 +36,8 @@
 
 ## 改善後の追跡
 
+最終判定: **名目simulationと再現packageの改善はPASS、実機安全性/現実一致は未確認。** R1/R2/R3/R4/R5/R7/R8はコード・4不良対照・fresh dynamics・独立監査・公開stage監査で改善を確認した。R6は除外一覧と結論の範囲を明示する文言改善であり、除外面そのものの物理検証を完了したという意味ではない。公開commitは2c1d8a4、通常pushでremote mainとの一致を確認済み。
+
 改善版の独立raw監査はPASS。新環境でnominal/repeatはSUCCESS、no-closeはFAILURE。新nominalは36.580984mm/2秒/99.65%/1.385053mmで、元の37.723014mm/0.758806mmとは異なる。同PCの9状態系列はbit-exactだが、元別環境とは不一致。再生成IKの差<=1.5e-15radから接触後の差へ増幅する観察があるが、因果を隔離した実験ではない。cross-platformの数値頑健性は未確認として残す。
 
 MuJoCoの[受動力仕様](https://mujoco.readthedocs.io/en/3.13.0/computation/index.html#passive-forces)に照らしてspring/damping/流体等を通常判定へ追加した。[接触・滑り仕様](https://mujoco.readthedocs.io/en/3.13.0/modeling.html#preventing-slip)は名目solverの説明根拠であり、実材料の物性同定ではない。歴史的trialのproducer sourceは全版同梱ではない。raw states/contact/controlは残るが、最終コードのrunコマンドで全過去版を再現できるとは主張しない。
