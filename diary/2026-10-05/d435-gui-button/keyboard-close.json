@@ -1,0 +1,24 @@
+[
+  {
+    "session": "session-093644-555518",
+    "key": "q",
+    "events": [
+      {
+        "kind": "gui_closed",
+        "port_closed": true,
+        "torque_unchanged_on_exit": true
+      }
+    ]
+  },
+  {
+    "session": "session-094048-469857",
+    "key": "Escape",
+    "events": [
+      {
+        "kind": "gui_closed",
+        "port_closed": true,
+        "torque_unchanged_on_exit": true
+      }
+    ]
+  }
+]

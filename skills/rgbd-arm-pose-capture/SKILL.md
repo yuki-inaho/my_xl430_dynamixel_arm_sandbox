@@ -18,6 +18,10 @@ telemetry as UNKNOWN. Camera-only capture must be a separate explicit action, pr
 null counts and refusing promotion to a joint-pose reference. After communication faults,
 use an explicit connection recheck rather than silently rearming controls. Native UI tests
 can use xdotool while torque transitions are exercised with the existing SDK emulator.
+For multiple cameras, select and validate each owner/serial independently; failure of a
+different preview must not hide fresh joint telemetry or block the selected capture.
+Bind Q/Esc to the same close path as the window button and verify port release with torque
+unchanged; GUI exit is separate from torque OFF.
 
 1. Separate **external observation camera** from **camera mounted on the arm**. Enumerate SDK
    devices and stream profiles; select by serial, then save the actual device, profiles and

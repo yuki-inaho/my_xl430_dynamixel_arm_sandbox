@@ -3,6 +3,7 @@
 import json
 import time
 from datetime import datetime
+from types import SimpleNamespace
 
 import pytest
 from dynamixel_sdk import PacketHandler
@@ -89,11 +90,12 @@ def test_capture_copies_rgbd_brackets_counts_and_does_not_promote_unknown_or_mov
     old_frame = [False]
 
     def http(_base, path, payload=None):
+        serial = "d435" if _base == "http://d435" else "camera"
         if path == "/status.json":
-            return json.dumps({"serial": "camera", "age_seconds": 0}).encode()
+            return json.dumps({"serial": serial, "age_seconds": 0}).encode()
         received = time.time() - (10 if old_frame[0] else 0)
         return json.dumps({"path": str(source), "metadata": {
-            "requested_serial": "camera",
+            "requested_serial": serial,
             "host_frame_received_at": datetime.fromtimestamp(received).astimezone().isoformat()
         }}).encode()
 
@@ -105,6 +107,16 @@ def test_capture_copies_rgbd_brackets_counts_and_does_not_promote_unknown_or_mov
     assert record["before"]["observed_at"] <= record["after"]["observed_at"]
     assert all((path.parent / name).read_bytes() == (source / name).read_bytes() for name in files)
     assert serial.writes() == []
+    station = pose_gui.Station(SimpleNamespace(camera="http://d405", serial="camera",
+                            d435_camera="http://d435", d435_serial="d435"), tmp_path)
+    external = station.capture(c, "d435")
+    d435 = json.loads(external.read_text())
+    assert d435["camera_name"] == "D435" and d435["accepted"]
+    assert d435["camera_receipt"]["metadata"]["requested_serial"] == "d435"
+    assert d435["counts"] == record["counts"]
+    assert external.parent.name.startswith("capture-d435-")
+    with pytest.raises(ValueError, match="selection"):
+        station.capture(c, "unknown-camera")
     put(serial.motors[2].t, 128, 4, 1)
     moving = json.loads(pose_gui.capture(c, "http://localhost", "camera", tmp_path).read_text())
     assert not moving["accepted"]

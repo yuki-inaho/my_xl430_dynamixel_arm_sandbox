@@ -1,4 +1,4 @@
-"""Native D405 reference-pose, manual torque and RGB-D capture station."""
+"""Native D405/D435 reference-pose, manual torque and RGB-D capture station."""
 
 import argparse
 import io
@@ -41,7 +41,7 @@ def http(base: str, path: str, payload: dict | None = None) -> bytes:
 def camera_status(base: str, serial: str) -> dict:
     status = json.loads(http(base, "/status.json"))
     if status.get("serial") != serial or status.get("age_seconds", 999) > 2:
-        raise RuntimeError("D405 serial mismatch or stale camera frame")
+        raise RuntimeError("Camera serial mismatch or stale frame")
     return status
 
 
@@ -49,7 +49,7 @@ def save_json(path: Path, data: dict) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def capture(controller, base: str, serial: str, output: Path) -> Path:
+def capture(controller, base: str, serial: str, output: Path, *, camera_name="D405") -> Path:
     camera_status(base, serial)
     before = controller.snapshot() if controller is not None else None
     not_before = time.time()
@@ -65,7 +65,8 @@ def capture(controller, base: str, serial: str, output: Path) -> Path:
                 "ir_left.png", "ir_right.png", "metadata.json", "calibration.toml")
     if not all((source / name).is_file() for name in required):
         raise RuntimeError("Incomplete RGB-D capture")
-    destination = output / datetime.now().strftime("capture-%H%M%S-%f")
+    prefix = "capture" if camera_name == "D405" else f"capture-{camera_name.lower()}"
+    destination = output / (prefix + datetime.now().strftime("-%H%M%S-%f"))
     destination.mkdir()
     for name in required:
         shutil.copy2(source / name, destination / name)
@@ -84,6 +85,7 @@ def capture(controller, base: str, serial: str, output: Path) -> Path:
         "synchronization": "host-time bracketing; not hardware synchronized",
         "calibration_verified": False,
         "camera_only": controller is None,
+        "camera_name": camera_name,
     })
     return destination / "capture.json"
 
@@ -115,6 +117,15 @@ class Station:
     def start(self):
         for thread in self.threads:
             thread.start()
+
+    def capture(self, controller, camera):
+        if camera is None:
+            base, serial, name = self.args.camera, self.args.serial, "D405"
+        elif camera == "d435":
+            base, serial, name = self.args.d435_camera, self.args.d435_serial, "D435"
+        else:
+            raise ValueError("Unknown camera selection")
+        return capture(controller, base, serial, self.output, camera_name=name)
 
     def robot(self):
         with (self.output / "events.jsonl").open("x", encoding="utf-8") as log:
@@ -153,8 +164,7 @@ class Station:
                                 if name == "capture" and controller is None:
                                     raise RuntimeError("No robot; use explicit camera-only capture")
                                 subject = controller if name == "capture" else None
-                                path = capture(subject, self.args.camera, self.args.serial,
-                                               self.output)
+                                path = self.capture(subject, payload)
                                 emit({"kind": "gui_capture", "path": str(path)})
                                 self.events.put(("capture", path))
                             elif name == "torque":
@@ -221,7 +231,7 @@ class Window:
         style.configure("TLabel", font=("sans-serif", 11))
         outer = ttk.Frame(root, padding=16)
         outer.pack(fill="both", expand=True)
-        ttk.Label(outer, text="D405 · 手本姿勢 / 保持 / RGB-D撮影",
+        ttk.Label(outer, text="D405 / D435 · 手本姿勢 / 保持 / RGB-D撮影",
                   font=("sans-serif", 19, "bold")).pack(anchor="w")
         ttk.Label(outer, text="手で重量を支える → OFF → 手本を見て合わせる → 現在位置でON → 撮影"
                   "    |    閉じてもトルクは切り替わりません").pack(anchor="w", pady=(5, 12))
@@ -240,12 +250,19 @@ class Window:
         self.set_button.pack(side="left", padx=6)
         self.depth = tk.BooleanVar()
         ttk.Checkbutton(bar, text="深度表示", variable=self.depth).pack(side="left", padx=12)
-        self.capture_button = ttk.Button(bar, text="RGB-D + 関節状態を撮影 [F8]",
+        self.capture_button = ttk.Button(bar, text="D405 + 関節状態を撮影 [F8]",
                                          command=lambda: self.command("capture", None))
         self.capture_button.pack(side="right")
         self.camera_only_button = ttk.Button(bar, text="D405のみ撮影（関節値なし）",
                                             command=lambda: self.command("camera_only", None))
         self.camera_only_button.pack(side="right", padx=8)
+        external = ttk.Frame(outer)
+        external.pack(fill="x", pady=(0, 8))
+        self.d435_button = ttk.Button(external, text="D435 + 関節状態を撮影 [F9]",
+                                      command=lambda: self.command("capture", "d435"))
+        self.d435_button.pack(side="left")
+        ttk.Label(external, text="  俯瞰カメラのRGB-D・パラメータ・撮影前後の関節値を保存"
+                  ).pack(side="left")
         self.table = ttk.Treeview(outer, columns=("id", "count", "reference", "delta", "torque",
                                                  "temp", "voltage"), show="headings", height=5)
         for key, label in zip(self.table["columns"],
@@ -277,6 +294,9 @@ class Window:
                   + ("" if station.args.control else "  READ ONLY：トルク操作は無効。"),
                   foreground="#7c4311").pack(anchor="w", pady=5)
         root.bind("<F8>", lambda _: self.command("capture", None))
+        root.bind("<F9>", lambda _: self.command("capture", "d435"))
+        for key in ("<q>", "<Q>", "<Escape>"):
+            root.bind(key, lambda _: self.close())
         root.protocol("WM_DELETE_WINDOW", self.close)
         if reference:
             self.open_reference(reference)
@@ -344,6 +364,8 @@ class Window:
     def command(self, name, payload):
         fresh = (time.monotonic() - self.camera_at <= 2 and self.camera_error is None
                  if name in ("camera_only", "recheck") else self.fresh())
+        if name == "capture" and payload == "d435":
+            fresh = self.motors_fresh()  # selected D435 owner is checked by the capture worker
         if self.busy or self.closing or not fresh:
             self.message.set("処理中、または最新のカメラ/関節状態を取得できていません。")
             return
@@ -357,8 +379,10 @@ class Window:
 
     def fresh(self):
         now = time.monotonic()
-        return (self.state is not None and now - self.state["at"] <= 2
-                and now - self.camera_at <= 2 and self.camera_error is None)
+        return self.motors_fresh() and now - self.camera_at <= 2 and self.camera_error is None
+
+    def motors_fresh(self):
+        return self.state is not None and time.monotonic() - self.state["at"] <= 2
 
     def tick(self):
         while not self.station.events.empty():
@@ -369,8 +393,9 @@ class Window:
                 self.last_capture = value
                 record = json.loads(value.read_text())
                 accepted = record["accepted"]
-                label = ("D405のみ保存OK（関節値なし）" if record["camera_only"] else
-                         "保存OK" if accepted else "保存（動作/異常あり: rejected）")
+                camera = record.get("camera_name", "D405")
+                label = (f"{camera}のみ保存OK（関節値なし）" if record["camera_only"] else
+                         f"{camera} 保存OK" if accepted else "保存（動作/異常あり: rejected）")
                 self.message.set(f"{label}: {value}")
             elif kind == "torque":
                 self.message.set("全IDの現在位置保持ONを確認。" if value
@@ -404,7 +429,7 @@ class Window:
                 except Exception as error:
                     self.camera_error = str(error)
                     self.camera_text.set(f"D405 preview UNKNOWN: {error}")
-        fresh = self.fresh()
+        fresh = self.motors_fresh()
         for index in range(5):
             motor = self.state["motors"][index] if self.state else {}
             targets = (self.reference or {}).get("counts")
@@ -417,10 +442,12 @@ class Window:
                             "UNKNOWN" if torque is None else "ON" if torque else "OFF",
                             motor.get("temperature_c", "?"),
                             (motor["voltage_raw"] / 10) if motor.get("voltage_raw") else "?"))
-        active = fresh and not self.busy and not self.closing
+        active = self.fresh() and not self.busy and not self.closing
         self.recheck_button.configure(state="normal" if not self.busy and not self.closing
                                       else "disabled")
         self.capture_button.configure(state="normal" if active else "disabled")
+        self.d435_button.configure(
+            state="normal" if fresh and not self.busy and not self.closing else "disabled")
         self.camera_only_button.configure(
             state="normal" if not self.busy and not self.closing
             and time.monotonic() - self.camera_at <= 2 and self.camera_error is None
@@ -451,6 +478,8 @@ def main(argv=None):
     parser.add_argument("--device")
     parser.add_argument("--camera", default="http://127.0.0.1:18109")
     parser.add_argument("--serial", default="230322272284")
+    parser.add_argument("--d435-camera", default="http://127.0.0.1:18108")
+    parser.add_argument("--d435-serial", default="922612070196")
     parser.add_argument("--reference", type=Path, default=ROOT / "config/pose_gui_reference.json")
     parser.add_argument("--output", type=Path)
     parser.add_argument("--control", action="store_true", help="Enable manual torque buttons")
@@ -465,6 +494,7 @@ def main(argv=None):
     save_json(output / "session.json", {"created_at": datetime.now().astimezone().isoformat(),
                                        "control": args.control, "camera": args.camera,
                                        "serial": args.serial, "device": args.device})
+    save_json(output / "d435.json", {"camera": args.d435_camera, "serial": args.d435_serial})
     root = tk.Tk()
     station = Station(args, output)
     window = Window(root, station, args.reference)

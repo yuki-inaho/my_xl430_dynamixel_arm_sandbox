@@ -3,6 +3,7 @@
 ![GUIの実画面](../diary/2026-10-05/d405-pose-gui/gui-final.png)
 
 手本の写真とD405ライブ映像を並べ、5台の現在count・手本との差・トルク・温度・電圧を表示する。手で合わせた姿勢を現在位置で保持し、RGB-Dと関節状態を記録するためのネイティブGUI。世界角への校正や手本への自動移動は行わない。
+「D435 + 関節状態を撮影」（F9）で俯瞰側のRGB-D/params/前後関節値も保存できる。D405はF8。Q/q/Escはトルク状態を変えずGUIを終了する。
 
 ## 起動
 
@@ -15,6 +16,7 @@ rtk proxy env DISPLAY=:1 uv run --no-sync python -m arm_observer.pose_gui --cont
 `--control`無しはREAD-onlyで、トルクボタンが無効。起動と終了はトルク状態を変更しない。Tkinter（Ubuntu `python3-tk`）とPillowを使用する。OpenCV headlessを入れ替えたり、cvui/OpenCV GUI版を重複インストールしたりする必要はない。
 
 既存D405 owner `http://127.0.0.1:18109`（serial `230322272284`）を利用する。カメラSDKをこのプロセスから開かない。別のowner/個体では `--camera URL --serial SERIAL` を指定。serial接続先は `config/arm.toml`、上書きは `--device PATH`。対象はXL430-W250・ID1..5・1Mbps・Protocol2・mode3。
+俯瞰D435はowner `http://127.0.0.1:18108`、serial `922612070196`。別環境では `--d435-camera URL --d435-serial SERIAL` を指定する。D435撮影はD405のlive状態に依存せず、選んだownerのserial/freshnessを撮影時に検証する。
 
 ## 操作
 
@@ -33,6 +35,7 @@ ON準備では全台のID/model/secondary alias/mode/drive/homing/position limit
 標準出力先は `~/data/xl430-arm/YYYY-MM-DD/pose-gui/session-HHMMSS-*/`。別の場所は `--output PATH`（新しいディレクトリ）で指定。
 
 - `capture-*/`: color PNG、raw/aligned uint16 depth、IR左右、depth preview、metadata.json、calibration.toml、capture.json。
+- D435出力は `capture-d435-*/`。capture.jsonの `camera_name` とmetadataのserialで撮影個体を区別する。
 - `capture.json`: 撮影前後の生関節値、torque/velocity/health、camera receipt、host-time bracket、accepted/rejected。ハードウェア同期ではない。
 - `reference/`: 選んだ手本の画像実体とJSON。source pathだけを保存しない。
 - `events.jsonl`: READ、各RAM送信、操作結果、異常、serial close。`session.json`: 接続先と起動モード。
