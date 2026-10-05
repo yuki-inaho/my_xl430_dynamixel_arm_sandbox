@@ -1,0 +1,60 @@
+name: Prepare offline MuJoCo simulation environment
+
+on:
+  push:
+    branches: [work/sim-cap-grasp-20261005]
+    paths: [.github/workflows/sim-cap-grasp-environment.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  public-dependencies-only:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      # Intentionally do not checkout the repository or access any private inputs.
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Download fixed public interpreter and binary dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p bundle/wheels
+          cat > bundle/requirements.txt <<'EOF'
+          mujoco==3.13.0
+          numpy==2.5.3
+          scipy==1.18.1
+          Pillow==12.3.0
+          trimesh==5.1.0
+          pytest==8.4.2
+          ruff==0.16.8
+          EOF
+          python -m pip download --only-binary=:all: --dest bundle/wheels -r bundle/requirements.txt
+          curl --fail --location --retry 2 \
+            'https://github.com/astral-sh/python-build-standalone/releases/download/20260203/cpython-3.12.12%2B20260203-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz' \
+            --output bundle/python312.tar.gz
+          tar -tzf bundle/python312.tar.gz > bundle/python-members.txt
+          python -m pip install --no-index --find-links bundle/wheels -r bundle/requirements.txt
+          python - <<'PY'
+          import json, hashlib, pathlib, sys
+          import mujoco, numpy, scipy
+          model = mujoco.MjModel.from_xml_string('<mujoco><option gravity="0 0 -9.81"/><worldbody><body pos="0 0 1"><freejoint/><geom type="sphere" size="0.01" mass="0.0015"/></body></worldbody></mujoco>')
+          data = mujoco.MjData(model)
+          for _ in range(100):
+              mujoco.mj_step(model, data)
+          assert mujoco.__version__ == '3.13.0'
+          assert 0 < data.qpos[2] < 1
+          root = pathlib.Path('bundle')
+          metadata = {'scope': 'public dependencies only; no robot or private input access', 'python_host': sys.version, 'mujoco': mujoco.__version__, 'numpy': numpy.__version__, 'scipy': scipy.__version__, 'freefall_smoke_pass': True, 'files': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(root.rglob('*')) if p.is_file()}}
+          (root / 'MANIFEST.json').write_text(json.dumps(metadata, indent=2))
+          print(json.dumps({k:v for k,v in metadata.items() if k != 'files'}, indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sim-cap-grasp-offline-python312
+          path: bundle/
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
