@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Random cap-grasp — reviewed technical snapshot</title>
+<style>body{font:17px/1.65 system-ui,sans-serif;max-width:980px;margin:auto;padding:24px;color:#163043;background:#f2f6fa}h1{font-size:1.8em}figure{margin:24px 0;background:white;padding:16px;border-radius:12px}img{display:block;max-width:100%;height:auto}a{color:#075a98}strong{color:#8b3600}code{overflow-wrap:anywhere}</style>
+<h1>ランダム把持: レビュー済み技術snapshot</h1>
+<p>qualification-002: 固定モデル・固定pitch・事前screenで選ばれた100試行中100 SUCCESS、unsafe 0、invalid 0。全2,300,100 sampleと接触ログの独立監査はローカルでPASS。seed 91021261008、335提案から100選択、実行1,186.24秒。</p>
+<p><strong>下降時の継続把持は未達:</strong> 97/100で両指接触が消失し、89/100は箱への着地前。着地前の最大中心速度0.69846 m/s。保持と最終配置の合格を、穏やかな下降の成功とは扱わない。</p>
+<p>先行qualification-001は96成功・1実失敗・3中断不備でINCOMPLETE。元提出者の100rawは未納品。今回の結果は新規実験であり、元の主張の追認ではない。</p>
+<p>公開物はコード、技術記録、CSV、代表合成画像。全raw・freeze・動画は別の検証済みローカルbundleに保持。このページとCSVのみで過去の全raw監査を再実行することはできない。</p>
+<p><a href="RANDOM_README.md">再実行方法・前提</a> · <a href="PUBLICATION.md">公開範囲・来歴</a> · <a href="PUBLICATION_NOTES.json">技術note</a> · <a href="PUBLICATION_SHA256SUMS">公開file hashes</a> · <a href="evidence/report-qualification-002/trials.csv">全100試行CSV</a> · <a href="evidence/report-qualification-002/proposals.csv">全335提案CSV</a></p>
+<figure><img src="media/random-qualification-002/representative/external-0124.png" alt="代表試行の保持区間、アームと持ち上がった蓋の外部視点"><figcaption>代表試行の保持区間。保存された物理traceから再描画した外部視点。実写ではない。</figcaption></figure>
+<figure><img src="media/random-qualification-002/representative/wrist-0124.png" alt="代表試行の指と蓋、名目手先視点"><figcaption>同じ代表試行の手先視点。名目D405相当であり、実カメラの光学校正を意味しない。</figcaption></figure>
+<figure><img src="media/random-qualification-002/historical-failure/external-0079.png" alt="先行batchの実物理失敗例の合成画像"><figcaption>先行batchのNO_GRIP失敗例。失敗を母数から除外せず残した証拠。画像だけを成功・失敗判定の根拠にはしない。</figcaption></figure>
+</html>

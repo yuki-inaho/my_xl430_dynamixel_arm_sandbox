@@ -10,6 +10,7 @@ reported for a human decision; they do not fail the audit.
 
 import argparse
 import gzip
+import hashlib
 import io
 import json
 import re
@@ -55,8 +56,20 @@ def staged() -> list[str]:
 
 
 def scan_text(text: str) -> dict:
-    found = {label: len(re.findall(p, text)) for label, p in SECRETS.items()}
-    emails = [e for e in re.findall(EMAIL, text) if e not in EMAIL_ALLOW]
+    # Numeric ASCII traces have no credential-assignment keywords. Avoid the
+    # expensive case-insensitive regex there; Unicode keeps the full check.
+    ascii_lower = text.lower() if text.isascii() else None
+    no_assignment = ascii_lower is not None and not any(
+        word in ascii_lower for word in ("password", "passwd", "secret", "api_key")
+    )
+    found = {
+        label: len(re.findall(p, text))
+        for label, p in SECRETS.items()
+        if label != "password_assignment" or not no_assignment
+    }
+    emails = (
+        [e for e in re.findall(EMAIL, text) if e not in EMAIL_ALLOW] if "@" in text else []
+    )
     return {
         "secrets": {k: v for k, v in found.items() if v},
         "private_key": bool(re.search(PRIVATE_KEY, text)),
@@ -101,6 +114,28 @@ def audit(path: str, warn_bytes: int, block_bytes: int, public_artifacts: bool =
                             )
         except (OSError, zipfile.BadZipFile):
             entry["blockers"].append("unreadable NumPy archive")
+    elif public_artifacts and path.endswith("/contacts.jsonl.zst"):
+        try:
+            storage_path = str(PurePosixPath(path).with_name("storage.json"))
+            storage = json.loads(git("show", f":{storage_path}"))["contacts"]
+            if (
+                storage["codec"] != "zstd"
+                or storage["path"] != "contacts.jsonl.zst"
+                or storage["compressed_sha256"] != hashlib.sha256(blob).hexdigest()
+                or storage["compressed_bytes"] != len(blob)
+            ):
+                raise ValueError("Staged contact-storage identity mismatch")
+            plain = subprocess.run(
+                ["zstd", "-qdc"], input=blob, capture_output=True, check=True
+            ).stdout
+            if (
+                storage["uncompressed_bytes"] != len(plain)
+                or storage["uncompressed_sha256"] != hashlib.sha256(plain).hexdigest()
+            ):
+                raise ValueError("Staged lossless restoration mismatch")
+            texts.append(plain.decode("utf-8"))
+        except (KeyError, ValueError, OSError, subprocess.CalledProcessError):
+            entry["blockers"].append("unverified staged zstd contact text")
     elif public_artifacts and path.endswith((".zst", ".tar", ".zip")):
         entry["blockers"].append("unreviewed archive in public technical selection")
     elif b"\0" in blob[:8192]:

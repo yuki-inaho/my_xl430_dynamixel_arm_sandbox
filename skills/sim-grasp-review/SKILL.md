@@ -30,6 +30,34 @@ Record a severity, concrete trigger and resolution for each defect before changi
   to the declared policy; do not claim a safe physical range from proxy contact success.
 - Keep partial traces and FAILURE on interruption. Validate finite CLI parameters before
   creating a trial, preserve existing outputs, and retain negative/sensitivity failures.
+  Exercise duplicate forwarded SIGINTs: ignore further SIGINT only while finalizing the
+  first interruption, then restore the previous handler. Cancel pending batch futures
+  before waiting for workers. Retain every selected target in an INCOMPLETE index; mark
+  missing/corrupt evidence explicitly rather than manufacturing a physical result.
+
+## Random cohorts and performance
+
+- Check patch application by inspecting changed files, not only exit status. Git can
+  report success while skipping all paths when invoked inside an ignored subdirectory
+  of another checkout. Use a disposable isolated application root and inspect the
+  verbose output; do not force an old patch over newer integrity protections.
+- Freeze the protocol, source snapshot, seed and pretrial selection before dynamics.
+  Keep all proposals/rejections and the first selected cohort in the denominator,
+  including runtime failures. Never replace a failed/interrupted target. Preserve
+  incomplete earlier cohorts when a new implementation/seed is evaluated. A Wilson
+  interval on a selected successful batch is descriptive, not population coverage
+  after repeated development or a guarantee over filtered-out configurations.
+- Profile one representative trial before the long batch. Remove demonstrated repeated
+  work using existing APIs. Preserve integration method, solver and observation timing;
+  compare every state array and contact-log byte before accepting a speed improvement.
+  In MuJoCo, mj_step2 can select Euler regardless of the requested implicit integrator;
+  a staged forward/integration loop needs an independent contact-bearing differential
+  check against mj_step, not merely a faster wall-clock measurement.
+- Generate report counts, CSVs and selected media from the saved index and independent
+  audit. Keep old nominal output separate. Do not reuse a presentation's hard-coded
+  counts or claim the supplier's unbundled raw evidence was verified. Separate grasp
+  hold from descent: report contact loss before support, landing speed and final
+  placement. A passing hold contract alone does not establish gentle continuous lowering.
 
 Fix demonstrated defects using the existing builder, runner, evaluator and renderer.
 Avoid a second framework, duplicate frozen models or broad unrelated test runs. Validate
@@ -40,7 +68,8 @@ actual selected trace from two useful viewpoints and inspect the resulting HTML/
 
 Ship the source, lock, real model/input assets, raw acceptance evidence and precise run
 commands. Gzip text logs losslessly when useful and let readers consume either format;
-verify the byte roundtrip. Retained historical logs are evidence of failures, not proof
+verify the byte roundtrip. For zstd, retain codec/plain/compressed hashes and reject
+multiple simultaneous formats instead of guessing. Retained historical logs are evidence of failures, not proof
 that every historical producer source is bundled. Distinguish that from final-run replay.
 
 Recheck repository visibility and the user's publication scope. For technical-only public
@@ -49,4 +78,5 @@ and compressed text for private data and local absolute paths. Content-review sy
 images/videos; a text scanner cannot determine whether a photograph is private.
 
 Project example and commands: [sim-cap-grasp](../../packages/sim-cap-grasp/README.md).
+Random-study example: [RANDOM_README.md](../../packages/sim-cap-grasp/RANDOM_README.md).
 Keep case-specific thresholds and observations there, not as universal skill defaults.
