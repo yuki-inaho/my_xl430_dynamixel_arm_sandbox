@@ -1,0 +1,50 @@
+{
+  "scope": "Public technical snapshot; full audited data and actual Git notes remain in local integration bundle",
+  "base_commit": "14577ac40ff059513ff6633f7331665f9755be75",
+  "squashed_intermediate_commits": [
+    "10872c6cf37c9e396e2fb7117e4574f22102c763",
+    "c30d254f20fddcc5c287943594b6ffc8c1e186ac"
+  ],
+  "audited_tree_before_and_after_rebase": "5709c9d9cdf9a84fa2b6e81e63df7e29afb81921",
+  "staged_files_initial_audit": 2185,
+  "staged_audit_blockers": 0,
+  "staged_warning_review": "Only synthetic media binary notices and full numerical raw >5MB; no private-data warnings, no file >=50MB",
+  "additional_checks": "CSV CRLF preserved with attributes; hashes refreshed; staged incremental audit and diff check pass",
+  "input_sha256": {
+    "report_zip": "7e768f2a6aa659311befc5f54a0846644aa936e8de7401bb4be401ca17a862ea",
+    "patch": "906c8fbc5ba47fc8b71d1251bc3e74db63b1e1dc8e5f955666f24921e88ceb94",
+    "work_record": "32571a8dd412cec590c17e57553d659e7f14cabea36cff13e8a4610fb5d69f65"
+  },
+  "qualification": {
+    "name": "qualification-002",
+    "seed": 91021261008,
+    "successes": 100,
+    "trials": 100,
+    "unsafe": 0,
+    "invalid": 0,
+    "raw_samples": 2300100,
+    "independent_audit": "PASS",
+    "freeze_sha256": "f973d28f3aaa110add26b279a3a5a665efccebc736ca1ea6506f4a795539cbda",
+    "index_sha256": "6d331e01a527806a3347c96c0a43ba0c74af362f41c15b7f90a80f08a94cf7cf"
+  },
+  "limitations": [
+    "Supplier original100 raw not provided; fresh results are separate",
+    "qualification-001 retained INCOMPLETE:96 successes,1 physical failure,3 interrupted invalid traces; no replacements",
+    "Descent both-finger contact loss97/100, before box contact89/100, max pre-box center speed0.6984602m/s; gentle continuous lowering unproven",
+    "Conditional nominal fixed-pitch experiment; not hardware calibration or physical safety proof",
+    "Published main history unchanged; source repository write access unavailable"
+  ],
+  "excluded": [
+    "real captures",
+    "conversations",
+    "input archives",
+    "private paths",
+    "exception logs",
+    "corrupt interrupted raw",
+    "unrelated camera-owner logs"
+  ],
+  "local_full_commit": "3553a1ecf7838105bb48381e7bf5cf6751df6f92",
+  "local_bundle_sha256": "a58af281d4664bf394ca4a3ab09d46cd024e02e736a11697741dc2794d692904",
+  "public_snapshot_commit": "973b8cb03bb54b32e1209fdcc68acf2c59e7b78f",
+  "remote_state": "NOT PUBLISHED: GitHub connector mutation requires approval, approval policy never"
+}
