@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "purpose": "Offline random XY cap grasp from identical standby; nominal-model bounded-domain acceptance study",
+  "proposal": {
+    "distribution": "independent uniform XY over predeclared broad square, with original box translated to target XY",
+    "x_m": [
+      -0.3,
+      0.3
+    ],
+    "y_m": [
+      -0.3,
+      0.3
+    ],
+    "z_m": 0.0575,
+    "yaw_rad": 0.0,
+    "yaw_reason": "Physical cap collider is axisymmetric; random yaw adds no geometry coverage",
+    "support_center_m": null,
+    "support_halfsize_m": [
+      0.032,
+      0.032,
+      0.025
+    ],
+    "radius_m": 0.014,
+    "proposal_budget": 2000,
+    "support_center_rule": "box center=[cap_x,cap_y,.025]; same dimensions,height,physics",
+    "coverage_bound": "For fixed -50 degree grasp pitch, radial upper bound 0.0037 + max over shoulder +-40deg abs(.0148*cos(q2)+.1083*sin(q2)) +.0901 + abs(.14*cos(pitch)-.002*sin(pitch)) < .267m. Proposal +-0.3m contains this fixed-pitch kinematic workspace; not a general-pitch workspace claim.",
+    "comparison": "Old fixed-box XY patch is a separate baseline only; main qualification translates the original support with the cap target.",
+    "rng": "numpy.random.Generator(numpy.random.PCG64(seed)); uniform(lower_xy, upper_xy, size=(proposal_budget,2)); 0-based proposal_index, z fixed; no other RNG draws"
+  },
+  "standby": {
+    "arm_q_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "jaw_theta_deg": 50.0,
+    "reset": "Independent trials reset robot to the same standby with qvel zero and cap to sampled supported pose; thereafter actuator-only dynamics"
+  },
+  "planner": {
+    "pitch_deg": -50.0,
+    "grip_z_offset_m": 0.006,
+    "pregrasp_raise_m": 0.035,
+    "lift_raise_m": 0.04,
+    "jaw_close_theta_deg": 90.0,
+    "ik_position_tolerance_m": 0.0001,
+    "ik_pitch_tolerance_rad": 0.001,
+    "cartesian_sample_step_m": 0.001,
+    "joint_sample_step_rad": 0.008726646259971648,
+    "jaw_sample_step_deg": 1.0,
+    "screen": "Deterministic bounded IK and finite-sample collision screen with runtime forbidden force/penetration rules; not continuous collision or dynamic feasibility certification",
+    "no_outcome_filtering": true,
+    "algorithm": "Analytic planar 2-link inverse after base yaw/fixed pitch elimination, enumerate radial and elbow branches; exact MuJoCo FK/limits validation; deterministic continuity branch selection"
+  },
+  "timing_s": {
+    "settle_end": 0.5,
+    "transit_end": 3.0,
+    "approach_end": 5.5,
+    "alignment_end": 6.0,
+    "close_end": 8.0,
+    "lift_end": 10.5,
+    "hold_end": 13.0,
+    "lower_end": 15.5,
+    "release_end": 17.0,
+    "retract_end": 19.5,
+    "return_end": 22.0,
+    "final_end": 23.0
+  },
+  "return_criteria": {
+    "settling_interval_s": 0.5,
+    "joint_position_error_rad": 0.008726646259971648,
+    "joint_velocity_max_rad_s": 0.017453292519943295,
+    "release": "During final interval cap has force-bearing box support, no force-bearing finger contact, full projected finite-cylinder footprint inside box, and bottom within 0.5mm of box top",
+    "support_height_error_max_m": 0.0005,
+    "footprint_margin_min_m": 0.0
+  },
+  "qualification": {
+    "accepted_trial_count": 100,
+    "minimum_successes": 95,
+    "maximum_unsafe_trials": 0,
+    "initial_generator_seed": 81020261005,
+    "seed_increment_after_retuning": 1000003,
+    "denominator": "First 100 accepted pretrial-screened candidates, including runtime/IK/control/grasp/trace failures; no replacements",
+    "shortfall": "Fewer than 100 accepted within 2000 proposals is incomplete and cannot pass",
+    "confidence_interval": "Wilson 95% binomial interval; finite sample acceptance does not establish >=95% population success. After repeat-until-pass, selected batch CI is descriptive, not unconditional confirmatory coverage.",
+    "all_batches_retained": true
+  },
+  "development": {
+    "generator_seed": 51020261005,
+    "initial_random_trials": 8,
+    "boundary_grid": "40 prespecified radial/yaw probes: radii [.13,.15,.18,.21,.225]m crossed with 8 equally spaced yaw angles from -pi inclusive to pi exclusive; all statically accepted probes plus first8 accepted iid random candidates"
+  },
+  "physics": {
+    "cap_mass_kg": 0.0015,
+    "friction": 0.7,
+    "timestep_s": 0.001,
+    "solver": "Newton",
+    "cone": "elliptic",
+    "impratio": 10.0,
+    "immutable_during_controller_development": true
+  },
+  "limits": {
+    "maximum_parallel_trials": 4,
+    "BLAS_threads_per_process": 1,
+    "batch_timeout_s": 1800
+  },
+  "scope_limits": [
+    "Uncalibrated nominal scene and material assumptions",
+    "No physical hardware validation",
+    "Only fixed -50deg grip-pitch workspace inside the broad proposal, restricted by the stated finite-sample standby path screen",
+    "No reachability guarantee outside tested domain"
+  ],
+  "controller_setdown": {
+    "mode": "perfect simulated-state feedback from MuJoCo cap pose and contact forces, not a hardware estimator",
+    "bottom_clearance_stop_m": 0.0008,
+    "support_force_backstop_N": 1e-05,
+    "command": "During lower latch current commanded arm q and target at first threshold crossing; stop descending, open jaw on scheduled release, retract continuously along already-screened vertical lift path from latched fraction to pregrasp",
+    "no_pose_overwrites": true
+  }
+}

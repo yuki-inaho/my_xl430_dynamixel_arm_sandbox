@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import gzip
 import json
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -12,6 +11,7 @@ import mujoco
 import numpy as np
 
 from build_scene import save_json, sha
+from trace_io import contact_rows
 
 
 def validate_model(model):
@@ -474,11 +474,7 @@ def evaluate_run(directory):
                 return invalid("model_mesh_asset_hash_mismatch")
         with np.load(directory / "states.npz", allow_pickle=False) as f:
             states = {key: f[key] for key in f.files}
-        plain, compressed = directory / "contacts.jsonl", directory / "contacts.jsonl.gz"
-        if plain.exists() and compressed.exists():
-            return invalid("ambiguous_contact_trace")
-        with plain.open() if plain.exists() else gzip.open(compressed, "rt") as stream:
-            contacts = [json.loads(line) for line in stream]
+        contacts = list(contact_rows(directory))
         if sha(directory / "collision_pairs.json") != metadata["collision_policy_sha256"]:
             return invalid("collision_policy_hash_mismatch")
         policy = json.loads((directory / "collision_pairs.json").read_text())

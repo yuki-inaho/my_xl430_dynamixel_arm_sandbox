@@ -48,6 +48,8 @@ rtk proxy git ls-remote <url>            # empty output means an empty remote
   technical records and keep real captures/conversations local. For a user requirement
   excluding local paths, run the staged audit with `--public-artifacts`. This inspects
   decompressed gzip text and NumPy string fields; compression does not redact data.
+  For `contacts.jsonl.zst`, inspect the staged `storage.json`, compressed identity,
+  exact decompressed bytes/hash and decoded text. Other opaque archives remain blocked.
   Images/videos still need a content/provenance review; regex checks cannot prove privacy.
 - If the remote is not empty and shares no history with the local branch, stop and ask.
   Never `--force` unless the user explicitly asks for it.

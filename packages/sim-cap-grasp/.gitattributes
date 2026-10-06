@@ -1,2 +1,4 @@
 # Preserve exact exported bytes and hashes; these are generated numerical evidence.
 model/decomposition/**/*.obj binary
+# Retain standard generated CSV CRLF bytes and the corresponding evidence hashes.
+evidence/report-*/*.csv -text whitespace=cr-at-eol
